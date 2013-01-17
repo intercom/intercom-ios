@@ -1,9 +1,8 @@
 # Intercom iOS SDK [Beta]
-**Intercom iOS SDK**  instructions **rough draft**.
 This is a **beta** release of the Intercom iOS SDK.  As such it is subject to modification without notice.
 
 ##Installation
----
+
 Copy `Intercom.h` and `libIntercom.a` to your Xcode project and add be sure to include `Intercom.h` in your precompiled header (.pch) file. The library is a fat binary, so will work on both the iOS simulator and devices.  
 
 ###Initialize Intercom
@@ -38,7 +37,6 @@ Once a session has begun, Intercom will track UIApplication state changes for yo
 End a session when your user successfully logs out of your application by adding `[Intercom endSession]` at that point.
 
 ##Working with attributes
----
 You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to Intercom you can then apply filters based on these attributes. Full details are available [here](http://docs.intercom.io/intercom-ios/Classes/Intercom.html#task_Working%20with%20attributes).
 
 ####Incrementing attributes
@@ -55,11 +53,9 @@ You can send a `NSDictionary` containing multiple attributes also. Note that att
 
 
 ##Documentation
----
 Further details are available in the [documentation for the iOS SDK](http://docs.intercom.io/intercom-ios/Classes/Intercom.html).
 
 ##License
----
 Licensed under the Apache License, Version 2.0. Copyright (c) 2013 Intercom, Inc. All rights reserved.
 
 ![Smaller](https://d2nvy5xhcrv86v.cloudfront.net/assets/emails/v01/mail-logo-143d4547a151e7cb9e1571a633ecbb4b.png)
