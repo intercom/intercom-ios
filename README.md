@@ -1,5 +1,5 @@
 # Intercom iOS SDK [Beta]
-This is a **beta** release of the Intercom iOS SDK.  As such it is subject to modification without notice.
+This is a **beta** release of the Intercom iOS SDK.  As such it is subject to modification without notice. The Intercom iOS SDK currently supports **iOS 5.0 and greater**.
 
 ##Installation
 
