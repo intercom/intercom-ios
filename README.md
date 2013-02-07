@@ -26,15 +26,17 @@ There are three ways to begin a session, depending on the information available 
 
 1. **Email address.**  You can begin a session with a user's email address simply by using the following method at the point where your app successfully authenticates a user;   
 `[Intercom beginSessionForUserWithEmail:adam@intercom.io];`
+
 2. **UserId.** The same can be accomplished if you don't have a user's email address but you might have another unique identifier you are already sending to Intercom.  If this is the case, you could use the following;  
 `[Intercom beginSessionForUserWithUserId:@"12345"];`
+
 3. **Both.** Should you have both an ID you would like to couple with an email address, you can send them both;  
-`[Intercom beginSessionForUserWithUserId:@"12345" andEmail:@"adam@intercom.io"]`
+`[Intercom beginSessionForUserWithUserId:@"12345" andEmail:@"adam@intercom.io"];`
 
 Once a session has begun, Intercom will track UIApplication state changes for you, so you won't need to explicity start and stop a session. Start on login and end on logout, we'll do the rest.
 	
 ###End a session
-End a session when your user successfully logs out of your application by adding `[Intercom endSession]` at that point.
+End a session when your user successfully logs out of your application by adding `[Intercom endSession];` at that point.
 
 ##Working with attributes
 You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to Intercom you can then apply filters based on these attributes. Full details are available [here](http://docs.intercom.io/intercom-ios/Classes/Intercom.html#task_Working%20with%20attributes).
