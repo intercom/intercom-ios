@@ -3,7 +3,7 @@ This is a **beta** release of the Intercom iOS SDK.  As such it is subject to mo
 
 ##Installation
 
-Copy `Intercom.h` and `libIntercom.a` to your Xcode project and add be sure to include `Intercom.h` in your precompiled header (.pch) file. The library is a fat binary, so will work on both the iOS simulator and devices.  
+Copy `Intercom.h` and `libIntercom.a` to your Xcode project and be sure to include `Intercom.h` in your precompiled header (.pch) file. The library is a fat binary, so will work on both the iOS simulator and devices.  
 
 ###Initialize Intercom
 
@@ -30,7 +30,7 @@ There are three ways to begin a session, depending on the information available 
 2. **UserId.** The same can be accomplished if you don't have a user's email address but you might have another unique identifier you are already sending to Intercom.  If this is the case, you could use the following;  
 `[Intercom beginSessionForUserWithUserId:@"12345"];`
 
-3. **Both.** Should you have both an ID you would like to couple with an email address, you can send them both;  
+3. **Both.** Should you have an ID you would like to couple with an email address, you can send them both;  
 `[Intercom beginSessionForUserWithUserId:@"12345" andEmail:@"adam@intercom.io"];`
 
 Once a session has begun, Intercom will track UIApplication state changes for you, so you won't need to explicity start and stop a session. Start on login and end on logout, we'll do the rest.
