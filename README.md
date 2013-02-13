@@ -13,7 +13,7 @@ In order to initialize Intercom in your iOS app, copy your iOS API key and App I
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch
-    [Intercom setApiKey:@"API-KEY" forAppId:@"APP-ID"];
+    [Intercom setApiKey:@"ios-123456ABCDEF" forAppId:@"yourAppId"];
     
     return YES;
 }
