@@ -1,5 +1,5 @@
 # Intercom iOS SDK [Beta]
-This is a **beta** release of the Intercom iOS SDK.  As such it is subject to modification without notice. The Intercom iOS SDK currently supports **iOS 5.0 and greater**.
+This is a **beta** release of the Intercom iOS SDK. As such it is subject to modification without notice. The Intercom iOS SDK currently supports **iOS 5.0 and greater**.
 
 ##Installation
 
@@ -7,7 +7,7 @@ Copy `Intercom.h` and `libIntercom.a` to your Xcode project and be sure to inclu
 
 ###Initialize Intercom
 
-In order to initialize Intercom in your iOS app, copy your iOS API key and App ID  from [here](https://www.intercom.io/apps/tx2p130c/api_keys) and add the following line to your application delegate:
+In order to initialize Intercom in your iOS app, copy your iOS API key and App ID from the api keys page of your app (intercom.io/apps/\[your-app-id\]/api_keys) and add the following line to your application delegate:
 
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
