@@ -1,0 +1,7 @@
+= 1.0.1 (2013-02-27)
+
+* Fix session attempting to restart after `endSession` had been called.
+
+= 1.0 (2013-02-05)
+
+* Intercom iOS SDK Version 1.
