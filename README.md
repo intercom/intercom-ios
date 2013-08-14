@@ -60,6 +60,22 @@ You can send a `NSDictionary` containing multiple attributes also. Note that att
 ##Messaging
 With the iOS SDK you can now send and receive messages from within your iPhone and iPad apps once you are on a [messaging plan](https://www.intercom.io/pricing).  The Intercom SDK requires that you have a `rootViewController` at the end of application launch in order to use messaging features.
 
+#### How does it work
+
+Reaching out to users through Intercom couldn't be simpler. There are two message types that can be sent to iOS users: Conversation types and Notification types. These can be sent as either a [manual message](http://docs.intercom.io/#ManualMessages) to one or more users or as an [Auto Message](http://docs.intercom.io/#AutoMessages) where a user qualifies for the message via a segment.
+
+With auto messages you can set iOS specific segments like iOS session count or any attribute you choose to report to Intercom in your app.
+
+![Segments](http://d.pr/i/XhLi+)
+
+Preview your message as you type by selecting the mobile icon on the right of the message composer. Click save and turn your message live when you're happy with it. 
+
+![Preview](http://d.pr/i/xxyg+)
+
+Users will receive any messages sent specifically to them (manual message), or that they meet the criteria for (Auto Message). 
+
+Any messages not delivered in your iOS apps may still be received by the same user in your web app, should you have one. We will later add the ability to send messages to iOS users only. 
+
 ####Customising message appearance
 By default, the iOS SDK reads the message box color that is set from within Intercom. To change the color: Log into Intercom, go to your app's "message box color" settings page, and set your color of choice.
 
