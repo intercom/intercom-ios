@@ -17,6 +17,7 @@
 //  limitations under the License.
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /** This is the interface for the Intercom iOS SDK.  From here you can begin and end sessions, track, update or increment attributes 
  that you can use to create filters and segments out of on the web.
@@ -54,7 +55,7 @@
 /** @name Session control. */
 //=========================================================================================================
 /*!
- Begins a session for the specified user.  Either an email address or a unique identifier must be used.  
+ Begins a session for the specified user.  Either an email address orICM a unique identifier must be used.  
  This should be the same as the one used for your web application.
  @note Sessions only need to begin on authentication success.  Intercom listens for `UIApplication` state 
  changes so endSession doesn't need to be implemented in any additional locations other than a logout method.
@@ -128,5 +129,21 @@
  @param fullName The user's name.
  */
 + (void)updateUserName:(NSString *)fullName;
+
+//=========================================================================================================
+/** @name Sending a new message to Intercom. */
+//=========================================================================================================
+/*!
+ Enabling users send messages to Intercom from inside your app is easy. Simply include;
+ 
+    [Intercom showMessageComposer];
+ 
+ In a button's action method or upon selection of a tableViewCell or other element and the message composer will appear as a modal
+ view controller on iPhone and a modal with formSheet style on iPad.
+ 
+ @note The Intercom SDK requires that you have a rootViewController at the end of application launch in order to use messaging features.
+ 
+ */
++ (void)showNewMessageComposer;
 
 @end
