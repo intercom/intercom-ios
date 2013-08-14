@@ -73,6 +73,8 @@ Messages from Intercom are delivered, if present, in response to every request f
 ####Letting your users contact you
 Enabling users send messages to Intercom from your app is easy.  By calling `[Intercom showNewMessageComposer];` inside the action of a button or table cell for example, the new message composer appears.
 
+![Composer](http://d.pr/i/MNL3+)
+
 ##Documentation
 Full documentation for the SDK is available [here](http://docs.intercom.io/intercom-ios/Classes/Intercom.html).
 
