@@ -11,7 +11,7 @@ This is a **beta** release of the Intercom iOS SDK. As such it is subject to mod
 
 ###Initialize Intercom
 
-In order to initialize Intercom in your iOS app, copy your iOS API key and App ID from the api keys page of your app (intercom.io/apps/\[your-app-id\]/api_keys) and add the following line to your application delegate:
+In order to initialize Intercom in your iOS app, copy your iOS API key and App ID from the [api keys page](http://d.pr/i/Jowr+) of your app and add the following line to your application delegate:
 
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -70,7 +70,7 @@ By default, the iOS SDK reads the message box color that is set from within Inte
 ####Receiving messages from Intercom
 Messages from Intercom are delivered, if present, in response to every request from the SDK. If you aren't sending any attributes then messages will be fetched on session start. When a message is opened by touching it or sliding it upwards, a reply box will appear.
 
-####Sending messages to Intercom from inside your app
+####Letting your users contact you
 Enabling users send messages to Intercom from your app is easy.  By calling `[Intercom showNewMessageComposer];` inside the action of a button or table cell for example, the new message composer appears.
 
 ##Documentation
