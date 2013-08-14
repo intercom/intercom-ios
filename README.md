@@ -63,7 +63,8 @@ With the iOS SDK you can now send and receive messages from within your iPhone a
 ####Customising message appearance
 By default, the iOS SDK reads the message box color that is set from within Intercom. To change the color: Log into Intercom, go to your app's "message box color" settings page, and set your color of choice.
 
-![iPhone](https://github-camo.global.ssl.fastly.net/4717ff231a296e8a10f08a0481e0bfaa8e0884c4/687474703a2f2f642e70722f692f4a73485a2b)
+![iPhone](http://d.pr/i/1zr5+)
+![Reply](http://d.pr/i/4LYK+)
 ![iPad](https://github-camo.global.ssl.fastly.net/dd6f10866e3cb16756c4d31e9e91c18361e04645/687474703a2f2f642e70722f692f4a6b6b742b)
 
 ####Receiving messages from Intercom
