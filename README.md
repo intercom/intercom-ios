@@ -1,9 +1,13 @@
 # Intercom iOS SDK [Beta]
-This is a **beta** release of the Intercom iOS SDK. As such it is subject to modification without notice. The Intercom iOS SDK currently supports **iOS 5.0 and greater**.
+This is a **beta** release of the Intercom iOS SDK. As such it is subject to modification without notice. The Intercom iOS SDK currently supports **iOS 5.0 and greater**. Support for iOS 7 will follow shortly.
 
 ##Installation
 
-Copy `Intercom.h` and `libIntercom.a` to your Xcode project and be sure to include `Intercom.h` in your precompiled header (.pch) file. The library is a fat binary, so will work on both the iOS simulator and devices.  
+1. Copy `Intercom.h` and `libIntercom.a` to your Xcode project and be sure to include `Intercom.h` in your precompiled header (.pch) file. The library is a fat binary, so will work on both the iOS simulator and devices. 
+2. Under your target's build settings in Xcode, include the `-ObjC` flag under `Other Linker Flags`.
+![Linker flags](http://d.pr/i/58KP+)
+3. Include the `QuartzCore` framework in your app
+![Quartz](http://d.pr/i/ZgWp+)
 
 ###Initialize Intercom
 
@@ -13,7 +17,7 @@ In order to initialize Intercom in your iOS app, copy your iOS API key and App I
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch
-    [Intercom setApiKey:@"ios-123456ABCDEF" forAppId:@"yourAppId"];
+    [Intercom setApiKey:@"your-api-key" forAppId:@"your-app-id"];
     
     return YES;
 }
@@ -53,9 +57,23 @@ You can send a `NSDictionary` containing multiple attributes also. Note that att
 
 `[Intercom updateAttributes:@{ @"increments" : @{ @"made_in_app_purchase" : @1 }, @"last_purchase_date" : @12345678 }];`
 
+##Messaging
+With the iOS SDK you can now send and receive messages from within your iPhone and iPad apps once you are on a [messaging plan](https://www.intercom.io/pricing).  The Intercom SDK requires that you have a `rootViewController` at the end of application launch in order to use messaging features.
+
+####Customising message appearance
+By default, the iOS SDK reads the message box color that was set in your Intercom settings. Go to your app settings and select message box color to set your color of choice.
+
+![iPhone](http://d.pr/i/JsHZ+)
+![iPad](http://d.pr/i/Jkkt+)
+
+####Receiving messages from Intercom
+Messages from Intercom are delivered, if present, in response to every request from the SDK. If you aren't sending any attributes then messages will be fetched on session start.
+
+####Sending messages to Intercom from inside your app
+Enabling users send messages to Intercom from your app is easy.  By calling `[Intercom showNewMessageComposer];` inside the action of a button or table cell for example, the new message composer appears.
 
 ##Documentation
-Further details are available in the [documentation for the iOS SDK](http://docs.intercom.io/intercom-ios/Classes/Intercom.html).
+Full documentation for the SDK is available [here](http://docs.intercom.io/intercom-ios/Classes/Intercom.html).
 
 ##License
 Licensed under the Apache License, Version 2.0. Copyright (c) 2013 Intercom, Inc. All rights reserved.
