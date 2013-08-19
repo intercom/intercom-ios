@@ -1,3 +1,13 @@
+= 1.1.1 (2013-08-19) 
+
+* Bug fixes for iPad screen display
+* Improved logged so message display is clearer
+* Smaller under the hood bug fixes around dismissing messages on session end.
+
+= 1.1 (2013-08-14) 
+
+* Include support for messaging.
+
 = 1.0.1 (2013-02-27)
 
 * Fix session attempting to restart after `endSession` had been called.
