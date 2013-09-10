@@ -1,3 +1,8 @@
+= 1.1.2 (2013-9-10)
+
+* iOS 7 Support
+* Fix for when messages appear offset by 20 pixels (see documentation).
+
 = 1.1.1 (2013-08-19) 
 
 * Bug fixes for iPad screen display
