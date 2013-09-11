@@ -4,8 +4,8 @@ This is a **beta** release of the Intercom iOS SDK. As such it is subject to mod
 ##Installation
 
 1. Copy `Intercom.h` and `libIntercom.a` to your Xcode project and be sure to include `Intercom.h` in your precompiled header (.pch) file. The library is a fat binary, so will work on both the iOS simulator and devices. 
-2. Under your target's build settings in Xcode, include the `-ObjC` flag under `Other Linker Flags`.
-![Linker flags](http://d.pr/i/58KP+)
+2. Under your target's build settings in Xcode, include the `-ObjC` & `-all_load` flags under `Other Linker Flags`.
+![Linker flags](http://d.pr/i/bRsu+)
 3. Include the `QuartzCore` framework in your app
 ![Quartz](http://d.pr/i/ZgWp+)
 
