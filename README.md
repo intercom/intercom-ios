@@ -91,6 +91,11 @@ Enabling users send messages to Intercom from your app is easy.  By calling `[In
 
 ![Composer](http://d.pr/i/MNL3+)
 
+
+##Logging
+By default the Intercom iOS SDK has logging disabled. Should you wish to enable it, simply call `[Intercom loggingEnabled:YES];` in your application's `didFinishLaunchingWithOptions:` method.
+
+
 ##Documentation
 Full documentation for the SDK is available [here](http://docs.intercom.io/intercom-ios/Classes/Intercom.html).
 

@@ -1,4 +1,9 @@
-= 1.1.2 (2013-9-10)
+= 1.1.3 (2013-09-16)
+
+* Fixes issue with email and user_id (https://github.com/intercom/intercom-ios/issues/12)
+* Added support for optional logging (https://github.com/intercom/intercom-ios/issues/11)
+
+= 1.1.2 (2013-09-10)
 
 * iOS 7 Support
 * Fix for when messages appear offset by 20 pixels (see documentation).
