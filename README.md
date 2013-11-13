@@ -87,7 +87,7 @@ By default, the iOS SDK reads the message box color that is set from within Inte
 Messages from Intercom are delivered, if present, in response to every request from the SDK. If you aren't sending any attributes then messages will be fetched on session start. When a message is opened by touching it or sliding it upwards, a reply box will appear.
 
 ####Letting your users contact you
-Enabling users send messages to Intercom from your app is easy.  By calling `[Intercom showNewMessageComposer];` inside the action of a button or table cell for example, the new message composer appears.
+Enabling users send messages to Intercom from your app is easy.  By calling `showNewMessageComposerWithTitleColor:barColor:keyboardAppearance:success:failure:` inside the action of a button or table cell for example, the new message composer appears.
 
 ![Composer](http://d.pr/i/MNL3+)
 
