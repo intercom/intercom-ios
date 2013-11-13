@@ -1,3 +1,10 @@
+= 1.1.5 (2013-11-13)
+
+* A more natural message composer in iOS 6 and iOS 7 with customisable keyboard, title and bar color options.
+* New message composer callbacks and easier control for dismissing the composer.
+* Fixes a problem where not having a name on Intercom crashed the SDK.
+* Arm64 support.
+
 = 1.1.4 (2013-10-04)
 
 * Fixes issue with duplicate users being created with email addresses equal to user_ids.
