@@ -43,7 +43,7 @@ Once a session has begun, Intercom will track UIApplication state changes for yo
 End a session when your user successfully logs out of your application by adding `[Intercom endSession];` at that point.
 
 ##Working with attributes
-You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to Intercom you can then apply filters based on these attributes. Full details are available [here](http://docs.intercom.io/intercom-ios/Classes/Intercom.html#task_Working%20with%20attributes).
+You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to Intercom you can then apply filters based on these attributes. Full details are available [here](http://woody.intercom.io/docs/sdk/ios/1.1.5/docs/Classes/Intercom.html#task_Working%20with%20attributes).
 
 ####Incrementing attributes
 Attributes can be simply sent as strings that are auto incremented for you. The example below will add a value of `1` to the attribute `sent_support_request` every time it is received.
@@ -62,7 +62,7 @@ With the iOS SDK you can now send and receive messages from within your iPhone a
 
 #### How does it work
 
-Reaching out to users through Intercom couldn't be simpler. There are two message types that can be sent to iOS users: Conversation types and Notification types. These can be sent as either a [manual message](http://docs.intercom.io/#ManualMessages) to one or more users or as an [Auto Message](http://docs.intercom.io/#AutoMessages) where a user qualifies for the message via a segment.
+Reaching out to users through Intercom couldn't be simpler. There are two message types that can be sent to iOS users: Conversation types and Notification types. These can be sent as either a [manual message](http://woody.intercom.io/docs/sdk/ios/1.1.5/#ManualMessages) to one or more users or as an [Auto Message](http://woody.intercom.io/docs/sdk/ios/1.1.5/#AutoMessages) where a user qualifies for the message via a segment.
 
 With auto messages you can set iOS specific segments like iOS session count or any attribute you choose to report to Intercom in your app.
 
@@ -97,7 +97,7 @@ By default the Intercom iOS SDK has logging disabled. Should you wish to enable 
 
 
 ##Documentation
-Full documentation for the SDK is available [here](http://docs.intercom.io/intercom-ios/Classes/Intercom.html).
+Full documentation for the SDK is available [here](http://woody.intercom.io/docs/sdk/ios/1.1.5/intercom-ios/Classes/Intercom.html).
 
 ##License
 Licensed under the Apache License, Version 2.0. Copyright (c) 2013 Intercom, Inc. All rights reserved.
