@@ -97,7 +97,7 @@ By default the Intercom iOS SDK has logging disabled. Should you wish to enable 
 
 
 ##Documentation
-Full documentation for the SDK is available [here](http://woody.intercom.io/docs/sdk/ios/1.1.5/intercom-ios/Classes/Intercom.html).
+Full documentation for the SDK is available [here](http://woody.intercom.io/docs/sdk/ios/1.1.5/Classes/Intercom.html).
 
 ##License
 Licensed under the Apache License, Version 2.0. Copyright (c) 2013 Intercom, Inc. All rights reserved.
