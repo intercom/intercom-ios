@@ -43,7 +43,7 @@ Once a session has begun, Intercom will track UIApplication state changes for yo
 End a session when your user successfully logs out of your application by adding `[Intercom endSession];` at that point.
 
 ##Working with attributes
-You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to Intercom you can then apply filters based on these attributes. Full details are available [here](http://woody.intercom.io/docs/sdk/ios/1.1.5/docs/Classes/Intercom.html#task_Working%20with%20attributes).
+You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to Intercom you can then apply filters based on these attributes. Full details are available [here](http://woody.intercom.io/docs/sdk/ios/1.1.5/Classes/Intercom.html#task_Working%20with%20attributes).
 
 ####Incrementing attributes
 Attributes can be simply sent as strings that are auto incremented for you. The example below will add a value of `1` to the attribute `sent_support_request` every time it is received.
