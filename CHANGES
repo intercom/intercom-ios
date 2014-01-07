@@ -1,3 +1,8 @@
+= 1.1.6 (2014-01-07)
+
+* Fixes problems where the text input view in the composer was extending out of bounds while on display. It should now contain and scroll correctly.
+* Also fixes a problem where by the composer would launch from UIActionSheets or UIAlertViews in iOS 7.
+
 = 1.1.5 (2013-11-13)
 
 * A more natural message composer in iOS 6 and iOS 7 with customisable keyboard, title and bar color options.
