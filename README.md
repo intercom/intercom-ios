@@ -9,7 +9,7 @@ This is a **beta** release of the Intercom iOS SDK. As such it is subject to mod
 Add Intercom pod into your Podfile
 
 ```
-pod 'Intercom', '~> 1.1'
+pod 'Intercom', '~> 1.1.6'
 ```
 
 ###Manual installation
