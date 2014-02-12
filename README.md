@@ -1,7 +1,18 @@
 # Intercom iOS SDK [Beta]
+
 This is a **beta** release of the Intercom iOS SDK. As such it is subject to modification without notice. The Intercom iOS SDK currently supports **iOS 5.0 and greater**. Support for landscape orientation in iPhone and iPod touch apps will follow shortly.
 
 ##Installation
+
+###Using cocoapods
+
+Add Intercom pod into your Podfile
+
+```
+pod 'Intercom', '~> 1.1'
+```
+
+###Manual installation
 
 1. Copy `Intercom.h` and `libIntercom.a` to your Xcode project and be sure to include `Intercom.h` in your precompiled header (.pch) file. The library is a fat binary, so will work on both the iOS simulator and devices. 
 2. Under your target's build settings in Xcode, include the `-ObjC` & `-all_load` flags under `Other Linker Flags`.
@@ -9,7 +20,9 @@ This is a **beta** release of the Intercom iOS SDK. As such it is subject to mod
 3. Include the `QuartzCore` framework in your app
 ![Quartz](http://d.pr/i/ZgWp+)
 
-###Initialize Intercom
+
+
+##Initialize Intercom
 
 In order to initialize Intercom in your iOS app, copy your iOS API key and App ID from the [api keys page](http://d.pr/i/Jowr+) of your app and add the following line to your application delegate:
 
@@ -23,7 +36,7 @@ In order to initialize Intercom in your iOS app, copy your iOS API key and App I
 }
 ```
 
-###Begin a session
+##Begin a session
 Intercom only tracks users who are logged in to your app.  With this in mind, you should begin a session for a user at the point in your app where authentication is confirmed.  Don't worry if Intercom hasn't seen a user before, that user will be created in Intercom when the session begins.
 
 There are three ways to begin a session, depending on the information available to you.
@@ -38,8 +51,8 @@ There are three ways to begin a session, depending on the information available 
 `[Intercom beginSessionForUserWithUserId:@"12345" andEmail:@"adam@intercom.io"];`
 
 Once a session has begun, Intercom will track UIApplication state changes for you, so you won't need to explicity start and stop a session. Start on login and end on logout, we'll do the rest.
-	
-###End a session
+    
+##End a session
 End a session when your user successfully logs out of your application by adding `[Intercom endSession];` at that point.
 
 ##Working with attributes
