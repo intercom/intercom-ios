@@ -1,6 +1,6 @@
 # Intercom iOS SDK [Beta]
 
-This is a **beta** release of the Intercom iOS SDK. As such it is subject to modification without notice. The Intercom iOS SDK currently supports **iOS 5.0 and greater**. Support for landscape orientation in iPhone and iPod touch apps will follow shortly.
+This is a **beta** release of the Intercom iOS SDK. As such it is subject to modification without notice. The Intercom iOS SDK **currently** supports **iOS 5.0 and greater** although this will be changing in June 2014 to iOS 7 and above.
 
 ##Installation
 
@@ -9,7 +9,7 @@ This is a **beta** release of the Intercom iOS SDK. As such it is subject to mod
 Add Intercom pod into your Podfile
 
 ```
-pod 'Intercom', '~> 1.1.6'
+pod 'Intercom', '~> 1.1.8'
 ```
 
 ###Manual installation
