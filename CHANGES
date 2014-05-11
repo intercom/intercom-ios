@@ -1,3 +1,8 @@
+= 1.1.8 (2014-05-11)
+
+* Fixes an issue where messages might attempt to show multiple times instead of just once.
+* Bug fixes for iPad display modes.
+
 = 1.1.6 (2014-01-07)
 
 * Fixes problems where the text input view in the composer was extending out of bounds while on display. It should now contain and scroll correctly.
