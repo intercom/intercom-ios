@@ -2,48 +2,67 @@
 //  Intercom.h
 //  Intercom
 //
-//  Copyright (c) 2013 Intercom, Inc. All rights reserved.
+//  Created by Intercom on 15/04/2014.
+//  Copyright (c) 2014 Intercom. All rights reserved.
 //
-//  Licensed under the Apache License, Version 2.0 (the "License");
-//  you may not use this file except in compliance with the License.
-//  You may obtain a copy of the License at
-//
-//  http://www.apache.org/licenses/LICENSE-2.0
-//
-//  Unless required by applicable law or agreed to in writing, software
-//  distributed under the License is distributed on an "AS IS" BASIS,
-//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-//  See the License for the specific language governing permissions and
-//  limitations under the License.
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
+#error This version (2.0) of the Intercom iOS SDK supports iOS 7.0 upwards.
+#endif
 
-/** This is the interface for the Intercom iOS SDK.  From here you can begin and end sessions, track, update or increment attributes 
- that you can use to create filters and segments out of on the web.
+@import Foundation;
+@import UIKit;
 
- @note This product is currently in beta as we add more features to it.
- */
+typedef NS_ENUM(NSUInteger, ICMPresentationMode){
+    ICMPresentationModeBottomLeft   = 0,
+    ICMPresentationModeBottomRight  = 1,
+    ICMPresentationModeTopLeft      = 2,
+    ICMPresentationModeTopRight     = 3,
+};
+
+extern NSString *const kIntercomErrorDomain;
+
+enum
+{
+    IntercomErrorUnknown            = -1,
+    IntercomSessionError            = 1001,
+    IntercomLoginError              = 1002,
+    IntercomCredentialsError        = 1003,
+    IntercomUpdateUserError         = 1004
+};
+
+/**
+Notifications thrown by the SDK when the SDK window is displayed and hidden. These notifications are fired only when
+there is a change in the state of the SDKs UI,
+eg: If a user receives a message, willShow and didShow notifications will be fired when the chatHead is presented.
+If after the chatHead is visible and the user press it, they will go to see the message. The message will be presented in full screen but
+no notifications will be thrown here as SDK was already visible.
+*/
+UIKIT_EXTERN NSString *const IntercomWindowWillShowNotification;
+UIKIT_EXTERN NSString *const IntercomWindowDidShowNotification;
+UIKIT_EXTERN NSString *const IntercomWindowWillHideNotification;
+UIKIT_EXTERN NSString *const IntercomWindowDidHideNotification;
+
+typedef void(^ICMCompletion)(NSError *error);
 
 @interface Intercom : NSObject
 
 //=========================================================================================================
 /** @name Connecting to Intercom. */
 //=========================================================================================================
-/*! 
- Prior to sending any data to Intercom, the SDK must be initialized with a valid `apiKey` and `appId`.  
- These can be found in the configuration section of your application's 
- settings page. 
+/*!
+ Prior to sending any data to Intercom, the SDK must be initialized with a valid `apiKey` and `appId`.
+ These can be found in the configuration section of your application's
+ settings page.
  
  This should be placed in the iOS application delegate like so;
  
-    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:
-                         (NSDictionary *)launchOptions
-    {
-        // Override point for customization after application launch
-        [Intercom setApiKey:@"my_api_key" forAppId:@"my_app_id"];
-        return YES;
-    }
+     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+     {
+         // Override point for customization after application launch
+         [Intercom setApiKey:@"my_api_key" forAppId:@"my_app_id"];
+         return YES;
+     }
  
  @param apiKey The api key required to communicate with your Intercom application.
  @param appId The app id of your Intercom application.
@@ -52,170 +71,205 @@
 
 + (void)setApiKey:(NSString *)apiKey forAppId:(NSString *)appId;
 
+ /*!
+ Initialize the SDK with additional parameters for advanced security. The securityOptions dictionary should contain
+ user specific data string and the HMAC digest for that data string.
+  
+  @{
+      @"data" : @"user@intercom.io",
+      @"hmac" : @"<hmac_of_data>"
+  }
+ 
+  The dictionary may be passed to the setApiKey call to enable HMAC secuity
+  
+  [Intercom setApiKey:@"ios_sdk-2245d7aa263cb1def70bc95b66109bd18d6a9c35" forAppId:@"a2qhfto6" securityOptions:@{
+      @"data" : @"user@intercom.io",
+      @"hmac" : @"6536f5f13b7ea53bc5e0073e7945e89918131d89"
+  }];
+ 
+ @param apiKey The api key required to communicate with your Intercom application.
+ @param appId The app id of your Intercom application.
+ @param securityOptions A dictionary containing the security options (hmac and data) required to enable advanced security mode
+ @since Available since version 1.0
+ */
++ (void)setApiKey:(NSString *)apiKey forAppId:(NSString *)appId securityOptions:(NSDictionary*) securityOptions;
+
+//=========================================================================================================
+/** @name Presenting incoming notifications. */
+//=========================================================================================================
+/*!
+ Depending on the layout of your app you may need to tweak the position of an incoming notification to not
+ infringe other elements in your UI.
+ 
+ @param presentationInset Set the edge insets if padding is required around other UI elements.
+ 
+ @since 2.0
+ */
++ (void)setPresentationInsetOverScreen:(UIEdgeInsets)presentationInset;
+
+/*!
+ Use this to contain an incoming notification view to a defined section of the window.
+ 
+ @param presentationMode Select from any of the defined areas.
+ 
+ @since 2.0
+ */
++ (void)setPresentationMode:(ICMPresentationMode)presentationMode;
+
+//=========================================================================================================
+/** @name Messaging. */
+//=========================================================================================================
+/*!
+ Get any new and unread messages for this user
+ 
+ @since 2.0
+ */
++ (void)checkForUnreadMessages;
+
++ (void)hideConversations:(BOOL)hide;
+
++ (void)presentMessageView;
+
++ (void)presentMessageViewWithCompletion:(ICMCompletion)completion;
+    
 //=========================================================================================================
 /** @name Session control. */
 //=========================================================================================================
 /*!
- Begins a session for the specified user.  Either an email address orICM a unique identifier must be used.  
+ Begins a session for the specified user.  Either an email address or a unique identifier must be used.
  This should be the same as the one used for your web application.
- @note Sessions only need to begin on authentication success.  Intercom listens for `UIApplication` state 
+ @note Sessions only need to begin on authentication success.  Intercom listens for `UIApplication` state
  changes so endSession doesn't need to be implemented in any additional locations other than a logout method.
  @param email The user's email address.
- @since Available since version 1.0
+ @since 1.0
  */
-+ (void)beginSessionForUserWithEmail:(NSString *)email;
++ (void)beginSessionForUserWithEmail:(NSString *)email completion:(ICMCompletion)completion;
 
 /*!
  Begins a session for the specified user but using a unique identifier rather than an email address.
  @note Sessions only need to begin on authentication success.  Intercom listens for `UIApplication` state
  changes so endSession doesn't need to be implemented in any additional locations other than a logout method.
- @param userId A unqiue identifier representing the user..
- @since Available since version 1.0
+ @param userId A unique identifier representing the user..
+ @since 1.0
  */
-+ (void)beginSessionForUserWithUserId:(NSString *)userId;
++ (void)beginSessionForUserWithUserId:(NSString *)userId completion:(ICMCompletion)completion;
 
 /*!
- Begins a session for the specified user with both an email address and a unique identifier.  Only use this
- method if both pieces of information are present.
- @note Sessions only need to begin on authentication success.  Intercom listens for `UIApplication` state
- changes so endSession doesn't need to be implemented in any additional locations other than a logout method.
- @param userId A unqiue identifier representing the user..
- @param email The user's email address.
- @since Available since version 1.0
- */
-+ (void)beginSessionForUserWithUserId:(NSString *)userId andEmail:(NSString *)email;
-
-/*!
- Ends a session for a user. Typically used while logged a user out. All other changes of application state
- are managed for you so there is no need to implement this in your application's delegate.
+ Ends a session for a user and deletes access tokens from the SDK instance. Typically used while logging a user out.
  @note Only implement endSession when logging a user out of your application.  You will not need to implement it
- anywhere else as Intercom listens for changes in UIApplication state and calculates sessions based on those actions.
- @since Available since version 1.0
+ anywhere else as Intercom listens for changes in `UIApplication` state and calculates sessions based on those actions.
+ @since 1.0
  */
 + (void)endSession;
 
 //=========================================================================================================
-/** @name Working with attributes. */
+/** @name Update a user. */
 //=========================================================================================================
 /*!
- Incrementing an attribute will add a value of `1` to the key of your choice. 
+ Updating attributes allows for the submission of multiple attributes with custom values. 
+ Attributes such as the user email can be updated by calling
  
- In the example below, the attribute `sent_support_request` is incremented by a value of `1` every time.
+    [Intercom updateUserWithAttributes:@{@"email" : @"admin@intercom.io"}];
  
-    [Intercom incrementAttribute:@"sent_support_request"];
+ Custom user attributes can be created and modifyed by passing a custom_attributes dictionary
  
- @param attribute The name for which the attribute will be recorded under.
- @since Available since version 1.0
- */
-+ (void)incrementAttribute:(NSString *)attribute;
+    [Intercom updateUserWithAttributes:@{
+        @"custom_attributes": @{
+            @"paid_subscriber" : @YES,
+            @"monthly_spend": @155.5,
+            @"team_mates": @3
+        }
+    }];
+ 
+ You can also set company data via this call by submitting an attribute dictionary like
+ 
+    [Intercom updateUserWithAttributes:@{
+        @"companies": @[ @{
+            @"name" : @"My Company", 
+            @"id" : @"abcd1234" 
+        } 
+    ]}];
 
-/*!
- Updating attributes allows for the submission of multiple attributes with custom values. Attribute values can 
- also be decremented by using a negative operator.
-
- For example, the following dictionary can be sent;
-
-    [Intercom updateAttributes:@{ @"increments" : @{ @"made_in_app_purchase" : @1 }, @"last_purchase_date" : @12345678 }];
- 
- Where `made_in_app_purchase` is incremented with a value of 1 and `last_purchase_date` is simply updated with
- the timestamp `12345678`. 
+ id is a required field for adding or modifying a company.
  
  @param attributes This is a dictionary containing key/value pairs for multiple attributes.
  @warning Attributes may be either a `string`, `integer`, `double`, `unix timestamp` or `bool`.
- @note Note that to set custom incremental values, the syntax is { @"increments" : @{ @"made_in_app_purchase" : @1 } }
  @since Available since version 1.0
  
  */
-+ (void)updateAttributes:(NSDictionary *)attributes;
++ (void)updateUserWithAttributes:(NSDictionary *)attributes;
 
 //=========================================================================================================
-/** @name Updating a user's name. */
-//=========================================================================================================
-/*!
- Append the user's full name so that it appears under their profile in Intercom.
- @param fullName The user's name.
- @since Available since version 1.0
- */
-+ (void)updateUserName:(NSString *)fullName;
-
-//=========================================================================================================
-/** @name Sending a new message to Intercom. */
-//=========================================================================================================
-
-/*!
- Enabling users send messages to Intercom from inside your app is easy. Simply include;
- 
-     [Intercom showNewMessageComposerWithTitleColor:[UIColor greenColor] barColor:[UIColor purpleColor] success:^(id responseObject) {
-         // Successfully sent the message
-         [Intercom closeNewMessageComposer];
-     } failure:^(NSError *error) {
-         NSLog(@"Failure is %@", error.localizedDescription);
-     }];
- 
- in a button's action method or upon selection of a tableViewCell or other element and the message composer will appear as a modal
- view controller on iPhone and a modal with formSheet style on iPad.
- 
- @note The Intercom SDK requires that you have a rootViewController at the end of application launch in order to use messaging features.
- @since Available since version 1.1.5
- @param titleColor The color text applied to the navigation bar's title. If nil the default color will apply.
- @param barColor The color color applied to the navigation bar's background. If nil, the Intercom baseColor set through Intercom will be used.
- @param keyboardAppearance A UIKeyboardAppearance style for the presented keyboard.
- @param success The callback on successful sending of the message. Typically returns a status message in its response.
- @param failure The callback for an unsuccessful attempt at sending a new message with the appropriate error.
- */
-
-+ (void)showNewMessageComposerWithTitleColor:(UIColor *)titleColor
-                                    barColor:(UIColor *)barColor
-                          keyboardAppearance:(UIKeyboardAppearance)keyboardAppearance
-                                     success:(void (^)(id responseObject))success
-                                     failure:(void (^)(NSError *error))failure;
-/*!
-  Manually close the new message composer.  Used in conjunction with the message composer, the close method allows for the composer to be 
-  closed after a custom HUD or other message might be displayed.
- 
-  @note In a future release we plan to provide a better UI for successful message reporting so that explicit composer closing won't be required.
-  @since Version 1.1.5
- */
-
-+ (void)closeNewMessageComposer;
-
-//=========================================================================================================
-/** @name Logging. */
+/** @name Events. */
 //=========================================================================================================
 /*!
- The Intercom iOS SDK has a logging mode that you can use to see if sessions are being created and messages are being delivered.
+ Events are how you can submit user activity to Intercom. Once you’re sending Intercom event data, you can 
+ filter your user base with those events and create Auto Messages to send whenever an event occurs. Every 
+ event is associated with an event name, the time it happened, the user that caused the event, and optionally 
+ some extra metadata. Events record the count, first and last occurrence of an event.
  
- Enable logging by simply calling
+ Events are different to Custom Attributes in that events are information on what Users did and when they 
+ did it, whereas Custom Attributes represent the User’s current state as seen in their profile. For example, 
+ the first time they subscribed to a paid plan, or the most recent time they changed their plan would be 
+ represented by events, whereas a User Attribute would be used to record their current plan.
  
-        [Intercom loggingEnabled:YES];
+ Because Events are used for filtering and messaging, and event names are used directly in Intercom by 
+ your App’s Admins we recommend sending high-level activity about your users that you would like to message 
+ on, rather than raw clickstream or user interface actions. For example an order action is a good candidate 
+ for an Event, versus all the clicks and actions that were taken to get to that point. We also recommmend sending 
+ event names that combine a past tense verb and nouns, such as ‘created-project’.
  
- in your application delegate under where the api-key and app-id are set. Disable this for release builds should you wish to mute the SDK's output.
- @param logging A boolean value for enabling or disabling logging throughout the SDK.
- @note Logging is turned off by default. To see logs, please enable it in your application's delegate.
- @since Available since version 1.1.4
+ @param name The name of the event you wish to track.
+ 
+ @since 2.0
  */
++ (void)logEventWithName:(NSString *)name;
 
-+ (void)loggingEnabled:(BOOL)logging;
+/*!
+        http://doc.intercom.io/api/#event-metadata-types
+ */
++ (void)logEventWithName:(NSString *)name optionalMetaData:(NSDictionary *)metadata;
 
 //=========================================================================================================
-/** @name Troubleshooting a statusbar offset. */
+/** @name Push notifications. */
 //=========================================================================================================
 /*!
- Depending on the composition of your rootViewController, sometimes in messages appear to be offset by 20 pixels, the height of the status bar.
- This is due to Apple's expectation of navigation controllers being used as top level contructs and not beind children of UIViewControllers.
- 
- If messages being displayed in your apps appear 20 pixels out of place, call
- 
-    [Intercom requiresDisplayOffset:YES];
+ If you use Remote (Push) Notifications in your app, you can enable notification handling for Intercom's SDK with this
+ call. (Please note you still need to call [UIApplication sharedApplication] registerForRemoteNotificationTypes:).
+ This should be placed in the iOS application delegate like so;
 
- and the SDK will force messages to draw 20 pixels higher.
+     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+     {
+         // Override point for customization after application launch
+         ...
+         [Intercom registerForRemoteNotifications];
+         return YES;
+     }
+ @note You must have enabled and configured push notifications through the SDK Settings page of your app on the web.
+ @since 2.0
+*/
++ (void)registerForRemoteNotifications;
+
+//=========================================================================================================
+/** @name Set the performance mode. */
+//=========================================================================================================
+/*!
+ Flag Intercom to remove elements that may cause performance impacts
  
- By default, this is set to NO.
- 
- @param offset A boolean value determining if the offset should be applied. NO by default.
- @note This bug has only been observed in iOS 6. In iOS 7 the display offset is ignored.
- @since Available since version 1.1.4
+ @since 2.0
  */
-+ (void)requiresDisplayOffset:(BOOL)offset;
++ (void)reducedGraphicsMode;
+
+//=========================================================================================================
+/** @name Set the base color. */
+//=========================================================================================================
+/*!
+ Set the base color used to draw elements in the Intercom SDK
+ This overrides the theme color set on intercom.io
+ 
+ @param color The UIColor you wish to set as your base color.
+ @since 2.0
+ */
++ (void)setBaseColor:(UIColor *)color;
 
 @end
