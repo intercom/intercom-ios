@@ -20,17 +20,6 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
     ICMPresentationModeTopRight     = 3,
 };
 
-extern NSString *const kIntercomErrorDomain;
-
-enum
-{
-    IntercomErrorUnknown            = -1,
-    IntercomSessionError            = 1001,
-    IntercomLoginError              = 1002,
-    IntercomCredentialsError        = 1003,
-    IntercomUpdateUserError         = 1004
-};
-
 /**
 Notifications thrown by the SDK when the SDK window is displayed and hidden. These notifications are fired only when
 there is a change in the state of the SDKs UI,
@@ -126,11 +115,30 @@ typedef void(^ICMCompletion)(NSError *error);
  */
 + (void)checkForUnreadMessages;
 
+//=========================================================================================================
+/** @name HideConversations. */
+//=========================================================================================================
+/*!
+ Used to hide the SDK conversations window
+ 
+ @since 2.0
+ */
 + (void)hideConversations:(BOOL)hide;
 
-+ (void)presentMessageView;
 
-+ (void)presentMessageViewWithCompletion:(ICMCompletion)completion;
+//=========================================================================================================
+/** @name Presentation. */
+//=========================================================================================================
+/*!
+ Present the message composer or the conversation list.
+ 
+ @param showConversationList set as YES to display the conversation list rather then the composer message screen.
+ 
+ @since 2.0
+ */
+
+
++ (void)presentMessageViewAsConversationList:(BOOL)showConversationList;
     
 //=========================================================================================================
 /** @name Session control. */
@@ -225,9 +233,38 @@ typedef void(^ICMCompletion)(NSError *error);
  */
 + (void)logEventWithName:(NSString *)name;
 
+//=========================================================================================================
+/** @name Events with meta data. */
+//=========================================================================================================
 /*!
-        http://doc.intercom.io/api/#event-metadata-types
+ 
+ Metadata Objects support a few simple types that Intercom can present on your behalf -
+ 
+ http://doc.intercom.io/api/#event-metadata-types
+ 
+ @param name The name of the event you wish to track.
+ @param metaData contains simple types to present to Intercom
+ 
+     {
+        "event_name" : "ordered-item",
+         "created_at": 1389913941,
+         "user_id": "314159",
+         "metadata": {
+         "order_date": 1392036272,
+         "stripe_invoice": "inv_3434343434",
+         "order_number": {
+         "value":"3434-3434",
+         "url": "https://example.org/orders/3434-3434"
+         },
+         "price": {
+            "currency":"usd",
+            "amount": 2999
+        }
+     }
+ 
+ @since 2.0
  */
+
 + (void)logEventWithName:(NSString *)name optionalMetaData:(NSDictionary *)metadata;
 
 //=========================================================================================================
@@ -249,16 +286,6 @@ typedef void(^ICMCompletion)(NSError *error);
  @since 2.0
 */
 + (void)registerForRemoteNotifications;
-
-//=========================================================================================================
-/** @name Set the performance mode. */
-//=========================================================================================================
-/*!
- Flag Intercom to remove elements that may cause performance impacts
- 
- @since 2.0
- */
-+ (void)reducedGraphicsMode;
 
 //=========================================================================================================
 /** @name Set the base color. */
