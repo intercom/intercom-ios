@@ -19,6 +19,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef void(^ICMCompletion)(NSError *error);
+
 /** This is the interface for the Intercom iOS SDK.  From here you can begin and end sessions, track, update or increment attributes 
  that you can use to create filters and segments out of on the web.
 
@@ -61,18 +63,20 @@
  @note Sessions only need to begin on authentication success.  Intercom listens for `UIApplication` state 
  changes so endSession doesn't need to be implemented in any additional locations other than a logout method.
  @param email The user's email address.
- @since Available since version 1.0
+ @param completion A completion block containing an error if the request failed, nil otherwise.
+ @since Available since version 1.1.9
  */
-+ (void)beginSessionForUserWithEmail:(NSString *)email;
++ (void)beginSessionForUserWithEmail:(NSString *)email withCompletion:(ICMCompletion)completion;;
 
 /*!
  Begins a session for the specified user but using a unique identifier rather than an email address.
  @note Sessions only need to begin on authentication success.  Intercom listens for `UIApplication` state
  changes so endSession doesn't need to be implemented in any additional locations other than a logout method.
  @param userId A unqiue identifier representing the user..
- @since Available since version 1.0
+ @param completion A completion block containing an error if the request failed, nil otherwise.
+ @since Available since version 1.1.9
  */
-+ (void)beginSessionForUserWithUserId:(NSString *)userId;
++ (void)beginSessionForUserWithUserId:(NSString *)userId withCompletion:(ICMCompletion)completion;
 
 /*!
  Begins a session for the specified user with both an email address and a unique identifier.  Only use this
@@ -81,9 +85,10 @@
  changes so endSession doesn't need to be implemented in any additional locations other than a logout method.
  @param userId A unqiue identifier representing the user..
  @param email The user's email address.
- @since Available since version 1.0
+ @param completion A completion block containing an error if the request failed, nil otherwise.
+ @since Available since version 1.1.9
  */
-+ (void)beginSessionForUserWithUserId:(NSString *)userId andEmail:(NSString *)email;
++ (void)beginSessionForUserWithUserId:(NSString *)userId andEmail:(NSString *)email withCompletion:(ICMCompletion)completion;
 
 /*!
  Ends a session for a user. Typically used while logged a user out. All other changes of application state

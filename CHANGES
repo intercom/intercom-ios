@@ -1,3 +1,7 @@
+= 1.1.9 (2-14-08-05)
+* Added completion blocks to session calls to help with race conditions when creating new users.
+* This is the final build supporting iOS 6, a new SDK is being launched that will deprecate this one.
+
 = 1.1.8 (2014-05-11)
 
 * Fixes an issue where messages might attempt to show multiple times instead of just once.

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = 'Intercom'
-  s.version           = '1.1.8'
+  s.version           = '1.1.9'
 
   s.summary           = 'The Intercom iOS SDK, for integrating Intercom into your iOS application.'
   s.description       = <<-DESC
