@@ -42,26 +42,29 @@ Intercom only tracks users who are logged in to your app.  With this in mind, yo
 There are three ways to begin a session, depending on the information available to you.
 
 1. **Email address.**  You can begin a session with a user's email address simply by using the following method at the point where your app successfully authenticates a user:
-    [Intercom beginSessionForUserWithEmail:"adam@intercom.io" withCompletion:^(NSError *error) {
+```
+[Intercom beginSessionForUserWithEmail:"adam@intercom.io" withCompletion:^(NSError *error) {
 	    if (!error) {
     		// Anything you would like to do once the user has been set, like update attributes.
 	    }
     }];
-
+```
 2. **UserId.** The same can be accomplished if you don't have a user's email address but you might have another unique identifier you are already sending to Intercom.  If this is the case, you could use the following;  
+```
     [Intercom beginSessionForUserWithUserId:@"12345"withCompletion:^(NSError *error) {
 	    if (!error) {
 		    // Anything you would like to do once the user has been set, like update attributes.
 	    }
     }];
-
+```
 3. **Both.** Should you have an ID you would like to couple with an email address, you can send them both;  
+```
     [Intercom beginSessionForUserWithUserId:@"12345" andEmail:@"adam@intercom.io"withCompletion:^(NSError *error) {
     	if (!error) {
 	        // Anything you would like to do once the user has been set, like update attributes.
 	    }
     }];
-
+```
 Once a session has begun, Intercom will track UIApplication state changes for you, so you won't need to explicity start and stop a session. Start on login and end on logout, we'll do the rest.
     
 ##End a session
