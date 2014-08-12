@@ -308,4 +308,14 @@ typedef void(^ICMCompletion)(NSError *error);
  */
 + (void)setBaseColor:(UIColor *)color;
 
+//=========================================================================================================
+/** @name Enable logging. */
+//=========================================================================================================
+/*!
+ Enable logging for the Intercom SDK. By calling this method, Intercom will display some debug information.
+ (it is recommended to use it only while debugging)
+
+ @since 2.0
+ */
++ (void)enableLogging;
 @end
