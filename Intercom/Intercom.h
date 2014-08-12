@@ -149,7 +149,7 @@ typedef void(^ICMCompletion)(NSError *error);
  @note Sessions only need to begin on authentication success.  Intercom listens for `UIApplication` state
  changes so endSession doesn't need to be implemented in any additional locations other than a logout method.
  @param email The user's email address.
- @since 1.0
+ @since 2.0
  */
 + (void)beginSessionForUserWithEmail:(NSString *)email completion:(ICMCompletion)completion;
 
@@ -158,9 +158,18 @@ typedef void(^ICMCompletion)(NSError *error);
  @note Sessions only need to begin on authentication success.  Intercom listens for `UIApplication` state
  changes so endSession doesn't need to be implemented in any additional locations other than a logout method.
  @param userId A unique identifier representing the user..
- @since 1.0
+ @since 2.0
  */
 + (void)beginSessionForUserWithUserId:(NSString *)userId completion:(ICMCompletion)completion;
+
+
+/*!
+ Begins a session for an anonymous user.
+ @warning This is an *experimental BETA feature* and not fully supported. Future work in Intercom will help support this. 
+ @note Creating a new session using either an email or user id automatically logs out the anonymous user.
+ @since 2.0
+ */
++ (void)beginSessionForAnonymousUserWithCompletion:(ICMCompletion)completion;
 
 /*!
  Ends a session for a user and deletes access tokens from the SDK instance. Typically used while logging a user out.
