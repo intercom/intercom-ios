@@ -1,8 +1,6 @@
-# BETA: Developer's Guide for the iOS SDK
+# Developer's Guide for the iOS SDK
 
-This is an early release of the new Intercom iOS SDK, which is still in development. Things are subject to change with no notice, we advise not shipping this to the App Store until this notice is amended.
-
-In order to use this beta, you must opt in to both the web and mobile in-app beta. Do to this, get in touch with us through Intercom.
+This is an early access release of the new Intercom iOS SDK. In order to use this release, you must opt in to both the web and mobile in-app beta. Do to this, please get in touch with us through Intercom.
 
 ## Requirements
 The Intercom iOS SDK currently supports iOS 7.x although we plan to support iOS 8 once it’s out of beta. The SDK is currently a universal binary so it will run in simulators and on devices.
@@ -18,10 +16,10 @@ or
 `[Intercom beginSessionForUserWithUserId:self.userId completion:nil];`
 And that's it. 
 
-Was that too fast? For more detailed instructions read the [step by step install instructions here](http://intercom.helpjuice.com/dashboard/questions/90342).
+Was that too fast? For more detailed instructions read the [step by step install instructions here](http://docs.intercom.io/90342-How-do-I-install-the-iOS-SDK-20).
 
 ## Developer's Advanced Guide
-If you want to learn about the following topics, [you find detailed information here](http://intercom.helpjuice.com/dashboard/questions/90339)
+If you want to learn about the following topics, [you find detailed information here](http://docs.intercom.io/90339-How-do-I-configure-my-iOS-SDK)
 - Session control
 - Updating a user
 - Working with attributes
@@ -30,6 +28,7 @@ If you want to learn about the following topics, [you find detailed information 
 - Events
 - Messaging
 - Using Push notifications
+- iOS SDK Architecture
 
 ## Logging
-By default the Intercom iOS SDK has logging disabled. Should you wish to enable it in a build, simply add INTERLOG=1 to the Preprocessor Macros of your app’s build target.
+By default the Intercom iOS SDK only logs errors. By calling the class method `enableLogging`, you can increase the log level. It is recommended to use this only for debugging purposes, not the App Store build.
