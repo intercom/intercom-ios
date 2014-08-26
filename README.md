@@ -12,7 +12,7 @@ pod 'Intercom', '~> 2.0.0'
 ```
 
 ### Manual Installation 
-- Add `Intercom.h` and `libIntercom.a` to your Xcode project (you can get them from [github](https://github.com/intercom/intercom-ios)). In your build target, include the `-ObjC` flag under `Other Linker Flags`.
+- Add `Intercom.h` and `libIntercom.a` to your Xcode project (you can get them from [here](https://github.com/intercom/intercom-ios/tree/master/Intercom)). In your build target, include the `-ObjC` flag under `Other Linker Flags`.
 - You'll need your Intercom App Id and the SDK API key. You can get them from your [Intercom App Settings](https://app.intercom.io/) -> API keys 
 - Initialize Intercom by calling:
 `[Intercom setApiKey:@"ios_sdk-..." forAppId:@"your_app_id"];`
