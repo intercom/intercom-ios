@@ -1,9 +1,17 @@
 # Developer's Guide for the Intercom iOS SDK
 
 ## Requirements
-The Intercom iOS SDK currently supports iOS 7.x although we plan to support iOS 8 once it’s out of beta.
+The Intercom iOS SDK supports iOS 7.x although we plan to support iOS 8 once it’s out of beta. 
+Remark: If you have an app that supports iOS 6, you can use the [old version](https://github.com/intercom/intercom-ios/tree/sdk1) of the Intercom iOS SDK.
 
 ## Quick Install
+# Using cocoapods
+Add Intercom pod into your Podfile
+```
+pod 'Intercom', '~> 2.0.0'
+```
+
+# Manual Installation 
 - Add `Intercom.h` and `libIntercom.a` to your Xcode project (you can get them from [github](https://github.com/intercom/intercom-ios)). In your build target, include the `-ObjC` flag under `Other Linker Flags`.
 - You'll need your Intercom App Id and the SDK API key. You can get them from your [Intercom App Settings](https://app.intercom.io/) -> API keys 
 - Initialize Intercom by calling:
