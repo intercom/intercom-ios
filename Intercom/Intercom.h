@@ -10,8 +10,8 @@
 #error This version (2.0) of the Intercom iOS SDK supports iOS 7.0 upwards.
 #endif
 
-@import Foundation;
-@import UIKit;
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, ICMPresentationMode){
     ICMPresentationModeBottomLeft   = 0,

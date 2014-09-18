@@ -1,14 +1,18 @@
+= 2.0.2 (2014-09-18)
+
+* Fixed dependency on Metal framework in Xcode 5.
+
 = 2.0.1 (2014-09-18)
 
-* Added support for iOS 8 (including remote notifications)
-* Fixed playing of videos on iOS 8 and issues with device rotation
-* Fixed issue where SDK events where not delivered if sent immediately before opening the inbox
-* UI improvements 
-* Other bug fixes
+* Added support for iOS 8 (including remote notifications).
+* Fixed playing of videos on iOS 8 and issues with device rotation.
+* Fixed issue where SDK events where not delivered if sent immediately before opening the inbox.
+* UI improvements.
+* Other bug fixes.
 
 = 2.0.0 (2014-08-26)
 
-* New release of the Intercom iOS SDK - see details here https://www.intercom.io/in-app-messaging
+* New release of the Intercom iOS SDK - see details here https://www.intercom.io/in-app-messaging.
 
 = 1.1.9 (2014-08-05)
 
