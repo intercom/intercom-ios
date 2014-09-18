@@ -1,7 +1,7 @@
 # Developer's Guide for the Intercom iOS SDK
 
 ## Requirements
-The Intercom iOS SDK supports iOS 7.x although we plan to support iOS 8 once it’s out of beta. 
+The Intercom iOS SDK supports iOS 7.x and iOS 8.0 
 Remark: If you have an app that supports iOS 6, you can use the [old version](https://github.com/intercom/intercom-ios/tree/sdk1) of the Intercom iOS SDK.
 
 ## Quick Install

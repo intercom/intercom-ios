@@ -17,7 +17,7 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
     ICMPresentationModeBottomLeft   = 0,
     ICMPresentationModeBottomRight  = 1,
     ICMPresentationModeTopLeft      = 2,
-    ICMPresentationModeTopRight     = 3,
+    ICMPresentationModeTopRight     = 3
 };
 
 /**
@@ -318,4 +318,5 @@ typedef void(^ICMCompletion)(NSError *error);
  @since 2.0
  */
 + (void)enableLogging;
+
 @end
