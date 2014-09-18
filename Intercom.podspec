@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = 'Intercom'
-  s.version           = '2.0.1'
+  s.version           = '2.0.2'
 
   s.summary           = 'The Intercom iOS SDK, for integrating Intercom into your iOS application.'
   s.description       = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.preserve_paths    = 'Intercom/libIntercom.a'
   s.requires_arc      = true
   
-  s.frameworks        = 'Foundation', 'Security', "Social"
+  s.frameworks        = 'Foundation', 'UIKit', 'Security', "SystemConfiguration", "MobileCoreServices", "ImageIO", "AVFoundation", "QuartzCore", "CoreGraphics"
   s.xcconfig          = { 'OTHER_LDFLAGS' => '-force_load "$(PODS_ROOT)/Intercom/Intercom/libIntercom.a"', 
                           'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/Intercom/Intercom' }
 end
