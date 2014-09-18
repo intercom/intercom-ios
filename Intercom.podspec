@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name              = 'Intercom'
-  s.version           = '2.0.0'
+  s.version           = '2.0.1'
 
   s.summary           = 'The Intercom iOS SDK, for integrating Intercom into your iOS application.'
   s.description       = <<-DESC
-                        The Intercom iOS SDK currently supports iOS7. iOS8 will be supported once it's out of beta. For iOS6 support you should check version 1.9 of the SDK. 
+                        The Intercom iOS SDK currently supports iOS 7.X and iOS 8. For iOS6 support you should check version 1.9 of the SDK. 
                         DESC
 
   s.homepage          = 'https://github.com/intercom/intercom-ios'
