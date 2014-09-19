@@ -1,3 +1,7 @@
+= 2.0.3 (2014-09-19)
+
+* Added missing architecture armv7s.
+
 = 2.0.2 (2014-09-18)
 
 * Fixed dependency on Metal framework in Xcode 5.
