@@ -15,10 +15,8 @@ Pod::Spec.new do |s|
 
   s.platform          = :ios, '7.0'
   s.source_files      = 'Intercom/Intercom.h'
-  s.preserve_paths    = 'Intercom/libIntercom.a'
+  s.vendored_libraries = ['Intercom/libIntercom.a']
   s.requires_arc      = true
-  
+
   s.frameworks        = 'Foundation', 'UIKit', 'Security', "SystemConfiguration", "MobileCoreServices", "ImageIO", "AVFoundation", "QuartzCore", "CoreGraphics"
-  s.xcconfig          = { 'OTHER_LDFLAGS' => '-force_load "$(PODS_ROOT)/Intercom/Intercom/libIntercom.a"', 
-                          'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/Intercom/Intercom' }
 end
