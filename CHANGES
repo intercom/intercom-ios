@@ -1,3 +1,7 @@
+= 2.0.4 (2014-09-30)
+
+* Fixed .podspec because it started failing in cocoapods 0.34.X (NO CHANGES MADE IN CODE)
+
 = 2.0.3 (2014-09-19)
 
 * Added missing architecture armv7s.
