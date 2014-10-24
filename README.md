@@ -1,26 +1,53 @@
 # Developer's Guide for the Intercom iOS SDK
 
 ## Requirements
-The Intercom iOS SDK supports iOS 7.x and iOS 8.0 
+The Intercom iOS SDK supports iOS 7.x and iOS 8.x.
 
 Remark: If you have an app that supports iOS 6, you can use the [old version](https://github.com/intercom/intercom-ios/tree/sdk1) of the Intercom iOS SDK.
 
 ## Quick Install
-### Using cocoapods
-Add Intercom pod into your Podfile
+### Option 1: Using cocoapods
+Add the Intercom pod into your Podfile
 ```
-pod 'Intercom', '~> 2.0.0'
+pod 'Intercom'
 ```
 
-### Manual Installation 
-- Add `Intercom.h` and `libIntercom.a` to your Xcode project (you can get them from [here](https://github.com/intercom/intercom-ios/tree/master/Intercom)). In your build target, include the `-ObjC` flag under `Other Linker Flags`. If you get errors, check out our [Troubleshooting section here](http://docs.intercom.io/install-on-your-mobile-product/install-the-intercom-ios-sdk#troubleshooting-installation).
-- You'll need your Intercom App Id and the SDK API key. You can get them from your [Intercom App Settings](https://app.intercom.io/) -> API keys 
+### Option 2: Manual Installation 
+- Add `Intercom.h` and `libIntercom.a` to your Xcode project (you can get them from [GitHub](https://github.com/intercom/intercom-ios/tree/master/Intercom)). In your build target, include the `-ObjC` flag under `Other Linker Flags`. 
+- Make sure you are linking the following frameworks: ImageIO, MobileCoreServices, SystemConfiguration, AVFoundation. If you get errors, check out our [Troubleshooting section here](http://docs.intercom.io/install-on-your-mobile-product/install-the-intercom-ios-sdk#troubleshooting-installation).
+## Initialize Intercom and Begin Session
+- You'll need your Intercom App Id and the SDK API key and you can get them from your [Intercom App Settings](https://app.intercom.io/) -> API keys.  The SDK API key should start with 'ios_sdk...'. If you only see keys starting with 'ios-...', check out our [Troubleshooting section here](http://docs.intercom.io/install-on-your-mobile-product/install-the-intercom-ios-sdk#troubleshooting-installation).
 - Initialize Intercom by calling:
 `[Intercom setApiKey:@"ios_sdk-..." forAppId:@"your_app_id"];`
 - Start a session by either calling
 `[Intercom beginSessionForUserWithEmail:self.userEmail completion:nil];`
+```
+    [Intercom beginSessionForUserWithEmail:self.dataSource.email
+        completion:^(NSError *error) {
+            // check the error object: only if we have no error, we have an active session and we can
+            // allow other Intercom calls (such as updating a user)
+            if (!error) {
+                // handleBeginSessionOK
+            } else {
+                // handleBeginSessionWithError:error
+            }
+    }];
+```
 or
 `[Intercom beginSessionForUserWithUserId:self.userId completion:nil];`
+```
+    [Intercom beginSessionForUserWithUserId:self.dataSource.userId
+        completion:^(NSError *error) {
+            // check the error object: only if we have no error, we have an active session and we can
+            // allow other Intercom calls (such as updating a user)
+            if (!error) {
+                // handleBeginSessionOK
+            } else {
+                // handleBeginSessionWithError:error
+            }
+    }];
+
+```
 And that's it. 
 
 Was that too fast? For more detailed instructions read the [step by step install instructions here](http://docs.intercom.io/install-on-your-mobile-product/install-the-intercom-ios-sdk#step-by-step-install).
