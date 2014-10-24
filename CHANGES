@@ -1,3 +1,10 @@
+= 2.0.5 (2014-10-24)
+
+* General stability improvements (fixed several scenarios that could crash the host app)
+* Fixed inconsistencies caused by refreshing data (items in conversation list and unread badge)
+* Fixed an issue where the navigation bar items became unresponsive on iOS 7 landscape-only apps
+* Several other minor bug fixes and improvements
+
 = 2.0.4 (2014-09-30)
 
 * Fixed .podspec because it started failing in cocoapods 0.34.X (NO CHANGES MADE IN CODE)
