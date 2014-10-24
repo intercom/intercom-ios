@@ -44,14 +44,13 @@ or
                 // handleBeginSessionWithError:error
             }
     }];
-
 ```
 And that's it. 
 
 Was that too fast? For more detailed instructions read the [step by step install instructions here](http://docs.intercom.io/install-on-your-mobile-product/install-the-intercom-ios-sdk#step-by-step-install).
 
 ## Developer's Advanced Guide
-If you want to learn about the following topics, [you find detailed information here](http://docs.intercom.io/install-on-your-mobile-product/configure-the-ios-sdk)
+If you want to learn about the following topics, [you find detailed information here](http://docs.intercom.io/install-on-your-mobile-product/configure-the-ios-sdk-part-2)
 - Session control
 - Updating a user
 - Working with attributes
@@ -61,6 +60,7 @@ If you want to learn about the following topics, [you find detailed information 
 - Messaging
 - Using Push notifications
 - Intercom iOS SDK Architecture and Prerequisites
+- [How to configure Secure Mode in the SDK](http://docs.intercom.io/install-on-your-mobile-product/install-ios-sdk-part-3)
 
 ## Logging
 By default the Intercom iOS SDK only logs errors. By calling the class method `enableLogging`, you can increase the log level. It is recommended to use this only for debugging purposes, not the App Store build.
