@@ -20,8 +20,7 @@ pod 'Intercom'
 - Initialize Intercom by calling:
 `[Intercom setApiKey:@"ios_sdk-..." forAppId:@"your_app_id"];`
 - Start a session by either calling
-`[Intercom beginSessionForUserWithEmail:self.userEmail completion:nil];`
-```
+```objc
     [Intercom beginSessionForUserWithEmail:self.dataSource.email
         completion:^(NSError *error) {
             // check the error object: only if we have no error, we have an active session and we can
@@ -34,8 +33,7 @@ pod 'Intercom'
     }];
 ```
 or
-`[Intercom beginSessionForUserWithUserId:self.userId completion:nil];`
-```
+```objc
     [Intercom beginSessionForUserWithUserId:self.dataSource.userId
         completion:^(NSError *error) {
             // check the error object: only if we have no error, we have an active session and we can
