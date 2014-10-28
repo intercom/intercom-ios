@@ -51,7 +51,7 @@ And that's it.
 Was that too fast? For more detailed instructions read the [step by step install instructions here](http://docs.intercom.io/install-on-your-mobile-product/install-the-intercom-ios-sdk#step-by-step-install).
 
 ## Developer's Advanced Guide
-If you want to learn about the following topics, [you find detailed information here](http://docs.intercom.io/install-on-your-mobile-product/configure-the-ios-sdk-part-2)
+If you want to learn about the following topics, [you find detailed information here](http://docs.intercom.io/install-on-your-mobile-product/configure-the-ios-sdk-part-2). You also find the [Intercom docset on cocoadocs](http://cocoadocs.org/docsets/Intercom).
 - Session control
 - Updating a user
 - Working with attributes
