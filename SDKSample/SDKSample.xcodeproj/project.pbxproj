@@ -15,17 +15,23 @@
 		2A1CE8F319BE3AE3006664F3 /* ITCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CE8F219BE3AE3006664F3 /* ITCAppDelegate.m */; };
 		2A1CE8F619BE3AE3006664F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1CE8F419BE3AE3006664F3 /* Main.storyboard */; };
 		2A1CE8F919BE3AE3006664F3 /* ITCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CE8F819BE3AE3006664F3 /* ITCViewController.m */; };
-		2A1CE8FB19BE3AE3006664F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1CE8FA19BE3AE3006664F3 /* Images.xcassets */; };
-		2A1E219419D5BE48008D05AF /* libIntercomSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E219319D5BE48008D05AF /* libIntercomSDK.a */; };
 		2A1E219619D5BE7D008D05AF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E219519D5BE7D008D05AF /* ImageIO.framework */; };
 		2A1E219819D5BE86008D05AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E219719D5BE86008D05AF /* AVFoundation.framework */; };
 		2A1E219A19D5BE90008D05AF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E219919D5BE90008D05AF /* MobileCoreServices.framework */; };
 		2A1E219C19D5BE9C008D05AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E219B19D5BE9C008D05AF /* SystemConfiguration.framework */; };
 		2A299EF719BE3E410001547B /* ITCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A299EF519BE3E410001547B /* ITCTableViewCell.m */; };
 		2A299EFB19BE41C10001547B /* ITCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A299EFA19BE41C10001547B /* ITCUtils.m */; };
-		2A332B1819BEFC86007EF459 /* ITCTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A332B1719BEFC86007EF459 /* ITCTableViewDataSource.m */; };
+		2A332B1819BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A332B1719BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.m */; };
 		2A332B1C19BEFE57007EF459 /* ITCTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A332B1B19BEFE57007EF459 /* ITCTableViewDelegate.m */; };
 		2AD5BA7019E6F4DC005CB9DA /* ITCResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5BA6F19E6F4DC005CB9DA /* ITCResultView.m */; };
+		AB198B181A091AF600E4FACE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB198B171A091AF600E4FACE /* Images.xcassets */; };
+		ABEF6C361A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C351A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.m */; };
+		ABEF6C391A0B896B0062B50E /* ITCSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C381A0B896B0062B50E /* ITCSessionManager.m */; };
+		ABEF6C3C1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C3B1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.m */; };
+		ABEF6C3F1A0B8DC00062B50E /* NSString+ITCValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C3E1A0B8DC00062B50E /* NSString+ITCValidation.m */; };
+		ABEF6C421A0B93550062B50E /* ITCUserIdAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C411A0B93550062B50E /* ITCUserIdAlertViewDelegate.m */; };
+		ABEF6C461A0B95D90062B50E /* ITCSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C451A0B95D90062B50E /* ITCSDKManager.m */; };
+		ABEF6C491A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C481A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +48,6 @@
 		2A1CE8F519BE3AE3006664F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A1CE8F719BE3AE3006664F3 /* ITCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITCViewController.h; sourceTree = "<group>"; };
 		2A1CE8F819BE3AE3006664F3 /* ITCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITCViewController.m; sourceTree = "<group>"; };
-		2A1CE8FA19BE3AE3006664F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2A1CE90119BE3AE3006664F3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2A1E219319D5BE48008D05AF /* libIntercomSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIntercomSDK.a; path = "../../DerivedData/IntercomSDK/Build/Products/Debug-iphoneos/libIntercomSDK.a"; sourceTree = "<group>"; };
 		2A1E219519D5BE7D008D05AF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -54,12 +59,27 @@
 		2A299EF519BE3E410001547B /* ITCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewCell.m; sourceTree = "<group>"; };
 		2A299EF919BE41C10001547B /* ITCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCUtils.h; sourceTree = "<group>"; };
 		2A299EFA19BE41C10001547B /* ITCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCUtils.m; sourceTree = "<group>"; };
-		2A332B1619BEFC86007EF459 /* ITCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCTableViewDataSource.h; sourceTree = "<group>"; };
-		2A332B1719BEFC86007EF459 /* ITCTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewDataSource.m; sourceTree = "<group>"; };
+		2A332B1619BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCTableViewDataSourceWithNoSession.h; sourceTree = "<group>"; };
+		2A332B1719BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewDataSourceWithNoSession.m; sourceTree = "<group>"; };
 		2A332B1A19BEFE57007EF459 /* ITCTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCTableViewDelegate.h; sourceTree = "<group>"; };
 		2A332B1B19BEFE57007EF459 /* ITCTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewDelegate.m; sourceTree = "<group>"; };
 		2AD5BA6E19E6F4DC005CB9DA /* ITCResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCResultView.h; sourceTree = "<group>"; };
 		2AD5BA6F19E6F4DC005CB9DA /* ITCResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCResultView.m; sourceTree = "<group>"; };
+		AB198B171A091AF600E4FACE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ABEF6C341A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCTableViewDataSourceWithSessionActive.h; sourceTree = "<group>"; };
+		ABEF6C351A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewDataSourceWithSessionActive.m; sourceTree = "<group>"; };
+		ABEF6C371A0B896B0062B50E /* ITCSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCSessionManager.h; sourceTree = "<group>"; };
+		ABEF6C381A0B896B0062B50E /* ITCSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCSessionManager.m; sourceTree = "<group>"; };
+		ABEF6C3A1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCEmailAlertViewDelegate.h; sourceTree = "<group>"; };
+		ABEF6C3B1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCEmailAlertViewDelegate.m; sourceTree = "<group>"; };
+		ABEF6C3D1A0B8DC00062B50E /* NSString+ITCValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ITCValidation.h"; sourceTree = "<group>"; };
+		ABEF6C3E1A0B8DC00062B50E /* NSString+ITCValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ITCValidation.m"; sourceTree = "<group>"; };
+		ABEF6C401A0B93550062B50E /* ITCUserIdAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCUserIdAlertViewDelegate.h; sourceTree = "<group>"; };
+		ABEF6C411A0B93550062B50E /* ITCUserIdAlertViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCUserIdAlertViewDelegate.m; sourceTree = "<group>"; };
+		ABEF6C441A0B95D90062B50E /* ITCSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCSDKManager.h; sourceTree = "<group>"; };
+		ABEF6C451A0B95D90062B50E /* ITCSDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCSDKManager.m; sourceTree = "<group>"; };
+		ABEF6C471A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ITCUpdateSessionHeaderView.h"; sourceTree = "<group>"; };
+		ABEF6C481A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ITCUpdateSessionHeaderView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +91,6 @@
 				2A1E219A19D5BE90008D05AF /* MobileCoreServices.framework in Frameworks */,
 				2A1E219819D5BE86008D05AF /* AVFoundation.framework in Frameworks */,
 				2A1E219619D5BE7D008D05AF /* ImageIO.framework in Frameworks */,
-				2A1E219419D5BE48008D05AF /* libIntercomSDK.a in Frameworks */,
 				2A1CE8E519BE3AE3006664F3 /* CoreGraphics.framework in Frameworks */,
 				2A1CE8E719BE3AE3006664F3 /* UIKit.framework in Frameworks */,
 				2A1CE8E319BE3AE3006664F3 /* Foundation.framework in Frameworks */,
@@ -120,21 +139,11 @@
 				2A1E219D19D5C273008D05AF /* ITCIntercomSettings.h */,
 				2A1CE8F119BE3AE3006664F3 /* ITCAppDelegate.h */,
 				2A1CE8F219BE3AE3006664F3 /* ITCAppDelegate.m */,
-				2A332B1A19BEFE57007EF459 /* ITCTableViewDelegate.h */,
-				2A332B1B19BEFE57007EF459 /* ITCTableViewDelegate.m */,
-				2A1CE8FA19BE3AE3006664F3 /* Images.xcassets */,
+				ABEF6C441A0B95D90062B50E /* ITCSDKManager.h */,
+				ABEF6C451A0B95D90062B50E /* ITCSDKManager.m */,
+				ABEF6C431A0B94030062B50E /* All other files */,
+				AB198B171A091AF600E4FACE /* Images.xcassets */,
 				2A1CE8E919BE3AE3006664F3 /* Supporting Files */,
-				2A1CE8F419BE3AE3006664F3 /* Main.storyboard */,
-				2A332B1619BEFC86007EF459 /* ITCTableViewDataSource.h */,
-				2A332B1719BEFC86007EF459 /* ITCTableViewDataSource.m */,
-				2A299EF419BE3E410001547B /* ITCTableViewCell.h */,
-				2A299EF519BE3E410001547B /* ITCTableViewCell.m */,
-				2A1CE8F719BE3AE3006664F3 /* ITCViewController.h */,
-				2A1CE8F819BE3AE3006664F3 /* ITCViewController.m */,
-				2AD5BA6E19E6F4DC005CB9DA /* ITCResultView.h */,
-				2AD5BA6F19E6F4DC005CB9DA /* ITCResultView.m */,
-				2A299EF919BE41C10001547B /* ITCUtils.h */,
-				2A299EFA19BE41C10001547B /* ITCUtils.m */,
 			);
 			path = SDKSample;
 			sourceTree = "<group>";
@@ -148,6 +157,70 @@
 				2A1CE8F019BE3AE3006664F3 /* SDKSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABEF6C431A0B94030062B50E /* All other files */ = {
+			isa = PBXGroup;
+			children = (
+				2A1CE8F419BE3AE3006664F3 /* Main.storyboard */,
+				ABEF6C371A0B896B0062B50E /* ITCSessionManager.h */,
+				ABEF6C381A0B896B0062B50E /* ITCSessionManager.m */,
+				ABEF6C4D1A0BB59C0062B50E /* TableView: Controller and Delegate */,
+				ABEF6C4C1A0BB5700062B50E /* Data Sources */,
+				ABEF6C4B1A0BB5660062B50E /* AlertView Delegates */,
+				ABEF6C4A1A0BB55C0062B50E /* Categories and Helpers */,
+			);
+			name = "All other files";
+			sourceTree = "<group>";
+		};
+		ABEF6C4A1A0BB55C0062B50E /* Categories and Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2AD5BA6E19E6F4DC005CB9DA /* ITCResultView.h */,
+				2AD5BA6F19E6F4DC005CB9DA /* ITCResultView.m */,
+				2A299EF919BE41C10001547B /* ITCUtils.h */,
+				2A299EFA19BE41C10001547B /* ITCUtils.m */,
+				ABEF6C3D1A0B8DC00062B50E /* NSString+ITCValidation.h */,
+				ABEF6C3E1A0B8DC00062B50E /* NSString+ITCValidation.m */,
+				ABEF6C471A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.h */,
+				ABEF6C481A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.m */,
+			);
+			name = "Categories and Helpers";
+			sourceTree = "<group>";
+		};
+		ABEF6C4B1A0BB5660062B50E /* AlertView Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				ABEF6C3A1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.h */,
+				ABEF6C3B1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.m */,
+				ABEF6C401A0B93550062B50E /* ITCUserIdAlertViewDelegate.h */,
+				ABEF6C411A0B93550062B50E /* ITCUserIdAlertViewDelegate.m */,
+			);
+			name = "AlertView Delegates";
+			sourceTree = "<group>";
+		};
+		ABEF6C4C1A0BB5700062B50E /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2A332B1619BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.h */,
+				2A332B1719BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.m */,
+				ABEF6C341A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.h */,
+				ABEF6C351A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.m */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		ABEF6C4D1A0BB59C0062B50E /* TableView: Controller and Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2A1CE8F719BE3AE3006664F3 /* ITCViewController.h */,
+				2A1CE8F819BE3AE3006664F3 /* ITCViewController.m */,
+				2A332B1A19BEFE57007EF459 /* ITCTableViewDelegate.h */,
+				2A332B1B19BEFE57007EF459 /* ITCTableViewDelegate.m */,
+				2A299EF419BE3E410001547B /* ITCTableViewCell.h */,
+				2A299EF519BE3E410001547B /* ITCTableViewCell.m */,
+			);
+			name = "TableView: Controller and Delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A1CE8FB19BE3AE3006664F3 /* Images.xcassets in Resources */,
+				AB198B181A091AF600E4FACE /* Images.xcassets in Resources */,
 				2A1CE8ED19BE3AE3006664F3 /* InfoPlist.strings in Resources */,
 				2A1CE8F619BE3AE3006664F3 /* Main.storyboard in Resources */,
 			);
@@ -222,13 +295,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A299EF719BE3E410001547B /* ITCTableViewCell.m in Sources */,
+				ABEF6C3F1A0B8DC00062B50E /* NSString+ITCValidation.m in Sources */,
 				2A299EFB19BE41C10001547B /* ITCUtils.m in Sources */,
+				ABEF6C461A0B95D90062B50E /* ITCSDKManager.m in Sources */,
 				2A1CE8F919BE3AE3006664F3 /* ITCViewController.m in Sources */,
 				2A1CE8EF19BE3AE3006664F3 /* main.m in Sources */,
 				2AD5BA7019E6F4DC005CB9DA /* ITCResultView.m in Sources */,
+				ABEF6C3C1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.m in Sources */,
 				2A1CE8F319BE3AE3006664F3 /* ITCAppDelegate.m in Sources */,
-				2A332B1819BEFC86007EF459 /* ITCTableViewDataSource.m in Sources */,
+				ABEF6C421A0B93550062B50E /* ITCUserIdAlertViewDelegate.m in Sources */,
+				2A332B1819BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.m in Sources */,
 				2A332B1C19BEFE57007EF459 /* ITCTableViewDelegate.m in Sources */,
+				ABEF6C361A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.m in Sources */,
+				ABEF6C491A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.m in Sources */,
+				ABEF6C391A0B896B0062B50E /* ITCSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

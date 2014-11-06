@@ -1,5 +1,5 @@
 //
-//  ITCAppDelegate.h
+//  NSString+ITCValidation.m
 //  SDKSample
 //
 //  Copyright 2014 Intercom
@@ -16,10 +16,18 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#import <UIKit/UIKit.h>
+#import "NSString+ITCValidation.h"
 
-@interface ITCAppDelegate : UIResponder <UIApplicationDelegate>
+@implementation NSString (ITCValidation)
 
-@property (strong, nonatomic) UIWindow *window;
+- (BOOL)isValidEmail {
+    NSString *emailRegex = @".+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2}[A-Za-z]*";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:self];
+}
+
+- (BOOL)isValidUserId {
+    return self.length > 0;
+}
 
 @end

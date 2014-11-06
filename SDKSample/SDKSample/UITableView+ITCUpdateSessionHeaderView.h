@@ -1,5 +1,5 @@
 //
-//  ITCAppDelegate.h
+//  UITableView+ITCUpdateSessionHeaderView.h
 //  SDKSample
 //
 //  Copyright 2014 Intercom
@@ -18,8 +18,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ITCAppDelegate : UIResponder <UIApplicationDelegate>
+@interface UITableView (ITCUpdateSessionHeaderView)
 
-@property (strong, nonatomic) UIWindow *window;
+- (void)updateSessionHeaderView;
 
 @end

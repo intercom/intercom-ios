@@ -1,5 +1,5 @@
 //
-//  ITCAppDelegate.h
+//  NSString+ITCValidation.h
 //  SDKSample
 //
 //  Copyright 2014 Intercom
@@ -16,10 +16,11 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ITCAppDelegate : UIResponder <UIApplicationDelegate>
+@interface NSString (ITCValidation)
 
-@property (strong, nonatomic) UIWindow *window;
+- (BOOL)isValidEmail;
+- (BOOL)isValidUserId;
 
 @end
