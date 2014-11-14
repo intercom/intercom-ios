@@ -1,3 +1,12 @@
+= 2.0.6 (2014-11-14)
+
+* Improved handling of Intercom SDK push notifications
+* Show an SDK error screen if the Message Composer/Conversation List has been opened without credentials
+* Fixed an issue where the notification view sometimes did not disappear after the message has been read by the user
+* Improved and documented error codes returned by SDK calls
+* Fixed an issue where the navigation bar items became unresponsive when the host app was compiled with iOS 7 Base SDK
+* Several other minor bug fixes and improvements
+
 = 2.0.5 (2014-10-24)
 
 * General stability improvements (fixed several scenarios that could crash the host app)

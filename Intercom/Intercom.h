@@ -16,7 +16,7 @@
 //=========================================================================================================
 /** @name Intercom Presentation Modes */
 //=========================================================================================================
-/*!  Use these values to constrain an incoming notification view to a defined section of the window. */
+/*! Use these values to constrain an incoming notification view to a defined section of the window. */
 typedef NS_ENUM(NSUInteger, ICMPresentationMode){
     /** Show the notification view in the bottom left area of the screen */
     ICMPresentationModeBottomLeft   = 0,
@@ -27,6 +27,23 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
     /** Show the notification view in the top right area of the screen */
     ICMPresentationModeTopRight     = 3
 };
+
+//=========================================================================================================
+/** @name Intercom SDK Error Domain and Error Codes */
+//=========================================================================================================
+/*! Use these values to identify errors returned by the Intercom iOS SDK */
+UIKIT_EXTERN NSString *const IntercomSDKErrorDomain;
+
+typedef NS_ENUM(NSInteger, ICMSDKError) {
+    /** Mandatory parameter missing */
+    ICMSDKErrorParameterMissing     = 1001,
+    /** Credentials missing (no session begun for user) */
+    ICMSDKErrorCredentialsMissing   = 1002,
+    /** Error occured when trying to update user */
+    ICMSDKErrorUpdateUserError      = 1003
+};
+
+
 
 //=========================================================================================================
 /** @name Intercom Notifications */
@@ -46,6 +63,19 @@ UIKIT_EXTERN NSString *const IntercomWindowWillHideNotification;
 UIKIT_EXTERN NSString *const IntercomWindowDidHideNotification;
 
 typedef void(^ICMCompletion)(NSError *error);
+
+//=========================================================================================================
+/** @name Intercom session listener protocol. */
+//=========================================================================================================
+/*!
+ Protocol that must be implemented by any object that will be passed as a session listener. It will get notified of
+ changes in the session state of the SDK.
+
+ @since 2.0.6
+ */
+@protocol IntercomSessionListener <NSObject>
+- (void)intercomSessionStatusDidChange:(BOOL)isSessionOpen;
+@end
 
 /*! Intercom contains all the class methods to interact with Intercom. */
 @interface Intercom : NSObject
@@ -75,8 +105,10 @@ typedef void(^ICMCompletion)(NSError *error);
 /*!
  Initialize the SDK with additional parameters for advanced security. The securityOptions dictionary
  should contain a user specific data string `data` and the HMAC digest `hmac` for that data string.
-
-    [Intercom setApiKey:@"ios_sdk-2245d7aa263cb1def70bc95b66109bd18d6a9c35" 
+ For more details about [Secure Mode see here](http://docs.intercom.io/install-on-your-mobile-product/install-ios-sdk-part-3 )
+ 
+ 
+    [Intercom setApiKey:@"ios_sdk-2245d7aa263cb1def70bc95b66109bd18d6a9c35"
                forAppId:@"a2qhfto6" 
         securityOptions:@{
             @"data" : @"user@myapp.com",
@@ -203,8 +235,8 @@ typedef void(^ICMCompletion)(NSError *error);
  
     [Intercom updateUserWithAttributes:@{
         @"email" : @"admin@intercom.io",
-        @"name" : @"Admin Name" }
-    ];
+        @"name" : @"Admin Name"
+    }];
  
  Custom user attributes can be created and modified by passing a custom_attributes dictionary
  You do not have to create attributes in Intercom beforehand. If one hasn't been seen before, it will be 
@@ -256,7 +288,7 @@ typedef void(^ICMCompletion)(NSError *error);
  
     [Intercom updateUserWithAttributes:@{
         @"email" : @"admin@intercom.io",
-        @"name" : @"Admin Name" }
+        @"name" : @"Admin Name"
     } completion:^(NSError *error) {
         // handleError:error
     }];
@@ -496,6 +528,7 @@ typedef void(^ICMCompletion)(NSError *error);
  Used to hide the SDK conversations window.
  
  @since 2.0
+ @param hide This is a bool that specifies if the SDK needs to hide conversations
  @deprecated in 2.0.5 - Use method 'hideNotifications:' instead
  */
 + (void)hideConversations:(BOOL)hide __attribute((deprecated("Use method 'hideNotifications:' instead")));
@@ -522,5 +555,18 @@ typedef void(^ICMCompletion)(NSError *error);
  @since 2.0
  */
 + (void)enableLogging;
+
+//=========================================================================================================
+/** @name Listen for session state changes. */
+//=========================================================================================================
+/*!
+ By setting a session listener, you will be notified of changes in the session state of the SDK, so you 
+ can update your UI according to these changes (e.g. if you have a button to open our message composer, 
+ you could disable this button if there is no Intercom session)
+
+ @param sessionListener Object that implements the IntercomSessionListener protocol
+ @since 2.0.6
+ */
++ (void)setSessionListener:(id<IntercomSessionListener>)sessionListener;
 
 @end
