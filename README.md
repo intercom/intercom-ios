@@ -3,8 +3,6 @@
 ## Requirements
 The Intercom iOS SDK supports iOS 7.x and iOS 8.x.
 
-Remark: If you have an app that supports iOS 6, you can use the [old version](https://github.com/intercom/intercom-ios/tree/sdk1) of the Intercom iOS SDK.
-
 ## Quick Install
 ### Option 1: Using cocoapods
 Add the Intercom pod into your Podfile
@@ -21,30 +19,30 @@ pod 'Intercom'
 - Initialize Intercom by calling:
 `[Intercom setApiKey:@"ios_sdk-..." forAppId:@"your_app_id"];`
 - Start a session by either calling
-```objc
-    [Intercom beginSessionForUserWithEmail:self.dataSource.email
-        completion:^(NSError *error) {
-            // check the error object: only if we have no error, we have an active session and we can
-            // allow other Intercom calls (such as updating a user)
-            if (!error) {
-                // handleBeginSessionOK
-            } else {
-                // handleBeginSessionWithError:error
-            }
-    }];
+```objective-c
+[Intercom beginSessionForUserWithEmail:self.dataSource.email
+    completion:^(NSError *error) {
+        // check the error object: only if we have no error, we have an active session and we can
+        // allow other Intercom calls (such as updating a user)
+        if (!error) {
+            // handleBeginSessionOK
+        } else {
+            // handleBeginSessionWithError:error
+        }
+}];
 ```
 or
 ```objc
-    [Intercom beginSessionForUserWithUserId:self.dataSource.userId
-        completion:^(NSError *error) {
-            // check the error object: only if we have no error, we have an active session and we can
-            // allow other Intercom calls (such as updating a user)
-            if (!error) {
-                // handleBeginSessionOK
-            } else {
-                // handleBeginSessionWithError:error
-            }
-    }];
+[Intercom beginSessionForUserWithUserId:self.dataSource.userId
+    completion:^(NSError *error) {
+        // check the error object: only if we have no error, we have an active session and we can
+        // allow other Intercom calls (such as updating a user)
+        if (!error) {
+            // handleBeginSessionOK
+        } else {
+            // handleBeginSessionWithError:error
+        }
+}];
 ```
 And that's it. 
 
