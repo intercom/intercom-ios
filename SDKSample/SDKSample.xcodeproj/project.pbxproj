@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09EF456E44229756A886C401 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C72B65D9D24D29640A1611B0 /* libPods.a */; };
 		2A1CE8E319BE3AE3006664F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1CE8E219BE3AE3006664F3 /* Foundation.framework */; };
 		2A1CE8E519BE3AE3006664F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1CE8E419BE3AE3006664F3 /* CoreGraphics.framework */; };
 		2A1CE8E719BE3AE3006664F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1CE8E619BE3AE3006664F3 /* UIKit.framework */; };
@@ -14,27 +15,29 @@
 		2A1CE8EF19BE3AE3006664F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CE8EE19BE3AE3006664F3 /* main.m */; };
 		2A1CE8F319BE3AE3006664F3 /* ITCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CE8F219BE3AE3006664F3 /* ITCAppDelegate.m */; };
 		2A1CE8F619BE3AE3006664F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1CE8F419BE3AE3006664F3 /* Main.storyboard */; };
-		2A1CE8F919BE3AE3006664F3 /* ITCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1CE8F819BE3AE3006664F3 /* ITCViewController.m */; };
 		2A1E219619D5BE7D008D05AF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E219519D5BE7D008D05AF /* ImageIO.framework */; };
 		2A1E219819D5BE86008D05AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E219719D5BE86008D05AF /* AVFoundation.framework */; };
 		2A1E219A19D5BE90008D05AF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E219919D5BE90008D05AF /* MobileCoreServices.framework */; };
 		2A1E219C19D5BE9C008D05AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1E219B19D5BE9C008D05AF /* SystemConfiguration.framework */; };
 		2A299EF719BE3E410001547B /* ITCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A299EF519BE3E410001547B /* ITCTableViewCell.m */; };
 		2A299EFB19BE41C10001547B /* ITCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A299EFA19BE41C10001547B /* ITCUtils.m */; };
-		2A332B1819BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A332B1719BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.m */; };
 		2A332B1C19BEFE57007EF459 /* ITCTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A332B1B19BEFE57007EF459 /* ITCTableViewDelegate.m */; };
 		2AD5BA7019E6F4DC005CB9DA /* ITCResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD5BA6F19E6F4DC005CB9DA /* ITCResultView.m */; };
 		AB198B181A091AF600E4FACE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB198B171A091AF600E4FACE /* Images.xcassets */; };
-		ABEF6C361A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C351A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.m */; };
-		ABEF6C391A0B896B0062B50E /* ITCSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C381A0B896B0062B50E /* ITCSessionManager.m */; };
+		ABD5382C1A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionActive.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD538271A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionActive.m */; };
+		ABD5382D1A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD538291A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionLoading.m */; };
+		ABD5382E1A23668000AB5F1A /* ITCTableViewDataSourceWithUserNotAuthenticated.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD5382B1A23668000AB5F1A /* ITCTableViewDataSourceWithUserNotAuthenticated.m */; };
+		ABD538331A23669200AB5F1A /* ITCSDKHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD538301A23669200AB5F1A /* ITCSDKHandler.m */; };
+		ABD538341A23669200AB5F1A /* ITCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD538321A23669200AB5F1A /* ITCTableViewController.m */; };
+		ABD538371A23669E00AB5F1A /* ITCUserAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD538361A23669E00AB5F1A /* ITCUserAuthenticationManager.m */; };
 		ABEF6C3C1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C3B1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.m */; };
 		ABEF6C3F1A0B8DC00062B50E /* NSString+ITCValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C3E1A0B8DC00062B50E /* NSString+ITCValidation.m */; };
 		ABEF6C421A0B93550062B50E /* ITCUserIdAlertViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C411A0B93550062B50E /* ITCUserIdAlertViewDelegate.m */; };
-		ABEF6C461A0B95D90062B50E /* ITCSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C451A0B95D90062B50E /* ITCSDKManager.m */; };
 		ABEF6C491A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6C481A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10934CB3DD7556245EBC85FD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2A1CE8DF19BE3AE3006664F3 /* SDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1CE8E219BE3AE3006664F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2A1CE8E419BE3AE3006664F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,8 +49,6 @@
 		2A1CE8F119BE3AE3006664F3 /* ITCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITCAppDelegate.h; sourceTree = "<group>"; };
 		2A1CE8F219BE3AE3006664F3 /* ITCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITCAppDelegate.m; sourceTree = "<group>"; };
 		2A1CE8F519BE3AE3006664F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2A1CE8F719BE3AE3006664F3 /* ITCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITCViewController.h; sourceTree = "<group>"; };
-		2A1CE8F819BE3AE3006664F3 /* ITCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITCViewController.m; sourceTree = "<group>"; };
 		2A1CE90119BE3AE3006664F3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2A1E219319D5BE48008D05AF /* libIntercomSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIntercomSDK.a; path = "../../DerivedData/IntercomSDK/Build/Products/Debug-iphoneos/libIntercomSDK.a"; sourceTree = "<group>"; };
 		2A1E219519D5BE7D008D05AF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -59,27 +60,33 @@
 		2A299EF519BE3E410001547B /* ITCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewCell.m; sourceTree = "<group>"; };
 		2A299EF919BE41C10001547B /* ITCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCUtils.h; sourceTree = "<group>"; };
 		2A299EFA19BE41C10001547B /* ITCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCUtils.m; sourceTree = "<group>"; };
-		2A332B1619BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCTableViewDataSourceWithNoSession.h; sourceTree = "<group>"; };
-		2A332B1719BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewDataSourceWithNoSession.m; sourceTree = "<group>"; };
 		2A332B1A19BEFE57007EF459 /* ITCTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCTableViewDelegate.h; sourceTree = "<group>"; };
 		2A332B1B19BEFE57007EF459 /* ITCTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewDelegate.m; sourceTree = "<group>"; };
 		2AD5BA6E19E6F4DC005CB9DA /* ITCResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCResultView.h; sourceTree = "<group>"; };
 		2AD5BA6F19E6F4DC005CB9DA /* ITCResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCResultView.m; sourceTree = "<group>"; };
+		6D26AEB0D699B694596B2FC1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AB198B171A091AF600E4FACE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		ABEF6C341A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCTableViewDataSourceWithSessionActive.h; sourceTree = "<group>"; };
-		ABEF6C351A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewDataSourceWithSessionActive.m; sourceTree = "<group>"; };
-		ABEF6C371A0B896B0062B50E /* ITCSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCSessionManager.h; sourceTree = "<group>"; };
-		ABEF6C381A0B896B0062B50E /* ITCSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCSessionManager.m; sourceTree = "<group>"; };
+		ABD538261A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionActive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCTableViewDataSourceWithIntercomSessionActive.h; sourceTree = "<group>"; };
+		ABD538271A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionActive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewDataSourceWithIntercomSessionActive.m; sourceTree = "<group>"; };
+		ABD538281A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCTableViewDataSourceWithIntercomSessionLoading.h; sourceTree = "<group>"; };
+		ABD538291A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewDataSourceWithIntercomSessionLoading.m; sourceTree = "<group>"; };
+		ABD5382A1A23668000AB5F1A /* ITCTableViewDataSourceWithUserNotAuthenticated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCTableViewDataSourceWithUserNotAuthenticated.h; sourceTree = "<group>"; };
+		ABD5382B1A23668000AB5F1A /* ITCTableViewDataSourceWithUserNotAuthenticated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewDataSourceWithUserNotAuthenticated.m; sourceTree = "<group>"; };
+		ABD5382F1A23669200AB5F1A /* ITCSDKHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCSDKHandler.h; sourceTree = "<group>"; };
+		ABD538301A23669200AB5F1A /* ITCSDKHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCSDKHandler.m; sourceTree = "<group>"; };
+		ABD538311A23669200AB5F1A /* ITCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCTableViewController.h; sourceTree = "<group>"; };
+		ABD538321A23669200AB5F1A /* ITCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCTableViewController.m; sourceTree = "<group>"; };
+		ABD538351A23669E00AB5F1A /* ITCUserAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCUserAuthenticationManager.h; sourceTree = "<group>"; };
+		ABD538361A23669E00AB5F1A /* ITCUserAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCUserAuthenticationManager.m; sourceTree = "<group>"; };
 		ABEF6C3A1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCEmailAlertViewDelegate.h; sourceTree = "<group>"; };
 		ABEF6C3B1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCEmailAlertViewDelegate.m; sourceTree = "<group>"; };
 		ABEF6C3D1A0B8DC00062B50E /* NSString+ITCValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ITCValidation.h"; sourceTree = "<group>"; };
 		ABEF6C3E1A0B8DC00062B50E /* NSString+ITCValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ITCValidation.m"; sourceTree = "<group>"; };
 		ABEF6C401A0B93550062B50E /* ITCUserIdAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCUserIdAlertViewDelegate.h; sourceTree = "<group>"; };
 		ABEF6C411A0B93550062B50E /* ITCUserIdAlertViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCUserIdAlertViewDelegate.m; sourceTree = "<group>"; };
-		ABEF6C441A0B95D90062B50E /* ITCSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCSDKManager.h; sourceTree = "<group>"; };
-		ABEF6C451A0B95D90062B50E /* ITCSDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCSDKManager.m; sourceTree = "<group>"; };
 		ABEF6C471A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ITCUpdateSessionHeaderView.h"; sourceTree = "<group>"; };
 		ABEF6C481A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ITCUpdateSessionHeaderView.m"; sourceTree = "<group>"; };
+		C72B65D9D24D29640A1611B0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +101,7 @@
 				2A1CE8E519BE3AE3006664F3 /* CoreGraphics.framework in Frameworks */,
 				2A1CE8E719BE3AE3006664F3 /* UIKit.framework in Frameworks */,
 				2A1CE8E319BE3AE3006664F3 /* Foundation.framework in Frameworks */,
+				09EF456E44229756A886C401 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +114,7 @@
 				2A1CE8E819BE3AE3006664F3 /* SDKSample */,
 				2A1CE8E119BE3AE3006664F3 /* Frameworks */,
 				2A1CE8E019BE3AE3006664F3 /* Products */,
+				4E0E59615E01D4A5A0FA92D8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +138,7 @@
 				2A1CE8E419BE3AE3006664F3 /* CoreGraphics.framework */,
 				2A1CE8E619BE3AE3006664F3 /* UIKit.framework */,
 				2A1CE90119BE3AE3006664F3 /* XCTest.framework */,
+				C72B65D9D24D29640A1611B0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,10 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				2A1E219D19D5C273008D05AF /* ITCIntercomSettings.h */,
-				2A1CE8F119BE3AE3006664F3 /* ITCAppDelegate.h */,
 				2A1CE8F219BE3AE3006664F3 /* ITCAppDelegate.m */,
-				ABEF6C441A0B95D90062B50E /* ITCSDKManager.h */,
-				ABEF6C451A0B95D90062B50E /* ITCSDKManager.m */,
+				ABD538301A23669200AB5F1A /* ITCSDKHandler.m */,
+				ABD538321A23669200AB5F1A /* ITCTableViewController.m */,
 				ABEF6C431A0B94030062B50E /* All other files */,
 				AB198B171A091AF600E4FACE /* Images.xcassets */,
 				2A1CE8E919BE3AE3006664F3 /* Supporting Files */,
@@ -159,12 +168,41 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4E0E59615E01D4A5A0FA92D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10934CB3DD7556245EBC85FD /* Pods.debug.xcconfig */,
+				6D26AEB0D699B694596B2FC1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ABD538381A2366BC00AB5F1A /* Include Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABEF6C3A1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.h */,
+				ABEF6C401A0B93550062B50E /* ITCUserIdAlertViewDelegate.h */,
+				2AD5BA6E19E6F4DC005CB9DA /* ITCResultView.h */,
+				2A299EF919BE41C10001547B /* ITCUtils.h */,
+				ABEF6C3D1A0B8DC00062B50E /* NSString+ITCValidation.h */,
+				ABD538261A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionActive.h */,
+				ABD538281A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionLoading.h */,
+				ABD5382A1A23668000AB5F1A /* ITCTableViewDataSourceWithUserNotAuthenticated.h */,
+				ABD538351A23669E00AB5F1A /* ITCUserAuthenticationManager.h */,
+				2A332B1A19BEFE57007EF459 /* ITCTableViewDelegate.h */,
+				2A299EF419BE3E410001547B /* ITCTableViewCell.h */,
+				2A1CE8F119BE3AE3006664F3 /* ITCAppDelegate.h */,
+				ABD5382F1A23669200AB5F1A /* ITCSDKHandler.h */,
+				ABD538311A23669200AB5F1A /* ITCTableViewController.h */,
+			);
+			name = "Include Files";
+			sourceTree = "<group>";
+		};
 		ABEF6C431A0B94030062B50E /* All other files */ = {
 			isa = PBXGroup;
 			children = (
 				2A1CE8F419BE3AE3006664F3 /* Main.storyboard */,
-				ABEF6C371A0B896B0062B50E /* ITCSessionManager.h */,
-				ABEF6C381A0B896B0062B50E /* ITCSessionManager.m */,
+				ABD538381A2366BC00AB5F1A /* Include Files */,
 				ABEF6C4D1A0BB59C0062B50E /* TableView: Controller and Delegate */,
 				ABEF6C4C1A0BB5700062B50E /* Data Sources */,
 				ABEF6C4B1A0BB5660062B50E /* AlertView Delegates */,
@@ -176,11 +214,8 @@
 		ABEF6C4A1A0BB55C0062B50E /* Categories and Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				2AD5BA6E19E6F4DC005CB9DA /* ITCResultView.h */,
 				2AD5BA6F19E6F4DC005CB9DA /* ITCResultView.m */,
-				2A299EF919BE41C10001547B /* ITCUtils.h */,
 				2A299EFA19BE41C10001547B /* ITCUtils.m */,
-				ABEF6C3D1A0B8DC00062B50E /* NSString+ITCValidation.h */,
 				ABEF6C3E1A0B8DC00062B50E /* NSString+ITCValidation.m */,
 				ABEF6C471A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.h */,
 				ABEF6C481A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.m */,
@@ -191,9 +226,7 @@
 		ABEF6C4B1A0BB5660062B50E /* AlertView Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				ABEF6C3A1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.h */,
 				ABEF6C3B1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.m */,
-				ABEF6C401A0B93550062B50E /* ITCUserIdAlertViewDelegate.h */,
 				ABEF6C411A0B93550062B50E /* ITCUserIdAlertViewDelegate.m */,
 			);
 			name = "AlertView Delegates";
@@ -202,10 +235,9 @@
 		ABEF6C4C1A0BB5700062B50E /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
-				2A332B1619BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.h */,
-				2A332B1719BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.m */,
-				ABEF6C341A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.h */,
-				ABEF6C351A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.m */,
+				ABD538271A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionActive.m */,
+				ABD538291A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionLoading.m */,
+				ABD5382B1A23668000AB5F1A /* ITCTableViewDataSourceWithUserNotAuthenticated.m */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -213,11 +245,8 @@
 		ABEF6C4D1A0BB59C0062B50E /* TableView: Controller and Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				2A1CE8F719BE3AE3006664F3 /* ITCViewController.h */,
-				2A1CE8F819BE3AE3006664F3 /* ITCViewController.m */,
-				2A332B1A19BEFE57007EF459 /* ITCTableViewDelegate.h */,
+				ABD538361A23669E00AB5F1A /* ITCUserAuthenticationManager.m */,
 				2A332B1B19BEFE57007EF459 /* ITCTableViewDelegate.m */,
-				2A299EF419BE3E410001547B /* ITCTableViewCell.h */,
 				2A299EF519BE3E410001547B /* ITCTableViewCell.m */,
 			);
 			name = "TableView: Controller and Delegate";
@@ -230,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A1CE91119BE3AE3006664F3 /* Build configuration list for PBXNativeTarget "SDKSample" */;
 			buildPhases = (
+				2606068A8F9CD3B42E21EF21 /* Check Pods Manifest.lock */,
 				2A1CE8DB19BE3AE3006664F3 /* Sources */,
 				2A1CE8DC19BE3AE3006664F3 /* Frameworks */,
 				2A1CE8DD19BE3AE3006664F3 /* Resources */,
+				419BF146A91B98DF7DC5DCCA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,26 +320,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2606068A8F9CD3B42E21EF21 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		419BF146A91B98DF7DC5DCCA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2A1CE8DB19BE3AE3006664F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD538331A23669200AB5F1A /* ITCSDKHandler.m in Sources */,
 				2A299EF719BE3E410001547B /* ITCTableViewCell.m in Sources */,
+				ABD5382C1A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionActive.m in Sources */,
+				ABD538371A23669E00AB5F1A /* ITCUserAuthenticationManager.m in Sources */,
+				ABD5382D1A23668000AB5F1A /* ITCTableViewDataSourceWithIntercomSessionLoading.m in Sources */,
 				ABEF6C3F1A0B8DC00062B50E /* NSString+ITCValidation.m in Sources */,
 				2A299EFB19BE41C10001547B /* ITCUtils.m in Sources */,
-				ABEF6C461A0B95D90062B50E /* ITCSDKManager.m in Sources */,
-				2A1CE8F919BE3AE3006664F3 /* ITCViewController.m in Sources */,
+				ABD5382E1A23668000AB5F1A /* ITCTableViewDataSourceWithUserNotAuthenticated.m in Sources */,
 				2A1CE8EF19BE3AE3006664F3 /* main.m in Sources */,
 				2AD5BA7019E6F4DC005CB9DA /* ITCResultView.m in Sources */,
 				ABEF6C3C1A0B8D5D0062B50E /* ITCEmailAlertViewDelegate.m in Sources */,
 				2A1CE8F319BE3AE3006664F3 /* ITCAppDelegate.m in Sources */,
 				ABEF6C421A0B93550062B50E /* ITCUserIdAlertViewDelegate.m in Sources */,
-				2A332B1819BEFC86007EF459 /* ITCTableViewDataSourceWithNoSession.m in Sources */,
+				ABD538341A23669200AB5F1A /* ITCTableViewController.m in Sources */,
 				2A332B1C19BEFE57007EF459 /* ITCTableViewDelegate.m in Sources */,
-				ABEF6C361A0B88AC0062B50E /* ITCTableViewDataSourceWithSessionActive.m in Sources */,
 				ABEF6C491A0BB2850062B50E /* UITableView+ITCUpdateSessionHeaderView.m in Sources */,
-				ABEF6C391A0B896B0062B50E /* ITCSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +485,7 @@
 		};
 		2A1CE91219BE3AE3006664F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10934CB3DD7556245EBC85FD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -433,6 +499,7 @@
 		};
 		2A1CE91319BE3AE3006664F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D26AEB0D699B694596B2FC1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

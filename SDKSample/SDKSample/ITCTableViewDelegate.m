@@ -18,17 +18,17 @@
 
 #import "ITCTableViewDelegate.h"
 #import "ITCUtils.h"
-#import "ITCSessionManager.h"
+#import "ITCUserAuthenticationManager.h"
 #import "ITCEmailAlertViewDelegate.h"
 #import "ITCUserIdAlertViewDelegate.h"
-#import "ITCSDKManager.h"
+#import "ITCSDKHandler.h"
 #import "ITCIntercomSettings.h"
 
 @interface ITCTableViewDelegate ()
 @property (nonatomic, weak)   UITableView *tableView;
 @property (nonatomic, strong) ITCEmailAlertViewDelegate *emailAlertViewDelegate;
 @property (nonatomic, strong) ITCUserIdAlertViewDelegate *userIdAlertViewDelegate;
-@property (nonatomic, strong) ITCSDKManager *intercomSDKManager;
+@property (nonatomic, strong) ITCSDKHandler *intercomSDKManager;
 @end
 
 
@@ -43,10 +43,10 @@
     [cell setSelected:NO animated:YES];
     
     if (!self.intercomSDKManager) {
-        self.intercomSDKManager = [[ITCSDKManager alloc] initWithTableView:tableView];
+        self.intercomSDKManager = [[ITCSDKHandler alloc] init];
     }
 
-    if (![ITCSessionManager sharedSessionManager].isSessionActive) {
+    if (![ITCUserAuthenticationManager sharedAuthenticationManager].isUserAuthenticated) {
         self.tableView = tableView;
         
         if (type == ITCCellTypeBeginSessionEmail) {
@@ -57,6 +57,9 @@
             
         }
         
+    } else if (![ITCUserAuthenticationManager sharedAuthenticationManager].isIntercomSessionOpen) {
+        // no action required - tring to establish a session with Intercom
+
     } else {
         
         if (type == ITCCellTypeUpdateUser) {
@@ -81,6 +84,7 @@
             [self.intercomSDKManager handlePresentConversationList];
             
         } else if (type == ITCCellTypeEndSession) {
+            [[ITCUserAuthenticationManager sharedAuthenticationManager] setUserAuthenticated:NO];
             [self.intercomSDKManager handleEndSession];    // reloading will hide all cells except the 'Begin Session' one
         }
     }
@@ -88,27 +92,27 @@
 
 #pragma mark - Private methods
 
-- (void)promptForUserEmailWithSDKManager:(ITCSDKManager *)intercomSDKManager {
+- (void)promptForUserEmailWithSDKManager:(ITCSDKHandler *)intercomSDKManager {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"User Email"
                                                         message:@"Accept default email or enter new one"
                                                        delegate:self
                                               cancelButtonTitle:nil
-                                              otherButtonTitles:@"Begin Session", nil];
+                                              otherButtonTitles:@"Log In", nil];
     alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
-    [alertView textFieldAtIndex:0].text = [ITCSessionManager sharedSessionManager].email ? : kIntercomSampleUserEmail;
+    [alertView textFieldAtIndex:0].text = [ITCUserAuthenticationManager sharedAuthenticationManager].email ? : kIntercomSampleUserEmail;
     self.emailAlertViewDelegate = [[ITCEmailAlertViewDelegate alloc] initWithDelegate:intercomSDKManager];
     alertView.delegate = self.emailAlertViewDelegate;
     [alertView show];
 }
 
-- (void)promptForUserIdWithSDKManager:(ITCSDKManager *)intercomSDKManager {
+- (void)promptForUserIdWithSDKManager:(ITCSDKHandler *)intercomSDKManager {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"User Id"
                                                         message:@"Accept default userId or enter new one"
                                                        delegate:self
                                               cancelButtonTitle:nil
-                                              otherButtonTitles:@"Begin Session", nil];
+                                              otherButtonTitles:@"Log In", nil];
     alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
-    [alertView textFieldAtIndex:0].text = [ITCSessionManager sharedSessionManager].userId ? : kIntercomSampleUserId;
+    [alertView textFieldAtIndex:0].text = [ITCUserAuthenticationManager sharedAuthenticationManager].userId ? : kIntercomSampleUserId;
     self.userIdAlertViewDelegate = [[ITCUserIdAlertViewDelegate alloc] initWithDelegate:intercomSDKManager];
     alertView.delegate = self.userIdAlertViewDelegate;
     [alertView show];

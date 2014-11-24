@@ -1,5 +1,5 @@
 //
-//  ITCTableViewDataSourceWithSessionActive.m
+//  ITCTableViewDataSourceWithUserNotAuthenticated.m
 //  SDKSample
 //
 //  Copyright 2014 Intercom
@@ -16,14 +16,14 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#import "ITCTableViewDataSourceWithSessionActive.h"
+#import "ITCTableViewDataSourceWithUserNotAuthenticated.h"
 #import "ITCTableViewCell.h"
 
-@interface ITCTableViewDataSourceWithSessionActive ()
+@interface ITCTableViewDataSourceWithUserNotAuthenticated ()
 @property (nonatomic, strong) NSDictionary *dataSourceItems;
 @end
 
-@implementation ITCTableViewDataSourceWithSessionActive
+@implementation ITCTableViewDataSourceWithUserNotAuthenticated
 
 #pragma mark - Init
 
@@ -31,15 +31,10 @@
 {
     self = [super init];
     if (self) {
+        
         self.dataSourceItems = @{
-                                 @(ITCCellTypeUpdateUser): @"Update User",
-                                 @(ITCCellTypeUpdateCompany): @"Update Company Attributes",
-                                 @(ITCCellTypeUpdateCustomAttributes): @"Update Custom Attributes",
-                                 @(ITCCellTypeSubmitEvent): @"Submit Event",
-                                 @(ITCCellTypeSubmitEventWithMetaData): @"Submit Event with meta data",
-                                 @(ITCCellTypePresentMessageComposer): @"Present Message Composer",
-                                 @(ITCCellTypePresentConversationList): @"Present Conversation List",
-                                 @(ITCCellTypeEndSession): @"End Session"
+                                 @(ITCCellTypeBeginSessionEmail): @"Log in user by Email",
+                                 @(ITCCellTypeBeginSessionUserId): @"Log in user by UserId",
                                  };
     }
     return self;

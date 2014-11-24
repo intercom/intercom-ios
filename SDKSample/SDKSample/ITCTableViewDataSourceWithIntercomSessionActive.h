@@ -1,5 +1,5 @@
 //
-//  ITCTableViewDataSourceWithSessionActive.h
+//  ITCTableViewDataSourceWithIntercomSessionActive.h
 //  SDKSample
 //
 //  Copyright 2014 Intercom
@@ -19,6 +19,6 @@
 #import <Foundation/Foundation.h>
 #import "ITCTableViewDelegate.h"
 
-@interface ITCTableViewDataSourceWithSessionActive : NSObject <UITableViewDataSource>
+@interface ITCTableViewDataSourceWithIntercomSessionActive : NSObject <UITableViewDataSource>
 
 @end

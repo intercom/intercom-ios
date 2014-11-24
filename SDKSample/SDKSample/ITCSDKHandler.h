@@ -1,5 +1,5 @@
 //
-//  ITCSessionManager.h
+//  ITCSDKHandler.h
 //  SDKSample
 //
 //  Copyright 2014 Intercom
@@ -17,14 +17,9 @@
 //  limitations under the License.
 
 #import <Foundation/Foundation.h>
+#import "ITCTableViewDelegate.h"
 
-@interface ITCSessionManager : NSObject
 
-@property (nonatomic, copy) NSString *email;
-@property (nonatomic, copy) NSString *userId;
-@property (nonatomic, getter=isSessionActive, assign) BOOL sessionActive;
-@property (nonatomic, readonly) id<UITableViewDataSource> dataSourceForSession;
-
-+ (instancetype)sharedSessionManager;
+@interface ITCSDKHandler : NSObject <ITCIntercomSDKCallsProtocol>
 
 @end

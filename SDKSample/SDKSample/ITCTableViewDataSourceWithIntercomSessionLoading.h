@@ -1,5 +1,5 @@
 //
-//  ITCSDKManager.h
+//  ITCTableViewDataSourceWithIntercomSessionLoading.h
 //  SDKSample
 //
 //  Copyright 2014 Intercom
@@ -19,8 +19,6 @@
 #import <Foundation/Foundation.h>
 #import "ITCTableViewDelegate.h"
 
-@interface ITCSDKManager : NSObject <ITCIntercomSDKCallsProtocol>
-
-- (instancetype)initWithTableView:(UITableView *)tableView;
+@interface ITCTableViewDataSourceWithIntercomSessionLoading : NSObject <UITableViewDataSource>
 
 @end

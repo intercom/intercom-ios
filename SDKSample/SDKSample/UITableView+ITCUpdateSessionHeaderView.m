@@ -17,19 +17,19 @@
 //  limitations under the License.
 
 #import "UITableView+ITCUpdateSessionHeaderView.h"
-#import "ITCSessionManager.h"
+#import "ITCUserAuthenticationManager.h"
+
 
 @implementation UITableView (ITCUpdateSessionHeaderView)
 
 - (void)updateSessionHeaderView {
     UILabel *label = (UILabel *)[self.tableHeaderView viewWithTag:200];
     NSAssert([label isKindOfClass:[UILabel class]], @"expected label");
-    if ([ITCSessionManager sharedSessionManager].isSessionActive) {
-        label.text = [ITCSessionManager sharedSessionManager].email.length>0 ? [NSString stringWithFormat:@"Session Active for email %@", [ITCSessionManager sharedSessionManager].email] : [NSString stringWithFormat:@"Session Active for userId %@", [ITCSessionManager sharedSessionManager].userId];
+    if ([ITCUserAuthenticationManager sharedAuthenticationManager].isUserAuthenticated) {
+        label.text = [ITCUserAuthenticationManager sharedAuthenticationManager].email.length>0 ? [NSString stringWithFormat:@"User logged in with email %@", [ITCUserAuthenticationManager sharedAuthenticationManager].email] : [NSString stringWithFormat:@"User logged in with userId %@", [ITCUserAuthenticationManager sharedAuthenticationManager].userId];
     } else {
         label.text = @"";
     }
 }
-
 
 @end

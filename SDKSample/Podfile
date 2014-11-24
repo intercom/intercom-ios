@@ -1,1 +1,1 @@
-pod 'Intercom',  :git => 'https://github.com/intercom/intercom-ios.git', :branch => 'sdksampleapp'
+pod 'Intercom'

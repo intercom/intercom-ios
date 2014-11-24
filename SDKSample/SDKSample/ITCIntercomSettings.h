@@ -23,5 +23,5 @@ static NSString *kIntercomSampleUserId = @"1002";
 
 // this is the hmac generated using the user's email address. It can be generated from the
 // command line using the following commands:
-// echo -n "the user's email address" | openssl dgst -sha1 -hmac "your API secret"
+// echo -n "the user's email address" | openssl dgst -sha256 -hmac "your API secret"
 static NSString *kIntercomSampleUserEmailHmac = @"";

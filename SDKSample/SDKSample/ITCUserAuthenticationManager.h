@@ -1,5 +1,5 @@
 //
-//  ITCViewController.h
+//  ITCUserAuthenticationManager.h
 //  SDKSample
 //
 //  Copyright 2014 Intercom
@@ -16,8 +16,15 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ITCViewController : UITableViewController <UITableViewDataSource>
+@interface ITCUserAuthenticationManager : NSObject
+
+@property (nonatomic, copy) NSString *email;
+@property (nonatomic, copy) NSString *userId;
+@property (nonatomic, getter=isUserAuthenticated, assign) BOOL userAuthenticated;
+@property (nonatomic, getter=isIntercomSessionOpen, assign) BOOL intercomSessionOpen;
+
++ (instancetype)sharedAuthenticationManager;
 
 @end

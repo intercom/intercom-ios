@@ -23,13 +23,13 @@
 
 @implementation ITCAppDelegate
 
-- (void)configureIntercom {
+- (void)configureIntercomWithLaunchOptions:(NSDictionary *)launchOptions application:(UIApplication *)application {
     
     // enable Intercom logging for debugging purposes
     [Intercom enableLogging];
     
     // ===================================================
-    // Configure Intercom: set Intercom API key and App Id
+    // Mandatory: Set Intercom API key and App Id
     // ===================================================
 
     // Option 1: configure 'normal' mode
@@ -43,13 +43,40 @@
     //                          @"hmac" : kIntercomSampleUserEmailHmac
     //                          }
     //     ];
+
+    
+    // ===================================================
+    // Optional: Enable Push Notifications in Intercom
+    // ===================================================
+    
+    // Prerequisite: you need to export your certificate and private key and upload the PEM file to Intercom.
+    // see details http://docs.intercom.io/install-on-your-mobile-product/configure-the-ios-sdk-part-2#using-push-notifications
+    [Intercom registerForRemoteNotifications];
+    
+    // see also code in applicationWillEnterForeground: to register for push
+    
+    NSDictionary *notificationPayload = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
+    if (notificationPayload) {
+        // we have a remote notification for the app to process; i.e. the app was launched by tapping on a push notification alert
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self application:application didReceiveRemoteNotification:notificationPayload];
+        });
+    }
+
+    
+    // ===================================================
+    // Optional: Customize Intercom Notification position
+    // ===================================================
+    
+    [Intercom setPresentationMode:ICMPresentationModeBottomRight];
+    
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
 
-    [self configureIntercom];
+    [self configureIntercomWithLaunchOptions:launchOptions application:application];
     
     return YES;
 }
@@ -69,6 +96,25 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    // if you are using Push Notifications
+    
+    // reset the app icon badge value
+    [application setApplicationIconBadgeNumber:0];
+    
+    // register for push notifications; this has changed in iOS 8
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]){ // iOS8
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIRemoteNotificationTypeBadge |
+                                                                                                    UIRemoteNotificationTypeSound |
+                                                                                                    UIRemoteNotificationTypeAlert)
+                                                                                        categories:nil]];
+        [application registerForRemoteNotifications];
+    } else {
+        [application registerForRemoteNotificationTypes:(UIRemoteNotificationType)
+         (UIRemoteNotificationTypeBadge |
+          UIRemoteNotificationTypeSound |
+          UIRemoteNotificationTypeAlert)];
+    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

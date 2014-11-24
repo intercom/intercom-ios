@@ -18,7 +18,7 @@
 
 #import "ITCEmailAlertViewDelegate.h"
 #import "NSString+ITCValidation.h"
-#import "ITCSessionManager.h"
+#import "ITCUserAuthenticationManager.h"
 #import "ITCResultView.h"
 
 @interface ITCEmailAlertViewDelegate ()
@@ -30,7 +30,8 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     NSString *userEmail = [alertView textFieldAtIndex:0].text;
     if ([userEmail isValidEmail]) {
-        [[ITCSessionManager sharedSessionManager] setEmail:userEmail];
+        [[ITCUserAuthenticationManager sharedAuthenticationManager] setEmail:userEmail];
+        [[ITCUserAuthenticationManager sharedAuthenticationManager] setUserAuthenticated:YES];
         [self.delegate handleBeginSessionEmail];
     } else {
         [ITCResultView showErrorString:@"Please try again" description:@"Invalid email"];

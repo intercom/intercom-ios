@@ -18,7 +18,7 @@
 
 #import "ITCUserIdAlertViewDelegate.h"
 #import "NSString+ITCValidation.h"
-#import "ITCSessionManager.h"
+#import "ITCUserAuthenticationManager.h"
 #import "ITCResultView.h"
 
 @interface ITCUserIdAlertViewDelegate ()
@@ -30,7 +30,8 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     NSString *userId = [alertView textFieldAtIndex:0].text;
     if ([userId isValidUserId]) {
-        [[ITCSessionManager sharedSessionManager] setUserId:userId];
+        [[ITCUserAuthenticationManager sharedAuthenticationManager] setUserId:userId];
+        [[ITCUserAuthenticationManager sharedAuthenticationManager] setUserAuthenticated:YES];
         [self.delegate handleBeginSessionUserId];
     } else {
         [ITCResultView showErrorString:@"Please try again" description:@"Invalid userId"];

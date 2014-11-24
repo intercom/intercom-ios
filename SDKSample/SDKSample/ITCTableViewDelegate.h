@@ -24,6 +24,10 @@ typedef NS_ENUM(NSUInteger, ITCCellTypeBeginSession) {
     ITCCellTypeBeginSessionUserId,
 };
 
+typedef NS_ENUM(NSUInteger, ITCCellTypeLoadingSession) {
+    ITCCellTypeLoadingSessionOngoing,
+};
+
 typedef NS_ENUM(NSUInteger, ITCCellType) {
     ITCCellTypeUpdateUser,
     ITCCellTypeUpdateCompany,
@@ -48,7 +52,7 @@ typedef NS_ENUM(NSUInteger, ITCCellType) {
 - (void)handleEndSession;
 @end
 
-@class ITCTableViewDataSourceWithNoSession;
+@class ITCTableViewDataSourceWithUserNotAuthenticated;
 
 
 @interface ITCTableViewDelegate : NSObject <UITableViewDelegate>

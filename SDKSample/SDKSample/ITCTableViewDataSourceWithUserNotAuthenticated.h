@@ -1,5 +1,5 @@
 //
-//  ITCTableViewDataSource.h
+//  ITCTableViewDataSourceWithUserNotAuthenticated.h
 //  SDKSample
 //
 //  Copyright 2014 Intercom
@@ -19,6 +19,6 @@
 #import <Foundation/Foundation.h>
 #import "ITCTableViewDelegate.h"
 
-@interface ITCTableViewDataSourceWithNoSession : NSObject <UITableViewDataSource>
+@interface ITCTableViewDataSourceWithUserNotAuthenticated : NSObject <UITableViewDataSource>
 
 @end
