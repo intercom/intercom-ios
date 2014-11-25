@@ -105,7 +105,7 @@ typedef void(^ICMCompletion)(NSError *error);
 /*!
  Initialize the SDK with additional parameters for advanced security. The securityOptions dictionary
  should contain a user specific data string `data` and the HMAC digest `hmac` for that data string.
- For more details about [Secure Mode see here](http://docs.intercom.io/install-on-your-mobile-product/install-ios-sdk-part-3 )
+ For more details about [Secure Mode see here](<http://docs.intercom.io/install-on-your-mobile-product/secure-mode-ios-sdk>)
  
  
     [Intercom setApiKey:@"ios_sdk-2245d7aa263cb1def70bc95b66109bd18d6a9c35"
@@ -224,7 +224,7 @@ typedef void(^ICMCompletion)(NSError *error);
  Update user attributes.
  
  Updating attributes allows for the submission of multiple attributes with custom values.
- A detailed list with the fields you can use to [update a user is available here](http://doc.intercom.io/api/#create-or-update-user)
+ A detailed list with the fields you can use to [update a user is available here](<http://doc.intercom.io/api/#create-or-update-user>)
  Attributes such as the user email can be updated by calling
  
     [Intercom updateUserWithAttributes:@{
@@ -260,7 +260,7 @@ typedef void(^ICMCompletion)(NSError *error);
     ]}];
 
  id is a required field for adding or modifying a company. A detailed description of the 
- [company model is available here](http://doc.intercom.io/api/#companies)
+ [company model is available here](<http://doc.intercom.io/api/#companies>)
  
 
  @param attributes This is a dictionary containing key/value pairs for multiple attributes.
@@ -274,7 +274,7 @@ typedef void(^ICMCompletion)(NSError *error);
  Update user attributes.
  
  Updating attributes allows for the submission of multiple attributes with custom values.
- A detailed list with the fields you can use to [update a user is available here](http://doc.intercom.io/api/#create-or-update-user)
+ A detailed list with the fields you can use to [update a user is available here](<http://doc.intercom.io/api/#create-or-update-user>)
  Attributes such as the user email can be updated by calling
  
  
@@ -320,7 +320,7 @@ typedef void(^ICMCompletion)(NSError *error);
      }];
  
  id is a required field for adding or modifying a company. A detailed description of the
- [company model is available here](http://doc.intercom.io/api/#companies)
+ [company model is available here](<http://doc.intercom.io/api/#companies>)
 
  @param attributes This is a dictionary containing key/value pairs for multiple attributes.
  @param completion The completion block to be executed after the update operation is done.
@@ -388,7 +388,7 @@ typedef void(^ICMCompletion)(NSError *error);
 
 /*!
  Metadata Objects support a few simple types that Intercom can present on your behalf, see the 
- [Intercom API docs](http://doc.intercom.io/api/#event-metadata-types)
+ [Intercom API docs](<http://doc.intercom.io/api/#event-metadata-types>)
  
  @param name The name of the event you wish to track.
  @param metadata contains simple types to present to Intercom
