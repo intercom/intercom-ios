@@ -12,7 +12,7 @@ pod 'Intercom'
 
 ### Option 2: Manual Installation 
 - Add `Intercom.h` and `libIntercom.a` to your Xcode project (you can get them from [GitHub](https://github.com/intercom/intercom-ios/tree/master/Intercom)). In your build target, include the `-ObjC` flag under `Other Linker Flags`. 
-- Make sure you are linking the following frameworks: ImageIO, MobileCoreServices, SystemConfiguration, AVFoundation. If you get errors, check out our [Troubleshooting section here](http://docs.intercom.io/install-on-your-mobile-product/install-the-intercom-ios-sdk#troubleshooting-installation).
+- Make sure you are linking the following frameworks: ImageIO, MobileCoreServices, SystemConfiguration, AVFoundation. If you get errors, check out our [Troubleshooting section here](http://docs.intercom.io/Install-on-your-mobile-product/install-the-intercom-ios-sdk#-troubleshooting-installation).
 
 ## Initialize Intercom and Begin Session
 - You'll need your Intercom App Id and the SDK API key and you can get them from your [Intercom App Settings](https://app.intercom.io/) -> API keys.  The SDK API key should start with 'ios_sdk...'. If you only see keys starting with 'ios-...', check out our [Troubleshooting section here](http://docs.intercom.io/Install-on-your-mobile-product/install-the-intercom-ios-sdk#-troubleshooting-installation).
