@@ -15,7 +15,7 @@ pod 'Intercom'
 - Make sure you are linking the following frameworks: ImageIO, MobileCoreServices, SystemConfiguration, AVFoundation. If you get errors, check out our [Troubleshooting section here](http://docs.intercom.io/install-on-your-mobile-product/install-the-intercom-ios-sdk#troubleshooting-installation).
 
 ## Initialize Intercom and Begin Session
-- You'll need your Intercom App Id and the SDK API key and you can get them from your [Intercom App Settings](https://app.intercom.io/) -> API keys.  The SDK API key should start with 'ios_sdk...'. If you only see keys starting with 'ios-...', check out our [Troubleshooting section here](http://docs.intercom.io/install-on-your-mobile-product/install-the-intercom-ios-sdk#troubleshooting-installation).
+- You'll need your Intercom App Id and the SDK API key and you can get them from your [Intercom App Settings](https://app.intercom.io/) -> API keys.  The SDK API key should start with 'ios_sdk...'. If you only see keys starting with 'ios-...', check out our [Troubleshooting section here](http://docs.intercom.io/Install-on-your-mobile-product/install-the-intercom-ios-sdk#-troubleshooting-installation).
 - Initialize Intercom by calling:
 `[Intercom setApiKey:@"ios_sdk-..." forAppId:@"your_app_id"];`
 - Start a session by either calling
@@ -46,10 +46,10 @@ or
 ```
 And that's it. 
 
-Was that too fast? For more detailed instructions read the [step by step install instructions here](http://docs.intercom.io/install-on-your-mobile-product/install-the-intercom-ios-sdk#step-by-step-install).
+Was that too fast? For more detailed instructions read the [step by step install instructions here](http://docs.intercom.io/Install-on-your-mobile-product/install-the-intercom-ios-sdk).
 
 ## Developer's Advanced Guide
-If you want to learn about the following topics, [you find detailed information here](http://docs.intercom.io/install-on-your-mobile-product/configure-the-ios-sdk-part-2). You also find the [Intercom docset on cocoadocs](http://cocoadocs.org/docsets/Intercom).
+If you want to learn about the following topics, [you find detailed information here](http://docs.intercom.io/Install-on-your-mobile-product/configure-ios-sdk). You also find the [Intercom docset on cocoadocs](http://cocoadocs.org/docsets/Intercom).
 - Session control
 - Updating a user
 - Working with attributes
@@ -59,7 +59,7 @@ If you want to learn about the following topics, [you find detailed information 
 - Messaging
 - Using Push notifications
 - Intercom iOS SDK Architecture and Prerequisites
-- [How to configure Secure Mode in the SDK](http://docs.intercom.io/install-on-your-mobile-product/install-ios-sdk-part-3)
+- [How to configure Secure Mode in the SDK](http://docs.intercom.io/Install-on-your-mobile-product/secure-mode-ios-sdk)
 
 ## Logging
 By default the Intercom iOS SDK only logs errors. By calling the class method `enableLogging`, you can increase the log level. It is recommended to use this only for debugging purposes, not the App Store build.
