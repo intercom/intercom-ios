@@ -1,6 +1,6 @@
 //
 //  Intercom.h
-//  Intercom
+//  Intercom for iOS SDK - Version 2.0.7
 //
 //  Created by Intercom on 15/04/2014.
 //  Copyright (c) 2014 Intercom. All rights reserved.
@@ -40,7 +40,9 @@ typedef NS_ENUM(NSInteger, ICMSDKError) {
     /** Credentials missing (no session begun for user) */
     ICMSDKErrorCredentialsMissing   = 1002,
     /** Error occured when trying to update user */
-    ICMSDKErrorUpdateUserError      = 1003
+    ICMSDKErrorUpdateUserError      = 1003,
+    /** AppId missing (need to call setApiKey:forAppId: first */
+    ICMSDKErrorAppIdMissing         = 1004
 };
 
 
@@ -119,7 +121,7 @@ typedef void(^ICMCompletion)(NSError *error);
  @param appId The App Id of your Intercom application.
  @param securityOptions A dictionary containing the security options (hmac and data) required to enable 
   advanced security mode
- @since Available since version 1.0
+ @since Available since version 2.0
 */
 + (void)setApiKey:(NSString *)apiKey forAppId:(NSString *)appId securityOptions:(NSDictionary*) securityOptions;
 
