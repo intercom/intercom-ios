@@ -23,6 +23,9 @@
 
 @implementation ITCAppDelegate
 
+
+#pragma mark - Configure Intercom SDK
+
 - (void)configureIntercomWithLaunchOptions:(NSDictionary *)launchOptions application:(UIApplication *)application {
     
     // enable Intercom logging for debugging purposes
@@ -35,7 +38,8 @@
     // Option 1: configure 'normal' mode
     [Intercom setApiKey:kIntercomAPIKey forAppId:kIntercomAppId];
     
-    // Option 2: configure secure mode (see details http://docs.intercom.io/install-on-your-mobile-product/install-ios-sdk-part-3 )
+    // Option 2: configure secure mode - see details here <http://docs.intercom.io/install-on-your-mobile-product/secure-mode-ios-sdk>
+    // Call the following method after a user authenticated successfully in your app (you won't have the HMAC data in your app before that happened)
     //    [Intercom setApiKey:kIntercomAPIKey
     //               forAppId:kIntercomAppId
     //        securityOptions:@{
@@ -50,7 +54,7 @@
     // ===================================================
     
     // Prerequisite: you need to export your certificate and private key and upload the PEM file to Intercom.
-    // see details http://docs.intercom.io/install-on-your-mobile-product/configure-the-ios-sdk-part-2#using-push-notifications
+    // see details here <http://docs.intercom.io/install-on-your-mobile-product/push-notifications-ios-sdk>
     [Intercom registerForRemoteNotifications];
     
     // see also code in applicationWillEnterForeground: to register for push
@@ -71,6 +75,9 @@
     [Intercom setPresentationMode:ICMPresentationModeBottomRight];
     
 }
+
+
+#pragma mark - UIApplicationDelegate Calls
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -99,8 +106,8 @@
     
     // if you are using Push Notifications
     
-    // reset the app icon badge value
-    [application setApplicationIconBadgeNumber:0];
+    // reset the app icon badge value - depending on your badge handling logic, you might do this somewhere else
+//    [application setApplicationIconBadgeNumber:0];
     
     // register for push notifications; this has changed in iOS 8
     if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]){ // iOS8
@@ -125,6 +132,40 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+// handle deep linking from the SDK: in this sample app, just show an alert view
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Testing deep linking" message:@"If you see this, a deep link has successfully been called" delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil];
+    [alert show];
+    return YES;
+}
+
+
+#pragma mark - Handle Push Notifications
+
+// if you want to use push notifications in the Intercom SDK, the following two delegate calls
+// application:didRegisterForRemoteNotificationsWithDeviceToken: and application:didReceiveRemoteNotification:
+// are REQUIRED - you need at least an empty implementation of these calls
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // The Intercom SDK handles this automatically, so you don't need to call any Intercom methods here - just an empty method is OK
+    // If your app handles push notifications, connect with your push notification server and give the token to it
+    
+    NSLog(@"🐸 Registered device token for push notifications: token=%@", deviceToken);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    // The Intercom SDK handles this automatically, so you don't need to call any Intercom methods here - just an empty method is OK
+    // If you app handles push notifications, handle them here
+    
+    NSLog(@"🌈 Host app received push notification: userInfo=%@", userInfo);
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    // handle registration error
+    
+    NSLog(@"Failed to register for push notifications - error: %@", error.localizedDescription);
 }
 
 @end

@@ -78,10 +78,16 @@
             [self.intercomSDKManager handleSubmitEventWithMetaData];
             
         } else if (type == ITCCellTypePresentMessageComposer) {
-            [self.intercomSDKManager handlePresentMessageComposer];
+            // add a dispatch_async here to avoid the following warning in the console: +[CATransaction synchronize] called within transaction
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.intercomSDKManager handlePresentMessageComposer];
+            });
             
         } else if (type == ITCCellTypePresentConversationList) {
-            [self.intercomSDKManager handlePresentConversationList];
+            // add a dispatch_async here to avoid the following warning in the console: +[CATransaction synchronize] called within transaction
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.intercomSDKManager handlePresentConversationList];
+            });
             
         } else if (type == ITCCellTypeEndSession) {
             [[ITCUserAuthenticationManager sharedAuthenticationManager] setUserAuthenticated:NO];
