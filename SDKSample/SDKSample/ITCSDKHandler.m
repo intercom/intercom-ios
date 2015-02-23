@@ -140,19 +140,15 @@
     // See details here http://doc.intercom.io/api/#submitting-events
     [Intercom logEventWithName:@"ordered_item"
               optionalMetaData:@{
-                                 @"event_name" : @"ordered-item",
-                                 @"created_at": @1389913941,
-                                 @"metadata": @{
-                                         @"order_date": @1392036272,
-                                         @"stripe_invoice": @"inv_3434343434",
-                                         @"order_number": @{
-                                                 @"value": @"3434-3434",
-                                                 @"url": @"https://example.org/orders/3434-3434"
-                                                 },
-                                         @"price": @{
-                                                 @"currency": @"usd",
-                                                 @"amount": @2999
-                                                 }
+                                 @"order_date": @1392036272,
+                                 @"stripe_invoice": @"inv_3434343434",
+                                 @"order_number": @{
+                                         @"value": @"3434-3434",
+                                         @"url": @"https://example.org/orders/3434-3434"
+                                         },
+                                 @"price": @{
+                                         @"currency": @"usd",
+                                         @"amount": @2999
                                          }
                                  }
                     completion:^(NSError *error) {
