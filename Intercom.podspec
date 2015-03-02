@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description = 'The Intercom iOS SDK, for integrating Intercom into your iOS application. The SDK supports iOS 7 and iOS 8.'
   s.frameworks = ["Foundation", "UIKit", "Security", "SystemConfiguration", "MobileCoreServices", "ImageIO", "AVFoundation", "QuartzCore", "CoreGraphics"]
   s.requires_arc = true
-  s.source = {}
+  s.source = { :git => 'https://github.com/intercom/intercom-ios.git', :tag => s.version.to_s }
 
   s.platform = :ios, '7.0'
   s.ios.platform             = :ios, '7.0'
