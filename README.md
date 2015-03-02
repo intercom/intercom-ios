@@ -81,4 +81,4 @@ are available in [our documentation](http://docs.intercom.io/Install-on-your-mob
 
 ## Xcode Documentation
 
-This documentation provides integrated help in Xcode for all public APIs in the Intercom SDK. Download the docset from the repository above and Copy the content into ~`/Library/Developer/Shared/Documentation/DocSets`.
+This documentation provides integrated help in Xcode for all public APIs in the Intercom SDK. [Download the docset](https://github.com/intercom/intercom-ios/archive/master.zip) from the repository above and Copy the content into ~`/Library/Developer/Shared/Documentation/DocSets`.
