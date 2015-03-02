@@ -1,0 +1,6 @@
+framework module Intercom {
+  umbrella header "Intercom.h"
+
+  export *
+  module * { export * }
+}
