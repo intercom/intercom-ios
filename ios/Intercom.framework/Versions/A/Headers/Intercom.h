@@ -364,7 +364,7 @@ typedef void(^ICMCompletion)(NSError *error) __attribute((deprecated));
 
 + (void)beginSessionForAnonymousUserWithCompletion:(ICMCompletion)completion __attribute((deprecated("Use method 'registerUnidentifiedUser' instead")));
 
-+ (void)endSession __attribute((deprecated("Use method 'tearDown' to reset your local install instead")));
++ (void)endSession __attribute((deprecated("Use method 'reset' to reset your local install instead")));
 
 + (void)updateUserWithAttributes:(NSDictionary *)attributes completion:(ICMCompletion)completion __attribute((deprecated("Use method 'updateAttributes:' instead")));
 
