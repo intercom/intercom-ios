@@ -78,3 +78,7 @@ Detailed documentation and getting started guides for:
 - Deep Linking in messages
 
 are available in [our documentation](http://docs.intercom.io/Install-on-your-mobile-product). Please contact us in Intercom with any questions you may have, we're only a message away!
+
+## Xcode Documentation
+
+This documentation provides integrated help in Xcode for all public APIs in the Intercom SDK. Download the docset from the repository above and Copy the content into ~`/Library/Developer/Shared/Documentation/DocSets`.
