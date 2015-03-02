@@ -3,82 +3,80 @@
 ## Requirements
 The Intercom iOS SDK supports iOS 7.x and iOS 8.x.
 
-## Quick Install
-### Option 1:	Download our SDKSample app
-- If you want to see the Intercom SDK in action, we have an SDKSample app for you. Just enter `pod try intercom` in the command line. This will download the Intercom SDK and launch the SDKSample app in Xcode with the help of [CocoaPods](http://cocoapods.org).
+## Installation
+
+### CocoaPods
+Add the Intercom pod into your Podfile and run a `pod install` or `pod update`.
+	
+	pod 'Intercom'
+	
+### Manual Installation 
+
+Add the `Intercom.framework` to your Xcode project (you can get it from [GitHub](https://github.com/intercom/intercom-ios/tree/master/Intercom)). In your build target, **make sure** to include the `-ObjC` flag under `Other Linker Flags`. 
+
+Sometimes Xcode won't correctly add the `Intercom.bundle` so make sure to add it to your target's Copy Bundle Resources build phase. Reveal the `Intercom.framework` in Finder and you'll find the bundle in the `Intercom.framework/Versions/A/Resources` folder.
+
+Make sure you are linking the following frameworks: `ImageIO`, `MobileCoreServices`, `SystemConfiguration`, `AVFoundation`, `QuartzCore`, `Security` and `CoreGraphics`. 
+
+If you get errors, check out our [Troubleshooting section here](http://docs.intercom.io/Install-on-your-mobile-product/install-the-intercom-ios-sdk#-troubleshooting-installation).
+
+
+## Initialize Intercom
+You'll need your Intercom app id and the iOS SDK API key that can be found on the [Intercom App Settings](https://app.intercom.io/) page in the API keys section. Once you've found those keys, initialize Intercom by calling the following in your application's delegate.
+
+    [Intercom setApiKey:@"<#ios_sdk-...#>" forAppId:@"<#your-app-id#>"];
+
+## How do I track my users?
  
-- In the `ITCIntercomSettings.h` file, enter the following lines:
+In order to see your users in Intercom's user list, you must first register them via your iOS application. If you have a place in your application where you become aware of the user's identity such as a log in view controller, call one of the following depending on the information you have available for that user:
 
-    ```c
-    static NSString *kIntercomAppId = @" <your_app_id> ";
-    static NSString *kIntercomAPIKey = @" <ios_sdk-...> ";
-    ```
+ If you have both a unique user identifier and an email for your users:
+ 
+	 [Intercom registerUserWithUserId:@"<#123456#>" email:@"<#joe@example.com#>"];
+	 
+ If you only have a unique identifier for your users:
+ 
+    [Intercom registerUserWithUserId:@"<#123456#>"];
+ 
+ Finally, if you only have an email address for your users:
 
-- Then run in the iOS Simulator or your iOS device.
+    [Intercom registerUserWithEmail:@"<#joe@example.com#>"];
+    
+If you are putting the Intercom SDK into an app that has persisted an authentication token or equivalent so your users don't have to log in repeatedly (like most apps) then we advise putting the user registration call in the `didBecomeActive:` method in your application delegate. This won't have any negative impact if you also add it to your authentication success method elsewhere in your app.
 
-### Option 2: Use CocoaPods
-- Add the Intercom pod into your Podfile and run a `pod install` or `pod update`.
+## Can I track unidentifed users?
+ 
+Yes, absolutely. If you have an application that doesn't require users to log in, you can call:
+ 
+    [Intercom registerUnidentifiedUser];
+ 
+If the user subsequently logs in or you learn additional information about them (e.g. get an email address), calling any of the other user registration methods will update that user's identity in Intercom and contain all user data tracked previously.
 
-    ```
-    pod 'Intercom'
-    ```
+## How does the in-app messenger work?
 
-- Then go to section [Initialize Intercom and Begin Session](#initialize-intercom-and-begin-session) below.
+Intercom allows you to send messages to your users while also enabling your users send messages to you. If you have a dedicated button in your app that you wish to hook the new message composer up to, you can control Intercom's messaging UI via the `[Intercom presentMessageComposer];` and `[Intercom presentConversationList];` methods. More information on messaging with the iOS SDK can be found [here](http://docs.intercom.io/configure-ios-sdk#messaging).
 
-### Option 3: Manual Installation 
-- Add `Intercom.h` and `libIntercom.a` to your Xcode project (you can get them from [GitHub](https://github.com/intercom/intercom-ios/tree/master/Intercom)). In your build target, include the `-ObjC` flag under `Other Linker Flags`. 
-- Make sure you are linking the following frameworks: `ImageIO`, `MobileCoreServices`, `SystemConfiguration`, `AVFoundation`. If you get errors, check out our [Troubleshooting section here](http://docs.intercom.io/Install-on-your-mobile-product/install-the-intercom-ios-sdk#-troubleshooting-installation).
-- Then go to section [Initialize Intercom and Begin Session](#initialize-intercom-and-begin-session) below.
+## What about events, push notifications, company and user data?
 
-## Initialize Intercom and Begin Session
-- You'll need your Intercom App Id and the SDK API key and you can get them from your [Intercom App Settings](https://app.intercom.io/) -> API keys.  The SDK API key should start with 'ios_sdk...'. If you only see keys starting with 'ios-...', check out our [Troubleshooting section here](http://docs.intercom.io/Install-on-your-mobile-product/install-the-intercom-ios-sdk#-troubleshooting-installation).
-- Initialize Intercom by calling:
+The iOS SDK has support for all these things. For full details please read our [documentation](http://docs.intercom.io/configure-ios-sdk).
 
-    ```objc
-    [Intercom setApiKey:@"ios_sdk-..." forAppId:@"your_app_id"];`
-    ```
+ 
+## I'm using a previous version of the SDK and this looks different, what's changed?
+ 
+We have re-architected the iOS SDK to ensure it is as reliable as possible while tracking your users. We have focused on removing the asychronous behaviour of the SDK, for example you no longer need to wait for the completion blocks of the now deprecated `beginSession` calls before logging events or updating user data.  In doing so the SDK is more nimble and reliable than ever before.
 
-- Start a session by either calling
-    ```objc
-    [Intercom beginSessionForUserWithEmail:self.dataSource.email
-        completion:^(NSError *error) {
-            // check the error object: only if we have no error, we have an active session and we can
-            // allow other Intercom calls (such as updating a user)
-            if (!error) {
-                // handleBeginSessionOK
-            } else {
-                // handleBeginSessionWithError:error
-            }
-    }];
-    ```
-or
-    ```objc
-    [Intercom beginSessionForUserWithUserId:self.dataSource.userId
-        completion:^(NSError *error) {
-            // check the error object: only if we have no error, we have an active session and we can
-            // allow other Intercom calls (such as updating a user)
-            if (!error) {
-                // handleBeginSessionOK
-            } else {
-                // handleBeginSessionWithError:error
-            }
-    }];
-    ```
-And that's it. 
+Previous versions of the SDK will migrate with minimal effort. All deprecated methods still work for now, excluding the old session listener (since v2.0.6). These deprecated methods will be permanently removed in a future version.
 
-Was that too fast? For more detailed instructions read the [step by step install instructions here](http://docs.intercom.io/Install-on-your-mobile-product/install-the-intercom-ios-sdk).
+## Documentation and getting started guides
+ 
+Detailed documentation and getting started guides for:
 
-## Developer's Advanced Guide
-If you want to learn about the following topics, [you find detailed information here](http://docs.intercom.io/Install-on-your-mobile-product/configure-ios-sdk). You also find the [Intercom docset on cocoadocs](http://cocoadocs.org/docsets/Intercom).
 - Updating a user
 - Working with attributes
 - Company Data
 - Custom Attributes
 - Events
 - Messaging
-- Deep Links
+- Deep Linking in messages
 
-There's a document about [Using Push notifications](http://docs.intercom.io/Install-on-your-mobile-product/push-notifications-ios-sdk) and how to [Enable Secure Mode](http://docs.intercom.io/Install-on-your-mobile-product/secure-mode-ios-sdk).
-
-## Logging
-By default the Intercom iOS SDK only logs errors. By calling the class method `enableLogging`, you can increase the log level. It is recommended to use this only for debugging purposes, not the App Store build.
+are available in [our documentation](http://docs.intercom.io/Install-on-your-mobile-product). Please contact us in Intercom with any questions you may have, we're only a message away!

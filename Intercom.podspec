@@ -1,22 +1,19 @@
 Pod::Spec.new do |s|
-  s.name               = 'Intercom'
-  s.version            = '2.0.7'
+  s.name = 'Intercom'
+  s.version = '2.1'
+  s.summary = 'The Intercom iOS SDK, for integrating Intercom into your iOS application.'
+  s.license = { :type => "Apache license", :file => "LICENSE" }
+  s.authors = {"Adam McCarthy"=>"adam@intercom.io", "James Treanor"=>"james@intercom.io"}
+  s.homepage = 'https://github.com/intercom/intercom-ios'
+  s.description = 'The Intercom iOS SDK, for integrating Intercom into your iOS application. The SDK supports iOS 7 and iOS 8.'
+  s.frameworks = ["Foundation", "UIKit", "Security", "SystemConfiguration", "MobileCoreServices", "ImageIO", "AVFoundation", "QuartzCore", "CoreGraphics"]
+  s.requires_arc = true
+  s.source = {}
 
-  s.summary            = 'The Intercom iOS SDK'
-  s.description        = <<-DESC
-                         The Intercom iOS SDK, for integrating Intercom into your iOS application. This SDK supports iOS 7 and iOS 8. 
-                         DESC
-
-  s.homepage           = 'https://github.com/intercom/intercom-ios'
-
-  s.license            = { :type => "Apache license", :file => "LICENSE" }
-  s.author             = { 'Adam McCarthy' => 'adam@intercom.io', 'Gavin Rooney' => "gavin@intercom.io", "Dale Cantwell" => "dale@intercom.io", "Ignacio Delgado" => "ignacio@intercom.io", "Roland Gropmair" => "roland@intercom.io", "James Treanor" => "james@intercom.io" }
-  s.source             = { :git => 'https://github.com/intercom/intercom-ios.git', :tag => s.version.to_s }
-
-  s.platform           = :ios, '7.0'
-  s.source_files       = 'Intercom/Intercom.h'
-  s.vendored_libraries = ['Intercom/libIntercom.a']
-  s.requires_arc       = true
-  
-  s.frameworks         = 'Foundation', 'UIKit', 'Security', "SystemConfiguration", "MobileCoreServices", "ImageIO", "AVFoundation", "QuartzCore", "CoreGraphics"
+  s.platform = :ios, '7.0'
+  s.ios.platform             = :ios, '7.0'
+  s.ios.preserve_paths       = 'ios/Intercom.framework'
+  s.ios.public_header_files  = 'ios/Intercom.framework/Versions/A/Headers/*.h'
+  s.ios.resource             = 'ios/Intercom.framework/Versions/A/Resources/**/*'
+  s.ios.vendored_frameworks  = 'ios/Intercom.framework'
 end

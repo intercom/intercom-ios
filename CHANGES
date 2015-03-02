@@ -1,3 +1,11 @@
+= 2.1 (2015-03-02)
+
+* Fixed a situation where the SDK could potentially have authentication issues with the Intercom API.
+* Improved session handling in the SDK.
+* Eliminated the SDK's reliance on the async nature of sessions.
+* Clearer API particularly around user registration.
+* Clearer push notification handling instructions.
+
 = 2.0.7 (2014-12-19)
 
 * Added deep linking (custom URL schemes)
