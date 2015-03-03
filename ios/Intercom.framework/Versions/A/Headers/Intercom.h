@@ -374,9 +374,9 @@ typedef void(^ICMCompletion)(NSError *error) __attribute((deprecated));
 
 + (void)checkForUnreadMessages __attribute((deprecated("This is no longer supported.")));
 
-+ (void)setPresentationInsetOverScreen:(UIEdgeInsets)presentationInset __attribute((deprecated("Use method 'setPreviewPosition' instead")));
++ (void)setPresentationInsetOverScreen:(UIEdgeInsets)presentationInset __attribute((deprecated("Use method 'setPreviewPaddingX:y:' instead")));
 
-+ (void)setPresentationMode:(ICMPresentationMode)presentationMode __attribute((deprecated("Use method 'setPreviewPaddingX:y:' instead")));
++ (void)setPresentationMode:(ICMPresentationMode)presentationMode __attribute((deprecated("Use method 'setPreviewPosition:' instead")));
 
 + (void)setBaseColor:(UIColor *)color __attribute((deprecated("This is no longer supported.")));
 
