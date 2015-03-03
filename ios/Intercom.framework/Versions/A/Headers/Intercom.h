@@ -358,15 +358,15 @@ typedef void(^ICMCompletion)(NSError *error) __attribute((deprecated));
 
 + (void)setApiKey:(NSString *)apiKey forAppId:(NSString *)appId securityOptions:(NSDictionary*) securityOptions __attribute((deprecated("Use method 'setSecureOptions:' instead")));
 
-+ (void)beginSessionForUserWithEmail:(NSString *)email completion:(ICMCompletion)completion __attribute((deprecated("Use method 'registerUserWithEmail::' instead")));
++ (void)beginSessionForUserWithEmail:(NSString *)email completion:(ICMCompletion)completion __attribute((deprecated("Use method 'registerUserWithEmail:' instead")));
 
-+ (void)beginSessionForUserWithUserId:(NSString *)userId completion:(ICMCompletion)completion __attribute((deprecated("Use method 'registerUserWithUniqueIdentifier:' instead")));
++ (void)beginSessionForUserWithUserId:(NSString *)userId completion:(ICMCompletion)completion __attribute((deprecated("Use method 'registerUserWithUserId:' instead")));
 
 + (void)beginSessionForAnonymousUserWithCompletion:(ICMCompletion)completion __attribute((deprecated("Use method 'registerUnidentifiedUser' instead")));
 
 + (void)endSession __attribute((deprecated("Use method 'reset' to reset your local install instead")));
 
-+ (void)updateUserWithAttributes:(NSDictionary *)attributes completion:(ICMCompletion)completion __attribute((deprecated("Use method 'updateAttributes:' instead")));
++ (void)updateUserWithAttributes:(NSDictionary *)attributes completion:(ICMCompletion)completion __attribute((deprecated("Use method 'updateUserWithAttributes:' instead")));
 
 + (void)logEventWithName:(NSString *)name completion:(ICMCompletion)completion __attribute((deprecated("Use method 'logEventWithName:' instead")));
 
@@ -374,9 +374,9 @@ typedef void(^ICMCompletion)(NSError *error) __attribute((deprecated));
 
 + (void)checkForUnreadMessages __attribute((deprecated("This is no longer supported.")));
 
-+ (void)setPresentationInsetOverScreen:(UIEdgeInsets)presentationInset __attribute((deprecated("Use method 'setPreviewPosition' instead")));
++ (void)setPresentationInsetOverScreen:(UIEdgeInsets)presentationInset __attribute((deprecated("Use method 'setPreviewPaddingX:y:' instead")));
 
-+ (void)setPresentationMode:(ICMPresentationMode)presentationMode __attribute((deprecated("Use method 'setPreviewPaddingX:y:' instead")));
++ (void)setPresentationMode:(ICMPresentationMode)presentationMode __attribute((deprecated("Use method 'setPreviewPosition:' instead")));
 
 + (void)setBaseColor:(UIColor *)color __attribute((deprecated("This is no longer supported.")));
 
