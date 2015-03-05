@@ -46,9 +46,7 @@ If you are putting the Intercom SDK into an app that has persisted an authentica
 
 ## Can I track unidentifed users?
  
-In March 2015, this is **an opt-in beta feature** in Intercom. Unlike previous versions of the SDK, we're turning this into a stand alone mode for the SDK, please get in touch with us if you would like your app opted in to this feature.
-
-If you have an application that doesn't require users to log in, you can call:
+Yes, absolutely. If you have an application that doesn't require users to log in, you can call:
  
     [Intercom registerUnidentifiedUser];
  
