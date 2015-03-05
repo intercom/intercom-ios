@@ -129,10 +129,6 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  If you call registerUnidentifiedUser, all activity will be tracked anonymously. If you choose to subsequently
  identify that user, all that anonymous activity will be merged into the identified user. This means that you
  will no longer see the anonymous user in Intercom, but rather the identified one.
- 
- @note For March 2015, this is **an opt-in beta feature** in Intercom. Unlike previous versions of the SDK, 
- we're turning this into a stand alone mode for the SDK. Please get in touch with us if you would like your
- app opted in to this feature.
 
 @note We recommend this is called from within the application delegate's didFinishLaunchingWithOptions: method.
  
