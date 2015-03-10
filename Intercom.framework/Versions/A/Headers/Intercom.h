@@ -1,7 +1,7 @@
 
 //
 //  Intercom.h
-//  Intercom for iOS SDK - Version 2.1
+//  Intercom for iOS SDK - Version 2.1.1
 //
 //  Created by Intercom on 8/01/2015.
 //  Copyright (c) 2014 Intercom. All rights reserved.
@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
-#error This version (2.1) of the Intercom iOS SDK supports iOS 7.0 upwards.
+#error This version (2.1.1) of the Intercom iOS SDK supports iOS 7.0 upwards.
 #endif
 
 __attribute__ ((deprecated))
