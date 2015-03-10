@@ -1,3 +1,7 @@
+= 2.1.1 (2015-03-10)
+
+* Modified the podfile and repo structure to hopefully address some cocoapod related install errors.
+
 = 2.1 (2015-03-02)
 
 * Fixed a situation where the SDK could potentially have authentication issues with the Intercom API.
