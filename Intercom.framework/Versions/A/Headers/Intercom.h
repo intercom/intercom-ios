@@ -354,11 +354,8 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
     ICMPresentationModeTopRight     = 3
 };
 
-/** Deprecated methods are listed here.
- 
- All methods listed in this document have been deprecated.
- 
- @warning Deprecated methods will be removed in version 2.4.
+/** 
+  @warning Deprecated methods will be removed in version 2.4.
 */
 @interface Intercom (Deprecated)
 
