@@ -14,7 +14,7 @@ Add the Intercom pod into your Podfile and run a `pod install` or `pod update`.
 
 2. Sometimes Xcode won't correctly add the `Intercom.bundle` so make sure to add it to your target's Copy Bundle Resources build phase. Reveal the `Intercom.framework` in Finder and you'll find the bundle in the `Intercom.framework/Versions/A/Resources` folder.
 
-3. Make sure you are linking the following frameworks: `ImageIO`, `MobileCoreServices`, `SystemConfiguration`, `AVFoundation`, `QuartzCore`, `Security` and `CoreGraphics`. 
+3. Make sure you are linking the following: `ImageIO`, `MobileCoreServices`, `SystemConfiguration`, `AVFoundation`, `QuartzCore`, `Security`, `CoreGraphics` and `libicucore.dylib`.
 
 4. Intercom is now a framework, not a static library so be sure to import Intercom correctly using the following `#import <Intercom/Intercom.h>` statement.
 
