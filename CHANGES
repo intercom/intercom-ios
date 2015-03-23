@@ -1,6 +1,15 @@
+= 2.2 (2015-03-23)
+
+* Includes support for real-time (https://www.intercom.io/real-time-messaging).
+* Added support for the custom message responder.
+* Fixed a display bug in the conversation list where the wrong name could be shown.
+* Fixed bug which could cause the wrong number to be displayed in the unread counter within a conversation.
+* Fixed an issue where retrying the sending of a message could sometimes fail.
+* Fixed a race condition that meant sometimes a new user could not be registered after [Intercom reset] was called.
+
 = 2.1.1 (2015-03-10)
 
-* Modified the podfile and repo structure to hopefully address some cocoapod related install errors.
+* Modified the podspec and repo structure to hopefully address some cocoapod related install errors.
 
 = 2.1 (2015-03-02)
 

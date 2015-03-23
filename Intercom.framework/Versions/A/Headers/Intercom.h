@@ -1,7 +1,7 @@
 
 //
 //  Intercom.h
-//  Intercom for iOS SDK - Version 2.1.1
+//  Intercom for iOS SDK - Version 2.2
 //
 //  Created by Intercom on 8/01/2015.
 //  Copyright (c) 2014 Intercom. All rights reserved.
@@ -11,13 +11,8 @@
 #import <UIKit/UIKit.h>
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
-#error This version (2.1.1) of the Intercom iOS SDK supports iOS 7.0 upwards.
+#error This version (2.2) of the Intercom iOS SDK supports iOS 7.0 upwards.
 #endif
-
-__attribute__ ((deprecated))
-@protocol IntercomSessionListener <NSObject>
-- (void)intercomSessionStatusDidChange:(BOOL)isSessionOpen;
-@end
 
 // Use these values to constrain an incoming notification view to a defined section of the window.
 typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
@@ -49,7 +44,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
     
     [Intercom registerUserWithEmail:@"joe@example.com"];
  
- ## Can I track unidentifed users?
+ ## Can I track unidentified users?
  
  Yes, absolutely. If you have an application that doesn't require users to log in, you can call:
  
@@ -62,7 +57,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  ## I'm using a previous SDK version and this looks different, what has changed?
  
  We have re-architected the internals of the iOS SDK to ensure it is as reliable as possible while tracking
- your users. We have focused on removing the asychronous behaviour of the SDK for example you no longer need 
+ your users. We have focused on removing the asynchronous behaviour of the SDK. For example you no longer need
  to wait for the completion blocks of the old `beginSession` calls before logging events or updating user data. 
  In doing so the SDK is more nimble and reliable than ever before.
  
@@ -85,7 +80,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  and opens the SDK if required. You do not need to implement any additional code in order to launch the SDK.
  
  To do this we [safely swizzle](http://blog.newrelic.com/2014/04/16/right-way-to-swizzle/) the public methods
- in `UIApplicationDelegate` that handle receiving push notifications. We do not user any private APIs to do this.
+ in `UIApplicationDelegate` that handle receiving push notifications. We do not use any private APIs to do this.
  
  ## More information
  
@@ -128,9 +123,9 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
 /*!
  If you call registerUnidentifiedUser, all activity will be tracked anonymously. If you choose to subsequently
  identify that user, all that anonymous activity will be merged into the identified user. This means that you
- will no longer see the anonymous user in Intercom, but rather the identified one.
-
-@note We recommend this is called from within the application delegate's didFinishLaunchingWithOptions: method.
+ will no longer see the anonymous user in Intercom, but rather the identified one. 
+ 
+ We recommend this is called from within the application delegate's didFinishLaunchingWithOptions: method.
  
  @note You must call one of the user registration methods in order to start communicating with Intercom.
  */
@@ -145,7 +140,12 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  This is a userId, supplied by you (e.g. from an existing web service for your product) to represent your
  user in Intercom, once set it cannot be changed.
  
- @param userId  A unique identifer for your user.
+ If you are putting the Intercom SDK into an app that has persisted an authentication token or equivalent
+ so your users don't have to log in repeatedly (like most apps) then we advise putting the user registration
+ call in the `didBecomeActive:` method in your application delegate. This won't have any negative impact if
+ you also add it to your authentication success method elsewhere in your app.
+ 
+ @param userId  A unique identifier for your user.
  @param email   Your user's email address.
  @note You must call one of the user registration methods in order to start communicating with Intercom.
  */
@@ -154,7 +154,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
 /*!
  Register a user just with their userId.
  
- @param userId A unique identifer for your user.
+ @param userId A unique identifier for your user.
  @note You must call one of the user registration methods in order to start communicating with Intercom.
  */
 + (void)registerUserWithUserId:(NSString *)userId;
@@ -239,9 +239,6 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  Metadata Objects support a few simple types that Intercom can present on your behalf, see the
  [Intercom API docs](http://doc.intercom.io/api/#event-metadata-types)
  
- @param name The name of the event you wish to track.
- @param metadata contains simple types to present to Intercom
- 
     [Intercom logEventWithName:@"ordered_item" metaData:@{
         @"order_date": @1392036272,
         @"stripe_invoice": @"inv_3434343434",
@@ -250,7 +247,8 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
         @"url": @"https://example.org/orders/3434-3434"
     }];
  
- @param completion The completion block to be executed after the event is logged.
+ @param name The name of the event you wish to track.
+ @param metaData contains simple types to present to Intercom
  */
 + (void)logEventWithName:(NSString *)name metaData:(NSDictionary *)metaData;
 
@@ -294,7 +292,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
 
 /*!
  Depending on the layout of your app you may need to modify the position of the message preview relative to the 
- preview's position. Use this method to add sufficent padding using x and y values.
+ preview's position. Use this method to add sufficient padding using x and y values.
  
  @param x A horizontal padding value.
  @param y A vertical padding value.
@@ -342,10 +340,12 @@ UIKIT_EXTERN NSString *const IntercomWindowDidShowNotification;
 UIKIT_EXTERN NSString *const IntercomWindowWillHideNotification;
 UIKIT_EXTERN NSString *const IntercomWindowDidHideNotification;
 
-/*!
- ## Version 2.1 Deprecations
- */
+@end
 
+__attribute__ ((deprecated))
+@protocol IntercomSessionListener <NSObject>
+- (void)intercomSessionStatusDidChange:(BOOL)isSessionOpen;
+@end
 
 typedef NS_ENUM(NSUInteger, ICMPresentationMode){
     ICMPresentationModeBottomLeft   = 0,
@@ -354,37 +354,96 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
     ICMPresentationModeTopRight     = 3
 };
 
+/** Deprecated methods are listed here.
+ 
+ All methods listed in this document have been deprecated.
+ 
+ @warning Deprecated methods will be removed in version 2.4.
+*/
+@interface Intercom (Deprecated)
+
 typedef void(^ICMCompletion)(NSError *error) __attribute((deprecated));
 
+/*!
+ @deprecated Use setSecureOptions: instead
+ */
 + (void)setApiKey:(NSString *)apiKey forAppId:(NSString *)appId securityOptions:(NSDictionary*) securityOptions __attribute((deprecated("Use method 'setSecureOptions:' instead")));
 
+/*!
+ @deprecated Use registerUserWithEmail: instead
+ */
 + (void)beginSessionForUserWithEmail:(NSString *)email completion:(ICMCompletion)completion __attribute((deprecated("Use method 'registerUserWithEmail:' instead")));
 
+/*!
+ @deprecated Use registerUserWithUserId: instead
+ */
 + (void)beginSessionForUserWithUserId:(NSString *)userId completion:(ICMCompletion)completion __attribute((deprecated("Use method 'registerUserWithUserId:' instead")));
 
+/*!
+ @deprecated Use registerUnidentifiedUser instead
+ */
 + (void)beginSessionForAnonymousUserWithCompletion:(ICMCompletion)completion __attribute((deprecated("Use method 'registerUnidentifiedUser' instead")));
 
+/*!
+ @deprecated Use reset instead
+ */
 + (void)endSession __attribute((deprecated("Use method 'reset' to reset your local install instead")));
 
+/*!
+ @deprecated Use updateUserWithAttributes: instead
+ */
 + (void)updateUserWithAttributes:(NSDictionary *)attributes completion:(ICMCompletion)completion __attribute((deprecated("Use method 'updateUserWithAttributes:' instead")));
 
+/*!
+ @deprecated Use logEventWithName: instead
+ */
 + (void)logEventWithName:(NSString *)name completion:(ICMCompletion)completion __attribute((deprecated("Use method 'logEventWithName:' instead")));
 
+/*!
+ @deprecated Use logEventWithName:metaData: instead
+ */
 + (void)logEventWithName:(NSString *)name optionalMetaData:(NSDictionary *)metadata completion:(ICMCompletion)completion __attribute((deprecated("Use method 'logEventWithName:metaData:' instead")));
 
+/*!
+ @deprecated This is no longer supported
+ */
 + (void)checkForUnreadMessages __attribute((deprecated("This is no longer supported.")));
 
+/*!
+ @deprecated Use setPreviewPaddingX:y: instead
+ */
 + (void)setPresentationInsetOverScreen:(UIEdgeInsets)presentationInset __attribute((deprecated("Use method 'setPreviewPaddingX:y:' instead")));
 
+/*!
+ @deprecated Use setPreviewPosition: instead
+ */
 + (void)setPresentationMode:(ICMPresentationMode)presentationMode __attribute((deprecated("Use method 'setPreviewPosition:' instead")));
 
+/*!
+ @deprecated This is no longer supported. You can change your app's theme through settings on Intercom in the web.
+ */
 + (void)setBaseColor:(UIColor *)color __attribute((deprecated("This is no longer supported.")));
 
+/*!
+ @deprecated Use setMessagesHidden: instead
+ */
 + (void)hideIntercomMessages:(BOOL)hidden  __attribute((deprecated("Use method 'setMessagesHidden:' instead")));
 
+/*!
+ @deprecated Use presentConversationList or presentMessageComposer instead
+ */
 + (void)presentMessageViewAsConversationList:(BOOL)showConversationList __attribute((deprecated("Use method 'presentConversationList & presentMessageComposer' instead")));
 
+/*!
+ @deprecated This is no longer supported.
+ */
 + (void)setSessionListener:(id<IntercomSessionListener>)sessionListener __attribute((deprecated("This is no longer supported.")));
 
+/*!
+ @deprecated Use method setDeviceToken instead.
+ */
 + (void)registerForRemoteNotifications __attribute((deprecated("Use method 'setDeviceToken' instead.")));
+
 @end
+
+
