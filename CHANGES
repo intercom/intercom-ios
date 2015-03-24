@@ -1,7 +1,6 @@
 = 2.2 (2015-03-23)
 
-* Includes support for real-time (https://www.intercom.io/real-time-messaging).
-* Added support for the custom message responder.
+* Now supports real-time (https://www.intercom.io/real-time-messaging), including real-time message delivery, user presence and is-typing events sent from the SDK and visible to admins in the Intercom app, and support for the custom message responder.  
 * Fixed a display bug in the conversation list where the wrong name could be shown.
 * Fixed bug which could cause the wrong number to be displayed in the unread counter within a conversation.
 * Fixed an issue where retrying the sending of a message could sometimes fail.
