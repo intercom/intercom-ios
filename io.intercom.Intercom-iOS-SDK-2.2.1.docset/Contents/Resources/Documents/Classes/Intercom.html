@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">Intercom iOS SDK 2.2 </a>
+				<a href="../index.html">Intercom iOS SDK 2.2.1 </a>
 			</h1>
 
 			<p id="developer-home">
@@ -171,25 +171,21 @@ following depending on the information you have available for that user:</p>
 
 <p>If you have both a unique user identifier and an email for your users::</p>
 
-<pre><code>[Intercom registerUserWithUserId:@"123456" email:@"joe@example.com"];
-</code></pre>
+<p>[Intercom registerUserWithUserId:@&ldquo;123456&rdquo; email:@&ldquo;joe@example.com&rdquo;];</p>
 
 <p>If you only have a unique identifier for your users:</p>
 
-<pre><code>[Intercom registerUserWithUserId:@"123456"];
-</code></pre>
+<p>[Intercom registerUserWithUserId:@&ldquo;123456&rdquo;];</p>
 
 <p>Finally, if you only have an email address for your users:</p>
 
-<pre><code>[Intercom registerUserWithEmail:@"joe@example.com"];
-</code></pre>
+<p>[Intercom registerUserWithEmail:@&ldquo;joe@example.com&rdquo;];</p>
 
 <h2>Can I track unidentified users?</h2>
 
 <p>Yes, absolutely. If you have an application that doesn&rsquo;t require users to log in, you can call:</p>
 
-<pre><code>[Intercom registerUnidentifiedUser];
-</code></pre>
+<p><a href="#//api/name/registerUnidentifiedUser">[Intercom registerUnidentifiedUser]</a>;</p>
 
 <p>If the user subsequently logs in or you learn additional information about them (e.g. get an email address),
 calling any of the other user registration methods will update that user&rsquo;s identity in Intercom and contain
@@ -210,10 +206,12 @@ version.</p>
 
 <p>The Intercom iOS SDK enables your users to receive push notifications for new messages. Simply call:</p>
 
-<pre><code>- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    [Intercom setDeviceToken:deviceToken];
-}
-</code></pre>
+<ul>
+<li>(void)application:(UIApplication <em>)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData </em>)deviceToken {
+[Intercom setDeviceToken:deviceToken];
+}</li>
+</ul>
+
 
 <p>in your <code>didRegisterForRemoteNotificationsWithDeviceToken:</code> method once you have registered your app for
 push notifications with the <code>UIApplicationDelegate</code>.</p>
@@ -227,11 +225,7 @@ in <code>UIApplicationDelegate</code> that handle receiving push notifications. 
 <h2>More information</h2>
 
 <p>Full documentation is available <a href="http://docs.intercom.io/Install-on-your-mobile-product">here</a> and please contact
-us directly via Intercom for any support or questions you may have.</p>
-
-<p>Deprecated methods are listed here.</p>
-
-<p>All methods listed in this document have been deprecated.</p><div class="warning"><p><strong>Warning:</strong> Deprecated methods will be removed in version 2.4.</p></div>
+us directly via Intercom for any support or questions you may have.</p><div class="warning"><p><strong>Warning:</strong> Deprecated methods will be removed in version 2.4.</p></div>
 					</div>
 					
 					
@@ -648,9 +642,9 @@ you also add it to your authentication success method elsewhere in your app.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>reset is used to reset all local caches and user data the Intercom SDK has created. Use this at a time when
-you wish to log a user out of your app or change a user. Once called, the SDK will no longer communicate with Intercom
-until a further registration is made.</p>
+				<p>reset is used to reset all local caches and user data the Intercom SDK has created. Reset will also close
+and active UI that is on screen. Use this at a time when you wish to log a user out of your app or change
+a user. Once called, the SDK will no longer communicate with Intercom until a further registration is made.</p>
 			</div>
 			
 		    
@@ -734,34 +728,31 @@ Intercom you can then apply filters based on these attributes.</p>
 
 <p>Attributes such as the user email or name can be updated by calling</p>
 
-<pre><code> [Intercom updateUserWithAttributes:@{
-     @"email" : @"admin@intercom.io",
-     @"name" : @"Admin Name"
- }];
-</code></pre>
+<p>[Intercom updateUserWithAttributes:@{
+@&ldquo;email&rdquo; : @&ldquo;admin@intercom.io&rdquo;,
+@&ldquo;name&rdquo; : @&ldquo;Admin Name&rdquo;
+}];</p>
 
 <p>Custom user attributes can be created and modified by passing a custom_attributes dictionary
 You do not have to create attributes in Intercom beforehand. If one hasn&rsquo;t been seen before, it will be
 created for you automatically.</p>
 
-<pre><code> [Intercom updateUserWithAttributes:@{
-     @"custom_attributes": @{
-         @"paid_subscriber" : @YES,
-         @"monthly_spend": @155.5,
-         @"team_mates": @3
-     }
- }];
-</code></pre>
+<p>[Intercom updateUserWithAttributes:@{
+@&ldquo;custom_attributes&rdquo;: @{
+@&ldquo;paid_subscriber&rdquo; : @YES,
+@&ldquo;monthly_spend&rdquo;: @155.5,
+@&ldquo;team_mates&rdquo;: @3
+}
+}];</p>
 
 <p>You can also set company data via this call by submitting an attribute dictionary like</p>
 
-<pre><code> [Intercom updateUserWithAttributes:@{
-     @"companies": @[ @{
-         @"name" : @"My Company",
-         @"id" : @"abcd1234"
-     }
- ]}];
-</code></pre>
+<p>[Intercom updateUserWithAttributes:@{
+@&ldquo;companies&rdquo;: @[ @{
+@&ldquo;name&rdquo; : @&ldquo;My Company&rdquo;,
+@&ldquo;id&rdquo; : @&ldquo;abcd1234&rdquo;
+}
+]}];</p>
 
 <p>id is a required field for adding or modifying a company. A detailed description of the
 <a href="https://doc.intercom.io/api/#companies-and--users">company model is available here</a></p><div class="note"><p><strong>Note:</strong> Attributes may be either a <code>string</code>, <code>integer</code>, <code>double</code>, <code>unix timestamp</code> or <code>bool</code>.</p></div>
@@ -889,14 +880,13 @@ profile. See details about Events <a href="http://doc.intercom.io/api/#events">h
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<pre><code>[Intercom logEventWithName:@"ordered_item" metaData:@{
-    @"order_date": @1392036272,
-    @"stripe_invoice": @"inv_3434343434",
-    @"order_number": @{
-    @"value": @"3434-3434",
-    @"url": @"https://example.org/orders/3434-3434"
-}];
-</code></pre>
+				<p>[Intercom logEventWithName:@&ldquo;ordered_item&rdquo; metaData:@{
+@&ldquo;order_date&rdquo;: @1392036272,
+@&ldquo;stripe_invoice&rdquo;: @&ldquo;inv_3434343434&rdquo;,
+@&ldquo;order_number&rdquo;: @{
+@&ldquo;value&rdquo;: @&ldquo;3434-3434&rdquo;,
+@&ldquo;url&rdquo;: @&ldquo;<a href="https://example.org/orders/3434-3434">https://example.org/orders/3434-3434</a>&rdquo;
+}];</p>
 			</div>
 			
 
@@ -1208,7 +1198,8 @@ preview&rsquo;s position. Use this method to add sufficient padding using x and 
 			
 			<div class="method-subsection brief-description">
 				<p>Use this to hide all incoming Intercom messages and message previews in the parts of your app where you do
-not wish to interrupt users, for example Camera views, parts of a game or other scenarios.</p>
+not wish to interrupt users, for example Camera views, parts of a game or other scenarios. If any part of the
+SDK&rsquo;s UI is on screen when this is set to YES, it will close itself.</p>
 			</div>
 			
 		    
@@ -1981,7 +1972,7 @@ displayed in select parts of your app.</p></td>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Intercom. All rights reserved. Updated: 2015-03-23</p>
+						<p class="copyright">Copyright &copy; 2015 Intercom. All rights reserved. Updated: 2015-04-03</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

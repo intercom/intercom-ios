@@ -1,3 +1,9 @@
+= 2.2.1 (2015-03-03)
+
+* Added support for closing the SDK’s UI when calling `+setMessagesHidden:` and `+reset`. If any part of the SDK is open when these are called, it will now close.
+* Fixed #52: Removed firstResponder swizzle completely, fixing https://github.com/intercom/intercom-ios/issues/52.
+* Fixed #58: Checking for isValidJSONObject on user attributes and event metadata, fixing https://github.com/intercom/intercom-ios/issues/58.
+
 = 2.2 (2015-03-23)
 
 * Now supports real-time, including real-time message delivery, support for the custom message responder, 
