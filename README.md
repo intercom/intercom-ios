@@ -46,7 +46,7 @@ No matter what category of app you have, you'll need your Intercom app id and th
 		}
 **Note:** _If you don't have a unique `userId` to use here, or if you have a `userId` and an `email` you can [register with those too](https://github.com/intercom/intercom-ios/blob/master/Intercom.framework/Versions/A/Headers/Intercom.h#L152)._
 
-2. Also, in your application delegeate's `didFinishLaunchingWithOptions:` method (or wherever you _check_ your user's authenticated state when your app starts up) 
+2. Also, in your application delegate's `didFinishLaunchingWithOptions:` method (or wherever you _check_ your user's authenticated state when your app starts up) 
 
 		// Override point for customization after application launch.
 			if(loggedIn){
@@ -91,7 +91,7 @@ Because Intercom listens for UIApplication start notifications, there is no need
 		}
 **Note:** _If you don't have a unique `userId` to use here, or if you have a `userId` and an `email` you can [register with those too](https://github.com/intercom/intercom-ios/blob/master/Intercom.framework/Versions/A/Headers/Intercom.h#L152)._
 
-2. In your application delegeate's `didFinishLaunchingWithOptions:` method (or wherever you _check_ your user's authenticated state when your app starts up) 
+2. In your application delegate's `didFinishLaunchingWithOptions:` method (or wherever you _check_ your user's authenticated state when your app starts up) 
 
 		- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 			if(loggedIn){
