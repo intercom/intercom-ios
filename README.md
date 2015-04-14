@@ -24,9 +24,9 @@ If you get errors, check out our [Troubleshooting section here](http://docs.inte
 ##How should I use the Intercom SDK in my app?
 Broadly speaking, there are three types of apps that the Intercom SDK will work in.
 
-1. Apps that only have registered users, like Facebook, Instagram or Slack. Your users have to log in straight away in order to use your app.
-2. Apps that never log users in, like Threes Game or Angry Birds or the iOS Notes app. Your users never have to log in to use your app.
-3. Apps that support both logged in and logged out users, like Google Maps or Youtube.
+1. Apps that only have registered users, like Facebook, Instagram or Slack. Your users have to log in straight away in order to use your app. [Show me how.](https://github.com/intercom/intercom-ios#my-app-only-has-logged-in-users)
+2. Apps that never log users in, like Threes Game or Angry Birds or the iOS Notes app. Your users never have to log in to use your app. [Show me how.](https://github.com/intercom/intercom-ios#my-apps-users-never-log-in)
+3. Apps that support both logged in and logged out users, like Google Maps or Youtube. [Show me how.](https://github.com/intercom/intercom-ios#my-app-has-logged-in-and-logged-out-users)
 
 ### Initialize Intercom
 No matter what category of app you have, you'll need your Intercom app id and the iOS SDK API key that can be found on the [Intercom App Settings](https://app.intercom.io/) page in the API keys section. Once you've found those keys, initialize Intercom by calling the following in your application delegate:
