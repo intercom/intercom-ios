@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = 'Intercom'
-  s.version             = '2.2.1'
+  s.version             = '2.2.2'
   s.summary             = 'The Intercom iOS SDK, for integrating Intercom into your iOS application.'
   s.license             = { :type => "Apache license", :file => "LICENSE" }
   s.authors             = {"Adam McCarthy"=>"adam@intercom.io", "James Treanor"=>"james@intercom.io"}
