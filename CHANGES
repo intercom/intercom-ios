@@ -1,3 +1,16 @@
+= 2.2.2 (2015-05-08)
+
+* If you have real-time features on your Intercom account, users can now see when you are typing a reply.
+* Several visual updates to the conversation view.
+* More detailed logging to help us debug any issues you may have.
+* No longer requires `-ObjC` linker flag for easier integration.
+* iPad improvements.
+* Sounds for sending and receiving messages.
+* Now supports tracking users across multiple environments. Fixed https://github.com/intercom/intercom-ios/issues/61.
+* Removed message responder.
+* Fixed issue where opening a push notification didn't always open the message in Intercom.
+* Lots more tweaks and bug fixes.
+
 = 2.2.1 (2015-03-03)
 
 * Added support for closing the SDK’s UI when calling `+setMessagesHidden:` and `+reset`. If any part of the SDK is open when these are called, it will now close.

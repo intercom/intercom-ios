@@ -1,7 +1,7 @@
 
 //
 //  Intercom.h
-//  Intercom for iOS SDK - Version 2.2
+//  Intercom for iOS SDK - Version 2.2.2
 //
 //  Created by Intercom on 8/01/2015.
 //  Copyright (c) 2014 Intercom. All rights reserved.
@@ -20,6 +20,18 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
     ICMPreviewPositionBottomRight  = 1,
     ICMPreviewPositionTopLeft      = 2,
     ICMPreviewPositionTopRight     = 3
+};
+
+__attribute__ ((deprecated))
+@protocol IntercomSessionListener <NSObject>
+- (void)intercomSessionStatusDidChange:(BOOL)isSessionOpen;
+@end
+
+typedef NS_ENUM(NSUInteger, ICMPresentationMode){
+    ICMPresentationModeBottomLeft   = 0,
+    ICMPresentationModeBottomRight  = 1,
+    ICMPresentationModeTopLeft      = 2,
+    ICMPresentationModeTopRight     = 3
 };
 
 /**
@@ -341,24 +353,9 @@ UIKIT_EXTERN NSString *const IntercomWindowDidShowNotification;
 UIKIT_EXTERN NSString *const IntercomWindowWillHideNotification;
 UIKIT_EXTERN NSString *const IntercomWindowDidHideNotification;
 
-@end
-
-__attribute__ ((deprecated))
-@protocol IntercomSessionListener <NSObject>
-- (void)intercomSessionStatusDidChange:(BOOL)isSessionOpen;
-@end
-
-typedef NS_ENUM(NSUInteger, ICMPresentationMode){
-    ICMPresentationModeBottomLeft   = 0,
-    ICMPresentationModeBottomRight  = 1,
-    ICMPresentationModeTopLeft      = 2,
-    ICMPresentationModeTopRight     = 3
-};
-
 /**
  @warning Deprecated methods will be removed in version 2.4.
  */
-@interface Intercom (Deprecated)
 
 typedef void(^ICMCompletion)(NSError *error) __attribute((deprecated));
 
