@@ -10,13 +10,13 @@ Add the Intercom pod into your Podfile and run a `pod install` or `pod update`.
 	
 ### Manual Installation 
 
-1. To add the Intercom framework to your project: User finder to drag Intercom.framework into your Xcode project, ticking the "Copy items if needed" checkbox.
+1. [Download Intercom for iOS](https://github.com/intercom/intercom-ios/archive/master.zip) and use Finder to drag `Intercom.framework` into your Xcode project, ticking the "Copy items if needed" checkbox.
 
-2. Intercom is a framework, not a static library so be sure to import Intercom correctly using the following `#import <Intercom/Intercom.h>` statement.
+2. Intercom is a framework, so be sure to import Intercom correctly using the following `#import <Intercom/Intercom.h>` statement.
 
-3. Sometimes Xcode won't correctly add the `Intercom.bundle` so make sure to add it to your target's Copy Bundle Resources build phase. Reveal the `Intercom.framework` in Finder and you'll find the bundle in the `Intercom.framework/Versions/A/Resources` folder.
+3. Under Build Phases, Link Binary with Libraries, make sure you are linking the following: `ImageIO`, `MobileCoreServices`, `SystemConfiguration`, `AudioToolbox`, `QuartzCore`, `Security`, `CoreGraphics` and `libicucore.dylib`.
 
-4. Make sure you are linking the following: `ImageIO`, `MobileCoreServices`, `SystemConfiguration`, `AudioToolbox`, `QuartzCore`, `Security`, `CoreGraphics` and `libicucore.dylib`.
+4. Sometimes Xcode won't correctly add the `Intercom.bundle` so make sure to add it to your target's Copy Bundle Resources build phase. You will find the bundle in the `Intercom.framework/Versions/A/Resources` folder.
 
 
 If you get errors, check out our [Troubleshooting section here](http://docs.intercom.io/Install-on-your-mobile-product/install-the-intercom-ios-sdk#-troubleshooting-installation).
