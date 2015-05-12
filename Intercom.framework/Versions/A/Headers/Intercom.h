@@ -1,7 +1,7 @@
 
 //
 //  Intercom.h
-//  Intercom for iOS SDK - Version 2.2.2
+//  Intercom for iOS - Version 2.2.3
 //
 //  Created by Intercom on 8/01/2015.
 //  Copyright (c) 2014 Intercom. All rights reserved.
@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
-#error This version (2.2.1) of the Intercom iOS SDK supports iOS 7.0 upwards.
+#error This version (2.2.3) of Intercom for iOS supports iOS 7.0 upwards.
 #endif
 
 // Use these values to constrain an incoming notification view to a defined section of the window.
@@ -66,30 +66,30 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
  calling any of the other user registration methods will update that user's identity in Intercom and contain
  all user data tracked previously.
  
- ## I'm using a previous SDK version and this looks different, what has changed?
+ ## I'm using a previous version and this looks different, what has changed?
  
- We have re-architected the internals of the iOS SDK to ensure it is as reliable as possible while tracking
- your users. We have focused on removing the asynchronous behaviour of the SDK. For example you no longer need
- to wait for the completion blocks of the old `beginSession` calls before logging events or updating user data.
- In doing so the SDK is more nimble and reliable than ever before.
+ We have re-architected the internals of Intercom for iOS to ensure it is as reliable as possible while tracking
+ your users. We have focused on removing asynchronous behaviour. For example you no longer need to wait for the
+ completion blocks of the old `beginSession` calls before logging events or updating user data.
+ In doing so the it is more nimble and reliable than ever before.
  
- Previous versions of the SDK will migrate with minimal effort. All deprecated methods still work for now,
+ Previous versions of Intercom for iOS will migrate with minimal effort. All deprecated methods still work for now,
  excluding the old session listener (since v2.0.6). These methods will be permanently removed in a future
  version.
  
  ## How do push notifications work?
  
- The Intercom iOS SDK enables your users to receive push notifications for new messages. Simply call:
+ Intercom for iOS enables your users to receive push notifications for new messages. Simply call:
  
  - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
- [Intercom setDeviceToken:deviceToken];
+     [Intercom setDeviceToken:deviceToken];
  }
  
  in your `didRegisterForRemoteNotificationsWithDeviceToken:` method once you have registered your app for
  push notifications with the `UIApplicationDelegate`.
  
- When your app receives a push notification the SDK checks to see if it is an Intercom push notification
- and opens the SDK if required. You do not need to implement any additional code in order to launch the SDK.
+ When your app receives a push notification Intercom for iOS checks to see if it is an Intercom push notification
+ and opens the message. You do not need to implement any additional code in order to launch the message window.
  
  To do this we [safely swizzle](http://blog.newrelic.com/2014/04/16/right-way-to-swizzle/) the public methods
  in `UIApplicationDelegate` that handle receiving push notifications. We do not use any private APIs to do this.
@@ -109,7 +109,7 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
  Initialize Intercom with your iOS API key and App ID.  This will allow your app to connect with Intercom.
  This is best done in the application delegate's didFinishLaunchingWithOptions: method.
  
- @param apiKey The iOS-SDK API key found on the API Key settings page.
+ @param apiKey The iOS API key found on the API Key settings page.
  @param appId  The App ID of your Intercom app.
  */
 + (void)setApiKey:(NSString *)apiKey forAppId:(NSString *)appId;
@@ -119,9 +119,9 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
 //=========================================================================================================
 /*!
  Secure Mode helps to make sure that conversations between you and your users are kept private, and that one
- user can't impersonate another. In Secure Mode the iOS SDK will sign all requests going to the Intercom servers
+ user can't impersonate another. In Secure Mode Intercom for iOS will sign all requests going to the Intercom servers
  with tokens. It requires your mobile application to have its own server which authenticates the app's users,
- and which can store a secret. More information on secure mode can be found [here](http://docs.intercom.io/Install-on-your-mobile-product/secure-mode-ios-sdk).
+ and which can store a secret. More information on secure mode can be found [here](http://docs.intercom.io/Install-on-your-mobile-product/enabling-secure-mode-in-intercom-for-ios).
  
  @note This should be called before any user registration takes place.
  @param hmac A HMAC digest of data.
@@ -152,7 +152,7 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
  This is a userId, supplied by you (e.g. from an existing web service for your product) to represent your
  user in Intercom, once set it cannot be changed.
  
- If you are putting the Intercom SDK into an app that has persisted an authentication token or equivalent
+ If you are putting Intercom for iOS into an app that has persisted an authentication token or equivalent
  so your users don't have to log in repeatedly (like most apps) then we advise putting the user registration
  call in the `didBecomeActive:` method in your application delegate. This won't have any negative impact if
  you also add it to your authentication success method elsewhere in your app.
@@ -183,9 +183,9 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
 /*! @name Resetting user data */
 //=========================================================================================================
 /*!
- reset is used to reset all local caches and user data the Intercom SDK has created. Reset will also close
- and active UI that is on screen. Use this at a time when you wish to log a user out of your app or change 
- a user. Once called, the SDK will no longer communicate with Intercom until a further registration is made.
+ reset is used to reset all local caches and user data Intercom has created. Reset will also close any active 
+ UI that is on screen. Use this at a time when you wish to log a user out of your app or change a user.
+ Once called, Intercom for iOS will no longer communicate with Intercom until a further registration is made.
  */
 + (void)reset;
 
@@ -282,9 +282,9 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
 /*! @name Working with push notifications */
 //=========================================================================================================
 /*!
- Set the device token for push notifications. Once the device token is set, the SDK safely swizzles the methods
- for receiving push notifications so it can intercept ones sent from Intercom. When a push notification from
- Intercom is received, the SDK will automatically react and launch according to your preferences.
+ Set the device token for push notifications. Once the device token is set, the methods for receiving push 
+ notifications are safely swizzled so ones sent from Intercom can be intercepted. When a push notification from
+ Intercom is received, Intercom for iOS will automatically launch the message from the notification.
  
  @param deviceToken The device token provided in the `didRegisterForRemoteNotificationsWithDeviceToken` method.
  */
@@ -317,8 +317,8 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
 
 /*!
  Use this to hide all incoming Intercom messages and message previews in the parts of your app where you do
- not wish to interrupt users, for example Camera views, parts of a game or other scenarios. If any part of the
- SDK's UI is on screen when this is set to YES, it will close itself.
+ not wish to interrupt users, for example Camera views, parts of a game or other scenarios. If any part of
+ Intercom for iOS's UI is on screen when this is set to YES, it will close itself.
  
  @param hidden A bool that toggles message visibility. Use this to either prevent or allow messages from being
  displayed in select parts of your app.
@@ -330,7 +330,7 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
 //=========================================================================================================
 
 /*!
- Enable logging for the Intercom SDK. By calling this method, Intercom will display debug information.
+ Enable logging for Intercom for iOS. By calling this method, Intercom will display debug information.
  @note it is recommended to use it only while debugging)
  */
 + (void)enableLogging;
@@ -339,13 +339,13 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
 /*! @name Intercom Notifications */
 //=========================================================================================================
 /*!
- Notifications thrown by the SDK when the SDK window is displayed and hidden. These notifications are fired
- only when there is a change in the state of the SDK's UI: when a user receives a message for instance,
- willShow and didShow notifications will be fired accordingly when the Intercom Notification (chat head)
+ Notifications thrown by Intercom for iOS when the Intercom window is displayed and hidden. These notifications 
+ are fired only when there is a change in the state of Intercom's UI: when a user receives a message for
+ instance, willShow and didShow notifications will be fired accordingly when the Intercom Notification (chat head)
  is presented.
  
  Once the user taps on the chat head, the message is presented in your app. It will be presented covering
- the entire screen, but no notifications will be thrown here as the SDK has already been visible.
+ the entire screen, but no notifications will be thrown here as Intercom has already been visible.
  */
 
 UIKIT_EXTERN NSString *const IntercomWindowWillShowNotification;
