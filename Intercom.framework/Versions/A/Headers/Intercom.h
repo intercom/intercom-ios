@@ -359,7 +359,11 @@ UIKIT_EXTERN NSString *const IntercomWindowDidHideNotification;
 
 typedef void(^ICMCompletion)(NSError *error) __attribute((deprecated));
 
+//=========================================================================================================
+/*! @name Deprecated methods */
+//=========================================================================================================
 /*!
+
  @deprecated Use setSecureOptions: instead
  */
 + (void)setApiKey:(NSString *)apiKey forAppId:(NSString *)appId securityOptions:(NSDictionary*) securityOptions __attribute((deprecated("Use method 'setSecureOptions:' instead")));
