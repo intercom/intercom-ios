@@ -1,3 +1,9 @@
+= 2.2.3 (2015-05-12)
+
+* Less confusing logging. Sometimes logs showed error messages when there wasn't anything wrong.
+* No longer throw an exception if `Intercom.bundle` is missing.
+* Some changes to allow recovery of duplicated users in Intercom.
+
 = 2.2.2 (2015-05-08)
 
 * If you have real-time features on your Intercom account, users can now see when you are typing a reply.
