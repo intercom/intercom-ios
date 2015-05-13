@@ -27,11 +27,7 @@ To use the sample app:
 
 1. Go to the `Sample` directory and run `pod install`.
 2. Open `Sample.xcworkspace` in Xcode.
-3. Set your iOS API key and App ID at the top of `ITCAppDelegate.m`, here:
-```
-#define INTERCOM_APP_ID  @"YOUR_APP_ID"
-#define INTERCOM_API_KEY @"YOUR_API_KEY"
-```
+3. Set your iOS API key and App ID at the top of `ITCAppDelegate.m`.
 4. Build and run.
 
 ##How should I use Intercom for iOS in my app?
