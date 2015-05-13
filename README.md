@@ -25,14 +25,14 @@ If you get errors, check out our [Troubleshooting section here](http://docs.inte
 
 To use the sample app:
 
-- Go to the `Sample` directory and run `pod install`.
-- Open `Sample.xcworkspace` in Xcode.
-- Set your iOS API key and App ID at the top of `ITCAppDelegate.m`, here:
+1. Go to the `Sample` directory and run `pod install`.
+2. Open `Sample.xcworkspace` in Xcode.
+3. Set your iOS API key and App ID at the top of `ITCAppDelegate.m`, here:
 ```
 #define INTERCOM_APP_ID  @"YOUR_APP_ID"
 #define INTERCOM_API_KEY @"YOUR_API_KEY"
 ```
-- Build and run.
+4. Build and run.
 
 ##How should I use Intercom for iOS in my app?
 Broadly speaking, there are three types of apps that Intercom for iOS will work in.
