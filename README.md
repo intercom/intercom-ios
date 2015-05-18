@@ -129,8 +129,9 @@ Because Intercom listens for UIApplication start notifications, there is no need
 
 ###Tips on getting the best out of the Intercom for iOS
 
-1.  **Do not use an email address as a `userId` as this field is unique and cannot be changed or updated later.** If you only have an `email` address, you can just register a user with that. [More details are available here](https://github.com/intercom/intercom-ios/blob/master/Intercom.framework/Versions/A/Headers/Intercom.h#L168).
-2. Intercom for iOS listens for when your app starts and stops, so all you need to do is register a type of user like the examples above and we'll do the rest.
+1. **Do not use an email address as a `userId` as this field is unique and cannot be changed or updated later.** If you only have an email address, you can just register a user with that. [More details are available here](https://github.com/intercom/intercom-ios/blob/master/Intercom.framework/Versions/A/Headers/Intercom.h#L168).
+2. **If you register users with an email address, email must be a unique field in your app.** Otherwise we won't know which user to update and the mobile integration won't work.
+3. Intercom for iOS listens for when your app starts and stops, so all you need to do is register a type of user like the examples above and we'll do the rest.
  
  
 ## How does the in-app messenger work?
