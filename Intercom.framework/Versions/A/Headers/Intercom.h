@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
-#error This version (2.2.3) of Intercom for iOS supports iOS 7.0 upwards.
+#error This version (2.2.4) of Intercom for iOS supports iOS 7.0 upwards.
 #endif
 
 // Use these values to constrain an incoming notification view to a defined section of the window.
@@ -362,8 +362,8 @@ typedef void(^ICMCompletion)(NSError *error) __attribute((deprecated));
 //=========================================================================================================
 /*! @name Deprecated methods */
 //=========================================================================================================
-/*!
 
+/*!
  @deprecated Use setSecureOptions: instead
  */
 + (void)setApiKey:(NSString *)apiKey forAppId:(NSString *)appId securityOptions:(NSDictionary*) securityOptions __attribute((deprecated("Use method 'setSecureOptions:' instead")));
