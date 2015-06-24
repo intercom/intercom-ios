@@ -1,3 +1,14 @@
+= 2.3.0 (2015-06-24)
+
+* Users can now send image attachments.
+* Fixed bug where `+[Intercom reset]` could behave inconsistently (https://github.com/intercom/intercom-ios/issues/68).
+* Intercom now honours `prefersStatusBarHidden` (https://github.com/intercom/intercom-ios/issues/66).
+* Added `IntercomDidStartNewConversationNotification` as suggested in https://github.com/intercom/intercom-ios/issues/67.
+* Ensure sessions are ended when your app is backgrounded.
+* Renamed certs to fix https://github.com/intercom/intercom-cordova/issues/5.
+* Improved support for CocoPods Frameworks.
+* Added nullability modifiers to Intercom.h for improved Swift compatibility.
+
 = 2.2.4 (2015-05-28)
 
 * Fixed an issue where opening a push might not open the Intercom message if the app is in the background in some cases.

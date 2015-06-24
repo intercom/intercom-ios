@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name                = 'Intercom'
-  s.version             = '2.2.4'
+  s.version             = '2.3.0'
   s.summary             = 'The Intercom iOS SDK, for integrating Intercom into your iOS application.'
   s.license             = { :type => "Apache license", :file => "LICENSE" }
   s.authors             = {"Adam McCarthy"=>"adam@intercom.io", "James Treanor"=>"james@intercom.io"}
   s.homepage            = 'https://github.com/intercom/intercom-ios'
   s.description         = 'The Intercom iOS SDK, for integrating Intercom into your iOS application. The SDK supports iOS 7 and iOS 8.'
-  s.frameworks          = ["Foundation", "UIKit", "Security", "SystemConfiguration", "MobileCoreServices", "ImageIO", "AudioToolbox", "QuartzCore", "CoreGraphics"]
+  s.frameworks          = ["Foundation", "UIKit", "Security", "SystemConfiguration", "MobileCoreServices", "ImageIO", "AudioToolbox", "QuartzCore", "CoreGraphics", 'AssetsLibrary']
   s.library             = "icucore"
   s.requires_arc        = true
   s.source              = { :git => 'https://github.com/intercom/intercom-ios.git', :tag => s.version.to_s }
