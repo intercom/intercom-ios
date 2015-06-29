@@ -1,6 +1,7 @@
 = 2.3.0 (2015-06-24)
 
 * Users can now send image attachments.
+* Users can now expand and zoom images without leaving your app.
 * Fixed bug where `+[Intercom reset]` could behave inconsistently (https://github.com/intercom/intercom-ios/issues/68).
 * Intercom now honours `prefersStatusBarHidden` (https://github.com/intercom/intercom-ios/issues/66).
 * Added `IntercomDidStartNewConversationNotification` as suggested in https://github.com/intercom/intercom-ios/issues/67.
