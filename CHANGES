@@ -1,3 +1,8 @@
+= 2.3.1 (2015-07-20)
+
+* Fixed issue where status bar color could be incorrect.
+* Made a change to improve message delivery times for apps without real time.
+
 = 2.3.0 (2015-06-24)
 
 * Users can now send image attachments.
@@ -7,7 +12,7 @@
 * Added `IntercomDidStartNewConversationNotification` as suggested in https://github.com/intercom/intercom-ios/issues/67.
 * Ensure sessions are ended when your app is backgrounded.
 * Renamed certs to fix https://github.com/intercom/intercom-cordova/issues/5.
-* Improved support for CocoPods Frameworks.
+* Improved support for CocoaPods Frameworks.
 * Added nullability modifiers to Intercom.h for improved Swift compatibility.
 
 = 2.2.4 (2015-05-28)
