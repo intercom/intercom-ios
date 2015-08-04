@@ -1,3 +1,9 @@
+= 2.3.2 (2015-08-04)
+
+* Fixed issue where cancel button in attachment picker sometimes did not work.
+* When the Intercom window is open when coming to the foreground, it now checks for new messages.
+* UIAppearance no longer interferes with the attachment picker modal.
+
 = 2.3.1 (2015-07-20)
 
 * Fixed issue where status bar color could be incorrect.
