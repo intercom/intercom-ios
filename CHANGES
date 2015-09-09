@@ -1,3 +1,7 @@
+= 2.3.4 (2015-09-18)
+
+* Fixed issue reported in https://github.com/intercom/intercom-ios/issues/85.
+
 = 2.3.3 (2015-08-18)
 
 * Fixed an issue where if you had called [Intercom setMessagesHidden], opening a push notification would do nothing (fixes https://github.com/intercom/intercom-cordova/issues/12).
