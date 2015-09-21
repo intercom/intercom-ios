@@ -1,5 +1,16 @@
 # Intercom
 
+## 2.3.5 (2015-09-21)
+
+* Improved support for Xcode 7 and iOS 9:
+    - Added Bitcode support (fixes [#90](https://github.com/intercom/intercom-ios/issues/90)).
+    - Improved flexible layout to support iPad multitasking in iOS 9.
+    - Fixed some scrolling issues in the conversation view.
+    - Fixed issues where some videos wouldn't load due to app transport security.
+* Much simpler manual installation thanks to improved modulemap (fixes [#86](https://github.com/intercom/intercom-ios/issues/86)).
+* Removed all deprecated methods including `+[Intercom registerForRemoteNotifications]`. This should hopefully stops apps from being flagged for not declaring push notification support (discussed [#88](https://github.com/intercom/intercom-ios/issues/88)).
+* Landscape support for image picker.
+
 ## 2.3.4 (2015-09-18)
 
 * Fixed issue reported in https://github.com/intercom/intercom-ios/issues/85.
