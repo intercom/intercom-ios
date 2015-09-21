@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Intercom Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Intercom iOS SDK 2.3.5 </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Intercom</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/enableLogging">+ enableLogging</option>
+		
+		<option value="//api/name/logEventWithName:">+ logEventWithName:</option>
+		
+		<option value="//api/name/logEventWithName:metaData:">+ logEventWithName:metaData:</option>
+		
+		<option value="//api/name/presentConversationList">+ presentConversationList</option>
+		
+		<option value="//api/name/presentMessageComposer">+ presentMessageComposer</option>
+		
+		<option value="//api/name/registerUnidentifiedUser">+ registerUnidentifiedUser</option>
+		
+		<option value="//api/name/registerUserWithEmail:">+ registerUserWithEmail:</option>
+		
+		<option value="//api/name/registerUserWithUserId:">+ registerUserWithUserId:</option>
+		
+		<option value="//api/name/registerUserWithUserId:email:">+ registerUserWithUserId:email:</option>
+		
+		<option value="//api/name/reset">+ reset</option>
+		
+		<option value="//api/name/setApiKey:forAppId:">+ setApiKey:forAppId:</option>
+		
+		<option value="//api/name/setDeviceToken:">+ setDeviceToken:</option>
+		
+		<option value="//api/name/setHMAC:data:">+ setHMAC:data:</option>
+		
+		<option value="//api/name/setMessagesHidden:">+ setMessagesHidden:</option>
+		
+		<option value="//api/name/setNeedsStatusBarAppearanceUpdate">+ setNeedsStatusBarAppearanceUpdate</option>
+		
+		<option value="//api/name/setPreviewPaddingWithX:y:">+ setPreviewPaddingWithX:y:</option>
+		
+		<option value="//api/name/setPreviewPosition:">+ setPreviewPosition:</option>
+		
+		<option value="//api/name/updateUserWithAttributes:">+ updateUserWithAttributes:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">Intercom Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>Intercom.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Intercom is your direct line of communication to every user, right inside your app. Intercom’s in-app messages
+are up to 10 times more effective than email too! Send the right messages, to the right users, at exactly the right time.</p>
+
+<h2>How do I track my users?</h2>
+
+<p>In order to see your users in Intercom&rsquo;s user list, you must first register them via your iOS application. If you have a
+place in your application where you become aware of the user&rsquo;s identity such as a log in view controller, call one of the
+following depending on the information you have available for that user:</p>
+
+<p>If you have both a unique user identifier and an email for your users::</p>
+
+<p>[Intercom registerUserWithUserId:@&ldquo;123456&rdquo; email:@&ldquo;joe@example.com&rdquo;];</p>
+
+<p>If you only have a unique identifier for your users:</p>
+
+<p>[Intercom registerUserWithUserId:@&ldquo;123456&rdquo;];</p>
+
+<p>Finally, if you only have an email address for your users:</p>
+
+<p>[Intercom registerUserWithEmail:@&ldquo;joe@example.com&rdquo;];</p>
+
+<h2>Can I track unidentified users?</h2>
+
+<p>Yes, absolutely. If you have an application that doesn&rsquo;t require users to log in, you can call:</p>
+
+<p><a href="#//api/name/registerUnidentifiedUser">[Intercom registerUnidentifiedUser]</a>;</p>
+
+<p>If the user subsequently logs in or you learn additional information about them (e.g. get an email address),
+calling any of the other user registration methods will update that user&rsquo;s identity in Intercom and contain
+all user data tracked previously.</p>
+
+<h2>I&rsquo;m using a previous version and this looks different, what has changed?</h2>
+
+<p>We have re-architected the internals of Intercom for iOS to ensure it is as reliable as possible while tracking
+your users. We have focused on removing asynchronous behaviour. For example you no longer need to wait for the
+completion blocks of the old <code>beginSession</code> calls before logging events or updating user data.
+In doing so it is more nimble and reliable than ever before.</p>
+
+<h2>How do push notifications work?</h2>
+
+<p>Intercom for iOS enables your users to receive push notifications for new messages. Simply call:</p>
+
+<ul>
+<li>(void)application:(UIApplication <em>)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData </em>)deviceToken {
+   [Intercom setDeviceToken:deviceToken];
+}</li>
+</ul>
+
+
+<p>in your <code>didRegisterForRemoteNotificationsWithDeviceToken:</code> method once you have registered your app for
+push notifications with the <code>UIApplicationDelegate</code>.</p>
+
+<p>When your app receives a push notification Intercom for iOS checks to see if it is an Intercom push notification
+and opens the message. You do not need to implement any additional code in order to launch the message window.</p>
+
+<p>To do this we <a href="http://blog.newrelic.com/2014/04/16/right-way-to-swizzle/">safely swizzle</a> the public methods
+in <code>UIApplicationDelegate</code> that handle receiving push notifications. We do not use any private APIs to do this.</p>
+
+<h2>More information</h2>
+
+<p>Full documentation is available <a href="http://docs.intercom.io/Install-on-your-mobile-product">here</a> and please contact
+us directly via Intercom for any support or questions you may have.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Getting set up" name="task_Getting set up"></a>
+						<h2 class="task-title">Getting set up</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setApiKey:forAppId:" title="setApiKey:forAppId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setApiKey:forAppId:">+&nbsp;setApiKey:forAppId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize Intercom with your iOS API key and App ID.  This will allow your app to connect with Intercom.
+This is best done in the application delegate&rsquo;s didFinishLaunchingWithOptions: method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setApiKey:(NSString *)<em>apiKey</em> forAppId:(NSString *)<em>appId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>apiKey</code></th>
+						<td><p>The iOS API key found on the API Key settings page.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appId</code></th>
+						<td><p>The App ID of your Intercom app.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Using secure mode" name="task_Using secure mode"></a>
+						<h2 class="task-title">Using secure mode</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setHMAC:data:" title="setHMAC:data:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setHMAC:data:">+&nbsp;setHMAC:data:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Secure Mode helps to make sure that conversations between you and your users are kept private, and that one
+user can&rsquo;t impersonate another. In Secure Mode Intercom for iOS will sign all requests going to the Intercom servers
+with tokens. It requires your mobile application to have its own server which authenticates the app&rsquo;s users,
+and which can store a secret. More information on secure mode can be found <a href="http://docs.intercom.io/Install-on-your-mobile-product/enabling-secure-mode-in-intercom-for-ios">here</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setHMAC:(NSString *)<em>hmac</em> data:(NSString *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hmac</code></th>
+						<td><p>A HMAC digest of data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>A piece of user data.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> This should be called before any user registration takes place.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Working with anonymous users" name="task_Working with anonymous users"></a>
+						<h2 class="task-title">Working with anonymous users</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/registerUnidentifiedUser" title="registerUnidentifiedUser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerUnidentifiedUser">+&nbsp;registerUnidentifiedUser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If you call registerUnidentifiedUser, all activity will be tracked anonymously. If you choose to subsequently
+identify that user, all that anonymous activity will be merged into the identified user. This means that you
+will no longer see the anonymous user in Intercom, but rather the identified one.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerUnidentifiedUser</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>We recommend this is called from within the application delegate&rsquo;s didFinishLaunchingWithOptions: method.</p><div class="note"><p><strong>Note:</strong> You must call one of the user registration methods in order to start communicating with Intercom.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Working with identified users" name="task_Working with identified users"></a>
+						<h2 class="task-title">Working with identified users</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/registerUserWithUserId:email:" title="registerUserWithUserId:email:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerUserWithUserId:email:">+&nbsp;registerUserWithUserId:email:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>In order to keep track of a specific user, you must identify it with a unique user identifier, an email
+address, or both. By supplying information like this Intercom provides richer user profiles for your users.
+This is a userId, supplied by you (e.g. from an existing web service for your product) to represent your
+user in Intercom, once set it cannot be changed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerUserWithUserId:(NSString *)<em>userId</em> email:(NSString *)<em>email</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>A unique identifier for your user.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>Your user&rsquo;s email address.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If you are putting Intercom for iOS into an app that has persisted an authentication token or equivalent
+so your users don&rsquo;t have to log in repeatedly (like most apps) then we advise putting the user registration
+call in the <code>didBecomeActive:</code> method in your application delegate. This won&rsquo;t have any negative impact if
+you also add it to your authentication success method elsewhere in your app.</p><div class="note"><p><strong>Note:</strong> You must call one of the user registration methods in order to start communicating with Intercom.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerUserWithUserId:" title="registerUserWithUserId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerUserWithUserId:">+&nbsp;registerUserWithUserId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Register a user just with their userId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerUserWithUserId:(NSString *)<em>userId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>A unique identifier for your user.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> You must call one of the user registration methods in order to start communicating with Intercom.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerUserWithEmail:" title="registerUserWithEmail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerUserWithEmail:">+&nbsp;registerUserWithEmail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Register a user with just their email address.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerUserWithEmail:(NSString *)<em>email</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>Your user&rsquo;s email address.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> You must call one of the user registration methods in order to start communicating with Intercom.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Resetting user data" name="task_Resetting user data"></a>
+						<h2 class="task-title">Resetting user data</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/reset" title="reset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reset">+&nbsp;reset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>reset is used to reset all local caches and user data Intercom has created. Reset will also close any active
+UI that is on screen. Use this at a time when you wish to log a user out of your app or change a user.
+Once called, Intercom for iOS will no longer communicate with Intercom until a further registration is made.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)reset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Updating the user" name="task_Updating the user"></a>
+						<h2 class="task-title">Updating the user</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/updateUserWithAttributes:" title="updateUserWithAttributes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateUserWithAttributes:">+&nbsp;updateUserWithAttributes:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that
+relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to
+Intercom you can then apply filters based on these attributes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)updateUserWithAttributes:(NSDictionary *)<em>attributes</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attributes</code></th>
+						<td><p>This is a dictionary containing key/value pairs for multiple attributes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A detailed list of the fields you can use to <a href="https://doc.intercom.io/api/#user-model">update a user is available here</a></p>
+
+<p>Attributes such as the user email or name can be updated by calling</p>
+
+<p>[Intercom updateUserWithAttributes:@{
+@&ldquo;email&rdquo; : @&ldquo;admin@intercom.io&rdquo;,
+@&ldquo;name&rdquo; : @&ldquo;Admin Name&rdquo;
+}];</p>
+
+<p>Custom user attributes can be created and modified by passing a custom_attributes dictionary
+You do not have to create attributes in Intercom beforehand. If one hasn&rsquo;t been seen before, it will be
+created for you automatically.</p>
+
+<p>[Intercom updateUserWithAttributes:@{
+@&ldquo;custom_attributes&rdquo;: @{
+@&ldquo;paid_subscriber&rdquo; : @YES,
+@&ldquo;monthly_spend&rdquo;: @155.5,
+@&ldquo;team_mates&rdquo;: @3
+}
+}];</p>
+
+<p>You can also set company data via this call by submitting an attribute dictionary like</p>
+
+<p>[Intercom updateUserWithAttributes:@{
+@&ldquo;companies&rdquo;: @[ @{
+@&ldquo;name&rdquo; : @&ldquo;My Company&rdquo;,
+@&ldquo;id&rdquo; : @&ldquo;abcd1234&rdquo;
+}
+]}];</p>
+
+<p>id is a required field for adding or modifying a company. A detailed description of the
+<a href="https://doc.intercom.io/api/#companies-and--users">company model is available here</a></p><div class="note"><p><strong>Note:</strong> Attributes may be either a <code>string</code>, <code>integer</code>, <code>double</code>, <code>unix timestamp</code> or <code>bool</code>.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logEventWithName:" title="logEventWithName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logEventWithName:">+&nbsp;logEventWithName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Log an event with a given name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logEventWithName:(NSString *)<em>name</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the event that it is going to be logged.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You can log events in Intercom based on user actions in your app. Events are different
+to custom user attributes in that events are information on what Users did and when they
+did it, whereas custom user attributes represent the User&rsquo;s current state as seen in their
+profile. See details about Events <a href="http://doc.intercom.io/api/#events">here</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logEventWithName:metaData:" title="logEventWithName:metaData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logEventWithName:metaData:">+&nbsp;logEventWithName:metaData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Metadata Objects support a few simple types that Intercom can present on your behalf, see the
+<a href="http://doc.intercom.io/api/#event-metadata-types">Intercom API docs</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logEventWithName:(NSString *)<em>name</em> metaData:(NSDictionary *)<em>metaData</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the event you wish to track.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>metaData</code></th>
+						<td><p>contains simple types to present to Intercom</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>[Intercom logEventWithName:@&ldquo;ordered_item&rdquo; metaData:@{
+@&ldquo;order_date&rdquo;: @1392036272,
+@&ldquo;stripe_invoice&rdquo;: @&ldquo;inv_3434343434&rdquo;,
+@&ldquo;order_number&rdquo;: @{
+@&ldquo;value&rdquo;: @&ldquo;3434-3434&rdquo;,
+@&ldquo;url&rdquo;: @&ldquo;<a href="https://example.org/orders/3434-3434">https://example.org/orders/3434-3434</a>&rdquo;
+}];</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Show Intercom messages and message composers" name="task_Show Intercom messages and message composers"></a>
+						<h2 class="task-title">Show Intercom messages and message composers</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/presentMessageComposer" title="presentMessageComposer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/presentMessageComposer">+&nbsp;presentMessageComposer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Present the message composer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)presentMessageComposer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/presentConversationList" title="presentConversationList"></a>
+	<h3 class="method-title"><code><a href="#//api/name/presentConversationList">+&nbsp;presentConversationList</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Present the conversation list.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)presentConversationList</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Working with push notifications" name="task_Working with push notifications"></a>
+						<h2 class="task-title">Working with push notifications</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setDeviceToken:" title="setDeviceToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDeviceToken:">+&nbsp;setDeviceToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the device token for push notifications. Once the device token is set, the methods for receiving push
+notifications are safely swizzled so ones sent from Intercom can be intercepted. When a push notification from
+Intercom is received, Intercom for iOS will automatically launch the message from the notification.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setDeviceToken:(NSData *)<em>deviceToken</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceToken</code></th>
+						<td><p>The device token provided in the <code>didRegisterForRemoteNotificationsWithDeviceToken</code> method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Incoming message presentation options" name="task_Incoming message presentation options"></a>
+						<h2 class="task-title">Incoming message presentation options</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setPreviewPosition:" title="setPreviewPosition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPreviewPosition:">+&nbsp;setPreviewPosition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this to constrain an incoming notification view to a defined section of the window. By default, if this is
+not set, message previews appear in the bottom left of your application&rsquo;s window.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setPreviewPosition:(ICMPreviewPosition)<em>previewPosition</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>previewPosition</code></th>
+						<td><p>The <a href="../Constants/ICMPreviewPosition.html">ICMPreviewPosition</a> for your incoming notifications.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPreviewPaddingWithX:y:" title="setPreviewPaddingWithX:y:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPreviewPaddingWithX:y:">+&nbsp;setPreviewPaddingWithX:y:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Depending on the layout of your app you may need to modify the position of the message preview relative to the
+preview&rsquo;s position. Use this method to add sufficient padding using x and y values.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setPreviewPaddingWithX:(CGFloat)<em>x</em> y:(CGFloat)<em>y</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>x</code></th>
+						<td><p>A horizontal padding value.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>y</code></th>
+						<td><p>A vertical padding value.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Toggling message visibility" name="task_Toggling message visibility"></a>
+						<h2 class="task-title">Toggling message visibility</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setMessagesHidden:" title="setMessagesHidden:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMessagesHidden:">+&nbsp;setMessagesHidden:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this to hide all incoming Intercom messages and message previews in the parts of your app where you do
+not wish to interrupt users, for example Camera views, parts of a game or other scenarios. If any part of
+Intercom for iOS&rsquo;s UI is on screen when this is set to YES, it will close itself.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setMessagesHidden:(BOOL)<em>hidden</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hidden</code></th>
+						<td><p>A bool that toggles message visibility. Use this to either prevent or allow messages from being
+displayed in select parts of your app.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Enable logging" name="task_Enable logging"></a>
+						<h2 class="task-title">Enable logging</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/enableLogging" title="enableLogging"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableLogging">+&nbsp;enableLogging</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable logging for Intercom for iOS. By calling this method, Intercom will display debug information.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)enableLogging</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> it is recommended to use it only while debugging)</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Status bar handling" name="task_Status bar handling"></a>
+						<h2 class="task-title">Status bar handling</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setNeedsStatusBarAppearanceUpdate" title="setNeedsStatusBarAppearanceUpdate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setNeedsStatusBarAppearanceUpdate">+&nbsp;setNeedsStatusBarAppearanceUpdate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If you wish to change your status bar&rsquo;s style or visibility while an Intercom notification may be on
+screen, call this method so that Intercom&rsquo;s window can reflect these changes accordingly.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setNeedsStatusBarAppearanceUpdate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">Intercom.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Intercom. All rights reserved. Updated: 2015-09-18</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

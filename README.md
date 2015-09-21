@@ -1,5 +1,5 @@
 ## Requirements
-Intercom for iOS supports iOS 7.x and iOS 8.x.
+Intercom for iOS supports iOS 7.x, iOS 8.x and iOS 9.x.
 
 ## Installation
 
@@ -10,16 +10,7 @@ Add the Intercom pod into your Podfile and run a `pod install` or `pod update`.
 	
 ### Manual Installation 
 
-1. [Download Intercom for iOS](https://github.com/intercom/intercom-ios/archive/master.zip) and use Finder to drag `Intercom.framework` into your Xcode project, ticking the "Copy items if needed" checkbox.
-
-2. Intercom is a framework, so be sure to import Intercom correctly using the following `#import <Intercom/Intercom.h>` statement.
-
-3. Under Build Phases, Link Binary with Libraries, make sure you are linking the following: `ImageIO`, `MobileCoreServices`, `SystemConfiguration`, `AudioToolbox`, `QuartzCore`, `Security`, `CoreGraphics`, `AssetsLibrary`, `CFNetwork`, `libxml2.dylib` and `libicucore.dylib`.
-
-4. Sometimes Xcode won't correctly add the `Intercom.bundle` so make sure to add it to your target's Copy Bundle Resources build phase. You will find the bundle in the `Intercom.framework/Versions/A/Resources` folder.
-
-
-If you get errors, check out our [Troubleshooting section here](http://docs.intercom.io/Install-on-your-mobile-product/installing-intercom-for-ios#troubleshooting-tips).
+[Download Intercom for iOS](https://github.com/intercom/intercom-ios/archive/master.zip) and use Finder to drag `Intercom.framework` and `Intercom.bundle` into your Xcode project, ticking the "Copy items if needed" checkbox.
 
 ##Sample app
 
@@ -36,6 +27,10 @@ Broadly speaking, there are three types of apps that Intercom for iOS will work 
 1. Apps that only have registered users, like Facebook, Instagram or Slack. Your users have to log in straight away in order to use your app. [Show me how.](https://github.com/intercom/intercom-ios#my-app-only-has-logged-in-users)
 2. Apps that never log users in, like Threes Game or Angry Birds or the iOS Notes app. Your users never have to log in to use your app. [Show me how.](https://github.com/intercom/intercom-ios#my-apps-users-never-log-in)
 3. Apps that support both logged in and logged out users, like Google Maps or Youtube. [Show me how.](https://github.com/intercom/intercom-ios#my-app-has-logged-in-and-logged-out-users)
+
+###Import Intercom
+
+Make sure to use `@import Intercom;` in every file you want to use Intercom.
 
 ### Initialize Intercom
 No matter what category of app you have, you'll need your Intercom app id and the iOS API key that can be found on the [Intercom App Settings](https://app.intercom.io/) page in the API keys section. Once you've found those keys, initialize Intercom by calling the following in your application delegate:

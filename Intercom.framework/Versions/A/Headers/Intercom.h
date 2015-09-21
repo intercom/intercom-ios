@@ -1,7 +1,6 @@
-
 //
 //  Intercom.h
-//  Intercom for iOS - Version 2.3.4
+//  Intercom for iOS - Version 2.3.5
 //
 //  Created by Intercom on 8/01/2015.
 //  Copyright (c) 2014 Intercom. All rights reserved.
@@ -11,20 +10,10 @@
 #import <UIKit/UIKit.h>
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
-#error This version (2.3.4) of Intercom for iOS supports iOS 7.0 upwards.
+#error This version (2.3.5) of Intercom for iOS supports iOS 7.0 upwards.
 #endif
 
-#if __has_feature(nullability)
-#define ICM_ASSUME_NONNULL_BEGIN _Pragma("clang assume_nonnull begin")
-#define ICM_ASSUME_NONNULL_END _Pragma("clang assume_nonnull end")
-#define icm_nullable nullable
-#define __icm_nullable __nullable
-#else
-#define ICM_ASSUME_NONNULL_BEGIN
-#define ICM_ASSUME_NONNULL_END
-#define icm_nullable
-#define __icm_nullable
-#endif
+NS_ASSUME_NONNULL_BEGIN
 
 // Use these values to constrain an incoming notification view to a defined section of the window.
 typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
@@ -32,18 +21,6 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
     ICMPreviewPositionBottomRight  = 1,
     ICMPreviewPositionTopLeft      = 2,
     ICMPreviewPositionTopRight     = 3
-};
-
-__attribute__ ((deprecated))
-@protocol IntercomSessionListener <NSObject>
-- (void)intercomSessionStatusDidChange:(BOOL)isSessionOpen;
-@end
-
-typedef NS_ENUM(NSUInteger, ICMPresentationMode){
-    ICMPresentationModeBottomLeft   = 0,
-    ICMPresentationModeBottomRight  = 1,
-    ICMPresentationModeTopLeft      = 2,
-    ICMPresentationModeTopRight     = 3
 };
 
 /**
@@ -83,11 +60,7 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
  We have re-architected the internals of Intercom for iOS to ensure it is as reliable as possible while tracking
  your users. We have focused on removing asynchronous behaviour. For example you no longer need to wait for the
  completion blocks of the old `beginSession` calls before logging events or updating user data.
- In doing so the it is more nimble and reliable than ever before.
- 
- Previous versions of Intercom for iOS will migrate with minimal effort. All deprecated methods still work for now,
- excluding the old session listener (since v2.0.6). These methods will be permanently removed in a future
- version.
+ In doing so it is more nimble and reliable than ever before.
  
  ## How do push notifications work?
  
@@ -113,7 +86,6 @@ typedef NS_ENUM(NSUInteger, ICMPresentationMode){
  
  */
 @interface Intercom : NSObject
-ICM_ASSUME_NONNULL_BEGIN
 
 //=========================================================================================================
 /*! @name Getting set up */
@@ -379,95 +351,6 @@ UIKIT_EXTERN NSString *const IntercomWindowWillHideNotification;
 UIKIT_EXTERN NSString *const IntercomWindowDidHideNotification;
 UIKIT_EXTERN NSString *const IntercomDidStartNewConversationNotification;
 
-/**
- @warning Deprecated methods will be removed in version 2.4.
- */
-
-typedef void(^ICMCompletion)(NSError * __icm_nullable) __attribute((deprecated));
-
-//=========================================================================================================
-/*! @name Deprecated methods */
-//=========================================================================================================
-
-/*!
- @deprecated Use setSecureOptions: instead
- */
-+ (void)setApiKey:(NSString *)apiKey forAppId:(NSString *)appId securityOptions:(NSDictionary*) securityOptions __attribute((deprecated("Use method 'setSecureOptions:' instead")));
-
-/*!
- @deprecated Use registerUserWithEmail: instead
- */
-+ (void)beginSessionForUserWithEmail:(NSString *)email completion:(icm_nullable ICMCompletion)completion __attribute((deprecated("Use method 'registerUserWithEmail:' instead")));
-
-/*!
- @deprecated Use registerUserWithUserId: instead
- */
-+ (void)beginSessionForUserWithUserId:(NSString *)userId completion:(icm_nullable ICMCompletion)completion __attribute((deprecated("Use method 'registerUserWithUserId:' instead")));
-
-/*!
- @deprecated Use registerUnidentifiedUser instead
- */
-+ (void)beginSessionForAnonymousUserWithCompletion:(icm_nullable ICMCompletion)completion __attribute((deprecated("Use method 'registerUnidentifiedUser' instead")));
-
-/*!
- @deprecated Use reset instead
- */
-+ (void)endSession __attribute((deprecated("Use method 'reset' to reset your local install instead")));
-
-/*!
- @deprecated Use updateUserWithAttributes: instead
- */
-+ (void)updateUserWithAttributes:(NSDictionary *)attributes completion:(icm_nullable ICMCompletion)completion __attribute((deprecated("Use method 'updateUserWithAttributes:' instead")));
-
-/*!
- @deprecated Use logEventWithName: instead
- */
-+ (void)logEventWithName:(NSString *)name completion:(icm_nullable ICMCompletion)completion __attribute((deprecated("Use method 'logEventWithName:' instead")));
-
-/*!
- @deprecated Use logEventWithName:metaData: instead
- */
-+ (void)logEventWithName:(NSString *)name optionalMetaData:(NSDictionary *)metadata completion:(icm_nullable ICMCompletion)completion __attribute((deprecated("Use method 'logEventWithName:metaData:' instead")));
-
-/*!
- @deprecated This is no longer supported
- */
-+ (void)checkForUnreadMessages __attribute((deprecated("This is no longer supported.")));
-
-/*!
- @deprecated Use setPreviewPaddingX:y: instead
- */
-+ (void)setPresentationInsetOverScreen:(UIEdgeInsets)presentationInset __attribute((deprecated("Use method 'setPreviewPaddingX:y:' instead")));
-
-/*!
- @deprecated Use setPreviewPosition: instead
- */
-+ (void)setPresentationMode:(ICMPresentationMode)presentationMode __attribute((deprecated("Use method 'setPreviewPosition:' instead")));
-
-/*!
- @deprecated This is no longer supported. You can change your app's theme through settings on Intercom in the web.
- */
-+ (void)setBaseColor:(icm_nullable UIColor *)color __attribute((deprecated("This is no longer supported.")));
-
-/*!
- @deprecated Use setMessagesHidden: instead
- */
-+ (void)hideIntercomMessages:(BOOL)hidden  __attribute((deprecated("Use method 'setMessagesHidden:' instead")));
-
-/*!
- @deprecated Use presentConversationList or presentMessageComposer instead
- */
-+ (void)presentMessageViewAsConversationList:(BOOL)showConversationList __attribute((deprecated("Use method 'presentConversationList & presentMessageComposer' instead")));
-
-/*!
- @deprecated This is no longer supported.
- */
-+ (void)setSessionListener:(icm_nullable id<IntercomSessionListener>)sessionListener __attribute((deprecated("This is no longer supported.")));
-
-/*!
- @deprecated Use method setDeviceToken instead.
- */
-+ (void)registerForRemoteNotifications __attribute((deprecated("Use method 'setDeviceToken' instead.")));
-
-ICM_ASSUME_NONNULL_END
 @end
+
+NS_ASSUME_NONNULL_END

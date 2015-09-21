@@ -3,4 +3,19 @@ framework module Intercom {
 
   export *
   module * { export * }
+
+  link "icucore"
+  link "xml2"
+
+  link framework "Foundation"
+  link framework "UIKit"
+  link framework "AssetsLibrary"
+  link framework "AudioToolbox"
+  link framework "CFNetwork"
+  link framework "CoreGraphics"
+  link framework "ImageIO"
+  link framework "MobileCoreServices"
+  link framework "QuartzCore"
+  link framework "Security"
+  link framework "SystemConfiguration"
 }
