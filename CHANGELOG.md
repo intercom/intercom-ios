@@ -1,5 +1,10 @@
 # Intercom
 
+## 2.3.6 (2015-09-22)
+
+* Fixed Xcode 6.x compatibility (Fixes [#98](https://github.com/intercom/intercom-ios/issues/98)).
+* Potential fix for [#97](https://github.com/intercom/intercom-ios/issues/98).
+
 ## 2.3.5 (2015-09-21)
 
 * Improved support for Xcode 7 and iOS 9:
