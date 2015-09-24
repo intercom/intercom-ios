@@ -1,5 +1,9 @@
 # Intercom
 
+## 2.3.9 (2015-09-24)
+
+* Fixed an issue which could occur when Intercom is accessed across multiple threads.
+
 ## 2.3.8 (2015-09-23)
 
 * Fix for [#97](https://github.com/intercom/intercom-ios/issues/97).
