@@ -1,5 +1,9 @@
 # Intercom
 
+## 2.3.10 (2015-09-28)
+
+* Fixed an issue where CPU usage could spike after closing the Intercom window.
+
 ## 2.3.9 (2015-09-24)
 
 * Fixed an issue which could occur when Intercom is accessed across multiple threads.
