@@ -1,3 +1,5 @@
+# Intercom for iOS
+
 ## Requirements
 Intercom for iOS supports iOS 7.x, iOS 8.x and iOS 9.x.
 
