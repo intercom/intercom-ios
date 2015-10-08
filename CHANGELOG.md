@@ -1,5 +1,10 @@
 # Intercom
 
+## 2.3.11 (2015-10-08)
+
+* Layout changes that may help fix [#72](https://github.com/intercom/intercom-ios/issues/72).
+* Several small fixes to help improve stability.
+
 ## 2.3.10 (2015-09-28)
 
 * Fixed an issue where CPU usage could spike after closing the Intercom window.
