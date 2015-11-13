@@ -1,5 +1,12 @@
 # Intercom
 
+## 2.3.12 (2015-11-13)
+
+* Fixed [#72](https://github.com/intercom/intercom-ios/issues/72).
+* Fixed remaining issues with [#110](https://github.com/intercom/intercom-ios/issues/110).
+* Fixed memory leaks reported in [#111](https://github.com/intercom/intercom-ios/issues/111).
+* Fixed memory leaks originating from `libxml`.
+
 ## 2.3.11 (2015-10-08)
 
 * Layout changes that may help fix [#72](https://github.com/intercom/intercom-ios/issues/72).
