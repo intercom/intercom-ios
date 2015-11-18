@@ -1,5 +1,9 @@
 # Intercom
 
+## 2.3.14 (2015-11-18)
+
+* A small fix to help with status bar correctness and rotation.
+
 ## 2.3.13 (2015-11-18)
 
 * Intercom now respects `supportedInterfaceOrientations` from your app's root view controller. This fixes [#102](https://github.com/intercom/intercom-ios/issues/102).
