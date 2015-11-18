@@ -1,5 +1,13 @@
 # Intercom
 
+## 2.3.13 (2015-11-18)
+
+* Intercom now respects `supportedInterfaceOrientations` from your app's root view controller. This fixes [#102](https://github.com/intercom/intercom-ios/issues/102).
+* Fixed layout issue with list items in messages.
+* Fixed behaviour in some cases of iPad multitasking.
+* Removed last remaining leaks from [#111](https://github.com/intercom/intercom-ios/issues/111).
+* Fixed where small announcements could have the wrong layout in landscape.
+
 ## 2.3.12 (2015-11-13)
 
 * Fixed [#72](https://github.com/intercom/intercom-ios/issues/72).
