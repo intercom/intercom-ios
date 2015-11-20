@@ -1,5 +1,9 @@
 # Intercom
 
+## 2.3.15 (2015-11-20)
+
+* Improved link & button opening behaviour. This should help [#101](https://github.com/intercom/intercom-ios/issues/101) as well as fix Facebook and Twitter buttons.
+
 ## 2.3.14 (2015-11-18)
 
 * A small fix to help with status bar correctness and rotation.
