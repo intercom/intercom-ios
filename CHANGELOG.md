@@ -1,5 +1,9 @@
 # Intercom
 
+## 2.3.16 (2015-11-27)
+
+* Changes to help ensure API reliability.
+
 ## 2.3.15 (2015-11-20)
 
 * Improved link & button opening behaviour. This should help [#101](https://github.com/intercom/intercom-ios/issues/101) as well as fix Facebook and Twitter buttons.
