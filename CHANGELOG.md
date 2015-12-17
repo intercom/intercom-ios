@@ -1,5 +1,10 @@
 # Intercom
 
+## 2.3.17 (2015-12-17)
+
+* Fixed deep linking on some OS versions.
+* Improved push notification handling.
+
 ## 2.3.16 (2015-11-27)
 
 * Changes to help ensure API reliability.
