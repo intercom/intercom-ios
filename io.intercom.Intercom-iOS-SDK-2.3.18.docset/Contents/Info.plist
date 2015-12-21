@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIdentifier</key>
-	<string>io.intercom.Intercom-iOS-SDK-2.3.17</string>
+	<string>io.intercom.Intercom-iOS-SDK-2.3.18</string>
 	<key>CFBundleName</key>
-	<string>Intercom iOS SDK 2.3.17 Documentation</string>
+	<string>Intercom iOS SDK 2.3.18 Documentation</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -17,7 +17,7 @@
 	
 	
 	<key>DocSetFeedName</key>
-	<string>Intercom iOS SDK 2.3.17 Documentation</string>
+	<string>Intercom iOS SDK 2.3.18 Documentation</string>
 	
 	<key>DocSetMinimumXcodeVersion</key>
 	<string>3.0</string>
