@@ -1,5 +1,9 @@
 # Intercom
 
+## 2.3.19 (2015-12-21)
+
+* Added workaround for apps with incorrectly sized windows on iOS 9.
+
 ## 2.3.17 (2015-12-17)
 
 * Fixed deep linking on some OS versions.
