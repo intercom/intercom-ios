@@ -1,6 +1,6 @@
 # Intercom
 
-## 2.3.19 (2015-12-21)
+## 2.3.18 (2015-12-21)
 
 * Added workaround for apps with incorrectly sized windows on iOS 9.
 
