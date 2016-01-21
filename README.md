@@ -41,7 +41,7 @@ No matter what category of app you have, you'll need your Intercom app id and th
 
 	- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 		// Initialize Intercom
-    	[Intercom setApiKey:@"<#ios_sdk-...#>" forAppId:@"<#your-app-id#>"];
+    	[Intercom setApiKey:@"<#your_ios_api_key#>" forAppId:@"<#your-app-id#>"];
 	}
 
 ###My app only has logged in users
