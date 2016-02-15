@@ -12,9 +12,9 @@ Add the Intercom pod into your Podfile and run `pod install`.
 	
 ### Manual Installation 
 
-[Download Intercom for iOS](https://github.com/intercom/intercom-ios/archive/master.zip) and use Finder to drag `Intercom.framework` and `Intercom.bundle` into your Xcode project, ticking the "Copy items if needed" checkbox.
+1. [Download Intercom for iOS](https://github.com/intercom/intercom-ios/archive/master.zip) and use Finder to drag `Intercom.framework` and `Intercom.bundle` into your Xcode project, ticking the "Copy items if needed" checkbox.
 
-If that doesn't work, in your project's settings, under Build Phases, Link Binary with Libraries, make sure you are linking the following: `ImageIO`, `MobileCoreServices`, `SystemConfiguration`, `AudioToolbox`, `QuartzCore`, `Security`, `CoreGraphics`, `AssetsLibrary`, `CFNetwork`, `libxml2.tbd` and `libicucore.tbd`.
+2. In your project's settings, under Build Phases, Link Binary with Libraries, add `libxml2.tbd` and `libicucore.tbd`.
 
 ##Sample app
 
