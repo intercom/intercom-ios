@@ -1,6 +1,6 @@
 //
 //  Intercom.h
-//  Intercom for iOS - Version 2.3.19
+//  Intercom for iOS - Version 3.0.0-beta1
 //
 //  Created by Intercom on 8/01/2015.
 //  Copyright (c) 2014 Intercom. All rights reserved.
@@ -9,13 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
-#error This version (2.3.19) of Intercom for iOS supports iOS 7.0 upwards.
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_8_0
+#error This version (3.0.0-beta1) of Intercom for iOS supports iOS 8.0 upwards.
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
 
-// Use these values to constrain an incoming notification view to a defined section of the window.
 typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
     ICMPreviewPositionBottomLeft   = 0,
     ICMPreviewPositionBottomRight  = 1,
@@ -280,35 +279,59 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
 //=========================================================================================================
 
 /*!
- Use this to constrain an incoming notification view to a defined section of the window. By default, if this is
- not set, message previews appear in the bottom left of your application's window.
+ This method allows you to set a fixed bottom padding for in app messages and the launcher.
+ It is useful if your app has a tab bar or similar UI at the bottom of your window.
  
- @param previewPosition The ICMPreviewPosition for your incoming notifications.
+ @param bottomPadding The size of the bottom padding in points.
  */
-+ (void)setPreviewPosition:(ICMPreviewPosition)previewPosition;
-
-/*!
- Depending on the layout of your app you may need to modify the position of the message preview relative to the
- preview's position. Use this method to add sufficient padding using x and y values.
- 
- @param x A horizontal padding value.
- @param y A vertical padding value.
- */
-+ (void)setPreviewPaddingWithX:(CGFloat)x y:(CGFloat)y;
++ (void)setBottomPadding:(CGFloat)bottomPadding;
 
 //=========================================================================================================
-/*! @name Toggling message visibility */
+/*! @name Intercom UI Visibility */
 //=========================================================================================================
 
 /*!
  Use this to hide all incoming Intercom messages and message previews in the parts of your app where you do
- not wish to interrupt users, for example Camera views, parts of a game or other scenarios. If any part of
- Intercom for iOS's UI is on screen when this is set to YES, it will close itself.
+ not wish to interrupt users, for example Camera views, parts of a game or other scenarios.
  
- @param hidden A bool that toggles message visibility. Use this to either prevent or allow messages from being
- displayed in select parts of your app.
+ By default, all in app messages will be visible.
+ 
+ @param visible A boolean indicating if in app messages should be visible.
  */
-+ (void)setMessagesHidden:(BOOL)hidden;
++ (void)setInAppMessagesVisible:(BOOL)visible;
+
+/*!
+ Use this to show the Intercom launcher selectively within your app. If you choose to display the launcher,
+ you may want to hide it on some screens where screen space is critical (e.g. parts of a game).
+ 
+ By default, the launcher is hidden.
+ 
+ @param visible A boolean indicating if the launcher should be visible.
+ */
++ (void)setLauncherVisible:(BOOL)visible;
+
+/*!
+ Hide the Intercom messenger, if it is on screen.
+ This can be useful if your app wishes to get the users attention (e.g. opening an in app link).
+ */
++ (void)hideMessenger;
+
+//=========================================================================================================
+/*! @name Unread conversations */
+//=========================================================================================================
+
+/*!
+ This method provides the current number of unread conversations.
+ This is useful if you want to display a badge counter on the button where you launch Intercom.
+ 
+ @return The number of unread conversations.
+ */
++ (NSUInteger)unreadConversationCount;
+
+/*!
+ This notification is fired when the number of unread conversations changes.
+ */
+UIKIT_EXTERN NSString *const IntercomUnreadConversationCountDidChangeNotification;
 
 //=========================================================================================================
 /*! @name Enable logging */
@@ -329,6 +352,25 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  screen, call this method so that Intercom's window can reflect these changes accordingly.
  */
 + (void)setNeedsStatusBarAppearanceUpdate;
+
+//=========================================================================================================
+/*! @name Deprecated methods */
+//=========================================================================================================
+
+/*!
+ @deprecated +[Intercom setPreviewPosition:] is no longer supported, and will not work.
+ */
++ (void)setPreviewPosition:(ICMPreviewPosition)previewPosition __attribute((deprecated("'+[Intercom setPreviewPosition:]' is no longer supported and will not work")));
+
+/*!
+ @deprecated  +[Intercom setPreviewPaddingWithX:y:] is deprecated. Use +[Intercom setBottomPadding:] instead.
+ */
++ (void)setPreviewPaddingWithX:(CGFloat)x y:(CGFloat)y __attribute((deprecated("'+[Intercom setPreviewPaddingWithX:y:]' is deprecated. Use '+[Intercom setBottomPadding:]' instead.")));
+
+/*!
+ @deprecated +[Intercom setMessagesHidden:] is deprecated. Use +[Intercom setInAppsVisbile:] instead.
+ */
++ (void)setMessagesHidden:(BOOL)hidden __attribute((deprecated("'+[Intercom setMessagesHidden:]' is deprecated. 'Use +[Intercom setInAppMessagesVisible:]' instead.")));
 
 //=========================================================================================================
 /*! @name Intercom Notifications */
