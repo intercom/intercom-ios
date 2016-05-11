@@ -1,5 +1,10 @@
 # Intercom
 
+## 2.3.20 (2016-05-11)
+
+* Fixed potential crash outlined in [#135](https://github.com/intercom/intercom-ios/issues/135).
+* Improved reliability of push messages and opening native app URLs.
+
 ## 2.3.19 (2016-01-28)
 
 * Added workaround for iOS issue outlined in [#117](https://github.com/intercom/intercom-ios/issues/117).
