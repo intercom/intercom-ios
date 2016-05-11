@@ -177,13 +177,13 @@ As the SDK has evolved some method signatures have changed but their purpose has
 <table>
 	<tr><th colspan="3" style="text-align:center;">iOS Method Name Changes</th></tr>
 	<tr><td style="text-align:center; font-weight: bold; width: 33.3%;">Old Name</td><td style="text-align:center; font-weight: bold; width: 33.3%;">Type</td><td style="text-align:center; font-weight: bold; width: 33.3%;">New Name</td></tr>
-	<tr><td colspan="3" style="text-align:center; font-weight: bold;">From SDK version 2.0.x to 2.3.19</td></tr>
+	<tr><td colspan="3" style="text-align:center; font-weight: bold;">From SDK version 2.0.x to 2.3.20</td></tr>
 	<tr><td>beginSessionForUserWithUserId</td><td>Name change. Dropped block parameter.</td><td>registerUserWithUserId</td></tr>
 	<tr><td>beginSessionForUserWithEmail</td><td>Name change. Dropped block parameter.</td><td>registerUserWithEmail</td></tr>
 	<tr><td>beginSessionForAnonymousUserWithCompletion</td><td>Name change. Dropped block parameter.</td><td>registerUnidentifiedUser</td></tr>
 	<tr><td>updateUserWithAttributes</td><td>Dropped block parameter.</td><td>n/a</td></tr>
 	<tr><td>logEventWithName</td><td>Dropped block parameter.</td><td>n/a</td></tr>
-	<tr><td colspan="3" style="text-align:center; font-weight: bold;">From SDK version 1.x.x to 2.3.19</td></tr>
+	<tr><td colspan="3" style="text-align:center; font-weight: bold;">From SDK version 1.x.x to 2.3.20</td></tr>
 	<tr><td>beginSessionForUserWithUserId</td><td>Name change. Dropped block parameter.</td><td>registerUserWithUserId</td></tr>
 	<tr><td>beginSessionForUserWithEmail</td><td>Name change. Dropped block parameter.</td><td>registerUserWithEmail</td></tr>
 	<tr><td>updateAttributes</td><td>Name change. Dropped block parameter.</td><td>updateUserWithAttributes</td></tr>
