@@ -1,5 +1,9 @@
 # Intercom
 
+## 2.3.20 (2016-05-21)
+
+* Improved compatibility with some push notification implementations.
+
 ## 2.3.20 (2016-05-11)
 
 * Fixed potential crash outlined in [#135](https://github.com/intercom/intercom-ios/issues/135).
