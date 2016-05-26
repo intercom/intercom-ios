@@ -1,3 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-pod 'Intercom'
+target 'Sample' do
+  pod 'Intercom'
+end
