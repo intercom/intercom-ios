@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ITCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intercom-logo" translatesAutoresizingMaskIntoConstraints="NO" id="YRd-xJ-T0x">
+                                <rect key="frame" x="244" y="95" width="112" height="99"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-JU-5LF">
+                                <rect key="frame" x="248" y="278" width="105" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="F7w-lV-S20"/>
+                                    <constraint firstAttribute="height" constant="44" id="fuP-Xa-744"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gu4-hf-BA9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFh-f8-qS9">
+                                <rect key="frame" x="265" y="226" width="70" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="3zZ-Xx-MuQ"/>
+                                    <constraint firstAttribute="height" constant="44" id="7zi-Vs-Zy5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="hBT-0E-p82"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="xYc-nE-7rG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nHR-qT-8mV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olB-3V-k0i">
+                                <rect key="frame" x="225" y="330" width="150" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="2X7-Ps-dpf"/>
+                                    <constraint firstAttribute="width" constant="70" id="dMx-VH-sNh"/>
+                                    <constraint firstAttribute="height" constant="44" id="jRV-f1-nTP"/>
+                                    <constraint firstAttribute="height" constant="44" id="nbZ-mK-eQa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Open Intercom">
+                                    <color key="titleColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dMx-VH-sNh"/>
+                                        <exclude reference="nbZ-mK-eQa"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="openIntercomPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IQb-CZ-THN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NFh-f8-qS9" firstAttribute="top" secondItem="4JP-JU-5LF" secondAttribute="bottom" constant="8" id="COx-8f-Y5i"/>
+                            <constraint firstItem="YRd-xJ-T0x" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="75" id="D1N-R7-PJz"/>
+                            <constraint firstAttribute="centerX" secondItem="4JP-JU-5LF" secondAttribute="centerX" constant="-0.5" id="FkX-t0-piO"/>
+                            <constraint firstItem="4JP-JU-5LF" firstAttribute="top" secondItem="NFh-f8-qS9" secondAttribute="bottom" constant="8" id="JhS-ka-sXb"/>
+                            <constraint firstItem="YRd-xJ-T0x" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Qaz-LV-PeX"/>
+                            <constraint firstItem="4JP-JU-5LF" firstAttribute="top" secondItem="olB-3V-k0i" secondAttribute="bottom" constant="8" id="mGo-DG-ESC"/>
+                            <constraint firstAttribute="centerX" secondItem="olB-3V-k0i" secondAttribute="centerX" id="nYD-ei-UIh"/>
+                            <constraint firstItem="olB-3V-k0i" firstAttribute="top" secondItem="4JP-JU-5LF" secondAttribute="bottom" constant="8" id="rYa-J5-Ecn"/>
+                            <constraint firstAttribute="centerY" secondItem="4JP-JU-5LF" secondAttribute="centerY" id="sRe-GI-em1"/>
+                            <constraint firstAttribute="centerX" secondItem="NFh-f8-qS9" secondAttribute="centerX" id="zS6-Mu-TaI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="COx-8f-Y5i"/>
+                                <exclude reference="mGo-DG-ESC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="DNj-Qc-SeE"/>
+                    <connections>
+                        <outlet property="loginButton" destination="NFh-f8-qS9" id="LmV-NW-8Vz"/>
+                        <outlet property="logoutButton" destination="4JP-JU-5LF" id="ddQ-jd-01M"/>
+                        <outlet property="sendMessageButton" destination="olB-3V-k0i" id="b9f-Up-lzG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="478" y="415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Intercom-logo" width="112" height="99"/>
+    </resources>
+</document>
