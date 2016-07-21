@@ -5,9 +5,8 @@
 Our new Messenger is out of beta! You can read all about the updated design and new functionality [here](https://www.intercom.io/in-app-messaging).
 If you are upgrading from an older version of our Messenger you may want to change some of the methods you call. You can read about upgrading to the new version [here](https://docs.intercom.io/messenger-v3/upgrade-to-the-new-messenger-ios).
 
-Lots of functionality has been added and many issues have been fixed, including:
+Many issues have been fixed, including:
 
-* Added localization support for 38 languages. See [here](https://docs.intercom.io/configure-intercom-for-your-product-or-site/customize-the-intercom-messenger/localize-intercom-to-work-with-multiple-languages) for more information.
 * Fixed crashes reported in [#124](https://github.com/intercom/intercom-ios/issues/124).
 * Fixed [#130](https://github.com/intercom/intercom-ios/issues/130).
 * Improvements to push notifications which will hopefully fix issues such as [#144](https://github.com/intercom/intercom-ios/issues/144).
