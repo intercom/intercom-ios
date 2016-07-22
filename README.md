@@ -59,4 +59,4 @@ Intercom for iOS has support for all these things. For full details please read 
 
 ## Xcode Documentation
 
-This documentation provides integrated help in Xcode for all public APIs in Intercom for iOS. [Download the docset](https://github.com/intercom/intercom-ios/archive/master.zip) from the repository above and Copy the content into `~/Library/Developer/Shared/Documentation/DocSets`.
+This documentation provides integrated help in Xcode for all public APIs in Intercom for iOS. [Download the docset](https://github.com/intercom/intercom-ios/releases/tag/latest) from the latest release and Copy the content into `~/Library/Developer/Shared/Documentation/DocSets`.
