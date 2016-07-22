@@ -2,6 +2,10 @@
 
 ## 3.0.1 (2016-07-22)
 
+* Fixed AppStore submission issue reported in [#146](https://github.com/intercom/intercom-ios/issues/146).
+
+## 3.0.1 (2016-07-22)
+
 * Fixed inconsistent appearance issue reported in [#145](https://github.com/intercom/intercom-ios/issues/145).
 * Fixed crash that could occur if Intercom is incorrectly integrated in your app.
 * Made improvements to push notification handling.
