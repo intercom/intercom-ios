@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.0.1 (2016-07-22)
+
+* Fixed inconsistent appearance issue reported in [#145](https://github.com/intercom/intercom-ios/issues/145).
+* Fixed crash that could occur if Intercom is incorrectly integrated in your app.
+* Made improvements to push notification handling.
+
 ## 3.0.0 (2016-07-21)
 
 Our new Messenger is out of beta! You can read all about the updated design and new functionality [here](https://www.intercom.io/in-app-messaging).
