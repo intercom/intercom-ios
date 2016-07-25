@@ -1,6 +1,13 @@
 # Intercom
 
-## 3.0.1 (2016-07-22)
+## 3.0.3 (2016-07-25)
+
+* Fixed image upload issue from [#133](https://github.com/intercom/intercom-ios/issues/133).
+* Fixed issue where cancel button could be hidden on the image upload view.
+* Improve push notification handling and logging to help address [#147](https://github.com/intercom/intercom-ios/issues/147).
+* Fixed remaining issue in [#145](https://github.com/intercom/intercom-ios/issues/145).
+
+## 3.0.2 (2016-07-22)
 
 * Fixed AppStore submission issue reported in [#146](https://github.com/intercom/intercom-ios/issues/146).
 
