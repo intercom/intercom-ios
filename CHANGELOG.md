@@ -1,5 +1,10 @@
 # Intercom
 
+## 3.0.4 (2016-07-28)
+
+* Added workaround for crash described in [#153](https://github.com/intercom/intercom-ios/issues/153).
+* Much improved app delegate checking to fix [#147](https://github.com/intercom/intercom-ios/issues/147) and other push notification issues.
+
 ## 3.0.3 (2016-07-25)
 
 * Fixed image upload issue from [#133](https://github.com/intercom/intercom-ios/issues/133).
