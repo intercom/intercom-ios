@@ -1,5 +1,9 @@
 # Intercom
 
+## 3.0.6 (2016-08-02)
+
+* Made updates to address issue reported in [#158](https://github.com/intercom/intercom-ios/issues/158).
+
 ## 3.0.5 (2016-07-29)
 
 * Fixed [#155](https://github.com/intercom/intercom-ios/issues/155).
