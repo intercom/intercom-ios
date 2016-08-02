@@ -1,5 +1,9 @@
 # Intercom
 
+## 3.0.7 (2016-08-02)
+
+* Fixed last remaining issues from [#158](https://github.com/intercom/intercom-ios/issues/158) which could occur when your app has more than one application delegate.
+
 ## 3.0.6 (2016-08-02)
 
 * Made updates to address issue reported in [#158](https://github.com/intercom/intercom-ios/issues/158).
