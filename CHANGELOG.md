@@ -1,4 +1,9 @@
 # Intercom
+## 3.0.8 (2016-08-04)
+
+* Fixed issues from [#154](https://github.com/intercom/intercom-ios/issues/154)
+* Improved in-app message layout.
+* Fixed issue to address an inconsistent layout of Post message when opened from the Messenger.
 
 ## 3.0.7 (2016-08-02)
 
@@ -197,8 +202,8 @@ Many issues have been fixed, including:
 
 ## 2.2 (2015-03-23)
 
-* Now supports real-time, including real-time message delivery, support for the custom message responder, 
-and user presence and is-typing events are sent from the SDK and visible to admins in the Intercom app. 
+* Now supports real-time, including real-time message delivery, support for the custom message responder,
+and user presence and is-typing events are sent from the SDK and visible to admins in the Intercom app.
 Learn more at https://www.intercom.io/real-time-messaging
 * Fixed a display bug in the conversation list where the wrong name could be shown.
 * Fixed bug which could cause the wrong number to be displayed in the unread counter within a conversation.
@@ -299,13 +304,13 @@ Learn more at https://www.intercom.io/real-time-messaging
 * iOS 7 Support
 * Fix for when messages appear offset by 20 pixels (see documentation).
 
-## 1.1.1 (2013-08-19) 
+## 1.1.1 (2013-08-19)
 
 * Bug fixes for iPad screen display
 * Improved logged so message display is clearer
 * Smaller under the hood bug fixes around dismissing messages on session end.
 
-## 1.1 (2013-08-14) 
+## 1.1 (2013-08-14)
 
 * Include support for messaging.
 
