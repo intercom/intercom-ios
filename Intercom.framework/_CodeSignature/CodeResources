@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/Intercom.h</key>
 		<data>
-		UOS/yfcHdLrZcD3vMUPZkiKbNGk=
+		6yZL6ifyyNWod3gl+SldJ8hJ7zw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		idOMh+aB+mTqY5/86J0ftN/wncs=
+		5+gfuq0uUW6n5sJCQ/6ympr7DCk=
 		</data>
 		<key>Intercom.bundle/certs/intercom.icmcer</key>
 		<data>
@@ -87,18 +87,6 @@
 		<key>Intercom.bundle/images/close_post@3x.png</key>
 		<data>
 		73vicoCGoZ1d6R5ZiEYR1Ldjaf0=
-		</data>
-		<key>Intercom.bundle/images/expand_indicator.png</key>
-		<data>
-		U7p7y8Grq8+pA+7OsoCDEBpPyTU=
-		</data>
-		<key>Intercom.bundle/images/expand_indicator@2x.png</key>
-		<data>
-		XQURHV/xvA6W9cEXzIVXqcejjDs=
-		</data>
-		<key>Intercom.bundle/images/expand_indicator@3x.png</key>
-		<data>
-		5iVyGbmLwBCg6KHyvU6UN0nFQfw=
 		</data>
 		<key>Intercom.bundle/images/intercom_logo.png</key>
 		<data>
@@ -391,11 +379,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UOS/yfcHdLrZcD3vMUPZkiKbNGk=
+			6yZL6ifyyNWod3gl+SldJ8hJ7zw=
 			</data>
 			<key>hash2</key>
 			<data>
-			SEyBYBZkqj/7uiA78w679/VsqP2ixndkTEij9L3r//g=
+			GLi/CLFawFLQ6wpFc63TgO8dbOyURjkL8TXGm/lhbK8=
 			</data>
 		</dict>
 		<key>Intercom.bundle/certs/intercom.icmcer</key>
@@ -605,39 +593,6 @@
 			<key>hash2</key>
 			<data>
 			kTYYb+l6DR7s7IoxSplNuA2gosFAwqFDb1fM+djUYVo=
-			</data>
-		</dict>
-		<key>Intercom.bundle/images/expand_indicator.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			U7p7y8Grq8+pA+7OsoCDEBpPyTU=
-			</data>
-			<key>hash2</key>
-			<data>
-			pOTy6GzSmlsq5dj4M44YqMwDMn+6BHysft0iUO3IHZo=
-			</data>
-		</dict>
-		<key>Intercom.bundle/images/expand_indicator@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XQURHV/xvA6W9cEXzIVXqcejjDs=
-			</data>
-			<key>hash2</key>
-			<data>
-			NRoNbQthap+bRis3DpobegwqNl/kjam/tqcWpIFfltw=
-			</data>
-		</dict>
-		<key>Intercom.bundle/images/expand_indicator@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5iVyGbmLwBCg6KHyvU6UN0nFQfw=
-			</data>
-			<key>hash2</key>
-			<data>
-			jcDTFYYR1zPYiDW+qyAv7HzoBgr5lCmeywoAwQBnXTQ=
 			</data>
 		</dict>
 		<key>Intercom.bundle/images/intercom_logo.png</key>

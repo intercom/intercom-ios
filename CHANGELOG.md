@@ -1,9 +1,14 @@
 # Intercom
+
+## 3.0.9 (2016-08-08)
+
+* Fixed issue where the Intercom may not hand back the key window correctly when closed ([#160](https://github.com/intercom/intercom-ios/issues/160)).
+
 ## 3.0.8 (2016-08-04)
 
-* Fixed issues from [#154](https://github.com/intercom/intercom-ios/issues/154)
+* Fixed issues from [#154](https://github.com/intercom/intercom-ios/issues/154).
 * Improved in-app message layout.
-* Fixed issue to address an inconsistent layout of Post message when opened from the Messenger.
+* Fixed issue to address an inconsistent layout of Post messages when opened from the Messenger.
 
 ## 3.0.7 (2016-08-02)
 
