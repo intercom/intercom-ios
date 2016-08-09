@@ -15,7 +15,7 @@ Intercom for iOS supports iOS 8.x and iOS 9.x.
 Add the Intercom pod into your Podfile and run `pod install`.
 
     use_frameworks!
-    
+
     target :YourTargetName do
       pod 'Intercom'
     end
@@ -46,7 +46,7 @@ To use the sample app:
 ##Setup and Configuration
 
 * Our [installation guide](https://docs.intercom.io/install-on-your-product-or-site/quick-install/install-intercom-on-your-ios-app) contains full setup and initialisation instructions.
-* Read ["Configuring Intercom for iOS"](https://docs.intercom.io/configure-intercom-for-your-product-or-site/configure-intercom-for-mobile/configuring-intercom-for-ios). 
+* Read ["Configuring Intercom for iOS"](https://docs.intercom.io/configure-intercom-for-your-product-or-site/configure-intercom-for-mobile/configuring-intercom-for-ios).
 *  Please contact us on [Intercom](https://intercom.io) with any questions you may have, we're only a message away!
 
 ## Upgrading to v3.0
@@ -60,3 +60,22 @@ Intercom for iOS has support for all these things. For full details please read 
 ## Xcode Documentation
 
 This documentation provides integrated help in Xcode for all public APIs in Intercom for iOS. [Download the docset](https://github.com/intercom/intercom-ios/releases/tag/latest) from the latest release and Copy the content into `~/Library/Developer/Shared/Documentation/DocSets`.
+
+## Migrating from legacy version of the SDK
+
+To upgrade from SDK versions **older then version 2.2.4** there are some method changes that you may want to be aware of. See installation instructions at the top of this page for more information on how to install the new version of the SDK.
+
+<table>
+	<tr><th colspan="3" style="text-align:center;">iOS Method Name Changes</th></tr>
+	<tr><td style="text-align:center; font-weight: bold; width: 33.3%;">Old Name</td><td style="text-align:center; font-weight: bold; width: 33.3%;">Type</td><td style="text-align:center; font-weight: bold; width: 33.3%;">New Name</td></tr>
+	<tr><td colspan="3" style="text-align:center; font-weight: bold;">From SDK version 2.0.x</td></tr>
+	<tr><td>beginSessionForUserWithUserId</td><td>Name change. Dropped block parameter.</td><td>registerUserWithUserId</td></tr>
+	<tr><td>beginSessionForUserWithEmail</td><td>Name change. Dropped block parameter.</td><td>registerUserWithEmail</td></tr>
+	<tr><td>beginSessionForAnonymousUserWithCompletion</td><td>Name change. Dropped block parameter.</td><td>registerUnidentifiedUser</td></tr>
+	<tr><td>updateUserWithAttributes</td><td>Dropped block parameter.</td><td>n/a</td></tr>
+	<tr><td>logEventWithName</td><td>Dropped block parameter.</td><td>n/a</td></tr>
+	<tr><td colspan="3" style="text-align:center; font-weight: bold;">From SDK version 1.x.x</td></tr>
+	<tr><td>beginSessionForUserWithUserId</td><td>Name change. Dropped block parameter.</td><td>registerUserWithUserId</td></tr>
+	<tr><td>beginSessionForUserWithEmail</td><td>Name change. Dropped block parameter.</td><td>registerUserWithEmail</td></tr>
+  <tr><td>updateAttributes</td><td>Name change. Dropped block parameter.</td><td>updateUserWithAttributes</td></tr>
+</table>
