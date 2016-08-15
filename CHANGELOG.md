@@ -1,5 +1,12 @@
 # Intercom
 
+## 3.0.10 (2016-08-15)
+
+* Removed requirement for `use_frameworks!` when installing via CocoaPods.
+* Added support for APNS development push notifications. This removes the requirement to test Intercom push notifications with a production/Adhoc build.
+* Fixed issue where images couldn't be uploaded on iPad in landscape.
+* Fixed a formatting issue when sending a reply from the messenger.
+
 ## 3.0.9 (2016-08-08)
 
 * Fixed issue where the Intercom may not hand back the key window correctly when closed ([#160](https://github.com/intercom/intercom-ios/issues/160)).
