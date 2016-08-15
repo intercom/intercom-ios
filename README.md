@@ -14,8 +14,6 @@ Intercom for iOS supports iOS 8.x and iOS 9.x.
 ### CocoaPods
 Add the Intercom pod into your Podfile and run `pod install`.
 
-    use_frameworks!
-
     target :YourTargetName do
       pod 'Intercom'
     end

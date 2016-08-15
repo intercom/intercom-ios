@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/Intercom.h</key>
 		<data>
-		6yZL6ifyyNWod3gl+SldJ8hJ7zw=
+		fJCoAStfKkoTJereELuLdrlhBYc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5+gfuq0uUW6n5sJCQ/6ympr7DCk=
+		KBHZAlB3NC+ZujkQJlZGqv9/b8E=
 		</data>
 		<key>Intercom.bundle/certs/intercom.icmcer</key>
 		<data>
@@ -366,7 +366,7 @@
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		JPlFGakHLQ0QJkcgeitN/+/6wG4=
+		jak3DWVUfMcXlAofL8E0VyEuzL4=
 		</data>
 		<key>strip-frameworks.sh</key>
 		<data>
@@ -379,11 +379,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6yZL6ifyyNWod3gl+SldJ8hJ7zw=
+			fJCoAStfKkoTJereELuLdrlhBYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			GLi/CLFawFLQ6wpFc63TgO8dbOyURjkL8TXGm/lhbK8=
+			26V9JaUXrC8HhGckrLz1jOkHhAsrnZIRDCMim3ecBbM=
 			</data>
 		</dict>
 		<key>Intercom.bundle/certs/intercom.icmcer</key>
@@ -1358,11 +1358,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JPlFGakHLQ0QJkcgeitN/+/6wG4=
+			jak3DWVUfMcXlAofL8E0VyEuzL4=
 			</data>
 			<key>hash2</key>
 			<data>
-			vhOWdfCphcFFNp/REdCdQu+cNaimq+K3PKOrOIibwT8=
+			xyBdMYI40S/N+RygCZDCaHWTOqnoyWYsAMC3St6aWnU=
 			</data>
 		</dict>
 		<key>strip-frameworks.sh</key>
