@@ -57,7 +57,7 @@ Intercom for iOS has support for all these things. For full details please read 
 
 ## Xcode Documentation
 
-This documentation provides integrated help in Xcode for all public APIs in Intercom for iOS. [Download the docset](https://github.com/intercom/intercom-ios/releases/tag/latest) from the latest release and Copy the content into `~/Library/Developer/Shared/Documentation/DocSets`.
+This documentation provides integrated help in Xcode for all public APIs in Intercom for iOS. [Download the docset](https://github.com/intercom/intercom-ios/releases/latest) from the latest release and Copy the content into `~/Library/Developer/Shared/Documentation/DocSets`.
 
 ## Migrating from legacy version of the SDK
 
