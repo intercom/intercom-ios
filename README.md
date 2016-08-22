@@ -1,4 +1,4 @@
-![Intercom](Sample-ObjC/Sample-ObjC/Images.xcassets/Intercom-logo-github.imageset/Intercom_logo-github.png)
+![Intercom](Examples/Sample-ObjC/Sample-ObjC/Images.xcassets/Intercom-logo-github.imageset/Intercom_logo-github.png)
 
 [![CocoaPods](https://img.shields.io/badge/platforms-iOS-orange.svg?maxAge=2592000)](https://cocoapods.org/pods/Intercom)
 [![Languages](https://img.shields.io/badge/languages-OjbC%20%7C%20%20Swift-orange.svg?maxAge=2592000)](https://github.com/intercom/intercom-ios)
@@ -14,6 +14,11 @@ Intercom for iOS supports iOS 8.x and iOS 9.x.
 ### CocoaPods
 Add the Intercom pod into your Podfile and run `pod install`.
 
+<<<<<<< 13c74c01fa1c4534774c109002189ee9f3ff05aa
+=======
+    use_frameworks!
+
+>>>>>>> Example Apps
     target :YourTargetName do
       pod 'Intercom'
     end
@@ -36,7 +41,7 @@ This step is required to work around an [App Store submission bug](http://www.op
 There is a sample app provided for both Objective-C and Swift.
 To use the sample app:
 
-1. Go to the `Sample-ObjC` or `Sample-Swift` directory and run `pod install`.
+1. Go to the `Examples/Sample-ObjC` or `Examples/Sample-Swift` directory and run `pod install`.
 2. Open `Sample-ObjC.xcworkspace` or `Sample-Swift.xcworkspace` in Xcode.
 3. Set your iOS API key and App ID at the top of `ITCAppDelegate.m` or `AppDelegate.swift`.
 4. Build and run.
