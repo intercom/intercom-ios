@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/Intercom.h</key>
 		<data>
-		fJCoAStfKkoTJereELuLdrlhBYc=
+		BvXts/Dy4UABbLDAapdQP2q3Y+g=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KBHZAlB3NC+ZujkQJlZGqv9/b8E=
+		AE40EzvFZbUFHybJM1X3AwOkUwU=
 		</data>
 		<key>Intercom.bundle/certs/intercom.icmcer</key>
 		<data>
@@ -246,7 +246,7 @@
 		</data>
 		<key>Intercom.bundle/locales/fi.strings</key>
 		<data>
-		zT0/X1wD1JixjuSKfW7Vd5PQ3Jo=
+		ec6fuHMdgZU09UcxldOLfIWlruQ=
 		</data>
 		<key>Intercom.bundle/locales/fr.strings</key>
 		<data>
@@ -379,11 +379,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fJCoAStfKkoTJereELuLdrlhBYc=
+			BvXts/Dy4UABbLDAapdQP2q3Y+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			26V9JaUXrC8HhGckrLz1jOkHhAsrnZIRDCMim3ecBbM=
+			IDJWxQQTf/FZYJuVGpGm/4HIT2OvWDlQ6zzBorgb1Uo=
 			</data>
 		</dict>
 		<key>Intercom.bundle/certs/intercom.icmcer</key>
@@ -1028,11 +1028,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zT0/X1wD1JixjuSKfW7Vd5PQ3Jo=
+			ec6fuHMdgZU09UcxldOLfIWlruQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			PvsvHY+wkSMrNBxzBqAJujCaTxBD5R5vk4aMZjym0oA=
+			90MQuagsANUOayA3JpeCiJij2qgyylD+eE41gEF9IG4=
 			</data>
 		</dict>
 		<key>Intercom.bundle/locales/fr.strings</key>
