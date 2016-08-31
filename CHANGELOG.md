@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.0.11 (2016-08-31)
+
+* Fixed [#166](https://github.com/intercom/intercom-ios/issues/166).
+* Fixed [#168](https://github.com/intercom/intercom-ios/issues/168).
+* Made some improvements to the Finnish locale.
+
 ## 3.0.10 (2016-08-15)
 
 * Removed requirement for `use_frameworks!` when installing via CocoaPods.
