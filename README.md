@@ -32,6 +32,9 @@ Add the Intercom pod into your Podfile and run `pod install`.
         bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Intercom.framework/strip-frameworks.sh"
 This step is required to work around an [App Store submission bug](http://www.openradar.me/radar?id=6409498411401216) when archiving universal binaries.
 
+### iOS 10 Requirements
+If you are supporting iOS 10 in your app, you'll need to make sure that you add `NSPhotoLibraryUsageDescription` to your `Info.plist` so that your users have the ability to upload photos in Intercom's messenger. This is a new permissions requirement from Apple in iOS 10.
+
 ##Sample app
 There is a sample app provided for both Objective-C and Swift.
 To use the sample app:
