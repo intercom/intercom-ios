@@ -32,8 +32,8 @@
 "navbar.title.new.conversation" = "Nova conversa";
 "last_active.over_week_ago" = "Ativo(a) há mais de 1 semana";
 "time.difference.just.now" = "Agora";
-"last_active.minutes.ago" = "Ativo(a) há {minutes}m";
-"last_active.15_minutes" = "Ativo(a) nos últimos {minutes}m";
+"last_active.minutes.ago" = "Ativo(a) há {minutes}min";
+"last_active.15_minutes" = "Ativo(a) nos últimos {minutes}min";
 "message.seen" = "Lida";
 "last_active.format.days.ago" = "Ativo(a) há {days}d";
 "error.starting.conversation.fallback" = "Não é possível começar uma nova conversa";
@@ -42,7 +42,7 @@
 "error.loading.conversations.fallback.no_app_name" = "Não foi possível carregar as conversas";
 "we.run.on.intercom" = "Usamos a tecnologia da Intercom";
 "navbar.title.conversations.no_app_name" = "Conversas";
-"time.difference.format.minutes.ago" = "Há {delta}m";
+"time.difference.format.minutes.ago" = "Há {delta}min";
 "error.tap.to.retry" = "Tentar novamente";
 "reply_from_admin" = "Resposta de {name}";
 "inbox.you" = "Você";

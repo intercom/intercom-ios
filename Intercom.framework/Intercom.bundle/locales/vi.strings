@@ -40,7 +40,7 @@
 "error.no_conversations.message" = "Chưa có hội thoại nào với nhóm {name}";
 "time.difference.format.days.ago" = "{delta} ngày trước";
 "error.loading.conversations.fallback.no_app_name" = "Không thể tải các hội thoại của bạn";
-"we.run.on.intercom" = "Chúng tôi chạy trên Intercom";
+"we.run.on.intercom" = "Phát triển bởi Intercom";
 "navbar.title.conversations.no_app_name" = "Hội thoại";
 "time.difference.format.minutes.ago" = "{delta} phút trước";
 "error.tap.to.retry" = "Thử lại";

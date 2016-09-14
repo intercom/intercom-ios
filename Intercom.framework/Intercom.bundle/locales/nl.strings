@@ -44,5 +44,5 @@
 "navbar.title.conversations.no_app_name" = "Gesprekken";
 "time.difference.format.minutes.ago" = "{delta} min. geleden";
 "error.tap.to.retry" = "Opnieuw proberen";
-"reply_from_admin" = "Beantwoorden vanaf {name}";
+"reply_from_admin" = "Antwoord van {name}";
 "inbox.you" = "Jij";
