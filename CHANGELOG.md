@@ -1,5 +1,12 @@
 # Intercom
 
+## 3.0.12 (2016-09-14)
+
+* Improved iOS 10 compatibility.
+* Fixed issue where chat bubbles could be empty in iOS 10. This was as a result of an iOS 10 bug with collection views.
+* Improved localisation of the Messenger for Croation, Chinese, Korean, Catalan, Dutch, Portuguese, Portuguese Brazilian, Viatnamese.
+* Various other minor bug fixes.
+
 ## 3.0.11 (2016-08-31)
 
 * Fixed [#166](https://github.com/intercom/intercom-ios/issues/166).
