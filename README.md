@@ -50,6 +50,9 @@ To use the sample app:
 * Read ["Configuring Intercom for iOS"](https://docs.intercom.io/configure-intercom-for-your-product-or-site/configure-intercom-for-mobile/configuring-intercom-for-ios).
 *  Please contact us on [Intercom](https://intercom.io) with any questions you may have, we're only a message away!
 
+## Cordova/Phonegap Support
+Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
+
 ## Upgrading to v3.0
 
 Upgrading to the latest version of the iOS SDK is easy! 😉  Checkout out our [upgrade guide](https://docs.intercom.io/messenger-v3/upgrade-to-the-new-messenger-ios) for more info.
