@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,42 +15,23 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intercom-logo" translatesAutoresizingMaskIntoConstraints="NO" id="YRd-xJ-T0x">
-                                <rect key="frame" x="244" y="95" width="112" height="99"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-JU-5LF">
-                                <rect key="frame" x="248" y="278" width="105" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="105" id="F7w-lV-S20"/>
-                                    <constraint firstAttribute="height" constant="44" id="fuP-Xa-744"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Log out">
-                                    <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="logoutPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gu4-hf-BA9"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intercom-logo" translatesAutoresizingMaskIntoConstraints="NO" id="YRd-xJ-T0x"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFh-f8-qS9">
-                                <rect key="frame" x="265" y="226" width="70" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="3zZ-Xx-MuQ"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="7NT-Bu-KtQ"/>
                                     <constraint firstAttribute="height" constant="44" id="7zi-Vs-Zy5"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="GhO-os-dJr"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="hBT-0E-p82"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="xYc-nE-7rG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="disabled">
                                     <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -59,17 +41,18 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olB-3V-k0i">
-                                <rect key="frame" x="225" y="330" width="150" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="2X7-Ps-dpf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="EEe-om-itt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Hri-KG-sma"/>
                                     <constraint firstAttribute="width" constant="70" id="dMx-VH-sNh"/>
                                     <constraint firstAttribute="height" constant="44" id="jRV-f1-nTP"/>
                                     <constraint firstAttribute="height" constant="44" id="nbZ-mK-eQa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Open Intercom">
-                                    <color key="titleColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="disabled">
                                     <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -84,26 +67,39 @@
                                     <action selector="openIntercomPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IQb-CZ-THN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-JU-5LF">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="F7w-lV-S20"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="b8R-2C-aks"/>
+                                    <constraint firstAttribute="height" constant="44" id="fuP-Xa-744"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="pCY-L3-XF4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gu4-hf-BA9"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NFh-f8-qS9" firstAttribute="top" secondItem="4JP-JU-5LF" secondAttribute="bottom" constant="8" id="COx-8f-Y5i"/>
-                            <constraint firstItem="YRd-xJ-T0x" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="75" id="D1N-R7-PJz"/>
-                            <constraint firstAttribute="centerX" secondItem="4JP-JU-5LF" secondAttribute="centerX" constant="-0.5" id="FkX-t0-piO"/>
-                            <constraint firstItem="4JP-JU-5LF" firstAttribute="top" secondItem="NFh-f8-qS9" secondAttribute="bottom" constant="8" id="JhS-ka-sXb"/>
-                            <constraint firstItem="YRd-xJ-T0x" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Qaz-LV-PeX"/>
-                            <constraint firstItem="4JP-JU-5LF" firstAttribute="top" secondItem="olB-3V-k0i" secondAttribute="bottom" constant="8" id="mGo-DG-ESC"/>
-                            <constraint firstAttribute="centerX" secondItem="olB-3V-k0i" secondAttribute="centerX" id="nYD-ei-UIh"/>
-                            <constraint firstItem="olB-3V-k0i" firstAttribute="top" secondItem="4JP-JU-5LF" secondAttribute="bottom" constant="8" id="rYa-J5-Ecn"/>
-                            <constraint firstAttribute="centerY" secondItem="4JP-JU-5LF" secondAttribute="centerY" id="sRe-GI-em1"/>
-                            <constraint firstAttribute="centerX" secondItem="NFh-f8-qS9" secondAttribute="centerX" id="zS6-Mu-TaI"/>
+                            <constraint firstItem="YRd-xJ-T0x" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2w8-g7-HTk"/>
+                            <constraint firstItem="NFh-f8-qS9" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8Qa-FY-sJe"/>
+                            <constraint firstItem="4JP-JU-5LF" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Gqa-3a-0ML"/>
+                            <constraint firstItem="NFh-f8-qS9" firstAttribute="top" secondItem="YRd-xJ-T0x" secondAttribute="bottom" constant="40" id="pfL-mg-sCI">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="NFh-f8-qS9" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="sl5-ol-stA"/>
+                            <constraint firstItem="olB-3V-k0i" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="uTc-ve-MuO"/>
+                            <constraint firstItem="olB-3V-k0i" firstAttribute="top" secondItem="NFh-f8-qS9" secondAttribute="bottom" constant="8" id="wkp-4S-uF9"/>
+                            <constraint firstItem="4JP-JU-5LF" firstAttribute="top" secondItem="olB-3V-k0i" secondAttribute="bottom" constant="8" id="z6H-TP-BxB"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="COx-8f-Y5i"/>
-                                <exclude reference="mGo-DG-ESC"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="DNj-Qc-SeE"/>
                     <connections>
@@ -114,10 +110,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478" y="415"/>
+            <point key="canvasLocation" x="-188" y="86"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Intercom-logo" width="112" height="99"/>
+        <image name="Intercom-logo" width="111" height="98"/>
     </resources>
 </document>
