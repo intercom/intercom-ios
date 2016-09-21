@@ -17,8 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Intercom.setApiKey(INETERCOM_API_KEY, forAppId: INTERCOM_APP_ID)
         Intercom.setLauncherVisible(true)
         
@@ -26,18 +25,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Intercom.enableLogging()
         #endif
     
-        let defaults = NSUserDefaults.standardUserDefaults()
-        if let email = defaults.stringForKey(emailKey) {
-            Intercom.registerUserWithEmail(email)
+        let defaults = UserDefaults.standard
+        if let email = defaults.string(forKey: emailKey) {
+            Intercom.registerUser(withEmail: email)
         }
         
         return true
     }
 
-    func applicationDidBecomeActive(application: UIApplication) {
+    func applicationDidBecomeActive(_ application: UIApplication) {
         //Register for push notifications
         //For more info, see: http://docs.intercom.io/Install-on-your-mobile-product/enabling-push-notifications-with-intercom-for-ios
-        let settings = UIUserNotificationSettings(forTypes: [.Badge, .Sound, .Alert], categories: nil)
+        let settings = UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil)
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
 
