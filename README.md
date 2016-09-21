@@ -36,7 +36,7 @@ This step is required to work around an [App Store submission bug](http://www.op
 If you are supporting iOS 10 in your app, you'll need to make sure that you add `NSPhotoLibraryUsageDescription` to your `Info.plist` so that your users have the ability to upload photos in Intercom's messenger. This is a new permissions requirement from Apple in iOS 10.
 
 ##Example app
-There is a sample app provided [here](https://github.com/intercom/intercom-ios/tree/master/Examples) for both Objective-C and Swift.
+There is an example app provided [here](https://github.com/intercom/intercom-ios/tree/master/Examples) for both Objective-C and Swift.
 
 ##Setup and Configuration
 
