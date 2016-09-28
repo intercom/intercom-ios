@@ -1,6 +1,10 @@
 # Intercom
 
-## 2.3.20 (2016-05-21)
+## 2.3.22 (2016-09-28)
+
+* Fixed an issue where `[Intercom setMessagesHidden:NO]` could cause unessesary network requests.
+
+## 2.3.21 (2016-05-21)
 
 * Improved compatibility with some push notification implementations.
 
