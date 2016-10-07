@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Thử lại";
 "alert.new.sdk.user.title" = "Xin chúc mừng";
 "app_team" = "Nhóm {name}";
-"navbar.title.conversations" = "Hội thoại với {name}";
+"navbar.title.conversations" = "Hội thoại\nvới {name}";
 "actionsheet.cancel" = "Hủy";
 "navigation.close" = "Đóng";
 "message.send" = "Gửi";

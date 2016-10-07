@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Opnieuw proberen";
 "alert.new.sdk.user.title" = "Gefeliciteerd";
 "app_team" = "Team van {name}";
-"navbar.title.conversations" = "Gesprekken met {name}";
+"navbar.title.conversations" = "Gesprekken\nmet {name}";
 "actionsheet.cancel" = "Annuleren";
 "navigation.close" = "Sluiten";
 "message.send" = "Versturen";

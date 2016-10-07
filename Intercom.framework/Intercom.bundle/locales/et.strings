@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Proovi uuesti";
 "alert.new.sdk.user.title" = "Õnnitleme";
 "app_team" = "{name} meeskond";
-"navbar.title.conversations" = "Vestlused kasutajaga {name}";
+"navbar.title.conversations" = "Vestlused\nkasutajaga {name}";
 "actionsheet.cancel" = "Tühista";
 "navigation.close" = "Sule";
 "message.send" = "Saada";

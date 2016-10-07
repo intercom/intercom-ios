@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Încearcă din nou";
 "alert.new.sdk.user.title" = "Felicitări";
 "app_team" = "Echipa {name}";
-"navbar.title.conversations" = "Conversaţii cu {name}";
+"navbar.title.conversations" = "Conversaţii\ncu {name}";
 "actionsheet.cancel" = "Anulare";
 "navigation.close" = "Închidere";
 "message.send" = "Trimite";

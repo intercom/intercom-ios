@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Próbáld újra";
 "alert.new.sdk.user.title" = "Gratulálunk";
 "app_team" = "{name} csapat";
-"navbar.title.conversations" = "Beszélgetések ({name})";
+"navbar.title.conversations" = "Beszélgetések\n{name}";
 "actionsheet.cancel" = "Mégse";
 "navigation.close" = "Bezárás";
 "message.send" = "Küldés";

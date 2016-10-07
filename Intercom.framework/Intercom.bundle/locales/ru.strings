@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Повторить попытку";
 "alert.new.sdk.user.title" = "Поздравляем!";
 "app_team" = "Команда {name}";
-"navbar.title.conversations" = "Разговоры с {name}";
+"navbar.title.conversations" = "Разговоры\nс {name}";
 "actionsheet.cancel" = "Отменить";
 "navigation.close" = "Закрыть";
 "message.send" = "Отправить";

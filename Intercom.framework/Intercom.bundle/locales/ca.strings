@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Torna-ho a provar";
 "alert.new.sdk.user.title" = "Felicitats";
 "app_team" = "Equip {name}";
-"navbar.title.conversations" = "Converses amb {name}";
+"navbar.title.conversations" = "Converses\namb {name}";
 "actionsheet.cancel" = "Cancel·la";
 "navigation.close" = "Tanca";
 "message.send" = "Envia";

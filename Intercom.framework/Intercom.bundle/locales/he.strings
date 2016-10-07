@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "נסה שוב";
 "alert.new.sdk.user.title" = "ברכותינו";
 "app_team" = "צוות {name}";
-"navbar.title.conversations" = "שיחות עם {name}";
+"navbar.title.conversations" = "שיחות\nעם {name}";
 "actionsheet.cancel" = "בטל";
 "navigation.close" = "סגור";
 "message.send" = "שלח";

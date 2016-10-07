@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Bandyti dar kartą";
 "alert.new.sdk.user.title" = "Sveikiname";
 "app_team" = "„{name}“ komanda";
-"navbar.title.conversations" = "Pokalbiai su: „{name}“";
+"navbar.title.conversations" = "Pokalbiai\nsu „{name}“";
 "actionsheet.cancel" = "Atšaukti";
 "navigation.close" = "Uždaryti";
 "message.send" = "Siųsti";

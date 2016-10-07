@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Mēģiniet vēlreiz";
 "alert.new.sdk.user.title" = "Apsveicam!";
 "app_team" = "Komanda {name}";
-"navbar.title.conversations" = "Sarunas ar lietotāju {name}";
+"navbar.title.conversations" = "Sarunas\nar lietotāju {name}";
 "actionsheet.cancel" = "Atcelt";
 "navigation.close" = "Aizvērt";
 "message.send" = "Sūtīt";

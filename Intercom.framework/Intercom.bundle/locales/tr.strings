@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Tekrar Dene";
 "alert.new.sdk.user.title" = "Tebrikler";
 "app_team" = "{name} Ekibi";
-"navbar.title.conversations" = "{name} ile sohbetler";
+"navbar.title.conversations" = "{name} ile\nsohbetler";
 "actionsheet.cancel" = "İptal";
 "navigation.close" = "Kapat";
 "message.send" = "Gönder";

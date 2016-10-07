@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Yritä uudelleen";
 "alert.new.sdk.user.title" = "Onnittelut";
 "app_team" = "{name}-tiimi";
-"navbar.title.conversations" = "Keskustelut – {name}";
+"navbar.title.conversations" = "Keskustelut\n{name}";
 "actionsheet.cancel" = "Peruuta";
 "navigation.close" = "Sulje";
 "message.send" = "Lähetä";

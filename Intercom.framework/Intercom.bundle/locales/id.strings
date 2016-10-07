@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Coba Lagi";
 "alert.new.sdk.user.title" = "Selamat";
 "app_team" = "Tim {name}";
-"navbar.title.conversations" = "Percakapan dengan {name}";
+"navbar.title.conversations" = "Percakapan\ndengan {name}";
 "actionsheet.cancel" = "Batal";
 "navigation.close" = "Tutup";
 "message.send" = "Kirim";

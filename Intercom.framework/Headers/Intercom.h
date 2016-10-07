@@ -1,6 +1,6 @@
 //
 //  Intercom.h
-//  Intercom for iOS - Version 3.0.12
+//  Intercom for iOS - Version 3.0.13
 //
 //  Created by Intercom on 8/01/2015.
 //  Copyright (c) 2014 Intercom. All rights reserved.
@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_8_0
-#error This version (3.0.12) of Intercom for iOS supports iOS 8.0 upwards.
+#error This version (3.0.13) of Intercom for iOS supports iOS 8.0 upwards.
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
@@ -256,6 +256,11 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  Present the message composer.
  */
 + (void)presentMessageComposer;
+
+/*!
+ Present the message composer with a message to pre-populate the composer.
+ */
++ (void)presentMessageComposerWithInitialMessage:(NSString *)message;
 
 /*!
  Present the conversation list.

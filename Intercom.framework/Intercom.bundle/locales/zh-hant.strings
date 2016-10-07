@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "再試一次";
 "alert.new.sdk.user.title" = "恭喜您";
 "app_team" = "{name} 團隊";
-"navbar.title.conversations" = "與 {name} 的對話";
+"navbar.title.conversations" = "對話\n{name}";
 "actionsheet.cancel" = "取消";
 "navigation.close" = "關閉";
 "message.send" = "傳送";

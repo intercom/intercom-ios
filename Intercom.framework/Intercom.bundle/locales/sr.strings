@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Pokušajte ponovo";
 "alert.new.sdk.user.title" = "Čestitamo";
 "app_team" = "{name} Tim";
-"navbar.title.conversations" = "Razgovori sa {name}";
+"navbar.title.conversations" = "Razgovori\nsa {name}";
 "actionsheet.cancel" = "Otkaži";
 "navigation.close" = "Zatvori";
 "message.send" = "Pošalji";

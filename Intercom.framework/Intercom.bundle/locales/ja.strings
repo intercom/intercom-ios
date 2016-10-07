@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "再度お試しください";
 "alert.new.sdk.user.title" = "おめでとうございます";
 "app_team" = "{name}チーム";
-"navbar.title.conversations" = "{name}との会話";
+"navbar.title.conversations" = "{name}\nとの会話";
 "actionsheet.cancel" = "キャンセル";
 "navigation.close" = "クローズ";
 "message.send" = "送信";

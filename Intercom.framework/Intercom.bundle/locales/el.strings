@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Προσπαθήστε ξανά";
 "alert.new.sdk.user.title" = "Συγχαρητήρια";
 "app_team" = "Ομάδα {name}";
-"navbar.title.conversations" = "Συζητήσεις με {name}";
+"navbar.title.conversations" = "Συζητήσεις\nμε {name}";
 "actionsheet.cancel" = "Ακύρωση";
 "navigation.close" = "Κλείσιμο";
 "message.send" = "Αποστολή";

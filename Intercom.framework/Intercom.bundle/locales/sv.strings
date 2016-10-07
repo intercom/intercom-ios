@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Försök igen";
 "alert.new.sdk.user.title" = "Grattis";
 "app_team" = "{name}-team";
-"navbar.title.conversations" = "Konversationer med {name}";
+"navbar.title.conversations" = "Konversationer\nmed {name}";
 "actionsheet.cancel" = "Avbryt";
 "navigation.close" = "Stäng";
 "message.send" = "Skicka";

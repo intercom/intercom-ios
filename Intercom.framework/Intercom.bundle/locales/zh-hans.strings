@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "重试";
 "alert.new.sdk.user.title" = "恭喜您";
 "app_team" = "{name} 团队";
-"navbar.title.conversations" = "与 {name} 对话";
+"navbar.title.conversations" = "对话\n{name}";
 "actionsheet.cancel" = "取消";
 "navigation.close" = "关闭";
 "message.send" = "发送";

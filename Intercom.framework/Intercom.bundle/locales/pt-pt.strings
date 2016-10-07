@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Repetir";
 "alert.new.sdk.user.title" = "Parabéns";
 "app_team" = "Equipa {name}";
-"navbar.title.conversations" = "Conversas com {name}";
+"navbar.title.conversations" = "Conversas\ncom {name}";
 "actionsheet.cancel" = "Cancelar";
 "navigation.close" = "Fechar";
 "message.send" = "Enviar";

@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Inténtalo de nuevo";
 "alert.new.sdk.user.title" = "Enhorabuena";
 "app_team" = "Equipo {name}";
-"navbar.title.conversations" = "Conversaciones con {name}";
+"navbar.title.conversations" = "Conversaciones\ncon {name}";
 "actionsheet.cancel" = "Cancelar";
 "navigation.close" = "Cerrar";
 "message.send" = "Enviar";

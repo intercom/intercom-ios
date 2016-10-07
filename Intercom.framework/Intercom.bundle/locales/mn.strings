@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Дахин оролдох";
 "alert.new.sdk.user.title" = "Баяр хүргэе";
 "app_team" = "{name} баг";
-"navbar.title.conversations" = "{name}-тай хийсэн чат";
+"navbar.title.conversations" = "{name} тай\nхийсэн чат";
 "actionsheet.cancel" = "Цуцлах";
 "navigation.close" = "Хаах";
 "message.send" = "Илгээх";

@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Prøv igen";
 "alert.new.sdk.user.title" = "Tillykke";
 "app_team" = "Team {name}";
-"navbar.title.conversations" = "Samtaler med {name}";
+"navbar.title.conversations" = "Samtaler\nmed {name}";
 "actionsheet.cancel" = "Annuller";
 "navigation.close" = "Luk";
 "message.send" = "Send";

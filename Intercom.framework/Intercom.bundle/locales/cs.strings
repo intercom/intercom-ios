@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "Zkuste to znovu";
 "alert.new.sdk.user.title" = "Blahopřejeme";
 "app_team" = "Tým {name}";
-"navbar.title.conversations" = "Konverzace s {name}";
+"navbar.title.conversations" = "Konverzace\ns {name}";
 "actionsheet.cancel" = "Zrušit";
 "navigation.close" = "Zavřít";
 "message.send" = "Odeslat";

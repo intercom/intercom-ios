@@ -21,7 +21,7 @@
 "actionsheet.try.again" = "다시 시도하기";
 "alert.new.sdk.user.title" = "축하드립니다";
 "app_team" = "{name} 팀";
-"navbar.title.conversations" = "{name}님과의 대화 내용";
+"navbar.title.conversations" = "대화 내용\n{name}님";
 "actionsheet.cancel" = "취소하기";
 "navigation.close" = "닫기";
 "message.send" = "전송하기";
