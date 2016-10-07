@@ -2,10 +2,10 @@
 
 ## 3.0.13 (2016-10-7)
 
-* Added `[Intercom presentMessageComposerWithInitialMessage:]` to allow preopulating the message composer.
+* Added `[Intercom presentMessageComposerWithInitialMessage:]` to allow pre-populating the message composer.
 * Fixed issue where you could see multiple congratulations alerts when installing Intercom (e.g. https://github.com/intercom/intercom-cordova/issues/83).
 * Improvements to allow all Intercom methods to be called from any thread (fixes [#181](https://github.com/intercom/intercom-ios/issues/181)).
-* Various localisatio updates.
+* Various localisation updates.
 
 ## 3.0.12 (2016-09-14)
 
