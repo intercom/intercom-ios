@@ -1,5 +1,9 @@
 # Intercom
 
+## 3.0.14 (2016-10-14)
+
+* Improved compatibility with the new `UserNotifications` framework for iOS 10 push notifications (fixes [#184](https://github.com/intercom/intercom-ios/issues/184)).
+
 ## 3.0.13 (2016-10-7)
 
 * Added `[Intercom presentMessageComposerWithInitialMessage:]` to allow pre-populating the message composer.
