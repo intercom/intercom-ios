@@ -1,5 +1,9 @@
 # Intercom
 
+## 3.0.15 (2016-10-14)
+
+* Rolled back some changes from 3.0.14 to ensure compatibility with iOS 8 & iOS 9.
+
 ## 3.0.14 (2016-10-14)
 
 * Improved compatibility with the new `UserNotifications` framework for iOS 10 push notifications (fixes [#184](https://github.com/intercom/intercom-ios/issues/184)).
