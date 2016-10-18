@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.0.16 (2016-10-15)
+
+* Reinstated push notification improvements for iOS 10 from 3.0.14.
+* Store Intercom data in `PrivateDocuments` to ensure it is not visible to users through iTunes file sharing.
+* Fixed issue where Intercom window may not be fully teared down when the Messenger is closed.
+
 ## 3.0.15 (2016-10-14)
 
 * Rolled back some changes from 3.0.14 to ensure compatibility with iOS 8 & iOS 9.
