@@ -1,6 +1,6 @@
 # Intercom
 
-## 3.0.16 (2016-10-15)
+## 3.0.16 (2016-10-18)
 
 * Reinstated push notification improvements for iOS 10 from 3.0.14.
 * Store Intercom data in `PrivateDocuments` to ensure it is not visible to users through iTunes file sharing.
