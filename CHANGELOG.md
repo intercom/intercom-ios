@@ -1,5 +1,9 @@
 # Intercom
 
+## 3.0.17 (2016-10-19)
+
+* Removed a reference to the UserNotifications Framework in the podspec to ensure iOS 8 & 9 compatibility
+
 ## 3.0.16 (2016-10-18)
 
 * Reinstated push notification improvements for iOS 10 from 3.0.14.
