@@ -2,7 +2,7 @@
 
 ## 3.0.18 (2016-11-02)
 
-* Reduced usage of `AFNetworking` to fix crash in [#186](https://github.com/intercom/intercom-ios/issues/181).
+* Reduced usage of `AFNetworking` to fix crash in [#186](https://github.com/intercom/intercom-ios/issues/186).
 * Improved thread safety to increase stability.
 * Fixed crash that could occur when `Intercom.bundle` is not correctly loaded.
 
