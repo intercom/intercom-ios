@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.0.18 (2016-11-02)
+
+* Reduced usage of `AFNetworking` to fix crash in [#186](https://github.com/intercom/intercom-ios/issues/181).
+* Improved thread safety to increase stability.
+* Fixed crash that could occur when `Intercom.bundle` is not correctly loaded.
+
 ## 3.0.17 (2016-10-19)
 
 * Removed a reference to the UserNotifications Framework in the podspec to ensure iOS 8 & 9 compatibility
