@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         //Register for push notifications
-        //For more info, see: http://docs.intercom.io/Install-on-your-mobile-product/enabling-push-notifications-with-intercom-for-ios
+        //For more info, see: https://developers.intercom.com/v2.0/docs/ios-push-notifications
         let settings = UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil)
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()

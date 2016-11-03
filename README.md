@@ -40,8 +40,9 @@ There is an example app provided [here](https://github.com/intercom/intercom-ios
 
 ##Setup and Configuration
 
-* Our [installation guide](https://docs.intercom.io/install-on-your-product-or-site/quick-install/install-intercom-on-your-ios-app) contains full setup and initialisation instructions.
-* Read ["Configuring Intercom for iOS"](https://docs.intercom.io/configure-intercom-for-your-product-or-site/configure-intercom-for-mobile/configuring-intercom-for-ios).
+* Our [installation guide](https://developers.intercom.com/v2.0/docs/ios-installation) contains full setup and initialisation instructions.
+* Read ["Configuring Intercom for iOS"](https://developers.intercom.com/v2.0/docs/ios-configuration).
+* Read our guide on [Push Notifications](https://developers.intercom.com/v2.0/docs/ios-push-notifications).
 *  Please contact us on [Intercom](https://intercom.io) with any questions you may have, we're only a message away!
 
 ## Cordova/Phonegap Support
@@ -53,7 +54,7 @@ Upgrading to the latest version of the iOS SDK is easy! 😉  Checkout out our [
 
 ## What about events, push notifications, company and user data?
 
-Intercom for iOS has support for all these things. For full details please read our [documentation](http://docs.intercom.io/Install-on-your-mobile-product/configuring-intercom-for-ios).
+Intercom for iOS has support for all these things. For full details please read our [documentation](https://developers.intercom.com/v2.0/docs/ios-configuration).
 
 ## Xcode Documentation
 

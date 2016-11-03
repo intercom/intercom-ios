@@ -35,7 +35,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     //Register for push notifications
-    //For more info, see: http://docs.intercom.io/Install-on-your-mobile-product/enabling-push-notifications-with-intercom-for-ios
+    //For more info, see: https://developers.intercom.com/v2.0/docs/ios-push-notifications
     [application registerUserNotificationSettings:[UIUserNotificationSettings
                                                    settingsForTypes:(UIUserNotificationTypeBadge
                                                                      | UIUserNotificationTypeSound
