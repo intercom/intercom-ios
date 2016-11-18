@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Keskusteluja ei vielä ole";
 "facebook.like.us" = "Tykkää meistä Facebookissa";
 "from.app" = "– {name}";
-"error.loading.conversations.fallback" = "Keskusteluja tämän tiimin kanssa ei voitu ladata: {name}";
 "message.placeholder.start.conversation" = "Aloita keskustelu";
 "navigation.back" = "Takaisin";
 "admin.from.app" = "{name} – {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Toimitettu";
 "actionsheet.try.again" = "Yritä uudelleen";
 "alert.new.sdk.user.title" = "Onnittelut";
-"app_team" = "{name}-tiimi";
 "navbar.title.conversations" = "Keskustelut\n{name}";
 "actionsheet.cancel" = "Peruuta";
 "navigation.close" = "Sulje";
@@ -37,7 +35,6 @@
 "message.seen" = "Nähty";
 "last_active.format.days.ago" = "Aktiivinen {days} pv sitten";
 "error.starting.conversation.fallback" = "Aloita uusi keskustelu";
-"error.no_conversations.message" = "Ei vielä keskusteluja tämän tiimin kanssa: {name}";
 "time.difference.format.days.ago" = "{delta} pv sitten";
 "error.loading.conversations.fallback.no_app_name" = "Keskustelujen lataus epäonnistui";
 "we.run.on.intercom" = "Toimimme Intercom-käyttöympäristössä";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Yritä uudelleen";
 "reply_from_admin" = "Vastaus {name}";
 "inbox.you" = "Sinä";
+"article_question" = "Saitko vastauksen kysymykseesi?";
+"article_reaction" = "Annoit vastauksen";
+"asked_about" = "Kysyit";
+"article_load_error" = "Et voinut ladata artikkelia";
+"error.loading.conversations.fallback" = "Keskusteluitasi ei voitu ladata sovelluksella {name}";
+"error.no_conversations.message" = "Ei vielä keskusteluita henkilön {name} kanssa";

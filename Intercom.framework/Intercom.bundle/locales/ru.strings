@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Пока нет разговоров";
 "facebook.like.us" = "Нажмите Нравится на Facebook";
 "from.app" = "от {name}";
-"error.loading.conversations.fallback" = "Не удалось загрузить разговоры с командой {name}";
 "message.placeholder.start.conversation" = "Начать разговор";
 "navigation.back" = "Назад";
 "admin.from.app" = "{name} из {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Доставлено";
 "actionsheet.try.again" = "Повторить попытку";
 "alert.new.sdk.user.title" = "Поздравляем!";
-"app_team" = "Команда {name}";
 "navbar.title.conversations" = "Разговоры\nс {name}";
 "actionsheet.cancel" = "Отменить";
 "navigation.close" = "Закрыть";
@@ -37,7 +35,6 @@
 "message.seen" = "Просмотрено";
 "last_active.format.days.ago" = "Был в сети {days} дн. назад";
 "error.starting.conversation.fallback" = "Не удалось начать новый разговор";
-"error.no_conversations.message" = "Нет разговоров с командой {name}";
 "time.difference.format.days.ago" = "{delta} дн. назад";
 "error.loading.conversations.fallback.no_app_name" = "Не удалось загрузить разговоры";
 "we.run.on.intercom" = "Мы используем Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Повторите попытку";
 "reply_from_admin" = "Ответ от {name}";
 "inbox.you" = "Вы";
+"article_question" = "Вы получили ответ на свой вопрос?";
+"article_reaction" = "Вы отреагировали";
+"asked_about" = "Спрашивает о";
+"article_load_error" = "Не удалось загрузить статью";
+"error.loading.conversations.fallback" = "Не удалось загрузить Вашу переписку с {name}";
+"error.no_conversations.message" = "Вы еще не беседовали с участником {name}";

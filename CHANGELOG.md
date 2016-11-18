@@ -1,5 +1,12 @@
 # Intercom
 
+## 3.0.19 (2016-11-18)
+
+* More clearly warn about potential [AppStore submission issues](https://developers.intercom.com/v2.0/docs/ios-installation#section-step-2-update-infoplist) on iOS 10.
+* Various localisation updates.
+* Many visual improvements.
+* Reduce the number of network requests that are made by Intercom.
+
 ## 3.0.18 (2016-11-02)
 
 * Reduced usage of `AFNetworking` to fix crash in [#186](https://github.com/intercom/intercom-ios/issues/186).

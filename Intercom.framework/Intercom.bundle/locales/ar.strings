@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "لم يتم إجراء أي محادثات بعد";
 "facebook.like.us" = "تابعنا على Facebook";
 "from.app" = "من {name}";
-"error.loading.conversations.fallback" = "تعذر تحميل محادثاتك مع فريق {name}";
 "message.placeholder.start.conversation" = "بدء محادثة";
 "navigation.back" = "رجوع";
 "admin.from.app" = "{name} من {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "تم تسليمها";
 "actionsheet.try.again" = "حاول مرة أخرى";
 "alert.new.sdk.user.title" = "تهانينا";
-"app_team" = "فريق {name}";
 "navbar.title.conversations" = "المحادثات\nمع {name}";
 "actionsheet.cancel" = "إلغاء";
 "navigation.close" = "إغلاق";
@@ -37,7 +35,6 @@
 "message.seen" = "تمت رؤيتها";
 "last_active.format.days.ago" = "نشط منذ {days} ي";
 "error.starting.conversation.fallback" = "تعذر بدء محادثة جديدة";
-"error.no_conversations.message" = "لم يتم إجراء محادثات مع فريق {name} بعد";
 "time.difference.format.days.ago" = "منذ {delta} ي";
 "error.loading.conversations.fallback.no_app_name" = "تعذر تحميل محادثاتك";
 "we.run.on.intercom" = "يتم إجراء المحادثة من Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "إعادة المحاولة";
 "reply_from_admin" = "رد من {name}";
 "inbox.you" = "أنت";
+"article_question" = "هل هذا يجيب على سؤالك؟";
+"article_reaction" = "لقد تفاعلت مع";
+"asked_about" = "سأل عن";
+"article_load_error" = "تعذر تحميل المقالة";
+"error.loading.conversations.fallback" = "تعذر تحميل محادثاتك باستخدام {name}";
+"error.no_conversations.message" = "لم يتم إجراء محادثات مع {name} بعد";

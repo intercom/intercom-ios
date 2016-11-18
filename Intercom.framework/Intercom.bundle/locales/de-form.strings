@@ -3,7 +3,7 @@
 "message.delivered" = "Zugestellt";
 "alert.new.sdk.user.button" = "Danke";
 "profile.time.location.format" = "{time} in {location}";
-"message.state.sending" = "Wird gesendet ...";
+"message.state.sending" = "Wird gesendet";
 "message.placeholder.write.reply" = "Schreiben Sie eine Antwort";
 "twitter.follow.us" = "Folgen Sie uns auf Twitter.";
 "alert.new.sdk.user.message" = "Ihre iOS-App ist nun in die Intercom-Plattform integriert.";
@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Noch keine Unterhaltungen";
 "facebook.like.us" = "Liken Sie uns auf Facebook.";
 "from.app" = "von {name}";
-"error.loading.conversations.fallback" = "Ihre Unterhaltungen mit dem {name} Team konnten nicht geladen werden.";
 "message.placeholder.start.conversation" = "Starten Sie eine Unterhaltung";
 "navigation.back" = "Zurück";
 "admin.from.app" = "{name} von {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Zugestellt";
 "actionsheet.try.again" = "Versuchen Sie es noch mal.";
 "alert.new.sdk.user.title" = "Herzlichen Glückwunsch";
-"app_team" = "{name} Team";
 "navbar.title.conversations" = "Unterhaltungen\nmit {name}";
 "actionsheet.cancel" = "Abbrechen";
 "navigation.close" = "Schließen";
@@ -37,7 +35,6 @@
 "message.seen" = "Gesehen";
 "last_active.format.days.ago" = "Vor {days} Tag(en) aktiv";
 "error.starting.conversation.fallback" = "Neue Unterhaltung konnte nicht gestartet werden.";
-"error.no_conversations.message" = "Noch keine Unterhaltungen mit dem {name} Team";
 "time.difference.format.days.ago" = "Vor {delta} Tag(en)";
 "error.loading.conversations.fallback.no_app_name" = "Ihre Unterhaltungen konnten nicht geladen werden.";
 "we.run.on.intercom" = "Wir nutzen Intercom.";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Noch mal versuchen";
 "reply_from_admin" = "Antwort von {name}";
 "inbox.you" = "Sie";
+"article_question" = "Hat dies Ihre Frage beantwortet?";
+"article_reaction" = "Sie haben wie folgt reagiert:";
+"asked_about" = "Gefragt nach";
+"article_load_error" = "Der Artikel konnte nicht geladen werden.";
+"error.loading.conversations.fallback" = "Ihre Unterhaltungen mit {name} konnten nicht geladen werden.";
+"error.no_conversations.message" = "Noch keine Unterhaltungen mit {name}";

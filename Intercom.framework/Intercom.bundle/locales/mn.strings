@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Хараахан чат хийгээгүй байна";
 "facebook.like.us" = "Facebook дээр бидэнд лайк өгнө үү";
 "from.app" = "{name}-с";
-"error.loading.conversations.fallback" = "{name} багтай хийсэн таны чатыг ачаалж чадсангүй";
 "message.placeholder.start.conversation" = "Чат эхлүүлэх";
 "navigation.back" = "Буцах";
 "admin.from.app" = "{name} from {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Илгээв";
 "actionsheet.try.again" = "Дахин оролдох";
 "alert.new.sdk.user.title" = "Баяр хүргэе";
-"app_team" = "{name} баг";
 "navbar.title.conversations" = "{name} тай\nхийсэн чат";
 "actionsheet.cancel" = "Цуцлах";
 "navigation.close" = "Хаах";
@@ -37,7 +35,6 @@
 "message.seen" = "Уншсан";
 "last_active.format.days.ago" = "{days} өдрийн өмнө идэвхтэй байсан";
 "error.starting.conversation.fallback" = "Шинэ чат эхлүүлж чадсангүй";
-"error.no_conversations.message" = "{name} багтай хараахан чат хийгээгүй байна";
 "time.difference.format.days.ago" = "{delta} өдрийн өмнө";
 "error.loading.conversations.fallback.no_app_name" = "Таны чатыг ачаалж чадсангүй";
 "we.run.on.intercom" = "Бид одоо Intercom ашиглаж байна";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Дахин оролдох";
 "reply_from_admin" = "Ирсэн хариу {name}";
 "inbox.you" = "Та";
+"article_question" = "Энэ таны асуултад хариулсан уу?";
+"article_reaction" = "Та ингэж хариуллаа";
+"asked_about" = "тухай асууж байна";
+"article_load_error" = "Өгүүллийг эхлүүлж чадахгүй байна";
+"error.loading.conversations.fallback" = "{name}-тай хийсэн таны яриаг эхлүүлж чадсангүй.";
+"error.no_conversations.message" = "{name}-тай хараахан яриагүй";

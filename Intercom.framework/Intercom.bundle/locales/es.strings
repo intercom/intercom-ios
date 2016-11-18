@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Todavía no hay conversaciones";
 "facebook.like.us" = "Haz clic en Me gusta en Facebook";
 "from.app" = "de {name}";
-"error.loading.conversations.fallback" = "No se pudieron cargar sus conversaciones con {name}";
 "message.placeholder.start.conversation" = "Iniciar una conversación";
 "navigation.back" = "Atrás";
 "admin.from.app" = "{name} de {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Entregado";
 "actionsheet.try.again" = "Inténtalo de nuevo";
 "alert.new.sdk.user.title" = "Enhorabuena";
-"app_team" = "Equipo {name}";
 "navbar.title.conversations" = "Conversaciones\ncon {name}";
 "actionsheet.cancel" = "Cancelar";
 "navigation.close" = "Cerrar";
@@ -37,7 +35,6 @@
 "message.seen" = "Visto";
 "last_active.format.days.ago" = "Activo hace {days}d";
 "error.starting.conversation.fallback" = "No se pudo iniciar una nueva conversación";
-"error.no_conversations.message" = "Todavía no hay conversaciones con {name}";
 "time.difference.format.days.ago" = "Hace {delta}d";
 "error.loading.conversations.fallback.no_app_name" = "No se pudieron cargar las conversaciones";
 "we.run.on.intercom" = "Usamos Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Reintentar";
 "reply_from_admin" = "Respuesta de {name}";
 "inbox.you" = "Usted";
+"article_question" = "¿Respondió esto a su pregunta?";
+"article_reaction" = "Ha reaccionado con";
+"asked_about" = "Preguntó acerca de";
+"article_load_error" = "No ha sido posible cargar el artículo";
+"error.loading.conversations.fallback" = "No ha sido posible cargar sus conversaciones con {name}.";
+"error.no_conversations.message" = "Aún no hay ninguna conversación con {name}";

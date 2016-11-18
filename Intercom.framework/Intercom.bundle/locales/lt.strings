@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Pokalbių dar nėra";
 "facebook.like.us" = "Pamėkite mus „Facebook“";
 "from.app" = "iš: „{name}“";
-"error.loading.conversations.fallback" = "Nepavyko įkelti jūsų pokalbių su „{name}“ komanda";
 "message.placeholder.start.conversation" = "Pradėti pokalbį";
 "navigation.back" = "Atgal";
 "admin.from.app" = "„{name}“ iš „{company}“";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Pristatytas";
 "actionsheet.try.again" = "Bandyti dar kartą";
 "alert.new.sdk.user.title" = "Sveikiname";
-"app_team" = "„{name}“ komanda";
 "navbar.title.conversations" = "Pokalbiai\nsu „{name}“";
 "actionsheet.cancel" = "Atšaukti";
 "navigation.close" = "Uždaryti";
@@ -37,7 +35,6 @@
 "message.seen" = "Matyta";
 "last_active.format.days.ago" = "Aktyvus (-i) prieš {days} d.";
 "error.starting.conversation.fallback" = "Nepavyko pradėti naujo pokalbio";
-"error.no_conversations.message" = "Pokalbių su „{name}“ komanda dar nėra";
 "time.difference.format.days.ago" = "Prieš {delta} d.";
 "error.loading.conversations.fallback.no_app_name" = "Nepavyko įkelti jūsų pokalbių";
 "we.run.on.intercom" = "Mes veikiame „Intercom“ platformoje";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Kartoti";
 "reply_from_admin" = "Atsakymas nuo {name}";
 "inbox.you" = "Jūs";
+"article_question" = "Ar gavote atsakymą į savo klausimą?";
+"article_reaction" = "Reagavote su";
+"asked_about" = "Paklausė apie";
+"article_load_error" = "Nepavyko įkelti straipsnio";
+"error.loading.conversations.fallback" = "Nepavyko įkelti pokalbių su {name}";
+"error.no_conversations.message" = "Dar nebuvo pokalbių su {name}";

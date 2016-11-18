@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Vestlusi veel pole";
 "facebook.like.us" = "Märkige meid Facebookis meeldivaks";
 "from.app" = "saatja: {name}";
-"error.loading.conversations.fallback" = "Teie vestlusi meeskonnaga {name} ei saanud laadida";
 "message.placeholder.start.conversation" = "Alusta vestlust";
 "navigation.back" = "Tagasi";
 "admin.from.app" = "{name} ettevõttest {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Tarnitud";
 "actionsheet.try.again" = "Proovi uuesti";
 "alert.new.sdk.user.title" = "Õnnitleme";
-"app_team" = "{name} meeskond";
 "navbar.title.conversations" = "Vestlused\nkasutajaga {name}";
 "actionsheet.cancel" = "Tühista";
 "navigation.close" = "Sule";
@@ -37,7 +35,6 @@
 "message.seen" = "Nähtud";
 "last_active.format.days.ago" = "Aktiivne {days} p tagasi";
 "error.starting.conversation.fallback" = "Uue vestluse alustamine ebaõnnestus";
-"error.no_conversations.message" = "Vestlusi meeskonnaga {name} veel pole";
 "time.difference.format.days.ago" = "{delta} p tagasi";
 "error.loading.conversations.fallback.no_app_name" = "Teie vestlusi ei saanud laadida";
 "we.run.on.intercom" = "Töötame platvormil Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Proovi uuesti";
 "reply_from_admin" = "Vastus kasutajalt {name}";
 "inbox.you" = "Teie";
+"article_question" = "Kas see vastas sinu küsimusele?";
+"article_reaction" = "Sinu reaktsioon";
+"asked_about" = "Esitatud küsimuse sisu";
+"article_load_error" = "Ei saanud artiklit laadida";
+"error.loading.conversations.fallback" = "Ei saanud laadida vestlusi kasutajaga {name}";
+"error.no_conversations.message" = "Ei ole veel vestlusi kasutajaga {name}";

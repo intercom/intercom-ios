@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Inga konversationer än";
 "facebook.like.us" = "Gilla oss på Facebook";
 "from.app" = "Från {name}";
-"error.loading.conversations.fallback" = "Kunde inte läsa in dina konversationer med {name}-teamet";
 "message.placeholder.start.conversation" = "Börja en konversation";
 "navigation.back" = "Tillbaka";
 "admin.from.app" = "{name} från {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Levererat";
 "actionsheet.try.again" = "Försök igen";
 "alert.new.sdk.user.title" = "Grattis";
-"app_team" = "{name}-team";
 "navbar.title.conversations" = "Konversationer\nmed {name}";
 "actionsheet.cancel" = "Avbryt";
 "navigation.close" = "Stäng";
@@ -37,7 +35,6 @@
 "message.seen" = "Sedda";
 "last_active.format.days.ago" = "Aktiv för {days} dagar sedan";
 "error.starting.conversation.fallback" = "Kunde inte starta en ny konversation";
-"error.no_conversations.message" = "Inga konversationer med {name}-teamet än";
 "time.difference.format.days.ago" = "{delta} dagar sedan";
 "error.loading.conversations.fallback.no_app_name" = "Kunde inte läsa in dina konversationer";
 "we.run.on.intercom" = "Vi finns på Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Försök igen";
 "reply_from_admin" = "Svar från {name}";
 "inbox.you" = "Du";
+"article_question" = "Fick du svar på din fråga?";
+"article_reaction" = "Du reagerade på";
+"asked_about" = "frågade om";
+"article_load_error" = "Det gick inte att läsa in artikeln";
+"error.loading.conversations.fallback" = "Det gick inte att läsa in dina samtal med {name}";
+"error.no_conversations.message" = "Inga samtal med {name} ännu";

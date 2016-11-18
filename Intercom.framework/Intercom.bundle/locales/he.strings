@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "עדיין אין שיחות";
 "facebook.like.us" = "עשה לנו לייק ב-Facebook";
 "from.app" = "מאת {name}";
-"error.loading.conversations.fallback" = "לא ניתן לטעון את השיחות שלך עם צוות {name}";
 "message.placeholder.start.conversation" = "התחל שיחה";
 "navigation.back" = "חזרה";
 "admin.from.app" = "{name} מאת {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "נמסר";
 "actionsheet.try.again" = "נסה שוב";
 "alert.new.sdk.user.title" = "ברכותינו";
-"app_team" = "צוות {name}";
 "navbar.title.conversations" = "שיחות\nעם {name}";
 "actionsheet.cancel" = "בטל";
 "navigation.close" = "סגור";
@@ -37,7 +35,6 @@
 "message.seen" = "נראה";
 "last_active.format.days.ago" = "פעילות אחרונה לפני {days} ימים";
 "error.starting.conversation.fallback" = "לא ניתן להתחיל שיחה חדשה";
-"error.no_conversations.message" = "עדיין אין לך שיחות עם צוות {name}";
 "time.difference.format.days.ago" = "לפני {delta} ימים";
 "error.loading.conversations.fallback.no_app_name" = "לא ניתן לטעון את השיחות שלך";
 "we.run.on.intercom" = "מופעל באמצעות Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "נסה שוב";
 "reply_from_admin" = "{name} תשובה מאת";
 "inbox.you" = "אתה";
+"article_question" = "האם קיבלת תשובה לשאלתך?";
+"article_reaction" = "התשובה שלך";
+"asked_about" = "שאל בנושא";
+"article_load_error" = "לא ניתן לטעון את המאמר";
+"error.loading.conversations.fallback" = "לא ניתן לטעון את השיחות שלך עם {name}";
+"error.no_conversations.message" = "אין עדיין שיחות עם {name}";

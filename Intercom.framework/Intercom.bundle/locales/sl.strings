@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Še ni pogovorov";
 "facebook.like.us" = "Všečkajte nas na Facebooku";
 "from.app" = "od osebe {name}";
-"error.loading.conversations.fallback" = "Vaših pogovorov z ekipo {name} ni bilo mogoče naložiti";
 "message.placeholder.start.conversation" = "Začni pogovor";
 "navigation.back" = "Nazaj";
 "admin.from.app" = "{name} iz podjetja {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Dostavljeno";
 "actionsheet.try.again" = "Poskusi znova";
 "alert.new.sdk.user.title" = "Čestitamo";
-"app_team" = "Ekipa {name}";
 "navbar.title.conversations" = "Pogovori\nz osebo {name}";
 "actionsheet.cancel" = "Prekliči";
 "navigation.close" = "Zapri";
@@ -37,7 +35,6 @@
 "message.seen" = "Videno";
 "last_active.format.days.ago" = "Oseba aktivna pred toliko dnevi: {days}";
 "error.starting.conversation.fallback" = "Novega pogovora ni bilo mogoče začeti";
-"error.no_conversations.message" = "Doslej še nimate pogovorov z ekipo {name}";
 "time.difference.format.days.ago" = "Pred toliko dnevi: {delta}";
 "error.loading.conversations.fallback.no_app_name" = "Vaših pogovorov ni bilo mogoče naložiti";
 "we.run.on.intercom" = "Uporabljamo platformo Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Poskusi znova";
 "reply_from_admin" = "Odgovor osebe {name}";
 "inbox.you" = "Vi";
+"article_question" = "Ste s tem dobili odgovor na vaše vprašanje?";
+"article_reaction" = "Odzvali ste se na";
+"asked_about" = "Vprašanje o";
+"article_load_error" = "Članka ni bilo mogoče naložiti";
+"error.loading.conversations.fallback" = "Pogovorov z osebo {name} ni bilo mogoče naložiti";
+"error.no_conversations.message" = "Z osebo {name} še ni pogovorov";

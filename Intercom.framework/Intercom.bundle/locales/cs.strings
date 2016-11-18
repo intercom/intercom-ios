@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Prozatím žádné konverzace";
 "facebook.like.us" = "Lajkněte nás na Facebooku";
 "from.app" = "od {name}";
-"error.loading.conversations.fallback" = "Nelze načíst vaše konverzace s týmem {name}";
 "message.placeholder.start.conversation" = "Zahájit konverzaci";
 "navigation.back" = "Zpět";
 "admin.from.app" = "{name} od {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Doručeno";
 "actionsheet.try.again" = "Zkuste to znovu";
 "alert.new.sdk.user.title" = "Blahopřejeme";
-"app_team" = "Tým {name}";
 "navbar.title.conversations" = "Konverzace\ns {name}";
 "actionsheet.cancel" = "Zrušit";
 "navigation.close" = "Zavřít";
@@ -37,7 +35,6 @@
 "message.seen" = "Je viditelné";
 "last_active.format.days.ago" = "Aktivní před {days} dny";
 "error.starting.conversation.fallback" = "Nelze začít novou konverzaci";
-"error.no_conversations.message" = "Prozatím žádné konverzace s týmem {name}";
 "time.difference.format.days.ago" = "Před {delta} dny";
 "error.loading.conversations.fallback.no_app_name" = "Nelze načíst vaše konverzace";
 "we.run.on.intercom" = "Pracujeme s platformou Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Zkusit znovu";
 "reply_from_admin" = "Odpověď od {name}";
 "inbox.you" = "Vy";
+"article_question" = "Dostali jste odpověď na svou otázku?";
+"article_reaction" = "Reagovali jste pomocí";
+"asked_about" = "Ptal/a se na";
+"article_load_error" = "Článek nelze načíst";
+"error.loading.conversations.fallback" = "Nelze načíst vaši konverzaci s uživatelem {name}";
+"error.no_conversations.message" = "S uživatelem {name} ještě nemáte žádnou konverzaci";

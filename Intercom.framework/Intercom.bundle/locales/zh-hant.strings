@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "尚未有對話";
 "facebook.like.us" = "在 Facebook 上按讚";
 "from.app" = "來自 {name}";
-"error.loading.conversations.fallback" = "無法載入您與 {name} 團隊的對話";
 "message.placeholder.start.conversation" = "開始對話";
 "navigation.back" = "返回";
 "admin.from.app" = "{name} 來自 {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "已傳送";
 "actionsheet.try.again" = "再試一次";
 "alert.new.sdk.user.title" = "恭喜您";
-"app_team" = "{name} 團隊";
 "navbar.title.conversations" = "對話\n{name}";
 "actionsheet.cancel" = "取消";
 "navigation.close" = "關閉";
@@ -37,7 +35,6 @@
 "message.seen" = "已讀取";
 "last_active.format.days.ago" = "{days} 天以前在線";
 "error.starting.conversation.fallback" = "無法開始新的對話";
-"error.no_conversations.message" = "您尚未與 {name} 對話";
 "time.difference.format.days.ago" = "{delta} 天前";
 "error.loading.conversations.fallback.no_app_name" = "無法載入您的對話";
 "we.run.on.intercom" = "我們在 Intercom 上運行";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "重試";
 "reply_from_admin" = "回覆來自 {name}";
 "inbox.you" = "您";
+"article_question" = "是否回答了您的問題？";
+"article_reaction" = "您使用此回應：";
+"asked_about" = "詢問關於";
+"article_load_error" = "無法載入文章";
+"error.loading.conversations.fallback" = "無法載入您與 {name} 的對話";
+"error.no_conversations.message" = "尚無與 {name} 的對話";
