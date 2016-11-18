@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Καμία συζήτηση ακόμη";
 "facebook.like.us" = "Κάντε \"Μου αρέσει\" στο Facebook";
 "from.app" = "από {name}";
-"error.loading.conversations.fallback" = "Η φόρτωση των συζητήσεών σας με την ομάδα {name} δεν ήταν δυνατή";
 "message.placeholder.start.conversation" = "Ξεκινήστε μια συζήτηση";
 "navigation.back" = "Πίσω";
 "admin.from.app" = "{name} από {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Παραδόθηκε";
 "actionsheet.try.again" = "Προσπαθήστε ξανά";
 "alert.new.sdk.user.title" = "Συγχαρητήρια";
-"app_team" = "Ομάδα {name}";
 "navbar.title.conversations" = "Συζητήσεις\nμε {name}";
 "actionsheet.cancel" = "Ακύρωση";
 "navigation.close" = "Κλείσιμο";
@@ -37,7 +35,6 @@
 "message.seen" = "Προβλήθηκε";
 "last_active.format.days.ago" = "Ενεργός {days} ημ. πριν";
 "error.starting.conversation.fallback" = "Η έναρξη νέας συζήτησης δεν ήταν δυνατή";
-"error.no_conversations.message" = "Καμία συζήτηση με την ομάδα {name} ακόμη";
 "time.difference.format.days.ago" = "{delta} ημ. πριν";
 "error.loading.conversations.fallback.no_app_name" = "Η φόρτωση των συζητήσεών σας δεν ήταν δυνατή";
 "we.run.on.intercom" = "Χρησιμοποιούμε τεχνολογία Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Προσπαθήστε ξανά";
 "reply_from_admin" = "Απάντηση από {name}";
 "inbox.you" = "Εσείς";
+"article_question" = "Απαντήθηκε η ερώτησή σας;";
+"article_reaction" = "Αντιδράσατε με";
+"asked_about" = "Ρώτησε για";
+"article_load_error" = "Δεν ήταν δυνατή η φόρτωση του άρθρου";
+"error.loading.conversations.fallback" = "Δεν ήταν δυνατή η φόρτωση των συζητήσεών σας στην εφαρμογή {name}";
+"error.no_conversations.message" = "Καμία συζήτηση ακόμη με τον χρήστη {name}";

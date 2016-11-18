@@ -1,6 +1,6 @@
 //
 //  Intercom.h
-//  Intercom for iOS - Version 3.0.18
+//  Intercom for iOS - Version 3.0.19
 //
 //  Created by Intercom on 8/01/2015.
 //  Copyright (c) 2014 Intercom. All rights reserved.
@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_8_0
-#error This version (3.0.18) of Intercom for iOS supports iOS 8.0 upwards.
+#error This version (3.0.19) of Intercom for iOS supports iOS 8.0 upwards.
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
@@ -73,7 +73,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
 
  ## More information
 
- Full documentation is available [here](https://docs.intercom.io/install-on-your-product-or-site/quick-install/install-intercom-on-your-ios-app) and please contact
+ Full documentation is available [here](https://developers.intercom.com/docs/ios-installation ) and please contact
  us directly via Intercom for any support or questions you may have.
 
  */
@@ -98,7 +98,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  Secure Mode helps to make sure that conversations between you and your users are kept private, and that one
  user can't impersonate another. In Secure Mode Intercom for iOS will sign all requests going to the Intercom servers
  with tokens. It requires your mobile application to have its own server which authenticates the app's users,
- and which can store a secret. More information on secure mode can be found [here](http://docs.intercom.io/Install-on-your-mobile-product/enabling-secure-mode-in-intercom-for-ios)
+ and which can store a secret. More information on secure mode can be found [here](http://docs.intercom.io/Install-on-your-mobile-product/enabling-secure-mode-in-intercom-for-ios )
 
  @note This should be called before any user registration takes place.
  @param hmac A HMAC digest of data.
@@ -174,7 +174,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to
  Intercom you can then apply filters based on these attributes.
 
- A detailed list of the fields you can use to [update a user is available here](https://developers.intercom.io/reference/#user-model )
+ A detailed list of the fields you can use to [update a user is available here](https://developers.intercom.com/reference/#user-model )
 
  Attributes such as the user email or name can be updated by calling
 
@@ -205,7 +205,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  ]}];
 
  id is a required field for adding or modifying a company. A detailed description of the
- [company model is available here](https://developers.intercom.io/reference/#companies-and--users)
+ [company model is available here](https://developers.intercom.com/reference/#companies )
 
  @param attributes This is a dictionary containing key/value pairs for multiple attributes.
  @note Attributes may be either a `string`, `integer`, `double`, `unix timestamp` or `bool`.
@@ -218,7 +218,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  You can log events in Intercom based on user actions in your app. Events are different
  to custom user attributes in that events are information on what Users did and when they
  did it, whereas custom user attributes represent the User's current state as seen in their
- profile. See details about Events [here](https://developers.intercom.io/reference/#events)
+ profile. See details about Events [here](https://developers.intercom.com/reference/#events )
 
  @param name The name of the event that it is going to be logged.
  */
@@ -226,7 +226,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
 
 /*!
  Metadata Objects support a few simple types that Intercom can present on your behalf, see the
- [Intercom API docs](https://developers.intercom.io/reference/#event-metadata-types)
+ [Intercom API docs](https://developers.intercom.com/reference/#event-metadata-types )
 
  [Intercom logEventWithName:@"ordered_item" metaData:@{
  @"order_date": @1392036272,

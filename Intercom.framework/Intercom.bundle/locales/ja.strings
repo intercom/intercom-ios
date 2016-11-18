@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "会話はまだありません";
 "facebook.like.us" = "Facebookで「いいね」";
 "from.app" = "{name}から";
-"error.loading.conversations.fallback" = "あなたと{name}チームとの会話を読み込めませんでした";
 "message.placeholder.start.conversation" = "会話を開始";
 "navigation.back" = "戻る";
 "admin.from.app" = "{name} （{company}）";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "配信済み";
 "actionsheet.try.again" = "再度お試しください";
 "alert.new.sdk.user.title" = "おめでとうございます";
-"app_team" = "{name}チーム";
 "navbar.title.conversations" = "{name}\nとの会話";
 "actionsheet.cancel" = "キャンセル";
 "navigation.close" = "クローズ";
@@ -37,7 +35,6 @@
 "message.seen" = "既読";
 "last_active.format.days.ago" = "{days}日前にアクティブ";
 "error.starting.conversation.fallback" = "新しい会話を開始できませんでした";
-"error.no_conversations.message" = "{name}チームとの会話はまだありません";
 "time.difference.format.days.ago" = "{delta}日前";
 "error.loading.conversations.fallback.no_app_name" = "あなたの会話を読み込めませんでした";
 "we.run.on.intercom" = "私たちはIntercomを使っています";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "再試行";
 "reply_from_admin" = "返信 {name}";
 "inbox.you" = "あなた";
+"article_question" = "こちらの回答で解決しましたか？";
+"article_reaction" = "対応状況";
+"asked_about" = "質問内容";
+"article_load_error" = "記事をロードできません";
+"error.loading.conversations.fallback" = "{name}での会話をロードできません。";
+"error.no_conversations.message" = "{name}님과 대화한 내용이 없습니다";

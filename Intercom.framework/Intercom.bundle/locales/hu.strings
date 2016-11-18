@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Még nincsenek beszélgetések";
 "facebook.like.us" = "Kövess minket a Facebookon";
 "from.app" = "({name})";
-"error.loading.conversations.fallback" = "A(z) {name} csapattal való beszélgetések betöltése sikertelen";
 "message.placeholder.start.conversation" = "Beszélgetés indítása";
 "navigation.back" = "Vissza";
 "admin.from.app" = "{name} – {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Kézbesítve";
 "actionsheet.try.again" = "Próbáld újra";
 "alert.new.sdk.user.title" = "Gratulálunk";
-"app_team" = "{name} csapat";
 "navbar.title.conversations" = "Beszélgetések\n{name}";
 "actionsheet.cancel" = "Mégse";
 "navigation.close" = "Bezárás";
@@ -37,7 +35,6 @@
 "message.seen" = "Elolvasva";
 "last_active.format.days.ago" = "Aktivitás: {days} nappal ezelőtt";
 "error.starting.conversation.fallback" = "Az új beszélgetés indítása sikertelen";
-"error.no_conversations.message" = "A(z) {name} csapattal még nincs beszélgetés";
 "time.difference.format.days.ago" = "{delta} nappal ezelőtt";
 "error.loading.conversations.fallback.no_app_name" = "A beszélgetések betöltése sikertelen";
 "we.run.on.intercom" = "Fejlesztette az Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Újra";
 "reply_from_admin" = "Választ írt {name}";
 "inbox.you" = "Te";
+"article_question" = "Segített megválaszolni a kérdését?";
+"article_reaction" = "A következőnek küldött visszajelzést:";
+"asked_about" = "A következőt kérdezte";
+"article_load_error" = "A cikk betöltése sikertelen";
+"error.loading.conversations.fallback" = "Nem sikerült a beszélgetések betöltése a következővel: {name}.";
+"error.no_conversations.message" = "Még nem folytatott beszélgetés a következővel: {name}.";

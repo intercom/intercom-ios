@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Još nema razgovora";
 "facebook.like.us" = "Lajkujte nas na Fejsbuku";
 "from.app" = "od {name}";
-"error.loading.conversations.fallback" = "Vaši razgovori sa {name} timom ne mogu da se učitaju";
 "message.placeholder.start.conversation" = "Započni razgovor";
 "navigation.back" = "Nazad";
 "admin.from.app" = "{name} od {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Isporučeno";
 "actionsheet.try.again" = "Pokušajte ponovo";
 "alert.new.sdk.user.title" = "Čestitamo";
-"app_team" = "{name} Tim";
 "navbar.title.conversations" = "Razgovori\nsa {name}";
 "actionsheet.cancel" = "Otkaži";
 "navigation.close" = "Zatvori";
@@ -37,7 +35,6 @@
 "message.seen" = "Viđeno";
 "last_active.format.days.ago" = "Aktivan pre {days} d";
 "error.starting.conversation.fallback" = "Ne može da se započne novi razgovor";
-"error.no_conversations.message" = "Još nema razgovora sa timom {name}";
 "time.difference.format.days.ago" = "Pre {delta} d";
 "error.loading.conversations.fallback.no_app_name" = "Vaši razgovori ne mogu da se učitaju";
 "we.run.on.intercom" = "Radimo na „Intercom“-u";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Pokušaj ponovo";
 "reply_from_admin" = "Odgovori sa {name}";
 "inbox.you" = "Vi";
+"article_question" = "Да ли је ово одговор на ваше питање?";
+"article_reaction" = "Реаговали сте на";
+"asked_about" = "Распитали сте се у вези са";
+"article_load_error" = "Учитавање чланка није могуће";
+"error.loading.conversations.fallback" = "Није могуће учитати ваше конверзације са {name}";
+"error.no_conversations.message" = "Још увек нема конверзације са {name}";

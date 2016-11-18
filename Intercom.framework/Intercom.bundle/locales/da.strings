@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Endnu ingen samtaler";
 "facebook.like.us" = "Synes godt om os på Facebook";
 "from.app" = "fra {name}";
-"error.loading.conversations.fallback" = "Kunne ikke indlæse dine samtaler med teamet {name}";
 "message.placeholder.start.conversation" = "Start en samtale";
 "navigation.back" = "Tilbage";
 "admin.from.app" = "{name} fra {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Leveret";
 "actionsheet.try.again" = "Prøv igen";
 "alert.new.sdk.user.title" = "Tillykke";
-"app_team" = "Team {name}";
 "navbar.title.conversations" = "Samtaler\nmed {name}";
 "actionsheet.cancel" = "Annuller";
 "navigation.close" = "Luk";
@@ -37,7 +35,6 @@
 "message.seen" = "Set";
 "last_active.format.days.ago" = "Aktiv for {days}d siden";
 "error.starting.conversation.fallback" = "Kunne ikke starte en ny samtale";
-"error.no_conversations.message" = "Endnu ingen samtaler med teamet {name}";
 "time.difference.format.days.ago" = "{delta}d siden";
 "error.loading.conversations.fallback.no_app_name" = "Kunne ikke indlæse dine samtaler";
 "we.run.on.intercom" = "Vi kører på Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Prøv igen";
 "reply_from_admin" = "Svar fra {name}";
 "inbox.you" = "Du";
+"article_question" = "Besvarede dette dit spørgsmål?";
+"article_reaction" = "Du reagerede med";
+"asked_about" = "Spurgte om";
+"article_load_error" = "Artiklen kunne ikke indlæses";
+"error.loading.conversations.fallback" = "Dine samtaler med {name} kunne indlæses";
+"error.no_conversations.message" = "Endnu ingen samtaler med {name}";

@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "No conversations yet";
 "facebook.like.us" = "Like us on Facebook";
 "from.app" = "from {name}";
-"error.loading.conversations.fallback" = "Couldn't load your conversations with the {name} team";
 "message.placeholder.start.conversation" = "Start a conversation";
 "navigation.back" = "Back";
 "admin.from.app" = "{name} from {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Delivered";
 "actionsheet.try.again" = "Try Again";
 "alert.new.sdk.user.title" = "Congratulations";
-"app_team" = "{name} Team";
 "navbar.title.conversations" = "Conversations\nwith {name}";
 "actionsheet.cancel" = "Cancel";
 "navigation.close" = "Close";
@@ -37,7 +35,6 @@
 "message.seen" = "Seen";
 "last_active.format.days.ago" = "Active {days}d ago";
 "error.starting.conversation.fallback" = "Couldn't start a new conversation";
-"error.no_conversations.message" = "No conversations with the {name} team yet";
 "time.difference.format.days.ago" = "{delta}d ago";
 "error.loading.conversations.fallback.no_app_name" = "Couldn't load your conversations";
 "we.run.on.intercom" = "We run on Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Retry";
 "reply_from_admin" = "Reply from {name}";
 "inbox.you" = "You";
+"article_question" = "Did this answer your question?";
+"article_reaction" = "You reacted with";
+"asked_about" = "Asked about";
+"article_load_error" = "Couldn't load the article";
+"error.loading.conversations.fallback" = "Couldn't load your conversations with {name}";
+"error.no_conversations.message" = "No conversations with {name} yet";

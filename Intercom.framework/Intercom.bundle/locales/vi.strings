@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "Chưa có hội thoại nào";
 "facebook.like.us" = "Thích chúng tôi trên Facebook";
 "from.app" = "từ {name}";
-"error.loading.conversations.fallback" = "Không thể tải hội thoại của bạn với nhóm {name}";
 "message.placeholder.start.conversation" = "Bắt đầu một hội thoại";
 "navigation.back" = "Quay lại";
 "admin.from.app" = "{name} từ {company}";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "Đã chuyển";
 "actionsheet.try.again" = "Thử lại";
 "alert.new.sdk.user.title" = "Xin chúc mừng";
-"app_team" = "Nhóm {name}";
 "navbar.title.conversations" = "Hội thoại\nvới {name}";
 "actionsheet.cancel" = "Hủy";
 "navigation.close" = "Đóng";
@@ -37,7 +35,6 @@
 "message.seen" = "Đã xem";
 "last_active.format.days.ago" = "Hoạt động {days} ngày trước";
 "error.starting.conversation.fallback" = "Không thể bắt đầu hội thoại mới";
-"error.no_conversations.message" = "Chưa có hội thoại nào với nhóm {name}";
 "time.difference.format.days.ago" = "{delta} ngày trước";
 "error.loading.conversations.fallback.no_app_name" = "Không thể tải các hội thoại của bạn";
 "we.run.on.intercom" = "Phát triển bởi Intercom";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "Thử lại";
 "reply_from_admin" = "Tin trả lời từ {name}";
 "inbox.you" = "Bạn";
+"article_question" = "Nội dung này có giải đáp được câu hỏi của bạn không?";
+"article_reaction" = "Bạn đã phản hồi";
+"asked_about" = "Đã hỏi về";
+"article_load_error" = "Không thể tải bài viết";
+"error.loading.conversations.fallback" = "Không thể tải các cuộc trò chuyện của bạn với {name}";
+"error.no_conversations.message" = "Chưa có cuộc trò chuyện nào với {name}";

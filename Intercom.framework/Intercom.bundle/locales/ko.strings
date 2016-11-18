@@ -11,7 +11,6 @@
 "error.no_conversations.message.no_app_name" = "대화가 아직 없습니다";
 "facebook.like.us" = "페이스북에서 ‘좋아요’ 누르기";
 "from.app" = "{name}님으로부터";
-"error.loading.conversations.fallback" = "고객님의 {name} 팀과의 대화를 불러올 수 없습니다";
 "message.placeholder.start.conversation" = "대화 시작하기";
 "navigation.back" = "뒤로 가기";
 "admin.from.app" = "{company}의 {name}님";
@@ -20,7 +19,6 @@
 "time.difference.delivered" = "전송되었습니다";
 "actionsheet.try.again" = "다시 시도하기";
 "alert.new.sdk.user.title" = "축하드립니다";
-"app_team" = "{name} 팀";
 "navbar.title.conversations" = "대화 내용\n{name}님";
 "actionsheet.cancel" = "취소하기";
 "navigation.close" = "닫기";
@@ -37,7 +35,6 @@
 "message.seen" = "읽음";
 "last_active.format.days.ago" = "{days}일 전 활동";
 "error.starting.conversation.fallback" = "새로운 대화를 시작할 수 없습니다";
-"error.no_conversations.message" = "{name} 팀과의 대화가 아직 없습니다";
 "time.difference.format.days.ago" = "{delta}일 전";
 "error.loading.conversations.fallback.no_app_name" = "고객님의 대화를 불러올 수 없습니다";
 "we.run.on.intercom" = "우리는 Intercom으로 구동합니다";
@@ -46,3 +43,9 @@
 "error.tap.to.retry" = "다시 시도하기";
 "reply_from_admin" = "{name}님의 답장";
 "inbox.you" = "본인";
+"article_question" = "답변이 도움되었나요?";
+"article_reaction" = "다음을 사용해 반응:";
+"asked_about" = "질문한 내용";
+"article_load_error" = "기사를 로드할 수 없음";
+"error.loading.conversations.fallback" = "{name}님과 대화한 내용을 로드할 수 없습니다.";
+"error.no_conversations.message" = "{name}님과 대화한 내용이 없습니다";
