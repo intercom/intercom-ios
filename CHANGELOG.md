@@ -1,5 +1,10 @@
 # Intercom
 
+## 3.0.20 (2016-11-25)
+
+* Multiple changes to reduce network request volume.
+* Small improvement to push notifications on iOS 10.
+
 ## 3.0.19 (2016-11-18)
 
 * More clearly warn about potential [AppStore submission issues](https://developers.intercom.com/v2.0/docs/ios-installation#section-step-2-update-infoplist) on iOS 10.
