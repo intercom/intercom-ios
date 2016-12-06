@@ -45,7 +45,7 @@
 "inbox.you" = "Tu";
 "article_question" = "Ați primit răspuns la întrebarea dumneavoastră?";
 "article_reaction" = "Aţi reacţionat cu";
-"asked_about" = "Aţi întrebat despre";
+"asked_about" = "În legătura cu";
 "article_load_error" = "Articolul nu a putut fi încărcat";
 "error.loading.conversations.fallback" = "Conversațiile dumneavoastră nu au putut fi încărcate cu {name}";
 "error.no_conversations.message" = "Nicio conversație cu {name} încă";

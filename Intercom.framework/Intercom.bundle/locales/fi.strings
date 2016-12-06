@@ -45,7 +45,7 @@
 "inbox.you" = "Sinä";
 "article_question" = "Saitko vastauksen kysymykseesi?";
 "article_reaction" = "Annoit vastauksen";
-"asked_about" = "Kysyit";
+"asked_about" = "Puheenaiheena";
 "article_load_error" = "Et voinut ladata artikkelia";
 "error.loading.conversations.fallback" = "Keskusteluitasi ei voitu ladata sovelluksella {name}";
 "error.no_conversations.message" = "Ei vielä keskusteluita henkilön {name} kanssa";

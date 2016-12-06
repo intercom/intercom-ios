@@ -45,7 +45,7 @@
 "inbox.you" = "Вы";
 "article_question" = "Вы получили ответ на свой вопрос?";
 "article_reaction" = "Вы отреагировали";
-"asked_about" = "Спрашивает о";
+"asked_about" = "Спросили о";
 "article_load_error" = "Не удалось загрузить статью";
 "error.loading.conversations.fallback" = "Не удалось загрузить Вашу переписку с {name}";
 "error.no_conversations.message" = "Вы еще не беседовали с участником {name}";

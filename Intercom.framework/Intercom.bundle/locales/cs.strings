@@ -45,7 +45,7 @@
 "inbox.you" = "Vy";
 "article_question" = "Dostali jste odpověď na svou otázku?";
 "article_reaction" = "Reagovali jste pomocí";
-"asked_about" = "Ptal/a se na";
+"asked_about" = "Dotaz";
 "article_load_error" = "Článek nelze načíst";
 "error.loading.conversations.fallback" = "Nelze načíst vaši konverzaci s uživatelem {name}";
 "error.no_conversations.message" = "S uživatelem {name} ještě nemáte žádnou konverzaci";

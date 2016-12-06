@@ -45,7 +45,7 @@
 "inbox.you" = "Jij";
 "article_question" = "Was dit een antwoord op uw vraag?";
 "article_reaction" = "U reageerde met";
-"asked_about" = "Stelde een vraag over";
+"asked_about" = "Betreffende";
 "article_load_error" = "Kon het artikel niet laden";
 "error.loading.conversations.fallback" = "Kon uw gesprekken met {name} niet laden";
 "error.no_conversations.message" = "Nog geen gesprekken met {name}";
