@@ -45,7 +45,7 @@
 "inbox.you" = "Teie";
 "article_question" = "Kas see vastas sinu küsimusele?";
 "article_reaction" = "Sinu reaktsioon";
-"asked_about" = "Esitatud küsimuse sisu";
+"asked_about" = "Seoses teemaga";
 "article_load_error" = "Ei saanud artiklit laadida";
 "error.loading.conversations.fallback" = "Ei saanud laadida vestlusi kasutajaga {name}";
 "error.no_conversations.message" = "Ei ole veel vestlusi kasutajaga {name}";

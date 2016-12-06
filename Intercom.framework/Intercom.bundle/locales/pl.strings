@@ -45,7 +45,7 @@
 "inbox.you" = "Ty";
 "article_question" = "Czy odpowiedź na Twoje pytanie została przesłana?";
 "article_reaction" = "Twoje pytanie było skierowane do użytkownika";
-"asked_about" = "Pytanie dotyczyło następującego zagadnienia";
+"asked_about" = "Temat pytania";
 "article_load_error" = "Nie można wczytać artykułu";
 "error.loading.conversations.fallback" = "Nie można wczytać Twoich rozmów w aplikacji {name}";
 "error.no_conversations.message" = "Nie ma jeszcze żadnych rozmów z użytkownikiem {name}";

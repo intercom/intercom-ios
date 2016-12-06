@@ -45,7 +45,7 @@
 "inbox.you" = "Jūs";
 "article_question" = "Ar gavote atsakymą į savo klausimą?";
 "article_reaction" = "Reagavote su";
-"asked_about" = "Paklausė apie";
+"asked_about" = "Dėl";
 "article_load_error" = "Nepavyko įkelti straipsnio";
 "error.loading.conversations.fallback" = "Nepavyko įkelti pokalbių su {name}";
 "error.no_conversations.message" = "Dar nebuvo pokalbių su {name}";

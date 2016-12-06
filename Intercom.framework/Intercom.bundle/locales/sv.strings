@@ -45,7 +45,7 @@
 "inbox.you" = "Du";
 "article_question" = "Fick du svar på din fråga?";
 "article_reaction" = "Du reagerade på";
-"asked_about" = "frågade om";
+"asked_about" = "Angående";
 "article_load_error" = "Det gick inte att läsa in artikeln";
 "error.loading.conversations.fallback" = "Det gick inte att läsa in dina samtal med {name}";
 "error.no_conversations.message" = "Inga samtal med {name} ännu";

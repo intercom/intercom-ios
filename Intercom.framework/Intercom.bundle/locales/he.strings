@@ -45,7 +45,7 @@
 "inbox.you" = "אתה";
 "article_question" = "האם קיבלת תשובה לשאלתך?";
 "article_reaction" = "התשובה שלך";
-"asked_about" = "שאל בנושא";
+"asked_about" = "בנושא";
 "article_load_error" = "לא ניתן לטעון את המאמר";
 "error.loading.conversations.fallback" = "לא ניתן לטעון את השיחות שלך עם {name}";
 "error.no_conversations.message" = "אין עדיין שיחות עם {name}";

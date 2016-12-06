@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.0.21 (2016-12-06)
+
+* Now supports Intercom Educate. Learn more [here](https://www.intercom.com/customer-support-software/knowledge-base).
+* More changes to reduce network request volume.
+* Fixed crash that could occur after install in some rare cases.
+
 ## 3.0.20 (2016-11-25)
 
 * Multiple changes to reduce network request volume.

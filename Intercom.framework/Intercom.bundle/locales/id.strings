@@ -45,7 +45,7 @@
 "inbox.you" = "Anda";
 "article_question" = "Apakah ini menjawab pertanyaan Anda?";
 "article_reaction" = "Anda bereaksi dengan";
-"asked_about" = "Menanyakan tentang";
+"asked_about" = "Terkait";
 "article_load_error" = "Tidak dapat memuat artikel";
 "error.loading.conversations.fallback" = "Tidak dapat memuat percakapan Anda dengan {name}";
 "error.no_conversations.message" = "Belum ada percakapan dengan {name}";

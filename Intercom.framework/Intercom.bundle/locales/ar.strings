@@ -45,7 +45,7 @@
 "inbox.you" = "أنت";
 "article_question" = "هل هذا يجيب على سؤالك؟";
 "article_reaction" = "لقد تفاعلت مع";
-"asked_about" = "سأل عن";
+"asked_about" = "بخصوص";
 "article_load_error" = "تعذر تحميل المقالة";
 "error.loading.conversations.fallback" = "تعذر تحميل محادثاتك باستخدام {name}";
 "error.no_conversations.message" = "لم يتم إجراء محادثات مع {name} بعد";

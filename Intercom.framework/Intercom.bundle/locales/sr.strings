@@ -45,7 +45,7 @@
 "inbox.you" = "Vi";
 "article_question" = "Да ли је ово одговор на ваше питање?";
 "article_reaction" = "Реаговали сте на";
-"asked_about" = "Распитали сте се у вези са";
+"asked_about" = "U vezi sa";
 "article_load_error" = "Учитавање чланка није могуће";
 "error.loading.conversations.fallback" = "Није могуће учитати ваше конверзације са {name}";
 "error.no_conversations.message" = "Још увек нема конверзације са {name}";

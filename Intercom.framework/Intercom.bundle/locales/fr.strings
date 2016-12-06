@@ -45,7 +45,7 @@
 "inbox.you" = "Vous";
 "article_question" = "Avons-nous répondu à votre question ?";
 "article_reaction" = "Vous avez réagi avec";
-"asked_about" = "Demandé à propos de";
+"asked_about" = "À propos de";
 "article_load_error" = "Impossible de charger l'article";
 "error.loading.conversations.fallback" = "Impossible de charger vos conversations avec {name}";
 "error.no_conversations.message" = "Aucune conversation avec {name} encore effectuée";
