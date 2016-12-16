@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.0.22 (2016-12-16)
+
+* Fixed crash in `-[PodIntercom_IntercomConversationInputAccessoryView updateConstraints]`.
+* Fixed issue where text could be cut off in Notes or Posts.
+* Some more changes to help reduce network request volume.
+
 ## 3.0.21 (2016-12-06)
 
 * Now supports Intercom Educate. Learn more [here](https://www.intercom.com/customer-support-software/knowledge-base).
