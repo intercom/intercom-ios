@@ -24,7 +24,7 @@
 "navigation.close" = "Cerrar";
 "message.send" = "Enviar";
 "time.difference.format.hours.ago" = "Hace {delta}h";
-"time.difference.format.weeks.ago" = "Hace {delta}s";
+"time.difference.format.weeks.ago" = "Hace {delta}sem";
 "last_active.format.hours.ago" = "Activo hace {hours}h";
 "actionsheet.delete" = "Borrar";
 "navbar.title.new.conversation" = "Nueva conversación";

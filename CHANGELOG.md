@@ -1,5 +1,22 @@
 # Intercom
 
+## 3.0.23 (2017-01-20)
+
+### Bug Fixes
+
+* Fixed disappearing composer bug on iOS 8 described in [#209](https://github.com/intercom/intercom-ios/issues/209).
+* `+[Intercom logEventWithName:metaData:]` now works even if the meta data `nil` or empty.
+* Fixed issue where text was never bold in Post messages.
+* Fixed Korean characters appearing in Japanese locale.
+* Fixed layout issue when using external keyboards.
+
+### Enhancements
+
+* Made changes to ensure the warning in [#206](https://github.com/intercom/intercom-ios/issues/206) is only given in development.
+* Improved selected state for message and article reactions.
+* Added improved error logging.
+* Additional changes to reduce network request volume.
+
 ## 3.0.22 (2016-12-16)
 
 * Fixed crash in `-[PodIntercom_IntercomConversationInputAccessoryView updateConstraints]`.

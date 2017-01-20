@@ -48,4 +48,4 @@
 "asked_about" = "質問内容";
 "article_load_error" = "記事をロードできません";
 "error.loading.conversations.fallback" = "{name}での会話をロードできません。";
-"error.no_conversations.message" = "{name}님과 대화한 내용이 없습니다";
+"error.no_conversations.message" = "{name}との会話はまだ行われていません。";
