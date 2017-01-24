@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.0.24 (2017-01-24)
+
+### Bug Fixes
+
+* Updated fix for disappearing keyboard bug on iOS 8, 9 & 10 ([#209](https://github.com/intercom/intercom-ios/issues/209)).
+
 ## 3.0.23 (2017-01-20)
 
 ### Bug Fixes
