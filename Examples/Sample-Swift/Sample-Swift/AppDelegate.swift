@@ -10,7 +10,7 @@ import UIKit
 import Intercom
 
 let INTERCOM_APP_ID = "<#YOUR APP ID#>"
-let INETERCOM_API_KEY = "<#YOUR API KEY#>"
+let INTERCOM_API_KEY = "<#YOUR API KEY#>"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Intercom.setApiKey(INETERCOM_API_KEY, forAppId: INTERCOM_APP_ID)
+        Intercom.setApiKey(INTERCOM_API_KEY, forAppId: INTERCOM_APP_ID)
         Intercom.setLauncherVisible(true)
         
         #if DEBUG
