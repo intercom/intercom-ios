@@ -1,5 +1,10 @@
 # Intercom
 
+## 3.0.25 (2017-02-07)
+
+* Fixed an issue with `[Intercom enableLogging]` that caused debug logs not to be shown.
+* Improved unread conversation count updating when using multiple devices at once.
+
 ## 3.0.24 (2017-01-24)
 
 ### Bug Fixes
