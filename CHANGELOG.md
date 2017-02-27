@@ -4,7 +4,7 @@
 
 * Added new GIF button to the composer in the Messenger, so your users can search for and share GIFs in conversations.
 * Updated image upload functionality.
-* Added `ICMUserAttributes` and `+[Intercom updateUser:]` to help make updating users easier.
+* Added `ICMUserAttributes` and `+[Intercom updateUser:]` to help make updating users easier. `+[Intercom updateUserWithAttributes:]` is now deprecated.
 * Improved behaviour in landscape on small devices.
 * Fixed issue where errors could be logged on first launch.
 
