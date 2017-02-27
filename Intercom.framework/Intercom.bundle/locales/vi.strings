@@ -49,3 +49,15 @@
 "article_load_error" = "Không thể tải bài viết";
 "error.loading.conversations.fallback" = "Không thể tải các cuộc trò chuyện của bạn với {name}";
 "error.no_conversations.message" = "Chưa có cuộc trò chuyện nào với {name}";
+"error.gifs.description" ="Hãy thử lại sau ít phút.";
+"error.gifs" = "Không thể tải GIF";
+"search.gifs" ="Tìm kiếm GIF...";
+"no.gifs.found.tite"= "Không tìm thấy GIF nào";
+"camera.roll"= "Cuộn camera";
+"no.photos" ="Không có ảnh";
+"no.photos.on.device"= "Không có ảnh nào trên thiết bị này";
+"access.photos" ="Truy cập ảnh của bạn";
+"go.to.permissions.settings" ="Hãy vào phần cài đặt của thiết bị để cho phép truy cập ảnh của bạn";
+"no.gifs.found.message" = "Chúng tôi không tìm thấy tệp GIF nào phù hợp với yêu cầu của bạn";
+"gif.attribution" = "qua {providerName}";
+"enable.permissions" = "Đi tới phần cài đặt";

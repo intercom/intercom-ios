@@ -49,3 +49,15 @@
 "article_load_error" = "无法加载文章";
 "error.loading.conversations.fallback" = "无法加载您与 {name} 的对话";
 "error.no_conversations.message" = "暂时没有和 {name} 的对话";
+"error.gifs.description" ="请稍后重试。";
+"error.gifs" = "无法加载 GIF";
+"search.gifs" ="正在搜索 GIF...";
+"no.gifs.found.message"="无法找到任何匹配 %{query} 的 GIF";
+"camera.roll"= "相机相册";
+"no.photos" ="无照片";
+"no.photos.on.device"= "此设备上无照片";
+"access.photos" ="访问您的照片";
+"go.to.permissions.settings" ="前往设备设置以设置允许访问您的照片";
+"no.gifs.found.message" = "无法找到与查询匹配的任何 GIF";
+"gif.attribution" = "通过 {providerName}";
+"enable.permissions" = "前往您的设置";

@@ -49,3 +49,15 @@
 "article_load_error" = "Articolul nu a putut fi încărcat";
 "error.loading.conversations.fallback" = "Conversațiile dumneavoastră nu au putut fi încărcate cu {name}";
 "error.no_conversations.message" = "Nicio conversație cu {name} încă";
+"error.gifs.description" ="Încearcă din nou peste un minut.";
+"error.gifs" = "GIF-urile nu au putut fi încărcate";
+"search.gifs" ="Caută GIF-uri...";
+"no.gifs.found.tite"= "Nu a fost găsit niciun GIF";
+"camera.roll"= "Memorie cameră";
+"no.photos" ="Nicio fotografie";
+"no.photos.on.device"= "Nu există fotografii pe acest dispozitiv";
+"access.photos" ="Accesează fotografiile tale";
+"go.to.permissions.settings" ="Intră în setările dispozitivului pentru a permite accesul la fotografiile tale";
+"no.gifs.found.message" = "Nu am putut găsi GIF-uri pentru căutarea ta";
+"gif.attribution" = "via {providerName}";
+"enable.permissions" = "Accesează setările tale";

@@ -49,3 +49,15 @@
 "article_load_error" = "Nije bilo moguće učitati članak";
 "error.loading.conversations.fallback" = "Nije moguće učitati Vaše razgovore s {name}";
 "error.no_conversations.message" = "Još nemate razgovora s {name}";
+"error.gifs.description" ="Pokušajte ponovno za minutu.";
+"error.gifs" = "Nije moguće učitati GIF-ove";
+"search.gifs" ="Pretraži GIF-ove...";
+"no.gifs.found.tite"= "Nije pronađen nijedan GIF";
+"camera.roll"= "Snimljene fotografije";
+"no.photos" ="Nema fotografija";
+"no.photos.on.device"= "Na ovom uređaju nema fotografija";
+"access.photos" ="Pristupite svojim fotografijama";
+"go.to.permissions.settings" ="Idite u postavke uređaja kako biste dozvolili pristup svojim fotografijama";
+"no.gifs.found.message" = "Nije pronađen nijedan GIF koji odgovara Vašem upitu";
+"gif.attribution" = "putem {providerName}";
+"enable.permissions" = "Idite u postavke";

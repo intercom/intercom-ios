@@ -49,3 +49,15 @@
 "article_load_error" = "Não foi possível abrir o artigo";
 "error.loading.conversations.fallback" = "Não foi possível carregar suas conversas com {name}";
 "error.no_conversations.message" = "Nenhuma conversa com {name} ainda";
+"error.gifs.description" ="Tente novamente em um minuto.";
+"error.gifs" = "Não foi possível carregar os GIFs";
+"search.gifs" ="Buscar GIFs...";
+"no.gifs.found.tite"= "Nenhum GIF encontrado";
+"camera.roll"= "Rolo da câmera";
+"no.photos" ="Não há fotos";
+"no.photos.on.device"= "Não há fotos neste dispositivo";
+"access.photos" ="Acesse suas fotos";
+"go.to.permissions.settings" ="Vá às configurações do seu dispositivo para permitir o acesso às suas fotos";
+"no.gifs.found.message" = "Não possível encontrar GIFs correspondentes à sua busca";
+"gif.attribution" = "de {providerName}";
+"enable.permissions" = "Ir às suas configurações";

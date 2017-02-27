@@ -49,3 +49,15 @@
 "article_load_error" = "Artiklen kunne ikke indlæses";
 "error.loading.conversations.fallback" = "Dine samtaler med {name} kunne indlæses";
 "error.no_conversations.message" = "Endnu ingen samtaler med {name}";
+"error.gifs.description" ="Prøv igen om et øjeblik.";
+"error.gifs" = "GIF-filer kunne ikke indlæses";
+"search.gifs" ="Søg efter GIF-filer...";
+"no.gifs.found.tite"= "Der blev ingen GIF-filer fundet";
+"camera.roll"= "Kamerarulle";
+"no.photos" ="Ingen fotos";
+"no.photos.on.device"= "Der er ingen fotos på denne enhed";
+"access.photos" ="Få adgang til dine fotos";
+"go.to.permissions.settings" ="Gå til enhedsindstillingerne for at tillade adgang til dine fotos";
+"no.gifs.found.message" = "Vi kunne ikke finde nogen GIF-filer, som passer til din søgning";
+"gif.attribution" = "via {providerName}";
+"enable.permissions" = "Gå til dine indstillinger";

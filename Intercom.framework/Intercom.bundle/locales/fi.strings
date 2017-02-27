@@ -49,3 +49,15 @@
 "article_load_error" = "Et voinut ladata artikkelia";
 "error.loading.conversations.fallback" = "Keskusteluitasi ei voitu ladata sovelluksella {name}";
 "error.no_conversations.message" = "Ei vielä keskusteluita henkilön {name} kanssa";
+"error.gifs.description" ="Yritä uudelleen hetken kuluttua.";
+"error.gifs" = "GIF-kuvien lataus epäonnistui";
+"search.gifs" ="Hae GIF-kuvia...";
+"no.gifs.found.tite"= "GIF-kuvia ei löytynyt";
+"camera.roll"= "Kameran kuvat";
+"no.photos" ="Ei valokuvia";
+"no.photos.on.device"= "Tällä laitteella ei ole valokuvia";
+"access.photos" ="Valokuviesi käyttöoikeus";
+"go.to.permissions.settings" ="Salli valokuviesi käyttöoikeus laitteesi asetuksista";
+"no.gifs.found.message" = "Emme löytäneet yhtään hakuasi vastaavaa GIF-kuvaa";
+"gif.attribution" = "tarjoajana {providerName}";
+"enable.permissions" = "Avaa asetukset";

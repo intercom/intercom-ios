@@ -49,3 +49,15 @@
 "article_load_error" = "No ha estat possible carregar l'article";
 "error.loading.conversations.fallback" = "No ha estat possible carregar les seves conversacions amb {name}";
 "error.no_conversations.message" = "Encara no hi ha cap conversa amb {name}.";
+"error.gifs.description" ="Provi una altra vegada d'aquí a un minut.";
+"error.gifs" = "No s'han pogut carregar GIFs";
+"search.gifs" ="Cercar GIFs...";
+"no.gifs.found.tite"= "No s'ha trobat cap GIF";
+"camera.roll"= "Rodet";
+"no.photos" ="No hi ha cap foto";
+"no.photos.on.device"= "No hi ha cap foto en aquest dispositiu";
+"access.photos" ="Accedir a les seves fotos";
+"go.to.permissions.settings" ="Vagi a la configuració del dispositiu per permetre l'accés a les seves fotos";
+"no.gifs.found.message" = "No hem pogut trobar cap GIF que coincideixi amb la seva consulta";
+"gif.attribution" = "mitjançant {providerName}";
+"enable.permissions" = "Vagi a la configuració";

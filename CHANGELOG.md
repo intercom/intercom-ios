@@ -1,5 +1,13 @@
 # Intercom
 
+## 3.1.0 (2017-02-27)
+
+* Added new GIF button to the composer in the Messenger, so your users can search for and share GIFs in conversations.
+* Updated image upload functionality.
+* Added `ICMUserAttributes` and `+[Intercom updateUser:]` to help make updating users easier.
+* Improved behaviour in landscape on small devices.
+* Fixed issue where errors could be logged on first launch.
+
 ## 3.0.25 (2017-02-07)
 
 * Fixed an issue with `[Intercom enableLogging]` that caused debug logs not to be shown.

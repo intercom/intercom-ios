@@ -49,3 +49,15 @@
 "article_load_error" = "Yazı yüklenemedi";
 "error.loading.conversations.fallback" = "{name} kişisi ile yaptığınız görüşmeler yüklenemedi";
 "error.no_conversations.message" = "{name} kişisi ile henüz bir görüşme gerçekleştirilmedi";
+"error.gifs.description" ="Birazdan tekrar deneyin.";
+"error.gifs" = "GIF'ler yüklenemedi";
+"search.gifs" ="GIF ara...";
+"no.gifs.found.tite"= "GIF bulunamadı";
+"camera.roll"= "Film rulosu";
+"no.photos" ="Fotoğraf yok";
+"no.photos.on.device"= "Bu cihazda hiç fotoğraf yok";
+"access.photos" ="Fotoğraflarınıza erişin";
+"go.to.permissions.settings" ="Fotoğraf erişimine izin vermek için cihaz ayarlarına gidin";
+"no.gifs.found.message" = "Aramanızla eşleşen bir GIF bulamadık";
+"gif.attribution" = "{sağlayıcıAdı} aracılığıyla";
+"enable.permissions" = "Ayarlara gidin";

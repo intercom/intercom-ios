@@ -49,3 +49,15 @@
 "article_load_error" = "Článek nelze načíst";
 "error.loading.conversations.fallback" = "Nelze načíst vaši konverzaci s uživatelem {name}";
 "error.no_conversations.message" = "S uživatelem {name} ještě nemáte žádnou konverzaci";
+"error.gifs.description" ="Za chvíli to zkuste znovu.";
+"error.gifs" = "Nelze nahrát žádné soubory GIF";
+"search.gifs" ="Vyhledat soubory GIF...";
+"no.gifs.found.tite"= "Nebyly nalezeny žádné soubory GIF";
+"camera.roll"= "Z fotoaparátu";
+"no.photos" ="Žádné fotografie";
+"no.photos.on.device"= "Na tomto zařízení nejsou žádné fotografie";
+"access.photos" ="Přístup k vašim fotografiím";
+"go.to.permissions.settings" ="Přejděte do nastavení vašeho zařízení a povolte přístup k vašim fotografiím";
+"no.gifs.found.message" = "Nepodařilo se nám najít žádné soubory GIF odpovídající vašemu dotazu";
+"gif.attribution" = "prostřednictvím {providerName}";
+"enable.permissions" = "Přejděte do svého nastavení";

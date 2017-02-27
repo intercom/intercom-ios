@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "ICMUserAttributes.h"
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_8_0
 #error This version (3.0.25) of Intercom for iOS supports iOS 8.0 upwards.
@@ -173,44 +174,17 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that
  relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to
  Intercom you can then apply filters based on these attributes.
-
- A detailed list of the fields you can use to [update a user is available here](https://developers.intercom.com/reference/#user-model )
-
- Attributes such as the user email or name can be updated by calling
-
- [Intercom updateUserWithAttributes:@{
- @"email" : @"admin@intercom.io",
- @"name" : @"Admin Name"
- }];
-
- Custom user attributes can be created and modified by passing a custom_attributes dictionary
- You do not have to create attributes in Intercom beforehand. If one hasn't been seen before, it will be
- created for you automatically.
-
- [Intercom updateUserWithAttributes:@{
- @"custom_attributes": @{
- @"paid_subscriber" : @YES,
- @"monthly_spend": @155.5,
- @"team_mates": @3
- }
- }];
-
- You can also set company data via this call by submitting an attribute dictionary like
-
- [Intercom updateUserWithAttributes:@{
- @"companies": @[ @{
- @"name" : @"My Company",
- @"id" : @"abcd1234"
- }
- ]}];
-
- id is a required field for adding or modifying a company. A detailed description of the
- [company model is available here](https://developers.intercom.com/reference/#companies )
-
- @param attributes This is a dictionary containing key/value pairs for multiple attributes.
- @note Attributes may be either a `string`, `integer`, `double`, `unix timestamp` or `bool`.
+ 
+ Details on attributes available to update can be found in ICMUserAttributes.
+ 
+ @param userAttributes The attributes to update the user with.
  */
-+ (void)updateUserWithAttributes:(NSDictionary *)attributes;
++ (void)updateUser:(ICMUserAttributes *)userAttributes;
+
+/*!
+ @deprecated  +[Intercom updateUserWithAttributes:] is deprecated. Use +[Intercom updateUser:] instead.
+ */
++ (void)updateUserWithAttributes:(NSDictionary *)attributes __attribute((deprecated("'+[Intercom updateUserWithAttributes:]' is deprecated. 'Use +[Intercom updateUser:]' instead.")));
 
 /*!
  Log an event with a given name.
