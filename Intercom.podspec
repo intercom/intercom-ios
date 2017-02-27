@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '8.0'
   s.preserve_paths      = 'Intercom/Intercom.framework'
   s.public_header_files = 'Intercom/Intercom.framework/Versions/A/Headers/Intercom.h', 'Intercom/Intercom.framework/Versions/A/Headers/ICMUserAttributes.h', 'Intercom/Intercom.framework/Versions/A/Headers/ICMCompany.h'
-  s.source_files        = 'Intercom/Intercom.framework/Versions/A/Headers/Intercom.h'
+  s.source_files        = 'Intercom/Intercom.framework/Versions/A/Headers/Intercom.h', 'Intercom/Intercom.framework/Versions/A/Headers/ICMUserAttributes.h', 'Intercom/Intercom.framework/Versions/A/Headers/ICMCompany.h'
   s.resource            = 'Intercom/Intercom.framework/Versions/A/Resources/Intercom.bundle'
   s.vendored_frameworks = 'Intercom/Intercom.framework'
 end
