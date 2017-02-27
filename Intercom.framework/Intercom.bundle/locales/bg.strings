@@ -49,3 +49,15 @@
 "article_load_error" = "Неуспешно зареждане на статията";
 "error.loading.conversations.fallback" = "Неуспешно зареждане на разговорите ви с {name}";
 "error.no_conversations.message" = "Все още няма разговори с {name}";
+"error.gifs.description" =" Опитайте отново след една минута.";
+"error.gifs" = "Неуспешно зареждане на GIF картинки";
+"search.gifs" ="Търсене на GIF картинки...";
+"no.gifs.found.tite"= "Няма намерени GIF картинки";
+"camera.roll"= "Албум от камерата";
+"no.photos" ="Няма снимки";
+"no.photos.on.device"= "Няма снимки на това устройство";
+"access.photos" ="Достъп до вашите снимки";
+"go.to.permissions.settings" ="Отворете настройките на устройството ви, за да разрешите достъп до вашите снимки ";
+"no.gifs.found.message" = "Не успяхме да намерим GIF картинки, които отговарят на заявката ви";
+"gif.attribution" = "от {providerName}";
+"enable.permissions" = "Отваряне на вашите настройки";

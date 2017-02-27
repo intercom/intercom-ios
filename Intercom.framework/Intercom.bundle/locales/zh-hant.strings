@@ -49,3 +49,15 @@
 "article_load_error" = "無法載入文章";
 "error.loading.conversations.fallback" = "無法載入您與 {name} 的對話";
 "error.no_conversations.message" = "尚無與 {name} 的對話";
+"error.gifs.description" ="請稍後再試一次。";
+"error.gifs" = "無法載入 GIF";
+"search.gifs" ="搜尋 GIF...";
+"no.gifs.found.message"="我們找不到任何 GIF 符合：%{query}";
+"camera.roll"= "相機膠卷";
+"no.photos" ="沒有相片";
+"no.photos.on.device"= "此裝置上沒有相片";
+"access.photos" ="存取您的相片";
+"go.to.permissions.settings" ="前往您的裝置設定以允許存取相片";
+"no.gifs.found.message" = "我們找不到任何 GIF 符合您的查詢";
+"gif.attribution" = "透過 {providerName}";
+"enable.permissions" = "前往您的設定";

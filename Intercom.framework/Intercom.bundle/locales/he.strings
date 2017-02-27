@@ -49,3 +49,15 @@
 "article_load_error" = "לא ניתן לטעון את המאמר";
 "error.loading.conversations.fallback" = "לא ניתן לטעון את השיחות שלך עם {name}";
 "error.no_conversations.message" = "אין עדיין שיחות עם {name}";
+"error.gifs.description" ="נסה שוב בעוד רגע.";
+"error.gifs" = "לא ניתן לטעון תמונות GIF";
+"search.gifs" ="חפש תמונות GIF...";
+"no.gifs.found.tite"= "לא נמצאו תמונות GIF";
+"camera.roll"= "סרט צילום";
+"no.photos" ="אין תמונות";
+"no.photos.on.device"= "אין תמונות במכשיר זה";
+"access.photos" ="גישה לתמונות שלך";
+"go.to.permissions.settings" ="עבור אל הגדרות המכשיר כדי לאפשר גישה אל התמונות שלך";
+"no.gifs.found.message" = "לא מצאנו קובצי GIF התואמים לשאילתה שלך";
+"gif.attribution" = "באמצעות {providerName}";
+"enable.permissions" = "עבור להגדרות";

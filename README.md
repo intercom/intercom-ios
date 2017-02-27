@@ -9,7 +9,7 @@
 
 ## Installation
 
-Intercom for iOS supports iOS 8.x, iOS 9.x and iOS 10.
+Intercom for iOS supports iOS 8, iOS 9 and iOS 10.
 
 ### CocoaPods
 Add the Intercom pod into your Podfile and run `pod install`.

@@ -49,3 +49,15 @@
 "article_load_error" = "Nepavyko įkelti straipsnio";
 "error.loading.conversations.fallback" = "Nepavyko įkelti pokalbių su {name}";
 "error.no_conversations.message" = "Dar nebuvo pokalbių su {name}";
+"error.gifs.description" ="Pamėginkite vėl po minutės.";
+"error.gifs" = "GIF failų įkelti nepavyko";
+"search.gifs" ="Ieškoti GIF failų...";
+"no.gifs.found.tite"= "GIF failų nerasta";
+"camera.roll"= "Fotoaparato aplankas";
+"no.photos" ="Nuotraukų nėra";
+"no.photos.on.device"= "Šiame įrenginyje nuotraukų nėra";
+"access.photos" ="Atsidarykite savo nuotraukas";
+"go.to.permissions.settings" ="Eikite į įrenginio nustatymus ir suteikite leidimą pasiekti savo nuotraukas";
+"no.gifs.found.message" = "Nepavyko rasti GIF failų, atitinkančių jūsų užklausą";
+"gif.attribution" = "per {providerName}";
+"enable.permissions" = "Eikite į savo nustatymus";

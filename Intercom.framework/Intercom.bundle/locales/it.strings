@@ -49,3 +49,15 @@
 "article_load_error" = "Non è stato possibile caricare l'articolo";
 "error.loading.conversations.fallback" = "Non è stato possibile caricare le tue conversazioni con {name}";
 "error.no_conversations.message" = "Ancora nessuna conversazione con {name}.";
+"error.gifs.description" ="Riprova tra un minuto.";
+"error.gifs" = "Impossibile caricare le GIF";
+"search.gifs" ="Cerca GIF...";
+"no.gifs.found.tite"= "Nessuna GIF trovata";
+"camera.roll"= "Rullino";
+"no.photos" ="Nessuna foto";
+"no.photos.on.device"= "Questo dispositivo non contiene foto";
+"access.photos" ="Accedi alle tue foto";
+"go.to.permissions.settings" ="Vai alle impostazioni del dispositivo per consentire l'accesso alle tue foto";
+"no.gifs.found.message" = "Non abbiamo trovato alcuna GIF corrispondente alla tua query";
+"gif.attribution" = "tramite {providerName}";
+"enable.permissions" = "Vai alle impostazioni";

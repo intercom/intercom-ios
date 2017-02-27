@@ -49,3 +49,15 @@
 "article_load_error" = "Kon het artikel niet laden";
 "error.loading.conversations.fallback" = "Kon uw gesprekken met {name} niet laden";
 "error.no_conversations.message" = "Nog geen gesprekken met {name}";
+"error.gifs.description" ="Probeer het na een minuut opnieuw.";
+"error.gifs" = "Kon GIF's niet laden";
+"search.gifs" ="GIF's zoeken...";
+"no.gifs.found.tite"= "Geen GIF's gevonden";
+"camera.roll"= "Filmrol";
+"no.photos" ="Geen foto's";
+"no.photos.on.device"= "Er zijn geen foto's beschikbaar op dit apparaat";
+"access.photos" ="Toegang tot uw foto's";
+"go.to.permissions.settings" ="Ga naar de instellingen van uw apparaat om toegang tot uw foto's toe te staan";
+"no.gifs.found.message" = "We vonden geen GIF's die voldoen aan uw zoekcriterium";
+"gif.attribution" = "via {providerName}";
+"enable.permissions" = "Ga naar uw instellingen";

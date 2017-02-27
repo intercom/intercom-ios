@@ -4,14 +4,14 @@
 "alert.new.sdk.user.button" = "Thank you";
 "profile.time.location.format" = "{time} in {location}";
 "message.state.sending" = "Sending";
-"message.placeholder.write.reply" = "Write a reply";
+"message.placeholder.write.reply" = "Write a reply...";
 "twitter.follow.us" = "Follow us on Twitter";
 "alert.new.sdk.user.message" = "Your iOS app is now integrated with the Intercom platform";
 "error.title" = "Something went wrong";
 "error.no_conversations.message.no_app_name" = "No conversations yet";
 "facebook.like.us" = "Like us on Facebook";
 "from.app" = "from {name}";
-"message.placeholder.start.conversation" = "Start a conversation";
+"message.placeholder.start.conversation" = "Start a conversation...";
 "navigation.back" = "Back";
 "admin.from.app" = "{name} from {company}";
 "message.not.seen" = "Not seen yet";
@@ -49,3 +49,20 @@
 "article_load_error" = "Couldn't load the article";
 "error.loading.conversations.fallback" = "Couldn't load your conversations with {name}";
 "error.no_conversations.message" = "No conversations with {name} yet";
+
+//Photos
+"camera.roll" = "Camera roll";
+"no.photos" = "No photos";
+"no.photos.on.device" = "There are no photos on this device";
+"access.photos" = "Access your photos";
+"go.to.permissions.settings" = "Go to your device settings to allow access to your photos";
+"enable.permissions" = "Go to your settings";
+
+//GIFs
+"search.gifs" = "Search GIFs";
+"no.gifs.found.tite" = "No GIFs found";
+"no.gifs.found.message" = "We couldn't find any GIFs matching your query";
+"error.gifs" = "Couldn't load GIFs";
+"error.gifs.description" = "Try again in a minute";
+"error.try.again.button" = "Try again";
+"gif.attribution" = "via {providerName}";

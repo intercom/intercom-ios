@@ -29,7 +29,7 @@
 "actionsheet.delete" = "Slett";
 "navbar.title.new.conversation" = "Ny samtale";
 "last_active.over_week_ago" = "Aktiv for over 1 u siden";
-"time.difference.just.now" = "Nettopp";
+"time.difference.just.now" = "Akkurat nå";
 "last_active.minutes.ago" = "Aktiv for {minutes} m siden";
 "last_active.15_minutes" = "Aktiv i de siste {minutes} m";
 "message.seen" = "Sett";
@@ -49,3 +49,15 @@
 "article_load_error" = "Klarte ikke å laste frem artikkelen";
 "error.loading.conversations.fallback" = "Klarte ikke å laste frem dine samtaler med {name}";
 "error.no_conversations.message" = "Ingen samtaler med {name} enda";
+"error.gifs.description" ="Prøv igjen om ett minutt.";
+"error.gifs" = "Kunne ikke laste GIFer";
+"search.gifs" ="Søk GIFer...";
+"no.gifs.found.tite"= "Ingen GIFer funnet";
+"camera.roll"= "Kamerabilder";
+"no.photos" ="Ingen bilder";
+"no.photos.on.device"= "Det er ingen bilder på denne enheten";
+"access.photos" ="Få tilgang til dine bilder";
+"go.to.permissions.settings" ="Gå til dine enhetsinnstillinger for å få tilgang til dine bilder";
+"no.gifs.found.message" = "Vi kunne ikke finne noen GIFer som samsvarer med forespørselen din";
+"gif.attribution" = "via {providerName}";
+"enable.permissions" = "Gå til dine innstillinger";

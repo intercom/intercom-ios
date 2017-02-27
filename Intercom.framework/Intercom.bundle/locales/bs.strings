@@ -49,3 +49,15 @@
 "article_load_error" = "Није могао учитати чланак";
 "error.loading.conversations.fallback" = "Није могао учитати ваше разговоре са {name}";
 "error.no_conversations.message" = "Нема разговора са {name} још увијек.";
+"error.gifs.description" ="Покушајте поново за који минут.";
+"error.gifs" = "Није могуће учитати GIF документе";
+"search.gifs" ="Претраживанје GIF докумената... ";
+"no.gifs.found.tite"= "Није пронађен ниједан GIF документ";
+"camera.roll"= "Мапа фотоапарата";
+"no.photos" ="Нема фотографија";
+"no.photos.on.device"= "На овом уређају нема фотографија";
+"access.photos" ="Приступите својим фотографијама";
+"go.to.permissions.settings" ="Идите на поставке свог уређаја да бисте дозволили приступ својим фотографијама";
+"no.gifs.found.message" = "Нисмо пронашли ниједну GIF датотеку која би одговарала вашем захтјеву";
+"gif.attribution" = "помоћу {providerName}";
+"enable.permissions" = "Идите на поставке";

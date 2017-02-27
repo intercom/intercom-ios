@@ -49,3 +49,15 @@
 "article_load_error" = "Nevarēja ielādēt rakstu";
 "error.loading.conversations.fallback" = "Nevarēja ielādēt Jūsu sarunas ar {name}";
 "error.no_conversations.message" = "Ar {name} vēl nav bijušas sarunas";
+"error.gifs.description" ="Mēģiniet vēlreiz pēc minūtes.";
+"error.gifs" = "Nevarēja ielādēt GIF";
+"search.gifs" ="Meklē GIF...";
+"no.gifs.found.tite"= "Nav atrasts neviens GIF";
+"camera.roll"= "Fotoattēli no kameras";
+"no.photos" ="Nav fotogrāfiju";
+"no.photos.on.device"= "Nav fotogrāfiju šajā ierīcē";
+"access.photos" ="Piekļūstiet savām fotogrāfijas";
+"go.to.permissions.settings" ="Dodieties uz ierīces iestatījumiem, lai atļautu piekļuvi jūsu fotogrāfijām";
+"no.gifs.found.message" = "Nevarējām atrast nevienu GIF failu, kas atbilstu Jūsu pieprasījumam";
+"gif.attribution" = ", izmantojot {providerName}";
+"enable.permissions" = "Dodieties uz iestatījumiem";

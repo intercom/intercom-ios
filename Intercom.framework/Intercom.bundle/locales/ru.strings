@@ -49,3 +49,15 @@
 "article_load_error" = "Не удалось загрузить статью";
 "error.loading.conversations.fallback" = "Не удалось загрузить Вашу переписку с {name}";
 "error.no_conversations.message" = "Вы еще не беседовали с участником {name}";
+"error.gifs.description" ="Попробуйте ещё раз через минуту.";
+"error.gifs" = "Не удалось загрузить GIF-файлы";
+"search.gifs" ="Поиск GIF-файлов...";
+"no.gifs.found.tite"= "GIF-файлы не найдены";
+"camera.roll"= "Фотоплёнка";
+"no.photos" ="Нет фотографий";
+"no.photos.on.device"= "На этом устройстве нет фотографий";
+"access.photos" ="Доступ к вашим фотографиям";
+"go.to.permissions.settings" ="Разрешите доступ к вашим фотографиям в системных настройках";
+"no.gifs.found.message" = "Мы не смогли найти ни одного GIF-файла, отвечающего Вашему критерию";
+"gif.attribution" = "с помощью {providerName}";
+"enable.permissions" = "Перейти к настройкам";

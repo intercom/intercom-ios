@@ -49,3 +49,15 @@
 "article_load_error" = "Өгүүллийг эхлүүлж чадахгүй байна";
 "error.loading.conversations.fallback" = "{name}-тай хийсэн таны яриаг эхлүүлж чадсангүй.";
 "error.no_conversations.message" = "{name}-тай хараахан яриагүй";
+"error.gifs.description" ="Минутын дараа дахин оролдоно уу.";
+"error.gifs" = "GIF файлуудыг ачаалж чадсангүй";
+"search.gifs" ="GIF хайх...";
+"no.gifs.found.tite"= "Ямар ч GIF олдсонгүй";
+"camera.roll"= "Камерын зургууд";
+"no.photos" ="Зураг алга";
+"no.photos.on.device"= "Энэ төхөөрөмж дээр ямар ч зураг алга";
+"access.photos" ="Зургууд руугаа нэвтрэх";
+"go.to.permissions.settings" ="Зургууд руу нэвтрэхийн тулд төхөөрөмжийнхөө тохиргоо руу ор";
+"no.gifs.found.message" = "Бид таны асуулгад тохирох ямар ч GIF файл олж чадсангүй";
+"gif.attribution" = "{providerName}-р";
+"enable.permissions" = "Тохиргоо руу орох";

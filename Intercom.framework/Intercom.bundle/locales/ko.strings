@@ -49,3 +49,15 @@
 "article_load_error" = "기사를 로드할 수 없음";
 "error.loading.conversations.fallback" = "{name}님과 대화한 내용을 로드할 수 없습니다.";
 "error.no_conversations.message" = "{name}님과 대화한 내용이 없습니다";
+"error.gifs.description" ="1분 후에 다시 시도해주세요.";
+"error.gifs" = "GIF 파일 로드할 수 없음";
+"search.gifs" ="GIF 검색 중...";
+"no.gifs.found.tite"= "GIF 찾을 수 없음";
+"camera.roll"= "Camera Roll";
+"no.photos" ="사진 없음";
+"no.photos.on.device"= "이 기기에 사진이 없습니다";
+"access.photos" ="사진에 액세스";
+"go.to.permissions.settings" ="기기 설정에서 사진 액세스를 허용합니다";
+"no.gifs.found.message" = "query에 해당하는 GIF를 찾을 수 없습니다";
+"gif.attribution" = "{providerName} 제공";
+"enable.permissions" = "설정으로 이동";

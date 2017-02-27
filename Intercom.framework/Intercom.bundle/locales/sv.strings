@@ -49,3 +49,15 @@
 "article_load_error" = "Det gick inte att läsa in artikeln";
 "error.loading.conversations.fallback" = "Det gick inte att läsa in dina samtal med {name}";
 "error.no_conversations.message" = "Inga samtal med {name} ännu";
+"error.gifs.description" ="Försök igen om en minut.";
+"error.gifs" = "Kunde inte ladda GIF";
+"search.gifs" ="Sök GIF...";
+"no.gifs.found.tite"= "Inga GIF hittades";
+"camera.roll"= "Kamerabilder";
+"no.photos" ="Inga bilder";
+"no.photos.on.device"= "Det finns inga bilder på denna enhet";
+"access.photos" ="Åtkomst till dina bilder";
+"go.to.permissions.settings" ="Gå till dina enhetsinställningar för att få åtkomst till dina bilder";
+"no.gifs.found.message" = "Vi kunde inte hitta några GIF:ar som matchar din fråga";
+"gif.attribution" = "via {providerName}";
+"enable.permissions" = "Gå till dina inställningar";

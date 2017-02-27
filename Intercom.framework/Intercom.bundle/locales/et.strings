@@ -49,3 +49,15 @@
 "article_load_error" = "Ei saanud artiklit laadida";
 "error.loading.conversations.fallback" = "Ei saanud laadida vestlusi kasutajaga {name}";
 "error.no_conversations.message" = "Ei ole veel vestlusi kasutajaga {name}";
+"error.gifs.description" ="Proovi mõne hetke pärast uuesti.";
+"error.gifs" = "Ei saanud GIF-e laadida";
+"search.gifs" ="Otsi GIF-e...";
+"no.gifs.found.tite"= "Ühtegi GIF-i ei leitud";
+"camera.roll"= "Filmilint";
+"no.photos" ="Fotosid pole";
+"no.photos.on.device"= "Selles seadmes ei ole ühtegi fotot";
+"access.photos" ="Juurdepääs fotodele";
+"go.to.permissions.settings" ="Minge seadme sätetesse ja lubage juurdepääs oma fotodele";
+"no.gifs.found.message" = "Ei leidnud ühtegi GIF-i teie märksõnaga";
+"gif.attribution" = "{providerName} kaudu";
+"enable.permissions" = "Mine sätetesse";

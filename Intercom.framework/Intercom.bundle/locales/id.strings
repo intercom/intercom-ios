@@ -49,3 +49,15 @@
 "article_load_error" = "Tidak dapat memuat artikel";
 "error.loading.conversations.fallback" = "Tidak dapat memuat percakapan Anda dengan {name}";
 "error.no_conversations.message" = "Belum ada percakapan dengan {name}";
+"error.gifs.description" ="Coba sebentar lagi.";
+"error.gifs" = "Tidak bisa memuat GIF";
+"search.gifs" ="Cari GIF...";
+"no.gifs.found.tite"= "GIF tidak ada";
+"camera.roll"= "Kamera diputar";
+"no.photos" ="Tidak ada foto";
+"no.photos.on.device"= "Tidak ada foto pada perangkat ini";
+"access.photos" ="Akses foto Anda";
+"go.to.permissions.settings" ="Buka pengaturan perangkat Anda untuk memberi izin akses ke foto Anda";
+"no.gifs.found.message" = "Kami tidak dapat menemukan GIF yang sesuai permintaan Anda";
+"gif.attribution" = "melalui {providerName}";
+"enable.permissions" = "Buka pengaturan Anda";

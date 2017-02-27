@@ -49,3 +49,15 @@
 "article_load_error" = "Nie można wczytać artykułu";
 "error.loading.conversations.fallback" = "Nie można wczytać Twoich rozmów w aplikacji {name}";
 "error.no_conversations.message" = "Nie ma jeszcze żadnych rozmów z użytkownikiem {name}";
+"error.gifs.description" ="Spróbuj ponownie za chwilę.";
+"error.gifs" = "Nie udało się wczytać plików GIF";
+"search.gifs" ="Szukaj plików GIF...";
+"no.gifs.found.tite"= "Nie znaleziono żadnych plików GIF";
+"camera.roll"= "Rolka z aparatu";
+"no.photos" ="Brak zdjęć";
+"no.photos.on.device"= "Na tym urządzeniu nie ma żadnych zdjęć";
+"access.photos" ="Uzyskaj dostęp do swoich zdjęć";
+"go.to.permissions.settings" ="Przejdź do ustawień urządzenia, aby umożliwić dostęp do swoich zdjęć";
+"no.gifs.found.message" = "Nie udało nam się znaleźć żadnych plików GIF spełniających Twój warunek wyszukiwania";
+"gif.attribution" = "za pośrednictwem {providerName}";
+"enable.permissions" = "Przejdź do ustawień";

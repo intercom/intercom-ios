@@ -49,3 +49,15 @@
 "article_load_error" = "記事をロードできません";
 "error.loading.conversations.fallback" = "{name}での会話をロードできません。";
 "error.no_conversations.message" = "{name}との会話はまだ行われていません。";
+"error.gifs.description" ="しばらくしてから再度お試しください。";
+"error.gifs" = "GIFファイルを読み込めませんでした";
+"search.gifs" ="GIFファイルを検索する… ";
+"no.gifs.found.tite"= "GIFファイルが見つかりませんでした";
+"camera.roll"= "カメラロール";
+"no.photos" ="写真がありません";
+"no.photos.on.device"= "デバイスに写真がありません";
+"access.photos" ="写真にアクセスする ";
+"go.to.permissions.settings" ="デバイスの設定から写真へのアクセスを許可してください";
+"no.gifs.found.message" = "検索に一致するGIFが見つかりませんでした";
+"gif.attribution" = "{providerName}経由";
+"enable.permissions" = "設定へ行く";
