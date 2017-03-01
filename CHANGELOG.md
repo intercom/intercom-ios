@@ -1,5 +1,9 @@
 # Intercom
 
+## 3.1.1 (2017-03-01)
+
+* Added more detailed logs in cases where the Messenger cannot open due to an error.
+
 ## 3.1.0 (2017-02-27)
 
 * Added new GIF button to the composer in the Messenger, so your users can search for and share GIFs in conversations.
