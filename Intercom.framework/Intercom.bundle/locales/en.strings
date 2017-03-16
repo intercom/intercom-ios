@@ -32,6 +32,8 @@
 "time.difference.just.now" = "Just now";
 "last_active.minutes.ago" = "Active {minutes}m ago";
 "last_active.15_minutes" = "Active in the last {minutes}m";
+"admin_active" = "Active";
+"admin_away" = "Away";
 "message.seen" = "Seen";
 "last_active.format.days.ago" = "Active {days}d ago";
 "error.starting.conversation.fallback" = "Couldn't start a new conversation";
