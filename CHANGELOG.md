@@ -1,5 +1,16 @@
 # Intercom
 
+## 3.1.2 (2017-03-15)
+
+### Bug Fixes
+
+* Add `languageOverride` to `ICMUserAttributes` (Fixes [#239](https://github.com/intercom/intercom-ios/issues/239).
+
+### Enhancements
+
+* Add API to allow integrating Intercom push notifications manually without swizzling.
+* Improved reliability of opening push notifications when using the exisiting automatic mode. 
+
 ## 3.1.1 (2017-03-01)
 
 * Added more detailed logs in cases where the Messenger cannot open due to an error.
