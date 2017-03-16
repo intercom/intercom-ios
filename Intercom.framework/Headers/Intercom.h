@@ -1,6 +1,6 @@
 //
 //  Intercom.h
-//  Intercom for iOS - Version 3.1.1
+//  Intercom for iOS
 //
 //  Created by Intercom on 8/01/2015.
 //  Copyright (c) 2014 Intercom. All rights reserved.
@@ -11,7 +11,7 @@
 #import "ICMUserAttributes.h"
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_8_0
-#error This version (3.1.1) of Intercom for iOS supports iOS 8.0 upwards.
+#error This version of Intercom for iOS supports iOS 8.0 upwards.
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
@@ -252,6 +252,23 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  @param deviceToken The device token provided in the `didRegisterForRemoteNotificationsWithDeviceToken` method.
  */
 + (void)setDeviceToken:(NSData *)deviceToken;
+
+/*!
+ Use this method to check if a push notification payload was sent by Intercom. Typically you should call
+ +[Intercom handleIntercomPushNotification:] after checking this.
+ 
+ @note This is only needed if you have set `IntercomAutoIntegratePushNotifications` to NO in your Info.plist
+ @return YES if the payload is an Intercom push notification, NO otherwise.
+ */
++ (BOOL)isIntercomPushNotification:(NSDictionary *)userInfo;
+
+/*!
+ Use this method to handle a push notification payload received by Intercom. You should first check if this
+ notification was send by Intercom with `+[Intercom isIntercomPushNotification:]`.
+ 
+ @note This is only needed if you have set `IntercomAutoIntegratePushNotifications` to NO in your Info.plist
+ */
++ (void)handleIntercomPushNotification:(NSDictionary *)userInfo;
 
 //=========================================================================================================
 /*! @name Incoming message presentation options */

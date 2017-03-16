@@ -48,6 +48,13 @@
 @property (nonatomic, copy, nullable) NSString *phone;
 
 /**
+ The language override code for this user.
+ 
+ @note languageOverride must be a valid language code. For more information see [here](https://docs.intercom.com/configure-intercom-for-your-product-or-site/customize-the-intercom-messenger/localize-intercom-to-work-with-multiple-languages ).
+ */
+@property (nonatomic, copy, nullable) NSString *languageOverride;
+
+/**
  The signed up date for this user.
  */
 @property (nonatomic, strong, nullable) NSDate *signedUpAt;
