@@ -18,7 +18,7 @@ Add the Intercom pod into your Podfile and run `pod install`.
       pod 'Intercom'
     end
 
-###Carthage
+### Carthage
 1. Add `github "intercom/intercom-ios"` to your Cartfile.
 2. Run carthage update.
 3. Go to your Xcode project's "General" settings. Drag `Intercom.framework` from `Carthage/Build/iOS` to the "Embedded Binaries" section. Make sure “Copy items if needed” is selected and click Finish.
