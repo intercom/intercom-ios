@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.1.3 (2017-03-29)
+
+### Bug Fixes
+
+* Fixed send button issue described in [#243](https://github.com/intercom/intercom-ios/issues/243).
+
 ## 3.1.2 (2017-03-15)
 
 ### Bug Fixes
