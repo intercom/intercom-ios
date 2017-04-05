@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.1.4 (2017-04-05)
+
+### Bug Fixes
+
+* Fixed an issue where layout could be broken for apps displayed in a right to left mode.
+
 ## 3.1.3 (2017-03-29)
 
 ### Bug Fixes
