@@ -1,5 +1,13 @@
 # Intercom
 
+## 3.1.5 (2017-04-14)
+
+### Bug Fixes
+
+* Fixed retain cycle which could cause [#248](https://github.com/intercom/intercom-ios/issues/248).
+* Fixed translation for multiple snippets.
+* Fixed an issue where real time may not work when moving from an unidentified to an identified user.
+
 ## 3.1.4 (2017-04-05)
 
 ### Bug Fixes
