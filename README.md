@@ -38,10 +38,10 @@ When installing Intercom, you'll need to make sure that you have a `NSPhotoLibra
 
 This is [required by Apple](https://developer.apple.com/library/content/qa/qa1937/_index.html) for all apps that access the photo library. It is necessary when installing Intercom due to the image upload functionality. Users will be prompted for the photo library permission only when they tap the image upload button.
 
-##Example app
+## Example app
 There is an example app provided [here](https://github.com/intercom/intercom-ios/tree/master/Examples) for both Objective-C and Swift.
 
-##Setup and Configuration
+## Setup and Configuration
 
 * Our [installation guide](https://developers.intercom.com/docs/ios-installation) contains full setup and initialisation instructions.
 * Read ["Configuring Intercom for iOS"](https://developers.intercom.com/docs/ios-configuration).
