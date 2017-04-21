@@ -93,19 +93,23 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
 + (void)setApiKey:(NSString *)apiKey forAppId:(NSString *)appId;
 
 //=========================================================================================================
-/*! @name Using secure mode */
+/*! @name Using Identity Verification */
 //=========================================================================================================
 /*!
- Secure Mode helps to make sure that conversations between you and your users are kept private, and that one
- user can't impersonate another. In Secure Mode Intercom for iOS will sign all requests going to the Intercom servers
- with tokens. It requires your mobile application to have its own server which authenticates the app's users,
- and which can store a secret. More information on secure mode can be found [here](http://docs.intercom.io/Install-on-your-mobile-product/enabling-secure-mode-in-intercom-for-ios )
-
+ Identity Verification helps to make sure that conversations between you and your users are kept private, and that one
+ user can't impersonate another. If Identity Verification is enabled for your app Intercom for iOS will sign all requests
+ going to the Intercom servers with tokens. It requires your mobile application to have its own server which authenticates the app's users,
+ and which can store a secret. More information on Identity VerificationIdentity Verification can be found [here](https://docs.intercom.com/configure-intercom-for-your-product-or-site/staying-secure/enable-identity-verification-in-intercom-for-ios )
+ 
  @note This should be called before any user registration takes place.
- @param hmac A HMAC digest of data.
- @param data A piece of user data.
+ @param userHash A HMAC digest of the user ID or email.
  */
-+ (void)setHMAC:(NSString *)hmac data:(NSString *)data;
++ (void)setUserHash:(NSString *)userHash;
+
+/*!
+ @deprecated +[Intercom setHMAC:data:] is deprecated. Use +[Intercom setUserHash:] instead.
+ */
++ (void)setHMAC:(NSString *)hmac data:(NSString *)data __attribute((deprecated("'+[Intercom setHMAC:data:]' is deprecated. Use '+[Intercom setUserHash:]' instead.")));
 
 //=========================================================================================================
 /*! @name Working with anonymous users */
