@@ -1,5 +1,16 @@
 # Intercom
 
+## 3.2.0 (2017-04-21)
+
+### Bug Fixes
+
+* Fixed an issue with unread conversations not appearing if the message was received while the app was backgrounded and reopened in under a minute.
+* Fixed an issue with setting the bottom padding so that in-apps will overlap with the nav bar causing a rendering issue.
+
+### Enhancements
+
+* Added a new method to the public API `+[Intercom setUserHash:]` to support Identity Verification with Intercom. This method deprecates the Secure Mode method `+[Intercom setHMAC:data:]`
+
 ## 3.1.5 (2017-04-14)
 
 ### Bug Fixes
