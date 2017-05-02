@@ -1,5 +1,12 @@
 # Intercom
 
+## 3.2.1 (2017-05-02)
+
+### Bug Fixes
+
+* Fix NSNotificationCenter deadlock  [#252](https://github.com/intercom/intercom-ios/issues/252).
+* Added missing translations.
+
 ## 3.2.0 (2017-04-21)
 
 ### Bug Fixes
