@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.2.2 (2017-05-10)
+
+### Bug Fixes
+
+* Fixed issue where updating bottom padding using `+[Intercom setBottomPadding:]` would not immediately take effect.
+
 ## 3.2.1 (2017-05-02)
 
 ### Bug Fixes
