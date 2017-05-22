@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.2.3 (2017-05-22)
+
+### Bug Fixes
+
+* Bug fixes & improvements.
+
 ## 3.2.2 (2017-05-10)
 
 ### Bug Fixes
