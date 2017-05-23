@@ -1,5 +1,15 @@
 # Intercom
 
+## 3.2.4 (2017-05-23)
+
+### Bug Fixes
+
+* Prevented Intercom's rootViewController from being set directly. Fixed [#256](https://github.com/intercom/intercom-ios/issues/256)
+* Fixed a bug where setting `barStyle` on `[UINavigationBar appearance]` would cause custom app colours to spill over into Intercom's navigation search bar.
+* Fixed a bug where setting the `language_override` was not working for Chinese locales.
+* Fixed a bug where Chinese and Portguese locales were defaulting back to English.
+
+
 ## 3.2.3 (2017-05-22)
 
 ### Bug Fixes
