@@ -132,7 +132,7 @@
 					1A0F1E071B034B7100DA78D2 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = T5C9P2N824;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -302,8 +302,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.intercom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Sample-ObjC";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "eceab9ff-a291-4edf-a36e-4be7d6004b75";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Intercom Dev";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,7 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = T5C9P2N824;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -325,8 +325,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.intercom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Sample-ObjC";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "d69d4463-41e8-4e0f-aac6-5caec061a98d";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Distibution";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
