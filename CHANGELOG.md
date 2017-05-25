@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.2.5 (2017-05-25)
+
+### Bug Fixes
+
+* Fixed Bitcode issue for manual and Carthage installs ([#260](https://github.com/intercom/intercom-ios/issues/260)).
+
 ## 3.2.4 (2017-05-23)
 
 ### Bug Fixes
