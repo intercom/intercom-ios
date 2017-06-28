@@ -1,5 +1,14 @@
 # Intercom
 
+## 3.2.7 (2017-06-28)
+
+## Bug Fixes
+
+* Fixed issue where `UIApplication` could be accessed from the main thread ([#271](https://github.com/intercom/intercom-ios/issues/271)).
+* Some improvements to help track the cause of [#256](https://github.com/intercom/intercom-ios/issues/265).
+* Fixed issue where logging an event immediately after registration could lead to the registration failing.
+* Fixed `-[CALayer renderInContext:]` crash.
+
 ## 3.2.6 (2017-06-15)
 
 ### Bug Fixes
