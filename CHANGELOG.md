@@ -1,5 +1,13 @@
 # Intercom
 
+## 3.2.8 (2017-06-30)
+
+## Bug Fixes
+
+* Fixed remaining issues that could occur when logging events at the same time as registration.
+
+## Bug Fixes
+
 ## 3.2.7 (2017-06-28)
 
 ## Bug Fixes
