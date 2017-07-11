@@ -1,5 +1,12 @@
 # Intercom
 
+## 3.2.9 (2017-07-11)
+
+## Bug Fixes
+
+* Fixed an issue where events could be incorrectly transferred when switching users (Fixes [#276](https://github.com/intercom/intercom-ios/issues/276)).
+* Fixed an edge case where registering a user immeditately after logging an event may fail.
+
 ## 3.2.8 (2017-06-30)
 
 ## Bug Fixes
