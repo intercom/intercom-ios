@@ -1,5 +1,17 @@
 # Intercom
 
+## 3.2.10 (2017-08-04)
+
+## Bug Fixes
+
+* Fixed issues where `setUserHash` could behave incorrectly when `reset` is called (fixes [#279](https://github.com/intercom/intercom-ios/issues/279)).
+* Fixed issue where device tokens may not be deleted on `reset` if using identity verification.
+* Fixed crash that could occur when exiting and re-entering a conversation after sending an image.
+
+### Enhancements
+
+* Added native support for conversation ratings. You can read more about conversation ratings [here](https://docs.intercom.com/responding-to-users-and-visitors/see-your-team-s-progress/measure-customer-satisfaction-with-conversation-ratings).
+
 ## 3.2.9 (2017-07-11)
 
 ## Bug Fixes
