@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.2.11 (2017-08-04)
+
+## Bug Fixes
+
+* Fixed issue with "Tell us more" button for conversation ratings.
+
 ## 3.2.10 (2017-08-04)
 
 ## Bug Fixes
