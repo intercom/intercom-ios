@@ -1,5 +1,11 @@
 # Intercom
 
+## 3.2.12 (2017-08-10)
+
+## Bug Fixes
+
+* Fixed issue where updating the user before registering could cause problems ([#288](https://github.com/intercom/intercom-ios/issues/288)).
+
 ## 3.2.11 (2017-08-04)
 
 ## Bug Fixes
