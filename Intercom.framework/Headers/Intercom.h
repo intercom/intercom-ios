@@ -106,11 +106,6 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  */
 + (void)setUserHash:(NSString *)userHash;
 
-/*!
- @deprecated +[Intercom setHMAC:data:] is deprecated. Use +[Intercom setUserHash:] instead.
- */
-+ (void)setHMAC:(NSString *)hmac data:(NSString *)data __attribute((deprecated("'+[Intercom setHMAC:data:]' is deprecated. Use '+[Intercom setUserHash:]' instead.")));
-
 //=========================================================================================================
 /*! @name Working with anonymous users */
 //=========================================================================================================
@@ -352,25 +347,6 @@ UIKIT_EXTERN NSString *const IntercomUnreadConversationCountDidChangeNotificatio
  screen, call this method so that Intercom's window can reflect these changes accordingly.
  */
 + (void)setNeedsStatusBarAppearanceUpdate;
-
-//=========================================================================================================
-/*! @name Deprecated methods */
-//=========================================================================================================
-
-/*!
- @deprecated +[Intercom setPreviewPosition:] is no longer supported, and will not work.
- */
-+ (void)setPreviewPosition:(ICMPreviewPosition)previewPosition __attribute((deprecated("'+[Intercom setPreviewPosition:]' is no longer supported and will not work")));
-
-/*!
- @deprecated  +[Intercom setPreviewPaddingWithX:y:] is deprecated. Use +[Intercom setBottomPadding:] instead.
- */
-+ (void)setPreviewPaddingWithX:(CGFloat)x y:(CGFloat)y __attribute((deprecated("'+[Intercom setPreviewPaddingWithX:y:]' is deprecated. Use '+[Intercom setBottomPadding:]' instead.")));
-
-/*!
- @deprecated +[Intercom setMessagesHidden:] is deprecated. Use +[Intercom setInAppMessagesVisible:] instead.
- */
-+ (void)setMessagesHidden:(BOOL)hidden __attribute((deprecated("'+[Intercom setMessagesHidden:]' is deprecated. 'Use +[Intercom setInAppMessagesVisible:]' instead.")));
 
 //=========================================================================================================
 /*! @name Intercom Notifications */
