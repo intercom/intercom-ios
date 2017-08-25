@@ -9,7 +9,7 @@
 
 ## Installation
 
-Intercom for iOS supports iOS 8, iOS 9 and iOS 10.
+Intercom for iOS supports iOS 8, iOS 9, iOS 10 and iOS 11.
 
 ### CocoaPods
 Add the Intercom pod into your Podfile and run `pod install`.
@@ -51,17 +51,13 @@ There is an example app provided [here](https://github.com/intercom/intercom-ios
 ## Cordova/Phonegap Support
 Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
 
-## Upgrading to v3.0
+## Upgrading to v4.0.0
 
 Upgrading to the latest version of the iOS SDK is easy! 😉  Checkout out our [upgrade guide](https://docs.intercom.io/messenger-v3/upgrade-to-the-new-messenger-ios) for more info.
 
 ## What about events, push notifications, company and user data?
 
 Intercom for iOS has support for all these things. For full details please read our [documentation](https://developers.intercom.com/docs/ios-configuration).
-
-## Xcode Documentation
-
-This documentation provides integrated help in Xcode for all public APIs in Intercom for iOS. [Download the docset](https://github.com/intercom/intercom-ios/releases/latest) from the latest release and Copy the content into `~/Library/Developer/Shared/Documentation/DocSets`.
 
 ## Migrating from legacy version of the SDK
 
