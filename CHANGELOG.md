@@ -1,5 +1,11 @@
 # Intercom
 
+## 4.0.2 (2017-09-08)
+
+## Enhancements
+
+* We've enabled Operator Smart Suggestions on our Mobile Messenger. Read more about [Smart Suggestions here](https://docs.intercom.com/educating-your-customers/answer-customer-questions/let-users-help-themselves-with-smart-suggestions)
+
 ## 4.0.1 (2017-08-28)
 
 ## Bug Fixes
