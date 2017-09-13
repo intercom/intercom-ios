@@ -51,29 +51,6 @@ There is an example app provided [here](https://github.com/intercom/intercom-ios
 ## Cordova/Phonegap Support
 Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
 
-## Upgrading to v4.0.0
-
-Upgrading to the latest version of the iOS SDK is easy! 😉  Checkout out our [upgrade guide](https://docs.intercom.io/messenger-v3/upgrade-to-the-new-messenger-ios) for more info.
-
 ## What about events, push notifications, company and user data?
 
 Intercom for iOS has support for all these things. For full details please read our [documentation](https://developers.intercom.com/docs/ios-configuration).
-
-## Migrating from legacy version of the SDK
-
-To upgrade from SDK versions **older then version 2.2.4** there are some method changes that you may want to be aware of. See installation instructions at the top of this page for more information on how to install the new version of the SDK.
-
-<table>
-	<tr><th colspan="3" style="text-align:center;">iOS Method Name Changes</th></tr>
-	<tr><td style="text-align:center; font-weight: bold; width: 33.3%;">Old Name</td><td style="text-align:center; font-weight: bold; width: 33.3%;">Type</td><td style="text-align:center; font-weight: bold; width: 33.3%;">New Name</td></tr>
-	<tr><td colspan="3" style="text-align:center; font-weight: bold;">From SDK version 2.0.x</td></tr>
-	<tr><td>beginSessionForUserWithUserId</td><td>Name change. Dropped block parameter.</td><td>registerUserWithUserId</td></tr>
-	<tr><td>beginSessionForUserWithEmail</td><td>Name change. Dropped block parameter.</td><td>registerUserWithEmail</td></tr>
-	<tr><td>beginSessionForAnonymousUserWithCompletion</td><td>Name change. Dropped block parameter.</td><td>registerUnidentifiedUser</td></tr>
-	<tr><td>updateUserWithAttributes</td><td>Dropped block parameter.</td><td>n/a</td></tr>
-	<tr><td>logEventWithName</td><td>Dropped block parameter.</td><td>n/a</td></tr>
-	<tr><td colspan="3" style="text-align:center; font-weight: bold;">From SDK version 1.x.x</td></tr>
-	<tr><td>beginSessionForUserWithUserId</td><td>Name change. Dropped block parameter.</td><td>registerUserWithUserId</td></tr>
-	<tr><td>beginSessionForUserWithEmail</td><td>Name change. Dropped block parameter.</td><td>registerUserWithEmail</td></tr>
-  <tr><td>updateAttributes</td><td>Name change. Dropped block parameter.</td><td>updateUserWithAttributes</td></tr>
-</table>
