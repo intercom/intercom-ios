@@ -1,5 +1,17 @@
 # Intercom
 
+## 4.0.3 (2017-09-20)
+
+## Bug fixes
+
+* Fixed issue where send button was not visibile when uploading images with a white background.
+* Fixed issues relating to the composer not resizing correctly to content (fixes [#281](https://github.com/intercom/intercom-ios/issues/281)).
+* Fixed inconsistent behaviour when `semanticContentAttribute` is set via `UIAppearance`.
+
+## Enhancements
+
+* Improved compatibility with Xcode 9 and iOS 11.
+
 ## 4.0.2 (2017-09-08)
 
 ## Enhancements
