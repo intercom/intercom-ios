@@ -157,12 +157,17 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
 + (void)registerUserWithEmail:(NSString *)email;
 
 //=========================================================================================================
-/*! @name Resetting user data */
+/*! @name Logging the user out */
 //=========================================================================================================
 /*!
- reset is used to reset all local caches and user data Intercom has created. Reset will also close any active
+ logout is used to clear all local caches and user data Intercom has created. Logout will also close any active
  UI that is on screen. Use this at a time when you wish to log a user out of your app or change a user.
  Once called, Intercom for iOS will no longer communicate with Intercom until a further registration is made.
+ */
++ (void)logout;
+
+/*!
+ @deprecated  +[Intercom reset] is deprecated. Use +[Intercom logout] instead.
  */
 + (void)reset;
 
