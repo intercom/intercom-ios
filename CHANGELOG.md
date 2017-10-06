@@ -1,5 +1,15 @@
 # Intercom
 
+## 4.1.0 (2017-10-06)
+
+## Bug fixes
+
+* Localization improvements
+
+## Enhancements
+
+* Deprecate `[Intercom reset]` in favour of `[Intercom logout]` 
+
 ## 4.0.3 (2017-09-20)
 
 ## Bug fixes
