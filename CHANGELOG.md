@@ -1,5 +1,11 @@
 # Intercom
 
+## 4.1.1 (2017-10-06)
+
+## Bug fixes
+
+* Fixed warning caused by incorrect annotation in `Intercom.h`
+
 ## 4.1.0 (2017-10-06)
 
 ## Bug fixes

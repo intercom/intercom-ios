@@ -169,7 +169,7 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
 /*!
  @deprecated  +[Intercom reset] is deprecated. Use +[Intercom logout] instead.
  */
-+ (void)reset;
++ (void)reset __attribute((deprecated("'+[Intercom reset]' is deprecated. 'Use +[Intercom logout]' instead.")));
 
 //=========================================================================================================
 /** @name Updating the user */
@@ -184,11 +184,6 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  @param userAttributes The attributes to update the user with.
  */
 + (void)updateUser:(ICMUserAttributes *)userAttributes;
-
-/*!
- @deprecated  +[Intercom updateUserWithAttributes:] is deprecated. Use +[Intercom updateUser:] instead.
- */
-+ (void)updateUserWithAttributes:(NSDictionary *)attributes __attribute((deprecated("'+[Intercom updateUserWithAttributes:]' is deprecated. 'Use +[Intercom updateUser:]' instead.")));
 
 /*!
  Log an event with a given name.
