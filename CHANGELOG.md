@@ -1,5 +1,11 @@
 # Intercom
 
+## 4.1.2 (2017-10-11)
+
+## Enhancements
+
+* Added support for uploading HEIC images on iOS 11. 
+
 ## 4.1.1 (2017-10-06)
 
 ## Bug fixes
