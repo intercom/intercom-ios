@@ -47,8 +47,8 @@ class ViewController: UIViewController {
 
 
     @IBAction func logoutTapped(_ sender: UIButton) {
-        //Logout was pressed, so calling [Intercom logout] will log remove all local user data and stop tracking them.
-        Intercom.logout()
+        //Logout was pressed, so calling [Intercom reset] will log remove all local user data and stop tracking them.
+        Intercom.reset()
         UserDefaults.standard.removeObject(forKey: emailKey)
         loggedIn = false
     }

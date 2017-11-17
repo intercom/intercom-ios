@@ -49,8 +49,8 @@
 }
 
 - (IBAction)logoutPressed:(id)sender {
-    //Logout was pressed, so calling [Intercom logout] will log remove all local user data and stop tracking them.
-    [Intercom logout];
+    //Logout was pressed, so calling [Intercom reset] will log remove all local user data and stop tracking them.
+    [Intercom reset];
     
     //Save email so we know the user is logged in
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"email"];
