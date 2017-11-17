@@ -137,12 +137,6 @@
       "idiom" : "ipad",
       "filename" : "ipad_pro_icon@2x.png",
       "scale" : "2x"
-    },
-    {
-      "size" : "1024x1024",
-      "idiom" : "ios-marketing",
-      "filename" : "appstore-icon.png",
-      "scale" : "1x"
     }
   ],
   "info" : {

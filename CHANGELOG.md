@@ -1,9 +1,5 @@
 # Intercom
 
-## 4.1.3 (2017-10-26)
-
-* Added support for iPhone X 📱 🎉
-
 ## 4.1.2 (2017-10-11)
 
 ## Enhancements
