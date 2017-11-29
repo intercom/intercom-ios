@@ -1,4 +1,14 @@
-# Intercom
+## 4.1.4 (2017-11-29)
+
+### Bug fixes
+
+* Fixed https://github.com/intercom/intercom-ios/issues/328
+* Fixed scrolling issue on iPhone X.
+
+### Enhancements
+
+* Added experimental API to present your Intercom Help Center in your app.
+* Improved translations.
 
 ## 4.1.3 (2017-10-26)
 
@@ -6,47 +16,47 @@
 
 ## 4.1.2 (2017-10-11)
 
-## Enhancements
+### Enhancements
 
-* Added support for uploading HEIC images on iOS 11. 
+* Added support for uploading HEIC images on iOS 11.
 
 ## 4.1.1 (2017-10-06)
 
-## Bug fixes
+### Bug fixes
 
 * Fixed warning caused by incorrect annotation in `Intercom.h`
 
 ## 4.1.0 (2017-10-06)
 
-## Bug fixes
+### Bug fixes
 
 * Localization improvements
 
-## Enhancements
+### Enhancements
 
-* Deprecate `[Intercom reset]` in favour of `[Intercom logout]` 
+* Deprecate `[Intercom reset]` in favour of `[Intercom logout]`
 
 ## 4.0.3 (2017-09-20)
 
-## Bug fixes
+### Bug fixes
 
 * Fixed issue where send button was not visibile when uploading images with a white background.
 * Fixed issues relating to the composer not resizing correctly to content (fixes [#281](https://github.com/intercom/intercom-ios/issues/281)).
 * Fixed inconsistent behaviour when `semanticContentAttribute` is set via `UIAppearance`.
 
-## Enhancements
+### Enhancements
 
 * Improved compatibility with Xcode 9 and iOS 11.
 
 ## 4.0.2 (2017-09-08)
 
-## Enhancements
+### Enhancements
 
 * We've enabled Operator Smart Suggestions on our Mobile Messenger. Read more about [Smart Suggestions here](https://docs.intercom.com/educating-your-customers/answer-customer-questions/let-users-help-themselves-with-smart-suggestions)
 
 ## 4.0.1 (2017-08-28)
 
-## Bug Fixes
+### Bug Fixes
 
 * Fixed an issue with Dynamic Frameworks and duplicate symbols. Fixed https://github.com/intercom/intercom-ios/issues/301
 * Fixed an issue where selecting GIFs caused a crash.
@@ -54,30 +64,30 @@
 
 ## 4.0.0 (2017-08-25)
 
-## Enhancements
+### Enhancements
 
 * Now fully supports Xcode 9 and iOS 11.
 * Removed deprecated methods.
 
-## Bug Fixes
+### Bug Fixes
 
 * Made changes to ensure that device tokens are only submitted to Intercom if push notifications are enabled. This improves push notification stats.
 
 ## 3.2.12 (2017-08-10)
 
-## Bug Fixes
+### Bug Fixes
 
 * Fixed issue where updating the user before registering could cause problems ([#288](https://github.com/intercom/intercom-ios/issues/288)).
 
 ## 3.2.11 (2017-08-04)
 
-## Bug Fixes
+### Bug Fixes
 
 * Fixed issue with "Tell us more" button for conversation ratings.
 
 ## 3.2.10 (2017-08-04)
 
-## Bug Fixes
+### Bug Fixes
 
 * Fixed issues where `setUserHash` could behave incorrectly when `reset` is called (fixes [#279](https://github.com/intercom/intercom-ios/issues/279)).
 * Fixed issue where device tokens may not be deleted on `reset` if using identity verification.
@@ -89,22 +99,22 @@
 
 ## 3.2.9 (2017-07-11)
 
-## Bug Fixes
+### Bug Fixes
 
 * Fixed an issue where events could be incorrectly transferred when switching users (Fixes [#276](https://github.com/intercom/intercom-ios/issues/276)).
 * Fixed an edge case where registering a user immeditately after logging an event may fail.
 
 ## 3.2.8 (2017-06-30)
 
-## Bug Fixes
+### Bug Fixes
 
 * Fixed remaining issues that could occur when logging events at the same time as registration.
 
-## Bug Fixes
+### Bug Fixes
 
 ## 3.2.7 (2017-06-28)
 
-## Bug Fixes
+### Bug Fixes
 
 * Fixed issue where `UIApplication` could be accessed from the main thread ([#271](https://github.com/intercom/intercom-ios/issues/271)).
 * Some improvements to help track the cause of [#256](https://github.com/intercom/intercom-ios/issues/265).
@@ -192,7 +202,7 @@
 ### Enhancements
 
 * Add API to allow integrating Intercom push notifications manually without swizzling.
-* Improved reliability of opening push notifications when using the exisiting automatic mode. 
+* Improved reliability of opening push notifications when using the exisiting automatic mode.
 
 ## 3.1.1 (2017-03-01)
 
@@ -444,10 +454,10 @@ Many issues have been fixed, including:
 ## 2.3.5 (2015-09-21)
 
 * Improved support for Xcode 7 and iOS 9:
-    - Added Bitcode support (fixes [#90](https://github.com/intercom/intercom-ios/issues/90)).
-    - Improved flexible layout to support iPad multitasking in iOS 9.
-    - Fixed some scrolling issues in the conversation view.
-    - Fixed issues where some videos wouldn't load due to app transport security.
+- Added Bitcode support (fixes [#90](https://github.com/intercom/intercom-ios/issues/90)).
+- Improved flexible layout to support iPad multitasking in iOS 9.
+- Fixed some scrolling issues in the conversation view.
+- Fixed issues where some videos wouldn't load due to app transport security.
 * Much simpler manual installation thanks to improved modulemap (fixes [#86](https://github.com/intercom/intercom-ios/issues/86)).
 * Removed all deprecated methods including `+[Intercom registerForRemoteNotifications]`. This should hopefully stops apps from being flagged for not declaring push notification support (discussed [#88](https://github.com/intercom/intercom-ios/issues/88)).
 * Landscape support for image picker.
