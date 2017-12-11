@@ -1,3 +1,13 @@
+## 4.1.5 (2017-12-11)
+
+###Enhancements
+* Made performance improvements to the Messenger inbox screen
+* Improved pagination on the Messenger inbox screen
+
+### Bug fixes
+* Fixed https://github.com/intercom/intercom-ios/issues/348
+* Fixed https://github.com/intercom/intercom-ios/issues/340
+
 ## 4.1.4 (2017-11-29)
 
 ### Bug fixes
