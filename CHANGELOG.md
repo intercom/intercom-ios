@@ -1,6 +1,13 @@
+## 4.1.6 (2017-12-13)
+
+### Bug fixes
+
+* Fixed a build issue which caused `IntercomTranslations.bundle` to be missing from the CocoaPods archive. This meant that strings could not be loaded.
+
 ## 4.1.5 (2017-12-11)
 
-###Enhancements
+### Enhancements
+
 * Made performance improvements to the Messenger inbox screen
 * Improved pagination on the Messenger inbox screen
 
