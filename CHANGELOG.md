@@ -1,3 +1,9 @@
+## 4.1.7 (2017-12-14)
+
+### Bug fixes
+
+* Some minor bug fixes.
+
 ## 4.1.6 (2017-12-13)
 
 ### Bug fixes
