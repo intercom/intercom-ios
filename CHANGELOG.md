@@ -1,3 +1,8 @@
+## 4.1.8 (2017-12-20)
+
+### Bug fixes
+* Fixed [#352](https://github.com/intercom/intercom-ios/issues/352) that was causing the Help Center not to loading correctly.
+
 ## 4.1.7 (2017-12-14)
 
 ### Bug fixes
