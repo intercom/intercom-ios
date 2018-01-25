@@ -1,3 +1,8 @@
+## 4.1.9 (2018-01-24)
+
+### Enhancements
+* Move the `presentHelpCenter` method into our main API
+
 ## 4.1.8 (2017-12-20)
 
 ### Bug fixes

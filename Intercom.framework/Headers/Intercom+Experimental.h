@@ -10,9 +10,4 @@
 
 @interface Intercom (Experimental)
 
-/*!
- Present the help center.
- */
-+ (void)presentHelpCenter;
-
 @end

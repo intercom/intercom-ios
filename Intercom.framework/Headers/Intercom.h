@@ -240,6 +240,11 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  */
 + (void)presentConversationList;
 
+/*!
+ Present the help center.
+ */
++ (void)presentHelpCenter;
+
 //=========================================================================================================
 /*! @name Working with push notifications */
 //=========================================================================================================
