@@ -7,6 +7,10 @@
 [![Apache License](http://img.shields.io/badge/license-APACHE2-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![CocoaPods](https://img.shields.io/cocoapods/dt/Intercom.svg?maxAge=2592000)]()
 
+## Customer Support
+
+👋 We are moving all our issues support to our [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
+
 ## Installation
 
 Intercom for iOS supports iOS 8, iOS 9, iOS 10 and iOS 11. 
