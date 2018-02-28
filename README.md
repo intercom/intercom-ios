@@ -9,7 +9,7 @@
 
 ## Customer Support
 
-👋 We are moving all our issues support to our [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
+👋 We are moving all our issues support to our [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation?utm_source=github&utm_campaign=ios-help). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
 
 ## Installation
 
