@@ -1,3 +1,11 @@
+## 4.1.10 (2018-04-19)
+
+### Bug Fixes
+* Fixed an issue where the Help Center was not loading due to Apple's ATS restrictions requiring all URLs be HTTPS. An HTTPS URL is always now returned for the help center, even for custom domains. There is no need to whitelist your custom Help Center domain in your ATS settings.  
+* Fixed and issue where Articles were not always displaying in a conversation.
+* Fixed an issue where the Messenger crashed when encoding an object.
+* Improved the handling of realtime socket connections.
+
 ## 4.1.9 (2018-01-24)
 
 ### Enhancements
