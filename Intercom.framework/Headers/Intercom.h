@@ -16,13 +16,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
-    ICMPreviewPositionBottomLeft   = 0,
-    ICMPreviewPositionBottomRight  = 1,
-    ICMPreviewPositionTopLeft      = 2,
-    ICMPreviewPositionTopRight     = 3
-};
-
 /**
  Intercom is your direct line of communication to every user, right inside your app. Intercom’s in-app messages
  are up to 10 times more effective than email too! Send the right messages, to the right users, at exactly the right time.
@@ -80,6 +73,8 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  */
 @interface Intercom : NSObject
 
+#pragma mark - Intercom Initialisation
+
 //=========================================================================================================
 /*! @name Getting set up */
 //=========================================================================================================
@@ -97,14 +92,17 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
 //=========================================================================================================
 /*!
  Identity Verification helps to make sure that conversations between you and your users are kept private, and that one
- user can't impersonate another. If Identity Verification is enabled for your app Intercom for iOS will sign all requests
+ user can't impersonate another. If Identity Verification is enabled for your app, Intercom for iOS will sign all requests
  going to the Intercom servers with tokens. It requires your mobile application to have its own server which authenticates the app's users,
- and which can store a secret. More information on Identity VerificationIdentity Verification can be found [here](https://docs.intercom.com/configure-intercom-for-your-product-or-site/staying-secure/enable-identity-verification-in-intercom-for-ios )
+ and which can store a secret. More information on Identity Verification can be found [here](https://developers.intercom.com/docs/ios-identity-verification)
+
  
  @note This should be called before any user registration takes place.
  @param userHash A HMAC digest of the user ID or email.
  */
 + (void)setUserHash:(NSString *)userHash;
+
+#pragma mark - User Registration
 
 //=========================================================================================================
 /*! @name Working with anonymous users */
@@ -185,6 +183,8 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  */
 + (void)updateUser:(ICMUserAttributes *)userAttributes;
 
+#pragma mark - Log Event
+
 /*!
  Log an event with a given name.
 
@@ -218,10 +218,12 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
 /*! @name Show Intercom messages and message composers */
 //=========================================================================================================
 
+#pragma mark - Present Messenger
+
 /*!
  Present the Intercom Messenger
 
- Opens the Intercom messenger to automatically to the best place for your users.
+ Opens the Intercom messenger automatically to the best place for your users.
  */
 + (void)presentMessenger;
 
@@ -240,10 +242,14 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  */
 + (void)presentConversationList;
 
+#pragma mark - Help Center
+
 /*!
  Present the help center.
  */
 + (void)presentHelpCenter;
+
+#pragma mark - Push Notifications
 
 //=========================================================================================================
 /*! @name Working with push notifications */
@@ -273,6 +279,8 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  @note This is only needed if you have set `IntercomAutoIntegratePushNotifications` to NO in your Info.plist
  */
 + (void)handleIntercomPushNotification:(NSDictionary *)userInfo;
+
+#pragma mark - Intercom UI Visibility
 
 //=========================================================================================================
 /*! @name Incoming message presentation options */
@@ -316,6 +324,8 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  */
 + (void)hideMessenger;
 
+#pragma mark - Unread Conversation Count
+
 //=========================================================================================================
 /*! @name Unread conversations */
 //=========================================================================================================
@@ -332,6 +342,8 @@ typedef NS_ENUM(NSUInteger, ICMPreviewPosition){
  This notification is fired when the number of unread conversations changes.
  */
 UIKIT_EXTERN NSString *const IntercomUnreadConversationCountDidChangeNotification;
+
+#pragma mark - Logging
 
 //=========================================================================================================
 /*! @name Enable logging */
@@ -365,7 +377,8 @@ UIKIT_EXTERN NSString *const IntercomUnreadConversationCountDidChangeNotificatio
  Once the user taps on the chat head, the message is presented in your app. It will be presented covering
  the entire screen, but no notifications will be thrown here as Intercom has already been visible.
 
- In the case of a new conversation this notification may be used to prompt users to enable push notifications.
+ In the case of a new conversation the notification `IntercomDidStartNewConversationNotification` may be used to
+ prompt users to enable push notifications.
  */
 
 UIKIT_EXTERN NSString *const IntercomWindowWillShowNotification;
