@@ -1,5 +1,3 @@
-![Intercom](Examples/Sample-ObjC/Sample-ObjC/Images.xcassets/Intercom-logo-github.imageset/Intercom_logo-github.png)
-
 [![CocoaPods](https://img.shields.io/badge/platforms-iOS-orange.svg?maxAge=2592000)](https://cocoapods.org/pods/Intercom)
 [![Languages](https://img.shields.io/badge/languages-OjbC%20%7C%20%20Swift-orange.svg?maxAge=2592000)](https://github.com/intercom/intercom-ios)
 [![CocoaPods](https://img.shields.io/cocoapods/v/Intercom.svg?maxAge=2592000)](https://cocoapods.org/pods/Intercom)
@@ -7,9 +5,13 @@
 [![Apache License](http://img.shields.io/badge/license-APACHE2-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![CocoaPods](https://img.shields.io/cocoapods/dt/Intercom.svg?maxAge=2592000)]()
 
-## Customer Support
+<img src="https://user-images.githubusercontent.com/3185423/39155454-0c61c11e-474a-11e8-9471-dc4b37bf9d7c.png" width="238" height="65"/>
 
-👋 We are moving all our issues support to our [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation?utm_source=github&utm_campaign=ios-help). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
+#### Onboard, retain and support mobile users at scale
+Engage customers with email, push, and in‑app messages and support them with an integrated knowledge base and help desk.
+
+<img src="https://user-images.githubusercontent.com/3185423/39155559-6a3f239e-474a-11e8-8eb0-fdb0c69d288f.jpg"/>
+
 
 ## Installation
 
@@ -19,11 +21,11 @@ Building with Xcode 9 is required, which adds support for iPhone X and iOS 11.
 
 ### CocoaPods
 Add the Intercom pod into your Podfile and run `pod install`.
-
+```ruby
     target :YourTargetName do
       pod 'Intercom'
     end
-
+```
 ### Carthage
 1. Add `github "intercom/intercom-ios"` to your Cartfile.
 2. Run carthage update.
@@ -53,6 +55,10 @@ There is an example app provided [here](https://github.com/intercom/intercom-ios
 * Read ["Configuring Intercom for iOS"](https://developers.intercom.com/docs/ios-configuration).
 * Read our guide on [Push Notifications](https://developers.intercom.com/docs/ios-push-notifications).
 *  Please contact us on [Intercom](https://intercom.io) with any questions you may have, we're only a message away!
+
+## Customer Support
+
+👋 Contact us with any issues at our [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation?utm_source=github&utm_campaign=ios-help). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
 
 ## Cordova/Phonegap Support
 Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
