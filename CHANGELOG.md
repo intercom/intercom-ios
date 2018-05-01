@@ -1,3 +1,9 @@
+## 5.0.1 (2018-05-01)
+
+### Bug fixes
+* Fixed an issue where article suggestions were disappearing from a conversation
+* Updated the laucnher icon colour to improve the colour contrast for some apps.
+
 ## 5.0.0 (2018-04-24)
 
 ### Enhancements
