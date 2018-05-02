@@ -1,3 +1,8 @@
+## 5.0.2 (2018-05-02)
+
+### Bug fixes
+* Fixed an issue where it was not possible to set `unsubscribedFromEmails` to false via `ICMUserAttributes`.
+
 ## 5.0.1 (2018-05-01)
 
 ### Bug fixes
