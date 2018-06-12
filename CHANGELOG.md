@@ -1,3 +1,9 @@
+## 5.0.3 (2018-06-12)
+
+### Bug fixes
+* Fixed a memory exception which caused a crash in the Intercom SDK.
+* Fixed an issue where failing to get a HTTP socket connection could sometimes cause an app to freeze.
+
 ## 5.0.2 (2018-05-02)
 
 ### Bug fixes
