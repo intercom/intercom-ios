@@ -10,7 +10,7 @@
 ### Onboard, retain and support mobile users at scale
 Engage customers with email, push, and in‑app messages and support them with an integrated knowledge base and help desk.
 
-<img src="https://user-images.githubusercontent.com/3185423/39155559-6a3f239e-474a-11e8-8eb0-fdb0c69d288f.jpg"/>
+![ios-github](https://user-images.githubusercontent.com/3185423/42946658-506ad898-8b63-11e8-8680-8fd1458d34c5.png)
 
 
 ## Installation
