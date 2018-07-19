@@ -228,19 +228,25 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)presentMessenger;
 
 /*!
+  Present the message composer.
+  @param initialMessage An optional message that is used to pre-populate the composer with some text.
+ */
++ (void)presentMessageComposer:(nullable NSString *)initialMessage;
+
+/*!
  Present the message composer.
  */
-+ (void)presentMessageComposer;
++ (void)presentMessageComposer __attribute((deprecated("'+[Intercom presentMessageComposer]' is deprecated. 'Use +[Intercom presentMessageComposer:initialMessage]' instead.")));
 
 /*!
  Present the message composer with a message to pre-populate the composer.
  */
-+ (void)presentMessageComposerWithInitialMessage:(NSString *)message;
++ (void)presentMessageComposerWithInitialMessage:(NSString *)message __attribute((deprecated("'+[Intercom presentMessageComposerWithInitialMessage]' is deprecated. 'Use +[Intercom presentMessageComposer:initialMessage]' instead.")));
 
 /*!
  Present the conversation list.
  */
-+ (void)presentConversationList;
++ (void)presentConversationList __attribute((deprecated("'+[Intercom presentConversationList]' is deprecated. 'Use +[Intercom presentMessenger]' instead.")));;
 
 #pragma mark - Help Center
 

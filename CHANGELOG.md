@@ -1,3 +1,20 @@
+## 5.1.0 
+###### Release Date: 19-07-2018
+
+### Enable mobile users to help themselves with the new mobile SDK for iOS and Android 🎉 😃
+
+The new Intercom mobile SDK brings the Messenger Home to your mobile applications. This means you can add messenger apps that allow your users to self-serve instead of starting a conversation. Users can now quickly access relevant help articles, review pinned content, and view product status in real time – all from the messenger home screen.
+
+![ios-for-release-notes](https://user-images.githubusercontent.com/3185423/42937925-71ab4b5c-8b48-11e8-913b-88d48c9b82f3.png)
+
+### Enhancements
+We've deprecated some API methods in this release:
+* `presentConversationList` - Use `presentMessenger` instead.
+* `presentMessageComposerWithInitialMessage` - Use `presentMessageComposer:(nullable NSString *)initialMessage` instead.
+* `presentMessageComposer` - Use `presentMessageComposer:(nullable NSString *)initialMessage` instead.
+
+These deprecated methods will still work, but will be removed in a future release. 
+
 ## 5.0.4 (2018-06-27)
 
 ### Enhancements
