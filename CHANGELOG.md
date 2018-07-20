@@ -1,3 +1,10 @@
+## 5.1.1 
+###### Release Date: 20-07-2018
+
+### Bug fixes
+* Fixed a bug that was causing a Messenger App sheet to open in Safari.
+* Updated the sheet progress view colour. 🤓
+
 ## 5.1.0 
 ###### Release Date: 19-07-2018
 
