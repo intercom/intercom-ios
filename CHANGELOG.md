@@ -1,4 +1,11 @@
-## 5.1.1 
+## 5.1.2 
+###### Release Date: 26-07-2018
+
+### Bug fixes
+* Improved intial loading of conversations on the home screen
+* Fixed a crash that could occur on initial load
+
+## 5.1.1
 ###### Release Date: 20-07-2018
 
 ### Bug fixes
