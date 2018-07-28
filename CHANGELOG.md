@@ -1,3 +1,10 @@
+## 5.1.3 
+###### Release Date: 27-07-2018
+
+### Bug fixes
+* Fixed layout bugs in home screen
+* Fixed a bug where conversations where not shown in the home screen for some users
+
 ## 5.1.2 
 ###### Release Date: 26-07-2018
 
