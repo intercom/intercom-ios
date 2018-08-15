@@ -1,3 +1,10 @@
+## 5.1.4 
+###### Release Date: 15-08-2018
+
+### Bug fixes
+* Improved Home screen animations.
+* Fixed a bug where articles with embedded videos were being loaded incorrectly.
+
 ## 5.1.3 
 ###### Release Date: 27-07-2018
 
