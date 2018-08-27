@@ -1,3 +1,12 @@
+## 5.1.5 
+###### Release Date: 27-08-2018
+
+### Bug fixes
+* Fixed an issue that prevented videos from playing when they were embedded in a Help Center Article.
+* Resolved an issue that prevented the Stripe Subscriptions Messenger App from working.
+* Tapping on the "More in Help Center" link in an article suggestions card now loads the Help Center.
+* Updated the title of the Help Center so that its fully localised.
+
 ## 5.1.4 
 ###### Release Date: 15-08-2018
 
