@@ -1,3 +1,12 @@
+## 5.1.7 
+###### Release Date: 28-09-2018
+
+### Enhancements
+* We now provide support for Loom videos in Intercom. This feature is available to customers using SDK version 5.1.6+.
+
+### Bug Fixes
+* We fixed a bug that prevented customers being able to change a conversation rating after an initial rating selection. 
+
 ## 5.1.6 
 ###### Release Date: 14-09-2018
 
