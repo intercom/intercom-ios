@@ -1,3 +1,9 @@
+## 5.1.8 
+###### Release Date: 02-10-2018
+
+### Bug Fixes
+* Added a fix to prevent a small number of apps briefly freezing on launch.
+
 ## 5.1.7 
 ###### Release Date: 28-09-2018
 
