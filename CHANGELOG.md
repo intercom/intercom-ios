@@ -1,3 +1,9 @@
+## 5.1.9  
+###### Release Date: 25-10-2018
+
+### Enhancements
+* Some minor bug fixes and compatibility updates for future releases.
+
 ## 5.1.8 
 ###### Release Date: 02-10-2018
 
@@ -17,6 +23,7 @@
 ###### Release Date: 14-09-2018
 
 ### Enhancements
+* [AnswerBot](https://www.intercom.com/bots-for-support) support.
 * This version of the Intercom iOS SDK fully supports iOS 12 and the new devices iPhone Xr, Xs & Xs Max. Recent versions of the SDK should also work, but have not been tested. 
 * Made some updates to colours.
 * The Intercom launcher now only appears once a successful response from the server is received. 
