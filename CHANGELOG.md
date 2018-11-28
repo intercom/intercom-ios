@@ -1,3 +1,9 @@
+## 5.1.10  
+###### Release Date: 27-11-2018
+
+### Bug Fixes
+* Fixed a bug where conversations were not always being presented when opening from push notifications.
+
 ## 5.1.9  
 ###### Release Date: 25-10-2018
 
