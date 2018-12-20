@@ -375,16 +375,19 @@ UIKIT_EXTERN NSString *const IntercomUnreadConversationCountDidChangeNotificatio
 /*! @name Intercom Notifications */
 //=========================================================================================================
 /*!
- These are notifications thrown by Intercom for iOS when the Intercom window is displayed and hidden or when
- a new conversation has been started. These notifications are fired only when there is a change in the state
+ These are notifications thrown by Intercom for iOS when the Intercom window is displayed and hidden.
+ These notifications are fired only when there is a change in the state
  of Intercom's UI: when a user receives a message for instance, willShow and didShow notifications will be
  fired accordingly when the Intercom Notification (chat head) is presented.
 
  Once the user taps on the chat head, the message is presented in your app. It will be presented covering
  the entire screen, but no notifications will be thrown here as Intercom has already been visible.
 
- In the case of a new conversation the notification `IntercomDidStartNewConversationNotification` may be used to
- prompt users to enable push notifications.
+ In the case of a new conversation the notification `IntercomDidStartNewConversationNotification`, this
+ notification is fired when a new conversation is started. This may be used to prompt users to enable push notifications.
+ 
+ The Intercom Help Center notifications are fired when the Help Center is being displayed or hidden.
+ These notifications can be used to take certain actions in your app before and after the Help Center is displayed to the user.
  */
 
 UIKIT_EXTERN NSString *const IntercomWindowWillShowNotification;
@@ -392,6 +395,10 @@ UIKIT_EXTERN NSString *const IntercomWindowDidShowNotification;
 UIKIT_EXTERN NSString *const IntercomWindowWillHideNotification;
 UIKIT_EXTERN NSString *const IntercomWindowDidHideNotification;
 UIKIT_EXTERN NSString *const IntercomDidStartNewConversationNotification;
+UIKIT_EXTERN NSString *const IntercomHelpCenterWillShowNotification;
+UIKIT_EXTERN NSString *const IntercomHelpCenterDidShowNotification;
+UIKIT_EXTERN NSString *const IntercomHelpCenterWillHideNotification;
+UIKIT_EXTERN NSString *const IntercomHelpCenterDidHideNotification;
 
 @end
 

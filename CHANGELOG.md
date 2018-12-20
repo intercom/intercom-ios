@@ -1,3 +1,15 @@
+## 5.2 
+###### Release Date: 20-12-2018
+
+### Enhancements
+* Added new notifications that fire when the Intercom Help Center is being presented and dismissed. This will allow developers to take specific actions in their app when opening and closing the Help Center.
+
+### Bug Fixes
+* Improved the Messenger header wallpaper and colours so that it more closely aligns with other platforms. Added better colour handling when the selected background colour is white.
+* Fixed an issue where the "We run on Intercom" link was overlapping with conversation reactions.
+* The Intercom Messenger will now ignore the host app's use of  `prefersLargeTitles` to prevent the UI from being distorted.
+🎅🏻
+
 ## 5.1.10  
 ###### Release Date: 27-11-2018
 
