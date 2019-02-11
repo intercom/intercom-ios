@@ -1,3 +1,9 @@
+## 5.2.1 
+###### Release Date: 11-02-2019
+
+### Bug Fixes
+* Fixed a bug that was preventing messenger apps from loading on the Homescreen under certain circumstances.
+
 ## 5.2 
 ###### Release Date: 20-12-2018
 
