@@ -33,9 +33,9 @@ class ViewController: UIViewController {
     @IBAction func loginTapped(_ sender: UIButton) {
         //The user is not logged in, so prompt for their email address
         
-        let loginAlert = UIAlertController(title: "User Login", message: "Type in an email address", preferredStyle: UIAlertControllerStyle.alert)
-        loginAlert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
-        loginAlert.addAction(UIAlertAction(title: "Login", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction) in
+        let loginAlert = UIAlertController(title: "User Login", message: "Type in an email address", preferredStyle: UIAlertController.Style.alert)
+        loginAlert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        loginAlert.addAction(UIAlertAction(title: "Login", style: UIAlertAction.Style.default, handler: { (action: UIAlertAction) in
             self.handleLogin(loginAlert)
         }))
         loginAlert.addTextField { (textField : UITextField) in
