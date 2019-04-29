@@ -1,3 +1,11 @@
+## 5.3.0 
+###### Release Date: 29-04-2019
+
+### Bug Fixes
+* Fixed a bug where the Messenger wallpaper was not tiling correctly.
+* Made improvements to image loading to improve performance.
+* Fixed a bug that was breaking the Messenger homescreen layout on iPad Pro 12.9"
+
 ## 5.2.1 
 ###### Release Date: 11-02-2019
 
