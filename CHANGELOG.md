@@ -1,5 +1,17 @@
-## 5.3.0 
+
 ###### Release Date: 29-04-2019
+
+### New Feature 🤖
+
+## Deliver Custom Bots to your mobile app users to unlock growth across all platforms
+
+Custom Bots can now be targeted specifically to your mobile app users! Whether your users are on the web or mobile, Custom Bots now work cross-platform to automate and accelerate growth.
+
+![ios-5-3-0-release](https://user-images.githubusercontent.com/3185423/56955019-2f744380-6b38-11e9-8d90-530e903cf33b.png)
+
+Use our bots to provide better personalization at scale during critical moments of the customer lifecycle like when users first sign up for your app, or when they want to upgrade to a paid plan. 
+
+For more details on how to use Custom Bots on mobile, see our [docs here](https://www.intercom.com/help/faqs-and-troubleshooting/custom-bots/do-custom-bots-work-on-mobile).
 
 ### Bug Fixes
 * Fixed a bug where the Messenger wallpaper was not tiling correctly.
