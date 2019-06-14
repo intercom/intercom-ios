@@ -4,21 +4,13 @@ framework module Intercom {
   // This defines what is imported with `import Intercom`, `@import Intercom;` or `#import <Intercom/Intercom.h>`
   // Any header not imported by the umbrella header must have an explicit header declaration (see the Experimental submodule below)
   umbrella header "Intercom.h"
-  
+
   // This exports all modules imported by the umbrella header
   export *
-  
+
   // `module *` defines that all headers imported in the umbrella are themselves submodules
   // `{ export * }` here exports any modules imported by these submodules
   module * { export * }
-  
-  // Explcitly export Experimental as a submodule (https://clang.llvm.org/docs/Modules.html#submodule-declaration)
-  //   It can be imported in Objective C as: `@import Intercom.Experimental` or `#import <Intercom/Intercom+Experimental.h>`
-  //   It can be imported in Swift as: import `Intercom.Experimental`
-  explicit module Experimental {
-    header "Intercom+Experimental.h"
-    export *
-  }
 
   // When a new system library is required, it should be added here
   link "icucore"

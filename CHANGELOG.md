@@ -1,4 +1,10 @@
-## 5.3.0  
+## 5.3.1 
+###### Release Date: 14-06-2019
+
+### Bug Fixes
+* Fixed a bug that prevented videos being dismissed in the Messenger.
+
+## 5.3.0 
 ###### Release Date: 29-04-2019
 
 ### New Feature 🤖
@@ -9,7 +15,7 @@ Custom Bots can now be targeted specifically to your mobile app users! Whether y
 
 ![ios-5-3-0-release](https://user-images.githubusercontent.com/3185423/56955019-2f744380-6b38-11e9-8d90-530e903cf33b.png)
 
-Use our bots to provide better personalization at scale during critical moments of the customer lifecycle like when users first sign up for your app, or when they want to upgrade to a paid plan. 
+Use our bots to provide better personalization at scale during critical moments of the customer lifecycle like when users first sign up for your app, or when they want to upgrade to a paid plan.
 
 For more details on how to use Custom Bots on mobile, see our [docs here](https://www.intercom.com/help/faqs-and-troubleshooting/custom-bots/do-custom-bots-work-on-mobile).
 
@@ -18,13 +24,13 @@ For more details on how to use Custom Bots on mobile, see our [docs here](https:
 * Made improvements to image loading to improve performance.
 * Fixed a bug that was breaking the Messenger homescreen layout on iPad Pro 12.9"
 
-## 5.2.1 
+## 5.2.1
 ###### Release Date: 11-02-2019
 
 ### Bug Fixes
 * Fixed a bug that was preventing messenger apps from loading on the Homescreen under certain circumstances.
 
-## 5.2 
+## 5.2
 ###### Release Date: 20-12-2018
 
 ### Enhancements
@@ -48,32 +54,32 @@ For more details on how to use Custom Bots on mobile, see our [docs here](https:
 ### Enhancements
 * Some minor bug fixes and compatibility updates for future releases.
 
-## 5.1.8 
+## 5.1.8
 ###### Release Date: 02-10-2018
 
 ### Bug Fixes
 * Added a fix to prevent a small number of apps briefly freezing on launch.
 
-## 5.1.7 
+## 5.1.7
 ###### Release Date: 28-09-2018
 
 ### Enhancements
 * We now provide support for Loom videos in Intercom. This feature is available to customers using SDK version 5.1.6+.
 
 ### Bug Fixes
-* We fixed a bug that prevented customers being able to change a conversation rating after an initial rating selection. 
+* We fixed a bug that prevented customers being able to change a conversation rating after an initial rating selection.
 
-## 5.1.6 
+## 5.1.6
 ###### Release Date: 14-09-2018
 
 ### Enhancements
 * [AnswerBot](https://www.intercom.com/bots-for-support) support.
-* This version of the Intercom iOS SDK fully supports iOS 12 and the new devices iPhone Xr, Xs & Xs Max. Recent versions of the SDK should also work, but have not been tested. 
+* This version of the Intercom iOS SDK fully supports iOS 12 and the new devices iPhone Xr, Xs & Xs Max. Recent versions of the SDK should also work, but have not been tested.
 * Made some updates to colours.
-* The Intercom launcher now only appears once a successful response from the server is received. 
-* Improved video support. 
+* The Intercom launcher now only appears once a successful response from the server is received.
+* Improved video support.
 
-## 5.1.5 
+## 5.1.5
 ###### Release Date: 27-08-2018
 
 ### Bug fixes
@@ -82,21 +88,21 @@ For more details on how to use Custom Bots on mobile, see our [docs here](https:
 * Tapping on the "More in Help Center" link in an article suggestions card now loads the Help Center.
 * Updated the title of the Help Center so that its fully localised.
 
-## 5.1.4 
+## 5.1.4
 ###### Release Date: 15-08-2018
 
 ### Bug fixes
 * Improved Home screen animations.
 * Fixed a bug where articles with embedded videos were being loaded incorrectly.
 
-## 5.1.3 
+## 5.1.3
 ###### Release Date: 27-07-2018
 
 ### Bug fixes
 * Fixed layout bugs in home screen
 * Fixed a bug where conversations where not shown in the home screen for some users
 
-## 5.1.2 
+## 5.1.2
 ###### Release Date: 26-07-2018
 
 ### Bug fixes
@@ -110,7 +116,7 @@ For more details on how to use Custom Bots on mobile, see our [docs here](https:
 * Fixed a bug that was causing a Messenger App sheet to open in Safari.
 * Updated the sheet progress view colour. 🤓
 
-## 5.1.0 
+## 5.1.0
 ###### Release Date: 19-07-2018
 
 ### Enable mobile users to help themselves with the new mobile SDK for iOS and Android 🎉 😃
@@ -125,7 +131,7 @@ We've deprecated some API methods in this release:
 * `presentMessageComposerWithInitialMessage` - Use `presentMessageComposer:(nullable NSString *)initialMessage` instead.
 * `presentMessageComposer` - Use `presentMessageComposer:(nullable NSString *)initialMessage` instead.
 
-These deprecated methods will still work, but will be removed in a future release. 
+These deprecated methods will still work, but will be removed in a future release.
 
 ## 5.0.4 (2018-06-27)
 
