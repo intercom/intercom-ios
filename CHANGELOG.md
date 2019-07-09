@@ -1,10 +1,21 @@
-## 5.3.1 
+## 5.4.0
+###### Release Date: 09-07-2019
+
+### New Feature 🤖
+
+## Handle new conversations with Custom Bots to provide faster, more personal support at scale.
+
+When a customer starts a conversation with you in the Messenger, they’ll be able to choose from suggested replies that you’ve defined. They can clarify why they’re getting in touch, and provide extra info without needing to wait for a response, or take up your team’s time.
+Adding a bot to your inbound conversations enables your customers to self serve, and gives you a way to automatically collect some basic information about what your customers need, which otherwise your team would have to collect manually.
+![ios-5-4-0-release](https://user-images.githubusercontent.com/663226/60925531-d3751c00-a258-11e9-9d8f-5ee7e0c5a094.PNG)
+
+## 5.3.1
 ###### Release Date: 14-06-2019
 
 ### Bug Fixes
 * Fixed a bug that prevented videos being dismissed in the Messenger.
 
-## 5.3.0 
+## 5.3.0
 ###### Release Date: 29-04-2019
 
 ### New Feature 🤖
