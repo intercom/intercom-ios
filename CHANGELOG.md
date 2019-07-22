@@ -1,3 +1,10 @@
+## 5.4.1
+###### Release Date: 22-07-2019
+
+### Enhancements
+* Quick reply options for Custom Bots are now shown on the in app snippets! This allows users to view their options and respond right from the snippets.
+![ios-5-4-1-release](https://user-images.githubusercontent.com/6392766/61545205-cb7a6080-aa3e-11e9-9a2c-e945738963a9.png)
+
 ## 5.4.0
 ###### Release Date: 09-07-2019
 
