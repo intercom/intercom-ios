@@ -15,7 +15,7 @@ Engage customers with email, push, and in‑app messages and support them with a
 
 ## Installation
 
-Intercom for iOS supports iOS 8, 9, 10, 11 & 12. 
+Intercom for iOS supports iOS 8, 9, 10, 11, 12 & 13. 
 
 ### CocoaPods
 Add the Intercom pod into your Podfile and run `pod install`.
