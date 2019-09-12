@@ -1,3 +1,15 @@
+## 5.5.0 
+###### Release Date: 12-09-2019
+
+### Enhancements
+* The SDK has been updated to support iOS 13.
+
+### Bug Fixes
+* The positioning of the chat head has been improved for larger devices.
+* The image picker has been updated to use an icon instead of text for the close button.
+* We fixed an issue that caused Messenger Apps to be the incorrect height.
+* Sometimes the team profile would not load correctly on first launch. We fixed that, too.
+
 ## 5.4.1
 ###### Release Date: 22-07-2019
 
