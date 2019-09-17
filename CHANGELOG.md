@@ -1,3 +1,9 @@
+## 5.5.1 
+###### Release Date: 17-09-2019
+
+### Bug Fixes
+* Fixed an issue that was causing the Intercom Messenger not to display for apps that use a `UISceneDelegate` and initialize Intercom in their `AppDelegate`. It is recommended that all apps using a `UISceneDelegate` initialize intercom in their `scene:willConnectionToSession:options` method. Please see our [installation documentation](https://developers.intercom.com/installing-intercom/docs/ios-installation#section-step-3-initialize-intercom) for further information and examples. 
+
 ## 5.5.0 
 ###### Release Date: 12-09-2019
 
