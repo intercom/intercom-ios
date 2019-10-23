@@ -1,3 +1,10 @@
+## 5.5.2 
+###### Release Date: 23-10-2019
+
+### Bug Fixes
+* Fixed an issue that was causing the Status Bar colour to be black on apps using the Intercom Messenger.
+* NOTE: If you are dynamically changing your status bar style, please [follow our guidelines](https://developers.intercom.com/installing-intercom/docs/ios-configuration#section-status-bar-style) to ensure that your status bar updates accordingly.
+
 ## 5.5.1 
 ###### Release Date: 17-09-2019
 
