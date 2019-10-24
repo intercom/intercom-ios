@@ -1,3 +1,11 @@
+## 6.0.0 
+###### Release Date: 24-10-2019
+
+### Enhancements
+* iOS 10 is now the minimum version of iOS that is supported by the Intercom iOS SDK.
+* We have deprecated support for iOS 8 & 9. 
+* To upgrade to v6.0.0 please follow our migration guide. Changes are required to your code if you support push notifications or deep linking within your app.
+
 ## 5.5.2 
 ###### Release Date: 23-10-2019
 
