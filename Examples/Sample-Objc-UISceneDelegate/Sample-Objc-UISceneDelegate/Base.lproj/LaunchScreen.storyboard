@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fRD-y4-qQs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intercom-logo-white" translatesAutoresizingMaskIntoConstraints="NO" id="5Wz-2R-IuA">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="NbM-8S-hi0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.51372549020000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Wz-2R-IuA" firstAttribute="centerX" secondItem="fRD-y4-qQs" secondAttribute="centerX" constant="-50" id="cId-hO-jcq"/>
+                            <constraint firstItem="5Wz-2R-IuA" firstAttribute="centerY" secondItem="fRD-y4-qQs" secondAttribute="centerY" id="s2L-Fr-2zv"/>
+                            <constraint firstItem="5Wz-2R-IuA" firstAttribute="centerX" secondItem="fRD-y4-qQs" secondAttribute="centerX" id="shx-WC-Fd5"/>
+                            <constraint firstItem="5Wz-2R-IuA" firstAttribute="centerY" secondItem="fRD-y4-qQs" secondAttribute="centerY" constant="-56" id="xzH-ZB-Hrl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1ig-KD-IWp"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xzH-ZB-Hrl"/>
+                                <exclude reference="cId-hO-jcq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Intercom-logo-white" width="100" height="100"/>
+    </resources>
+</document>

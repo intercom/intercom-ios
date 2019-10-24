@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A0F1E071B034B7100DA78D2"
-               BuildableName = "Sample-ObjC.app"
-               BlueprintName = "Sample-ObjC"
-               ReferencedContainer = "container:Sample-ObjC.xcodeproj">
+               BlueprintIdentifier = "4C0A0F08233A8B68008F484B"
+               BuildableName = "Sample-Swift-UISceneDelegate.app"
+               BlueprintName = "Sample-Swift-UISceneDelegate"
+               ReferencedContainer = "container:Sample-Swift-UISceneDelegate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,15 +27,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A0F1E071B034B7100DA78D2"
-            BuildableName = "Sample-ObjC.app"
-            BlueprintName = "Sample-ObjC"
-            ReferencedContainer = "container:Sample-ObjC.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <Testables>
       </Testables>
    </TestAction>
@@ -53,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A0F1E071B034B7100DA78D2"
-            BuildableName = "Sample-ObjC.app"
-            BlueprintName = "Sample-ObjC"
-            ReferencedContainer = "container:Sample-ObjC.xcodeproj">
+            BlueprintIdentifier = "4C0A0F08233A8B68008F484B"
+            BuildableName = "Sample-Swift-UISceneDelegate.app"
+            BlueprintName = "Sample-Swift-UISceneDelegate"
+            ReferencedContainer = "container:Sample-Swift-UISceneDelegate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -70,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A0F1E071B034B7100DA78D2"
-            BuildableName = "Sample-ObjC.app"
-            BlueprintName = "Sample-ObjC"
-            ReferencedContainer = "container:Sample-ObjC.xcodeproj">
+            BlueprintIdentifier = "4C0A0F08233A8B68008F484B"
+            BuildableName = "Sample-Swift-UISceneDelegate.app"
+            BlueprintName = "Sample-Swift-UISceneDelegate"
+            ReferencedContainer = "container:Sample-Swift-UISceneDelegate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
