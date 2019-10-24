@@ -1,9 +1,9 @@
 //
-//  AppDelegate.swift
-//  Sample-Swift
+//  SceneDelegate.swift
+//  Swift-Scheme-Sample
 //
-//  Created by Brian Boyle on 20/07/2016.
-//  Copyright © 2016 Intercom. All rights reserved.
+//  Created by Michael McNamara on 24/09/2019.
+//  Copyright © 2019 Michael McNamara. All rights reserved.
 //
 
 import UIKit
@@ -12,34 +12,30 @@ import Intercom
 let INTERCOM_APP_ID = "<#YOUR APP ID#>"
 let INTERCOM_API_KEY = "<#YOUR API KEY#>"
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let _ = (scene as? UIWindowScene) else { return }
+        
         Intercom.setApiKey(INTERCOM_API_KEY, forAppId: INTERCOM_APP_ID)
         Intercom.setLauncherVisible(true)
         
         #if DEBUG
-            Intercom.enableLogging()
+        Intercom.enableLogging()
         #endif
-    
+        
         let defaults = UserDefaults.standard
         if let email = defaults.string(forKey: emailKey) {
             Intercom.registerUser(withEmail: email)
         }
-        
-        return true
-    }
-    
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        Intercom.setDeviceToken(deviceToken)
     }
 
-    func applicationDidBecomeActive(_ application: UIApplication) {
+    func sceneDidBecomeActive(_ scene: UIScene) {
         //Register for push notifications
         //For more info, see: https://developers.intercom.com/installing-intercom/docs/ios-push-notifications
+        
         let center = UNUserNotificationCenter.current()
         // Request permission to display alerts and play sounds.
         center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
