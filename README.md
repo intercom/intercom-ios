@@ -15,7 +15,7 @@ Engage customers with email, push, and in‑app messages and support them with a
 
 ## Installation
 
-Intercom for iOS supports iOS 8, 9, 10, 11, 12 & 13. 
+Intercom for iOS supports iOS 10+. 
 
 ### CocoaPods
 Add the Intercom pod into your Podfile and run `pod install`.
@@ -32,8 +32,13 @@ Add the Intercom pod into your Podfile and run `pod install`.
 ### Manual Installation
 
 1. [Download Intercom for iOS](https://github.com/intercom/intercom-ios/archive/master.zip) and extract the zip.
-2. Go to your Xcode project's "General" settings. Drag `Intercom.framework` to the "Embedded Binaries" section. Make sure "Copy items if needed" is selected and click Finish.
-3. Create a new "Run Script Phase" in your app’s target’s "Build Phases" and paste the following snippet in the script text field:
+2. Drag `Intercom.framework` into your project. 
+<img width="219" alt="66128029-ecd1fe00-e5e4-11e9-9404-57771c4aab32" src="https://user-images.githubusercontent.com/6392766/66138196-1e06fa00-e5f6-11e9-9ed9-dc6eaa356939.png">
+Make sure "Copy items if needed" is selected and click Finish.
+<img width="523" alt="66128038-ef345800-e5e4-11e9-89ab-9a13a35c1104" src="https://user-images.githubusercontent.com/6392766/66138337-5dcde180-e5f6-11e9-9ed4-1d0414a89351.png">
+3. In the target settings for your app, set the Intercom.framework to “Embed & Sign”. This can be found in the “Frameworks, Libraries, and Embedded Content” section of the “General” tab.
+<img width="572" alt="Embed_and_Sign" src="https://user-images.githubusercontent.com/6392766/66128049-f3f90c00-e5e4-11e9-9d5f-e50722632969.png">
+4. Create a new "Run Script Phase" in your app’s target’s "Build Phases" and paste the following snippet in the script text field:
 
         bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Intercom.framework/strip-frameworks.sh"
 This step is required to work around an [App Store submission bug](http://www.openradar.me/radar?id=6409498411401216) when archiving universal binaries.
