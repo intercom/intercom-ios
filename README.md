@@ -16,6 +16,7 @@ Engage customers with email, push, and in‑app messages and support them with a
 ## Installation
 
 Intercom for iOS supports iOS 10+. 
+Xcode 11 is required to build Intercom iOS SDK.
 
 ### CocoaPods
 Add the Intercom pod into your Podfile and run `pod install`.
