@@ -1,3 +1,9 @@
+## 6.0.1 
+###### Release Date: 27-01-2020
+
+### Bug Fixes
+* This update fixes an issue related to `UINavigationBarAppearance`, which was introduced in iOS 13. This fix means any customisations made to your navigation bar will not impact on the Intercom Messenger.
+
 ## 6.0.0 
 ###### Release Date: 24-10-2019
 
