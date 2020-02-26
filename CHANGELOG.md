@@ -1,3 +1,9 @@
+## 6.0.2 
+###### Release Date: 26-02-2020
+
+### Bug Fixes
+* This update fixes an issue that was causing some Custom Bot reply options to become unresponsive when tapping on them.
+
 ## 6.0.1 
 ###### Release Date: 27-01-2020
 
