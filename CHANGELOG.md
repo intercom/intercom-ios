@@ -1,3 +1,12 @@
+## 6.1.0 
+###### Release Date: 18-03-2020
+
+### Enhancements
+* We've implemented the abilty to disable the composer for [inbound conversations that use Custom Bots](https://www.intercom.com/help/en/articles/3118298-triage-inbound-conversations-with-custom-bots). 
+
+### Bug Fixes
+* Fixed an issue that caused an error page to display when double-tapping on a link in the Help Centre.
+
 ## 6.0.2 
 ###### Release Date: 26-02-2020
 
