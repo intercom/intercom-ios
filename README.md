@@ -42,7 +42,7 @@ We check for new messages when your app opens and whenever your customer or your
 ## Installation
 
 Intercom for iOS supports iOS 10+. 
-Xcode 11 is required to build Intercom iOS SDK.
+Xcode 11.4 is required to build Intercom iOS SDK.
 
 ### CocoaPods
 Add the Intercom pod into your Podfile and run `pod install`.
