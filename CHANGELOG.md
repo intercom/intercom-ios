@@ -1,3 +1,61 @@
+## 7.1.0 
+###### Release Date: 17-06-2020
+
+**In v7.1.0 of the Intercom mobile SDK, we’re introducing a fantastic new mobile engagement feature called [Mobile Carousels](https://www.intercom.com/mobile-carousels). We’ve also added support for closed conversations, as well as a number of fixes and performance improvements.**
+
+### 📱 New Feature: Mobile Carousels 
+ 
+
+Bring your best features. We'll bring the spotlight. Use [Mobile Carousels](https://www.intercom.com/mobile-carousels) to connect with app users at every touchpoint—show them around, provide support, and highlight features you know they'll love.
+
+Mobile Carousels are a multi-screen message designed to feel right at home in your mobile app. 
+
+* Rich multi-screen messages.
+* Highly customizable, right inside Intercom.
+* Request device permissions like push notifications, camera, location and more.
+* Deep link into your app, open URLs, or start conversations in the Intercom Messenger.
+* Target the right message to the right audience.
+* A/B testing and control groups.
+* Goal tracking.
+* Schedule your Mobile Carousel with ease.
+
+Upgrade to the latest version of the mobile SDK today to use the feature. No additional integration work required.
+
+### [Learn more about Mobile Carousels](https://www.intercom.com/mobile-carousels)
+
+<a href="https://product-education.wistia.com/medias/4y7for3aya " target="_blank"><img  src="https://user-images.githubusercontent.com/3185423/84791321-5581cf00-afea-11ea-848e-d29fbd657e10.png"></a>
+
+![Carousel - Made for mobile - Red](https://user-images.githubusercontent.com/3185423/84785788-ce315d00-afe3-11ea-9647-01792c698d05.png)
+
+
+![carousel_standard](https://user-images.githubusercontent.com/3185423/84790789-aba24280-afe9-11ea-870e-682283871715.gif)
+
+
+![Carousel - Permissions - iOS - Yellow](https://user-images.githubusercontent.com/3185423/84785834-dee1d300-afe3-11ea-9c66-accbc6a93458.png)
+
+
+### 📱 Closed Conversations
+
+The mobile SDK now respects the `prevent replies to closed conversations` setting if you have it enabled. The text composer will be disabled for closed conversations, and your users will be able to start a new conversation if they need to. The UI updates in real time as the conversation takes place.
+
+![Closed Conversation](https://user-images.githubusercontent.com/3185423/84782917-8d841480-afe0-11ea-9e73-9e04fa4d557d.gif)
+
+
+### 📱 Improvements and bug fixes
+
+We made a number of performance improvements and squashed a number of bugs in this release. This includes:
+
+* **Improved:** The mobile SDK and its features now initialize and open more quickly.
+* **Improved:** More elegant image loading states.
+* **Improved:** Added support for pointers in iPadOS 13.4 and up.
+* **Improved:** Added support for Provisional Push Notifications
+* **Fixed:** An issue where Intercom was not relinquishing keyWindow status, causing problems with external keyboards and text input fields.
+* **Fixed:** An issue where the header background colour for articles was incorrect.
+* **Fixed:** A crash in iOS 13 when tapping close button after sending a reply to a conversation.
+* **Fixed:** A crash when exiting conversation before Operator has responded.
+* **Fixed:** An issue where conversations were marked as read when the app was in the background.
+* **Fixed:** An issue where some images were causing apps to crash during the while being upload to the messenger.
+
 ## 6.1.0 
 ###### Release Date: 18-03-2020
 

@@ -1,0 +1,109 @@
+{
+    "app_id": "odymwnr8",
+    "dismissible": true,
+    "instance_id": "27939",
+    "screens": [{
+        "app_id": "odymwnr8",
+        "background_color": "#ffffff",
+        "id": "235",
+        "text_color": "#FF0000",
+        "vertical_alignment": "center",
+        "actions": [{
+            "android_permissions": "",
+            "app_id": "odymwnr8",
+            "background_color": "#e8f3fd",
+            "id": "247",
+            "order": 1,
+            "text_color": "#0c538d",
+            "title": "Nope",
+            "type": "skip",
+            "uri": "<null>"
+        },
+        {
+            "android_permissions": "",
+            "app_id": "odymwnr8",
+            "background_color": "#2392ec",
+            "id": "248",
+            "order": 0,
+            "text_color": "#ffffff",
+            "title": "Location permission",
+            "type": "location_permission",
+            "uri": "<null>"
+        }
+        ],
+        "blocks": [{
+            "align": "left",
+            "text": "Mo Salah - Liverpool's Greatest",
+            "type": "heading"
+        },
+        {
+            "align": "left",
+            "height": 152,
+            "type": "image",
+            "url": "https://downloads.intercomcdn.com/i/o/201195243/29a6df88152f1ba136045b56/airpods.png",
+            "width": 100
+        },
+        {
+            "align": "left",
+            "text": "Mo <a href=\"https://google.com\">Salah</a> is Liverpools main striker. <br>He's scored a total of 75 goals for Liverpool in all competitions, which puts him up there amongst the best.",
+            "type": "paragraph"
+        },
+        {
+            "align": "left",
+            "text": "Extra block 1",
+            "type": "heading"
+        },
+        {
+            "align": "left",
+            "text": "Extra block 2: ",
+            "type": "heading"
+        },
+        {
+            "align": "left",
+            "text": "Extra block 3: This is the check.",
+            "type": "heading"
+        }
+        ]
+    },
+    {
+        "app_id": "odymwnr8",
+        "background_color": "#ffd954",
+        "id": "236",
+        "text_color": "#FF0000",
+        "vertical_alignment": "center",
+        "actions": [{
+            "android_permissions": "",
+            "app_id": "odymwnr8",
+            "background_color": "#2392ec",
+            "id": "249",
+            "order": 0,
+            "text_color": "#ffffff",
+            "title": "Dismiss",
+            "type": "Dismiss",
+            "uri": "<null>"
+        }],
+        "blocks": [
+            {
+                "align": "left",
+                "text": "Highlights",
+                "type": "heading"
+            },
+            {
+                "imageHeight": 80,
+                "imageUrl": "https://downloads.intercomcdn.com/i/o/196704852/3b2a07bcaa9b3aa158298ca1/insta%403x.png",
+                "imageWidth": 80,
+                "text": "Check out Mo's top goals in his Liverpool career",
+                "title": "Top Goals",
+                "type": "imageText"
+            },
+            {
+                "imageHeight": 80,
+                "imageUrl": "https://downloads.intercomcdn.com/i/o/195704481/fde13be5b749bdb5975b8004/placeholder-image-centered.png",
+                "imageWidth": 80,
+                "text": "Discover free audio stories that entertain and inform \n",
+                "title": "Second",
+                "type": "imageText"
+            }
+        ]
+    }]
+}
