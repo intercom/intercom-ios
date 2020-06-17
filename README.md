@@ -3,15 +3,41 @@
 [![CocoaPods](https://img.shields.io/cocoapods/v/Intercom.svg?maxAge=2592000)](https://cocoapods.org/pods/Intercom)
 [![carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Apache License](http://img.shields.io/badge/license-APACHE2-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
-[![CocoaPods](https://img.shields.io/cocoapods/dt/Intercom.svg?maxAge=2592000)]()
 
 <img src="https://user-images.githubusercontent.com/3185423/39155454-0c61c11e-474a-11e8-9471-dc4b37bf9d7c.png" width="238" height="65"/>
 
-### Onboard, retain and support mobile users at scale
+## Onboard, retain and support mobile users at scale
 Engage customers with email, push, and in‑app messages and support them with an integrated knowledge base and help desk.
 
-![ios-github](https://user-images.githubusercontent.com/3185423/42946658-506ad898-8b63-11e8-8680-8fd1458d34c5.png)
+### The Intercom Messenger
+The [Intercom Messenger](https://www.intercom.com/help/en/articles/316-the-intercom-messenger-in-your-product-and-on-your-website) is the home for the conversations your customers have with you via Intercom, and the place where they can self-serve for support or to learn more about your product.
 
+The Messenger works for both logged in and logged out users. It’s worth reading the detailed instructions in our [developer docs](https://developers.intercom.com/installing-intercom/docs/intercom-for-ios) on user management before you get started.
+
+You can open the Intercom Messenger from a button in your app, programmatically when someone does something, or from a persistent button that sits over your app’s UI.
+
+When you trigger the Intercom Messenger, your customer is presented with a home screen. This is configurable inside Intercom to change how it looks and what’s presented.
+
+From there, your customer can search for help articles or start a conversation. A conversation goes to your inbox inside Intercom, and replies in both directions happen in real time. You can also send push notifications to your customers to let them know they have a reply after they’ve left your app.
+
+![iOSREadme1](https://user-images.githubusercontent.com/3185423/84803321-c5e41c80-aff9-11ea-89b0-514332887066.jpg)
+
+### [Outbound messaging features](https://www.intercom.com/mobile-carousels)
+You can send messages to your customers from Intercom, and the mobile SDK will present them in your app. Messages can be targeted at specific users or groups of users, and can be scheduled to be sent during specific time windows.
+
+Companies use this for many use cases, including onboarding new users, announcing features, proactive support, important notices etc.
+
+The mobile SDK supports many different message formats, all of which can be created and configured inside Intercom. These include:
+
+* **Push notifications** - these can open your app or follow a deep link.
+* **Chats** - messages from someone in your team to your customer.
+* **Mobile Carousels** - highly customizable, multi-screen messages with calls to action and device permissions.
+* **Small posts** - a short announcement.
+* **Large posts** - a full screen announcement.
+
+We check for new messages when your app opens and whenever your customer or your app interacts with Intercom.
+
+![iOS - Content types](https://user-images.githubusercontent.com/3185423/84890387-4191a800-b092-11ea-821e-e920ba7ef6a5.png)
 
 ## Installation
 
@@ -62,7 +88,7 @@ There is an example app provided [here](https://github.com/intercom/intercom-ios
 
 ## Customer Support
 
-👋 Contact us with any issues at our [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation?utm_source=github&utm_campaign=ios-help). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
+👋  Contact us with any issues at our [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation?utm_source=github&utm_campaign=ios-help). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
 
 ## Cordova/Phonegap Support
 Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
