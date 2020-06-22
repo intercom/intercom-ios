@@ -72,9 +72,19 @@ This step is required to work around an [App Store submission bug](http://www.op
 
 ## Update Info.plist
 
+#### 1. Photo Library usage:
+
 When installing Intercom, you'll need to make sure that you have a `NSPhotoLibraryUsageDescription` entry in your `Info.plist`.
 
 This is [required by Apple](https://developer.apple.com/library/content/qa/qa1937/_index.html) for all apps that access the photo library. It is necessary when installing Intercom due to the image upload functionality. Users will be prompted for the photo library permission only when they tap the image upload button.
+
+#### 2. Location usage:
+
+As Mobile Carousels gives you the ability to request location permission from your users, a usage description must be added for it. 
+
+Add a "Privacy - Location When In Use Usage Description" entry to your `Info.plist` as shown below.
+
+(Note: This description is required by Apple and so you must provide a it, even if you do not intend to use it. The location description will only be shown by Intercom if you request location permission via a Mobile Carousel.)
 
 ## Example app
 There is an example app provided [here](https://github.com/intercom/intercom-ios/tree/master/Examples) for both Objective-C and Swift.
