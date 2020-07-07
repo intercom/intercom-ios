@@ -1,3 +1,9 @@
+## 7.1.1 
+###### Release Date: 06-07-2020
+
+### Enhancements
+* If your app does not request location permissions, you will no longer have to add a location permission string to your PList when using the Intercom iOS SDK.
+
 ## 7.1.0 
 ###### Release Date: 17-06-2020
 
