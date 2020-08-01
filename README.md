@@ -84,7 +84,7 @@ As Mobile Carousels gives you the ability to request location permission from yo
 
 Add a "Privacy - Location When In Use Usage Description" entry to your `Info.plist` as shown below.
 
-(Note: This description is required by Apple and so you must provide a it, even if you do not intend to use it. The location description will only be shown by Intercom if you request location permission via a Mobile Carousel.)
+(Note: This description is required by Apple and so you must provide it, even if you do not intend to use it. The location description will only be shown by Intercom if you request location permission via a Mobile Carousel.)
 
 ## Example app
 There is an example app provided [here](https://github.com/intercom/intercom-ios/tree/master/Examples) for both Objective-C and Swift.
