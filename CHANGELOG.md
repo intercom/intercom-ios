@@ -1,3 +1,15 @@
+## 7.1.2 
+###### Release Date: 07-08-2020
+
+### Enhancements
+* We smoothed out some animations for a better experience for your users.
+
+### Bug Fixes
+* Fixed an issue where a navigation bar would appear over a Mobile Carousel when the host app sets navigation bars to be opaque via the `UIAppearance` API.
+* Fixed an issue where images with a large height to width ratio were constrained in size when used in a Mobile Carousel. This constraint was removed.
+* Fixed a crash that occurred when iPad users attempted to re-upload an image after their first attempt failed.
+* Fixed an issue where some replies to a long exchange with a bot would cause the conversation to briefly scroll.
+
 ## 7.1.1 
 ###### Release Date: 06-07-2020
 
