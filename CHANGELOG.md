@@ -1,3 +1,9 @@
+## 7.1.3 
+###### Release Date: 01-09-2020
+
+### Enhancements
+* Minor bug fixes and compatibility updates for future releases.
+
 ## 7.1.2 
 ###### Release Date: 07-08-2020
 
