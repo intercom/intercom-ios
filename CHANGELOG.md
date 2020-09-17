@@ -1,4 +1,11 @@
-## 7.1.3 
+## 8.0.0 
+###### Release Date: 16-09-2020
+
+### Enhancements
+* The SDK has been updated to support iOS 14.
+* For iOS 14 devices, we now use the new system photo picker to select photos to upload. This means that your users won’t be prompted for the photo library permission. 
+
+## 7.1.3  
 ###### Release Date: 01-09-2020
 
 ### Enhancements
