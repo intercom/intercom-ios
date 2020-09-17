@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name                = 'Intercom'
-  s.version             = '7.1.3'
+  s.version             = '8.0.0'
   s.summary             = 'The Intercom iOS SDK, for integrating Intercom into your iOS application.'
   s.license             = { :type => "Apache 2.0", :file => "Intercom/LICENSE" }
-  s.authors             = {"Brian Boyle"=>"brian.boyle@intercom.io", "Mike McNamara"=>"mike.mcnamara@intercom.io", "Dale Cantwell"=>"dale@intercom.io"}
+  s.authors             = {"Brian Boyle"=>"brian.boyle@intercom.io", "Mike McNamara"=>"mike.mcnamara@intercom.io"}
   s.homepage            = 'https://github.com/intercom/intercom-ios'
   s.description         = 'The Intercom iOS SDK, for integrating Intercom into your iOS application. The SDK supports iOS 10+.'
   s.frameworks          = ["Foundation", "UIKit", "Accelerate", "Security", "SystemConfiguration", "MobileCoreServices", "ImageIO", "AudioToolbox", "QuartzCore", "CoreGraphics", "Photos", "Accelerate", "WebKit"]
