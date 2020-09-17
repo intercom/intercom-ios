@@ -7,17 +7,12 @@ The example apps provide a basic demo of Intercom's iOS SDK. Further details on 
 2. Set your iOS **API key** and **App ID** at the top of `ITCAppDelegate.m`
 3. Build and Run 🎉
 
-## Swift
-1. Go to **/Sample-Swift** and open **Sample-Swift.xcodeproj**
-2. Set your iOS **API key** and **App ID** at the top of `AppDelegate.swift`
-3. Build and Run 🙌
-
-## Objective C with UISceneDelegate
-1. Go to **/Sample-Objc-UISceneDelegate** and open **Sample-Objc-UISceneDelegate.xcodeproj**
-2. Set your iOS **API key** and **App ID** at the top of `SceneDelegate.m`
-3. Build and Run 🎉
-
 ## Swift with UISceneDelegate
 1. Go to **/Sample-Swift-UISceneDelegate** and open **Sample-Swift-UISceneDelegate.xcodeproj**
+2. Set your iOS **API key** and **App ID** at the top of `SceneDelegate.swift`
+3. Build and Run 🙌
+
+## SwiftUI
+1. Go to **/Sample-SwiftUI** and open **Sample-SwiftUI.xcodeproj**
 2. Set your iOS **API key** and **App ID** at the top of `SceneDelegate.swift`
 3. Build and Run 🙌
