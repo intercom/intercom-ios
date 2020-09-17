@@ -83,7 +83,7 @@ On iOS 14+, Intercom uses the new `PHPickerViewController` API which does not re
 
 ## Apple Silicon Support
 The Intercom iOS SDK does not support Apple Silicon `arm64` architecture.
-For Cocoapods integrations, we have explicitly excluded `amr64` architecture from simulator builds to prevent build failures. We do this by modifying app and pod build settings via the Intercom podspec.
+For Cocoapods integrations, we have explicitly excluded `arm64` architecture from simulator builds to prevent build failures. We do this by modifying app and pod build settings via the Intercom podspec.
 We hope to be able to remove these build setting requirements and provide support for Apple Silicon in the near future when we distribute the iOS SDK as an XCFramework binary.
 
 ## Example app
