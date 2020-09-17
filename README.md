@@ -4,7 +4,7 @@
 [![carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Apache License](http://img.shields.io/badge/license-APACHE2-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
-<img src="https://user-images.githubusercontent.com/3185423/39155454-0c61c11e-474a-11e8-9471-dc4b37bf9d7c.png" width="238" height="65"/>
+<img src="https://user-images.githubusercontent.com/6392766/92717163-af7b0200-f357-11ea-9dc3-6f86d0c21d96.png" width="297" height="76"/>
 
 ## Onboard, retain and support mobile users at scale
 Engage customers with email, push, and in‑app messages and support them with an integrated knowledge base and help desk.
@@ -42,7 +42,7 @@ We check for new messages when your app opens and whenever your customer or your
 ## Installation
 
 Intercom for iOS supports iOS 10+. 
-Xcode 11.4 is required to build Intercom iOS SDK.
+Xcode 12 is required to build Intercom iOS SDK.
 The binary size for Intercom is **2.3MB**.
 
 ### CocoaPods
@@ -75,12 +75,19 @@ This step is required to work around an [App Store submission bug](http://www.op
 
 #### Photo Library usage:
 
-When installing Intercom, you'll need to make sure that you have a `NSPhotoLibraryUsageDescription` entry in your `Info.plist`.
+With the exception of apps that _only_ support iOS 14+, when installing Intercom, you'll need to make sure that you have a `NSPhotoLibraryUsageDescription` entry in your `Info.plist`.
 
-This is [required by Apple](https://developer.apple.com/library/content/qa/qa1937/_index.html) for all apps that access the photo library. It is necessary when installing Intercom due to the image upload functionality. Users will be prompted for the photo library permission only when they tap the image upload button.
+For apps that support iOS 13 or lower, this is [required by Apple](https://developer.apple.com/library/content/qa/qa1937/_index.html) to access the photo library. It is necessary when installing Intercom due to the image upload functionality. Users will be prompted for the photo library permission only when they tap the image upload button.
+
+On iOS 14+, Intercom uses the new `PHPickerViewController` API which does not require requesting users for photo library permission. 
+
+## Apple Silicon Support
+The Intercom iOS SDK does not support Apple Silicon `arm64` architecture.
+For Cocoapods integrations, we have explicitly excluded `amr64` architecture from simulator builds to prevent build failures. We do this by modifying app and pod build settings via the Intercom podspec.
+We hope to be able to remove these build setting requirements and provide support for Apple Silicon in the near future when we distribute the iOS SDK as an XCFramework binary.
 
 ## Example app
-There is an example app provided [here](https://github.com/intercom/intercom-ios/tree/master/Examples) for both Objective-C and Swift.
+There are example apps provided [here](https://github.com/intercom/intercom-ios/tree/master/Examples) for Objective-C and Swift, as well as an example built with SwiftUI.
 
 ## Setup and Configuration
 
