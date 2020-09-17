@@ -16,4 +16,11 @@ Pod::Spec.new do |s|
   s.source_files        = 'Intercom/Intercom.framework/Versions/A/Headers/Intercom.h', 'Intercom/Intercom.framework/Versions/A/Headers/ICMUserAttributes.h', 'Intercom/Intercom.framework/Versions/A/Headers/ICMCompany.h'
   s.resources           = 'Intercom/Intercom.framework/Versions/A/Resources/Intercom.bundle', 'Intercom/Intercom.framework/Versions/A/Resources/IntercomTranslations.bundle'
   s.vendored_frameworks = 'Intercom/Intercom.framework'
+  # The following build settings are added to both the Intercom pod settings and the user settings.
+  # They exclude the app from build Intercom for arm64 simulator. This is the Apple Silicon simulator architecture that
+  # Intercom iOS SDK does not currently support. These will be removed in a future release when XCFramework is supported.
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
