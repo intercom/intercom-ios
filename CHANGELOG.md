@@ -1,3 +1,9 @@
+## 8.1.0 
+###### Release Date: 10-11-2020
+
+### Enhancements
+* New feature: You can now open an article or Mobile Carousel programmatically in your app. We have added two new methods to our API to enable this, [presentArticle](https://developers.intercom.com/installing-intercom/docs/ios-configuration#section-present-an-article-programmatically) and [presentCarousel](https://developers.intercom.com/installing-intercom/docs/ios-configuration#section-present-a-carousel-programmatically).
+
 ## 8.0.0 
 ###### Release Date: 16-09-2020
 
