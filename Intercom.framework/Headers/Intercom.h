@@ -255,6 +255,22 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)presentHelpCenter;
 
+#pragma mark - Articles
+
+/*!
+ Present an article.
+ @param articleId The ID of the article to be presented.
+ */
++ (void)presentArticle:(nonnull NSString *)articleId;
+
+#pragma mark - Mobile Carousels
+
+/*!
+ Present a Mobile Carousel.
+ @param carouselId The ID of the Mobile Carousel to be presented.
+ */
++ (void)presentCarousel:(nonnull NSString *)carouselId;
+
 #pragma mark - Push Notifications
 
 //=========================================================================================================
