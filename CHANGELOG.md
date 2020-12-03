@@ -1,3 +1,12 @@
+## 8.1.1 
+###### Release Date: 3-12-2020
+
+### Enhancements
+* Added an optional special notice message, that can be displayed at the top of a conversation. This has been commonly used to set expectations during COVID. Find more details [here](https://www.intercom.com/help/en/articles/3822642-tips-for-using-intercom-to-help-with-your-covid-19-response).
+
+### Bug Fixes
+* Fix for an intermittent crash that occurred for some users when viewing a conversation.
+
 ## 8.1.0 
 ###### Release Date: 10-11-2020
 
