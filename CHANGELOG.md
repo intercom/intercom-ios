@@ -1,3 +1,11 @@
+## 9.0.0 
+###### Release Date: 16-12-2020
+
+* Intercom iOS SDK is now distributed as an XCFramework binary. 
+* This contains architecture slices for `arm64`, `armv7` for iOS and `arm64`, `i386`, `x86_64` for the simulator. Support for macOS is coming in a future release.
+* Provides support for using the Intercom SDK with Xcode 12.3
+* This release does not support Carthage. We hope to support Carthage again, once it is compatible with XCFramework. 
+
 ## 8.1.1 
 ###### Release Date: 3-12-2020
 
