@@ -1,3 +1,4 @@
+
 [![CocoaPods](https://img.shields.io/badge/platforms-iOS-orange.svg?maxAge=2592000)](https://cocoapods.org/pods/Intercom)
 [![Languages](https://img.shields.io/badge/languages-OjbC%20%7C%20%20Swift-orange.svg?maxAge=2592000)](https://github.com/intercom/intercom-ios)
 [![CocoaPods](https://img.shields.io/cocoapods/v/Intercom.svg?maxAge=2592000)](https://cocoapods.org/pods/Intercom)
@@ -46,6 +47,7 @@ Xcode 12 is required to build Intercom iOS SDK.
 The binary size for Intercom is **2.3MB**.
 
 ### CocoaPods
+Cocoapods 1.10 is required to install Intercom.
 Add the Intercom pod into your Podfile and run `pod install`.
 ```ruby
     target :YourTargetName do
@@ -60,16 +62,16 @@ Add the Intercom pod into your Podfile and run `pod install`.
 ### Manual Installation
 
 1. [Download Intercom for iOS](https://github.com/intercom/intercom-ios/archive/master.zip) and extract the zip.
-2. Drag `Intercom.framework` into your project. 
-<img width="219" alt="66128029-ecd1fe00-e5e4-11e9-9404-57771c4aab32" src="https://user-images.githubusercontent.com/6392766/66138196-1e06fa00-e5f6-11e9-9ed9-dc6eaa356939.png">
-Make sure "Copy items if needed" is selected and click Finish.
-<img width="523" alt="66128038-ef345800-e5e4-11e9-89ab-9a13a35c1104" src="https://user-images.githubusercontent.com/6392766/66138337-5dcde180-e5f6-11e9-9ed4-1d0414a89351.png">
-3. In the target settings for your app, set the Intercom.framework to “Embed & Sign”. This can be found in the “Frameworks, Libraries, and Embedded Content” section of the “General” tab.
-<img width="572" alt="Embed_and_Sign" src="https://user-images.githubusercontent.com/6392766/66128049-f3f90c00-e5e4-11e9-9d5f-e50722632969.png">
-4. Create a new "Run Script Phase" in your app’s target’s "Build Phases" and paste the following snippet in the script text field:
+2. Drag `Intercom.xcframework` into your project. 
+<img width="258" alt="xcframework_drag" src="https://user-images.githubusercontent.com/3185423/102403528-4ce07480-3fde-11eb-9147-bf3f6a7fbf2c.png">
 
-        bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Intercom.framework/strip-frameworks.sh"
-This step is required to work around an [App Store submission bug](http://www.openradar.me/radar?id=6409498411401216) when archiving universal binaries.
+Make sure "Copy items if needed" is selected and click Finish.
+
+<img width="451" alt="copy_items" src="https://user-images.githubusercontent.com/3185423/102404075-19521a00-3fdf-11eb-9ddd-2cf8d2efa657.png">
+
+3. In the target settings for your app, set the Intercom.framework to “Embed & Sign”. This can be found in the “Frameworks, Libraries, and Embedded Content” section of the “General” tab.
+
+<img width="613" alt="embed_sign" src="https://user-images.githubusercontent.com/3185423/102403646-7e594000-3fde-11eb-89e6-0dc280bf24b2.png">
 
 ## Update Info.plist
 
@@ -80,11 +82,6 @@ With the exception of apps that _only_ support iOS 14+, when installing Intercom
 For apps that support iOS 13 or lower, this is [required by Apple](https://developer.apple.com/library/content/qa/qa1937/_index.html) to access the photo library. It is necessary when installing Intercom due to the image upload functionality. Users will be prompted for the photo library permission only when they tap the image upload button.
 
 On iOS 14+, Intercom uses the new `PHPickerViewController` API which does not require requesting users for photo library permission. 
-
-## Apple Silicon Support
-The Intercom iOS SDK does not support Apple Silicon `arm64` architecture.
-For Cocoapods integrations, we have explicitly excluded `arm64` architecture from simulator builds to prevent build failures. We do this by modifying app and pod build settings via the Intercom podspec.
-We hope to be able to remove these build setting requirements and provide support for Apple Silicon in the near future when we distribute the iOS SDK as an XCFramework binary.
 
 ## Example app
 There are example apps provided [here](https://github.com/intercom/intercom-ios/tree/master/Examples) for Objective-C and Swift, as well as an example built with SwiftUI.
@@ -106,3 +103,5 @@ Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.
 ## What about events, push notifications, company and user data?
 
 Intercom for iOS has support for all these things. For full details please read our [documentation](https://developers.intercom.com/docs/ios-configuration).
+
+
