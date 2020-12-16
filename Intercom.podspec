@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.frameworks          = ["Foundation", "UIKit", "Accelerate", "Security", "SystemConfiguration", "MobileCoreServices", "ImageIO", "AudioToolbox", "QuartzCore", "CoreGraphics", "Photos", "Accelerate", "WebKit"]
   s.library             = "icucore", "xml2"
   s.requires_arc        = true
-  s.source              = :git => 'https://github.com/intercom/intercom-ios.git', :tag => s.version.to_s
+  s.source              = {:git => 'https://github.com/intercom/intercom-ios.git', :tag => s.version.to_s}
   s.platform            = :ios, '10.0'
   s.preserve_paths      = 'Intercom.xcframework'
   s.vendored_frameworks = 'Intercom.xcframework'
