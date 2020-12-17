@@ -54,10 +54,6 @@ Add the Intercom pod into your Podfile and run `pod install`.
       pod 'Intercom'
     end
 ```
-### Carthage
-1. Add `github "intercom/intercom-ios"` to your Cartfile.
-2. Run carthage update.
-3. Go to your Xcode project's "General" settings. Drag `Intercom.framework` from `Carthage/Build/iOS` to the "Embedded Binaries" section. Make sure “Copy items if needed” is selected and click Finish.
 
 ### Manual Installation
 
@@ -69,7 +65,7 @@ Make sure "Copy items if needed" is selected and click Finish.
 
 <img width="451" alt="copy_items" src="https://user-images.githubusercontent.com/3185423/102404075-19521a00-3fdf-11eb-9ddd-2cf8d2efa657.png">
 
-3. In the target settings for your app, set the Intercom.framework to “Embed & Sign”. This can be found in the “Frameworks, Libraries, and Embedded Content” section of the “General” tab.
+3. In the target settings for your app, set the Intercom.xcframework to “Embed & Sign”. This can be found in the “Frameworks, Libraries, and Embedded Content” section of the “General” tab.
 
 <img width="613" alt="embed_sign" src="https://user-images.githubusercontent.com/3185423/102403646-7e594000-3fde-11eb-89e6-0dc280bf24b2.png">
 
