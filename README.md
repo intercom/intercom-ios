@@ -55,6 +55,11 @@ Add the Intercom pod into your Podfile and run `pod install`.
     end
 ```
 
+### Swift Package Manager
+Add `https://github.com/intercom/intercom-ios` as a Swift Package Repository in Xcode and follow the instructions to add `Intercom` as a Swift Package.
+
+![spm](https://user-images.githubusercontent.com/3185423/104470769-fac94980-55b1-11eb-80e5-929e77bc5558.png)
+
 ### Manual Installation
 
 1. [Download Intercom for iOS](https://github.com/intercom/intercom-ios/archive/master.zip) and extract the zip.
