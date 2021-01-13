@@ -1,3 +1,9 @@
+## 9.1.0 
+###### Release Date: 13-01-2021
+
+* Intercom can now be added as a dependency in your app via Swift Package Manager.
+* Simply add `https://github.com/intercom/intercom-ios as` a new Swift Package in your Xcode settings.
+
 ## 9.0.0 
 ###### Release Date: 16-12-2020
 
