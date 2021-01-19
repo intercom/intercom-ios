@@ -1,3 +1,10 @@
+## 9.1.1 
+###### Release Date: 19-01-2021
+
+### Bug Fixes
+* Fixed an issue that was causing Xcode debug variables not to appear when Intercom was integrated into an app. This was only occurring when an Xcode project was based in Swift and had other dependencies loaded via Swift Package Manager.
+* Added the ability to hide the New Conversation button in a bot-only conversation.
+
 ## 9.1.0 
 ###### Release Date: 13-01-2021
 
