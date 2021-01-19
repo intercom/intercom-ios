@@ -10,10 +10,6 @@
 #import <UIKit/UIKit.h>
 #import <Intercom/ICMUserAttributes.h>
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_10_0
-#error This version of Intercom for iOS supports iOS 10.0 upwards.
-#endif
-
 NS_ASSUME_NONNULL_BEGIN
 
 /**
