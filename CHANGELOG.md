@@ -1,3 +1,10 @@
+## 9.2.0 
+###### Release Date: 27-01-2021
+
+* Added support for bot intros, which allows Resolution Bot to introduce itself when your customers start a new conversation, making it clearer that they’re interacting with a bot.
+* Added support for [looping bots](https://www.intercom.com/help/en/articles/4704414-enable-looping-and-let-resolution-bot-answer-multiple-questions-in-a-conversation), which allows Resolution Bot to answer multiple questions in a conversation.
+* Both features can be enabled in [Operator settings](https://app.intercom.com/a/apps/_/operator/settings) in Intercom.
+
 ## 9.1.1 
 ###### Release Date: 19-01-2021
 

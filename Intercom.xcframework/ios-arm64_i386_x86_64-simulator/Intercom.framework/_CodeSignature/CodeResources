@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6FGJxamlc+8U+SZfyIpD2f+9Geo=
+		oj+waGsa2xImxh1goZ/N1aZL7a4=
 		</data>
 		<key>Intercom.bundle/data/intercom_area_codes.json</key>
 		<data>
@@ -87,6 +87,18 @@
 		<key>Intercom.bundle/images/article_loading_state@3x.png</key>
 		<data>
 		P7FueqYZo9Cit5vsSIsm9JMAcwY=
+		</data>
+		<key>Intercom.bundle/images/ask_a_question.png</key>
+		<data>
+		IZTYxmQK6rFA23NNyYguHqyOTRc=
+		</data>
+		<key>Intercom.bundle/images/ask_a_question@2x.png</key>
+		<data>
+		RrLlCuN7V8Xd2TBadSU7WyXwznM=
+		</data>
+		<key>Intercom.bundle/images/ask_a_question@3x.png</key>
+		<data>
+		WzEayc/hBttF841R8DrpKxhkHpw=
 		</data>
 		<key>Intercom.bundle/images/back.png</key>
 		<data>
@@ -993,6 +1005,39 @@
 			<key>hash2</key>
 			<data>
 			2l2jEI0PqjqXb3Hcv87EruUeo2zzIXHj3s2kjn6cQJk=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/ask_a_question.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IZTYxmQK6rFA23NNyYguHqyOTRc=
+			</data>
+			<key>hash2</key>
+			<data>
+			47eiCTN2COdKmy/OOOicw0/VorAMZbUyOvqeaGF1Ns0=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/ask_a_question@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RrLlCuN7V8Xd2TBadSU7WyXwznM=
+			</data>
+			<key>hash2</key>
+			<data>
+			gEOcCoD731FoCSzEWeMxqzoWur4cPpTDjP2s4vZZfMA=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/ask_a_question@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WzEayc/hBttF841R8DrpKxhkHpw=
+			</data>
+			<key>hash2</key>
+			<data>
+			+HVtprOCJkJjS7oNbXMq8njg8oJJgZH+bRLyFx1CaGU=
 			</data>
 		</dict>
 		<key>Intercom.bundle/images/back.png</key>
