@@ -1,3 +1,8 @@
+## 9.3.0 
+###### Release Date: 28-01-2021
+
+* It’s now possible to handle universal links used in Intercom (eg. push messages, in-product messages, articles) and keep your customers in your app. Add an entry to your PLIST to use the feature, following [these instructions](https://developers.intercom.com/installing-intercom/docs/ios-deep-linking#section-universal-link).
+
 ## 9.2.0 
 ###### Release Date: 27-01-2021
 
