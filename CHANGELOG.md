@@ -1,3 +1,9 @@
+## 9.3.1 
+###### Release Date: 01-02-2021
+
+### Bug Fixes
+* Fixed a bug that was preventing some messenger apps from opening correctly.
+
 ## 9.3.0 
 ###### Release Date: 28-01-2021
 
