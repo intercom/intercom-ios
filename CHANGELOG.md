@@ -1,3 +1,9 @@
+## 9.3.2 
+###### Release Date: 22-02-2021
+
+### Bug Fixes
+* Fixed a bug where videos embedded in an Article were opening in a web browser.
+
 ## 9.3.1 
 ###### Release Date: 01-02-2021
 
