@@ -1,3 +1,9 @@
+## 9.3.3 
+###### Release Date: 25-02-2021
+
+### Bug Fixes
+* Fixed an issue where the orientation of some images were being set incorrectly in a conversation.
+
 ## 9.3.2 
 ###### Release Date: 22-02-2021
 
