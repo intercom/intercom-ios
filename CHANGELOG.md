@@ -1,3 +1,9 @@
+## 9.3.4 
+###### Release Date: 15-04-2021
+
+### Bug Fixes
+* Fixed an issue that was causing the selector `setPointerInteractionEnabled` to crash apps for certain customers.
+
 ## 9.3.3 
 ###### Release Date: 25-02-2021
 
