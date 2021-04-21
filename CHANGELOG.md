@@ -1,3 +1,9 @@
+## 9.3.5 
+###### Release Date: 21-04-2021
+
+### Bug Fixes
+* Minor bug fixes and performance improvements.
+
 ## 9.3.4 
 ###### Release Date: 15-04-2021
 
