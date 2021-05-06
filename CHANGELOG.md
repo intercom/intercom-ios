@@ -1,3 +1,9 @@
+## 9.3.6 
+###### Release Date: 06-05-2021
+
+### Bug Fixes
+* Fixed an issue where some users would get stuck in a bot flow when interacting with quick reply buttons.
+
 ## 9.3.5 
 ###### Release Date: 21-04-2021
 
