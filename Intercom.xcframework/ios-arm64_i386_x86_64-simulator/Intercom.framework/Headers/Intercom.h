@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <Intercom/ICMUserAttributes.h>
+#import <Intercom/ICMHelpCenterCollection.h>
+#import <Intercom/ICMHelpCenterSection.h>
+#import <Intercom/ICMHelpCenterArticle.h>
+#import <Intercom/ICMHelpCenterCollectionContent.h>
+#import <Intercom/ICMHelpCenterArticleSearchResult.h>
+#import <Intercom/ICMHelpCenterDataError.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -244,20 +250,49 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)presentConversationList __attribute((deprecated("'+[Intercom presentConversationList]' is deprecated. 'Use +[Intercom presentMessenger]' instead.")));;
 
-#pragma mark - Help Center
+#pragma mark - Help Center UI
 
 /*!
- Present the help center.
+ Present the Help Center.
  */
 + (void)presentHelpCenter;
 
-#pragma mark - Articles
+/*!
+ Present the Help Center with specific collections only.
+ - Note: If the requested collections cannot be found, the full Help Center will be shown instead.
+ @param collectionIds The ID of the collections to be presented.
+ */
++ (void)presentHelpCenterCollections:(nonnull NSArray<NSString *> *)collectionIds;
 
 /*!
  Present an article.
  @param articleId The ID of the article to be presented.
  */
 + (void)presentArticle:(nonnull NSString *)articleId;
+
+#pragma mark - Help Center Data API
+
+/*!
+ Fetch all Help Center collections.
+ @param completion A completion callback with two parameters: an array of collections or an error.
+ */
++ (void)fetchHelpCenterCollectionsWithCompletion:(void (^)(NSArray<ICMHelpCenterCollection *> *_Nullable collections, NSError *_Nullable error))completion NS_REFINED_FOR_SWIFT;
+
+/*!
+ Fetch the contents of a Help Center collection.
+ @param collectionId The ID of the Help Center collection.
+ @param completion A completion callback with two parameters: a collection content object or an error.
+ */
++ (void)fetchHelpCenterCollection:(nonnull NSString *)collectionId
+                   withCompletion:(void (^)(ICMHelpCenterCollectionContent *_Nullable collectionContent, NSError *_Nullable error))completion NS_REFINED_FOR_SWIFT;
+
+/*!
+ Search the Help Center.
+ @param searchTerm The search string.
+ @param completion A completion callback with two parameters: an array of search results or an error.
+ */
++ (void)searchHelpCenter:(nonnull NSString *)searchTerm
+                   withCompletion:(void (^)(NSArray<ICMHelpCenterArticleSearchResult *> *_Nullable articleSearchResults, NSError *_Nullable error))completion NS_REFINED_FOR_SWIFT;
 
 #pragma mark - Mobile Carousels
 
@@ -337,10 +372,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setLauncherVisible:(BOOL)visible;
 
 /*!
- Hide the Intercom messenger, if it is on screen.
- This can be useful if your app wishes to get the users attention (e.g. opening an in app link).
+ Hide all Intercom windows that are currently displayed.
+ This will hide the Messenger, Help Center, Articles, and in-product messages (eg. Mobile Carousels, chats, and posts).
  */
-+ (void)hideMessenger;
++ (void)hideIntercom;
 
 #pragma mark - Unread Conversation Count
 
