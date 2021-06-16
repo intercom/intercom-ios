@@ -1,3 +1,20 @@
+## 10.0.0 
+###### Release Date: 16-06-2021
+
+### Enhancements
+We have redesigned the Help Center for mobile apps. ✨
+* New UI, optimized specifically for mobile apps and small screens
+* Type-ahead search to help users find answers quicker than ever
+* Control whether users open up a specific collection of articles, a group of collections, or specific search results
+* Localization - with right to left language display
+* Accessibility support: screen readers, dynamic font sizes, and keyboard navigation - to support all end users
+* New Help Center Data API that enables you to build your own help center UI, enabling a much deeper and custom integration into your app.
+
+### Bug Fixes
+* Fixed a bug that was preventing the contents of a Post message from rendering correctly in a conversation.
+
+![ios_-_help_center](https://user-images.githubusercontent.com/3185423/122072764-c7ece100-cdef-11eb-93bb-52e38c168c18.gif)
+
 ## 9.3.6 
 ###### Release Date: 06-05-2021
 
