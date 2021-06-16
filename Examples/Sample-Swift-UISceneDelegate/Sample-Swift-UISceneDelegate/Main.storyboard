@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +22,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intercom-logo" translatesAutoresizingMaskIntoConstraints="NO" id="YRd-xJ-T0x">
                                 <rect key="frame" x="92" y="311" width="230" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="dWN-62-ysB"/>
+                                    <constraint firstAttribute="width" constant="230" id="bK0-mB-RGS"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFh-f8-qS9">
@@ -44,13 +44,13 @@
                                     <color key="titleColor" systemColor="lightTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eN6-Bf-rhW"/>
+                                    <action selector="loginTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="F3T-lj-FCm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olB-3V-k0i" userLabel="Open Intercom Button">
-                                <rect key="frame" x="132" y="478" width="150" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olB-3V-k0i">
+                                <rect key="frame" x="124" y="478" width="167" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="2X7-Ps-dpf"/>
+                                    <constraint firstAttribute="width" constant="167" id="2X7-Ps-dpf"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="EEe-om-itt"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Hri-KG-sma"/>
                                     <constraint firstAttribute="width" constant="70" id="dMx-VH-sNh"/>
@@ -58,7 +58,7 @@
                                     <constraint firstAttribute="height" constant="44" id="nbZ-mK-eQa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="Open Intercom">
+                                <state key="normal" title="Open Messenger">
                                     <color key="titleColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -72,11 +72,67 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="openIntercom:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PYf-1N-EWk"/>
+                                    <action selector="openMessengerTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IQb-CZ-THN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogC-ME-cPV">
+                                <rect key="frame" x="122" y="530" width="170" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6FQ-uQ-GrY"/>
+                                    <constraint firstAttribute="height" constant="44" id="Ejy-ox-E4h"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="dlK-9o-9g0"/>
+                                    <constraint firstAttribute="width" constant="70" id="lGX-z8-tGn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="mWl-HU-22x"/>
+                                    <constraint firstAttribute="width" constant="170" id="r9D-Bx-Jti"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Open Help Center">
+                                    <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" systemColor="lightTextColor"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ejy-ox-E4h"/>
+                                        <exclude reference="lGX-z8-tGn"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="openHelpCenter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="w9o-fa-l7w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lg-HO-wA7">
+                                <rect key="frame" x="122" y="582" width="170" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="E48-gz-NgQ"/>
+                                    <constraint firstAttribute="height" constant="44" id="Gng-Yv-Tdn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Mi7-fu-CJl"/>
+                                    <constraint firstAttribute="width" constant="70" id="Vbi-P7-EYE"/>
+                                    <constraint firstAttribute="height" constant="44" id="dQ3-7h-Eg0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="dZi-nK-MUL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Open Article">
+                                    <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" systemColor="lightTextColor"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Vbi-P7-EYE"/>
+                                        <exclude reference="dQ3-7h-Eg0"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="openArticle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9hT-OP-VZO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-JU-5LF">
-                                <rect key="frame" x="154.5" y="530" width="105" height="44"/>
+                                <rect key="frame" x="154.5" y="652" width="105" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="105" id="F7w-lV-S20"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="b8R-2C-aks"/>
@@ -92,44 +148,44 @@
                                     <color key="titleColor" systemColor="lightTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="logout:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fXG-YL-7Ch"/>
+                                    <action selector="logoutPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gu4-hf-BA9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YRd-xJ-T0x" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2w8-g7-HTk"/>
+                            <constraint firstItem="6lg-HO-wA7" firstAttribute="leading" secondItem="ogC-ME-cPV" secondAttribute="leading" id="7N8-sj-2Qo"/>
                             <constraint firstItem="NFh-f8-qS9" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8Qa-FY-sJe"/>
                             <constraint firstItem="4JP-JU-5LF" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Gqa-3a-0ML"/>
+                            <constraint firstItem="ogC-ME-cPV" firstAttribute="centerX" secondItem="olB-3V-k0i" secondAttribute="centerX" constant="-0.5" id="GrO-Lm-unD"/>
+                            <constraint firstItem="ogC-ME-cPV" firstAttribute="top" secondItem="olB-3V-k0i" secondAttribute="bottom" constant="8" id="IuO-ua-3Wz"/>
                             <constraint firstItem="NFh-f8-qS9" firstAttribute="top" secondItem="YRd-xJ-T0x" secondAttribute="bottom" constant="40" id="pfL-mg-sCI">
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstItem="NFh-f8-qS9" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="sl5-ol-stA"/>
-                            <constraint firstItem="olB-3V-k0i" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="uTc-ve-MuO"/>
+                            <constraint firstItem="olB-3V-k0i" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="0.5" id="uTc-ve-MuO"/>
+                            <constraint firstItem="6lg-HO-wA7" firstAttribute="top" secondItem="ogC-ME-cPV" secondAttribute="bottom" constant="8" id="uwg-GD-qNw"/>
                             <constraint firstItem="olB-3V-k0i" firstAttribute="top" secondItem="NFh-f8-qS9" secondAttribute="bottom" constant="8" id="wkp-4S-uF9"/>
-                            <constraint firstItem="4JP-JU-5LF" firstAttribute="top" secondItem="olB-3V-k0i" secondAttribute="bottom" constant="8" id="z6H-TP-BxB"/>
+                            <constraint firstItem="4JP-JU-5LF" firstAttribute="top" secondItem="olB-3V-k0i" secondAttribute="bottom" constant="130" id="z6H-TP-BxB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DNj-Qc-SeE"/>
                     <connections>
-                        <outlet property="loginButton" destination="NFh-f8-qS9" id="LmV-NW-8Vz"/>
+                        <outlet property="loginUserButton" destination="NFh-f8-qS9" id="1In-S1-NXQ"/>
                         <outlet property="logoutButton" destination="4JP-JU-5LF" id="ddQ-jd-01M"/>
-                        <outlet property="openIntercomButton" destination="olB-3V-k0i" id="PdT-i9-AJh"/>
+                        <outlet property="openArticleButton" destination="6lg-HO-wA7" id="4TV-Qh-Hoh"/>
+                        <outlet property="openHelpCenterButton" destination="ogC-ME-cPV" id="lsV-cm-DnA"/>
+                        <outlet property="openMessengerButton" destination="olB-3V-k0i" id="b9f-Up-lzG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-188" y="86"/>
+            <point key="canvasLocation" x="-188.40579710144928" y="85.714285714285708"/>
         </scene>
     </scenes>
     <resources>
         <image name="Intercom-logo" width="297" height="75"/>
-        <systemColor name="lightTextColor">
-            <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="lightTextColor">
-            <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="lightTextColor">
             <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
