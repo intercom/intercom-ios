@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD5AAA2A1D92A70F00557FDA /* Intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5AAA291D92A70F00557FDA /* Intercom.framework */; };
-		AD5AAA2B1D92A70F00557FDA /* Intercom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD5AAA291D92A70F00557FDA /* Intercom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		197ACDC126736AE10024C38C /* Intercom.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197ACDC026736AE10024C38C /* Intercom.xcframework */; };
 		ADEBAAA81D3F6D2A0016C6EC /* ITCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEBAAA11D3F6D2A0016C6EC /* ITCAppDelegate.m */; };
 		ADEBAAA91D3F6D2A0016C6EC /* ITCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEBAAA31D3F6D2A0016C6EC /* ITCViewController.m */; };
 		ADEBAAAA1D3F6D2A0016C6EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEBAAA41D3F6D2A0016C6EC /* main.m */; };
@@ -24,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AD5AAA2B1D92A70F00557FDA /* Intercom.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,8 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		197ACDC026736AE10024C38C /* Intercom.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Intercom.xcframework; path = ../../Intercom.xcframework; sourceTree = "<group>"; };
 		1A0F1E081B034B7100DA78D2 /* Sample-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD5AAA291D92A70F00557FDA /* Intercom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intercom.framework; path = ../../Intercom.framework; sourceTree = "<group>"; };
 		ADEBAA9F1D3F6D2A0016C6EC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Sample-ObjC/Info.plist"; sourceTree = SOURCE_ROOT; };
 		ADEBAAA01D3F6D2A0016C6EC /* ITCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITCAppDelegate.h; path = "Sample-ObjC/ITCAppDelegate.h"; sourceTree = SOURCE_ROOT; };
 		ADEBAAA11D3F6D2A0016C6EC /* ITCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ITCAppDelegate.m; path = "Sample-ObjC/ITCAppDelegate.m"; sourceTree = SOURCE_ROOT; };
@@ -50,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD5AAA2A1D92A70F00557FDA /* Intercom.framework in Frameworks */,
+				197ACDC126736AE10024C38C /* Intercom.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +58,7 @@
 		1A0F1DFF1B034B7100DA78D2 = {
 			isa = PBXGroup;
 			children = (
-				AD5AAA291D92A70F00557FDA /* Intercom.framework */,
+				197ACDC026736AE10024C38C /* Intercom.xcframework */,
 				1A0F1E0A1B034B7100DA78D2 /* Sample-ObjC */,
 				1A0F1E091B034B7100DA78D2 /* Products */,
 			);
@@ -319,7 +317,10 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sample-ObjC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.intercom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Sample-ObjC";
 				PROVISIONING_PROFILE = "eceab9ff-a291-4edf-a36e-4be7d6004b75";
@@ -342,7 +343,10 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sample-ObjC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.intercom.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Sample-ObjC";
 				PROVISIONING_PROFILE = "d69d4463-41e8-4e0f-aac6-5caec061a98d";

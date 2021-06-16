@@ -21,14 +21,24 @@ struct LoggedInView: View {
                 Text(email)
             }
             VStack(spacing:15) {
-                StylizedButton("Open Intercom", action: openIntercom)
+                StylizedButton("Open Messenger", action: openMessenger)
+                StylizedButton("Open Help Center", action: openHelpCenter)
+                StylizedButton("Open Article", action: openArticle)
                 StylizedButton("Log out", action: logoutOfIntercom)
             }
         }
     }
     
-    func openIntercom() {
+    func openMessenger() {
         Intercom.presentMessenger()
+    }
+    
+    func openHelpCenter() {
+        Intercom.presentHelpCenter()
+    }
+    
+    func openArticle() {
+        Intercom.presentArticle(<#ARTICLE_ID#>)
     }
     
     func logoutOfIntercom() {
