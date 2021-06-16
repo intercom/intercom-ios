@@ -13,7 +13,9 @@
 
 @property (nonatomic, weak) IBOutlet UIButton *logoutButton;
 @property (nonatomic, weak) IBOutlet UIButton *loginButton;
-@property (nonatomic, weak) IBOutlet UIButton *sendMessageButton;
+@property (nonatomic, weak) IBOutlet UIButton *openMessengerButton;
+@property (weak, nonatomic) IBOutlet UIButton *openArticleButton;
+@property (weak, nonatomic) IBOutlet UIButton *openHelpCenterButton;
 @property (nonatomic, assign) BOOL loggedIn;
 
 @end
@@ -31,7 +33,9 @@
     
     self.loginButton.enabled = !loggedIn;
     self.logoutButton.enabled = loggedIn;
-    self.sendMessageButton.enabled = loggedIn;
+    self.openMessengerButton.enabled = loggedIn;
+    self.openHelpCenterButton.enabled = loggedIn;
+    self.openArticleButton.enabled = loggedIn;
 }
 
 - (IBAction)loginPressed:(id)sender {
@@ -59,8 +63,16 @@
     self.loggedIn = NO;
 }
 
-- (IBAction)openIntercomPressed:(id)sender {
+- (IBAction)openMessengerTapped:(id)sender {
     [Intercom presentMessenger];
+}
+
+- (IBAction)openHelpCenterTapped:(id)sender {
+    [Intercom presentHelpCenter];
+}
+
+- (IBAction)openArticle:(id)sender {
+    [Intercom presentArticle:@"<#ARTICLE_ID#>"];
 }
 
 - (void)handleUserLogin:(UIAlertController *)alertController {

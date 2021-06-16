@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		197ACDC526737B940024C38C /* Intercom.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197ACDC426737B940024C38C /* Intercom.xcframework */; };
 		4C26B6062506838F00124338 /* Sample_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B5F32506838E00124338 /* Sample_SwiftUIApp.swift */; };
 		4C26B6082506838F00124338 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B5F42506838E00124338 /* ContentView.swift */; };
 		4C26B60A2506838F00124338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C26B5F52506838F00124338 /* Assets.xcassets */; };
@@ -17,8 +18,6 @@
 		4C26B6242507E3AF00124338 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B6232507E3AF00124338 /* ViewModifiers.swift */; };
 		4C26B6272507F92500124338 /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B6262507F92500124338 /* LoggedInView.swift */; };
 		4C26B6292507F99400124338 /* LoggedOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B6282507F99400124338 /* LoggedOutView.swift */; };
-		4CC6714E2509360E009D013A /* Intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC6714C2509360A009D013A /* Intercom.framework */; };
-		4CC6714F2509360E009D013A /* Intercom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC6714C2509360A009D013A /* Intercom.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4CC6714F2509360E009D013A /* Intercom.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		197ACDC426737B940024C38C /* Intercom.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Intercom.xcframework; path = ../../Intercom.xcframework; sourceTree = "<group>"; };
 		4C26B5F32506838E00124338 /* Sample_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_SwiftUIApp.swift; sourceTree = "<group>"; };
 		4C26B5F42506838E00124338 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C26B5F52506838F00124338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../iOS/Other/Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +47,6 @@
 		4C26B6232507E3AF00124338 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		4C26B6262507F92500124338 /* LoggedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInView.swift; sourceTree = "<group>"; };
 		4C26B6282507F99400124338 /* LoggedOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutView.swift; sourceTree = "<group>"; };
-		4CC6714C2509360A009D013A /* Intercom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intercom.framework; path = ../../Intercom.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CC6714E2509360E009D013A /* Intercom.framework in Frameworks */,
+				197ACDC526737B940024C38C /* Intercom.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +64,7 @@
 		4C26B5ED2506838E00124338 = {
 			isa = PBXGroup;
 			children = (
-				4CC6714C2509360A009D013A /* Intercom.framework */,
+				197ACDC426737B940024C38C /* Intercom.xcframework */,
 				4C26B5FC2506838F00124338 /* iOS */,
 				4C26B5FB2506838F00124338 /* Products */,
 			);
