@@ -13,14 +13,21 @@ let emailKey = "email"
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var loginButton: UIButton!
+    
+
+    @IBOutlet weak var loginUserButton: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
-    @IBOutlet weak var openIntercomButton: UIButton!
+    @IBOutlet weak var openMessengerButton: UIButton!
+    @IBOutlet weak var openHelpCenterButton: UIButton!
+    @IBOutlet weak var openArticleButton: UIButton!
+    
     var loggedIn = false {
         didSet {
-            loginButton.isEnabled = !loggedIn
+            loginUserButton.isEnabled = !loggedIn
             logoutButton.isEnabled = loggedIn
-            openIntercomButton.isEnabled = loggedIn
+            openMessengerButton.isEnabled = loggedIn
+            openHelpCenterButton.isEnabled = loggedIn
+            openArticleButton.isEnabled = loggedIn
         }
     }
     
@@ -29,7 +36,7 @@ class ViewController: UIViewController {
         loggedIn = UserDefaults.standard.string(forKey: emailKey) != nil
     }
 
-    @IBAction func login(_ sender: Any) {
+    @IBAction func loginTapped(_ sender: Any) {
         //The user is not logged in, so prompt for their email address
         
         let loginAlert = UIAlertController(title: "User Login", message: "Type in an email address", preferredStyle: UIAlertController.Style.alert)
@@ -43,8 +50,16 @@ class ViewController: UIViewController {
         present(loginAlert, animated: true, completion: nil)
     }
     
-    @IBAction func openIntercom(_ sender: Any) {
+    @IBAction func openMessenger(_ sender: Any) {
         Intercom.presentMessenger()
+    }
+    
+    @IBAction func openHelpCenter(_ sender: Any) {
+        Intercom.presentHelpCenter()
+    }
+    
+    @IBAction func openArticle(_ sender: Any) {
+        Intercom.presentArticle(<#ARTICLE_ID#>)
     }
     
     @IBAction func logout(_ sender: Any) {

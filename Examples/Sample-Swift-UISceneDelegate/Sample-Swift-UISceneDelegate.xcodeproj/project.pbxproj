@@ -3,16 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		197ACDC3267377580024C38C /* Intercom.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197ACDC2267377580024C38C /* Intercom.xcframework */; };
 		4C0A0F0D233A8B68008F484B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A0F0C233A8B68008F484B /* AppDelegate.swift */; };
 		4C0A0F0F233A8B68008F484B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A0F0E233A8B68008F484B /* SceneDelegate.swift */; };
 		4C0A0F11233A8B68008F484B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A0F10233A8B68008F484B /* ViewController.swift */; };
 		4C0A0F16233A8B69008F484B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A0F15233A8B69008F484B /* Assets.xcassets */; };
-		4C2F0472235DE0730067CDC4 /* Intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2F0470235DE0690067CDC4 /* Intercom.framework */; };
-		4C2F0473235DE0730067CDC4 /* Intercom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2F0470235DE0690067CDC4 /* Intercom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4C784879233A8C8E00142FA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C784878233A8C8E00142FA7 /* LaunchScreen.storyboard */; };
 		4C78487B233A8CC000142FA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C78487A233A8CC000142FA7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -24,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4C2F0473235DE0730067CDC4 /* Intercom.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,13 +30,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		197ACDC2267377580024C38C /* Intercom.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Intercom.xcframework; path = ../../Intercom.xcframework; sourceTree = "<group>"; };
 		4C0A0F09233A8B68008F484B /* Sample-Swift-UISceneDelegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Swift-UISceneDelegate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0A0F0C233A8B68008F484B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C0A0F0E233A8B68008F484B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4C0A0F10233A8B68008F484B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C0A0F15233A8B69008F484B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C0A0F1A233A8B69008F484B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C2F0470235DE0690067CDC4 /* Intercom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intercom.framework; path = ../../Intercom.framework; sourceTree = "<group>"; };
 		4C784878233A8C8E00142FA7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C78487A233A8CC000142FA7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2F0472235DE0730067CDC4 /* Intercom.framework in Frameworks */,
+				197ACDC3267377580024C38C /* Intercom.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +56,7 @@
 		4C0A0F00233A8B68008F484B = {
 			isa = PBXGroup;
 			children = (
-				4C2F0470235DE0690067CDC4 /* Intercom.framework */,
+				197ACDC2267377580024C38C /* Intercom.xcframework */,
 				4C0A0F0B233A8B68008F484B /* Sample-Swift-UISceneDelegate */,
 				4C0A0F0A233A8B68008F484B /* Products */,
 			);
