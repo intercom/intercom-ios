@@ -1,3 +1,9 @@
+## 10.0.1 
+###### Release Date: 22-06-2021
+
+### Bug Fixes
+* Minor bug fixes and performance improvements.
+
 ## 10.0.0 
 ###### Release Date: 16-06-2021
 
