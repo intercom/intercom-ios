@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		g2dgslsiA94wIUDcjZIE5XlECTk=
+		UOxbQdp4UK7GNWpUc0JwusIBlgo=
 		</data>
 		<key>Intercom.bundle/data/intercom_area_codes.json</key>
 		<data>
@@ -846,7 +846,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3Z+HuQA4Ahm4916HinGUcbuwPt0=
+		VlggWv9WwcQDDHDmWquxq0nkVQM=
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -858,7 +858,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		3Z+HuQA4Ahm4916HinGUcbuwPt0=
+		VlggWv9WwcQDDHDmWquxq0nkVQM=
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -870,7 +870,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2Crh3m1TVkukFllVfs0gdbe5R0Y=
+		3At0ki86oCHAW3wuTiIrep06cvQ=
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -882,7 +882,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386.swiftmodule</key>
 		<data>
-		2Crh3m1TVkukFllVfs0gdbe5R0Y=
+		3At0ki86oCHAW3wuTiIrep06cvQ=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -894,7 +894,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0JLuoaQYdr4ZdppS5L+3JKWIHaI=
+		YLTz+jHfNlxiPXKi8y6YZmMAwxI=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -906,7 +906,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		0JLuoaQYdr4ZdppS5L+3JKWIHaI=
+		YLTz+jHfNlxiPXKi8y6YZmMAwxI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1014,7 +1014,7 @@
 		</data>
 		<key>PrivateHeaders/ICMUtils.h</key>
 		<data>
-		/ASC+3I2HmOOR5YgFSa8S+XSck4=
+		DQAXChzec7T2aYvkmbVDa0Sr6Tw=
 		</data>
 		<key>PrivateHeaders/UIImage+ICMImageUtils.h</key>
 		<data>
@@ -3330,11 +3330,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Z+HuQA4Ahm4916HinGUcbuwPt0=
+			VlggWv9WwcQDDHDmWquxq0nkVQM=
 			</data>
 			<key>hash2</key>
 			<data>
-			aNnnSAs8f3m6SJF9RDvbaDJyWclibfbkCUB97cOzBgs=
+			ulyUryswAw3oXV65lJk+/LqsnTG9YJYLxUCIrFKehvQ=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftdoc</key>
@@ -3363,11 +3363,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Z+HuQA4Ahm4916HinGUcbuwPt0=
+			VlggWv9WwcQDDHDmWquxq0nkVQM=
 			</data>
 			<key>hash2</key>
 			<data>
-			aNnnSAs8f3m6SJF9RDvbaDJyWclibfbkCUB97cOzBgs=
+			ulyUryswAw3oXV65lJk+/LqsnTG9YJYLxUCIrFKehvQ=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -3396,11 +3396,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2Crh3m1TVkukFllVfs0gdbe5R0Y=
+			3At0ki86oCHAW3wuTiIrep06cvQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			xJHc44sqpVVurv6dBtJpu5JdyZ5JFvIKND+otfuLLCA=
+			7EUqvbUOe5f3NCro3RXBuCkg7H+EDvCESUatthoeblU=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/i386.swiftdoc</key>
@@ -3429,11 +3429,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2Crh3m1TVkukFllVfs0gdbe5R0Y=
+			3At0ki86oCHAW3wuTiIrep06cvQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			xJHc44sqpVVurv6dBtJpu5JdyZ5JFvIKND+otfuLLCA=
+			7EUqvbUOe5f3NCro3RXBuCkg7H+EDvCESUatthoeblU=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -3462,11 +3462,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0JLuoaQYdr4ZdppS5L+3JKWIHaI=
+			YLTz+jHfNlxiPXKi8y6YZmMAwxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Udgn2EjKZNNpd6rlJ4DMgy9TAiVJ3pcLOtkPd+VOgDM=
+			GMFK+G9ASY106WxchVbGEwQObQdDzMLk3hDg5Kh8/zc=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftdoc</key>
@@ -3495,11 +3495,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0JLuoaQYdr4ZdppS5L+3JKWIHaI=
+			YLTz+jHfNlxiPXKi8y6YZmMAwxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Udgn2EjKZNNpd6rlJ4DMgy9TAiVJ3pcLOtkPd+VOgDM=
+			GMFK+G9ASY106WxchVbGEwQObQdDzMLk3hDg5Kh8/zc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3792,11 +3792,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/ASC+3I2HmOOR5YgFSa8S+XSck4=
+			DQAXChzec7T2aYvkmbVDa0Sr6Tw=
 			</data>
 			<key>hash2</key>
 			<data>
-			0ZzdVUw+7KUuJB5PmFcb2Fhrr20/+W9cOXEyU9hKqiQ=
+			9XdugZZ1bbtIKT8Osnhp91ftnUbUedjRRaQ/h3eQi8o=
 			</data>
 		</dict>
 		<key>PrivateHeaders/UIImage+ICMImageUtils.h</key>

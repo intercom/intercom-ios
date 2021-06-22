@@ -34,6 +34,7 @@ UIKIT_EXTERN NSString *const IntercomSDKErrorDomain;
 #define ICMSDKDefaultHeader @"X-INTERCOM-AGENT"
 #define ICMSDKWrapperHeader @"X-INTERCOM-AGENT-WRAPPER"
 #define ICMSDKCordovaHeaderValue @"intercom-sdk-cordova"
+#define ICMSDKReactNativeHeaderValue @"intercom-sdk-react-native"
 
 static const NSInteger kICMConversationAvatarWidth                  = 28;
 
