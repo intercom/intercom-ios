@@ -3,6 +3,7 @@
     header "ICMHTTPClientProtocol.h"
     header "ICMHTTPClient.h"
     header "ICMTranslationManager.h"
+    header "ICMHelpCenterTranslationManager.h"
     header "ICMTranslationKeys.h"
     header "ICMEngine.h"
     header "ICMNavigationController.h"

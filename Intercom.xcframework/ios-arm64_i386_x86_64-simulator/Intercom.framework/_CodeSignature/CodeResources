@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UOxbQdp4UK7GNWpUc0JwusIBlgo=
+		ZQVRVkPRK0eyctBtBm6xZtQA9Ns=
 		</data>
 		<key>Intercom.bundle/data/intercom_area_codes.json</key>
 		<data>
@@ -846,7 +846,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VlggWv9WwcQDDHDmWquxq0nkVQM=
+		qVpau2O8qlcAF7n18wS1tgb/KIY=
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -858,7 +858,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		VlggWv9WwcQDDHDmWquxq0nkVQM=
+		qVpau2O8qlcAF7n18wS1tgb/KIY=
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -870,7 +870,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3At0ki86oCHAW3wuTiIrep06cvQ=
+		6HYZAzDSpvx/gvKfHOBvNcY2XSs=
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -882,7 +882,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386.swiftmodule</key>
 		<data>
-		3At0ki86oCHAW3wuTiIrep06cvQ=
+		6HYZAzDSpvx/gvKfHOBvNcY2XSs=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -894,7 +894,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YLTz+jHfNlxiPXKi8y6YZmMAwxI=
+		pkP4y5JBBYwaEt/O1jfhTgseE18=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -906,7 +906,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		YLTz+jHfNlxiPXKi8y6YZmMAwxI=
+		pkP4y5JBBYwaEt/O1jfhTgseE18=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -914,7 +914,7 @@
 		</data>
 		<key>Modules/module.private.modulemap</key>
 		<data>
-		1HzBuc6q6ZiCfxsXxKr8R9J5pa0=
+		BxWP+6WXJvtZqhEmLo871TT7qjk=
 		</data>
 		<key>PrivateHeaders/ICMActiveAdminsAvatarView.h</key>
 		<data>
@@ -934,11 +934,11 @@
 		</data>
 		<key>PrivateHeaders/ICMColor.h</key>
 		<data>
-		MqMJf+i/QiIP9Vr74Gs+dC/mx0o=
+		xw4RLFtDmgpy2Kfhqy96uKtvivA=
 		</data>
 		<key>PrivateHeaders/ICMConfig.h</key>
 		<data>
-		s8GYfW1SveuumJY8ZMbf6rkvvMo=
+		TlratVmyXXUJ4Bjx9V0cS/EL8cg=
 		</data>
 		<key>PrivateHeaders/ICMContentViewController.h</key>
 		<data>
@@ -946,7 +946,7 @@
 		</data>
 		<key>PrivateHeaders/ICMContentViewControllerDelegate.h</key>
 		<data>
-		hsWC5Do50JM7tGwnGhbqRiX3MYo=
+		2a1oegfhrvQt/vff/wmfh2V8w2k=
 		</data>
 		<key>PrivateHeaders/ICMEngine.h</key>
 		<data>
@@ -954,7 +954,7 @@
 		</data>
 		<key>PrivateHeaders/ICMErrorViewController.h</key>
 		<data>
-		7w0VLLvN2hqk4HmiO6MpJX1jLkg=
+		7z5Kk6X40NSBGqOhNOz6bC/85SU=
 		</data>
 		<key>PrivateHeaders/ICMErrorViewDelegate.h</key>
 		<data>
@@ -972,9 +972,13 @@
 		<data>
 		lWSTcx5UgzCOHWrzDJXcJoAaVsE=
 		</data>
+		<key>PrivateHeaders/ICMHelpCenterTranslationManager.h</key>
+		<data>
+		LZRbPoHUjaf222aLYZ9QY5HnGCc=
+		</data>
 		<key>PrivateHeaders/ICMLoadingViewController.h</key>
 		<data>
-		aoNvbN7/giO6v33gkPOE2WTFYNQ=
+		QH1Vbqj+ZMq4Y8HKz23kvDAWaQQ=
 		</data>
 		<key>PrivateHeaders/ICMMetric.h</key>
 		<data>
@@ -1010,7 +1014,7 @@
 		</data>
 		<key>PrivateHeaders/ICMTranslationManager.h</key>
 		<data>
-		0mUk684cc6a47KbuzC97U/K8eVE=
+		kXd7i0hAwIXiH0Rd4koHYTB9s8c=
 		</data>
 		<key>PrivateHeaders/ICMUtils.h</key>
 		<data>
@@ -3330,11 +3334,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VlggWv9WwcQDDHDmWquxq0nkVQM=
+			qVpau2O8qlcAF7n18wS1tgb/KIY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ulyUryswAw3oXV65lJk+/LqsnTG9YJYLxUCIrFKehvQ=
+			wZqkgw28M7ireS9RJumyCbpAT3GcIc4MmwvL0WDTTd0=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftdoc</key>
@@ -3363,11 +3367,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VlggWv9WwcQDDHDmWquxq0nkVQM=
+			qVpau2O8qlcAF7n18wS1tgb/KIY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ulyUryswAw3oXV65lJk+/LqsnTG9YJYLxUCIrFKehvQ=
+			wZqkgw28M7ireS9RJumyCbpAT3GcIc4MmwvL0WDTTd0=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -3396,11 +3400,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3At0ki86oCHAW3wuTiIrep06cvQ=
+			6HYZAzDSpvx/gvKfHOBvNcY2XSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			7EUqvbUOe5f3NCro3RXBuCkg7H+EDvCESUatthoeblU=
+			ejIfJZM+kkNYxGA5Z60l9peU/YgCbYP58flva37QJYI=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/i386.swiftdoc</key>
@@ -3429,11 +3433,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3At0ki86oCHAW3wuTiIrep06cvQ=
+			6HYZAzDSpvx/gvKfHOBvNcY2XSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			7EUqvbUOe5f3NCro3RXBuCkg7H+EDvCESUatthoeblU=
+			ejIfJZM+kkNYxGA5Z60l9peU/YgCbYP58flva37QJYI=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -3462,11 +3466,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YLTz+jHfNlxiPXKi8y6YZmMAwxI=
+			pkP4y5JBBYwaEt/O1jfhTgseE18=
 			</data>
 			<key>hash2</key>
 			<data>
-			GMFK+G9ASY106WxchVbGEwQObQdDzMLk3hDg5Kh8/zc=
+			xwLp/8i9F+vYizDke+2fS+cxZl4nSBWGE3igpKm6Nxo=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftdoc</key>
@@ -3495,11 +3499,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YLTz+jHfNlxiPXKi8y6YZmMAwxI=
+			pkP4y5JBBYwaEt/O1jfhTgseE18=
 			</data>
 			<key>hash2</key>
 			<data>
-			GMFK+G9ASY106WxchVbGEwQObQdDzMLk3hDg5Kh8/zc=
+			xwLp/8i9F+vYizDke+2fS+cxZl4nSBWGE3igpKm6Nxo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3517,11 +3521,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1HzBuc6q6ZiCfxsXxKr8R9J5pa0=
+			BxWP+6WXJvtZqhEmLo871TT7qjk=
 			</data>
 			<key>hash2</key>
 			<data>
-			4POh7kLHUxhmVo9WxHAiWg2J6+Q1BRdDys/I6AmBwTM=
+			AAsD6cKvkOG76DBMiX3mN/0UtEkiCTRw/Xki0Yy7ZIo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ICMActiveAdminsAvatarView.h</key>
@@ -3572,22 +3576,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MqMJf+i/QiIP9Vr74Gs+dC/mx0o=
+			xw4RLFtDmgpy2Kfhqy96uKtvivA=
 			</data>
 			<key>hash2</key>
 			<data>
-			/rQX8JKhQ0pyZqGkTfZsOnFjSwYnD5PAULIikfbDr9M=
+			QIAxIXnP8S/0i8r+3nw/bvrRbXOIJecto0UJxRvrVe0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ICMConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s8GYfW1SveuumJY8ZMbf6rkvvMo=
+			TlratVmyXXUJ4Bjx9V0cS/EL8cg=
 			</data>
 			<key>hash2</key>
 			<data>
-			t2vkcGymSEVP6FfYMAlkb7i7q9jqbFlxzsrl6Vf0H/4=
+			3s5zKP19Ym2gtumiGnv7bVzn5+JoNPDyqvHz9U2oB6Y=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ICMContentViewController.h</key>
@@ -3605,11 +3609,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hsWC5Do50JM7tGwnGhbqRiX3MYo=
+			2a1oegfhrvQt/vff/wmfh2V8w2k=
 			</data>
 			<key>hash2</key>
 			<data>
-			dR8ZVKBxS2pUcL5Wm82JMpG4UUvz9Qib4a5w6dfEKpI=
+			+1ZrnEU+qspjEgHfk7o0XyQ1Rs+uhcUr0Zk331dnwoQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ICMEngine.h</key>
@@ -3627,11 +3631,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7w0VLLvN2hqk4HmiO6MpJX1jLkg=
+			7z5Kk6X40NSBGqOhNOz6bC/85SU=
 			</data>
 			<key>hash2</key>
 			<data>
-			y4mQzS+qQtDcvjzbnN/9zfyde3Ut/pkio66LaZe41KI=
+			d4IN9/AQiWGsqBhleML3B360kXN9Lxii31zdi39Bsz4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ICMErrorViewDelegate.h</key>
@@ -3678,15 +3682,26 @@
 			INkYase1RaV9Zcks/qW2YmRkOx5OmvgoOJX/dBrM1h8=
 			</data>
 		</dict>
+		<key>PrivateHeaders/ICMHelpCenterTranslationManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LZRbPoHUjaf222aLYZ9QY5HnGCc=
+			</data>
+			<key>hash2</key>
+			<data>
+			8N/MqHKTMR2kYRwa+YOFNHeKS51/TzEwXmEuhteQ4hA=
+			</data>
+		</dict>
 		<key>PrivateHeaders/ICMLoadingViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aoNvbN7/giO6v33gkPOE2WTFYNQ=
+			QH1Vbqj+ZMq4Y8HKz23kvDAWaQQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qlacgk7KrSOE92sknxIV7/iwKpCVD+FF+EDMeCRisIQ=
+			pf+VCZ5/Dz7E3z/kAnDUNFB2IiK6j0s7FDWn5XG5fE4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ICMMetric.h</key>
@@ -3781,11 +3796,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0mUk684cc6a47KbuzC97U/K8eVE=
+			kXd7i0hAwIXiH0Rd4koHYTB9s8c=
 			</data>
 			<key>hash2</key>
 			<data>
-			/LEkS51F5DQyUX73fFibQ15Cmgw9Z+1qqjFw59X4f2k=
+			h1Jhe1pwxf0QLMl1Xp3vfe8i6pinLZue4Vaai3z9OJU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ICMUtils.h</key>

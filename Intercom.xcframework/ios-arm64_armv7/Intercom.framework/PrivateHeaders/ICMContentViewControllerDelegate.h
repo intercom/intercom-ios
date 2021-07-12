@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 - (void)contentDidLoadWithDismissEnabled:(BOOL)dismissEnabled;
 - (void)showLoadingViewWithImage:(UIImage *)image;
-- (void)contentLoadingDidFail:(NSString *)errorMessage retryEnabled:(BOOL)retryEnabled;
+- (void)contentLoadingDidFail:(NSString *)errorMessage
+             showActionButton:(BOOL)showActionButton
+            actionButtonTitle:(NSString * _Nullable)actionButtonTitle;
 - (void)configureCloseButtonForBackgroundColor:(UIColor *)backgroundColor;
 - (void)closeContentModal;
 

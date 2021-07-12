@@ -8,6 +8,7 @@
 
 @interface ICMTranslationManager : NSObject
 
++ (NSLocale *)translationLocale; 
 + (NSString *)translationForKey:(NSString *)key;
 + (NSString *)translationForKey:(NSString *)key params:(NSDictionary<NSString *, NSString *> *)params;
 + (NSArray *)supportedLocales;

@@ -7,6 +7,7 @@ static NSString *const kICMMessengerLogoImageLoadedNotification = @"kICMMessenge
 
 @protocol ICMConfigProtocol
 @property (readonly) BOOL inboundMessages;
+@property (readonly) BOOL accessToTeammateEnabled;
 @end
 
 @interface ICMConfig : ICMSafeNetworkModel <ICMConfigProtocol,NSCoding>
@@ -50,6 +51,7 @@ static NSString *const kICMMessengerLogoImageLoadedNotification = @"kICMMessenge
 @property (nonatomic, copy) NSString *helpCenterBaseColorString;
 
 @property (nonatomic, strong) NSLocale *intercomLocale;
+@property (nonatomic, strong) NSLocale *helpCenterLocale;
 @property (nonatomic, strong) NSSet<NSString *> *features;
 
 + (instancetype)instanceFromDictionary:(NSDictionary *)aDictionary;

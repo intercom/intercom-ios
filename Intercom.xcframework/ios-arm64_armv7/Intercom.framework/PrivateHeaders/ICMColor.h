@@ -44,6 +44,12 @@
 + (BOOL)isLightColor:(UIColor *)backgroundColor;
 
 
+#pragma mark - System color backports
+
+/// A backport of `systemGray5` which is available from iOS 13.0+. This should be deleted when dropping iOS 12.
++ (UIColor *)systemGray5;
+
+
 #pragma mark - Active/Away States
 
 + (UIColor *)activeColour;
