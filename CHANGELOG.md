@@ -1,3 +1,14 @@
+## 10.0.2 
+###### Release Date: 12-07-2021
+
+### Improvements
+* The Help Center now renders Articles in the correct user locale.
+
+### Bug Fixes
+* Fixed an issue that was causing a crash if an article was opened when no Articles subscription was active.
+* Emoji reactions are now always visible on Post messages
+* A user's profile now displays that they have viewed a specific Article.
+
 ## 10.0.1 
 ###### Release Date: 22-06-2021
 
