@@ -1,3 +1,11 @@
+## 10.0.3 
+###### Release Date: 26-07-2021
+
+### Bug Fixes
+* Fixed an issue whereby tapping “Send us a Message” on our Help Center search results screen brought you to the Messenger home screen instead of a new conversation. 
+* Permission requests in Mobile Carousels respect Apple’s updated Human Interface Guidelines. Permission primers can no longer give users the option to skip the permission request. 
+* Other minor improvements. 
+
 ## 10.0.2 
 ###### Release Date: 12-07-2021
 
