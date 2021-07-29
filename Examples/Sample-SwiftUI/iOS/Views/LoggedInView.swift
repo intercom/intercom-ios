@@ -10,7 +10,8 @@ import Intercom
 
 struct LoggedInView: View {
     
-    @Binding var email: String
+    @Binding var userHash: String
+    @Binding var userId: String
     @Binding var loggedIn: Bool
 
     var body: some View {
@@ -18,7 +19,7 @@ struct LoggedInView: View {
             VStack(spacing:15) {
                 Text("Logged in as:")
                     .titleStyle()
-                Text(email)
+                Text(userId)
             }
             VStack(spacing:15) {
                 StylizedButton("Open Messenger", action: openMessenger)
@@ -38,7 +39,7 @@ struct LoggedInView: View {
     }
     
     func openArticle() {
-        Intercom.presentArticle(<#ARTICLE_ID#>)
+        Intercom.presentArticle("article placeholder")
     }
     
     func logoutOfIntercom() {
@@ -46,18 +47,21 @@ struct LoggedInView: View {
         Intercom.logout()
         
         let defaults = UserDefaults.standard
-        defaults.removeObject(forKey: emailKey)
+        defaults.removeObject(forKey: hashKey)
+        defaults.removeObject(forKey: userIdKey)
         loggedIn = false
-        email = ""
+        userHash = ""
+        userId = ""
     }
     
 }
 
 struct LoggedInView_Previews: PreviewProvider {
-    @State static private var email = "myemail@email.com"
+    @State static private var userHash = "my user hmac"
+    @State static private var userId = "my user id"
     @State static private var loggedIn = true
     
     static var previews: some View {
-        LoggedInView(email: $email, loggedIn: $loggedIn)
+        LoggedInView(userHash: $userHash, userId: $userId, loggedIn: $loggedIn)
     }
 }

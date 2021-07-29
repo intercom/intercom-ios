@@ -10,8 +10,9 @@ import Intercom
 
 struct ContentView: View {
 
-    @State private var email = UserDefaults.standard.string(forKey: emailKey) ?? ""
-    @State private var loggedIn = UserDefaults.standard.string(forKey: emailKey) != nil
+    @State private var userHash = UserDefaults.standard.string(forKey: hashKey) ?? ""
+    @State private var userId = UserDefaults.standard.string(forKey: userIdKey) ?? ""
+    @State private var loggedIn = UserDefaults.standard.string(forKey: userIdKey) != nil
 
     var body: some View {
         VStack(alignment: .center, spacing: 80) {
@@ -20,9 +21,9 @@ struct ContentView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: 200)
             if !loggedIn {
-                LoggedOutView(email: $email, loggedIn:$loggedIn)
+                LoggedOutView(userHash: $userHash, userId: $userId, loggedIn: $loggedIn)
             } else {
-                LoggedInView(email: $email, loggedIn:$loggedIn)
+                LoggedInView(userHash: $userHash, userId: $userId, loggedIn: $loggedIn)
             }
         }.padding()
     }

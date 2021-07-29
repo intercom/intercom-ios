@@ -10,7 +10,8 @@ import Intercom
 
 let INTERCOM_APP_ID = "<#YOUR APP ID#>"
 let INTERCOM_API_KEY = "<#YOUR API KEY#>"
-let emailKey = "email"
+let hashKey = "hash"
+let userIdKey = "userid"
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -28,8 +29,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         #endif
         
         let defaults = UserDefaults.standard
-        if let email = defaults.string(forKey: emailKey) {
-            Intercom.registerUser(withEmail: email)
+        if let hash = defaults.string(forKey: hashKey) {
+            Intercom.setUserHash(hash)
+        }
+        if let userId = defaults.string(forKey: userIdKey) {
+            Intercom.registerUser(withUserId: userId)
         }
     }
 
