@@ -101,6 +101,7 @@ static NSString *const kICMTKGrinningFaceBigEyesEmoji                   = @"grin
 static NSString *const kICMTKNeutralFaceEmoji                           = @"neutral_face_emoji";
 static NSString *const kICMTKDisappointedFaceEmoji                      = @"disappointed_face_emoji";
 static NSString *const kICMTKBrowseAllHelpTopics                        = @"browse_all_help_topics";
+static NSString *const kICMTKSearchForHelp                              = @"search_for_help";
 
 #pragma mark - Photos
 static NSString *const kICMTKNoPhotos                                   = @"no_photos";

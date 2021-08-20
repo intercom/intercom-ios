@@ -6,6 +6,8 @@
 #import <Foundation/Foundation.h>
 #import "ICMHTTPClientProtocol.h"
 
+@class ArticleMetaData;
+
 @interface ICMHTTPClient : NSObject <ICMHTTPClientProtocol>
 
 #pragma mark - User Updates
@@ -47,11 +49,11 @@
 
 /// Create a new conversation.
 /// @param blocks The blocks.
-/// @param articleId If a conversation is started from an article, the articleId should be passed through. This allows teammates know what article a conversation was started from.
+/// @param articleMetaData If a conversation is started from an article, the articleId should be passed through. This allows teammates know what article a conversation was started from. The articleSource will also be included when Help Center when opened from the Search/Browse card
 /// @param success Success completion block.
 /// @param failure Failure completion block.
 + (void)createConversationWithBlocks:(NSArray<NSDictionary *> *)blocks
-                           articleId:(NSString *)articleId
+                     articleMetaData:(ArticleMetaData *)articleMetaData
                              success:(ICMHTTPConversationSuccess)success
                                error:(ICMHTTPClientError)failure;
 + (void)replyToConversation:(NSString *)conversationId
@@ -72,7 +74,7 @@
 #pragma mark - Articles
 
 + (void)article:(NSString *)articleId success:(ICMHTTPArticleSuccess)success error:(ICMHTTPClientError)failure;
-+ (void)reactToArticle:(NSString *)articleId articleContentId:(NSString *)articleContentId withReactionIndex:(NSUInteger)index allowAutoResponses:(BOOL)allowAutoResponses;
++ (void)reactToArticle:(NSString *)articleId articleContentId:(NSString *)articleContentId withReactionIndex:(NSUInteger)index allowAutoResponses:(BOOL)allowAutoResponses articleSource:(NSString *)articleSource;
 
 
 #pragma mark - GIFs
@@ -163,6 +165,7 @@
                           error:(ICMHTTPClientError)failure;
 
 + (void)getHelpCenterSearchResults:(NSString*)searchText
+                            source:(NSString*)source
                             success:(ICMHTTPArraySuccess)success
                               error:(ICMHTTPClientError)failure;
 

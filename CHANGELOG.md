@@ -1,3 +1,13 @@
+## 10.1.0 
+###### Release Date: 20-08-2021
+
+### Enhancements
+*  If you’re enrolled in our Messenger early access programme, this upgrade will display the newly designed article search card on the Messenger home screen. This change won’t affect you if your workspace doesn’t have early access to these features.
+
+### Bug Fixes
+* Fixed an issue in the Help Center where tapping the ‘retry’ button didn’t always attempt to load the article again.
+* Fixed an issue where cards on the Messenger home screen did not always resize correctly when the screen orientation changed.
+
 ## 10.0.3 
 ###### Release Date: 26-07-2021
 

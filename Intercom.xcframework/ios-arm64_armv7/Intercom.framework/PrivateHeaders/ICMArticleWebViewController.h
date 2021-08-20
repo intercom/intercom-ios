@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "ICMContentViewController.h"
+@class HelpCenterMetricService;
 
 @protocol ICMContentViewControllerDelegate;
 
 @interface ICMArticleWebViewController : UIViewController <ICMContentViewController>
 
 @property (nonatomic, weak) id <ICMContentViewControllerDelegate> contentDelegate;
-- (instancetype)initWithId:(NSString *)articleId;
+- (instancetype)initWithId:(NSString *)articleId metricService:(id)metricService;
 
 @end

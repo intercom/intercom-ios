@@ -31,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Help Center Presentation
 - (void)presentHelpCenter;
+- (void)presentHelpCenterFromSearchBrowse; 
 - (void)presentHelpCenterCollections:(NSArray<NSString *> *)collectionIds;
 - (void)presentHelpCenterCollection:(NSString *)collectionId;
 - (void)presentArticle:(NSString *)articleId;

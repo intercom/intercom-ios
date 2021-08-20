@@ -11,7 +11,8 @@
 typedef NS_ENUM(NSUInteger, ICMMetricEventType) {
     ICMMetricEventTypeMessenger     = 0,
     ICMMetricEventTypeEducate       = 1,
-    ICMMetricEventTypeCarousel      = 2
+    ICMMetricEventTypeCarousel      = 2,
+    ICMMetricEventTypeSearchBrowse  = 3
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -55,6 +56,8 @@ static NSString *const ICMMetricEventObjectMessengerSheet                   = @"
 static NSString *const ICMMetricEventObjectHomescreen                       = @"home_screen";
 static NSString *const ICMMetricEventObjectHelpCenterData                   = @"help_center_data";
 static NSString *const ICMMetricEventObjectArticleReaction                  = @"article_reaction";
+static NSString *const ICMMetricEventObjectSearchBrowse                     = @"search_browse_card";
+static NSString *const ICMMetricEventObjectSearchBrowseInput                = @"search_browse_card_input";
 
 #pragma mark Carousel
 static NSString *const ICMMetricEventObjectCarouselMessage                = @"carousel_message";
@@ -78,6 +81,8 @@ static NSString *const ICMMetricEventPlaceHelpCenterArticle               = @"ar
 static NSString *const ICMMetricEventPlaceHelpCenterAPI                   = @"api";
 static NSString *const ICMMetricEventPlaceLegacyArticleSearchApp          = @"legacy_article_search_app";
 static NSString *const ICMMetricEventPlacePushNotification                = @"push";
+static NSString *const ICMMetricEventPlaceHomeScreen                      = @"home-screen";
+static NSString *const ICMMetricEventPlaceSearchBrowse                    = @"search_browse";
 
 
 #pragma mark - Context
@@ -116,6 +121,7 @@ static NSString *const ICMMetricEventContextReactionSad               = @"reacti
 static NSString *const ICMMetricEventContextHumanStyle                = @"style_human";
 static NSString *const ICMMetricEventContextBotStyle                  = @"style_bot";
 static NSString *const ICMMetricEventContextArticle                   = @"article";
+static NSString *const ICMMetricEventContextMessenger                 = @"messenger";
 
 #pragma mark Carousel Permissions
 static NSString *const ICMMetricEventContextPushNotification        = @"push_notifications_permission";
@@ -157,6 +163,7 @@ static NSString *const kICMMetricEventInfoSource                = @"source";
 static NSString *const kICMMetricEventInfoErrorCode             = @"error_code";
 static NSString *const kICMMetricEventInfoConversationShown     = @"conversation_shown";
 static NSString *const kICMMetricEventInfoFiltered              = @"filtered";
+static NSString *const kICMMetricEventInfoHomeScreenIndex       = @"home_screen_index";
 
 #pragma mark - Info Values
 static NSString *const kICMMetricEventInfoLauncherStateEmpty            = @"empty";

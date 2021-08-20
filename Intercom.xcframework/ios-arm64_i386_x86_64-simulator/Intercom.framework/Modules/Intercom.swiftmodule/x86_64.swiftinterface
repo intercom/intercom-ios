@@ -15,6 +15,17 @@ import os
   @objc weak public var startConversationDelegate: HelpCenterStartConversationViewDelegate?
   @objc deinit
 }
+@_hasMissingDesignatedInitializers @objc public class AvailableTeammatesView : UIKit.UIStackView {
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(ICMSearchBrowseView) public class SearchBrowseView : UIKit.UIView {
+  @objc override dynamic public convenience init(frame: CoreGraphics.CGRect)
+  public init(_ frame: CoreGraphics.CGRect, _ config: Intercom_Private.ICMConfigProtocol = ICMConfig.shared())
+  @objc public func searchHelpArticlesAction()
+  @objc public func heightForCard(width: CoreGraphics.CGFloat) -> CoreGraphics.CGFloat
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HelpCenterDataService : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc public func fetchCollections(completion: @escaping ([HelpCenterCollection]?, Swift.Error?) -> Swift.Void)
@@ -22,7 +33,17 @@ import os
   @objc public func searchResults(for searchTerm: Swift.String, completion: @escaping ([HelpCenterArticleSearchResult]?, Swift.Error?) -> Swift.Void)
   @objc deinit
 }
+@objc @objcMembers public class ArticleMetaData : ObjectiveC.NSObject {
+  @objc public static var searchBrowseSource: Swift.String
+  @objc public var articleId: Swift.String?
+  @objc public var articleSource: Swift.String?
+  @objc public init(id: Swift.String?, source: Swift.String?)
+  @objc deinit
+  @objc override dynamic public init()
+}
 @_inheritsConvenienceInitializers @objc public class HelpCenterMetricService : ObjectiveC.NSObject {
+  @objc public var contextIsSearchBrowse: Swift.Bool
+  @objc public static func addSearchBrowseViewedEvent(homeScreenIndex: Swift.Int)
   @objc public static func addOpenedFromAPIEvent()
   @objc public static func addOpenedArticleFromAPIEvent()
   @objc public static func addOpenedFromConversationEvent()
@@ -31,12 +52,12 @@ import os
   @objc public static func addOpenedFromMessengerHomeAppEvent()
   @objc public static func addOpenedFromCarousel()
   @objc public static func addOpenedFromPushNotification()
-  @objc public static func addArticleViewedEvent()
-  @objc public static func addArticleFailedEvent(errorCode: Foundation.NSNumber)
-  @objc public static func addHappyReactionEvent()
-  @objc public static func addNeutralReactionEvent()
-  @objc public static func addSadReactionEvent(conversationOptionShown: Swift.Bool)
-  @objc public static func addNewConversationFromArticleEvent(accessToTeammate: Swift.Bool)
+  @objc public func addArticleViewedEvent()
+  @objc public func addArticleFailedEvent(errorCode: Foundation.NSNumber)
+  @objc public func addHappyReactionEvent()
+  @objc public func addNeutralReactionEvent()
+  @objc public func addSadReactionEvent(conversationOptionShown: Swift.Bool)
+  @objc public func addNewConversationFromArticleEvent(accessToTeammate: Swift.Bool)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -59,6 +80,7 @@ extension Intercom {
   @objc public convenience init(withCollections collectionIds: [Swift.String])
   @objc public convenience init(withCollection collectionId: Swift.String)
   @objc dynamic public init()
+  @objc public convenience init(fromSearchBrowse: Swift.Bool)
   @objc override dynamic public func viewDidLoad()
   @objc override dynamic public func viewDidLayoutSubviews()
   @objc deinit

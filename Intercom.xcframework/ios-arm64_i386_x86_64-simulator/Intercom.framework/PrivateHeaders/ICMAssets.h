@@ -56,11 +56,11 @@
 + (UIImage *)undoIcon;
 
 + (UIImage *)homescreenFailedImage;
++ (UIImage *)searchIcon;
 
 // Help Center
 + (UIImage *)helpCenterLoadingImage;
 + (UIImage *)helpCenterChevron;
-+ (UIImage *)helpCenterSearchIcon;
 
 // Carousel
 + (UIImage *)screenActionCheckmark;

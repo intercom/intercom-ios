@@ -100,5 +100,8 @@ typedef NS_ENUM(NSInteger, ICMUserIdentityType) {
 + (BOOL)sceneManifestPresent;
 
 + (BOOL)shouldShowPhotoUsagePListError;
+
 + (NSString *)extractArticleIdFromSheetParams:(NSDictionary *)params;
+
++ (BOOL)usingLargeFontSize;
 @end

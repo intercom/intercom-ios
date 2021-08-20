@@ -51,6 +51,7 @@ typedef void  (^ICMHTTPDictionarySuccess)(NSDictionary *object);
                           error:(nullable ICMHTTPClientError)failure;
 
 + (void)getHelpCenterSearchResults:(NSString*)searchText
+                            source:(nullable NSString*)source
                             success:(nullable ICMHTTPArraySuccess)success
                               error:(nullable ICMHTTPClientError)failure;
 
