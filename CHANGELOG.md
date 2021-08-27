@@ -1,3 +1,10 @@
+## 10.1.1 
+###### Release Date: 27-08-2021
+
+### Bug Fixes
+* Fixed an issue that resulted in the `Intercom.xcframework` binary being larger in size that it should be. If you have installed [Release 10.1.0](https://github.com/intercom/intercom-ios/releases/tag/10.1.0), please update to this latest version. 
+
+
 ## 10.1.0 
 ###### Release Date: 20-08-2021
 
