@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qUmEHRJze5i17v0yrk6uDTFXhYg=
+		N65al0+883jV7MpMX8ZsC9EdIrk=
 		</data>
 		<key>InterBlocksAssets.bundle/Assets.car</key>
 		<data>
@@ -870,7 +870,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		apo/I7DefAcaaSKGn5gi0aAKQqY=
+		5fJbBckRP6kOrVsFM+aFqOOuEyY=
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -882,7 +882,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		apo/I7DefAcaaSKGn5gi0aAKQqY=
+		5fJbBckRP6kOrVsFM+aFqOOuEyY=
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -894,7 +894,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SiNIEO9NaTPvTz+K21Qg1Yi9xiE=
+		gESE2EEivPUyEdXuczA5He+mC1Y=
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -906,7 +906,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/i386.swiftmodule</key>
 		<data>
-		SiNIEO9NaTPvTz+K21Qg1Yi9xiE=
+		gESE2EEivPUyEdXuczA5He+mC1Y=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -918,7 +918,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Q3fA4nKrFr/TyY4YSteu+MTLF2A=
+		P9l0KAuUfnZSCAR67rniGX8Sls0=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -930,7 +930,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Q3fA4nKrFr/TyY4YSteu+MTLF2A=
+		P9l0KAuUfnZSCAR67rniGX8Sls0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3424,11 +3424,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			apo/I7DefAcaaSKGn5gi0aAKQqY=
+			5fJbBckRP6kOrVsFM+aFqOOuEyY=
 			</data>
 			<key>hash2</key>
 			<data>
-			H6YF4EONTzo7EJlYhb/idfrby7lB7Gn3hG4c/ty8sQA=
+			cVwApdLrDfhn78D5164UhY6FiS4Va7LdBb6mggJHaWI=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftdoc</key>
@@ -3457,11 +3457,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			apo/I7DefAcaaSKGn5gi0aAKQqY=
+			5fJbBckRP6kOrVsFM+aFqOOuEyY=
 			</data>
 			<key>hash2</key>
 			<data>
-			H6YF4EONTzo7EJlYhb/idfrby7lB7Gn3hG4c/ty8sQA=
+			cVwApdLrDfhn78D5164UhY6FiS4Va7LdBb6mggJHaWI=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -3490,11 +3490,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SiNIEO9NaTPvTz+K21Qg1Yi9xiE=
+			gESE2EEivPUyEdXuczA5He+mC1Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			assUUmtMmF8vhQQKv3/zmbkLWShRVo6rmdPq0g3E890=
+			14IHiezgSwH3hX/rbakX/icB6XKI1x3us8YSCdZPsus=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/i386.swiftdoc</key>
@@ -3523,11 +3523,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SiNIEO9NaTPvTz+K21Qg1Yi9xiE=
+			gESE2EEivPUyEdXuczA5He+mC1Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			assUUmtMmF8vhQQKv3/zmbkLWShRVo6rmdPq0g3E890=
+			14IHiezgSwH3hX/rbakX/icB6XKI1x3us8YSCdZPsus=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -3556,11 +3556,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3fA4nKrFr/TyY4YSteu+MTLF2A=
+			P9l0KAuUfnZSCAR67rniGX8Sls0=
 			</data>
 			<key>hash2</key>
 			<data>
-			FqoeuPuUVR58fK82RxTWen3Lu4y/8Ro++47BcVHGpxM=
+			B0Pno4MsoPpXexHnbOLq6TCIOe4DJjepSUz56hto7Zs=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftdoc</key>
@@ -3589,11 +3589,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3fA4nKrFr/TyY4YSteu+MTLF2A=
+			P9l0KAuUfnZSCAR67rniGX8Sls0=
 			</data>
 			<key>hash2</key>
 			<data>
-			FqoeuPuUVR58fK82RxTWen3Lu4y/8Ro++47BcVHGpxM=
+			B0Pno4MsoPpXexHnbOLq6TCIOe4DJjepSUz56hto7Zs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
