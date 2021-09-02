@@ -1,3 +1,9 @@
+## 10.1.3 
+###### Release Date: 02-09-2021
+
+### Bug Fixes
+* Fixed an issue that caused the Messenger to be presented twice on screen.
+
 ## 10.1.2 
 ###### Release Date: 01-09-2021
 
