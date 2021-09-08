@@ -1,3 +1,9 @@
+## 10.1.4 
+###### Release Date: 08-09-2021
+
+### Bug Fixes
+* Fixed an issue that was causing the incorrect username to be displayed on the Messenger Home screen.
+
 ## 10.1.3 
 ###### Release Date: 02-09-2021
 
