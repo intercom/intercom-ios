@@ -13,8 +13,8 @@
 /*!
  To try out the sample, change these values to your own iOS API key and App ID.
  */
-#define INTERCOM_APP_ID  @"<#YOUR APP ID#>"
-#define INTERCOM_API_KEY @"<#YOUR API KEY#>"
+#define INTERCOM_APP_ID  @"<#upkq77u4#>"
+#define INTERCOM_API_KEY @"<#dG9rOmYwMGVmZTMwXzYxNTRfNGZkNl85MjVjX2E5NGJjOWNlYTdlNDoxOjA=#>"
 
 @implementation ITCAppDelegate
 
