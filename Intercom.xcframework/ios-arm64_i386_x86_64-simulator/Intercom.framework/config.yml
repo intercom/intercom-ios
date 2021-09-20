@@ -1,0 +1,751 @@
+# Default VM config to be used for macOS builds
+macos_config: &macos_config
+  macos:
+    xcode: 13.0.0
+  shell: /bin/bash --login -eo pipefail
+
+# Always run job
+run_always: &run_always
+  filters:
+    tags:
+      only: /.*/
+
+# Only run job on Release build
+run_on_release: &run_on_release
+  filters:
+    tags:
+      only: /.*/
+    branches:
+      ignore: /.*/
+
+# Only run job on Master build
+run_on_master: &run_on_master
+  filters:
+    branches:
+      only: master
+      
+run_on_release_and_master: &run_on_release_and_master
+  filters:
+    tags:
+      only: /.*/
+    branches:
+      only: master
+
+# Cache the project dependencies
+cache_dependencies: &cache_dependencies
+  save_cache:
+    key: v3-ios-sdk-dependencies-cache-{{ checksum "Gemfile.lock" }}-{{ checksum "Podfile.lock" }}
+    paths:
+      - Pods
+      - IntercomSDK.xcworkspace
+      - vendor
+
+
+# Restore project dependencies from the cache
+restore_dependencies_cache: &restore_dependencies_cache
+  restore_cache:
+    keys:
+      - v3-ios-sdk-dependencies-cache-{{ checksum "Gemfile.lock" }}-{{ checksum "Podfile.lock" }}
+      - v3-ios-sdk-dependencies-cache-{{ checksum "Gemfile.lock" }}-{{ checksum "Podfile.lock" }}-
+      - v3-ios-sdk-dependencies-cache-{{ checksum "Gemfile.lock" }}-
+      - v3-ios-sdk-dependencies-cache-
+
+
+# Run the dependencies.sh script to update the project dependencies if needed
+update_dependencies_if_needed: &update_dependencies_if_needed
+    run:
+      name: Update dependencies if needed
+      command: ./script/circle/dependencies.sh
+
+setup_ruby: &setup_ruby
+    run:
+      name: Setup Ruby
+      command: sed -i '' 's/.*chruby ruby.*/chruby ruby-2.7.4/' ~/.bash_profile
+      
+setup_bundler: &setup_bundler
+    run:
+      name: Setup Bundler
+      command: gem install bundler
+
+
+# This maps stores simulator crash reports as build artifacts
+store_crash_logs: &store_crash_logs
+  store_artifacts:
+    path: ~/Library/Logs/DiagnosticReports
+    destination: CrashReports
+
+
+# Run UI Tests for the specified $DEVICE_TARGET and $TEST_BUCKET
+ui_tests: &ui_tests
+  steps:
+    - <<: *setup_ruby
+    - <<: *setup_bundler
+    - attach_workspace:
+        at: .
+    - run:
+        name: Test
+        command: |
+          cd Sample
+          export APP_BUNDLE_PATH="../DerivedData/Build/Products/Debug-iphonesimulator/UI Tests.app"
+          bundle exec cucumber -t ${TEST_BUCKET} --retry 3 --no-strict --format pretty --format junit --out ./test-output
+    - store_test_results:
+        path: Sample/test-output
+    - <<: *store_crash_logs
+    - run:
+        name: Store screenshots
+        command: |
+            mkdir -p /tmp/failure_screenshots
+            cp Sample/*.png /tmp/failure_screenshots
+        when: on_fail
+    - store_artifacts:
+        path: /tmp/failure_screenshots
+    - <<: *store_crash_logs
+
+
+# Run smoke tests for the $SMOKE_TEST_SCHEME scheme
+smoke_test_steps: &smoke_test_steps
+  steps:
+    - checkout
+    - <<: *setup_ruby
+    - <<: *setup_bundler
+    - attach_workspace:
+        at: .
+    - <<: *restore_dependencies_cache
+    - <<: *update_dependencies_if_needed
+    - run:
+        name: Setup code signing
+        command: cd "Smoke Test" && bundle exec fastlane appstore_code_signing
+    - run:
+        name: Pod Install
+        command: cd "Smoke Test" && bundle exec pod install
+    - run:
+        name: Validate
+        command: ./Smoke\ Test/scripts/validate_scheme.sh "${SMOKE_TEST_SCHEME}"
+
+
+# Define the each of the jobs used for building and testing the iOS SDK
+version: 2.1
+orbs:
+  slack: circleci/slack@4.2.0
+jobs:
+
+  # Load the project dependencies
+  dependencies:
+    <<: *macos_config
+    steps:
+      - checkout
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - <<: *restore_dependencies_cache
+      - <<: *update_dependencies_if_needed
+      - <<: *cache_dependencies
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .bundle
+            - Gemfile
+            - Gemfile.lock
+            - vendor
+            - .ruby-version
+
+  # Perform linting on the codebase
+  lint_objectiveC:
+    docker:
+      - image: golang:1.12
+    steps:
+      - checkout
+      - run:
+          name: Install The Silver Searcher
+          command: apt-get update && apt-get install silversearcher-ag
+      - run:
+          name: Rum Objective-C Linting
+          command: go run heimdall.go
+     
+          
+  # Create a Device archive
+  create_device_archive:
+    <<: *macos_config
+    steps:
+      - checkout
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - <<: *restore_dependencies_cache
+      - <<: *update_dependencies_if_needed
+      - run:
+          name: Create Device Archive
+          command: ./script/build/create_device_archive.sh
+      - persist_to_workspace:
+          root: .
+          paths:
+            - "DerivedData/archive/IntercomSDK.framework-iphoneos.xcarchive"
+  
+  # Create a Simulator archive
+  create_simulator_archive:
+    <<: *macos_config
+    steps:
+      - checkout
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - <<: *restore_dependencies_cache
+      - <<: *update_dependencies_if_needed
+      - run:
+          name: Create Simulator Archive
+          command: ./script/build/create_simulator_archive.sh
+      - persist_to_workspace:
+          root: .
+          paths:
+            - "DerivedData/archive/IntercomSDK.framework-iphonesimulator.xcarchive"
+  
+  # Build an XCFramework and save the binary to disk.
+  build_xcframework:
+    <<: *macos_config
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: Build XCFramework
+          command: ./script/build/build_xcframework.sh
+      - persist_to_workspace:
+          root: .
+          paths:
+            - Frameworks/Intercom.xcframework
+            - Frameworks/dSYMs
+             #Need to persist these paths so they are availabe for the prepare_release step later.
+            - IntercomSDK/Resources
+            - script
+            - .git
+            - Rakefile
+            - IntercomSDK/Supporting Files/IntercomSDK-Common.xcconfig
+
+  # Run Unit tests
+  unit_tests:
+    <<: *macos_config
+    steps:
+      - checkout
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - <<: *restore_dependencies_cache
+      - <<: *update_dependencies_if_needed
+      - run:
+          name: Build
+          command: xcodebuild -derivedDataPath DerivedData -workspace IntercomSDK.xcworkspace -scheme "Unit Tests" -sdk iphonesimulator -destination "$DESTINATION" build-for-testing | bundle exec xcpretty
+      - run:
+          name: Test
+          command: xcodebuild -derivedDataPath DerivedData -workspace IntercomSDK.xcworkspace -scheme "Unit Tests" -sdk iphonesimulator -destination "$DESTINATION" test -resultBundlePath Unit_TestResults.xcresult | bundle exec xcpretty
+      - run:
+          name: Generate Test Reports
+          command: bundle exec fastlane upload_test_reports
+          when: always
+      - store_test_results:
+          path: Unit_TestResults.xml
+      - run:
+          name: Zip Test Results
+          command: zip -r Unit_TestResults.zip Unit_TestResults.xcresult
+          when: on_fail
+      - store_artifacts:
+          path: Unit_TestResults.zip
+      - <<: *store_crash_logs
+    environment:
+      - DESTINATION: "platform=iOS Simulator,name=iPhone 11 Pro,OS=15.0"
+
+  # Run Release Deployment tests
+  release_deployment_tests:
+    <<: *macos_config
+    steps:
+      - checkout
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - <<: *restore_dependencies_cache
+      - <<: *update_dependencies_if_needed
+      - run:
+          name: Test Release Deployment Scripts
+          command: bundle exec rspec script/deploy/spec/
+
+
+  # Build the Test App used for UI Testing and save is to the workspace. This allows it to be used by other jobs.
+  build_ui_test_app: &build_ui_test_app
+    <<: *macos_config
+    steps:
+      - checkout
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - <<: *restore_dependencies_cache
+      - <<: *update_dependencies_if_needed
+      - attach_workspace:
+          at: .
+      - run:
+          name: Build
+          command: xcodebuild -derivedDataPath DerivedData -workspace IntercomSDK.xcworkspace -scheme "Calabash UI Tests" -sdk iphonesimulator build | bundle exec xcpretty
+      - persist_to_workspace:
+          root: .
+          paths:
+            - "DerivedData/Build/Products/Debug-iphonesimulator/UI Tests.app"
+            - Sample
+
+  # Build the Test App used for UI Testing and save is to the workspace. This allows it to be used by other jobs.
+  build_xcui_for_testing: &build_xcui_for_testing
+    <<: *macos_config
+    steps:
+      - checkout
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - <<: *restore_dependencies_cache
+      - <<: *update_dependencies_if_needed
+      - attach_workspace:
+          at: .
+      - run:
+          name: Build
+          command: xcodebuild build-for-testing -derivedDataPath DerivedData -workspace IntercomSDK.xcworkspace -scheme "XCUI Tests" -sdk iphonesimulator  | bundle exec xcpretty
+      - persist_to_workspace:
+          root: .
+          paths:
+            - "DerivedData/Build/Products/*.xctestrun"
+            - "DerivedData/Build/Products/Debug-iphonesimulator/SampleUITests-Runner.app"
+            - "DerivedData/Build/Products/Debug-iphonesimulator/XCUI Tests.app"
+            - fastlane
+      - <<: *store_crash_logs
+
+
+  # Run XCUITests
+  xcui_tests: &xcui_tests
+    <<: *macos_config
+    steps:
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - attach_workspace:
+          at: .
+      - run:
+          name: XCUITests
+          command: xcodebuild test-without-building -sdk iphonesimulator -destination "$DESTINATION"  -xctestrun DerivedData/Build/Products/XCUI\ Tests_${TEST_GROUP}*.xctestrun -resultBundlePath XCUI_TestResults.xcresult
+      - run:
+          name: Generate Test Reports
+          command: bundle exec fastlane upload_test_reports
+          when: always
+      - store_test_results:
+          path: XCUI_TestResults.xml
+      - run:
+          name: Zip Test Results
+          command: zip -r XCUI_TestResults.zip XCUI_TestResults.xcresult
+          when: on_fail
+      - store_artifacts:
+          path: XCUI_TestResults.zip
+      - store_test_results:
+          path: build/reports
+      - <<: *store_crash_logs
+
+
+  # UI tests for iPhone 8 (15.0) devices. One test for each test bucket.
+
+  UI_1_iphone_8:
+    <<: *macos_config
+    <<: *ui_tests
+    environment:
+      - DEVICE_TARGET: "iPhone 8 (15.0)"
+      - TEST_BUCKET: "@test_bucket_1"
+
+  UI_2_iphone_8:
+    <<: *macos_config
+    <<: *ui_tests
+    environment:
+      - DEVICE_TARGET: "iPhone 8 (15.0)"
+      - TEST_BUCKET: "@test_bucket_2"
+
+  UI_3_iphone_8:
+    <<: *macos_config
+    <<: *ui_tests
+    environment:
+      - DEVICE_TARGET: "iPhone 8 (15.0)"
+      - TEST_BUCKET: "@test_bucket_3"
+
+  UI_4_iphone_8:
+    <<: *macos_config
+    <<: *ui_tests
+    environment:
+      - DEVICE_TARGET: "iPhone 8 (15.0)"
+      - TEST_BUCKET: "@test_bucket_4"
+
+  XCUI_1_iphone_8:
+    <<: *xcui_tests
+    environment:
+      - DESTINATION: "platform=iOS Simulator,name=iPhone 8,OS=15.0"
+      - TEST_GROUP: "Group1"
+
+  XCUI_2_iphone_8:
+    <<: *xcui_tests
+    environment:
+      - DESTINATION: "platform=iOS Simulator,name=iPhone 8,OS=15.0"
+      - TEST_GROUP: "Group2"
+
+  # UI tests for iPhone 11 Pro (15.0) devices. One test for each test bucket.
+
+  UI_1_iphone_11_pro:
+    <<: *macos_config
+    <<: *ui_tests
+    environment:
+      - DEVICE_TARGET: "iPhone 11 Pro (15.0)"
+      - TEST_BUCKET: "@test_bucket_1"
+
+  UI_2_iphone_11_pro:
+    <<: *macos_config
+    <<: *ui_tests
+    environment:
+      - DEVICE_TARGET: "iPhone 11 Pro (15.0)"
+      - TEST_BUCKET: "@test_bucket_2"
+
+  UI_3_iphone_11_pro:
+    <<: *macos_config
+    <<: *ui_tests
+    environment:
+      - DEVICE_TARGET: "iPhone 11 Pro (15.0)"
+      - TEST_BUCKET: "@test_bucket_3"
+
+  UI_4_iphone_11_pro:
+    <<: *macos_config
+    <<: *ui_tests
+    environment:
+      - DEVICE_TARGET: "iPhone 11 Pro (15.0)"
+      - TEST_BUCKET: "@test_bucket_4"
+
+  XCUI_1_iphone_11_pro:
+    <<: *xcui_tests
+    environment:
+      - DESTINATION: "platform=iOS Simulator,name=iPhone 11 Pro,OS=15.0"
+      - TEST_GROUP: "Group1"
+
+  XCUI_2_iphone_11_pro:
+    <<: *xcui_tests
+    environment:
+      - DESTINATION: "platform=iOS Simulator,name=iPhone 11 Pro,OS=15.0"
+      - TEST_GROUP: "Group2"
+
+
+  # Run Smoke Tests for Swift
+
+  smoke_test_manual_swift:
+    <<: *macos_config
+    <<: *smoke_test_steps
+    environment:
+      - SMOKE_TEST_SCHEME: IntercomIntegration-Manual-Swift
+
+  smoke_test_cocoapods_swift:
+    <<: *macos_config
+    <<: *smoke_test_steps
+    environment:
+      - SMOKE_TEST_SCHEME: IntercomIntegration-CocoaPods-Swift
+
+
+  # Run Smoke Tests for Objective-C
+  smoke_test_manual_objc:
+    <<: *macos_config
+    <<: *smoke_test_steps
+    environment:
+      - SMOKE_TEST_SCHEME: IntercomIntegration-Manual-ObjC
+
+  smoke_test_cocoapods_frameworks_objc:
+    <<: *macos_config
+    <<: *smoke_test_steps
+    environment:
+      - SMOKE_TEST_SCHEME: IntercomIntegration-CocoaPods-Frameworks-ObjC
+          
+  # Run the prepare_release.sh script
+  prepare_release:
+    <<: *macos_config
+    steps:
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - attach_workspace:
+          at: .
+      - run:
+          name: Prepare Public Repo for Release
+          command: ./script/deploy/prepare_release.sh
+      - persist_to_workspace:
+          root: .
+          paths:
+            - Artifacts
+   
+  commit_release:
+    <<: *macos_config
+    steps:
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - attach_workspace:
+          at: .
+      - run:
+          name: Zip Release Artifacts
+          command: zip -r Release_Artifacts.zip Artifacts
+      - store_artifacts:
+          path: Release_Artifacts.zip
+      - run:
+          name: Commit Release to GitHub
+          command: bundle exec rake commit_release
+
+  create_github_release:
+    <<: *macos_config
+    steps:
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - attach_workspace:
+          at: .
+      - run:
+          name: Create GitHub Release
+          command: bundle exec rake create_new_release
+
+  publish_new_cocoapod:
+    <<: *macos_config
+    steps:
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - attach_workspace:
+          at: .
+      - run:
+          name: Publish to CocoaPods
+          command: bundle exec rake publish_to_cocoapods
+
+  # Upload Sample.ipa to Testfairy
+  upload_to_testfairy:
+    <<: *macos_config
+    steps:
+      - checkout
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - attach_workspace:
+          at: .
+      - <<: *restore_dependencies_cache
+      - <<: *update_dependencies_if_needed
+      - run:
+          name: Upload Sample.ipa to Testfairy.
+          command: bundle exec fastlane upload_testfairy
+          
+  # Send a Slack notification when we release a new version of the SDK.
+  notify_release_succeeded:
+    <<: *macos_config
+    steps:
+      - checkout
+      - <<: *setup_ruby
+      - <<: *setup_bundler
+      - <<: *restore_dependencies_cache
+      - <<: *update_dependencies_if_needed
+      - attach_workspace:
+          at: .
+      - run:
+         name: print branch
+         command: echo ${CIRCLE_TAG}
+      - run:
+         name: Extract Release Notes
+         command: |
+            bundle exec rake slack_release_notes >> ~/.bash_profile
+            source ~/.bash_profile
+      - run:
+         name: Print Release Notes
+         command: echo $RELEASE_NOTES
+      - slack/notify:
+          custom: |
+            {
+            "blocks": [
+                {
+                    "type": "section",
+                     "text": {
+                     "type": "mrkdwn",
+                     "text": "iOS SDK <https://github.com/intercom/intercom-ios/releases/tag/${CIRCLE_TAG}|v${CIRCLE_TAG}> has been successfully released 🎉 \n ${RELEASE_NOTES}"
+                        },
+                    "accessory": {
+                      "type": "image",
+                      "image_url": "https://user-images.githubusercontent.com/3185423/104013893-0bd91b80-51aa-11eb-9889-73efad5a195d.png",
+                      "alt_text": "Intercom"
+                    }
+                }
+                ]
+            }
+          event: always
+
+# Workflow that runs all the jobs in a defined order
+workflows:
+  version: 2.1
+  test_and_build_workflow:
+    jobs:
+      - dependencies:
+          <<: *run_always
+
+      - lint_objectiveC:
+          <<: *run_always
+
+      - unit_tests:
+          <<: *run_always
+          requires:
+            - dependencies
+
+      - release_deployment_tests:
+          <<: *run_always
+          requires:
+            - dependencies
+
+      - build_xcui_for_testing:
+          <<: *run_always
+          requires:
+            - dependencies
+
+      - XCUI_1_iphone_8:
+          <<: *run_always
+          requires:
+            - build_xcui_for_testing
+            
+            
+      # XCUI_2 tests currently disabled due to persistent flakiness      
+      # - XCUI_2_iphone_8:
+      #     <<: *run_always
+      #     requires:
+      #       - build_xcui_for_testing
+      
+
+      - XCUI_1_iphone_11_pro:
+          <<: *run_always
+          requires:
+            - build_xcui_for_testing
+            
+            
+      # XCUI_2 tests currently disabled due to persistent flakiness      
+      # - XCUI_2_iphone_11_pro:
+      #     <<: *run_always
+      #     requires:
+      #       - build_xcui_for_testing
+      
+      
+      - build_ui_test_app:
+          <<: *run_always
+          requires:
+            - dependencies
+
+      - UI_1_iphone_8:
+          <<: *run_always
+          requires:
+            - build_ui_test_app
+
+      - UI_2_iphone_8:
+          <<: *run_always
+          requires:
+            - build_ui_test_app
+
+      - UI_3_iphone_8:
+          <<: *run_always
+          requires:
+            - build_ui_test_app
+
+      - UI_4_iphone_8:
+          <<: *run_always
+          requires:
+            - build_ui_test_app
+
+      - UI_1_iphone_11_pro:
+          <<: *run_always
+          requires:
+            - build_ui_test_app
+
+      - UI_2_iphone_11_pro:
+          <<: *run_always
+          requires:
+            - build_ui_test_app
+
+      - UI_3_iphone_11_pro:
+          <<: *run_always
+          requires:
+            - build_ui_test_app
+
+      - UI_4_iphone_11_pro:
+          <<: *run_always
+          requires:
+            - build_ui_test_app
+
+      - create_device_archive:
+          <<: *run_always
+          requires:
+            - dependencies
+
+      - create_simulator_archive:
+          <<: *run_always
+          requires:
+            - dependencies
+
+      - build_xcframework:
+          <<: *run_always
+          requires:
+            - create_device_archive
+            - create_simulator_archive
+
+      - smoke_test_manual_swift:
+          <<: *run_on_release_and_master
+          requires:
+            - prepare_release
+
+      - smoke_test_cocoapods_swift:
+          <<: *run_on_release_and_master
+          requires:
+            - prepare_release
+
+      - smoke_test_manual_objc:
+          <<: *run_on_release_and_master
+          requires:
+            - prepare_release
+
+      - smoke_test_cocoapods_frameworks_objc:
+          <<: *run_on_release_and_master
+          requires:
+            - prepare_release
+
+      - upload_to_testfairy:
+          <<: *run_on_master
+          requires:
+            - unit_tests
+            - UI_1_iphone_8
+            - UI_2_iphone_8
+            - UI_3_iphone_8
+            - UI_4_iphone_8
+            - UI_1_iphone_11_pro
+            - UI_2_iphone_11_pro
+            - UI_3_iphone_11_pro
+            - UI_4_iphone_11_pro
+            - XCUI_1_iphone_8
+            - XCUI_1_iphone_11_pro
+            - lint_objectiveC
+
+      - prepare_release:
+          <<: *run_on_release_and_master
+          requires:
+            - build_xcframework
+            - lint_objectiveC
+            - unit_tests
+            - release_deployment_tests
+            - UI_1_iphone_8
+            - UI_2_iphone_8
+            - UI_3_iphone_8
+            - UI_4_iphone_8
+            - UI_1_iphone_11_pro
+            - UI_2_iphone_11_pro
+            - UI_3_iphone_11_pro
+            - UI_4_iphone_11_pro
+            - XCUI_1_iphone_8
+            - XCUI_1_iphone_11_pro
+
+      - commit_release:
+          <<: *run_on_release
+          requires:
+            - smoke_test_manual_swift
+            - smoke_test_cocoapods_swift
+            - smoke_test_manual_objc
+            - smoke_test_cocoapods_frameworks_objc
+
+      - create_github_release:
+          <<: *run_on_release
+          requires:
+            - commit_release
+
+      - publish_new_cocoapod:
+          <<: *run_on_release
+          requires:
+            - commit_release
+            
+      - notify_release_succeeded:
+          <<: *run_on_release
+          requires:
+            - create_github_release
+            - publish_new_cocoapod
