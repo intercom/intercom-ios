@@ -1,3 +1,9 @@
+## 10.2.0 
+###### Release Date: 20-09-2021
+
+### 🚀  Enhancements
+* Added support for iOS 15.
+
 ## 10.1.4 
 ###### Release Date: 08-09-2021
 
