@@ -1,6 +1,7 @@
  framework module Intercom_Private {
     header "ICMAssets.h"
     header "ICMHTTPClientProtocol.h"
+    header "ICMDataManagerProtocol.h"
     header "ICMHTTPClient.h"
     header "ICMTranslationManager.h"
     header "ICMHelpCenterTranslationManager.h"
@@ -25,6 +26,14 @@
     header "ICMPresentationManager.h"
     header "ICMMetric.h"
     header "ICMMetricEvent.h"
+    header "ICMDataManager.h"
+    header "ICMUnreadManager.h"
+    header "ICMTeamPresence.h"
+    header "ICMParticipant.h"
+    header "ICMAvatar.h"
+    header "ICMParticipatingAdmin.h"
+    header "ICMRecentConversationsViewController.h"
+    header "ICMMultipleAvatarView.h"
     export *
 }
 

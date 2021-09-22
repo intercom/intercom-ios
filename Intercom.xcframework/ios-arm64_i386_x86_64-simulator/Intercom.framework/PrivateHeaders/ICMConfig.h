@@ -4,6 +4,7 @@
 static NSString *const kICMIntercomConfigChangedNotification = @"kICMIntercomConfigChangedNotification";
 static NSString *const kICMMessengerBackgroundImageLoadedNotification = @"kICMMessengerBackgroundImageLoadedNotification";
 static NSString *const kICMMessengerLogoImageLoadedNotification = @"kICMMessengerLogoImageLoadedNotification";
+static NSString *const kICMLauncherCustomLogoImageLoadedNotification = @"kICMLauncherCustomLogoImageLoadedNotification";
 
 @protocol ICMConfigProtocol
 @property (readonly) BOOL inboundMessages;
@@ -22,8 +23,8 @@ static NSString *const kICMMessengerLogoImageLoadedNotification = @"kICMMessenge
 @property (nonatomic, copy) NSString *teamGreeting;
 @property (nonatomic, copy) NSString *launcherAlignment;
 @property (nonatomic, copy) NSString *temporaryExpectationsMessage;
-@property (nonatomic, assign) NSUInteger homescreenCardCount;
 @property (nonatomic, assign) NSInteger launcherBottomPadding;
+@property (nonatomic, copy) NSString *launcherCustomLogoURLString;
 
 @property (nonatomic, assign) BOOL inboundMessages;
 @property (nonatomic, assign) BOOL attachmentsEnabled;
@@ -68,6 +69,7 @@ static NSString *const kICMMessengerLogoImageLoadedNotification = @"kICMMessenge
 - (void)save;
 - (UIImage *)messengerBackgroundImage;
 - (UIImage *)messengerLogoImage;
+- (UIImage *)customLauncherImage;
 - (UIColor *)primaryColor;
 - (UIColor *)secondaryColor;
 - (UIColor *)helpCenterBaseColor;

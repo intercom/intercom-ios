@@ -67,6 +67,7 @@ static NSString *const kICMTKReload                                     = @"relo
 static NSString *const lICMCouldntCompleteAction                        = @"couldnt_complete_action";
 static NSString *const kICMYourConversations                            = @"your_conversations";
 static NSString *const kICMStartAConversation                           = @"start_a_conversation";
+static NSString *const kICMStartAnotherConversation                     = @"start_another_conversation";
 static NSString *const kICMSeePastConversations                         = @"see_past_conversations";
 static NSString *const kICMSeeAll                                       = @"see_all";
 static NSString *const kICMTKAskAQuestion                               = @"ask_a_question";
@@ -95,6 +96,7 @@ static NSString *const kICMTTeamCanHelp                                 = @"the_
 static NSString *const kICMTKBotExpectation                             = @"bot_expectation_text";
 static NSString *const kICMTKLoading                                    = @"loading";
 static NSString *const kICMTKSearchHelpArticles                         = @"search_help_articles";
+static NSString *const kICMTKArticleSearchHint                          = @"article_search_hint_text";
 static NSString *const kICMTKSearchBrowseEmptyState                     = @"search_browse_empty_state_text";
 static NSString *const kICMTKGetHelp                                    = @"get_help";
 static NSString *const kICMTKGrinningFaceBigEyesEmoji                   = @"grinning_face_with_big_eyes_emoji";
@@ -145,5 +147,11 @@ static NSString *const kICMTKReply                                      = @"repl
 
 #pragma mark - Carousels/Articles On Buttons
 static NSString *const kICMTKPageNotFound                               = @"page_not_found";
+
+
+#pragma mark - Homescreen
+static NSString *const kContinueConversation = @"continue_the_conversation";
+static NSString *const kNothingToSeeHereYet = @"nothing_to_see_here_yet";
+static NSString *const kNoMessagesFromTeam = @"no_messages_from_the_team";
 
 #endif

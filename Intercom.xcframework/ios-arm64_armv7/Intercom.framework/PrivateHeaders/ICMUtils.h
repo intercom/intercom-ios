@@ -46,6 +46,7 @@ static NSString *const kIntercomSDKInboxUpdated = @"intercom-sdk-inbox-updated";
 static NSString *const kICMIntercomDeepLinkNotification = @"kICMIntercomDeepLinkNotification";
 static NSString *const kICMIntercomDidTypeInComposer = @"kICMIntercomDidTypeInComposer";
 static NSString *const kICMIntercomDidChangeComposerInput = @"kICMIntercomDidChangeComposerInput";
+static NSString *const kICMIntercomHelpCenterArticleViewed = @"kICMIntercomHelpCenterArticleViewed";
 
 typedef NS_ENUM(NSUInteger, ICMFontWeight){
     ICMFontWeightRegular = 0,
@@ -103,5 +104,10 @@ typedef NS_ENUM(NSInteger, ICMUserIdentityType) {
 
 + (NSString *)extractArticleIdFromSheetParams:(NSDictionary *)params;
 
-+ (BOOL)usingLargeFontSize;
++ (BOOL)accessibilityFontSizesEnabled;
+
++ (void)enableRTLSupportForContainerClass:(Class <UIAppearanceContainer>)containerClass;
+
++ (CGFloat)scaleToAccessibilitySizing:(CGFloat)pointSize;
+
 @end
