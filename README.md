@@ -43,7 +43,7 @@ We check for new messages when your app opens and whenever your customer or your
 ## Installation
 
 Intercom for iOS supports iOS 10+. 
-Xcode 12 is required to build Intercom iOS SDK.
+Xcode 13 is required to build Intercom iOS SDK.
 The binary size for Intercom is **2.3MB**.
 
 ### CocoaPods
