@@ -24,6 +24,7 @@
 @class ICMUserIdentity;
 
 static const NSInteger kICMHTTPClientDefaultPageSize = 10;
+static const NSInteger kNewContentEventTypeCarousel = 44;
 
 NS_ASSUME_NONNULL_BEGIN
 

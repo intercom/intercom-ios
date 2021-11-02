@@ -34,6 +34,7 @@
     header "ICMParticipatingAdmin.h"
     header "ICMRecentConversationsViewController.h"
     header "ICMMultipleAvatarView.h"
+    header "ICMTimestampCalculator.h"
     export *
 }
 

@@ -158,6 +158,7 @@ static NSString *const kICMMetricEventInfoScreensShown          = @"screens_show
 static NSString *const kICMMetricEventInfoScreensSeen           = @"screens_seen";
 static NSString *const kICMMetricEventInfoPermissionGranted     = @"permission_granted";
 static NSString *const kICMMetricEventInfoCarouselInstanceId    = @"instance_id";
+static NSString *const kICMMetricEventInfoRequestedInstanceId   = @"requested_instance_id";
 static NSString *const kICMMetricEventInfoRequestedContentId    = @"requested_content_id";
 static NSString *const kICMMetricEventInfoSource                = @"source";
 static NSString *const kICMMetricEventInfoErrorCode             = @"error_code";

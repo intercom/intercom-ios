@@ -25,6 +25,7 @@ static NSString *const kICMLauncherCustomLogoImageLoadedNotification = @"kICMLau
 @property (nonatomic, copy) NSString *temporaryExpectationsMessage;
 @property (nonatomic, assign) NSInteger launcherBottomPadding;
 @property (nonatomic, copy) NSString *launcherCustomLogoURLString;
+@property (nonatomic, assign) NSInteger uploadSizeLimit;
 
 @property (nonatomic, assign) BOOL inboundMessages;
 @property (nonatomic, assign) BOOL attachmentsEnabled;

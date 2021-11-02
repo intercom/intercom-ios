@@ -31,7 +31,7 @@ import os
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class InboxCell : UIKit.UITableViewCell {
-  @objc @_Concurrency.MainActor(unsafe) public func configure(name: Swift.String, sentTime: Swift.String, summary: Swift.String, adminsToShow: [Intercom_Private.ICMParticipant], unread: Swift.Bool, showDividerLine: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func configure(name: Swift.String, sentTime: Foundation.Date, summary: Swift.String, adminsToShow: [Intercom_Private.ICMParticipant], unread: Swift.Bool, showDividerLine: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
   @objc deinit
 }

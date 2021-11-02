@@ -1,3 +1,10 @@
+## 10.3.1 
+###### Release Date: 01-11-2021
+
+### 🚀  Enhancements
+* Added the ability to upload a video to a conversation.
+* If a user matches a Mobile Carousel whilst they progress through a Series, or after you post updates via the Intercom API, that carousel will be immediately shown. Previously the carousel would only be shown on app open or after recording an event via the SDK.
+
 ## 10.3.0 
 ###### Release Date: 22-09-2021
 

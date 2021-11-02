@@ -97,4 +97,6 @@
 + (NSURL *)soundForIncomingAdminMessage;
 + (NSURL *)soundForIncomingOperatorMessage;
 
+
++ (UIImage *)playIcon;
 @end
