@@ -10,7 +10,7 @@
 #import "ICMMetricEvent.h"
 @class ICMOpsMetricEvent;
 
-@interface ICMMetric : NSObject <NSCoding>
+@interface ICMMetric : NSObject <NSSecureCoding>
 
 + (instancetype)sharedInstance;
 

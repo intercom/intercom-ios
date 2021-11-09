@@ -183,7 +183,7 @@ static NSString *const kICMMetricEventInfoProgrammatic                  = @"prog
 static NSString *const kICMMetricEventInfoAutomatic                     = @"automatic";
 
 
-@interface ICMMetricEvent : NSObject <NSCoding>
+@interface ICMMetricEvent : NSObject <NSSecureCoding>
 
 + (instancetype)eventWithAction:(NSString *)action
                          object:(NSString *)object

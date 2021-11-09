@@ -22,6 +22,7 @@
 @class ICMBaseResponse;
 @class ICMCarousel;
 @class ICMUserIdentity;
+@class ICMComposerSuggestions;
 
 static const NSInteger kICMHTTPClientDefaultPageSize = 10;
 static const NSInteger kNewContentEventTypeCarousel = 44;
@@ -42,6 +43,7 @@ typedef void  (^ICMHTTPSubmitFormSuccess)(ICMConversation *response);
 typedef void  (^ICMHTTPCarouselSuccess)(ICMCarousel *carousel);
 typedef void  (^ICMHTTPArraySuccess)(NSArray *array);
 typedef void  (^ICMHTTPDictionarySuccess)(NSDictionary *object);
+typedef void  (^ICMHTTPComposerSuggestionsSuccess)(ICMComposerSuggestions *composerSuggestions);
 
 @protocol ICMHTTPClientProtocol
 + (void)getHelpCenterCollections:(nullable ICMHTTPArraySuccess)success

@@ -173,5 +173,11 @@
                             success:(ICMHTTPArraySuccess)success
                               error:(ICMHTTPClientError)failure;
 
+
+#pragma mark - Composer suggestions
+
+
++ (void)openMessenger:(ICMHTTPBaseSuccess)success
+                           error:(ICMHTTPClientError)failure;
 @end
 

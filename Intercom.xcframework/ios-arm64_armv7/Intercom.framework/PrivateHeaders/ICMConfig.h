@@ -12,7 +12,7 @@ static NSString *const kICMLauncherCustomLogoImageLoadedNotification = @"kICMLau
 @property (readonly) BOOL helpCenterRequireSearch;
 @end
 
-@interface ICMConfig : ICMSafeNetworkModel <ICMConfigProtocol,NSCoding>
+@interface ICMConfig : ICMSafeNetworkModel <ICMConfigProtocol,NSSecureCoding>
 
 @property (nonatomic, copy) NSString *primaryColorString;
 @property (nonatomic, copy) NSString *secondaryColorString;

@@ -2,7 +2,7 @@
 #import "ICMSafeNetworkModel.h"
 #import "ICMAvatar.h"
 
-@interface ICMParticipant : ICMSafeNetworkModel <NSCoding>
+@interface ICMParticipant : ICMSafeNetworkModel <NSSecureCoding>
 
 @property (nonatomic, strong) ICMAvatar *avatar;
 @property (nonatomic, copy) NSString *email;

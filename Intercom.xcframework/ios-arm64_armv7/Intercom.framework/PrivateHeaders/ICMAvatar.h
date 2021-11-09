@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "ICMSafeNetworkModel.h"
 
-@interface ICMAvatar : ICMSafeNetworkModel <NSCoding>
+@interface ICMAvatar : ICMSafeNetworkModel <NSSecureCoding>
 
 @property (nonatomic, copy, readonly) NSString *imageUrl;
 
