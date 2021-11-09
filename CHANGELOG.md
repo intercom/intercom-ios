@@ -1,3 +1,16 @@
+## 10.3.2 
+###### Release Date: 09-11-2021
+
+### 🚀 Enhancements
+* We've improved Custom Bots for New Conversations to ensure that your users are always presented with the most up-to-date bots.
+* Our SDK now uses `NSSecureCoding` instead of `NSCoding`. 
+
+
+### 🐛 Bug Fixes
+* We fixed a [crash that was occurring](https://forum.intercom.com/s/question/0D52G00005MT2KHSA1/ios-sdk-messenger-crash) with our last release on iOS 12. 
+* The header on the Homescreen is now sized correctly, when returning from a conversation.
+
+
 ## 10.3.1 
 ###### Release Date: 01-11-2021
 
