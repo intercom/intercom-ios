@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface ICMRecentConversationsViewController : UIViewController
-@property (nonatomic, strong) id<ICMRecentConversationsViewControllerDelegate> delegate;
+@property (nonatomic, weak) id<ICMRecentConversationsViewControllerDelegate> delegate;
 - (void)reloadTableView;
 @end
 

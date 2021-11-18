@@ -20,9 +20,6 @@ import os
   @_Concurrency.MainActor(unsafe) @objc override public init(cardInfo: ConversationCardInfoProtocol, delegate: ConversationCardDelegate)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class AvailableTeammatesView : UIKit.UIStackView {
-  @objc deinit
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(ICMSearchBrowseView) @_Concurrency.MainActor(unsafe) public class SearchBrowseView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public convenience init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) public init(_ frame: CoreGraphics.CGRect, _ config: Intercom_Private.ICMConfigProtocol = ICMConfig.shared())
@@ -75,6 +72,9 @@ import os
   @objc override dynamic public init()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class AvailableTeammatesView : UIKit.UIStackView {
+  @objc deinit
+}
 @objc public protocol NativeArticleReactionsViewDelegate {
   @objc func selectedReactionIndex(_ reactionIdex: Swift.Int)
 }
@@ -89,6 +89,9 @@ extension Intercom {
   public class func fetchHelpCenterCollections(completion: @escaping (Swift.Result<[HelpCenterCollection], ICMHelpCenterDataError>) -> Swift.Void)
   public class func fetchHelpCenterCollection(_ collectionId: Swift.String, completion: @escaping (Swift.Result<HelpCenterCollectionContent, ICMHelpCenterDataError>) -> Swift.Void)
   public class func searchHelpCenter(_ searchTerm: Swift.String, completion: @escaping (Swift.Result<[HelpCenterArticleSearchResult], ICMHelpCenterDataError>) -> Swift.Void)
+}
+extension UIKit.UIFont {
+  @objc public static func preferredFont(forTextStyle style: UIKit.UIFont.TextStyle, weight: UIKit.UIFont.Weight) -> UIKit.UIFont
 }
 @objc public protocol ConversationCardInfoProtocol {
   @objc var prominantStyling: Swift.Bool { get }

@@ -1,3 +1,16 @@
+## 10.3.3  
+###### Release Date: 18-11-2021
+
+### 🚀 Enhancements
+* We've made some accessibility improvements to the Messenger Homescreen. 
+
+### 🐛 Bug Fixes
+* Fixed a memory leak caused by apps on the Messenger Homescreen.
+* Article links that contain Cyrillic text can now be opened within the Messenger.
+* Fixed a bug that was causing some HEIC images to be displayed in the incorrect orientation in the Messenger.
+* Some other minor bug fixes.
+
+
 ## 10.3.2 
 ###### Release Date: 09-11-2021
 
