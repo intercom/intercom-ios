@@ -1,3 +1,10 @@
+## 10.3.4   
+###### Release Date: 19-11-2021
+
+### 🐛 Bug Fixes
+* Fixed a bug that was preventing a conversation updating in realtime.
+
+
 ## 10.3.3  
 ###### Release Date: 18-11-2021
 
