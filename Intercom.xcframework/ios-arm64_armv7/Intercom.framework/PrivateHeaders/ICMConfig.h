@@ -40,6 +40,7 @@ static NSString *const kICMLauncherCustomLogoImageLoadedNotification = @"kICMLau
 @property (nonatomic, assign) BOOL identityVerificationEnabled;
 @property (nonatomic, assign) BOOL accessToTeammateEnabled;
 @property (nonatomic, assign) BOOL helpCenterRequireSearch;
+@property (nonatomic, assign) BOOL preventDuplicateConversations;
 
 @property (nonatomic, assign) NSTimeInterval userUpdateDupCacheMaxAge;
 @property (nonatomic, assign) NSTimeInterval newSessionThreshold;
