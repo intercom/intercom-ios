@@ -1,3 +1,11 @@
+## 10.3.5   
+###### Release Date: 26-11-2021
+
+### 🐛 Bug Fixes
+* Fixed an issue that was causing a crash when loading a Carousel.
+* Fixed an issue that caused a Carousel to be displayed twice, in rare circumstances.
+* Fixed an issue in our push notifcations code that caused the app to crash periodically. 
+
 ## 10.3.4   
 ###### Release Date: 19-11-2021
 
