@@ -33,5 +33,6 @@
 - (BOOL)hasPreviousConversations;
 - (NSInteger)recentConversationCount;
 - (BOOL)hasConversations;
+- (BOOL)hasOpenInboundConversation;
 
 @end
