@@ -1,3 +1,10 @@
+## 10.4.0    
+###### Release Date: 16-12-2021
+
+### 🚀 Enhancements
+* Added the ability to prevent your users from opening multiple conversations in the Messenger.
+ 
+
 ## 10.3.5   
 ###### Release Date: 26-11-2021
 
