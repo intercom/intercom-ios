@@ -42,7 +42,7 @@ We check for new messages when your app opens and whenever your customer or your
 
 ## Installation
 
-Intercom for iOS supports iOS 10+. 
+Intercom for iOS supports iOS 13+. 
 Xcode 13 is required to build Intercom iOS SDK.
 The binary size for Intercom is **2.3MB**.
 
@@ -80,7 +80,7 @@ Make sure "Copy items if needed" is selected and click Finish.
 
 With the exception of apps that _only_ support iOS 14+, when installing Intercom, you'll need to make sure that you have a `NSPhotoLibraryUsageDescription` entry in your `Info.plist`.
 
-For apps that support iOS 13 or lower, this is [required by Apple](https://developer.apple.com/library/content/qa/qa1937/_index.html) to access the photo library. It is necessary when installing Intercom due to the image upload functionality. Users will be prompted for the photo library permission only when they tap the image upload button.
+For apps that support iOS 13, this is [required by Apple](https://developer.apple.com/library/content/qa/qa1937/_index.html) to access the photo library. It is necessary when installing Intercom due to the image upload functionality. Users will be prompted for the photo library permission only when they tap the image upload button.
 
 On iOS 14+, Intercom uses the new `PHPickerViewController` API which does not require requesting users for photo library permission. 
 
