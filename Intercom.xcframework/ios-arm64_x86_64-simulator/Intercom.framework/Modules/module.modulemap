@@ -1,0 +1,33 @@
+// Module map for Intercom.framework. Module map documentation is here: https://clang.llvm.org/docs/Modules.html#module-map-language
+framework module Intercom {
+  // The umbrella header acts as the default header for the module. It should import all other required headers.
+  // This defines what is imported with `import Intercom`, `@import Intercom;` or `#import <Intercom/Intercom.h>`
+  // Any header not imported by the umbrella header must have an explicit header declaration (see the Experimental submodule below)
+  umbrella header "Intercom.h"
+
+  // This exports all modules imported by the umbrella header
+  export *
+
+  // `module *` defines that all headers imported in the umbrella are themselves submodules
+  // `{ export * }` here exports any modules imported by these submodules
+  module * { export * }
+
+  // When a new system library is required, it should be added here
+  link "icucore"
+  link "xml2"
+
+  // When a new system framework is required, it should be added here
+  link framework "Foundation"
+  link framework "UIKit"
+  link framework "Accelerate"
+  link framework "Photos"
+  link framework "AudioToolbox"
+  link framework "CFNetwork"
+  link framework "CoreGraphics"
+  link framework "ImageIO"
+  link framework "MobileCoreServices"
+  link framework "QuartzCore"
+  link framework "Security"
+  link framework "SystemConfiguration"
+  link framework "WebKit"
+}
