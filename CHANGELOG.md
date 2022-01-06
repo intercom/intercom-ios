@@ -1,3 +1,13 @@
+## 11.0.0 
+###### Release Date: 06-01-2022
+
+### 🚀 Enhancements
+* Version 11.0.0 of the Intercom iOS SDK sets the minimum target iOS version to iOS 13. Developers who's apps target iOS 10, 11 or 12 will need to bump their target version to a minimum of iOS 13 to begin using version 11.0.0 of the Intercom iOS SDK.
+
+### 🐛 Bug Fixes
+* Fixed an issue where rotating to landscape glitched the UI.
+* Fixed an issue where images were losing their file extension when uploading from a mobile device. 
+
 ## 10.4.0    
 ###### Release Date: 16-12-2021
 
