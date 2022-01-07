@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		36cyDJ7BdKakw4xH459N59Zds88=
+		DYdNQJeRkjuLSKctVu4b+dqAHcU=
 		</data>
 		<key>InterBlocksAssets.bundle/Assets.car</key>
 		<data>
@@ -894,7 +894,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uDxydkzych6LjpaZMPKWTTJx87s=
+		eGfd1fFA8z2KEzd5vdXcoB0s8hA=
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -906,7 +906,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		uDxydkzych6LjpaZMPKWTTJx87s=
+		eGfd1fFA8z2KEzd5vdXcoB0s8hA=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -918,7 +918,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1CU5bTe7Hx2BiV7f1DV0lbY5T5g=
+		1EzB/r6FJ0Z7zQY/5Wq9ac8ASu8=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -930,7 +930,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		1CU5bTe7Hx2BiV7f1DV0lbY5T5g=
+		1EzB/r6FJ0Z7zQY/5Wq9ac8ASu8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -2642,7 +2642,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Qsi0GqN0W7brOmB+/Crbgl6yaVK26Lo2sFN3FdVFG0=
+			iNGjpYISb9h7e1QJq0G4gi4y1IA3XOljjemwmONTQOI=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/arm64.swiftdoc</key>
@@ -2663,7 +2663,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Qsi0GqN0W7brOmB+/Crbgl6yaVK26Lo2sFN3FdVFG0=
+			iNGjpYISb9h7e1QJq0G4gi4y1IA3XOljjemwmONTQOI=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -2684,7 +2684,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ByXHXlUkL4iVLBQGzJPBVlqOxcZyLLmsDj6F+hBTrAo=
+			zJE7PAT7M0bORKxXCByc/OUL0SvP2ybi1kTiXOs8oeU=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64.swiftdoc</key>
@@ -2705,7 +2705,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ByXHXlUkL4iVLBQGzJPBVlqOxcZyLLmsDj6F+hBTrAo=
+			zJE7PAT7M0bORKxXCByc/OUL0SvP2ybi1kTiXOs8oeU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

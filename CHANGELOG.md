@@ -1,3 +1,9 @@
+## 11.0.1  
+###### Release Date: 07-01-2022
+
+### 🐛 Bug Fixes
+* Fixed an issue that prevented Resolution Bot Intros from displaying correctly in a conversation.
+
 ## 11.0.0 
 ###### Release Date: 06-01-2022
 
