@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Intercom
 import Foundation
 @_exported import Intercom
@@ -31,6 +31,26 @@ import os
   @objc @_Concurrency.MainActor(unsafe) public func configure(name: Swift.String, sentTime: Foundation.Date, summary: Swift.String, adminsToShow: [Intercom_Private.ICMParticipant], unread: Swift.Bool, showDividerLine: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
   @objc deinit
+}
+extension UIKit.UIColor {
+  @objc public static var intercomGrey: UIKit.UIColor? {
+    @objc get
+  }
+  @objc public static var intercomBlack: UIKit.UIColor? {
+    @objc get
+  }
+  @objc public static var intercomBlack20: UIKit.UIColor? {
+    @objc get
+  }
+  @objc public static var intercomLightGrey: UIKit.UIColor? {
+    @objc get
+  }
+  @objc public static var backButtonBackgroundLight: UIKit.UIColor? {
+    @objc get
+  }
+  @objc public static var backButtonBackgroundDark: UIKit.UIColor? {
+    @objc get
+  }
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class TouchTransparentCollectionView : UIKit.UICollectionView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool

@@ -1,3 +1,12 @@
+## 11.1.0 
+###### Release Date: 19-01-2022
+
+### 🚀 Enhancements
+* iOS Mobile SDK made improvements to VoiceOver and Dynamic Font Type accessibility settings across the Messenger and Help Center
+
+### 🐛 Bug Fixes
+* Fixed an issue where the Media and GIF upload buttons were not available in the Messenger when the UI is displayed RTL
+
 ## 11.0.1  
 ###### Release Date: 07-01-2022
 

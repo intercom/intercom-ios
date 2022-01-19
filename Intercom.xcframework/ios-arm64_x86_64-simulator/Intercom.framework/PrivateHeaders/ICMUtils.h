@@ -90,6 +90,8 @@ typedef NS_ENUM(NSInteger, ICMUserIdentityType) {
 + (NSBundle *)intercomBundle;
 + (NSBundle *)translationsBundle;
 
++ (NSBundle *)loadIntercomAssetsBundle;
+
 + (NSString *)intercomDocumentsDirectory;
 
 + (NSString *)intercomCachesDirectory;

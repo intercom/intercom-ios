@@ -32,8 +32,6 @@
 + (UIImage *)booleanButtonRightImage;
 + (UIImage *)booleanButtonRightImageSelected;
 
-+ (UIImage *)closePostImage;
-+ (UIImage *)closeNoteImage;
 + (UIImage *)closeImage;
 
 + (UIImage *)startConversationImage;
@@ -52,7 +50,6 @@
 + (UIImage *)snoozeIcon;
 
 + (UIImage *)sendIcon;
-+ (UIImage *)cancelIcon;
 + (UIImage *)undoIcon;
 
 + (UIImage *)homescreenFailedImage;
