@@ -123,6 +123,31 @@ smoke_test_steps: &smoke_test_steps
         name: Validate
         command: ./Smoke\ Test/scripts/validate_scheme.sh "${SMOKE_TEST_SCHEME}"
 
+#Run Unit tests for speicified $DESTINATION and $TEST_PLAN
+unit_tests: &unit_tests
+  steps:
+    - checkout
+    - <<: *setup_ruby
+    - <<: *setup_bundler
+    - attach_workspace:
+        at: .
+    - run:
+        name: Unit tests
+        command: xcodebuild test-without-building -sdk iphonesimulator -destination "$DESTINATION" -xctestrun DerivedData/Build/Products/Unit\ Tests_${TEST_PLAN}*.xctestrun -only-test-configuration "$CONFIGURATION" -resultBundlePath UnitTestResults.xcresult | bundle exec xcpretty
+    - run:
+        name: Generate Test Reports
+        command: bundle exec fastlane upload_test_reports
+        when: always
+    - store_test_results:
+        path: UnitTestResults.xml
+    - run:
+        name: Zip Test Results
+        command: zip -r UnitTestResults.zip UnitTestResults.xcresult
+        when: on_fail
+    - store_artifacts:
+        path: UnitTestResults.zip
+    - <<: *store_crash_logs
+
 
 # Define the each of the jobs used for building and testing the iOS SDK
 version: 2.1
@@ -219,8 +244,8 @@ jobs:
             - Rakefile
             - IntercomSDK/Supporting Files/IntercomSDK-Common.xcconfig
 
-  # Run Unit tests
-  unit_tests:
+  # Build the Test App used for Unit testing and save it to the workspace so that it can be used by multiple jobs
+  build_unit_test_app: &build_unit_test_app
     <<: *macos_config
     steps:
       - checkout
@@ -228,25 +253,17 @@ jobs:
       - <<: *setup_bundler
       - <<: *restore_dependencies_cache
       - <<: *update_dependencies_if_needed
+      - attach_workspace:
+          at: .
       - run:
           name: Build
           command: xcodebuild -derivedDataPath DerivedData -workspace IntercomSDK.xcworkspace -scheme "Unit Tests" -sdk iphonesimulator -destination "$DESTINATION" build-for-testing | bundle exec xcpretty
-      - run:
-          name: Test
-          command: xcodebuild -derivedDataPath DerivedData -workspace IntercomSDK.xcworkspace -scheme "Unit Tests" -sdk iphonesimulator -destination "$DESTINATION" test -resultBundlePath Unit_TestResults.xcresult | bundle exec xcpretty
-      - run:
-          name: Generate Test Reports
-          command: bundle exec fastlane upload_test_reports
-          when: always
-      - store_test_results:
-          path: Unit_TestResults.xml
-      - run:
-          name: Zip Test Results
-          command: zip -r Unit_TestResults.zip Unit_TestResults.xcresult
-          when: on_fail
-      - store_artifacts:
-          path: Unit_TestResults.zip
-      - <<: *store_crash_logs
+      - persist_to_workspace:
+          root: .
+          paths:
+            - "DerivedData/Build/Products/Unit\ Tests_*.xctestrun"
+            - "DerivedData/Build/Products/Debug-iphonesimulator/IntercomSDKTests.xctest"
+            - "DerivedData/Build/Products/Debug-iphonesimulator/Intercom.framework"
     environment:
       - DESTINATION: "platform=iOS Simulator,name=iPhone 11 Pro,OS=15.2"
 
@@ -335,6 +352,32 @@ jobs:
           path: build/reports
       - <<: *store_crash_logs
 
+  
+  # Unit tests 
+
+  standard_unit_tests:
+    <<: *macos_config
+    <<: *unit_tests
+    environment:
+      - DESTINATION: "platform=iOS Simulator,name=iPhone 11 Pro,OS=15.2"
+      - TEST_PLAN: "Unit"
+      - CONFIGURATION: "Configuration 1"
+
+  ltr_snapshot_tests:
+    <<: *macos_config
+    <<: *unit_tests
+    environment:
+      - DESTINATION: "platform=iOS Simulator,name=iPhone 11 Pro,OS=15.2"
+      - TEST_PLAN: "Snapshot"
+      - CONFIGURATION: "LTR"
+
+  rtl_snapshot_tests:
+    <<: *macos_config
+    <<: *unit_tests
+    environment:
+      - DESTINATION: "platform=iOS Simulator,name=iPhone 11 Pro,OS=15.2"
+      - TEST_PLAN: "Snapshot"
+      - CONFIGURATION: "RTL"
 
   # UI tests for iPhone 8 (15.2) devices. One test for each test bucket.
 
@@ -571,10 +614,25 @@ workflows:
       - lint_objectiveC:
           <<: *run_always
 
-      - unit_tests:
+      - build_unit_test_app:
           <<: *run_always
           requires:
             - dependencies
+
+      - standard_unit_tests:
+          <<: *run_always
+          requires:
+            - build_unit_test_app
+
+      - ltr_snapshot_tests:
+          <<: *run_always
+          requires:
+            - build_unit_test_app
+
+      - rtl_snapshot_tests:
+          <<: *run_always
+          requires:
+            - build_unit_test_app
 
       - release_deployment_tests:
           <<: *run_always
@@ -696,7 +754,9 @@ workflows:
       - upload_to_testfairy:
           <<: *run_on_master
           requires:
-            - unit_tests
+            - standard_unit_tests
+            - ltr_snapshot_tests
+            - rtl_snapshot_tests
             - UI_1_iphone_8
             - UI_2_iphone_8
             - UI_3_iphone_8
@@ -714,7 +774,9 @@ workflows:
           requires:
             - build_xcframework
             - lint_objectiveC
-            - unit_tests
+            - standard_unit_tests
+            - ltr_snapshot_tests
+            - rtl_snapshot_tests
             - release_deployment_tests
             - UI_1_iphone_8
             - UI_2_iphone_8
