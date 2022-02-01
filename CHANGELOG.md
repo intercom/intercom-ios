@@ -1,3 +1,12 @@
+## 11.1.1
+###### Release Date: 31-01-2022
+
+### 🚀 Enhancements
+* Added support for RTL languages while searching for Articles on the Homescreen.
+
+### 🐛 Bug Fixes
+* Made some minor UI improvements.
+
 ## 11.1.0 
 ###### Release Date: 19-01-2022
 
