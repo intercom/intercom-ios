@@ -773,11 +773,16 @@ workflows:
           <<: *run_on_release_and_master
           requires:
             - build_xcframework
-            - lint_objectiveC
-            - standard_unit_tests
-            - ltr_snapshot_tests
-            - rtl_snapshot_tests
             - release_deployment_tests
+            
+
+      - commit_release:
+          <<: *run_on_release
+          requires:
+            - smoke_test_manual_swift
+            - smoke_test_cocoapods_swift
+            - smoke_test_manual_objc
+            - smoke_test_cocoapods_frameworks_objc
             - UI_1_iphone_8
             - UI_2_iphone_8
             - UI_3_iphone_8
@@ -788,14 +793,9 @@ workflows:
             - UI_4_iphone_11_pro
             - XCUI_1_iphone_8
             - XCUI_1_iphone_11_pro
-
-      - commit_release:
-          <<: *run_on_release
-          requires:
-            - smoke_test_manual_swift
-            - smoke_test_cocoapods_swift
-            - smoke_test_manual_objc
-            - smoke_test_cocoapods_frameworks_objc
+            - standard_unit_tests
+            - ltr_snapshot_tests
+            - rtl_snapshot_tests
 
       - create_github_release:
           <<: *run_on_release
@@ -807,8 +807,11 @@ workflows:
           requires:
             - commit_release
             
-      - notify_release_succeeded:
-          <<: *run_on_release
-          requires:
-            - create_github_release
-            - publish_new_cocoapod
+#      - notify_release_succeeded:
+#          <<: *run_on_release
+#          requires:
+#            - create_github_release
+#            - publish_new_cocoapod
+
+
+            

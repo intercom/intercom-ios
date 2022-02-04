@@ -1,3 +1,10 @@
+## 11.1.2 
+###### Release Date: 04-02-2022
+
+### 🐛 Bug Fixes
+* Fixed an issue that was causing a conversation to scroll up and down automatically when a Bot message was received.
+* Fixed a crash that was caused by tapping on a deep link within a Post message.
+
 ## 11.1.1
 ###### Release Date: 31-01-2022
 
