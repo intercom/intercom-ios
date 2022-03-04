@@ -1,3 +1,9 @@
+## 11.2.0
+###### Release Date: 04-03-2022
+
+### 🚀 Enhancements
+* We've added Suggested Articles to your Homescreen! Provide a better self-serve experience to your users by enabling them to answer their question before they reach out to a teammate.
+
 ## 11.1.2 
 ###### Release Date: 04-02-2022
 
