@@ -153,5 +153,6 @@ static NSString *const kICMTKPageNotFound                               = @"page
 static NSString *const kContinueConversation = @"continue_the_conversation";
 static NSString *const kNothingToSeeHereYet = @"nothing_to_see_here_yet";
 static NSString *const kNoMessagesFromTeam = @"no_messages_from_the_team";
+static NSString *const kSuggestedArticles = @"suggested_articles";
 
 #endif

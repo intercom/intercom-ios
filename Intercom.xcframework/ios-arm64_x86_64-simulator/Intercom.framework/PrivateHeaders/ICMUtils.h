@@ -106,7 +106,7 @@ typedef NS_ENUM(NSInteger, ICMUserIdentityType) {
 
 + (NSString *)extractArticleIdFromSheetParams:(NSDictionary *)params;
 
-+ (BOOL)accessibilityFontSizesEnabled;
++ (BOOL)contentSizeCategoryIsAccessibilityCategory;
 
 + (void)enableRTLSupportForContainerClass:(Class <UIAppearanceContainer>)containerClass;
 

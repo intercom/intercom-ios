@@ -12,24 +12,25 @@ import os
 @objc public protocol HelpCenterStartConversationViewDelegate {
   @objc func didSelectStartConversation()
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class HelpCenterStartConversationView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) weak public var startConversationDelegate: HelpCenterStartConversationViewDelegate?
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class HelpCenterStartConversationView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) weak final public var startConversationDelegate: HelpCenterStartConversationViewDelegate?
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class StartConversationCard : ConversationCard {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class StartConversationCard : ConversationCard {
   @_Concurrency.MainActor(unsafe) @objc override public init(cardInfo: ConversationCardInfoProtocol, delegate: ConversationCardDelegate)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(ICMSearchBrowseView) @_Concurrency.MainActor(unsafe) public class SearchBrowseView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) @objc override convenience dynamic public init(frame: CoreGraphics.CGRect)
-  @_Concurrency.MainActor(unsafe) public init(_ frame: CoreGraphics.CGRect, _ config: Intercom_Private.ICMConfigProtocol = ICMConfig.shared())
-  @objc @_Concurrency.MainActor(unsafe) public func searchHelpArticlesAction()
-  @objc @_Concurrency.MainActor(unsafe) public func heightForCard(width: CoreGraphics.CGFloat) -> CoreGraphics.CGFloat
+@_hasMissingDesignatedInitializers @objc(ICMSearchBrowseView) @_Concurrency.MainActor(unsafe) final public class SearchBrowseView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(suggestedArticles: Swift.Array<HelpCenterArticle_Internal> = [])
+  @_Concurrency.MainActor(unsafe) public init(_ suggestedArticles: Swift.Array<HelpCenterArticle_Internal>, _ config: Intercom_Private.ICMConfigProtocol = ICMConfig.shared())
+  @_Concurrency.MainActor(unsafe) @objc override final public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @objc @_Concurrency.MainActor(unsafe) final public func searchHelpArticlesAction()
+  @objc @_Concurrency.MainActor(unsafe) final public func heightForCard(width: CoreGraphics.CGFloat) -> CoreGraphics.CGFloat
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class InboxCell : UIKit.UITableViewCell {
-  @objc @_Concurrency.MainActor(unsafe) public func configure(name: Swift.String, sentTime: Foundation.Date, summary: Swift.String, adminsToShow: [Intercom_Private.ICMParticipant], unread: Swift.Bool, showDividerLine: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class InboxCell : UIKit.UITableViewCell {
+  @objc @_Concurrency.MainActor(unsafe) final public func configure(name: Swift.String, sentTime: Foundation.Date, summary: Swift.String, adminsToShow: [Intercom_Private.ICMParticipant], unread: Swift.Bool, showDividerLine: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
   @objc deinit
 }
 extension UIKit.UIColor {
@@ -52,28 +53,39 @@ extension UIKit.UIColor {
     @objc get
   }
 }
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class TouchTransparentCollectionView : UIKit.UICollectionView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) final public class TouchTransparentCollectionView : UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) @objc override final public func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect, collectionViewLayout layout: UIKit.UICollectionViewLayout)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HelpCenterDataService : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class HelpCenterDataService : ObjectiveC.NSObject {
   @objc override dynamic public init()
-  @objc public func fetchCollections(completion: @escaping ([HelpCenterCollection]?, Swift.Error?) -> Swift.Void)
-  @objc public func fetchCollection(collectionId: Swift.String, completion: @escaping (HelpCenterCollectionContent?, Swift.Error?) -> Swift.Void)
-  @objc public func searchResults(for searchTerm: Swift.String, completion: @escaping ([HelpCenterArticleSearchResult]?, Swift.Error?) -> Swift.Void)
+  @objc final public func fetchCollections(completion: @escaping ([HelpCenterCollection]?, Swift.Error?) -> Swift.Void)
+  @objc final public func fetchCollection(collectionId: Swift.String, completion: @escaping (HelpCenterCollectionContent?, Swift.Error?) -> Swift.Void)
+  @objc final public func searchResults(for searchTerm: Swift.String, completion: @escaping ([HelpCenterArticleSearchResult]?, Swift.Error?) -> Swift.Void)
   @objc deinit
 }
-@objc @objcMembers public class ArticleMetaData : ObjectiveC.NSObject {
+@objc public class HelpCenterArticle_Internal : ObjectiveC.NSObject {
+  @objc public var id: Swift.String
+  @objc public var title: Swift.String
+  @objc required public init?(withDictionary dictionary: [Swift.String : Any])
+  @objc public init(id: Swift.String, title: Swift.String)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @objcMembers final public class ArticleMetaData : ObjectiveC.NSObject {
   @objc public static let searchBrowseSource: Swift.String
-  @objc public var articleId: Swift.String?
-  @objc public var articleSource: Swift.String?
+  @objc final public var articleId: Swift.String?
+  @objc final public var articleSource: Swift.String?
   @objc public init(id: Swift.String?, source: Swift.String?)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class HelpCenterMetricService : ObjectiveC.NSObject {
-  @objc public var contextIsSearchBrowse: Swift.Bool
+@_inheritsConvenienceInitializers @objc final public class HelpCenterMetricService : ObjectiveC.NSObject {
+  @objc final public var contextIsSearchBrowse: Swift.Bool
   @objc public static func addSearchBrowseViewedEvent(homeScreenIndex: Swift.Int)
   @objc public static func addOpenedFromAPIEvent()
   @objc public static func addOpenedArticleFromAPIEvent()
@@ -83,12 +95,13 @@ extension UIKit.UIColor {
   @objc public static func addOpenedFromMessengerHomeAppEvent()
   @objc public static func addOpenedFromCarousel()
   @objc public static func addOpenedFromPushNotification()
-  @objc public func addArticleViewedEvent()
-  @objc public func addArticleFailedEvent(errorCode: Foundation.NSNumber)
-  @objc public func addHappyReactionEvent()
-  @objc public func addNeutralReactionEvent()
-  @objc public func addSadReactionEvent(conversationOptionShown: Swift.Bool)
-  @objc public func addNewConversationFromArticleEvent(accessToTeammate: Swift.Bool)
+  @objc final public func addArticleViewedEvent()
+  final public func addSuggestedArticlesPresentedToUserEvent(articlesShown: [Swift.String], numberOfArticles: Swift.Int)
+  @objc final public func addArticleFailedEvent(errorCode: Foundation.NSNumber)
+  @objc final public func addHappyReactionEvent()
+  @objc final public func addNeutralReactionEvent()
+  @objc final public func addSadReactionEvent(conversationOptionShown: Swift.Bool)
+  @objc final public func addNewConversationFromArticleEvent(accessToTeammate: Swift.Bool)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -98,11 +111,11 @@ extension UIKit.UIColor {
 @objc public protocol NativeArticleReactionsViewDelegate {
   @objc func selectedReactionIndex(_ reactionIdex: Swift.Int)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class NativeArticleReactionsView : UIKit.UIView {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class NativeArticleReactionsView : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public static let sadReactionIndex: Swift.Int
   @objc @_Concurrency.MainActor(unsafe) public static let neutralReactionIndex: Swift.Int
   @objc @_Concurrency.MainActor(unsafe) public static let happyReactionIndex: Swift.Int
-  @objc @_Concurrency.MainActor(unsafe) weak public var articleDelegate: NativeArticleReactionsViewDelegate?
+  @objc @_Concurrency.MainActor(unsafe) weak final public var articleDelegate: NativeArticleReactionsViewDelegate?
   @objc deinit
 }
 extension Intercom {
@@ -120,25 +133,25 @@ extension UIKit.UIFont {
   @objc var hasOtherConversations: Swift.Bool { get }
   @objc var startConversationCardDisplayed: Swift.Bool { get }
 }
-@objc public class ConversationCardInfo : ObjectiveC.NSObject, ConversationCardInfoProtocol {
+@objc final public class ConversationCardInfo : ObjectiveC.NSObject, ConversationCardInfoProtocol {
   @objc final public let prominantStyling: Swift.Bool
-  @objc public var startConversationCardDisplayed: Swift.Bool
-  @objc public var accessToTeammateEnabled: Swift.Bool {
+  @objc final public var startConversationCardDisplayed: Swift.Bool
+  @objc final public var accessToTeammateEnabled: Swift.Bool {
     @objc get
   }
-  @objc public var hasRecentConversations: Swift.Bool {
+  @objc final public var hasRecentConversations: Swift.Bool {
     @objc get
   }
-  @objc public var hasOtherConversations: Swift.Bool {
+  @objc final public var hasOtherConversations: Swift.Bool {
     @objc get
   }
   @objc public init(prominantStyling: Swift.Bool = false, config: Intercom_Private.ICMConfigProtocol = ICMConfig.shared(), dataManager: Intercom_Private.ICMDataManagerProtocol = ICMDataManager.shared())
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class ConversationHistoryCard : ConversationCard, Intercom_Private.ICMRecentConversationsViewControllerDelegate {
-  @objc @_Concurrency.MainActor(unsafe) public var recentConversationsVC: Intercom_Private.ICMRecentConversationsViewController
-  @_Concurrency.MainActor(unsafe) @objc public func reloadConversationHistoryCard()
-  @_Concurrency.MainActor(unsafe) @objc public func navigate(toViewController viewController: UIKit.UIViewController)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class ConversationHistoryCard : ConversationCard, Intercom_Private.ICMRecentConversationsViewControllerDelegate {
+  @objc @_Concurrency.MainActor(unsafe) final public var recentConversationsVC: Intercom_Private.ICMRecentConversationsViewController
+  @_Concurrency.MainActor(unsafe) @objc final public func reloadConversationHistoryCard()
+  @_Concurrency.MainActor(unsafe) @objc final public func navigate(toViewController viewController: UIKit.UIViewController)
   @_Concurrency.MainActor(unsafe) @objc override public init(cardInfo: ConversationCardInfoProtocol, delegate: ConversationCardDelegate)
   @objc deinit
 }
@@ -159,17 +172,17 @@ extension UIKit.UIFont {
 extension ConversationCard : SeeAllConversationsViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func viewPreviousConversations()
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class HelpCenterContainerViewController : UIKit.UIViewController {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class HelpCenterContainerViewController : UIKit.UIViewController {
   @objc @_Concurrency.MainActor(unsafe) convenience public init(withCollections collectionIds: [Swift.String])
   @objc @_Concurrency.MainActor(unsafe) convenience public init(withCollection collectionId: Swift.String)
   @objc dynamic public init()
   @objc @_Concurrency.MainActor(unsafe) convenience public init(fromSearchBrowse: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
   @objc deinit
 }
 extension HelpCenterContainerViewController : Intercom_Private.ICMErrorViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func didSelectErrorAction()
+  @_Concurrency.MainActor(unsafe) @objc final public func didSelectErrorAction()
 }
 @objc public protocol SeeAllConversationsViewDelegate {
   @objc func viewPreviousConversations()
