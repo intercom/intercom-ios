@@ -4,9 +4,117 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/ICMActiveAdminsAvatarView.h</key>
+		<data>
+		9vJ085NJvBUP02HcSfHcMwXmvCY=
+		</data>
+		<key>Headers/ICMAdminBlockAppearance.h</key>
+		<data>
+		rqODAJP8Yxo5+g9jxutDwWxIP4I=
+		</data>
+		<key>Headers/ICMArticleWebViewController.h</key>
+		<data>
+		c9fNZy7NVNbT55x1XyjnlAqAYJU=
+		</data>
+		<key>Headers/ICMAssets.h</key>
+		<data>
+		o+Xilq0nQPBLuDF/VD4xvv7cVL4=
+		</data>
+		<key>Headers/ICMAutoLayout.h</key>
+		<data>
+		ibYpQyF7ZrxbltzbzMSsmxqOePg=
+		</data>
+		<key>Headers/ICMAvatar.h</key>
+		<data>
+		x1q/OWG6/cjAr7+QYvAzT5zV31E=
+		</data>
+		<key>Headers/ICMAvatarView.h</key>
+		<data>
+		tPAmJ2JgCspJnPkCXGm5i6vXB6M=
+		</data>
+		<key>Headers/ICMBlockAppearance.h</key>
+		<data>
+		VEOsu9siYGY4PXoF4vYl2YSnrFI=
+		</data>
+		<key>Headers/ICMBlockLoader.h</key>
+		<data>
+		OUH2O3ZO53wnMveXir/bKmcvvHk=
+		</data>
+		<key>Headers/ICMButton.h</key>
+		<data>
+		ZJVDEdGMyUe5G7H4xFN+R61ukVc=
+		</data>
+		<key>Headers/ICMCarouselBlockAppearance.h</key>
+		<data>
+		l+lNF0euYDwmbJJWurG7MCoySwQ=
+		</data>
+		<key>Headers/ICMColor.h</key>
+		<data>
+		+fViGgJocBS/BflT/HfSWK4HuBI=
+		</data>
 		<key>Headers/ICMCompany.h</key>
 		<data>
 		uzxIny+8ehHozzulRDJxGPWhrho=
+		</data>
+		<key>Headers/ICMConfig.h</key>
+		<data>
+		qf87Y/0KnmQVYGm2a95rxHmlvBc=
+		</data>
+		<key>Headers/ICMContentStackView.h</key>
+		<data>
+		d23VYWMkJ8UQO85/Ivrew6OZNb4=
+		</data>
+		<key>Headers/ICMContentViewController.h</key>
+		<data>
+		ZZMgdyWMQ6RW2i1HHveJ25QLs7w=
+		</data>
+		<key>Headers/ICMContentViewControllerDelegate.h</key>
+		<data>
+		bzcJ6KLmIJlYU/eFTXs73SF/1JY=
+		</data>
+		<key>Headers/ICMCountLimitInputValidator.h</key>
+		<data>
+		YektueZynPtfevO8C5+7Z17SWj0=
+		</data>
+		<key>Headers/ICMDataManager.h</key>
+		<data>
+		xe6jCm53HF0SXaFpt+DxmU+UK/Q=
+		</data>
+		<key>Headers/ICMDataManagerProtocol.h</key>
+		<data>
+		0wetVFADYqpFdLXkHUcGELHkOnE=
+		</data>
+		<key>Headers/ICMEmailTextField.h</key>
+		<data>
+		M68U9Lw9lsQLEeUHFr1U1QJ16hM=
+		</data>
+		<key>Headers/ICMEmptyInputValidator.h</key>
+		<data>
+		9ly6M0IV3YPssA2m2KIxjyiS170=
+		</data>
+		<key>Headers/ICMEngine.h</key>
+		<data>
+		d6y1olmjJ6eShak/uKoU7uU+YCA=
+		</data>
+		<key>Headers/ICMErrorViewController.h</key>
+		<data>
+		BI7jm6BMLh5r+iJSreK7jF2vDTU=
+		</data>
+		<key>Headers/ICMErrorViewDelegate.h</key>
+		<data>
+		xiQNHnsf7I4+VxR8Vi1u609Prec=
+		</data>
+		<key>Headers/ICMFeedbackGenerator.h</key>
+		<data>
+		0OJ8TLe3vV9hFAIvUKM1Z8OfjkI=
+		</data>
+		<key>Headers/ICMHTTPClient.h</key>
+		<data>
+		OosLS8sVXIMObD2zZXPbbXd8HF8=
+		</data>
+		<key>Headers/ICMHTTPClientProtocol.h</key>
+		<data>
+		5g1OvocGmbSXtyIdg2Em0fEl2OA=
 		</data>
 		<key>Headers/ICMHelpCenterArticle.h</key>
 		<data>
@@ -32,45 +140,177 @@
 		<data>
 		1/EbB4BtG4TSFUy3wi5E9AhYjSE=
 		</data>
+		<key>Headers/ICMHelpCenterTranslationManager.h</key>
+		<data>
+		LNKFZTkK0W8I1ibFdEaQTRtqhIY=
+		</data>
+		<key>Headers/ICMInAppsViewController.h</key>
+		<data>
+		nf/r++x7kYt45xWlqe66JgpFS80=
+		</data>
+		<key>Headers/ICMInputViewProtocol.h</key>
+		<data>
+		P3WahrKfEpJFUc/zFZDJakz/CR0=
+		</data>
+		<key>Headers/ICMIntegerTextField.h</key>
+		<data>
+		ZZHxo5b30iQ6skXlmHtQj/7200A=
+		</data>
+		<key>Headers/ICMLinkOpener.h</key>
+		<data>
+		cPYvQFH+j6J5sNnrr8yYLKruSis=
+		</data>
+		<key>Headers/ICMLoadingViewController.h</key>
+		<data>
+		QH1Vbqj+ZMq4Y8HKz23kvDAWaQQ=
+		</data>
+		<key>Headers/ICMMetric.h</key>
+		<data>
+		6KCpo4etYZEFqLrILBxgQVlAYEk=
+		</data>
+		<key>Headers/ICMMetricEvent.h</key>
+		<data>
+		6EoCIIrnPTmDdq5vZQWA7y5+NYo=
+		</data>
+		<key>Headers/ICMMultipleAvatarView.h</key>
+		<data>
+		eE6g0ZnnHjkHDGMJf+SsFtjLp60=
+		</data>
+		<key>Headers/ICMNavigationBarCloseButton.h</key>
+		<data>
+		53MNe1pGzgYUTT/FfXxfp5HvSu4=
+		</data>
+		<key>Headers/ICMNavigationController.h</key>
+		<data>
+		1whWLs7oOlG6Il9jOs7oOpZyRDw=
+		</data>
+		<key>Headers/ICMParticipant.h</key>
+		<data>
+		oTGAESHP1B1WSbrH64h4snZYZJc=
+		</data>
+		<key>Headers/ICMParticipatingAdmin.h</key>
+		<data>
+		7eS66gYePdSL9vBXBMwuJ2jusBU=
+		</data>
+		<key>Headers/ICMPhoneTextField.h</key>
+		<data>
+		E/r5BA1X/Cv4pmWcDmSW1/Na4KY=
+		</data>
+		<key>Headers/ICMPickerTextField.h</key>
+		<data>
+		I0uh/TOIxC1FPXkeMFzq95peHvY=
+		</data>
+		<key>Headers/ICMPresentationManager.h</key>
+		<data>
+		MWRgiKisFoYEjcY9F6LX1vPIPLY=
+		</data>
+		<key>Headers/ICMRecentConversationsViewController.h</key>
+		<data>
+		5VMG9MicU0HfFFSz49EqX2fhyIk=
+		</data>
+		<key>Headers/ICMRootViewController.h</key>
+		<data>
+		W+Sb8ylch24OmmID0SIgnIJ3U44=
+		</data>
+		<key>Headers/ICMSafeNetworkModel.h</key>
+		<data>
+		nwHA7vBks3Bs9vLyUWrO4oxPiMM=
+		</data>
+		<key>Headers/ICMStartConversationButton.h</key>
+		<data>
+		v40kEnNLxmUnaQsCgc3SE1oYkC8=
+		</data>
+		<key>Headers/ICMSurveyQuestionBlockAppearance.h</key>
+		<data>
+		s1Pipjk4EDQN04rQjnouNtKe+MI=
+		</data>
+		<key>Headers/ICMSurveyStepBlockAppearance.h</key>
+		<data>
+		M+WOwP3Nq3X8k+7OMKEaDYrYCe0=
+		</data>
+		<key>Headers/ICMTeamPresence.h</key>
+		<data>
+		wMOmd4tWQlYcaAzvsB8/9sbzegg=
+		</data>
+		<key>Headers/ICMTeammatePresenceView.h</key>
+		<data>
+		Eal41bkbOJdSedmHkuij5JyARRI=
+		</data>
+		<key>Headers/ICMTextField.h</key>
+		<data>
+		xTYsP8lm1GPBKH8YWrNdgHKtxxQ=
+		</data>
+		<key>Headers/ICMTimestampCalculator.h</key>
+		<data>
+		0GN6sfrjjSGhO3q61ufm/JEBa4U=
+		</data>
+		<key>Headers/ICMTranslationKeys.h</key>
+		<data>
+		kPpSLjwZMlxX9ciTYE5pwNSFEHY=
+		</data>
+		<key>Headers/ICMTranslationManager.h</key>
+		<data>
+		qDhT5pesFd8gJII4/hcZSwA3IuU=
+		</data>
+		<key>Headers/ICMUnreadManager.h</key>
+		<data>
+		kH8aQohFASvzV37Zarg5Q04TWv0=
+		</data>
 		<key>Headers/ICMUserAttributes.h</key>
 		<data>
 		ceP4QxLJXTzh1b1pG1CRsi9t9Po=
 		</data>
+		<key>Headers/ICMUtils.h</key>
+		<data>
+		uC35v+o7t2vSI3k+kBCkfdYE2Ac=
+		</data>
+		<key>Headers/ICMValidator.h</key>
+		<data>
+		gRnuzyNa/EsPFcaIs+/mJOAzKMs=
+		</data>
+		<key>Headers/ICMValidatorProtocol.h</key>
+		<data>
+		/ym6dhz51x8RSdbC0fbCFLGVXgA=
+		</data>
+		<key>Headers/ICMWindow.h</key>
+		<data>
+		YowhVdcWEj8bd9qeteeUIXCqDYc=
+		</data>
+		<key>Headers/ICMWindowProvider.h</key>
+		<data>
+		iGyyXr+VDiB7n0B07WO8hroOKgc=
+		</data>
+		<key>Headers/ITBBlock.h</key>
+		<data>
+		jvl8MVRFSbv4vEhzHUpGfcbuodU=
+		</data>
+		<key>Headers/ITBBlockAppearance.h</key>
+		<data>
+		Dr+f6BtLhLeFbwo+w09jQnjhwYQ=
+		</data>
+		<key>Headers/ITBImageLoader.h</key>
+		<data>
+		pnn4kD6vxM79UpLTF4tejwn3EBM=
+		</data>
+		<key>Headers/ITBLoadingView.h</key>
+		<data>
+		I0vL2EtnWLdGDDMyaI2LVxCCJW0=
+		</data>
+		<key>Headers/Intercom-Swift.h</key>
+		<data>
+		jSgRZhY4N4tZbjN8HxGYFld7knE=
+		</data>
 		<key>Headers/Intercom.h</key>
 		<data>
-		gS0P1t6U1t5AUjERMoPcfrMR6hY=
+		cOVSd077o5E4fVULCzktYdzt9qs=
+		</data>
+		<key>Headers/UIImage+ICMImageUtils.h</key>
+		<data>
+		mOIUn0jHQgFvZkpZsIPuYzrM8PI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QKEeAX6H7Pfj4Wib/Oz05Fr26CI=
-		</data>
-		<key>InterBlocksAssets.bundle/Assets.car</key>
-		<data>
-		Tj6UYgsFFGaTbOIPsFfvbfc/isU=
-		</data>
-		<key>InterBlocksAssets.bundle/Info.plist</key>
-		<data>
-		VBxv0qUPKmJhEQVsugP1r/ldpN4=
-		</data>
-		<key>InterBlocksAssets.bundle/_CodeSignature/CodeDirectory</key>
-		<data>
-		odXfCCvE2xxHKGbnhQdpqJjJbZU=
-		</data>
-		<key>InterBlocksAssets.bundle/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>InterBlocksAssets.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		jvd/U0t3ibadIBDGzTx1teqTsQc=
-		</data>
-		<key>InterBlocksAssets.bundle/_CodeSignature/CodeResources</key>
-		<data>
-		AkQqKFZkIUnQ3TbnvDZe85qzFUQ=
-		</data>
-		<key>InterBlocksAssets.bundle/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		ol4IArcQCpJLIVwg/W0BxpTUZ28=
 		</data>
 		<key>Intercom.bundle/data/intercom_area_codes.json</key>
 		<data>
@@ -256,6 +496,18 @@
 		<data>
 		xSQF8GGOx6bXLdtJmG0VzaEsXmk=
 		</data>
+		<key>Intercom.bundle/images/external_link_icon.png</key>
+		<data>
+		UCrcWGNw5dkuw1kit4a9G8Td4ss=
+		</data>
+		<key>Intercom.bundle/images/external_link_icon@2x.png</key>
+		<data>
+		hP0z7P0mnKO7IM9sVdY4oNAVJ6I=
+		</data>
+		<key>Intercom.bundle/images/external_link_icon@3x.png</key>
+		<data>
+		YhYyv76C+gR7V0txwg11N7fNpPE=
+		</data>
 		<key>Intercom.bundle/images/footer_link_icon.png</key>
 		<data>
 		v3GhGS2UMrAxzlcbkkxGESaFdm4=
@@ -339,6 +591,18 @@
 		<key>Intercom.bundle/images/icon_submit@3x.png</key>
 		<data>
 		Uu5HgBMvVZCI7mLm/LLgITg7LhM=
+		</data>
+		<key>Intercom.bundle/images/info_icon.png</key>
+		<data>
+		4lBsSfAtJ5Lv2K+mZJ1HSMam37E=
+		</data>
+		<key>Intercom.bundle/images/info_icon@2x.png</key>
+		<data>
+		76p3CZRsgVHRS63EcZCaad1c5/E=
+		</data>
+		<key>Intercom.bundle/images/info_icon@3x.png</key>
+		<data>
+		SkvqZRxqObtwe+5voy7lGmGGsrc=
 		</data>
 		<key>Intercom.bundle/images/intercom_logo.png</key>
 		<data>
@@ -500,6 +764,42 @@
 		<data>
 		qahR5MOA3lvsGtOFQDYUNhwA4Jk=
 		</data>
+		<key>Intercom.bundle/images/star_fill.png</key>
+		<data>
+		zc+sfsVivFWv9pPVe8OT3Y1+/H0=
+		</data>
+		<key>Intercom.bundle/images/star_fill@2x.png</key>
+		<data>
+		7NcZkAUCWsXcLlNQ8kiIgxed7NI=
+		</data>
+		<key>Intercom.bundle/images/star_fill@3x.png</key>
+		<data>
+		tsjsA+6SxjVfONAH2J4Iel8kwhg=
+		</data>
+		<key>Intercom.bundle/images/star_selected_border.png</key>
+		<data>
+		AmWLvQeWxp40VkeyyYPK0JNUOJM=
+		</data>
+		<key>Intercom.bundle/images/star_selected_border@2x.png</key>
+		<data>
+		OQKnBfRSXpRC1BqbTGpmC7eOAqc=
+		</data>
+		<key>Intercom.bundle/images/star_selected_border@3x.png</key>
+		<data>
+		CKs60xlsNb1X4IjXPbSEp0cj0Bw=
+		</data>
+		<key>Intercom.bundle/images/star_unselected_border.png</key>
+		<data>
+		eRgc8bGfwBi3WMqEl6WBCTP52k4=
+		</data>
+		<key>Intercom.bundle/images/star_unselected_border@2x.png</key>
+		<data>
+		96SgQuVWiuu4ZvwekNwkhE8XmVM=
+		</data>
+		<key>Intercom.bundle/images/star_unselected_border@3x.png</key>
+		<data>
+		T1GfRrFTeTyFRb/igPzHMYFCVbY=
+		</data>
 		<key>Intercom.bundle/images/startConversationIcon.png</key>
 		<data>
 		2a2IdS0QILRiKHWx1/Gf78STkm0=
@@ -535,6 +835,18 @@
 		<key>Intercom.bundle/images/submit_button_background_clear@3x.png</key>
 		<data>
 		ZJviei1Y4I3+TApNpbZEkoF9B2A=
+		</data>
+		<key>Intercom.bundle/images/survey_loading_state.png</key>
+		<data>
+		ogRnB5h4AWgS29Um1FKMnRD9hZc=
+		</data>
+		<key>Intercom.bundle/images/survey_loading_state@2x.png</key>
+		<data>
+		IU4TPKlpvUW6wNyaeHrXWFsTX/o=
+		</data>
+		<key>Intercom.bundle/images/survey_loading_state@3x.png</key>
+		<data>
+		THYU36TvWSVx9N6VwXfW1Oc6E9w=
 		</data>
 		<key>Intercom.bundle/images/teammate_bio.png</key>
 		<data>
@@ -662,15 +974,15 @@
 		</data>
 		<key>IntercomAssets.bundle/Assets.car</key>
 		<data>
-		Q3HFjJI28oaIndLAzG09M2ZV9I4=
+		jHL4lRT0xklbhePWaOC4rjq5P0w=
 		</data>
 		<key>IntercomAssets.bundle/Info.plist</key>
 		<data>
-		3INADApGTuTKofl7tNlW2Id/ia0=
+		RmJPVx7ZJmivDBlbIMjQ7gWVSgA=
 		</data>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		6fjGbiSnYyrXxPAhgCUvZoSEYgo=
+		9b+gHJz31goly4oztJuhQstNq3g=
 		</data>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -678,11 +990,11 @@
 		</data>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		Ij5ZcJqXiMXPwTTSm9iv8EbW13g=
+		VFZKNXya6Buyxm342s0PsWQHCJ0=
 		</data>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		dyTlyIjH08K+aZLeeivvL6PfG/8=
+		AlJ9imrUCvsRYfm6iBNTeflSNJ0=
 		</data>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -690,11 +1002,11 @@
 		</data>
 		<key>IntercomTranslations.bundle/Info.plist</key>
 		<data>
-		ryseZw1k2A3I7nRfjY+9abcKOdk=
+		XCDTVg8New59OoCrmm3p5YmPtXs=
 		</data>
 		<key>IntercomTranslations.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		snowX2+5Wi0Ef9Sh9kcTpWS0Ql0=
+		DCVQnb1ZqOkAi5KVRqLbJUuF7iQ=
 		</data>
 		<key>IntercomTranslations.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -702,11 +1014,11 @@
 		</data>
 		<key>IntercomTranslations.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		LJjCQCMa3lGOUcQfmoBeN+Zcaes=
+		xFInZV+lG84Cvkl3y3qOUUzuITk=
 		</data>
 		<key>IntercomTranslations.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		9bIK631mwWDewwN2J6p8us/CsL0=
+		TRFC/rHw18zzl7HvkbhPS5O0esA=
 		</data>
 		<key>IntercomTranslations.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -714,372 +1026,389 @@
 		</data>
 		<key>IntercomTranslations.bundle/ar.strings</key>
 		<data>
-		65VGruTzLFDYnIJMs5dtuKIk0/c=
+		HaRCdDZQmGtcwkTiLU8q5bNrjj8=
 		</data>
 		<key>IntercomTranslations.bundle/bg.strings</key>
 		<data>
-		7FY4AyjW2xtu5l2Ae9ujyExeZAA=
+		QvttB7dyjdXc/WKsVLIDSHmJt4E=
 		</data>
 		<key>IntercomTranslations.bundle/bs.strings</key>
 		<data>
-		QqNWJ7GfzBOMM97MZcuofcIFEoU=
+		aBwKgAgX03l2vdSpULjXvwdhTIU=
 		</data>
 		<key>IntercomTranslations.bundle/ca.strings</key>
 		<data>
-		/08iaD/n7Cu4xWTdleeis74ZaWI=
+		irQcYre0mmLf03gpD9gxQa3+2Xw=
 		</data>
 		<key>IntercomTranslations.bundle/cs.strings</key>
 		<data>
-		FK92AGte7uD+53MZs8mzSmBNiz8=
+		DhmffuZO+WcAfL2fpfbmuhTB9hA=
 		</data>
 		<key>IntercomTranslations.bundle/da.strings</key>
 		<data>
-		SjrkU+jlW06R0ZoB/nhh8bHdJzo=
+		UIUggUlynP6Wdvj1xMCKZ6vsoFk=
 		</data>
 		<key>IntercomTranslations.bundle/de-form.strings</key>
 		<data>
-		xFoF6IEZK8iNxdXGvGliizHyUBw=
+		7wpb8d76SKBs8gvpmay+YBfgkys=
 		</data>
 		<key>IntercomTranslations.bundle/de.strings</key>
 		<data>
-		sqcIki0kHOcFaOLgPva0s5fYdYo=
+		9UCF8AVVLN41RvhHxq/s2r6hTKs=
 		</data>
 		<key>IntercomTranslations.bundle/el.strings</key>
 		<data>
-		h+4CmsarWZ7U3OXVus9WVmTADzs=
+		TKG5I0pFWToLXI+nvgRtJDCj6gI=
 		</data>
 		<key>IntercomTranslations.bundle/en.strings</key>
 		<data>
-		93uogdBCgTpMoJLme6C6Zkj1/B4=
+		PHMGSEKtM82lD58Obziwzw+3vYo=
 		</data>
 		<key>IntercomTranslations.bundle/es.strings</key>
 		<data>
-		+hNda4KcY0QcShgpb+PRc8YYjiQ=
+		g94ftLpjpuCLWk0hJ0Ch94ZuLuA=
 		</data>
 		<key>IntercomTranslations.bundle/et.strings</key>
 		<data>
-		pU+ioPE2YXynr+XjEEgJxFhu84g=
+		Bpq8sHwiZXnb7p5/FYTb5OkBclk=
 		</data>
 		<key>IntercomTranslations.bundle/fi.strings</key>
 		<data>
-		7Z9GyNwrsCrN8UgIctUyszGRY5s=
+		WA/BEBrEDvIc1WkZOZ++ZlvEvtY=
 		</data>
 		<key>IntercomTranslations.bundle/fr.strings</key>
 		<data>
-		J5jzlCPzweuAShWT2HRCx8whve0=
+		KTag5haY4ZfQnxbkTgj/k7K3qgI=
 		</data>
 		<key>IntercomTranslations.bundle/he.strings</key>
 		<data>
-		oVbTkMoYNNcQpTAE52h29PcOPn8=
+		kk2qPShweSC6ZkKqxBIEm7TwOJs=
 		</data>
 		<key>IntercomTranslations.bundle/hr.strings</key>
 		<data>
-		gjW9xL+J2uKlw5JvjSoOQNU4Lms=
+		D7fkoAUV7B8RcXb/e7DfFfu7ojg=
 		</data>
 		<key>IntercomTranslations.bundle/hu.strings</key>
 		<data>
-		4Ro0xQxYr5a0siHq+toN15bp3Jk=
+		ONQX5yOm1gz9Q1oC/czz8eZ+E+8=
 		</data>
 		<key>IntercomTranslations.bundle/id.strings</key>
 		<data>
-		YeeXXFSMj76s1OdGYskoQEnXhDk=
+		ByuQnJivHE1ZZkixVOYWXD8hpjg=
 		</data>
 		<key>IntercomTranslations.bundle/it.strings</key>
 		<data>
-		pm5g2i82/3Lefa/E5SrlJIl6J5w=
+		DWNY6fAepdZ9FN4rrNpCWg1aH+I=
 		</data>
 		<key>IntercomTranslations.bundle/ja.strings</key>
 		<data>
-		pBEz60jKNRe2EapJs6O7xAfRZTg=
+		h0I6HPP3mNoZBiBUzTmrL2XuhcE=
 		</data>
 		<key>IntercomTranslations.bundle/ko.strings</key>
 		<data>
-		NxE3DVk4JFxMEaZqx8TrwOCMckA=
+		oOTvCPjoAmRppDrV5v5Oq9pOlRU=
 		</data>
 		<key>IntercomTranslations.bundle/lt.strings</key>
 		<data>
-		8DQvaZohOA9RNR3FUOeLufPYwvI=
+		BHYWtbhUjsSVpfwX0egrAxwd8q8=
 		</data>
 		<key>IntercomTranslations.bundle/lv.strings</key>
 		<data>
-		4W5gPyWEJmHIbJHilcYEVHZvEGc=
+		018C0uevfZpQjBm93ngAXXGKBYA=
 		</data>
 		<key>IntercomTranslations.bundle/mn.strings</key>
 		<data>
-		99CARtVKmgvAOZ5NyE8VZrJbc/w=
+		jyPekbi95qGEjH6+79tos0KmhvA=
 		</data>
 		<key>IntercomTranslations.bundle/nb.strings</key>
 		<data>
-		1/smJxVdByJ+IQJT6VgVa15Yx/s=
+		APCIxWfZqNT7S3KdfhJcI9noyGQ=
 		</data>
 		<key>IntercomTranslations.bundle/nl.strings</key>
 		<data>
-		NlNRiv7psoOc4CF95o3zx+DRwb0=
+		N+umoqLJxaks5jKHR+RLEnRl/fQ=
 		</data>
 		<key>IntercomTranslations.bundle/pl.strings</key>
 		<data>
-		a6HKsBOV9zw6jSx0OI+0C2161R0=
+		du3WV9LCHyNfnEyBwWfqiBRmcvo=
 		</data>
 		<key>IntercomTranslations.bundle/pt-br.strings</key>
 		<data>
-		hzqMueNQg2M1kemdYGURT+qGfgU=
+		skTzbPc8IFSmiQkVKdDq0FRwp5U=
 		</data>
 		<key>IntercomTranslations.bundle/pt-pt.strings</key>
 		<data>
-		ZYb44G+aA95Ahti5fEhfq3/zfpo=
+		bhQLxlimrUcEPuw6mTvlzVKzjvo=
 		</data>
 		<key>IntercomTranslations.bundle/ro.strings</key>
 		<data>
-		69BuLzFdUjrt2dVBc9UqNINKQKE=
+		pEEyOZ+hPJQnpiPAR8S6lALfcas=
 		</data>
 		<key>IntercomTranslations.bundle/ru.strings</key>
 		<data>
-		aH5QkOkMMzHnGfVldx9ABom1SjY=
+		o32ms09eAz/9j9QnhtBPZBmpRDw=
 		</data>
 		<key>IntercomTranslations.bundle/sl.strings</key>
 		<data>
-		97VM9a3VpdCVA2poBQMTAwPFXZk=
+		JxrTFR1eNr4hw9IXZkZgULr9mXI=
 		</data>
 		<key>IntercomTranslations.bundle/sr.strings</key>
 		<data>
-		yT+3UAkZK/Dl8rsKUMUpxyjb+7Y=
+		0OF/UKIxKrCcPx2nycwAamQGo/Y=
 		</data>
 		<key>IntercomTranslations.bundle/sv.strings</key>
 		<data>
-		fEinsuqZXkErH9fLHob+8iBfOyM=
+		Gf5n8D6sA7jek4ZBTn+YFbkmkZw=
 		</data>
 		<key>IntercomTranslations.bundle/tr.strings</key>
 		<data>
-		h3sjK1kDB6L4QlehlnrJefouFKE=
+		syVYI59Ljo1L72+FAtHWcSqubdg=
+		</data>
+		<key>IntercomTranslations.bundle/uk.strings</key>
+		<data>
+		ZhouZgirFOZIubkocsfQ5JplApg=
 		</data>
 		<key>IntercomTranslations.bundle/vi.strings</key>
 		<data>
-		a/4SrqOC3cf1isddE12u+P5ZU74=
+		8I2XnWONM34xt+fJb8lEiiMxZRY=
 		</data>
 		<key>IntercomTranslations.bundle/zh-hans.strings</key>
 		<data>
-		TQkxMLbz6/6+NpBPWfpoWOYo9yw=
+		gN97tjxPqgKu3C+ZDzkNqh2CudQ=
 		</data>
 		<key>IntercomTranslations.bundle/zh-hant.strings</key>
 		<data>
-		JdPmUzpl6j8yXlctaEA5va5oDlY=
+		VnnygfSyO08k7AYn1MJfHrpfZ6s=
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4dCJUJ5v6A0oLpF2DtBlvRz4EcI=
+		IM32cezQrvIzghOzHEFiSUJ0CTE=
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		d/xyxOXZ7RXUhz9zNDYBalFII8Q=
+		70s5fhaTST+hl338Tyk0MkpWAQo=
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Wg2x7tPS7Ictvcl+7MLpYGOaA3M=
-		</data>
-		<key>Modules/Intercom.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		4dCJUJ5v6A0oLpF2DtBlvRz4EcI=
-		</data>
-		<key>Modules/Intercom.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		d/xyxOXZ7RXUhz9zNDYBalFII8Q=
-		</data>
-		<key>Modules/Intercom.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		Wg2x7tPS7Ictvcl+7MLpYGOaA3M=
+		T0iznH0yvQ25sHB62HNnR2ZabI4=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		K8pVJ89n/EivEpkI85LZGCNaqHE=
+		Wv9IdiegERAhVagsHNaDp6I8TTU=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xymuKueFPNYUlvNU0VAoHaRBeaA=
+		/5futVK5urZ8YcompqcpIZJo1Jk=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		j0i1x9t/IJb4A4mSRU3YiFwHO8g=
-		</data>
-		<key>Modules/Intercom.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		K8pVJ89n/EivEpkI85LZGCNaqHE=
-		</data>
-		<key>Modules/Intercom.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		xymuKueFPNYUlvNU0VAoHaRBeaA=
-		</data>
-		<key>Modules/Intercom.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		j0i1x9t/IJb4A4mSRU3YiFwHO8g=
+		1QtJydEjzdPV/sg6gu7tT5sYCsw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		EppyuX6MzBQrz4cotp1RE2zqYTg=
-		</data>
-		<key>Modules/module.private.modulemap</key>
-		<data>
-		X5YSurZWLPkVhgiMMFBEPPOQvD8=
-		</data>
-		<key>PrivateHeaders/ICMActiveAdminsAvatarView.h</key>
-		<data>
-		9vJ085NJvBUP02HcSfHcMwXmvCY=
-		</data>
-		<key>PrivateHeaders/ICMArticleWebViewController.h</key>
-		<data>
-		c9fNZy7NVNbT55x1XyjnlAqAYJU=
-		</data>
-		<key>PrivateHeaders/ICMAssets.h</key>
-		<data>
-		vn+JlAhZ6g+hNBO43KdJ8/P7r/M=
-		</data>
-		<key>PrivateHeaders/ICMAutoLayout.h</key>
-		<data>
-		ibYpQyF7ZrxbltzbzMSsmxqOePg=
-		</data>
-		<key>PrivateHeaders/ICMAvatar.h</key>
-		<data>
-		x1q/OWG6/cjAr7+QYvAzT5zV31E=
-		</data>
-		<key>PrivateHeaders/ICMColor.h</key>
-		<data>
-		iK6CSxukCrz3MGom1F3d/Htk21I=
-		</data>
-		<key>PrivateHeaders/ICMConfig.h</key>
-		<data>
-		8k6auuu6EG7cCjHum9lqV3q61A4=
-		</data>
-		<key>PrivateHeaders/ICMContentViewController.h</key>
-		<data>
-		ZTygXZmX8qnT8tomvSrdziUznyY=
-		</data>
-		<key>PrivateHeaders/ICMContentViewControllerDelegate.h</key>
-		<data>
-		2a1oegfhrvQt/vff/wmfh2V8w2k=
-		</data>
-		<key>PrivateHeaders/ICMDataManager.h</key>
-		<data>
-		xe6jCm53HF0SXaFpt+DxmU+UK/Q=
-		</data>
-		<key>PrivateHeaders/ICMDataManagerProtocol.h</key>
-		<data>
-		0wetVFADYqpFdLXkHUcGELHkOnE=
-		</data>
-		<key>PrivateHeaders/ICMEngine.h</key>
-		<data>
-		d6y1olmjJ6eShak/uKoU7uU+YCA=
-		</data>
-		<key>PrivateHeaders/ICMErrorViewController.h</key>
-		<data>
-		7z5Kk6X40NSBGqOhNOz6bC/85SU=
-		</data>
-		<key>PrivateHeaders/ICMErrorViewDelegate.h</key>
-		<data>
-		xiQNHnsf7I4+VxR8Vi1u609Prec=
-		</data>
-		<key>PrivateHeaders/ICMFeedbackGenerator.h</key>
-		<data>
-		0OJ8TLe3vV9hFAIvUKM1Z8OfjkI=
-		</data>
-		<key>PrivateHeaders/ICMHTTPClient.h</key>
-		<data>
-		nqtbXfs9mQINAgsDpE9i9R01RBE=
-		</data>
-		<key>PrivateHeaders/ICMHTTPClientProtocol.h</key>
-		<data>
-		tXq/ZukrHw0OuskHYb+GioZ6tBI=
-		</data>
-		<key>PrivateHeaders/ICMHelpCenterTranslationManager.h</key>
-		<data>
-		LZRbPoHUjaf222aLYZ9QY5HnGCc=
-		</data>
-		<key>PrivateHeaders/ICMLoadingViewController.h</key>
-		<data>
-		QH1Vbqj+ZMq4Y8HKz23kvDAWaQQ=
-		</data>
-		<key>PrivateHeaders/ICMMetric.h</key>
-		<data>
-		oaOIKBhUBzL/pMlO1g3MRSU4cSo=
-		</data>
-		<key>PrivateHeaders/ICMMetricEvent.h</key>
-		<data>
-		9GIqCwV4aTF7uNG0ZsaB9aa8YEA=
-		</data>
-		<key>PrivateHeaders/ICMMultipleAvatarView.h</key>
-		<data>
-		eE6g0ZnnHjkHDGMJf+SsFtjLp60=
-		</data>
-		<key>PrivateHeaders/ICMNavigationBarCloseButton.h</key>
-		<data>
-		53MNe1pGzgYUTT/FfXxfp5HvSu4=
-		</data>
-		<key>PrivateHeaders/ICMNavigationController.h</key>
-		<data>
-		1whWLs7oOlG6Il9jOs7oOpZyRDw=
-		</data>
-		<key>PrivateHeaders/ICMParticipant.h</key>
-		<data>
-		oTGAESHP1B1WSbrH64h4snZYZJc=
-		</data>
-		<key>PrivateHeaders/ICMParticipatingAdmin.h</key>
-		<data>
-		7eS66gYePdSL9vBXBMwuJ2jusBU=
-		</data>
-		<key>PrivateHeaders/ICMPresentationManager.h</key>
-		<data>
-		9Y+eIvWuFparXg2/MBeUAJ7MmLI=
-		</data>
-		<key>PrivateHeaders/ICMRecentConversationsViewController.h</key>
-		<data>
-		5VMG9MicU0HfFFSz49EqX2fhyIk=
-		</data>
-		<key>PrivateHeaders/ICMSafeNetworkModel.h</key>
-		<data>
-		nwHA7vBks3Bs9vLyUWrO4oxPiMM=
-		</data>
-		<key>PrivateHeaders/ICMStartConversationButton.h</key>
-		<data>
-		v40kEnNLxmUnaQsCgc3SE1oYkC8=
-		</data>
-		<key>PrivateHeaders/ICMTeamPresence.h</key>
-		<data>
-		wMOmd4tWQlYcaAzvsB8/9sbzegg=
-		</data>
-		<key>PrivateHeaders/ICMTimestampCalculator.h</key>
-		<data>
-		0GN6sfrjjSGhO3q61ufm/JEBa4U=
-		</data>
-		<key>PrivateHeaders/ICMTranslationKeys.h</key>
-		<data>
-		1RqNMYcigiM/pP7OLi58vroD738=
-		</data>
-		<key>PrivateHeaders/ICMTranslationManager.h</key>
-		<data>
-		kXd7i0hAwIXiH0Rd4koHYTB9s8c=
-		</data>
-		<key>PrivateHeaders/ICMUnreadManager.h</key>
-		<data>
-		kH8aQohFASvzV37Zarg5Q04TWv0=
-		</data>
-		<key>PrivateHeaders/ICMUtils.h</key>
-		<data>
-		uC35v+o7t2vSI3k+kBCkfdYE2Ac=
-		</data>
-		<key>PrivateHeaders/UIImage+ICMImageUtils.h</key>
-		<data>
-		mOIUn0jHQgFvZkpZsIPuYzrM8PI=
+		v1i735nNN1Ff1IGAmUViS7P68yE=
 		</data>
 		<key>config.yml</key>
 		<data>
-		xwVED3P57h+BEatW2O+ND6q9ZTw=
+		ti/LkuTqvXo4DGgDq3vb2zAqAlE=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/ICMActiveAdminsAvatarView.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+8181T3nY6YavIjM7SOgbTVoLdhZ/CXO7BjgRGQfd8Y=
+			</data>
+		</dict>
+		<key>Headers/ICMAdminBlockAppearance.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HKTORHlV0NY3dpIT5SqexUQuO587jZqWXYm2Q3YFhTY=
+			</data>
+		</dict>
+		<key>Headers/ICMArticleWebViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7jOMVEvErWn8BB7eb1vb9PonH0XNRwdl+lhgLFCbr4I=
+			</data>
+		</dict>
+		<key>Headers/ICMAssets.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jvaCkuNUYEy7XESQdsarRRXO7QbriiQtWbcfkuClz1A=
+			</data>
+		</dict>
+		<key>Headers/ICMAutoLayout.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dcY0wRqPlJdhHtP+t+ZyWEgdCkKyCGrVceoIOvGRIak=
+			</data>
+		</dict>
+		<key>Headers/ICMAvatar.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hutwA+QTxS7e1uriq5JaxTL4Yi1IMSQ4pRUnFcz4gTU=
+			</data>
+		</dict>
+		<key>Headers/ICMAvatarView.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			r5+4zAZb0j+/OY+VsKMy7NE0ZL15NXXvu/v2Szzq5pA=
+			</data>
+		</dict>
+		<key>Headers/ICMBlockAppearance.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Gz67nSJb3iF7TIUT0QUr1p+E2hODP9FNDby21wKwi/M=
+			</data>
+		</dict>
+		<key>Headers/ICMBlockLoader.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jmMFg1kk4f8n5AQgdOH5GkqRNb8UNNdmllxNmI1aaYs=
+			</data>
+		</dict>
+		<key>Headers/ICMButton.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7QfMId5UrmrK9YjkfPCKmDmW6pXKo4dTJL+krJQr3gs=
+			</data>
+		</dict>
+		<key>Headers/ICMCarouselBlockAppearance.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			d5gXl342G9Q5xje1/eHgDhQsp16VRGbiQKpSTPAX5+8=
+			</data>
+		</dict>
+		<key>Headers/ICMColor.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZpOHVllzJa1tTrMhVr03rYcDz0h845wSJveIewQ3L3Y=
+			</data>
+		</dict>
 		<key>Headers/ICMCompany.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			KXQtflvhLuH+c8GKQzjf2/kP2ZLCGNpz9xZXqwRylkA=
+			</data>
+		</dict>
+		<key>Headers/ICMConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			13+F6qSRnERlM2m433qEqD4LTGR6A8jBAW5qRCJaK80=
+			</data>
+		</dict>
+		<key>Headers/ICMContentStackView.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H9kHLNo38YDV0UGXl3KOStOdpvQeAapcJ5Kb3FnLeeU=
+			</data>
+		</dict>
+		<key>Headers/ICMContentViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SRWOkA23oeGN1dN+lcnaYPkUhajWkUkLLrJM0OCmfHw=
+			</data>
+		</dict>
+		<key>Headers/ICMContentViewControllerDelegate.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BNxtvixsXkqensj+rhdqUlJOku2YfdWPQHk/pFrTeD0=
+			</data>
+		</dict>
+		<key>Headers/ICMCountLimitInputValidator.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ly5f7rGKkjsAwozRsvupev3L01MHHYTlMdjRctGWTOc=
+			</data>
+		</dict>
+		<key>Headers/ICMDataManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/yfVBb2o8xQfpaBRLxrFeX45hgNWRGAgEWB0ii7AzR8=
+			</data>
+		</dict>
+		<key>Headers/ICMDataManagerProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			54YGAW9ptFwUT6SbvsjG8s5Pk24mMXt0QTWeTC9jp4Q=
+			</data>
+		</dict>
+		<key>Headers/ICMEmailTextField.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+drUd/RJf/fHNCB17mWk+n5ITi+zPmZ+ViNT0iBCSUk=
+			</data>
+		</dict>
+		<key>Headers/ICMEmptyInputValidator.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uw/vcIQx2YylLjT4XucWFBEZoa/jWJHKHy/8qndcmo8=
+			</data>
+		</dict>
+		<key>Headers/ICMEngine.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PSDibjE1tm4GMi+WjXD0Zn8O4D4aMHk7VOTi2Z6y4/I=
+			</data>
+		</dict>
+		<key>Headers/ICMErrorViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0a/tjI8wTX63A1lmQQn+LWOjiqnq+tnEUIfbm4R6WH8=
+			</data>
+		</dict>
+		<key>Headers/ICMErrorViewDelegate.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			h5nS4EWsVW2YaTGtgokx3ZINO1D4h7pWKOGUwSHYlZE=
+			</data>
+		</dict>
+		<key>Headers/ICMFeedbackGenerator.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			z6BI58iciJGNaqXhAa48qGUnGGoGo2YHR5dMKCMBYZs=
+			</data>
+		</dict>
+		<key>Headers/ICMHTTPClient.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IJpujR9elG9uklbWTByrJeFIo8f1nBkpxXTLLkQrdfk=
+			</data>
+		</dict>
+		<key>Headers/ICMHTTPClientProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			L/VrZDLW+f1gObfveGPmi/WzGP8NURKAsww3NWcg+dQ=
 			</data>
 		</dict>
 		<key>Headers/ICMHelpCenterArticle.h</key>
@@ -1124,6 +1453,209 @@
 			nwn4HNmlMjbSVxkiBMCOxwzNmBSL33QAYOZjP1O2OI0=
 			</data>
 		</dict>
+		<key>Headers/ICMHelpCenterTranslationManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M4G4vSgdoUvfRJJIcxd1vMLDNaqKcW2ve8bUjqPxYbU=
+			</data>
+		</dict>
+		<key>Headers/ICMInAppsViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FOkOsifw92URWTs31Bl6r5Hkt6QU/pbAtJJHtntbodw=
+			</data>
+		</dict>
+		<key>Headers/ICMInputViewProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dn4Mp3PaMY/Qm9OZaQh3dtRsM1/Sp1nKKrGRne8xeiI=
+			</data>
+		</dict>
+		<key>Headers/ICMIntegerTextField.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jIdRPy4T04hMTO2ispoZs7YTvisH9MfaNbpuVc6W+Us=
+			</data>
+		</dict>
+		<key>Headers/ICMLinkOpener.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OsoZJI1sYpe48PyjB8fkQ2SyNtoxmYlbFkSRXIyTOVk=
+			</data>
+		</dict>
+		<key>Headers/ICMLoadingViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pf+VCZ5/Dz7E3z/kAnDUNFB2IiK6j0s7FDWn5XG5fE4=
+			</data>
+		</dict>
+		<key>Headers/ICMMetric.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Am7/h4PvmY6IL0XF0qsX9HEdr77H9KYLWd/Hp10g1Uw=
+			</data>
+		</dict>
+		<key>Headers/ICMMetricEvent.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Bfm9sccGHM6hrWQ7CtbofdTe/hkU07i44LqOECyB+zM=
+			</data>
+		</dict>
+		<key>Headers/ICMMultipleAvatarView.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gw5iCWv79leK1fmq6pa8Kw8OgMzkINX6UCsLS5SWYik=
+			</data>
+		</dict>
+		<key>Headers/ICMNavigationBarCloseButton.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			V7ZJYM0jKUo01whcvFUvrVPVyiZ9A09A6aRmYukotGU=
+			</data>
+		</dict>
+		<key>Headers/ICMNavigationController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VkfC7oL9NL8WsVrZka4Wa4EasCbzjQafUAUMFsivLng=
+			</data>
+		</dict>
+		<key>Headers/ICMParticipant.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p6QlloOOVftOnDJLWv+2lf/g1cs8+LTJtPgl0aub018=
+			</data>
+		</dict>
+		<key>Headers/ICMParticipatingAdmin.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UpV6/K2PuTPWmsyY9f8Cjb3XXbP6aTO2ERAI4UaNFNM=
+			</data>
+		</dict>
+		<key>Headers/ICMPhoneTextField.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SUrWNFRgpedYVt7rJ9qw8KtfGtHO23HbGmyBn4dfltI=
+			</data>
+		</dict>
+		<key>Headers/ICMPickerTextField.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JWYUynkkq99iqymq9WM6YeuDg4e0KvTIs4Uyn9AVvQY=
+			</data>
+		</dict>
+		<key>Headers/ICMPresentationManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			b3WYDBwo23/2apYmSoj51pff7vjRz5cyQjqevbZ6hv4=
+			</data>
+		</dict>
+		<key>Headers/ICMRecentConversationsViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GlQ64evM4kan9ewh+5n3trf7URPUUoz/52caVWP3o8c=
+			</data>
+		</dict>
+		<key>Headers/ICMRootViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Nc0PafPBHpzRY1nn6t3iwS/xlV6R9ROwz0dmWJiW35U=
+			</data>
+		</dict>
+		<key>Headers/ICMSafeNetworkModel.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			30GBgRdvzJhpBnE/NCgL9+bybRLWNQBSvmF/zqBpzsg=
+			</data>
+		</dict>
+		<key>Headers/ICMStartConversationButton.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			E3Wk3FpPAkWaogfgCR+Reko3GIoDTYGpsbPuF4EUPe8=
+			</data>
+		</dict>
+		<key>Headers/ICMSurveyQuestionBlockAppearance.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OdypCUisu4XFmiGYnHoHweYvXheA/fufwn6AI5/89fI=
+			</data>
+		</dict>
+		<key>Headers/ICMSurveyStepBlockAppearance.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2al0+BfLHAHFgWxIpLXGiA86u9fz7lGWIs+kBYLp4aU=
+			</data>
+		</dict>
+		<key>Headers/ICMTeamPresence.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZNVT4Kg7sveVSC0ZYA1PkWo7S6wvC3VYjotHv2QGeAc=
+			</data>
+		</dict>
+		<key>Headers/ICMTeammatePresenceView.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aZXjbZs5av0pivggWwq0c2kL3Wuwtmkl917MgSQtqrc=
+			</data>
+		</dict>
+		<key>Headers/ICMTextField.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z2UhEzEtMtbFIqbu42nem3ftB6oUpoNzvXEoxQpc5Mo=
+			</data>
+		</dict>
+		<key>Headers/ICMTimestampCalculator.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wdIetEuVAQG7Cqpe3LghjffNAU33K7XtgJAP60kUeOs=
+			</data>
+		</dict>
+		<key>Headers/ICMTranslationKeys.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NnKo9nz4gv11daM396YaoMMyrot96QzRRYE/G3deXNQ=
+			</data>
+		</dict>
+		<key>Headers/ICMTranslationManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qYZpH+8kGy+1I5X+zkioj6csI146/RHf/Wr25A83RIs=
+			</data>
+		</dict>
+		<key>Headers/ICMUnreadManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CrghD36S81z0o9UIMG1gq+umuHZ8AdJFXJXjWVwfvQA=
+			</data>
+		</dict>
 		<key>Headers/ICMUserAttributes.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1131,60 +1663,88 @@
 			459pkowgzVeFMuXYXfoda9U8Y0sgr7tqKjqCRy3uUgo=
 			</data>
 		</dict>
+		<key>Headers/ICMUtils.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P2mLFBgCSwnxaZqR/d2zEWrhx9fNNWTjBs3MNU/M61c=
+			</data>
+		</dict>
+		<key>Headers/ICMValidator.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7xOjHGkiJV72vTKKK5TePz3zCR6i7YI4QTm6g7/SoxI=
+			</data>
+		</dict>
+		<key>Headers/ICMValidatorProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aTwZORvdWEahYArbew8gLOMkf9mhIIlBOcZwr4mDQ/8=
+			</data>
+		</dict>
+		<key>Headers/ICMWindow.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jonxVDqas0hMSYUzIx3RR3wQSfitVn52/w1YxxMrui4=
+			</data>
+		</dict>
+		<key>Headers/ICMWindowProvider.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QGH70dqfig+O4dxsDp8Zh25DkeSp9mXKs0+ibr/Uvws=
+			</data>
+		</dict>
+		<key>Headers/ITBBlock.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HpTPAhva2fB5afiDxuJzSDbLrsR1FLvKSATF1rk34PA=
+			</data>
+		</dict>
+		<key>Headers/ITBBlockAppearance.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wuFz02qfLrPnqPIGBzkTq5/WnEk7KNc9j0HxMzHU3PY=
+			</data>
+		</dict>
+		<key>Headers/ITBImageLoader.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Db9uv+AigfDbhqR4PvwVBgcfOlZPzP7a0yqMlQTZFpY=
+			</data>
+		</dict>
+		<key>Headers/ITBLoadingView.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0AV7zvUCxI3UEixgSU3R91ZO4m3YMFPzQVq+X/9+Y9Y=
+			</data>
+		</dict>
+		<key>Headers/Intercom-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JpqHVS75h86Gn5sRDjU0sT0/OqeCNRA4UK3CyZfBHFQ=
+			</data>
+		</dict>
 		<key>Headers/Intercom.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			litP9Sr+xmosEd2FGhIZSN27ZUhBjPRjwm0IiyY+E8E=
+			FAiuW5SBLykqA+vrOWuDbMBzQeIMd181kF4Xv/gz7Ck=
 			</data>
 		</dict>
-		<key>InterBlocksAssets.bundle/Assets.car</key>
+		<key>Headers/UIImage+ICMImageUtils.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RiXZ7XAUuNBrNCYeEozbWqLuDpIakbwy90aPvt17Gdo=
-			</data>
-		</dict>
-		<key>InterBlocksAssets.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			lT0LuK3/5ETlYMlJIyJMDcCwutA8ojD1870irgdQnxM=
-			</data>
-		</dict>
-		<key>InterBlocksAssets.bundle/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7zuqjApsDgG1JvUdpmxgK1kqBS15yhIPu1ZpUGEaGdw=
-			</data>
-		</dict>
-		<key>InterBlocksAssets.bundle/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>InterBlocksAssets.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HxQWYGXUrwk5lOBZB2nMQzjbj0MvHADqeycTZBJc7JM=
-			</data>
-		</dict>
-		<key>InterBlocksAssets.bundle/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KONNTMyIIEvPkFgMt4qgZLurW4YFZaD2Tbi6jFHa8Xc=
-			</data>
-		</dict>
-		<key>InterBlocksAssets.bundle/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			lnS8ik99Pg7LJ63QXn2+4AIMsxa9UXkLf7Yf9CJdd18=
 			</data>
 		</dict>
 		<key>Intercom.bundle/data/intercom_area_codes.json</key>
@@ -1509,6 +2069,27 @@
 			rMB9+DfQ9tP1Soy/kQ1hpVggwixVyyyazI/cc1wChBQ=
 			</data>
 		</dict>
+		<key>Intercom.bundle/images/external_link_icon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0/IiQRdDBazHvipb5fDisCeiy1+PTSJTVXKdga2K68Q=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/external_link_icon@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xO9vI31OiMUjmZayHETN7oHX/ORNMXrpWGNvt173QXg=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/external_link_icon@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lK1r9JSM2b+fkMST2lbWFGMGn+zT+oLg8UboHVI+EAQ=
+			</data>
+		</dict>
 		<key>Intercom.bundle/images/footer_link_icon.png</key>
 		<dict>
 			<key>hash2</key>
@@ -1654,6 +2235,27 @@
 			<key>hash2</key>
 			<data>
 			oZTVsMieWRp/oXsyySMZ4fCt29RFAAhFCg0yr3YkQp8=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/info_icon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bGzpHs+3RbFdXP8iBzLXVXdtKWyOUxMHWOsQoMx7wmw=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/info_icon@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YzlZPaJo0bo1NfKWKh20tuepbTVqJiVFKqNjVPwbn0E=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/info_icon@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tVZFNBrWlHAOCyo152AY5lj//DbMFJ+wur+kwDIrYAQ=
 			</data>
 		</dict>
 		<key>Intercom.bundle/images/intercom_logo.png</key>
@@ -1936,6 +2538,69 @@
 			+mHQ6IsEabpjPbTTnhlARZ87UHrAko0O67JBt76DeZw=
 			</data>
 		</dict>
+		<key>Intercom.bundle/images/star_fill.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0jEG3nmCDtXhZ+kDOZlX7LUlMl4I0NOsn1FWyVBDc7Y=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/star_fill@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			clZ+Q36xod+l0a8HPRdesr/vhXt2FVk80gTKXg3mPnQ=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/star_fill@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n0tuTh8/DU083sS9UwEJcLv8mJhoeXuz1pkzhFV9Rfs=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/star_selected_border.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R//x1WCWQjtbUyDe4P4Hjfhl6Vjz6USiJjO/a5EuO2Q=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/star_selected_border@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H5w8Y9Od15kv/sRkuEMdtnRVDK/SouO57tNavc9CVHI=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/star_selected_border@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l0BtVC50J1s/u/SlmKzmFVKp8VmcDQX6lVd2XAXtNRo=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/star_unselected_border.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YHV/DFT4XfGkP4p37KlTaccjTbhHijkdi6V+usldBN8=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/star_unselected_border@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oxhKsdq1ma1xoGPrYHrfifEXy61RbTZmdns95zLaTq0=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/star_unselected_border@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tWPfnvmpOH+kn7QGatAQF+84NIYNVEWSfWgOPB6IL7U=
+			</data>
+		</dict>
 		<key>Intercom.bundle/images/startConversationIcon.png</key>
 		<dict>
 			<key>hash2</key>
@@ -1997,6 +2662,27 @@
 			<key>hash2</key>
 			<data>
 			qw0+ncIPD9SyhmXXvgDeEsuh85OOyzRZ10fBtQRseGg=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/survey_loading_state.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Pb7+03fgE5CsIcd/9Gv3FNNFNeYOh4AF1CM3zV4WGdw=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/survey_loading_state@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2XrGTiyS/a5YM+57x//DRfni+w6+xUk9D2TfoL51C9o=
+			</data>
+		</dict>
+		<key>Intercom.bundle/images/survey_loading_state@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0a9+oWO4d2xFk0cf72iJ+2OVx6bGV6JVOg09HYW/2zs=
 			</data>
 		</dict>
 		<key>Intercom.bundle/images/teammate_bio.png</key>
@@ -2220,21 +2906,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JH58fiOpE7fTU/PrSTAxaixMtJtwxEXhqm2zFdPTak4=
+			XZKbvUiZ0dH26vt08VKXNI/Xlro+GKaYUy2Q31CzQH8=
 			</data>
 		</dict>
 		<key>IntercomAssets.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RaT8z0fRFPbCxGTWvyqmzfvK7ftbk8A+ss3XB2vqBkY=
+			FdmIyE38zYzYAyvc1ivoaOx6D4dE+tRgvFR44zxITos=
 			</data>
 		</dict>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ijrbnGIQIbuwsJ34LbWNT9Kuq3p8o0lZubqiM4GmlD8=
+			ETkQg1HTyHAboAs7w0iRqXe9Fowo1wAnAFRqDfdVGaw=
 			</data>
 		</dict>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeRequirements</key>
@@ -2248,14 +2934,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y1E5aslDGw0gfpSOKC3u0VvRPha2WntP7h9Eunu4Ifw=
+			KAGHmJLDEO7JSgwoYgdFGPOUvqLo3vIAA3uyZ06e2no=
 			</data>
 		</dict>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qmeD+Zo07ByP6XhrnNBm560uxeAM7LCdq8/elaqpbs4=
+			yx/t4HrI35XRgNahagCIULN1/3gdeXENGx0bKPSBUoY=
 			</data>
 		</dict>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeSignature</key>
@@ -2269,14 +2955,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lLPXGCj2dJuRHWBrNUWsOkhifsU+3J/m9hXMckII0WM=
+			Sj+dD6FbKlAtCLfjZWq+ca4t/gO64xe+iPKr5ZtvPF0=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AMbGW4FUEf0a6m7aE+Gw+KnbQd7aujsrzL5OhYk9HV0=
+			rAb/JR90GmZeE5N5dwfTIo4N2seUh1PV+l0bvTsyA/o=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/_CodeSignature/CodeRequirements</key>
@@ -2290,14 +2976,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FK/vwvwmn94Lq+kN7Um8pv5e0HpcbwXrVAzHy+rnP18=
+			PEh8t2VTh7yvslTmK7FiBL+OFmsFDwWNySH50wNXvy8=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mLp2VfayFo5vMfaoe9GAnvgWP4XgfYMpe2pm3ygL68g=
+			a3A0bjbTA8baPzMpaO9u1h5/N7kSVM07mFaUunUmSoY=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/_CodeSignature/CodeSignature</key>
@@ -2311,630 +2997,329 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PNuipz9DkcUqie91+f/cHrqj/jX7MX7pcfzJaVNDt+o=
+			elIxR1+Xg0wSKoEOnC/RM1bt9l4RBJQzc19hRbOwKno=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/bg.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+nMDrDBdovnIOCLXAaKSjBATsZNGaj1BVY/h8rzZjek=
+			yIfICvbcnfcSSyPlFb2J09nUQIfJPDps4P4WcvuTHT0=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/bs.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9N4rf+mlHFfvNmfM6gcDMvzOMURNZ4EPlKQBPqpPY7o=
+			Jv3r7LhxO3XgEwVQkbcCXu5NMsCtJQKQxFe3qb9vmKg=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/ca.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			noFIgZFo54R6w5lfFcUzf+ZIiKuei+WQpxkmWKdDt9c=
+			PXf96Zvk+ammGsJq+QQt3IC7wVJY9MnSl8E8D3FDNKQ=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/cs.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QZprji1/ibQ11mdLWjnEykG1hLm8+HU7OvpIEEBPS/U=
+			HHxrSaPJCJYnycA+4USmrPbtgfwOXSzaiIsuc27raK8=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/da.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IdRi1BM+OfiMvMKFBbAQo+n4Gik81XDu9uIgoH9v8Pw=
+			067/cn5+yLcd41IKogRddRIJM2J1K2yMrX9eN/cX97I=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/de-form.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+3/18XM3v2NlVBJpC8B9zlr5NjsonzTPxDy2Ru6Wosc=
+			5fVe0ygI5weKlYhx+Rul4UXsskJxGhT9cGtzGxLUZZg=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/de.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DooNGkRVoVFfk0bs2n7Ftv+wKHf1EWUQ8q92k6I87iE=
+			RW1AkV2GiZUVaY//wao2/95Sf5mtFjL5JZAyujP0A6M=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/el.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			89vsRZjaxC9R1mrfxXpQqyQX8LwIx4qomRf1KRbzVh8=
+			W0akykH02sbXgy3r4aooJQGnhpOjAxslxjXvm43WfEA=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/en.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5UHepnc2FAibDD8ucr6WCKMSBlmpC1hjD9C0o7dm+zw=
+			CalkTbKtXZO2id92ywzGPaBzStOVu6CObXw2aYIA2kY=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/es.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ivN6qPCM/d9Aaks8qM5wjbXIXBnejaGNhkln8TvSibY=
+			xXv8M+/rE7Ks1mpc6nsjrjrpE6cEzRBYNOQjLm9qzW8=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/et.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+rZcIM55A0FrWv8IPWnLcnsb5Qb4PSnvVWu4x6BSuXI=
+			bPl9oIHg1AoibUSmtR/5fthWpfxAmUyxiiw6f2zy8uI=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/fi.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hTQqdQ1eU5ZtsaoMcAa/bBnHBpIAfaN7+OoSCM83TfQ=
+			0mHB9I0lF7f0w/fu3HgHqFjQ2Y+El3DHSYFTCexqp6c=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/fr.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l3T1Dsa8jXakfCJnfZmyufROapIuhYfcS/BzGVOxVQ0=
+			BztlyQvvvsRSz+KoYcnMocbYZ2i75psBMqv+6Rc1xxM=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/he.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S8aXno0nOMmVZHFGF+JzUw8ALkTbMbcJBgk08hK2eKc=
+			8/xDdtbCggpdFpdPRZkiNi+mJrCHwzgjEFCl8DUxRpU=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/hr.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RC+xAnAXkiOlnOGRjnEcFzqWAZJrPmxXrl7sCRsufU4=
+			XtLtZ5kIQ2iD02DxWCAkJt/3pM7huACxesQ3KyCwQXM=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/hu.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3CtNRxonUivQOBWnJgBM/jz4StjyxX5upEdI1Of8IQU=
+			6ppODR24jhwwlXqLuvI64K8Y3eJ0QJnIvEaPhmA7T/Q=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/id.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rchXaMwNquRRNn3sf0m6nWCaJzb/JXn8ZouxcOmGGLw=
+			/GSvFHZ5Mw6S5No9PMopkOapd0ZWRyYDB5wyC+00fuk=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/it.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m1ItM9sbXTi519bT+5DGQ5KY7Tg9YA8aT+wKl3s4CGE=
+			tRsSUCKrMHMtftUD3b66Eel02pXwjRqYAzBLz81WRA8=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/ja.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tJZmVbVRFyOL/JtoUfUGoUvt5kQq2qX6DGAiLJtxLYk=
+			ajWlZoCZXE2pOLICe6PRhz8X+K1ILx9UwThGnSj9DLg=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/ko.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jFtL50N7PW+fzFAwcKp7P1WOyUFEiBfoSODD2HVifoo=
+			ensT27xIT4LBSf7uMIQT/arTdHYL/D+htZH51hK4GRg=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/lt.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9yQjHZmLFSR98kLe0fl9+ZbBli+kFV73vI2UzLZrZFM=
+			w+N1ycydI5BUaXLVFynaCIF8zI0sMpynpc0JUDyTtOo=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/lv.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZAhVN1d+78574/uLcKg8yV+CPdtGkswqqGWgatOzXrs=
+			0XHr/Pr6OSQHF6KURVLqAg7yf+pxKv4r6EkzLsQcSpQ=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/mn.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Wr7hr3J4DL6OINvW0pprLmT1CVVeusTFOrlo0/DGFI=
+			HkTIbgIINJSdR6B/lDf9b1Uy/0YnEy623xyYGN7gU5o=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/nb.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8ioUBgOH1i6mcWnnh6XHwldddJNd+dDuDgTAWSdfBis=
+			rPcYCMZ30UKFL0izxuCZsFGXwE094qfuUwtKjnYQ5Xc=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/nl.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UBR4sYTMInYNiZ1KobwtWlyntNFW62VcJpXfuGrEqmE=
+			Kufx1HuqHH84I9HG6TcFn+LH/o00bgqPKQi/Dy8I/9o=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/pl.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZR3hruDykvL6e9Y4EAe0vmb7s7H4Vi0hN3T+7a4bjXc=
+			PCPh5xZH9EE2IJK5VX/wgHoitwnlhiKCsGdHrXYcvvw=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/pt-br.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4HwirqXxmQCUtzAroIo7KQbm0rmlAFq7le/45ngxYH0=
+			QtvEX5qEzDLN6PRan1FcLBWBGC+kgprZjQYy2UUjpXI=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/pt-pt.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nzGy1SW79X9UiY++Yuq8j8Gj6zmlayNWFuOoOAuA+q8=
+			E1FyiRvXmMzfn1xaIL3fgvKtz31m9VmYDk4D4jSSAZ4=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/ro.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ocnyMtUe4gKRtjDv1NoLdVNRuVGOwCAcRfBn2zNClE=
+			iWYO3SkK4smc/sXfOyNFA4ZDDPCxqSCkV4JNXilEjKc=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/ru.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q8xjgNugl5YBRqCAxRvZyned/KXjHOloO5EvmyAwe+Y=
+			Bxkb6LOFmbZ2FL1ve8xeOOpGmrQ4v5suyTnMw6VnJtM=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/sl.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mfy54ztouhP7oMZ95RVulhFBsIcluKwtVR+hG7qdZkk=
+			A0tXhAikF2/W8wFhBu0cbRiRc7f7Gw/V2sA2fZv/JWU=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/sr.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ObVstAvTWaulPkzUctUVw5A7f8+wRKN2WqFejoZ96ug=
+			uK4Hml6mfWP4bcd9EgO4AhEUm6LfKkP1F3kJhYhn3sw=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/sv.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rj8C6q/gMHlPtveN2sw1a8HNgdRewI4l7n3IrHW+ORw=
+			VPzBDY/+Qe1kjzbp/7J4L5llzjQWPM3aH/Nu1xHahz8=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/tr.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			76HAGItgyEqLa46i6CmJQAHm6x8g9dL4acfzFune1tw=
+			0CSg8GmLMOVoqg1txsOdt5B09u2al7m8o02tGFXzuno=
+			</data>
+		</dict>
+		<key>IntercomTranslations.bundle/uk.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			juCZ8hpIUkhCqv3BtGti6H+9Is4dzvw9rvJ/+/XShiA=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/vi.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NJzYbFlHSH7hdCatl7pP73bxW9X0A3dLH1eg81kq23A=
+			/+Q5ZZ94D1p9NXin37IolZn1bQBNnZyUh2TTQ8CsljI=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/zh-hans.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FoYY5JPMHdUFC4arvS9pF6ocFrGek1W47dV52PFBd1k=
+			V8B0bH1Zs2nKO44dKbThExsgyQ0paryE1RTe1dEfQ08=
 			</data>
 		</dict>
 		<key>IntercomTranslations.bundle/zh-hant.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gJO+ewBLsD/3g9ITVq2GXHW9uHp8AyzuAHyoyUefAQk=
+			0ppy53raCF9AHoQ1Rrn0Refik/vKClTBemOME+c9rfQ=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XFtXTBgW6wSnI6HVwQUMbuEtUsqDN20ovQ4W2Xhm/eE=
+			mBJ6ZkF3JciODSGagYLqTFod0RR5GQMucIm6DTukDpo=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mVEiuLeVQEzBDB2YukcpKZRvuJ8h3yK6RRRAERSdHmM=
+			w7xjPtdFrfRqeLAGLH63jLpyC4O4Nlr8xRiDdiP//1g=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jrRqV3z5FX3jLDnzPsRtD0jb2QhXR4NBtKdAwcb50II=
-			</data>
-		</dict>
-		<key>Modules/Intercom.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XFtXTBgW6wSnI6HVwQUMbuEtUsqDN20ovQ4W2Xhm/eE=
-			</data>
-		</dict>
-		<key>Modules/Intercom.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mVEiuLeVQEzBDB2YukcpKZRvuJ8h3yK6RRRAERSdHmM=
-			</data>
-		</dict>
-		<key>Modules/Intercom.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jrRqV3z5FX3jLDnzPsRtD0jb2QhXR4NBtKdAwcb50II=
+			ixcRRpoutc4EakyN8y3wPAmuBZrK8pFru071FefD7FU=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7fVVRx60qeUAyNnNBi9aPxE++nUYV4+2I82hWfVs0C4=
+			egB6PxCMowRVr0+VNOo+YMLZdTtU2gEqZqQM1UxNx2M=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PsFjiY9Z7A9QUVT1DBedh0ZulULavC/eomuqZJtHCxg=
+			YwezeohPgGKhWfLHRv1zWVG2TRoA/IHmJUMArE0vwks=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xeUjHHJ2HB1Khk+yFRp4j0dK0+PwPOCCSg7pudUhEY0=
-			</data>
-		</dict>
-		<key>Modules/Intercom.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7fVVRx60qeUAyNnNBi9aPxE++nUYV4+2I82hWfVs0C4=
-			</data>
-		</dict>
-		<key>Modules/Intercom.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PsFjiY9Z7A9QUVT1DBedh0ZulULavC/eomuqZJtHCxg=
-			</data>
-		</dict>
-		<key>Modules/Intercom.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xeUjHHJ2HB1Khk+yFRp4j0dK0+PwPOCCSg7pudUhEY0=
+			bFDplZXqBAZCdLLfRbKiBdc1CmNXddjwOmF5cJ62Nn8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4bIgKVn5j1VQgEVU76DvNk/9Roq/21ilX0w4xmASZpk=
-			</data>
-		</dict>
-		<key>Modules/module.private.modulemap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zXBgf3hsHmcXI24rmTMeT4AJjmr9Dk1Xy33KiMXlQnU=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMActiveAdminsAvatarView.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+8181T3nY6YavIjM7SOgbTVoLdhZ/CXO7BjgRGQfd8Y=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMArticleWebViewController.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7jOMVEvErWn8BB7eb1vb9PonH0XNRwdl+lhgLFCbr4I=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMAssets.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9kGpWrRv+EeH/sBid35YXflMxAq6658VLY16FhGy3rk=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMAutoLayout.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dcY0wRqPlJdhHtP+t+ZyWEgdCkKyCGrVceoIOvGRIak=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMAvatar.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hutwA+QTxS7e1uriq5JaxTL4Yi1IMSQ4pRUnFcz4gTU=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMColor.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fU+NMBVlFOKrZN9h+rJ++Vt8Lkq6LlKGgsrdCgARC6U=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMConfig.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LocE4MTZyOyK2myjL4Goohu/w60Nf6qz6F/T+k0muuQ=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMContentViewController.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5KyBP+EFBaH04v3Og6rGIfyuju6/k2q6KCaSTQUx8Is=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMContentViewControllerDelegate.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+1ZrnEU+qspjEgHfk7o0XyQ1Rs+uhcUr0Zk331dnwoQ=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMDataManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/yfVBb2o8xQfpaBRLxrFeX45hgNWRGAgEWB0ii7AzR8=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMDataManagerProtocol.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			54YGAW9ptFwUT6SbvsjG8s5Pk24mMXt0QTWeTC9jp4Q=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMEngine.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PSDibjE1tm4GMi+WjXD0Zn8O4D4aMHk7VOTi2Z6y4/I=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMErrorViewController.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			d4IN9/AQiWGsqBhleML3B360kXN9Lxii31zdi39Bsz4=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMErrorViewDelegate.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			h5nS4EWsVW2YaTGtgokx3ZINO1D4h7pWKOGUwSHYlZE=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMFeedbackGenerator.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			z6BI58iciJGNaqXhAa48qGUnGGoGo2YHR5dMKCMBYZs=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMHTTPClient.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7Z3/KJhiIsA0tpHHJfeB7laW5lPQhBLNRbR3jStmDy4=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMHTTPClientProtocol.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CmSN+HpF8oPmdYSnb8Ibd94mGyG7w9PvLlZxzET3qiE=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMHelpCenterTranslationManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8N/MqHKTMR2kYRwa+YOFNHeKS51/TzEwXmEuhteQ4hA=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMLoadingViewController.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pf+VCZ5/Dz7E3z/kAnDUNFB2IiK6j0s7FDWn5XG5fE4=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMMetric.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qleW5Py7WaYQW7yslvv22qJmZONzZ3pKg6COYnos+UQ=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMMetricEvent.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vsla8I56FT0J4ky9CkTSLF+5Qll3C3hQEfpZZd7UbYo=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMMultipleAvatarView.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gw5iCWv79leK1fmq6pa8Kw8OgMzkINX6UCsLS5SWYik=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMNavigationBarCloseButton.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			V7ZJYM0jKUo01whcvFUvrVPVyiZ9A09A6aRmYukotGU=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMNavigationController.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VkfC7oL9NL8WsVrZka4Wa4EasCbzjQafUAUMFsivLng=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMParticipant.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			p6QlloOOVftOnDJLWv+2lf/g1cs8+LTJtPgl0aub018=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMParticipatingAdmin.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UpV6/K2PuTPWmsyY9f8Cjb3XXbP6aTO2ERAI4UaNFNM=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMPresentationManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZpiUOw80opkTKuHClsLVw49gxPAN5lXL++4nlrDjTGo=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMRecentConversationsViewController.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GlQ64evM4kan9ewh+5n3trf7URPUUoz/52caVWP3o8c=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMSafeNetworkModel.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			30GBgRdvzJhpBnE/NCgL9+bybRLWNQBSvmF/zqBpzsg=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMStartConversationButton.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			E3Wk3FpPAkWaogfgCR+Reko3GIoDTYGpsbPuF4EUPe8=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMTeamPresence.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZNVT4Kg7sveVSC0ZYA1PkWo7S6wvC3VYjotHv2QGeAc=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMTimestampCalculator.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wdIetEuVAQG7Cqpe3LghjffNAU33K7XtgJAP60kUeOs=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMTranslationKeys.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wXmB9/mkl/fjqYXvxWz+ryStL76HTTFcCRrtciEGL1c=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMTranslationManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			h1Jhe1pwxf0QLMl1Xp3vfe8i6pinLZue4Vaai3z9OJU=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMUnreadManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CrghD36S81z0o9UIMG1gq+umuHZ8AdJFXJXjWVwfvQA=
-			</data>
-		</dict>
-		<key>PrivateHeaders/ICMUtils.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			P2mLFBgCSwnxaZqR/d2zEWrhx9fNNWTjBs3MNU/M61c=
-			</data>
-		</dict>
-		<key>PrivateHeaders/UIImage+ICMImageUtils.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			lnS8ik99Pg7LJ63QXn2+4AIMsxa9UXkLf7Yf9CJdd18=
+			VVpgokXf972McCf+nl/AeuFUSZPIiLkqtf+/DFiXJT0=
 			</data>
 		</dict>
 		<key>config.yml</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E2uJoSJHe2lnhtQzDT7J7Un9jUzAbv9P+7G+pdzybuI=
+			ZjeByyK+noy4q/djwQkLiKu8A0z7tJasewI8zfoaCKE=
 			</data>
 		</dict>
 	</dict>

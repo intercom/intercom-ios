@@ -1,15 +1,15 @@
 parameters:
   iphone_large:
     type: string
-    default: "platform=iOS Simulator,name=iPhone 11 Pro,OS=15.2"
+    default: "platform=iOS Simulator,name=iPhone 11 Pro,OS=15.4"
   iphone_small:
     type: string
-    default: "platform=iOS Simulator,name=iPhone 8,OS=15.2"
+    default: "platform=iOS Simulator,name=iPhone 8,OS=15.4"
 
 # Default VM config to be used for macOS builds
 macos_config: &macos_config
   macos:
-    xcode: 13.2.1
+    xcode: 13.3.0
   resource_class: macos.x86.medium.gen2
   shell: /bin/bash --login -eo pipefail
 
@@ -422,34 +422,34 @@ jobs:
       - TEST_PLAN: "Snapshot"
       - CONFIGURATION: "AX2"
 
-  # UI tests for iPhone 8 (15.2) devices. One test for each test bucket.
+  # UI tests for iPhone 8 (15.4) devices. One test for each test bucket.
 
   UI_1_iphone_8:
     <<: *macos_config
     <<: *ui_tests
     environment:
-      - DEVICE_TARGET: "iPhone 8 (15.2)"
+      - DEVICE_TARGET: "iPhone 8 (15.4)"
       - TEST_BUCKET: "@test_bucket_1"
 
   UI_2_iphone_8:
     <<: *macos_config
     <<: *ui_tests
     environment:
-      - DEVICE_TARGET: "iPhone 8 (15.2)"
+      - DEVICE_TARGET: "iPhone 8 (15.4)"
       - TEST_BUCKET: "@test_bucket_2"
 
   UI_3_iphone_8:
     <<: *macos_config
     <<: *ui_tests
     environment:
-      - DEVICE_TARGET: "iPhone 8 (15.2)"
+      - DEVICE_TARGET: "iPhone 8 (15.4)"
       - TEST_BUCKET: "@test_bucket_3"
 
   UI_4_iphone_8:
     <<: *macos_config
     <<: *ui_tests
     environment:
-      - DEVICE_TARGET: "iPhone 8 (15.2)"
+      - DEVICE_TARGET: "iPhone 8 (15.4)"
       - TEST_BUCKET: "@test_bucket_4"
 
   XCUI_1_iphone_8:
@@ -464,34 +464,34 @@ jobs:
       - DESTINATION: << pipeline.parameters.iphone_small >>
       - TEST_GROUP: "Group2"
 
-  # UI tests for iPhone 11 Pro (15.2) devices. One test for each test bucket.
+  # UI tests for iPhone 11 Pro (15.4) devices. One test for each test bucket.
 
   UI_1_iphone_11_pro:
     <<: *macos_config
     <<: *ui_tests
     environment:
-      - DEVICE_TARGET: "iPhone 11 Pro (15.2)"
+      - DEVICE_TARGET: "iPhone 11 Pro (15.4)"
       - TEST_BUCKET: "@test_bucket_1"
 
   UI_2_iphone_11_pro:
     <<: *macos_config
     <<: *ui_tests
     environment:
-      - DEVICE_TARGET: "iPhone 11 Pro (15.2)"
+      - DEVICE_TARGET: "iPhone 11 Pro (15.4)"
       - TEST_BUCKET: "@test_bucket_2"
 
   UI_3_iphone_11_pro:
     <<: *macos_config
     <<: *ui_tests
     environment:
-      - DEVICE_TARGET: "iPhone 11 Pro (15.2)"
+      - DEVICE_TARGET: "iPhone 11 Pro (15.4)"
       - TEST_BUCKET: "@test_bucket_3"
 
   UI_4_iphone_11_pro:
     <<: *macos_config
     <<: *ui_tests
     environment:
-      - DEVICE_TARGET: "iPhone 11 Pro (15.2)"
+      - DEVICE_TARGET: "iPhone 11 Pro (15.4)"
       - TEST_BUCKET: "@test_bucket_4"
 
   XCUI_1_iphone_11_pro:

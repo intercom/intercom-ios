@@ -31,3 +31,8 @@ framework module Intercom {
   link framework "SystemConfiguration"
   link framework "WebKit"
 }
+
+module Intercom.Swift {
+    header "Intercom-Swift.h"
+    requires objc
+}
