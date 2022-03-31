@@ -29,7 +29,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let defaults = UserDefaults.standard
         if let email = defaults.string(forKey: emailKey) {
-            Intercom.registerUser(withEmail: email)
+            let attributes = ICMUserAttributes()
+            attributes.email = email
+            Intercom.loginUser(with: attributes) { result in
+                switch result {
+                case .success: print("Successfully logged in \(email)")
+                case .failure(let error): print("Error logging in: \(error.localizedDescription)")
+                }
+            }
         }
     }
 
