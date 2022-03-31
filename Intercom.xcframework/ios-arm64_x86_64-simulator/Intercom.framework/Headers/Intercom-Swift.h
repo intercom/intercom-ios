@@ -331,6 +331,20 @@ SWIFT_CLASS("_TtC8Intercom16EmojiImageButton")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+@class NSError;
+
+SWIFT_CLASS("_TtC8Intercom14ErrorProcessor")
+@interface ErrorProcessor : NSObject
++ (NSError * _Nonnull)generateHTTPErrorWithCode:(NSInteger)code message:(NSString * _Nonnull)message SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generateInvalidUserIdOrEmailError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generateInvalidUpdateObjectError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generatePushNotificationsNotEnabledError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generatePushNotificationNilDeviceTokenError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generateInvalidIdentityVerificationError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generateInvalidDeviceTokenError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC8Intercom26HelpCenterArticle_Internal")
 @interface HelpCenterArticle_Internal : NSObject
@@ -939,6 +953,20 @@ SWIFT_CLASS("_TtC8Intercom16EmojiImageButton")
 @interface EmojiImageButton : UIButton
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+@class NSError;
+
+SWIFT_CLASS("_TtC8Intercom14ErrorProcessor")
+@interface ErrorProcessor : NSObject
++ (NSError * _Nonnull)generateHTTPErrorWithCode:(NSInteger)code message:(NSString * _Nonnull)message SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generateInvalidUserIdOrEmailError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generateInvalidUpdateObjectError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generatePushNotificationsNotEnabledError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generatePushNotificationNilDeviceTokenError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generateInvalidIdentityVerificationError SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)generateInvalidDeviceTokenError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

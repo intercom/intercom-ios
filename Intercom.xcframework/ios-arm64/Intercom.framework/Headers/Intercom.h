@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <Intercom/ICMUserAttributes.h>
+#import <Intercom/ICMUserAttributesValidation.h>
+#import <Intercom/ICMCompany.h>
 #import <Intercom/ICMHelpCenterCollection.h>
 #import <Intercom/ICMHelpCenterSection.h>
 #import <Intercom/ICMHelpCenterArticle.h>
@@ -84,61 +86,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- Intercom is your direct line of communication to every user, right inside your app. Intercom’s in-app messages
- are up to 10 times more effective than email too! Send the right messages, to the right users, at exactly the right time.
-
- ## How do I track my users?
-
- In order to see your users in Intercom's user list, you must first register them via your iOS application. If you have a
- place in your application where you become aware of the user's identity such as a log in view controller, call one of the
- following depending on the information you have available for that user:
-
- If you have both a unique user identifier and an email for your users::
-
- [Intercom registerUserWithUserId:@"123456" email:@"joe@example.com"];
-
- If you only have a unique identifier for your users:
-
- [Intercom registerUserWithUserId:@"123456"];
-
- Finally, if you only have an email address for your users:
-
- [Intercom registerUserWithEmail:@"joe@example.com"];
-
- ## Can I track unidentified users?
-
- Yes, absolutely. If you have an application that doesn't require users to log in, you can call:
-
- [Intercom registerUnidentifiedUser];
-
- If the user subsequently logs in or you learn additional information about them (e.g. get an email address),
- calling any of the other user registration methods will update that user's identity in Intercom and contain
- all user data tracked previously.
-
- ## How do push notifications work?
-
- Intercom for iOS enables your users to receive push notifications for new messages. Simply call:
-
- - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-     [Intercom setDeviceToken:deviceToken];
- }
-
- in your `didRegisterForRemoteNotificationsWithDeviceToken:` method once you have registered your app for
- push notifications with the `UIApplicationDelegate`.
-
- When your app receives a push notification Intercom for iOS checks to see if it is an Intercom push notification
- and opens the message. You do not need to implement any additional code in order to launch the message window.
-
- To do this we [safely swizzle](http://blog.newrelic.com/2014/04/16/right-way-to-swizzle/) the public methods
- in `UIApplicationDelegate` that handle receiving push notifications. We do not use any private APIs to do this.
-
- ## More information
-
- Full documentation is available [here](https://developers.intercom.com/docs/ios-installation ) and please contact
- us directly via Intercom for any support or questions you may have.
-
- */
 @interface Intercom : NSObject
 
 #pragma mark - Intercom Initialisation
@@ -165,16 +112,28 @@ NS_ASSUME_NONNULL_BEGIN
  and which can store a secret. More information on Identity Verification can be found [here](https://developers.intercom.com/docs/ios-identity-verification)
 
  
- @note This should be called before any user registration takes place.
+ @note This should be called before any user login takes place.
  @param userHash A HMAC digest of the user ID or email.
  */
 + (void)setUserHash:(NSString *)userHash;
 
-#pragma mark - User Registration
+#pragma mark - User Login
 
 //=========================================================================================================
 /*! @name Working with anonymous users */
 //=========================================================================================================
+/*!
+ If you call loginUnidentifiedUserWithSuccess:failure:, all activity will be tracked anonymously. If you choose to
+ subsequently identify that user, all that anonymous activity will be merged into the identified user. This means that
+ you will no longer see the anonymous user in Intercom, but rather the identified one.
+ 
+ We recommend this is called from within the application delegate's didFinishLaunchingWithOptions: method.
+ @param success A nullable success callback with no parameters.
+ @param failure A failure callback with an error parameter.
+ @note You must call one of the user login methods in order to start communicating with Intercom.
+ */
++ (void)loginUnidentifiedUserWithSuccess:(void(^ __nullable)(void))success failure:(void(^ __nullable)(NSError *_Nonnull error))failure NS_REFINED_FOR_SWIFT;
+
 /*!
  If you call registerUnidentifiedUser, all activity will be tracked anonymously. If you choose to subsequently
  identify that user, all that anonymous activity will be merged into the identified user. This means that you
@@ -182,45 +141,57 @@ NS_ASSUME_NONNULL_BEGIN
 
  We recommend this is called from within the application delegate's didFinishLaunchingWithOptions: method.
 
- @note You must call one of the user registration methods in order to start communicating with Intercom.
+ @note You must call one of the user login methods in order to start communicating with Intercom.
  */
-+ (void)registerUnidentifiedUser;
++ (void)registerUnidentifiedUser __attribute((deprecated("'+[Intercom registerUnidentifiedUser]' is deprecated. 'Use +[Intercom loginUnidentifiedUserWithSuccess:failure:]' instead.")));
 
 //=========================================================================================================
 /*! @name Working with identified users */
 //=========================================================================================================
 /*!
- In order to keep track of a specific user, you must identify it with a unique user identifier, an email
- address, or both. By supplying information like this Intercom provides richer user profiles for your users.
- This is a userId, supplied by you (e.g. from an existing web service for your product) to represent your
- user in Intercom, once set it cannot be changed.
+ In order to keep track of a specific user, you must identify it with a unique user identity, an email
+ address, or both. To provide these, you must first create a new `ICMUserAttributes` object and then populate
+ the `email` and/or `userId` properties for that object. This is a userId, supplied by you (e.g. from an
+ existing web service for your product) to represent your user in Intercom, once set it cannot be changed.
+ 
+ As well as the `email` and `userId` fields, you can populate the other user attribute fields within
+ `ICMUserAttributes` when you login as an identified user. By supplying information like this, Intercom
+ provides richer user profiles for your users.
 
  If you are putting Intercom for iOS into an app that has persisted an authentication token or equivalent
- so your users don't have to log in repeatedly (like most apps) then we advise putting the user registration
+ so your users don't have to log in repeatedly (like most apps) then we advise putting the user login
  call in the `didBecomeActive:` method in your application delegate. This won't have any negative impact if
  you also add it to your authentication success method elsewhere in your app.
 
- @param userId  A unique identifier for your user.
- @param email   Your user's email address.
- @note You must call one of the user registration methods in order to start communicating with Intercom.
+ @param userAttributes An `ICMUserAttributes` object. Either or both `email` and `userId` properties must be populated.
+ @param success A nullable success callback with no parameters.
+ @param failure A failure callback with an error parameter.
  */
-+ (void)registerUserWithUserId:(NSString *)userId email:(NSString *)email;
++ (void)loginUserWithUserAttributes:(ICMUserAttributes *)userAttributes success:(void(^ __nullable)(void))success failure:(void(^ __nullable)(NSError *_Nonnull error))failure NS_REFINED_FOR_SWIFT;
 
 /*!
- Register a user just with their userId.
+ Login as a user just with their userId and email.
+ 
+ @param userId A unique identifier for your user.
+ @param email Your user's email address.
+ @note You must call one of the user registration methods in order to start communicating with Intercom.
+ */
++ (void)registerUserWithUserId:(NSString *)userId email:(NSString *)email __attribute((deprecated("'+[Intercom registerUserWithUserId:email:]' is deprecated. 'Use +[Intercom loginUserWithUserAttributes:success:failure:]' instead.")));
 
+/*!
+ Login as a user just with their userId.
  @param userId A unique identifier for your user.
  @note You must call one of the user registration methods in order to start communicating with Intercom.
  */
-+ (void)registerUserWithUserId:(NSString *)userId;
++ (void)registerUserWithUserId:(NSString *)userId __attribute((deprecated("'+[Intercom registerUserWithUserId:]' is deprecated. 'Use +[Intercom loginUserWithUserAttributes:success:failure:]' instead.")));
 
 /*!
- Register a user with just their email address.
+ Login as a user with just their email address.
 
  @param email   Your user's email address.
  @note You must call one of the user registration methods in order to start communicating with Intercom.
  */
-+ (void)registerUserWithEmail:(NSString *)email;
++ (void)registerUserWithEmail:(NSString *)email __attribute((deprecated("'+[Intercom registerUserWithEmail:]' is deprecated. 'Use +[Intercom loginUserWithUserAttributes:success:failure:]' instead.")));
 
 //=========================================================================================================
 /*! @name Logging the user out */
@@ -228,7 +199,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  logout is used to clear all local caches and user data Intercom has created. Logout will also close any active
  UI that is on screen. Use this at a time when you wish to log a user out of your app or change a user.
- Once called, Intercom for iOS will no longer communicate with Intercom until a further registration is made.
+ Once called, Intercom for iOS will no longer communicate with Intercom until a further login is made.
  */
 + (void)logout;
 
@@ -248,8 +219,21 @@ NS_ASSUME_NONNULL_BEGIN
  Details on attributes available to update can be found in ICMUserAttributes.
  
  @param userAttributes The attributes to update the user with.
+ @param success A nullable success callback with no parameters.
+ @param failure A failure callback with an error parameter.
  */
-+ (void)updateUser:(ICMUserAttributes *)userAttributes;
++ (void)updateUser:(ICMUserAttributes *)userAttributes success:(void(^ __nullable)(void))success failure:(void(^ __nullable)(NSError *_Nonnull error))failure NS_REFINED_FOR_SWIFT;
+
+/*!
+ You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that
+ relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to
+ Intercom you can then apply filters based on these attributes.
+ 
+ Details on attributes available to update can be found in ICMUserAttributes.
+ 
+ @param userAttributes The attributes to update the user with.
+ */
++ (void)updateUser:(ICMUserAttributes *)userAttributes __attribute((deprecated("'+[Intercom updateUser:]' is deprecated. 'Use +[Intercom updateUser:success:failure:]' instead.")));
 
 #pragma mark - Log Event
 
@@ -377,10 +361,19 @@ NS_ASSUME_NONNULL_BEGIN
  Set the device token for push notifications. Once the device token is set, the methods for receiving push
  notifications are safely swizzled so ones sent from Intercom can be intercepted. When a push notification from
  Intercom is received, Intercom for iOS will automatically launch the message from the notification.
+ @param deviceToken The device token provided in the `didRegisterForRemoteNotificationsWithDeviceToken` method.
+ @param failure A failure callback with an error parameter.
+ */
++ (void)setDeviceToken:(NSData *)deviceToken failure:(void(^ __nullable)(NSError * _Nullable error))failure;
+
+/*!
+ Set the device token for push notifications. Once the device token is set, the methods for receiving push
+ notifications are safely swizzled so ones sent from Intercom can be intercepted. When a push notification from
+ Intercom is received, Intercom for iOS will automatically launch the message from the notification.
 
  @param deviceToken The device token provided in the `didRegisterForRemoteNotificationsWithDeviceToken` method.
  */
-+ (void)setDeviceToken:(NSData *)deviceToken;
++ (void)setDeviceToken:(NSData *)deviceToken __attribute((deprecated("'+[Intercom setDeviceToken:]' is deprecated. 'Use +[Intercom setDeviceToken:failure:]' instead.")));
 
 /*!
  Use this method to check if a push notification payload was sent by Intercom. Typically you should call

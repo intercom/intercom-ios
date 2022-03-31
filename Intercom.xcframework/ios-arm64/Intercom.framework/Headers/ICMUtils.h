@@ -23,6 +23,8 @@
 
 #define run_or_dispatch_main(block) if ([NSThread isMainThread]) { block(); } else { dispatch_async(dispatch_get_main_queue(), block); }
 
+#define block_exec(block, ...) if (block) { block(__VA_ARGS__); };
+
 #define WEAK_TYPE(x) __weak __typeof(x)
 #define STRONG_TYPE(x) __strong __typeof(x)
 

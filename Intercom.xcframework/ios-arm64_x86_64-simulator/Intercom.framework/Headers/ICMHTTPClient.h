@@ -22,7 +22,7 @@
 
 #pragma mark - Push Notification Tokens
 
-+ (void)submitDeviceToken;
++ (void)submitDeviceTokenWithFailure:(void(^)(NSError *error))failure;
 + (void)deleteDeviceToken:(NSString *)deviceTokenString
           forUserIdentity:(ICMUserIdentity *)userIdentity
                completion:(ICMHTTPEmptyBlock)completion;
