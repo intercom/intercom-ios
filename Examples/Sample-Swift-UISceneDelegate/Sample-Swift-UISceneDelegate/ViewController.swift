@@ -74,10 +74,16 @@ class ViewController: UIViewController {
         let textField = (alertController.textFields?.first)!
         if !(textField.text?.isEmpty ?? false) {
             //Start tracking the user with Intercom
-            Intercom.registerUser(withEmail: textField.text!)
-            
-            UserDefaults.standard.set(textField.text, forKey: emailKey)
-            loggedIn = true
+            let attributes = ICMUserAttributes()
+            attributes.email = textField.text!
+            Intercom.loginUser(with: attributes) { [unowned self] result in
+                switch result {
+                case .success:
+                    UserDefaults.standard.set(textField.text, forKey: emailKey)
+                    loggedIn = true
+                case .failure(let error): print("Error logging in: \(error.localizedDescription)")
+                }
+            }
         }
     }
 }

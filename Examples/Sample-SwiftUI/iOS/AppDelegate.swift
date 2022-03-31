@@ -18,7 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         // Set device token for push notifications.
-        Intercom.setDeviceToken(deviceToken)
+        Intercom.setDeviceToken(deviceToken) { error in
+            guard let error = error else { return }
+            print("Error setting device token: \(error.localizedDescription)")
+        }
     }
     
     // MARK: UISceneSession Lifecycle
