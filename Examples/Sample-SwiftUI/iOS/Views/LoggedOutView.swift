@@ -24,11 +24,17 @@ struct LoggedOutView: View {
     
     func loginToIntercom() {
         // Start tracking the user with Intercom
-        Intercom.registerUser(withEmail: email)
-        
-        let defaults = UserDefaults.standard
-        defaults.set(email, forKey: emailKey)
-        loggedIn = true
+        let attributes = ICMUserAttributes()
+        attributes.email = email
+        Intercom.loginUser(with: attributes) { result in
+            switch result {
+            case .success:
+                let defaults = UserDefaults.standard
+                defaults.set(email, forKey: emailKey)
+                loggedIn = true
+            case .failure(let error): print("Error logging in: \(error.localizedDescription)")
+            }
+        }
     }
 }
 

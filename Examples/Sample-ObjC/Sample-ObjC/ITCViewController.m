@@ -81,13 +81,16 @@
     NSString *email = emailField.text;
     if (email.length > 0) {
         //Start tracking the user with Intercom
-        [Intercom registerUserWithEmail:email];
-        
-        //Save email so we know the user is logged in
-        [[NSUserDefaults standardUserDefaults] setObject:email forKey:@"email"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        
-        self.loggedIn = YES;
+        ICMUserAttributes *attributes = [ICMUserAttributes new];
+        attributes.email = email;
+        [Intercom loginUserWithUserAttributes:attributes success:^{
+            //Save email so we know the user is logged in
+            [[NSUserDefaults standardUserDefaults] setObject:email forKey:@"email"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            self.loggedIn = YES;
+        } failure:^(NSError * _Nonnull error) {
+            NSLog(@"Error logging in: %@", error.localizedDescription);
+        }];
     }
 
 }
