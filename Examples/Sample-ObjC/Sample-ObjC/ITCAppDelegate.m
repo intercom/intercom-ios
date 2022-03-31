@@ -28,7 +28,13 @@
     
     NSString *email = [[NSUserDefaults standardUserDefaults] objectForKey:@"email"];
     if (email.length > 0) { //There is a user logged in
-        [Intercom registerUserWithEmail:email];
+        ICMUserAttributes *attributes = [ICMUserAttributes new];
+        attributes.email = email;
+        [Intercom loginUserWithUserAttributes:attributes success:^{
+            NSLog(@"Successfully logged in %@", email);
+        } failure:^(NSError * _Nonnull error) {
+            NSLog(@"Error logging in: %@", error.localizedDescription);
+        }];
     }
 
     return YES;
@@ -47,7 +53,9 @@
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    [Intercom setDeviceToken:deviceToken];
+    [Intercom setDeviceToken:deviceToken failure:^(NSError * _Nullable error) {
+        NSLog(@"Error setting device token: %@", error.localizedDescription);
+    }];
 }
 
 @end
