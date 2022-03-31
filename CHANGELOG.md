@@ -1,3 +1,15 @@
+## 12.1.0 
+###### Release Date: 31-3-2022
+
+### 🚀 Enhancements
+* We've renamed some of our API methods. The term register has been replaced with login. As part of this change, we've also added success and failure callbacks to the updated login methods. For more information on the deprecated methods and their replacements, please read our [docs](https://developers.intercom.com/installing-intercom/docs/intercom-for-ios)
+* Added support to connect to Intercom workspaces that are hosted on servers in our Australian region
+
+### NOTE
+* The underlaying functionality behind these new methods remains the same as the deprecated ones, but now you can take action on success or failure.
+
+Check out [release v12.0.0](https://github.com/intercom/intercom-ios/releases/tag/12.0.0) for details about Intercom's great new Surveys feature.
+
 ## 12.0.0 
 ###### Release Date: 23-03-2022
 
