@@ -101,4 +101,9 @@
  */
 - (nonnull NSDictionary<NSString *, id> *)attributes;
 
+/**
+ A dictionary representation for the user attributes formatted for registration.
+ */
+- (nonnull NSDictionary<NSNumber *, NSString *> *)registrationAttributes;
+
 @end

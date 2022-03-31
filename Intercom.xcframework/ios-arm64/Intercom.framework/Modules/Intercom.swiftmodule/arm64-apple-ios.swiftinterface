@@ -171,6 +171,9 @@ extension Survey {
   @objc final public func allResponses() -> [[Swift.String : Any]]
 }
 extension Intercom {
+  public class func loginUnidentifiedUser(completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)? = nil)
+  public class func loginUser(with attributes: ICMUserAttributes, completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)? = nil)
+  public class func updateUser(with attributes: ICMUserAttributes, completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)? = nil)
   public class func fetchHelpCenterCollections(completion: @escaping (Swift.Result<[HelpCenterCollection], ICMHelpCenterDataError>) -> Swift.Void)
   public class func fetchHelpCenterCollection(_ collectionId: Swift.String, completion: @escaping (Swift.Result<HelpCenterCollectionContent, ICMHelpCenterDataError>) -> Swift.Void)
   public class func searchHelpCenter(_ searchTerm: Swift.String, completion: @escaping (Swift.Result<[HelpCenterArticleSearchResult], ICMHelpCenterDataError>) -> Swift.Void)
@@ -238,6 +241,17 @@ extension SurveyViewController : ICMErrorViewDelegate {
 }
 extension ConversationCard : SeeAllConversationsViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func viewPreviousConversations()
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class ErrorProcessor : ObjectiveC.NSObject {
+  @objc final public class func generateHTTPError(code: Swift.Int, message: Swift.String) -> Foundation.NSError
+  @objc final public class func generateInvalidUserIdOrEmailError() -> Foundation.NSError
+  @objc final public class func generateInvalidUpdateObjectError() -> Foundation.NSError
+  @objc final public class func generatePushNotificationsNotEnabledError() -> Foundation.NSError
+  @objc final public class func generatePushNotificationNilDeviceTokenError() -> Foundation.NSError
+  @objc final public class func generateInvalidIdentityVerificationError() -> Foundation.NSError
+  @objc final public class func generateInvalidDeviceTokenError() -> Foundation.NSError
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class EmojiButton : UIKit.UIButton {
   @objc deinit
