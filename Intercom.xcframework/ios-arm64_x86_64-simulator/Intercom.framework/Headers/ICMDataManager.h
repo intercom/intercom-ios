@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "ICMUnreadManager.h"
-#import "ICMDataManagerProtocol.h"
+#import <Intercom/ICMUnreadManager.h>
+#import <Intercom/ICMDataManagerProtocol.h>
 
 @class ICMConversation;
 

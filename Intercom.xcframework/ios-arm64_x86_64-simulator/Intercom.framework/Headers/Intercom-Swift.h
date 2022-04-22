@@ -243,6 +243,17 @@ SWIFT_CLASS("_TtC8Intercom22AvailableTeammatesView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+typedef SWIFT_ENUM(NSInteger, CardType, open) {
+  CardTypePost = 0,
+  CardTypeTicket = 1,
+};
+
+
+SWIFT_PROTOCOL("_TtP8Intercom16CardViewDelegate_")
+@protocol CardViewDelegate
+- (void)cardButtonTappedFor:(enum CardType)cardType;
+@end
+
 @protocol ConversationCardInfoProtocol;
 @protocol ConversationCardDelegate;
 @class UITraitCollection;
@@ -555,10 +566,10 @@ SWIFT_CLASS("_TtC8Intercom20SurveyViewController")
 @end
 
 
-
 @interface SurveyViewController (SWIFT_EXTENSION(Intercom)) <ICMErrorViewDelegate>
 - (void)didSelectErrorAction;
 @end
+
 
 
 
@@ -567,6 +578,49 @@ SWIFT_CLASS("_TtC8Intercom20SurveyViewController")
 - (void)closeButtonTapped;
 - (void)viewDidDismissBySwipe;
 @end
+
+@class TicketStatus;
+@class ICMFormAttribute;
+
+SWIFT_CLASS("_TtC8Intercom6Ticket")
+@interface Ticket : NSObject
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title ticketDescription:(NSString * _Nullable)ticketDescription iconURL:(NSString * _Nullable)iconURL currentStatus:(TicketStatus * _Nonnull)currentStatus statusList:(NSArray<TicketStatus *> * _Nonnull)statusList attributes:(NSArray<ICMFormAttribute *> * _Nonnull)attributes assignee:(ICMParticipant * _Nonnull)assignee OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@protocol IntercomConversationPart;
+@protocol IntercomConversationPartDelegate;
+
+SWIFT_CLASS("_TtC8Intercom14TicketCardView")
+@interface TicketCardView : IntercomConversationCustomCell
+@property (nonatomic, weak) id <CardViewDelegate> _Nullable delegate;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)configureWithPart:(id <IntercomConversationPart> _Null_unspecified)part reloadDelegate:(id <IntercomConversationPartDelegate> _Null_unspecified)delegate;
++ (CGSize)estimatedSizeForPart:(id <IntercomConversationPart> _Null_unspecified)part withinWidth:(CGFloat)width SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC8Intercom27TicketDetailsViewController")
+@interface TicketDetailsViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_CLASS("_TtC8Intercom12TicketStatus")
+@interface TicketStatus : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title createdDate:(NSDate * _Nullable)createdDate statusDetail:(NSString * _Nullable)statusDetail isCurrentStatus:(BOOL)isCurrentStatus OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 @class UIEvent;
 @class UICollectionViewLayout;
@@ -867,6 +921,17 @@ SWIFT_CLASS("_TtC8Intercom22AvailableTeammatesView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+typedef SWIFT_ENUM(NSInteger, CardType, open) {
+  CardTypePost = 0,
+  CardTypeTicket = 1,
+};
+
+
+SWIFT_PROTOCOL("_TtP8Intercom16CardViewDelegate_")
+@protocol CardViewDelegate
+- (void)cardButtonTappedFor:(enum CardType)cardType;
+@end
+
 @protocol ConversationCardInfoProtocol;
 @protocol ConversationCardDelegate;
 @class UITraitCollection;
@@ -1179,10 +1244,10 @@ SWIFT_CLASS("_TtC8Intercom20SurveyViewController")
 @end
 
 
-
 @interface SurveyViewController (SWIFT_EXTENSION(Intercom)) <ICMErrorViewDelegate>
 - (void)didSelectErrorAction;
 @end
+
 
 
 
@@ -1191,6 +1256,49 @@ SWIFT_CLASS("_TtC8Intercom20SurveyViewController")
 - (void)closeButtonTapped;
 - (void)viewDidDismissBySwipe;
 @end
+
+@class TicketStatus;
+@class ICMFormAttribute;
+
+SWIFT_CLASS("_TtC8Intercom6Ticket")
+@interface Ticket : NSObject
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title ticketDescription:(NSString * _Nullable)ticketDescription iconURL:(NSString * _Nullable)iconURL currentStatus:(TicketStatus * _Nonnull)currentStatus statusList:(NSArray<TicketStatus *> * _Nonnull)statusList attributes:(NSArray<ICMFormAttribute *> * _Nonnull)attributes assignee:(ICMParticipant * _Nonnull)assignee OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@protocol IntercomConversationPart;
+@protocol IntercomConversationPartDelegate;
+
+SWIFT_CLASS("_TtC8Intercom14TicketCardView")
+@interface TicketCardView : IntercomConversationCustomCell
+@property (nonatomic, weak) id <CardViewDelegate> _Nullable delegate;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)configureWithPart:(id <IntercomConversationPart> _Null_unspecified)part reloadDelegate:(id <IntercomConversationPartDelegate> _Null_unspecified)delegate;
++ (CGSize)estimatedSizeForPart:(id <IntercomConversationPart> _Null_unspecified)part withinWidth:(CGFloat)width SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC8Intercom27TicketDetailsViewController")
+@interface TicketDetailsViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_CLASS("_TtC8Intercom12TicketStatus")
+@interface TicketStatus : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title createdDate:(NSDate * _Nullable)createdDate statusDetail:(NSString * _Nullable)statusDetail isCurrentStatus:(BOOL)isCurrentStatus OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 @class UIEvent;
 @class UICollectionViewLayout;

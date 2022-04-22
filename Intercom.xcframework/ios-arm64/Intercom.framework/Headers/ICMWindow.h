@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import "ICMRootViewController.h"
+#import <Intercom/ICMRootViewController.h>
 
 @interface ICMWindow : UIWindow
 

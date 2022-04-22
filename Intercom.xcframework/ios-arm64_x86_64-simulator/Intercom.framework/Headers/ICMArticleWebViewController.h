@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ICMContentViewController.h"
+#import <Intercom/ICMContentViewController.h>
 @class HelpCenterMetricService;
 
 @protocol ICMContentViewControllerDelegate;

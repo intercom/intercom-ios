@@ -1,3 +1,9 @@
+## 12.1.1 
+###### Release Date: 22-02-2022
+
+### 🐛 Bug Fixes
+* Fixed an issue where a Custom Bot that was collecting data attributes would crash if the same path was displayed to users a second time.  
+
 ## 12.1.0 
 ###### Release Date: 31-3-2022
 

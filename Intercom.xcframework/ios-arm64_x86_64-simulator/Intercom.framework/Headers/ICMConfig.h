@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import "ICMSafeNetworkModel.h"
+#import <Intercom/ICMSafeNetworkModel.h>
 
 static NSString *const kICMIntercomConfigChangedNotification = @"kICMIntercomConfigChangedNotification";
 static NSString *const kICMMessengerBackgroundImageLoadedNotification = @"kICMMessengerBackgroundImageLoadedNotification";

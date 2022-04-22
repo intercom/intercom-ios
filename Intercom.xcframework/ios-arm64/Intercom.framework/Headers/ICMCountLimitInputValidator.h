@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ICMValidatorProtocol.h"
+#import <Intercom/ICMValidatorProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

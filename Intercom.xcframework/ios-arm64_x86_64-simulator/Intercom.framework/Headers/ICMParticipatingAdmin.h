@@ -6,7 +6,7 @@
 //
 //
 
-#import "ICMParticipant.h"
+#import <Intercom/ICMParticipant.h>
 @class ICMSocialAccount;
 
 @interface ICMParticipatingAdmin : ICMParticipant

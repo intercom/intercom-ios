@@ -6,7 +6,7 @@
 //  Copyright © 2019 Intercom. All rights reserved.
 //
 
-#import "ICMTextField.h"
+#import <Intercom/ICMTextField.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

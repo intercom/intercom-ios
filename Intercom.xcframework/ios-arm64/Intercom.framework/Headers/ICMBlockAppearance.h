@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ITBBlockAppearance.h"
+#import <Intercom/ITBBlockAppearance.h>
 
 @interface ICMBlockAppearance : NSObject <ITBBlockAppearance>
 

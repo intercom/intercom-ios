@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "ICMSafeNetworkModel.h"
+#import <Intercom/ICMSafeNetworkModel.h>
 
 @interface ICMAvatar : ICMSafeNetworkModel <NSSecureCoding>
 

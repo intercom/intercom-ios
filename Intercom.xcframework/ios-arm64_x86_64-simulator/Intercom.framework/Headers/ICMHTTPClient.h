@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ICMHTTPClientProtocol.h"
+#import <Intercom/ICMHTTPClientProtocol.h>
 
 @class ArticleMetaData;
 

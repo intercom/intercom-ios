@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @class ICMBaseViewController;
-#import "ICMInAppsViewController.h"
-#import "ICMWindowProvider.h"
-#import "ICMNavigationController.h"
+#import <Intercom/ICMInAppsViewController.h>
+#import <Intercom/ICMWindowProvider.h>
+#import <Intercom/ICMNavigationController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

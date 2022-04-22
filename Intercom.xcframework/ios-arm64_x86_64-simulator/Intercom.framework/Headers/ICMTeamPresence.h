@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ICMSafeNetworkModel.h"
+#import <Intercom/ICMSafeNetworkModel.h>
 
 @class ICMParticipant;
 

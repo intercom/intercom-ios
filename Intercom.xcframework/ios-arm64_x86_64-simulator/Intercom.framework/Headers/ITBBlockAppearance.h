@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "ITBLoadingView.h"
+#import <Intercom/ITBLoadingView.h>
 
 @protocol ITBBlockAppearance <NSObject>
 

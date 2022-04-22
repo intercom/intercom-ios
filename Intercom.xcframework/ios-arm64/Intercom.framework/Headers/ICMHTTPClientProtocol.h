@@ -9,7 +9,7 @@
 #ifndef ICMHTTPClientProtocol_h
 #define ICMHTTPClientProtocol_h
 
-#import "ICMEngine.h"
+#import <Intercom/ICMEngine.h>
 
 @class ITBUpload;
 @class ICMConversationsResponse;

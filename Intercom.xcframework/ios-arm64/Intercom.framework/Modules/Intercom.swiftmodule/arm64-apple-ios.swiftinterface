@@ -18,6 +18,18 @@ import os
   @objc @_Concurrency.MainActor(unsafe) weak final public var startConversationDelegate: HelpCenterStartConversationViewDelegate?
   @objc deinit
 }
+@objc public enum CardType : Swift.Int {
+  case post
+  case ticket
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol CardViewDelegate {
+  @objc func cardButtonTapped(for cardType: CardType)
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class StartConversationCard : ConversationCard {
   @_Concurrency.MainActor(unsafe) @objc override public init(cardInfo: ConversationCardInfoProtocol, delegate: ConversationCardDelegate)
   @objc deinit
@@ -33,6 +45,12 @@ import os
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class InboxCell : UIKit.UITableViewCell {
   @objc @_Concurrency.MainActor(unsafe) final public func configure(name: Swift.String, sentTime: Foundation.Date, summary: Swift.String, adminsToShow: [ICMParticipant], unread: Swift.Bool, showDividerLine: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class TicketDetailsViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension UIKit.UIColor {
@@ -170,6 +188,13 @@ public struct SurveySender : Swift.Equatable {
 extension Survey {
   @objc final public func allResponses() -> [[Swift.String : Any]]
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class TicketCardView : IntercomConversationCustomCell {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: CardViewDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func configure(with part: IntercomConversationPart!, reload delegate: IntercomConversationPartDelegate!)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public class func estimatedSize(for part: IntercomConversationPart!, withinWidth width: CoreGraphics.CGFloat) -> CoreGraphics.CGSize
+  @objc deinit
+}
 extension Intercom {
   public class func loginUnidentifiedUser(completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)? = nil)
   public class func loginUser(with attributes: ICMUserAttributes, completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)? = nil)
@@ -177,6 +202,13 @@ extension Intercom {
   public class func fetchHelpCenterCollections(completion: @escaping (Swift.Result<[HelpCenterCollection], ICMHelpCenterDataError>) -> Swift.Void)
   public class func fetchHelpCenterCollection(_ collectionId: Swift.String, completion: @escaping (Swift.Result<HelpCenterCollectionContent, ICMHelpCenterDataError>) -> Swift.Void)
   public class func searchHelpCenter(_ searchTerm: Swift.String, completion: @escaping (Swift.Result<[HelpCenterArticleSearchResult], ICMHelpCenterDataError>) -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers @objc final public class TicketStatus : ObjectiveC.NSObject {
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc public init(title: Swift.String, createdDate: Foundation.Date?, statusDetail: Swift.String?, isCurrentStatus: Swift.Bool)
+  @objc deinit
 }
 extension UIKit.UIFont {
   @objc public static func preferredFont(forTextStyle style: UIKit.UIFont.TextStyle, weight: UIKit.UIFont.Weight) -> UIKit.UIFont
@@ -281,9 +313,17 @@ extension UIKit.UIResponder {
     get
   }
 }
+@objc final public class Ticket : ObjectiveC.NSObject {
+  @objc public init(title: Swift.String, ticketDescription: Swift.String?, iconURL: Swift.String?, currentStatus: TicketStatus, statusList: [TicketStatus], attributes: [ICMFormAttribute], assignee: ICMParticipant)
+  @objc public init?(withDictionary dictionary: [Swift.String : Any])
+  @objc deinit
+}
 @objc public protocol SeeAllConversationsViewDelegate {
   @objc func viewPreviousConversations()
 }
+extension CardType : Swift.Equatable {}
+extension CardType : Swift.Hashable {}
+extension CardType : Swift.RawRepresentable {}
 extension SurveyFormat : Swift.Equatable {}
 extension SurveyFormat : Swift.Hashable {}
 extension SurveyFormat : Swift.RawRepresentable {}

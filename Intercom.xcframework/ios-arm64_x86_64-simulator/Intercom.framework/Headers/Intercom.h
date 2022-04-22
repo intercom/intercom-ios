@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <Intercom/ICMUserAttributes.h>
+#import <Intercom/ICMFormAttribute.h>
 #import <Intercom/ICMUserAttributesValidation.h>
 #import <Intercom/ICMCompany.h>
 #import <Intercom/ICMHelpCenterCollection.h>
@@ -83,6 +84,7 @@
 #import <Intercom/ITBLoadingView.h>
 #import <Intercom/ITBImageLoader.h>
 #import <Intercom/ITBBlock.h>
+#import <Intercom/IntercomConversationCustomCell.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

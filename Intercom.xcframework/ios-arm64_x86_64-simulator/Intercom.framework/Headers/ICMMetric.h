@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ICMMetricEvent.h"
+#import <Intercom/ICMMetricEvent.h>
 @class ICMOpsMetricEvent;
 
 @protocol ICMMetricProtocol
