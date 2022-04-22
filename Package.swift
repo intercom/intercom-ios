@@ -13,8 +13,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Intercom",
-            url: "https://github.com/intercom/intercom-ios/releases/download/12.1.0/Intercom.xcframework.zip",
-            checksum: "e77d1336a045eaa624618c744c538eb70bab17a11c0ba08b24785aeefeb3ce50"
+            url: "https://github.com/intercom/intercom-ios/releases/download/12.1.1/Intercom.xcframework.zip",
+            checksum: "a25397a642a027ef3f4a1fdb5ce9282a7d1f9e32a8a4baa1737a441ec3434be0"
         ),
     ]
 )
