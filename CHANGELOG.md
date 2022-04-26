@@ -1,3 +1,9 @@
+## 12.2.0 
+###### Release Date: 26-04-2022
+
+### 🚀 Enhancements
+* New feature: You can now open a Survey programmatically in your app. We have added a new method to our API to enable this, [presentSurvey](https://developers.intercom.com/installing-intercom/docs/ios-configuration#present-a-survey-programmatically).
+
 ## 12.1.1 
 ###### Release Date: 22-02-2022
 
