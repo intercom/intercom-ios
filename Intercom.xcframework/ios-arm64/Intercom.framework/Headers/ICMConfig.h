@@ -11,6 +11,7 @@ static NSString *const kICMLauncherCustomLogoImageLoadedNotification = @"kICMLau
 @property (readonly) BOOL accessToTeammateEnabled;
 @property (readonly) BOOL helpCenterRequireSearch;
 @property (nonatomic, copy) NSString *appName;
+- (BOOL)receivedFromServer;
 @end
 
 @interface ICMConfig : ICMSafeNetworkModel <ICMConfigProtocol,NSSecureCoding>

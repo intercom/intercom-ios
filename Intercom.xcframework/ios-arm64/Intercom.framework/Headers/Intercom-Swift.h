@@ -495,13 +495,19 @@ SWIFT_CLASS("_TtC8Intercom21StartConversationCard")
 - (nonnull instancetype)initWithCardInfo:(id <ConversationCardInfoProtocol> _Nonnull)cardInfo delegate:(id <ConversationCardDelegate> _Nonnull)delegate OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_PROTOCOL("_TtP8Intercom10SurveyInfo_")
+@protocol SurveyInfo
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+@end
+
 enum SurveyFormat : NSInteger;
 @class SurveyStep;
 @class SurveyCustomizationOptions;
 
 SWIFT_CLASS("_TtC8Intercom6Survey")
-@interface Survey : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull surveyId;
+@interface Survey : NSObject <SurveyInfo>
+@property (nonatomic, readonly, copy, getter=id) NSString * _Nonnull surveyId;
 @property (nonatomic, readonly) NSInteger progressId;
 @property (nonatomic, readonly, copy) NSString * _Nullable lastStepId;
 - (nonnull instancetype)initWithId:(NSString * _Nonnull)id format:(enum SurveyFormat)format steps:(NSArray<SurveyStep *> * _Nonnull)steps progressId:(NSInteger)progressId customizationOptions:(SurveyCustomizationOptions * _Nullable)customizationOptions stepCount:(NSInteger)stepCount OBJC_DESIGNATED_INITIALIZER;
@@ -532,6 +538,16 @@ typedef SWIFT_ENUM(NSInteger, SurveyFormat, open) {
 };
 
 
+SWIFT_CLASS("_TtC8Intercom8SurveyId")
+@interface SurveyId : NSObject <SurveyInfo>
+@property (nonatomic, copy) NSString * _Nonnull id;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
 SWIFT_CLASS("_TtC8Intercom13SurveyService")
 @interface SurveyService : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL currentlyDisplayingSurvey;)
@@ -556,7 +572,7 @@ SWIFT_CLASS("_TtC8Intercom10SurveyStep")
 SWIFT_CLASS("_TtC8Intercom20SurveyViewController")
 @interface SurveyViewController : UIViewController
 @property (nonatomic, weak) id <ICMContentViewControllerDelegate> _Nullable contentDelegate;
-- (nonnull instancetype)initWith:(Survey * _Nonnull)survey OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWith:(id <SurveyInfo> _Nonnull)survey OBJC_DESIGNATED_INITIALIZER;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;

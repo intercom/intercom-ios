@@ -82,6 +82,10 @@ typedef void  (^ICMHTTPComposerSuggestionsSuccess)(ICMComposerSuggestions *compo
                     success:(nullable ICMHTTPEmptyBlock)success
                       error:(nullable ICMHTTPClientError)failure;
 
++ (void)getSurvey:(NSString *)surveyId
+             success:(nullable ICMHTTPDictionarySuccess)success
+               error:(nullable ICMHTTPClientError)failure;
+
 
 
 

@@ -354,6 +354,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)presentCarousel:(nonnull NSString *)carouselId;
 
+#pragma mark - Surveys
+
+/*!
+ Present a Survey.
+ @param surveyId The ID of the Survey to be presented.
+ */
++ (void)presentSurvey:(nonnull NSString *)surveyId;
+
 #pragma mark - Push Notifications
 
 //=========================================================================================================

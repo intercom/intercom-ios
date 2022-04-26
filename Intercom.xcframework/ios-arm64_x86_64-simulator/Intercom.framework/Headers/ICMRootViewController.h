@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class ICMHostAppState;
 @class ICMCarousel;
 @class ICMMessengerSheetViewController;
-@class Survey;
+@protocol SurveyInfo;
 
 @protocol ICMRootViewControllerDelegate <NSObject>
 - (void)hideIntercomWindow;
@@ -33,7 +33,7 @@ static NSString *const kICMRootViewControllerDidDismissPresentedController = @"I
 - (instancetype)initWithWindowScene:(UIWindowScene *)windowScene;
 - (void)tearDown;
 - (void)presentCarousel:(ICMCarousel *)carousel;
-- (void)presentSurvey:(Survey *)survey;
+- (void)presentSurvey:(id <SurveyInfo>)survey;
 - (void)presentMessenger;
 - (void)presentMessageComposerWithInitialMessage:(NSString *)message;
 - (void)presentHomescreen;

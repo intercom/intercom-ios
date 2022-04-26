@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class ICMConversation;
 @class ICMCarousel;
 @class ICMMessengerSheetViewController;
-@class Survey;
+@protocol SurveyInfo;
 
 @interface ICMPresentationManager : NSObject
 
@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setUnreadConversations:(NSArray <ICMConversation *> *)conversations completion:(void (^ __nullable)(void))completion;
 - (void)presentCarousel:(ICMCarousel *)carousel;
-- (void)presentSurvey:(Survey *)survey;
+- (void)presentSurvey:(id<SurveyInfo>)survey;
 - (void)presentMessenger;
 - (void)presentMessageComposerWithInitialMessage:(nullable NSString *)message;
 - (void)presentHomescreen;

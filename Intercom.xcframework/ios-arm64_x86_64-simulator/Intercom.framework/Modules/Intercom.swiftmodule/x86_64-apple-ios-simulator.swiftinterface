@@ -169,13 +169,21 @@ extension ICMColor {
 public struct SurveySender : Swift.Equatable {
   public static func == (a: SurveySender, b: SurveySender) -> Swift.Bool
 }
+@objc public protocol SurveyInfo {
+  @objc var id: Swift.String { get }
+}
+@objc public class SurveyId : ObjectiveC.NSObject, SurveyInfo {
+  @objc public var id: Swift.String
+  @objc public init(id: Swift.String)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc final public class SurveyCustomizationOptions : ObjectiveC.NSObject {
   @objc final public let backgroundColor: UIKit.UIColor
   @objc final public let buttonColor: UIKit.UIColor
   @objc public init(backgroundColor: UIKit.UIColor, buttonColor: UIKit.UIColor)
   @objc deinit
 }
-@objc final public class Survey : ObjectiveC.NSObject {
+@objc final public class Survey : ObjectiveC.NSObject, SurveyInfo {
   @objc(surveyId) final public let id: Swift.String
   @objc final public let progressId: Swift.Int
   @objc final public var lastStepId: Swift.String? {
@@ -244,7 +252,7 @@ extension UIKit.UIFont {
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class SurveyViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc weak final public var contentDelegate: ICMContentViewControllerDelegate?
-  @objc @_Concurrency.MainActor(unsafe) public init(with survey: Survey)
+  @objc @_Concurrency.MainActor(unsafe) public init(with survey: SurveyInfo)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidLayoutSubviews()
   @objc deinit
