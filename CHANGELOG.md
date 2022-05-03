@@ -1,3 +1,10 @@
+## 12.2.1 
+###### Release Date: 03-05-2022
+
+### 🐛 Bug Fixes
+* Fixed a bug where conversation replies were not displayed as an in-app notification and the Intercom notification `IntercomUnreadConversationCountDidChangeNotification` was not fired.
+* Fixed a bug that was causing some user's Messenger Homescreen to display no content.
+
 ## 12.2.0 
 ###### Release Date: 26-04-2022
 
