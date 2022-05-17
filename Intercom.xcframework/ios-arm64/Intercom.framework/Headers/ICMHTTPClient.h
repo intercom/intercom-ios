@@ -20,12 +20,13 @@
                                error:(ICMHTTPClientError)failure;
 
 
-#pragma mark - Push Notification Tokens
+#pragma mark - Push Notification
 
 + (void)submitDeviceTokenWithFailure:(void(^)(NSError *error))failure;
 + (void)deleteDeviceToken:(NSString *)deviceTokenString
           forUserIdentity:(ICMUserIdentity *)userIdentity
                completion:(ICMHTTPEmptyBlock)completion;
++ (void)downloadRichPushMediaAttachmentFrom:(NSURL *)url success:(ICMHTTPRichPushMediaDownloadSuccess)success failure:(ICMHTTPClientError)failure;
 
 
 #pragma mark - Events

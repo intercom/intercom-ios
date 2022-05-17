@@ -45,6 +45,7 @@ typedef void  (^ICMHTTPCarouselSuccess)(ICMCarousel *carousel);
 typedef void  (^ICMHTTPArraySuccess)(NSArray *array);
 typedef void  (^ICMHTTPDictionarySuccess)(NSDictionary *object);
 typedef void  (^ICMHTTPComposerSuggestionsSuccess)(ICMComposerSuggestions *composerSuggestions);
+typedef void (^ICMHTTPRichPushMediaDownloadSuccess)(NSURL *location);
 
 @protocol ICMHTTPClientProtocol
 

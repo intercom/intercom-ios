@@ -88,6 +88,7 @@ typedef NS_ENUM(NSInteger, ICMUserIdentityType) {
 + (BOOL)photoUsageDescriptionPresent;
 
 + (BOOL)autoIntegratePushNotifications;
++ (BOOL)isRunningNotificationServiceExtension;
 
 + (NSBundle *)intercomBundle;
 + (NSBundle *)translationsBundle;
@@ -113,5 +114,7 @@ typedef NS_ENUM(NSInteger, ICMUserIdentityType) {
 + (void)enableRTLSupportForContainerClass:(Class <UIAppearanceContainer>)containerClass;
 
 + (CGFloat)scaleToAccessibilitySizing:(CGFloat)pointSize;
+
++ (NSString *)getFileExtensionFrom:(NSURL *)url httpResponse:(NSHTTPURLResponse *)httpResponse;
 
 @end

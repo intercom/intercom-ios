@@ -1,3 +1,15 @@
+## 12.3.0 
+###### Release Date: 17-05-2022
+
+### 🚀 Enhancements
+**🖼️ New Feature : Rich Push Messages**
+* A picture speaks a thousand words. You can now add rich media (i.e. images) to your mobile push messages on both iOS and Android. Grab your user’s attention by adding attractive and contextual images and increase click-through rate of your push message. 
+
+👉  Upgrade to the latest version of the mobile SDK today to use this feature. [Additionally, to set rich push messages on iOS, follow the instructions here](https://developers.intercom.com/installing-intercom/docs/rich-push-notifications).
+
+![Rich Push composer experience](https://user-images.githubusercontent.com/13782252/168840930-c744220c-f655-45f1-a7e5-686401daac0c.png) 
+![Rich Push customer experience](https://user-images.githubusercontent.com/13782252/168841249-907353c9-d478-4a29-822a-1d253bb2fd91.png)
+
 ## 12.2.1 
 ###### Release Date: 03-05-2022
 

@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/ICMEngine.h</key>
 		<data>
-		d6y1olmjJ6eShak/uKoU7uU+YCA=
+		YqYc9VNJinPKo94Wdqb4MGF6zWo=
 		</data>
 		<key>Headers/ICMErrorViewController.h</key>
 		<data>
@@ -114,11 +114,11 @@
 		</data>
 		<key>Headers/ICMHTTPClient.h</key>
 		<data>
-		jtGQcUOS1QGWcJg+pWb7K99JUt8=
+		aV7MAr5JiaAGJMch+gSPyclKxc4=
 		</data>
 		<key>Headers/ICMHTTPClientProtocol.h</key>
 		<data>
-		FuwrosZ1KKuQxmIU7Hd+GPsfLcg=
+		vchAEr49wHVHf9XeLFXq95o+gug=
 		</data>
 		<key>Headers/ICMHelpCenterArticle.h</key>
 		<data>
@@ -270,7 +270,7 @@
 		</data>
 		<key>Headers/ICMUtils.h</key>
 		<data>
-		7G3wOtiEN4xhO8BMDRTCLmrss1g=
+		mPBFS3xs9X5mHsR+SEHQVV52KoA=
 		</data>
 		<key>Headers/ICMValidator.h</key>
 		<data>
@@ -310,7 +310,7 @@
 		</data>
 		<key>Headers/Intercom.h</key>
 		<data>
-		H4vtySJwyH2FqVx6dkJfqh9xuZc=
+		uFmtSPgYdYofRAPUx6mzsXPr3fU=
 		</data>
 		<key>Headers/IntercomConversationCustomCell.h</key>
 		<data>
@@ -326,7 +326,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		N91Jyo4vhDvJ3qwXtKNOLR3s8JM=
+		UHsgaHFqyLtE1+M6aTG+8tEQ4KU=
 		</data>
 		<key>Intercom.bundle/data/intercom_area_codes.json</key>
 		<data>
@@ -994,11 +994,11 @@
 		</data>
 		<key>IntercomAssets.bundle/Info.plist</key>
 		<data>
-		yPCwOLUrLTpz8xerCmcBX+F0rJE=
+		CKtn2Q9mEMKpHlFVHRL43yNVftU=
 		</data>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		FhEvMpl75YtNv9GxXUpl1Pqqtc4=
+		VCNPsRNIPt6XvbOaGW2pvowYPGw=
 		</data>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -1006,7 +1006,7 @@
 		</data>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		7jAwbOi5vS9S7vuQqI1/yE/1b6g=
+		MEbqez0KcLhtlHHAM2XelLDTjbI=
 		</data>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -1206,7 +1206,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OcArfWjXLDMN0fohBvW42q5U79o=
+		Hd8M2X1I+ZUVHV7dR+awzB5vbeo=
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -1218,7 +1218,7 @@
 		</data>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2FpVQEzqi/PHiEbxKD81AP5te3s=
+		aHJggErqMXOCf5nMjpTDp3LNDw4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1389,7 +1389,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PSDibjE1tm4GMi+WjXD0Zn8O4D4aMHk7VOTi2Z6y4/I=
+			BBS/cleQh6R1l5lCYr4K8Go/OgMnUI4HDcoCZVCPf4o=
 			</data>
 		</dict>
 		<key>Headers/ICMErrorViewController.h</key>
@@ -1424,14 +1424,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pSa4oTLSXyCy+Paruqfv/B09ApEfnqbU5i8rvHRTGtQ=
+			drWZvWjJMOnXuPquLsycrwDWmvdJIOvWTAbgZMbP05o=
 			</data>
 		</dict>
 		<key>Headers/ICMHTTPClientProtocol.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7LdwKn/JO9dj90yGcsdaeNdUfG65M9OhBlKzHPxhZD8=
+			INDr8Pxot+dXgDQKwp2nuzO6svK5DeBMvd8yj8dV1zU=
 			</data>
 		</dict>
 		<key>Headers/ICMHelpCenterArticle.h</key>
@@ -1697,7 +1697,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZGSvcLyXpHXQu8Oj2l/320od9/rr9/4tCWWeEMov6fI=
+			+3sITJpiCDUvSsb11enzmC2VkJRGNqTuJwtd09agZIg=
 			</data>
 		</dict>
 		<key>Headers/ICMValidator.h</key>
@@ -1767,7 +1767,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozAvs211XE1NAM5Zv6ouNAsSMvtoZv5Kp1uPgci+6pA=
+			kCJFyf5X+1yK1du/xRzssddIquir5tRW/XSOIz97K6c=
 			</data>
 		</dict>
 		<key>Headers/IntercomConversationCustomCell.h</key>
@@ -2957,14 +2957,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/FmVtykx6JxhUhtw5/hcXC0wAIuWNhNbu3FO7Oim7Hs=
+			VMhSvIvnwFcrag4E7viS2ooLdzbF4EPRUIQYoz7jscQ=
 			</data>
 		</dict>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/GZLPVZO1tXOk5VvlrA4ijDJaYAo2ns9w5eBOv8p8aQ=
+			3ZjiRtfmDuD14kQHhIZ5pd+a78niT0nFJ01sTHI35VM=
 			</data>
 		</dict>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeRequirements</key>
@@ -2978,7 +2978,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hms/UTyX46/sqW/byuM2k67TonXVdQ/7J1CoW5tk2YM=
+			d41BiXQ10edOw+/7G59TNSpWxOJjqqpVb7GaJ/FCkrY=
 			</data>
 		</dict>
 		<key>IntercomAssets.bundle/_CodeSignature/CodeResources</key>
@@ -3328,7 +3328,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9+Q+oza9qSZaeKh9cb7H0oV1E8qYdtCeELEMiVAObCI=
+			RtYX+kko4IcjfoLLfpWl4tIlEE3C8JM32nhgJL73ssI=
 			</data>
 		</dict>
 		<key>Modules/Intercom.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -3349,7 +3349,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oYwXarhiyBUUnXKQ0r8JC98XEizSSuug7XMtNfsyeW4=
+			zcGzxoXRcOZr9EEhcnzJATUjqM14djWS6TgFqad7OHU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

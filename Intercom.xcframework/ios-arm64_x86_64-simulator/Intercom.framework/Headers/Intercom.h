@@ -85,6 +85,7 @@
 #import <Intercom/ITBImageLoader.h>
 #import <Intercom/ITBBlock.h>
 #import <Intercom/IntercomConversationCustomCell.h>
+#import <UserNotifications/UserNotifications.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -395,12 +396,23 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)isIntercomPushNotification:(NSDictionary *)userInfo;
 
 /*!
- Use this method to handle a push notification payload received by Intercom. You should first check if this
- notification was send by Intercom with `+[Intercom isIntercomPushNotification:]`.
+ Use this method to handle a push notification payload sent by Intercom. You should first check if this
+ notification was sent by Intercom with `+[Intercom isIntercomPushNotification:]`.
  
  @note This is only needed if you have set `IntercomAutoIntegratePushNotifications` to NO in your Info.plist
  */
 + (void)handleIntercomPushNotification:(NSDictionary *)userInfo;
+
+/*!
+ Use this method to handle a rich push notification payload sent by Intercom in your Notification Service Extension. You should first check if this
+ notification was sent by Intercom with `+[Intercom isIntercomPushNotification:]`. This method downloads any media specified in the payload and
+ attaches it to the notification content.
+
+ @note This is only needed if you have set `IntercomAutoIntegratePushNotifications` to NO in your Notification Service Extension's Info.plist.
+ @param notificationContent The content of the notification request received by your Notification Service Extensions's principal class.
+ @param contentHandler The `contentHandler` block that is passed into `didReceiveNotificationRequest:withContentHandler:`.
+ */
++ (void)handleIntercomRichPushNotificationContent:(UNNotificationContent *)notificationContent withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler;
 
 #pragma mark - Intercom UI Visibility
 
