@@ -1,3 +1,12 @@
+## 12.4.0 
+###### Release Date: 31-05-2022
+
+### 🚀 Enhancements
+* You can now customise button text (previously next or submit buttons) for surveys sent on your mobile app.
+
+### 🐛 Bug Fixes
+* Fixed an issue in Mobile Carousels whereby certain animations in right to left languages did not animate in the correct direction. 
+
 ## 12.3.0 
 ###### Release Date: 17-05-2022
 
