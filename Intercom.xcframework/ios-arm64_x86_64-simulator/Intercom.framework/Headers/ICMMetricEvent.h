@@ -32,6 +32,7 @@ static NSString *const ICMMetricEventActionCompleted    = @"completed";
 static NSString *const ICMMetricEventActionStarted      = @"started";
 static NSString *const ICMMetricEventActionFailed       = @"failed";
 static NSString *const ICMMetricEventActionRequested    = @"requested";
+static NSString *const ICMMetricEventActionUsed         = @"used";
 
 #pragma mark - Objects
 static NSString *const ICMMetricEventObjectConversation                     = @"conversation";
@@ -63,6 +64,46 @@ static NSString *const ICMMetricEventObjectSurvey                           = @"
 static NSString *const ICMMetricEventObjectSurveyPreload                    = @"survey_preload";
 static NSString *const ICMMetricEventObjectStepLoad                         = @"step_load";
 static NSString *const ICMMetricEventObjectStepError                        = @"step_error";
+
+// SDK Api
+static NSString *const ICMMetricEventObjectInitialise                       = @"initialise";
+static NSString *const ICMMetricEventObjectUserHash                         = @"user_hash";
+static NSString *const ICMMetricEventObjectLoginUnidentifiedUser            = @"login_unidentified_user";
+static NSString *const ICMMetricEventObjectRegisterUnidentifiedUser         = @"register_unidentified_user";
+static NSString *const ICMMetricEventObjectLoginIdentifiedUser              = @"login_identified_user";
+static NSString *const ICMMetricEventObjectRegisterIdentifiedUserEmailUserId= @"register_identified_user_email_user_id";
+static NSString *const ICMMetricEventObjectRegisterIdentifiedUserUserId     = @"register_identified_user_user_id";
+static NSString *const ICMMetricEventObjectRegisterIdentifiedUserEmail      = @"register_identified_user_email";
+static NSString *const ICMMetricEventObjectLogout                           = @"logout";
+static NSString *const ICMMetricEventObjectReset                            = @"reset";
+static NSString *const ICMMetricEventObjectUpdateUserCallback               = @"update_user_callback";
+static NSString *const ICMMetricEventObjectUpdateUser                       = @"update_user";
+static NSString *const ICMMetricEventObjectLogEvent                         = @"log_event";
+static NSString *const ICMMetricEventObjectLogEventMetaData                 = @"log_event_metadata";
+static NSString *const ICMMetricEventObjectPresentMessenger                 = @"present_messenger";
+static NSString *const ICMMetricEventObjectPresentMessageComposerInitialMessage = @"present_message_composer_initial_message";
+static NSString *const ICMMetricEventObjectPresentMessageComposer           = @"present_message_composer";
+static NSString *const ICMMetricEventObjectPresentMessageComposerWithMessage= @"present_message_composer_with_message";
+static NSString *const ICMMetricEventObjectPresentConversationList          = @"present_conversation_list";
+static NSString *const ICMMetricEventObjectPresentHelpCenter                = @"present_help_center";
+static NSString *const ICMMetricEventObjectPresentHelpCenterCollections     = @"present_help_center_collections";
+static NSString *const ICMMetricEventObjectPresentArticle                   = @"present_article";
+static NSString *const ICMMetricEventObjectFetchHelpCenterCollections       = @"fetch_help_center_collections";
+static NSString *const ICMMetricEventObjectFetchHelpCenterCollection        = @"fetch_help_center_collection";
+static NSString *const ICMMetricEventObjectSearchHelpCenter                 = @"search_help_center";
+static NSString *const ICMMetricEventObjectPresentCarousel                  = @"present_carousel";
+static NSString *const ICMMetricEventObjectPresentSurvey                    = @"present_survey";
+static NSString *const ICMMetricEventObjectSetDeviceTokenCallback           = @"set_device_token_callback";
+static NSString *const ICMMetricEventObjectSetDeviceToken                   = @"set_device_token";
+static NSString *const ICMMetricEventObjectIsIntercomPushNotification       = @"is_intercom_push_notification";
+static NSString *const ICMMetricEventObjectHandlePushNotification           = @"handle_push_notification";
+static NSString *const ICMMetricEventObjectSetBottomPadding                 = @"set_bottom_padding";
+static NSString *const ICMMetricEventObjectSetInAppMessageVisibility        = @"set_inapp_message_visibility";
+static NSString *const ICMMetricEventObjectSetLauncherVisibility            = @"set_launcher_visibility";
+static NSString *const ICMMetricEventObjectHideIntercom                     = @"hide_intercom";
+static NSString *const ICMMetricEventObjectUnreadConversationCount          = @"unread_conversation_count";
+static NSString *const ICMMetricEventObjectEnableLogging                    = @"enable_logging";
+static NSString *const ICMMetricEventObjectSetNeedsStatusBarUpdate          = @"set_needs_status_bar_update";
 
 
 #pragma mark Carousel
