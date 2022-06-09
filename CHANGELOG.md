@@ -1,3 +1,11 @@
+## 12.4.1 
+###### Release Date: 08-06-2022
+
+### 🐛 Bug Fixes
+* Messenger header logo now supports gifs.
+* Special notice content will no longer overlap other content when it spans several lines.
+* Fixed a layout issue where the reply time string is longer than width available and overlaps other homescreen elements.
+
 ## 12.4.0 
 ###### Release Date: 31-05-2022
 
