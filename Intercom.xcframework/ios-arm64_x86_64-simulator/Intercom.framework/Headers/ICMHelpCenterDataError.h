@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSErrorDomain const ICMHelpCenterDataErrorDomain;
+FOUNDATION_EXPORT NSErrorDomain const ICMHelpCenterDataErrorDomain;
 
 typedef NS_ERROR_ENUM(ICMHelpCenterDataErrorDomain, ICMHelpCenterDataError) {
     contentNotAvailable = 1,

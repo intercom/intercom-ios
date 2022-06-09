@@ -1,18 +1,15 @@
 //
 //  ICMHelpCenterArticle.h
-//  IntercomSDK-Dynamic
+//  IntercomSDK-Private
 //
-//  Created by Michael McNamara on 03/06/2021.
-//  Copyright © 2021 Intercom. All rights reserved.
+//  Created by Brian Boyle on 25/01/2022.
+//  Copyright © 2022 Intercom. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- ICMHelpCenterArticle represents a Help Center article.
-*/
 NS_SWIFT_NAME(HelpCenterArticle)
 @interface ICMHelpCenterArticle : NSObject
 
@@ -26,8 +23,9 @@ NS_SWIFT_NAME(HelpCenterArticle)
  */
 @property (nonatomic, copy) NSString *title;
 
+
 - (instancetype)initWithArticleId:(NSString *)articleId
-                          title:(NSString *)title;
+                            title:(NSString *)title;
 
 @end
 

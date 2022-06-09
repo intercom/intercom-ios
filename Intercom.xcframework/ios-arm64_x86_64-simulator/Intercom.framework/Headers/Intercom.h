@@ -8,84 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <UserNotifications/UserNotifications.h>
 #import <Intercom/ICMUserAttributes.h>
-#import <Intercom/ICMFormAttribute.h>
-#import <Intercom/ICMUserAttributesValidation.h>
 #import <Intercom/ICMCompany.h>
 #import <Intercom/ICMHelpCenterCollection.h>
-#import <Intercom/ICMHelpCenterSection.h>
-#import <Intercom/ICMHelpCenterArticle.h>
 #import <Intercom/ICMHelpCenterCollectionContent.h>
 #import <Intercom/ICMHelpCenterArticleSearchResult.h>
+#import <Intercom/ICMHelpCenterSection.h>
 #import <Intercom/ICMHelpCenterDataError.h>
-#import <Intercom/ICMAssets.h>
-#import <Intercom/ICMHTTPClientProtocol.h>
-#import <Intercom/ICMDataManagerProtocol.h>
-#import <Intercom/ICMHTTPClient.h>
-#import <Intercom/ICMTranslationManager.h>
-#import <Intercom/ICMHelpCenterTranslationManager.h>
-#import <Intercom/ICMTranslationKeys.h>
-#import <Intercom/ICMEngine.h>
-#import <Intercom/ICMNavigationController.h>
-#import <Intercom/ICMErrorViewController.h>
-#import <Intercom/ICMLoadingViewController.h>
-#import <Intercom/ICMNavigationBarCloseButton.h>
-#import <Intercom/ICMErrorViewDelegate.h>
-#import <Intercom/ICMColor.h>
-#import <Intercom/ICMArticleWebViewController.h>
-#import <Intercom/ICMContentViewControllerDelegate.h>
-#import <Intercom/ICMContentViewController.h>
-#import <Intercom/ICMUtils.h>
-#import <Intercom/UIImage+ICMImageUtils.h>
-#import <Intercom/ICMFeedbackGenerator.h>
-#import <Intercom/ICMActiveAdminsAvatarView.h>
-#import <Intercom/ICMStartConversationButton.h>
-#import <Intercom/ICMConfig.h>
-#import <Intercom/ICMSafeNetworkModel.h>
-#import <Intercom/ICMPresentationManager.h>
-#import <Intercom/ICMMetric.h>
-#import <Intercom/ICMMetricEvent.h>
-#import <Intercom/ICMDataManager.h>
-#import <Intercom/ICMUnreadManager.h>
-#import <Intercom/ICMTeamPresence.h>
-#import <Intercom/ICMParticipant.h>
-#import <Intercom/ICMAvatar.h>
-#import <Intercom/ICMParticipatingAdmin.h>
-#import <Intercom/ICMRecentConversationsViewController.h>
-#import <Intercom/ICMMultipleAvatarView.h>
-#import <Intercom/ICMAutoLayout.h>
-#import <Intercom/ICMRootViewController.h>
-#import <Intercom/ICMInAppsViewController.h>
-#import <Intercom/ICMNavigationController.h>
-#import <Intercom/ICMWindowProvider.h>
-#import <Intercom/ICMWindow.h>
-#import <Intercom/ICMBlockLoader.h>
-#import <Intercom/ICMCarouselBlockAppearance.h>
-#import <Intercom/ICMAdminBlockAppearance.h>
-#import <Intercom/ICMSurveyStepBlockAppearance.h>
-#import <Intercom/ICMSurveyQuestionBlockAppearance.h>
-#import <Intercom/ICMBlockAppearance.h>
-#import <Intercom/ICMButton.h>
-#import <Intercom/ICMContentStackView.h>
-#import <Intercom/ICMTimestampCalculator.h>
-#import <Intercom/ICMInputViewProtocol.h>
-#import <Intercom/ICMTextField.h>
-#import <Intercom/ICMIntegerTextField.h>
-#import <Intercom/ICMPickerTextField.h>
-#import <Intercom/ICMEmailTextField.h>
-#import <Intercom/ICMPhoneTextField.h>
-#import <Intercom/ICMValidatorProtocol.h>
-#import <Intercom/ICMEmptyInputValidator.h>
-#import <Intercom/ICMValidator.h>
-#import <Intercom/ICMCountLimitInputValidator.h>
-#import <Intercom/ICMAvatarView.h>
-#import <Intercom/ICMLinkOpener.h>
-#import <Intercom/ITBBlockAppearance.h>
-#import <Intercom/ITBLoadingView.h>
-#import <Intercom/ITBImageLoader.h>
-#import <Intercom/ITBBlock.h>
-#import <Intercom/IntercomConversationCustomCell.h>
-#import <UserNotifications/UserNotifications.h>
+#import <Intercom/ICMHelpCenterArticle.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -413,6 +344,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param contentHandler The `contentHandler` block that is passed into `didReceiveNotificationRequest:withContentHandler:`.
  */
 + (void)handleIntercomRichPushNotificationContent:(UNNotificationContent *)notificationContent withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler;
+
 
 #pragma mark - Intercom UI Visibility
 
