@@ -1,3 +1,9 @@
+## 12.4.2
+###### Release Date: 20-06-2022
+
+### 🐛 Bug Fixes
+* Dropped support for `ios-arm64_armv7` and `ios-arm64_i386_x86_64-simulator` slices which resolves previous build warnings
+
 ## 12.4.1 
 ###### Release Date: 08-06-2022
 
