@@ -1,3 +1,9 @@
+## 12.4.3 
+###### Release Date: 23-06-2022
+
+### 🐛 Bug Fixes
+* Removed old header files and swift interface files. These were triggering build warnings in Xcode.
+
 ## 12.4.2
 ###### Release Date: 20-06-2022
 
