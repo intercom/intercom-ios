@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openArticle(_ sender: Any) {
-        Intercom.presentArticle(<#ARTICLE_ID#>)
+        Intercom.presentArticle("<#ARTICLE_ID#>")
     }
     
     @IBAction func logout(_ sender: Any) {

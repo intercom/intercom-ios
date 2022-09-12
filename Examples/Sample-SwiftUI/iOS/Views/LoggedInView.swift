@@ -38,7 +38,7 @@ struct LoggedInView: View {
     }
     
     func openArticle() {
-        Intercom.presentArticle(<#ARTICLE_ID#>)
+        Intercom.presentArticle("<#ARTICLE_ID#>")
     }
     
     func logoutOfIntercom() {
