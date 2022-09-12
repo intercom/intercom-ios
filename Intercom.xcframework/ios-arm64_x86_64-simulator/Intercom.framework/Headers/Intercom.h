@@ -68,17 +68,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)loginUnidentifiedUserWithSuccess:(void(^ __nullable)(void))success failure:(void(^ __nullable)(NSError *_Nonnull error))failure NS_REFINED_FOR_SWIFT;
 
-/*!
- If you call registerUnidentifiedUser, all activity will be tracked anonymously. If you choose to subsequently
- identify that user, all that anonymous activity will be merged into the identified user. This means that you
- will no longer see the anonymous user in Intercom, but rather the identified one.
-
- We recommend this is called from within the application delegate's didFinishLaunchingWithOptions: method.
-
- @note You must call one of the user login methods in order to start communicating with Intercom.
- */
-+ (void)registerUnidentifiedUser __attribute((deprecated("'+[Intercom registerUnidentifiedUser]' is deprecated. 'Use +[Intercom loginUnidentifiedUserWithSuccess:failure:]' instead.")));
-
 //=========================================================================================================
 /*! @name Working with identified users */
 //=========================================================================================================
@@ -103,30 +92,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)loginUserWithUserAttributes:(ICMUserAttributes *)userAttributes success:(void(^ __nullable)(void))success failure:(void(^ __nullable)(NSError *_Nonnull error))failure NS_REFINED_FOR_SWIFT;
 
-/*!
- Login as a user just with their userId and email.
- 
- @param userId A unique identifier for your user.
- @param email Your user's email address.
- @note You must call one of the user registration methods in order to start communicating with Intercom.
- */
-+ (void)registerUserWithUserId:(NSString *)userId email:(NSString *)email __attribute((deprecated("'+[Intercom registerUserWithUserId:email:]' is deprecated. 'Use +[Intercom loginUserWithUserAttributes:success:failure:]' instead.")));
-
-/*!
- Login as a user just with their userId.
- @param userId A unique identifier for your user.
- @note You must call one of the user registration methods in order to start communicating with Intercom.
- */
-+ (void)registerUserWithUserId:(NSString *)userId __attribute((deprecated("'+[Intercom registerUserWithUserId:]' is deprecated. 'Use +[Intercom loginUserWithUserAttributes:success:failure:]' instead.")));
-
-/*!
- Login as a user with just their email address.
-
- @param email   Your user's email address.
- @note You must call one of the user registration methods in order to start communicating with Intercom.
- */
-+ (void)registerUserWithEmail:(NSString *)email __attribute((deprecated("'+[Intercom registerUserWithEmail:]' is deprecated. 'Use +[Intercom loginUserWithUserAttributes:success:failure:]' instead.")));
-
 //=========================================================================================================
 /*! @name Logging the user out */
 //=========================================================================================================
@@ -136,11 +101,6 @@ NS_ASSUME_NONNULL_BEGIN
  Once called, Intercom for iOS will no longer communicate with Intercom until a further login is made.
  */
 + (void)logout;
-
-/*!
- @deprecated  +[Intercom reset] is deprecated. Use +[Intercom logout] instead.
- */
-+ (void)reset __attribute((deprecated("'+[Intercom reset]' is deprecated. 'Use +[Intercom logout]' instead.")));
 
 //=========================================================================================================
 /** @name Updating the user */
@@ -157,17 +117,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param failure A failure callback with an error parameter.
  */
 + (void)updateUser:(ICMUserAttributes *)userAttributes success:(void(^ __nullable)(void))success failure:(void(^ __nullable)(NSError *_Nonnull error))failure NS_REFINED_FOR_SWIFT;
-
-/*!
- You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that
- relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to
- Intercom you can then apply filters based on these attributes.
- 
- Details on attributes available to update can be found in ICMUserAttributes.
- 
- @param userAttributes The attributes to update the user with.
- */
-+ (void)updateUser:(ICMUserAttributes *)userAttributes __attribute((deprecated("'+[Intercom updateUser:]' is deprecated. 'Use +[Intercom updateUser:success:failure:]' instead.")));
 
 #pragma mark - Log Event
 
@@ -218,21 +167,6 @@ NS_ASSUME_NONNULL_BEGIN
   @param initialMessage An optional message that is used to pre-populate the composer with some text.
  */
 + (void)presentMessageComposer:(nullable NSString *)initialMessage;
-
-/*!
- Present the message composer.
- */
-+ (void)presentMessageComposer __attribute((deprecated("'+[Intercom presentMessageComposer]' is deprecated. 'Use +[Intercom presentMessageComposer:initialMessage]' instead.")));
-
-/*!
- Present the message composer with a message to pre-populate the composer.
- */
-+ (void)presentMessageComposerWithInitialMessage:(NSString *)message __attribute((deprecated("'+[Intercom presentMessageComposerWithInitialMessage]' is deprecated. 'Use +[Intercom presentMessageComposer:initialMessage]' instead.")));
-
-/*!
- Present the conversation list.
- */
-+ (void)presentConversationList __attribute((deprecated("'+[Intercom presentConversationList]' is deprecated. 'Use +[Intercom presentMessenger]' instead.")));;
 
 #pragma mark - Help Center UI
 
@@ -307,15 +241,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param failure A failure callback with an error parameter.
  */
 + (void)setDeviceToken:(NSData *)deviceToken failure:(void(^ __nullable)(NSError * _Nullable error))failure;
-
-/*!
- Set the device token for push notifications. Once the device token is set, the methods for receiving push
- notifications are safely swizzled so ones sent from Intercom can be intercepted. When a push notification from
- Intercom is received, Intercom for iOS will automatically launch the message from the notification.
-
- @param deviceToken The device token provided in the `didRegisterForRemoteNotificationsWithDeviceToken` method.
- */
-+ (void)setDeviceToken:(NSData *)deviceToken __attribute((deprecated("'+[Intercom setDeviceToken:]' is deprecated. 'Use +[Intercom setDeviceToken:failure:]' instead.")));
 
 /*!
  Use this method to check if a push notification payload was sent by Intercom. Typically you should call
