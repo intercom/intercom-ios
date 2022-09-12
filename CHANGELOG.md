@@ -1,3 +1,11 @@
+## 13.0.0  
+###### Release Date: 12-09-2022
+
+### 🚀  Enhancements 
+* Added support for iOS 16.
+* Xcode 14 is required to build v13.0.0
+* We have removed deprecated methods in our API. Developers still using these old APIs should follow our [v13.0.0 Migration Guide](https://developers.intercom.com/installing-intercom/docs/migrating-to-v13) for adopting our newest API methods.
+
 ## 12.4.3 
 ###### Release Date: 23-06-2022
 
