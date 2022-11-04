@@ -18,16 +18,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginUserButton: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var openMessengerButton: UIButton!
+    @IBOutlet weak var openInboxButton: UIButton!
     @IBOutlet weak var openHelpCenterButton: UIButton!
     @IBOutlet weak var openArticleButton: UIButton!
+    @IBOutlet weak var openCarouselButton: UIButton!
+    @IBOutlet weak var openSurveyButton: UIButton!
     
     var loggedIn = false {
         didSet {
             loginUserButton.isEnabled = !loggedIn
             logoutButton.isEnabled = loggedIn
             openMessengerButton.isEnabled = loggedIn
+            openInboxButton.isEnabled = loggedIn
             openHelpCenterButton.isEnabled = loggedIn
             openArticleButton.isEnabled = loggedIn
+            openCarouselButton.isEnabled = loggedIn
+            openSurveyButton.isEnabled = loggedIn
         }
     }
     
@@ -51,15 +57,27 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openMessenger(_ sender: Any) {
-        Intercom.presentMessenger()
+        Intercom.present()
+    }
+    
+    @IBAction func openInbox(_ sender: Any) {
+        Intercom.present(.messages)
     }
     
     @IBAction func openHelpCenter(_ sender: Any) {
-        Intercom.presentHelpCenter()
+        Intercom.present(.helpCenter)
     }
     
     @IBAction func openArticle(_ sender: Any) {
-        Intercom.presentArticle("<#ARTICLE_ID#>")
+        Intercom.presentContent(.article(id: "<#ARTICLE_ID#>"))
+    }
+    
+    @IBAction func openCarousel(_ sender: Any) {
+        Intercom.presentContent(.carousel(id: "<#CAROUSEL_ID#>"))
+    }
+    
+    @IBAction func openSurvey(_ sender: Any) {
+        Intercom.presentContent(.survey(id: "<#SURVEY_ID#>"))
     }
     
     @IBAction func logout(_ sender: Any) {
