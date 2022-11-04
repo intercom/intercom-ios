@@ -1,3 +1,59 @@
+## 14.0.0 
+##### Release Date: 4-11-2022
+
+### 🚀 Enhancements
+
+**In v14.0.0 of the Intercom mobile SDK!! Say hello to the most customizable Messenger. Ever. 👋**
+
+**📱 New feature: Messenger**
+
+👋🏼  Introducing the fully customizable Messenger that provides customers with in-context engagement throughout their journey.
+
+* **Customization:** Now you can update and style your Messenger just the way you want it and enable a consistent brand experience with a fully customizable Messenger. [Learn more and get started here.](https://www.intercom.com/help/en/articles/6612589-set-up-the-fully-customizable-messenger)
+![Image](https://user-images.githubusercontent.com/101131135/199487389-9100911a-192d-4b02-a1b4-232d22769408.jpeg)
+
+
+* **Spaces:** You’ll have increased product flexibility and versatility with Messenger ‘spaces’ that provide intuitive navigation for your customers. Let’s go through each of the 3 new spaces you can add to your Messenger:
+
+  * **Home Space:** A redesigned Home screen that’s highly configurable and supports multiple use cases with new capabilities.
+  * **Messages Space:** Messages is a dedicated space for conversation management. Both inbound and outbound conversations and conversations which contain [tickets](https://www.intercom.com/help/en/articles/6436600-tickets-explained) will live here. 
+  * **Help Space:** Enable customers to better self-serve with a more intuitive and personalized support experience. Customers can access a full, in-context help center from anywhere in your product with the dedicated Help Space.
+
+**📱 New feature: Tickets**
+
+Go beyond simple live chat – handle complex customer requests asynchronously.
+
+* As you scale, so does your conversation volume and not every customer request can be handled in a live chat. That’s where tickets come in.
+* Let customers submit tickets directly from your app for async resolution
+
+
+[Learn more about Intercom Messenger](https://www.intercom.com/messenger) 
+
+[Learn more about Intercom Tickets](https://www.intercom.com/help/en/articles/6436600-tickets-explained) 
+
+👉  Upgrade to the latest version of the mobile SDK today to use the feature on mobile. 
+
+As this is a major update, there are few API changes which are listed below:
+
+| Method - Swift      |Method - Obj-C| Description |
+| ----------- | ----------- | ----------- |
+| func present(_ space:Space)      |+ (void)presentIntercom:(Space)space| Open a specific space in intercom. (Home, Messages, HelpCenter)       |
+| func present()   |+ (void)presentIntercom| Open Intercom - defaults to the Home space        |
+| func presentContent(_ content: Content) |+ (void)presentContent:(IntercomContent *)content| Present Intercom content. Valid content types are Article, Carousel, HelpCenter Collections |
+
+The following methods have also been fully deprecated:
+
+| Method - Swift      |
+| ----------- |
+| func presentMessenger() | 
+| func presentHelpCenter() |
+| func presentHelpCenterCollections(collectionIds: [String]) |
+| func presentArticle(articleId: String) |
+| func presentCarousel(carouselId: String ) |
+| func presentSurvey(surveyId: String) |
+
+[You can find more information about migrating to v14.0.0 here](https://developers.intercom.com/installing-intercom/docs/migrating-to-v1400)
+
 ## 13.0.0  
 ###### Release Date: 12-09-2022
 
