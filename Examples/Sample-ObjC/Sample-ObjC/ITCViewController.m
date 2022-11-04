@@ -64,15 +64,27 @@
 }
 
 - (IBAction)openMessengerTapped:(id)sender {
-    [Intercom presentMessenger];
+    [Intercom presentIntercom];
+}
+
+- (IBAction)openInboxTapped:(id)sender {
+    [Intercom presentIntercom:messages];
 }
 
 - (IBAction)openHelpCenterTapped:(id)sender {
-    [Intercom presentHelpCenter];
+    [Intercom presentIntercom:helpCenter];
 }
 
 - (IBAction)openArticle:(id)sender {
-    [Intercom presentArticle:@"<#ARTICLE_ID#>"];
+    [Intercom presentContent:[IntercomContent articleWithId:@"<#ARTICLE_ID#>"]];
+}
+
+- (IBAction)openCarousel:(id)sender {
+    [Intercom presentContent:[IntercomContent carouselWithId:@"<#CAROUSEL_ID#>"]];
+}
+
+- (IBAction)openSurvey:(id)sender {
+    [Intercom presentContent:[IntercomContent surveyWithId:@"<#SURVEY_ID#>"]];
 }
 
 - (void)handleUserLogin:(UIAlertController *)alertController {
