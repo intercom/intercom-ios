@@ -22,23 +22,38 @@ struct LoggedInView: View {
             }
             VStack(spacing:15) {
                 StylizedButton("Open Messenger", action: openMessenger)
+                StylizedButton("Open Inbox", action: openInbox)
                 StylizedButton("Open Help Center", action: openHelpCenter)
                 StylizedButton("Open Article", action: openArticle)
+                StylizedButton("Open Carousel", action: openCarousel)
+                StylizedButton("Open Survey", action: openSurvey)
                 StylizedButton("Log out", action: logoutOfIntercom)
             }
         }
     }
     
     func openMessenger() {
-        Intercom.presentMessenger()
+        Intercom.present()
+    }
+    
+    func openInbox() {
+        Intercom.present(.messages)
     }
     
     func openHelpCenter() {
-        Intercom.presentHelpCenter()
+        Intercom.present(.helpCenter)
     }
     
     func openArticle() {
-        Intercom.presentArticle("<#ARTICLE_ID#>")
+        Intercom.presentContent(.article(id: "<#ARTICLE_ID#>"))
+    }
+    
+    func openCarousel() {
+        Intercom.presentContent(.carousel(id: "<#CAROUSEL_ID#>"))
+    }
+    
+    func openSurvey() {
+        Intercom.presentContent(.survey(id: "<#SURVEY_ID#>"))
     }
     
     func logoutOfIntercom() {
