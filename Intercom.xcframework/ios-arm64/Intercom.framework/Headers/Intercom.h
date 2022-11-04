@@ -17,374 +17,386 @@
 #import <Intercom/ICMHelpCenterSection.h>
 #import <Intercom/ICMHelpCenterDataError.h>
 #import <Intercom/ICMHelpCenterArticle.h>
+#import <Intercom/ICMHelpCenterArticleAuthor.h>
+#import <Intercom/IntercomContent.h>
+/**
+ A enum of Intercom Spaces.
+ 
+ Use along with ``Intercom/presentIntercom:`` to specify the Intercom Space you want to present.
+ */
+typedef NS_ENUM(NSInteger, Space) {
+    home,
+    helpCenter,
+    messages,
+};
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Intercom : NSObject
 
+
 #pragma mark - Intercom Initialisation
 
-//=========================================================================================================
-/*! @name Getting set up */
-//=========================================================================================================
-/*!
+
+/**
  Initialize Intercom with your iOS API key and App ID.  This will allow your app to connect with Intercom.
  This is best done in the application delegate's didFinishLaunchingWithOptions: method.
 
- @param apiKey The iOS API key found on the API Key settings page.
- @param appId  The App ID of your Intercom app.
+ - Parameters:
+    - apiKey: The iOS API key found on the API Key settings page.
+    - appId: The App ID of your Intercom app.
  */
 + (void)setApiKey:(NSString *)apiKey forAppId:(NSString *)appId;
 
-//=========================================================================================================
-/*! @name Using Identity Verification */
-//=========================================================================================================
-/*!
+/**
+ Set `userHash` string if you are using Identity Verification for your Intercom workspace.
+ - Note: This should be called before any user login takes place.
+ 
  Identity Verification helps to make sure that conversations between you and your users are kept private, and that one
  user can't impersonate another. If Identity Verification is enabled for your app, Intercom for iOS will sign all requests
  going to the Intercom servers with tokens. It requires your mobile application to have its own server which authenticates the app's users,
- and which can store a secret. More information on Identity Verification can be found [here](https://developers.intercom.com/docs/ios-identity-verification)
-
+ and which can store a secret.
  
- @note This should be called before any user login takes place.
- @param userHash A HMAC digest of the user ID or email.
+ @see More information on Identity Verification can be found {[here](https://developers.intercom.com/docs/ios-identity-verification)
+ 
+ - Parameters:
+    - userHash: A HMAC digest of the user ID or email.
  */
 + (void)setUserHash:(NSString *)userHash;
 
+
 #pragma mark - User Login
 
-//=========================================================================================================
-/*! @name Working with anonymous users */
-//=========================================================================================================
-/*!
- If you call loginUnidentifiedUserWithSuccess:failure:, all activity will be tracked anonymously. If you choose to
- subsequently identify that user, all that anonymous activity will be merged into the identified user. This means that
- you will no longer see the anonymous user in Intercom, but rather the identified one.
+/**
+ Login a unidentified user.
+ This is a user that doesn't have any identifiable information such as a `userId` or `email`.
  
- We recommend this is called from within the application delegate's didFinishLaunchingWithOptions: method.
- @param success A nullable success callback with no parameters.
- @param failure A failure callback with an error parameter.
- @note You must call one of the user login methods in order to start communicating with Intercom.
+ - Note: You must call one of the user login methods in order to start communicating with Intercom.
+ 
+ - Parameters:
+    - success: A nullable success callback with no parameters.
+    - failure: A failure callback with an error parameter.
  */
 + (void)loginUnidentifiedUserWithSuccess:(void(^ __nullable)(void))success failure:(void(^ __nullable)(NSError *_Nonnull error))failure NS_REFINED_FOR_SWIFT;
 
-//=========================================================================================================
-/*! @name Working with identified users */
-//=========================================================================================================
-/*!
- In order to keep track of a specific user, you must identify it with a unique user identity, an email
- address, or both. To provide these, you must first create a new `ICMUserAttributes` object and then populate
- the `email` and/or `userId` properties for that object. This is a userId, supplied by you (e.g. from an
- existing web service for your product) to represent your user in Intercom, once set it cannot be changed.
+/**
+ Login a user with identifiable information.
+ Valid identifiers are `userId` and `email` which must be set in the ``ICMUserAttributes`` object.
  
- As well as the `email` and `userId` fields, you can populate the other user attribute fields within
- `ICMUserAttributes` when you login as an identified user. By supplying information like this, Intercom
- provides richer user profiles for your users.
-
- If you are putting Intercom for iOS into an app that has persisted an authentication token or equivalent
- so your users don't have to log in repeatedly (like most apps) then we advise putting the user login
- call in the `didBecomeActive:` method in your application delegate. This won't have any negative impact if
- you also add it to your authentication success method elsewhere in your app.
-
- @param userAttributes An `ICMUserAttributes` object. Either or both `email` and `userId` properties must be populated.
- @param success A nullable success callback with no parameters.
- @param failure A failure callback with an error parameter.
+ - Parameters:
+    - userAttributes: An ``ICMUserAttributes`` object. Either or both `email` and `userId` properties must be populated.
+    - success: A nullable success callback with no parameters.
+    - failure: A failure callback with an error parameter.
  */
 + (void)loginUserWithUserAttributes:(ICMUserAttributes *)userAttributes success:(void(^ __nullable)(void))success failure:(void(^ __nullable)(NSError *_Nonnull error))failure NS_REFINED_FOR_SWIFT;
 
-//=========================================================================================================
-/*! @name Logging the user out */
-//=========================================================================================================
-/*!
- logout is used to clear all local caches and user data Intercom has created. Logout will also close any active
- UI that is on screen. Use this at a time when you wish to log a user out of your app or change a user.
- Once called, Intercom for iOS will no longer communicate with Intercom until a further login is made.
+/**
+ Log a user out of their Intercom session.
+ This will dismiss any Intercom UI and clear Intercom's local cache.
  */
 + (void)logout;
 
-//=========================================================================================================
-/** @name Updating the user */
-//=========================================================================================================
-/*!
- You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that
- relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to
- Intercom you can then apply filters based on these attributes.
+/**
+ Update a user in Intercom with data specified in ``UserAttributes``.
+ Full details of the data data attributes that can be stored on a user can be found in  ``UserAttributes``.
  
- Details on attributes available to update can be found in ICMUserAttributes.
- 
- @param userAttributes The attributes to update the user with.
- @param success A nullable success callback with no parameters.
- @param failure A failure callback with an error parameter.
+ - Parameters:
+    - userAttributes: The attributes to update the user with.
+    - success: A nullable success callback with no parameters.
+    - failure: A failure callback with an error parameter.
  */
 + (void)updateUser:(ICMUserAttributes *)userAttributes success:(void(^ __nullable)(void))success failure:(void(^ __nullable)(NSError *_Nonnull error))failure NS_REFINED_FOR_SWIFT;
 
+
 #pragma mark - Log Event
 
-/*!
+/**
  Log an event with a given name.
-
- You can log events in Intercom based on user actions in your app. Events are different
- to custom user attributes in that events are information on what Users did and when they
- did it, whereas custom user attributes represent the User's current state as seen in their
- profile. See details about Events [here](https://developers.intercom.com/reference/#events )
-
- @param name The name of the event that it is going to be logged.
+ You can log events in Intercom based on user actions in your app.
+ Details about Events [here](https://developers.intercom.com/reference/#events )
+ 
+ - Parameters:
+    - name: The name of the event that it is going to be logged.
  */
 + (void)logEventWithName:(NSString *)name;
 
-/*!
- Metadata Objects support a few simple types that Intercom can present on your behalf, see the
- [Intercom API docs](https://developers.intercom.com/reference/#event-metadata-types )
-
- [Intercom logEventWithName:@"ordered_item" metaData:@{
- @"order_date": @1392036272,
- @"stripe_invoice": @"inv_3434343434",
- @"order_number": @{
- @"value": @"3434-3434",
- @"url": @"https://example.org/orders/3434-3434"
- }];
-
- @param name The name of the event you wish to track.
- @param metaData contains simple types to present to Intercom
+/**
+ Log an event with a given name and metaData.
+ You can log events in Intercom based on user actions in your app.
+ Details about Events [here](https://developers.intercom.com/reference/#events )
+ 
+ - Parameters:
+    - name: The name of the event that it is going to be logged
+    - metaData: Metadata Objects support a few simple types that Intercom can present on your behalf. See [Intercom API docs](https://developers.intercom.com/intercom-api-reference/reference/event-model)
  */
 + (void)logEventWithName:(NSString *)name metaData:(NSDictionary *)metaData;
 
-//=========================================================================================================
-/*! @name Show Intercom messages and message composers */
-//=========================================================================================================
 
-#pragma mark - Present Messenger
+#pragma mark - Present Intercom UI
 
-/*!
- Present the Intercom Messenger
-
- Opens the Intercom messenger automatically to the best place for your users.
+/**
+ Present Intercom in your app.
+ 
+ This opens Intercom and displays the ``home`` Space.
  */
-+ (void)presentMessenger;
++ (void)presentIntercom;
 
-/*!
-  Present the message composer.
-  @param initialMessage An optional message that is used to pre-populate the composer with some text.
+/**
+ Present a specific Intercom ``Space``.
+ 
+ This opens Intercom and displays the ``Space`` specified.
+ 
+ - Parameters:
+    - space: The enum identifed for the ``Space`` to be presented.
+ */
++ (void)presentIntercom:(Space)space;
+
+
+/**
+ Present Intercom content.
+ 
+ - Parameters:
+    - content: An ``IntercomContent`` object.
+ */
++ (void)presentContent:(IntercomContent *)content NS_REFINED_FOR_SWIFT;
+
+/**
+ Present the message composer.
+ 
+ - Parameters:
+    - initialMessage: An optional message that is used to pre-populate the composer with some text.
  */
 + (void)presentMessageComposer:(nullable NSString *)initialMessage;
 
-#pragma mark - Help Center UI
-
-/*!
- Present the Help Center.
- */
-+ (void)presentHelpCenter;
-
-/*!
- Present the Help Center with specific collections only.
- - Note: If the requested collections cannot be found, the full Help Center will be shown instead.
- @param collectionIds The ID of the collections to be presented.
- */
-+ (void)presentHelpCenterCollections:(nonnull NSArray<NSString *> *)collectionIds;
-
-/*!
- Present an article.
- @param articleId The ID of the article to be presented.
- */
-+ (void)presentArticle:(nonnull NSString *)articleId;
 
 #pragma mark - Help Center Data API
 
-/*!
+/**
  Fetch all Help Center collections.
- @param completion A completion callback with two parameters: an array of collections or an error.
+
+ - Parameters:
+    - completion: A completion callback with two parameters: an array of collections or an error.
  */
 + (void)fetchHelpCenterCollectionsWithCompletion:(void (^)(NSArray<ICMHelpCenterCollection *> *_Nullable collections, NSError *_Nullable error))completion NS_REFINED_FOR_SWIFT;
 
-/*!
+/**
  Fetch the contents of a Help Center collection.
- @param collectionId The ID of the Help Center collection.
- @param completion A completion callback with two parameters: a collection content object or an error.
+ 
+ - Parameters:
+    - collectionId: The ID of the Help Center collection.
+    - completion: A completion callback with two parameters: a collection content object or an error.
  */
 + (void)fetchHelpCenterCollection:(nonnull NSString *)collectionId
                    withCompletion:(void (^)(ICMHelpCenterCollectionContent *_Nullable collectionContent, NSError *_Nullable error))completion NS_REFINED_FOR_SWIFT;
 
-/*!
+/**
  Search the Help Center.
- @param searchTerm The search string.
- @param completion A completion callback with two parameters: an array of search results or an error.
+ 
+ - Parameters:
+    - searchTerm: The search string.
+    - completion: A completion callback with two parameters: an array of search results or an error.
  */
 + (void)searchHelpCenter:(nonnull NSString *)searchTerm
-                   withCompletion:(void (^)(NSArray<ICMHelpCenterArticleSearchResult *> *_Nullable articleSearchResults, NSError *_Nullable error))completion NS_REFINED_FOR_SWIFT;
+          withCompletion:(void (^)(NSArray<ICMHelpCenterArticleSearchResult *> *_Nullable articleSearchResults, NSError *_Nullable error))completion NS_REFINED_FOR_SWIFT;
 
-#pragma mark - Mobile Carousels
-
-/*!
- Present a Mobile Carousel.
- @param carouselId The ID of the Mobile Carousel to be presented.
- */
-+ (void)presentCarousel:(nonnull NSString *)carouselId;
-
-#pragma mark - Surveys
-
-/*!
- Present a Survey.
- @param surveyId The ID of the Survey to be presented.
- */
-+ (void)presentSurvey:(nonnull NSString *)surveyId;
 
 #pragma mark - Push Notifications
 
-//=========================================================================================================
-/*! @name Working with push notifications */
-//=========================================================================================================
-/*!
+
+/**
  Set the device token for push notifications. Once the device token is set, the methods for receiving push
  notifications are safely swizzled so ones sent from Intercom can be intercepted. When a push notification from
  Intercom is received, Intercom for iOS will automatically launch the message from the notification.
- @param deviceToken The device token provided in the `didRegisterForRemoteNotificationsWithDeviceToken` method.
- @param failure A failure callback with an error parameter.
+ 
+ - Parameters:
+    - deviceToken: The device token provided in the `didRegisterForRemoteNotificationsWithDeviceToken` method.
+    - failure: A failure callback with an error parameter.
  */
 + (void)setDeviceToken:(NSData *)deviceToken failure:(void(^ __nullable)(NSError * _Nullable error))failure;
 
-/*!
+/**
  Use this method to check if a push notification payload was sent by Intercom. Typically you should call
- +[Intercom handleIntercomPushNotification:] after checking this.
+ ``handleIntercomPushNotification:`` after checking this.
  
- @note This is only needed if you have set `IntercomAutoIntegratePushNotifications` to NO in your Info.plist
- @return YES if the payload is an Intercom push notification, NO otherwise.
+ - Note: This is only needed if you have set `IntercomAutoIntegratePushNotifications` to NO in your Info.plist
+ 
+ - Returns: YES if the payload is an Intercom push notification, NO otherwise.
  */
 + (BOOL)isIntercomPushNotification:(NSDictionary *)userInfo;
 
-/*!
+/**
  Use this method to handle a push notification payload sent by Intercom. You should first check if this
- notification was sent by Intercom with `+[Intercom isIntercomPushNotification:]`.
+ notification was sent by Intercom with ``isIntercomPushNotification:``.
  
- @note This is only needed if you have set `IntercomAutoIntegratePushNotifications` to NO in your Info.plist
+ - Note: This is only needed if you have set `IntercomAutoIntegratePushNotifications` to NO in your Info.plist
+ 
+ - Parameters:
+    - userInfo: The push notification payload.
  */
 + (void)handleIntercomPushNotification:(NSDictionary *)userInfo;
 
-/*!
- Use this method to handle a rich push notification payload sent by Intercom in your Notification Service Extension. You should first check if this
- notification was sent by Intercom with `+[Intercom isIntercomPushNotification:]`. This method downloads any media specified in the payload and
+/**
+ Handle a rich push notification payload sent by Intercom in your Notification Service Extension. You should first check if this
+ notification was sent by Intercom with ``isIntercomPushNotification:``. This method downloads any media specified in the payload and
  attaches it to the notification content.
-
- @note This is only needed if you have set `IntercomAutoIntegratePushNotifications` to NO in your Notification Service Extension's Info.plist.
- @param notificationContent The content of the notification request received by your Notification Service Extensions's principal class.
- @param contentHandler The `contentHandler` block that is passed into `didReceiveNotificationRequest:withContentHandler:`.
+ 
+ - Note: This is only needed if you have set `IntercomAutoIntegratePushNotifications` to NO in your Notification Service Extension's `Info.plist`.
+ 
+ - Parameters:
+    - notificationContent: The content of the notification request received by your Notification Service Extensions's principal class.
+    - contentHandler: The `contentHandler` block that is passed into ``didReceiveNotificationRequest:withContentHandler:``.
  */
 + (void)handleIntercomRichPushNotificationContent:(UNNotificationContent *)notificationContent withContentHandler:(void (^)(UNNotificationContent * _Nonnull))contentHandler;
 
 
 #pragma mark - Intercom UI Visibility
 
-//=========================================================================================================
-/*! @name Incoming message presentation options */
-//=========================================================================================================
-
-/*!
- This method allows you to set a fixed bottom padding for in app messages and the launcher.
- It is useful if your app has a tab bar or similar UI at the bottom of your window.
-
- @param bottomPadding The size of the bottom padding in points.
+/**
+ Set a fixed bottom padding for in app messages and the Intercom Launcher.
+ 
+ - Parameters:
+    - bottomPadding: The size of the bottom padding in points.
  */
 + (void)setBottomPadding:(CGFloat)bottomPadding;
 
-//=========================================================================================================
-/*! @name Intercom UI Visibility */
-//=========================================================================================================
-
-/*!
- Use this to hide all incoming Intercom messages and message previews in the parts of your app where you do
- not wish to interrupt users, for example Camera views, parts of a game or other scenarios.
-
- By default, all in app messages will be visible.
-
- @param visible A boolean indicating if in app messages should be visible.
+/**
+ Show or hide the Intercom InApp Messages in your app.
+ 
+ - Note: All InApp Messages are visible by default.
+ 
+ - Parameters:
+    - visible: A boolean indicating if the InApps should be visible.
  */
 + (void)setInAppMessagesVisible:(BOOL)visible;
 
-/*!
- Use this to show the Intercom launcher selectively within your app. If you choose to display the launcher,
- you may want to hide it on some screens where screen space is critical (e.g. parts of a game).
-
- By default, the launcher is hidden.
-
- @param visible A boolean indicating if the launcher should be visible.
+/**
+ Show or hide the Intercom Launcher in your app.
+ 
+ - Note: The Launcher is hidden by default.
+ 
+ - Parameters:
+    - visible: A boolean indicating if the Intercom Launcher should be visible..
  */
 + (void)setLauncherVisible:(BOOL)visible;
 
-/*!
+/**
  Hide all Intercom windows that are currently displayed.
  This will hide the Messenger, Help Center, Articles, and in-product messages (eg. Mobile Carousels, chats, and posts).
  */
 + (void)hideIntercom;
 
+
 #pragma mark - Unread Conversation Count
 
-//=========================================================================================================
-/*! @name Unread conversations */
-//=========================================================================================================
-
-/*!
- This method provides the current number of unread conversations.
+/**
+ Fetch the current number of unread conversations for the logged in User.
  This is useful if you want to display a badge counter on the button where you launch Intercom.
-
- @return The number of unread conversations.
+ 
+ - Returns: The number of unread conversations.
  */
 + (NSUInteger)unreadConversationCount;
 
-/*!
+/**
  This notification is fired when the number of unread conversations changes.
  */
 UIKIT_EXTERN NSString *const IntercomUnreadConversationCountDidChangeNotification;
 
+
 #pragma mark - Logging
 
-//=========================================================================================================
-/*! @name Enable logging */
-//=========================================================================================================
-
-/*!
- Enable logging for Intercom for iOS. By calling this method, Intercom will display debug information.
- @note it is recommended to use it only while debugging)
+/**
+ Enable `DEBUG` logging for Intercom.
+ 
+ - Note: it is recommended to use it only while debugging
  */
 + (void)enableLogging;
 
-//=========================================================================================================
-/*! @name Status bar handling */
-//=========================================================================================================
-
-/*!
- If you wish to change your status bar's style or visibility while an Intercom notification may be on
- screen, call this method so that Intercom's window can reflect these changes accordingly.
+/**
+ Change the Status Bar's style or visibility while an Intercom notification is on screen.
+ Call this method so that Intercom's window can reflect your app's status bar accordingly.
  */
 + (void)setNeedsStatusBarAppearanceUpdate;
 
-//=========================================================================================================
-/*! @name Intercom Notifications */
-//=========================================================================================================
-/*!
- These are notifications thrown by Intercom for iOS when the Intercom window is displayed and hidden.
- These notifications are fired only when there is a change in the state
- of Intercom's UI: when a user receives a message for instance, willShow and didShow notifications will be
- fired accordingly when the Intercom Notification (chat head) is presented.
 
- Once the user taps on the chat head, the message is presented in your app. It will be presented covering
- the entire screen, but no notifications will be thrown here as Intercom has already been visible.
+#pragma mark - Intercom Notifications
 
- In the case of a new conversation the notification `IntercomDidStartNewConversationNotification`, this
- notification is fired when a new conversation is started. This may be used to prompt users to enable push notifications.
- 
- The Intercom Help Center notifications are fired when the Help Center is being displayed or hidden.
- These notifications can be used to take certain actions in your app before and after the Help Center is displayed to the user.
+/**
+ Notifications fired when any Intercom UI is displayed (Messenger, Help Center, Carousels, Surveys)
  */
-
 UIKIT_EXTERN NSString *const IntercomWindowWillShowNotification;
 UIKIT_EXTERN NSString *const IntercomWindowDidShowNotification;
 UIKIT_EXTERN NSString *const IntercomWindowWillHideNotification;
 UIKIT_EXTERN NSString *const IntercomWindowDidHideNotification;
+
+/**
+ Notification fired when a new conversation is started.
+ */
 UIKIT_EXTERN NSString *const IntercomDidStartNewConversationNotification;
-UIKIT_EXTERN NSString *const IntercomHelpCenterWillShowNotification;
-UIKIT_EXTERN NSString *const IntercomHelpCenterDidShowNotification;
-UIKIT_EXTERN NSString *const IntercomHelpCenterWillHideNotification;
-UIKIT_EXTERN NSString *const IntercomHelpCenterDidHideNotification;
+
+/**
+ @deprecated Please use ``IntercomWindowWillShowNotification``.
+ */
+UIKIT_EXTERN NSString *const IntercomHelpCenterWillShowNotification DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterWillShowNotification is deprecated and will be removed in a future release. Please use IntercomWindowWillShowNotification instead");
+/**
+ @deprecated Please use ``IntercomWindowDidShowNotification``.
+ */
+UIKIT_EXTERN NSString *const IntercomHelpCenterDidShowNotification DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterDidShowNotification is deprecated and will be removed in a future release. Please use IntercomWindowDidShowNotification instead");
+/**
+ @deprecated Please use ``IntercomWindowWillHideNotification``.
+ */
+UIKIT_EXTERN NSString *const IntercomHelpCenterWillHideNotification DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterWillHideNotification is deprecated and will be removed in a future release. Please use IntercomWindowWillHideNotification instead");
+/**
+ @deprecated Please use ``IntercomWindowDidHideNotification``.
+ */
+UIKIT_EXTERN NSString *const IntercomHelpCenterDidHideNotification DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterDidHideNotification is deprecated and will be removed in a future release. Please use IntercomWindowDidHideNotification instead");
+
+#pragma mark - Deprecated Methods
+
+/**
+ @deprecated
+ @see presentIntercom
+ Present the Intercom Messenger
+ 
+ Opens the Intercom messenger.
+ */
++ (void)presentMessenger DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentMessenger]' is deprecated and will be removed in a future release. 'Use +[Intercom presentIntercom]' instead.");
+
+/**
+ @deprecated
+ @see presentIntercom:Home
+ Present the Help Center.
+ */
++ (void)presentHelpCenter DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentHelpCenter]' is deprecated and will be removed in a future release. 'Use +[Intercom presentIntercom:HelpCenter]' instead.");
+
+/*!
+ Present the Help Center with specific collections only.
+ - Note: If the requested collections cannot be found, the full Help Center will be shown instead.
+ @param collectionIds The ID of the collections to be presented.
+ */
++ (void)presentHelpCenterCollections:(nonnull NSArray<NSString *> *)collectionIds DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentHelpCenterCollections:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:helpCenterCollections contentId:]' instead.");
+
+/*!
+ @deprecated
+ Present an article.
+ @param articleId The ID of the article to be presented.
+ */
++ (void)presentArticle:(nonnull NSString *)articleId DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentArticle:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:article contentId:]' instead.");
+
+/*!
+ @deprecated
+ Present a Mobile Carousel.
+ @param carouselId The ID of the Mobile Carousel to be presented.
+ */
++ (void)presentCarousel:(nonnull NSString *)carouselId DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentCarousel:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:carousel contentId:]' instead.");
+
+/*!
+ @deprecated
+ Present a Survey.
+ @param surveyId The ID of the Survey to be presented.
+ */
++ (void)presentSurvey:(nonnull NSString *)surveyId DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentSurvey:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:survey contentId:]' instead.");
 
 @end
+
 
 NS_ASSUME_NONNULL_END

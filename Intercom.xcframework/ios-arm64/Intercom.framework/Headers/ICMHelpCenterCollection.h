@@ -32,9 +32,15 @@ NS_SWIFT_NAME(HelpCenterCollection)
  */
 @property (nonatomic, copy, nullable) NSString *summary;
 
+/**
+ The number of articles in this collection.
+ */
+@property (nonatomic, assign) NSInteger articleCount;
+
 - (instancetype)initWithCollectionId:(NSString *)collectionId
                                title:(NSString *)title
-                             summary:(nullable NSString *)summary;
+                             summary:(nullable NSString *)summary
+                        articleCount:(NSInteger)articleCount;
 
 @end
 

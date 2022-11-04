@@ -20,6 +20,287 @@
         "printedName": "Intercom",
         "children": [
           {
+            "kind": "TypeDecl",
+            "name": "Content",
+            "printedName": "Content",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "article",
+                "printedName": "article",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Intercom.Intercom.Content.Type) -> (Swift.String) -> Intercom.Intercom.Content",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> Intercom.Intercom.Content",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(id: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Intercom.Intercom.Content.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:So8IntercomCAAE7ContentO7articleyADSS_tcADmF",
+                "mangledName": "$sSo8IntercomCAAE7ContentO7articleyADSS_tcADmF",
+                "moduleName": "Intercom"
+              },
+              {
+                "kind": "Var",
+                "name": "carousel",
+                "printedName": "carousel",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Intercom.Intercom.Content.Type) -> (Swift.String) -> Intercom.Intercom.Content",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> Intercom.Intercom.Content",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(id: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Intercom.Intercom.Content.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:So8IntercomCAAE7ContentO8carouselyADSS_tcADmF",
+                "mangledName": "$sSo8IntercomCAAE7ContentO8carouselyADSS_tcADmF",
+                "moduleName": "Intercom"
+              },
+              {
+                "kind": "Var",
+                "name": "survey",
+                "printedName": "survey",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Intercom.Intercom.Content.Type) -> (Swift.String) -> Intercom.Intercom.Content",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> Intercom.Intercom.Content",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(id: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Intercom.Intercom.Content.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:So8IntercomCAAE7ContentO6surveyyADSS_tcADmF",
+                "mangledName": "$sSo8IntercomCAAE7ContentO6surveyyADSS_tcADmF",
+                "moduleName": "Intercom"
+              },
+              {
+                "kind": "Var",
+                "name": "helpCenterCollections",
+                "printedName": "helpCenterCollections",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Intercom.Intercom.Content.Type) -> ([Swift.String]) -> Intercom.Intercom.Content",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "([Swift.String]) -> Intercom.Intercom.Content",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(ids: [Swift.String])",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Array",
+                                "printedName": "[Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sa"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Intercom.Intercom.Content.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:So8IntercomCAAE7ContentO21helpCenterCollectionsyADSaySSG_tcADmF",
+                "mangledName": "$sSo8IntercomCAAE7ContentO21helpCenterCollectionsyADSaySSG_tcADmF",
+                "moduleName": "Intercom"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:So8IntercomCAAE7ContentO",
+            "mangledName": "$sSo8IntercomCAAE7ContentO",
+            "moduleName": "Intercom",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true
+          },
+          {
+            "kind": "Function",
+            "name": "presentContent",
+            "printedName": "presentContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Content",
+                "printedName": "Intercom.Intercom.Content",
+                "usr": "s:So8IntercomCAAE7ContentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So8IntercomCAAE14presentContentyyAbAE0C0OFZ",
+            "mangledName": "$sSo8IntercomCAAE14presentContentyyAbAE0C0OFZ",
+            "moduleName": "Intercom",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Function",
             "name": "loginUnidentifiedUser",
             "printedName": "loginUnidentifiedUser(completion:)",

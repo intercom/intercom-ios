@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 @class ICMHelpCenterArticle;
 @class ICMHelpCenterSection;
+@class ICMHelpCenterArticleAuthor;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -39,15 +40,27 @@ NS_SWIFT_NAME(HelpCenterCollectionContent)
 @property (nonatomic, strong) NSArray<ICMHelpCenterArticle *> *articles;
 
 /**
+ The total number of articles in this collection, which comprises of all articles not belonging to any section, and all articles in all sections of this collection.
+ */
+@property (nonatomic, assign) NSInteger articleCount;
+
+/**
  The sections contained in this collection.
  */
 @property (nonatomic, strong) NSArray<ICMHelpCenterSection *> *sections;
+
+/**
+ The authors of articles in this collection.
+ */
+@property (nonatomic, copy) NSArray<ICMHelpCenterArticleAuthor *> *authors;
 
 - (instancetype)initWithCollectionId:(NSString *)collectionId
                                title:(NSString *)title
                              summary:(nullable NSString *)summary
                             articles:(NSArray<ICMHelpCenterArticle *> *)articles
-                            sections:(NSArray<ICMHelpCenterSection *> *)sections;
+                   articleCount:(NSInteger)articleCount
+                            sections:(NSArray<ICMHelpCenterSection *> *)sections
+                             authors:(NSArray<ICMHelpCenterArticleAuthor *> *)authors;
 
 
 @end

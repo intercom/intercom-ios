@@ -8,6 +8,13 @@ import Swift
 import _Concurrency
 import _StringProcessing
 extension Intercom {
+  public enum Content {
+    case article(id: Swift.String)
+    case carousel(id: Swift.String)
+    case survey(id: Swift.String)
+    case helpCenterCollections(ids: [Swift.String])
+  }
+  public class func presentContent(_ content: Content)
   public class func loginUnidentifiedUser(completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)? = nil)
   public class func loginUser(with attributes: ICMUserAttributes, completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)? = nil)
   public class func updateUser(with attributes: ICMUserAttributes, completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)? = nil)
