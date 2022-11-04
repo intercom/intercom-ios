@@ -68,6 +68,10 @@ class ViewController: UIViewController {
         Intercom.present(.helpCenter)
     }
     
+    @IBAction func openHelpCenterCollections(_ sender: Any) {
+        Intercom.presentContent(.helpCenterCollections(ids: ["<#COLLECTION_ID_1#>", "<#COLLECTION_ID_2#>"]))
+    }
+    
     @IBAction func openArticle(_ sender: Any) {
         Intercom.presentContent(.article(id: "<#ARTICLE_ID#>"))
     }

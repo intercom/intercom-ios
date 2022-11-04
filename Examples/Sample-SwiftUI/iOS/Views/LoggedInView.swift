@@ -24,6 +24,7 @@ struct LoggedInView: View {
                 StylizedButton("Open Messenger", action: openMessenger)
                 StylizedButton("Open Inbox", action: openInbox)
                 StylizedButton("Open Help Center", action: openHelpCenter)
+                StylizedButton("Open Help Center Collections", action: openHelpCenterCollections)
                 StylizedButton("Open Article", action: openArticle)
                 StylizedButton("Open Carousel", action: openCarousel)
                 StylizedButton("Open Survey", action: openSurvey)
@@ -42,6 +43,10 @@ struct LoggedInView: View {
     
     func openHelpCenter() {
         Intercom.present(.helpCenter)
+    }
+    
+    func openHelpCenterCollections() {
+        Intercom.presentContent(.helpCenterCollections(ids: ["<#COLLECTION_ID_1#>", "<#COLLECTION_ID_2#>"]))
     }
     
     func openArticle() {

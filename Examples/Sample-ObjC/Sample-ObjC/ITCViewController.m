@@ -75,6 +75,10 @@
     [Intercom presentIntercom:helpCenter];
 }
 
+- (IBAction)openHelpCenterCollections:(id)sender {
+    [Intercom presentContent:[IntercomContent helpCenterCollectionsWithIds:@[@"<#COLLECTION_ID_1#>", @"<#COLLECTION_ID_2#>"]]];
+}
+
 - (IBAction)openArticle:(id)sender {
     [Intercom presentContent:[IntercomContent articleWithId:@"<#ARTICLE_ID#>"]];
 }
