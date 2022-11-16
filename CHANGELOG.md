@@ -1,3 +1,13 @@
+## 14.0.1
+###### Release Date: 16-11-2022
+
+### 🐛 Bug Fixes
+* Made some UI improvements.
+* Removed unnecessary logging from Xcode console.
+
+### 🚀 Enhancements
+* Added the ability to trigger a Survey based on an event.
+
 ## 14.0.0 
 ##### Release Date: 4-11-2022
 
