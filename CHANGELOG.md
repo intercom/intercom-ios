@@ -1,3 +1,9 @@
+## 14.0.2
+###### Release Date: 25-11-2022
+
+### 🐛 Bug Fixes
+* Fixed a bug that sometimes caused issues with the lldb debugger in XCode. 
+
 ## 14.0.1
 ###### Release Date: 16-11-2022
 
