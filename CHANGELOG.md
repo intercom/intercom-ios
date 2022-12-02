@@ -1,3 +1,19 @@
+## 14.0.3
+###### Release Date: 02-12-2022
+
+### 🐛 Bug Fixes
+
+* Fixed an issue which caused the navigation bar to clip content on the iPad.
+* Fixed an issue which caused the “Send” and “Close” button to be hidden in a white background when uploading an image or video.
+* Bot quick replies were getting displayed even after a conversation was auto closed when the user has been idle. The quick replies are no longer shown in such cases.
+* For Carousels with a single screen, the “completed” stats is now sent correctly.
+* Fixed UI issues in the navigation bar.
+
+### 🚀 Enhancements
+
+* Added the ability to set User Attributes on `+[Intercom loginWithUserAttributes:success:failure:]`. It is no longer required to make an additional `+ +[Intercom updateUser:success:failure:]` call right after calling `login` to do this.
+* Added support for Bengali, Persian, Malay and Thai. Bengali is not currently a supported language on iOS in general so will not work. If it gets added as a language on iOS later it should work without anymore changes.
+
 ## 14.0.2
 ###### Release Date: 25-11-2022
 
