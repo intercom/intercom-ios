@@ -1,3 +1,20 @@
+## 14.0.4
+###### Release Date: 12-12-2022
+
+### 🚀 Enhancements
+
+* The home space now opens to 100% height when home is enabled. If home is not enabled in messenger settings then the home space opens to 50% height.
+* Improvements to voiceover accessibility in tickets.
+* Help center collections empty state has been updated with a new design.
+
+### 🐛 Bug Fixes
+
+* Fixed an issue where participant initial was not present in conversation avatar bubbles in all expected scenarios.
+* Fixed an issue in the home space where push animation in landscape did not work as expected.
+* Fixed an issue where changing device orientation caused content to overflow in the home space.
+* Fixed an issue which caused some article links to be hidden in the help space.
+* Fixed an issue where 12hr time format being used on devices could cause ticket creation to fail.
+
 ## 14.0.3
 ###### Release Date: 02-12-2022
 
