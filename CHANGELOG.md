@@ -1,3 +1,9 @@
+## 14.0.5 
+###### Release Date: 22-12-2022
+
+### 🚀 Enhancements
+* All views now respect the system default margins.
+
 ## 14.0.4
 ###### Release Date: 12-12-2022
 
