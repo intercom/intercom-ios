@@ -1,3 +1,12 @@
+## 14.0.6 
+###### Release Date: 11-01-2023
+
+### 🐛 Bug Fixes
+* Fixed an issue with `UITextView` on iOS 16.2 that was causing a crash then a user tapped into a TextView.
+
+### 🚀 Enhancements
+* Made minor UI updates.
+
 ## 14.0.5 
 ###### Release Date: 22-12-2022
 
