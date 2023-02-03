@@ -1,3 +1,10 @@
+## 14.0.7
+###### Release Date: 03-02-2023
+
+### 🚀 Enhancements
+* Made updates to the ability to start a conversation within the Help Center.
+* UI enhancements to chat inapps.
+
 ## 14.0.6 
 ###### Release Date: 11-01-2023
 
