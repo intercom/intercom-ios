@@ -37,10 +37,21 @@ NS_SWIFT_NAME(HelpCenterCollection)
  */
 @property (nonatomic, assign) NSInteger articleCount;
 
+/**
+ The number of collection inside this collection.
+ */
+@property (nonatomic, assign) NSInteger collectionCount;
+
 - (instancetype)initWithCollectionId:(NSString *)collectionId
                                title:(NSString *)title
                              summary:(nullable NSString *)summary
-                        articleCount:(NSInteger)articleCount;
+                        articleCount:(NSInteger)articleCount DEPRECATED_MSG_ATTRIBUTE("'-initWithCollectionId:title:summary:articleCount:' intializer is deprecated and will be removed in a future release. Use '-initWithCollectionId:title:summary:articleCount:collectionCount:' instead.");
+
+- (instancetype)initWithCollectionId:(NSString *)collectionId
+                               title:(NSString *)title
+                             summary:(nullable NSString *)summary
+                        articleCount:(NSInteger)articleCount
+                     collectionCount:(NSInteger)collectionCount;
 
 @end
 

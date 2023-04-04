@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 @class ICMHelpCenterArticle;
 @class ICMHelpCenterSection;
+@class ICMHelpCenterCollection;
 @class ICMHelpCenterArticleAuthor;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -45,21 +46,38 @@ NS_SWIFT_NAME(HelpCenterCollectionContent)
 @property (nonatomic, assign) NSInteger articleCount;
 
 /**
+ @deprecated
  The sections contained in this collection.
  */
-@property (nonatomic, strong) NSArray<ICMHelpCenterSection *> *sections;
+@property (nonatomic, strong) NSArray<ICMHelpCenterSection *> *sections DEPRECATED_MSG_ATTRIBUTE("'sections' property is deprecated and will be removed in a future release. Use 'collections' instead.");
+
+/**
+ The collections contained inside this collection.
+ */
+@property (nonatomic, strong) NSArray<ICMHelpCenterCollection *> *collections;
 
 /**
  The authors of articles in this collection.
  */
 @property (nonatomic, copy) NSArray<ICMHelpCenterArticleAuthor *> *authors;
 
+/**
+ @deprecated
+ */
 - (instancetype)initWithCollectionId:(NSString *)collectionId
                                title:(NSString *)title
                              summary:(nullable NSString *)summary
                             articles:(NSArray<ICMHelpCenterArticle *> *)articles
                    articleCount:(NSInteger)articleCount
                             sections:(NSArray<ICMHelpCenterSection *> *)sections
+                             authors:(NSArray<ICMHelpCenterArticleAuthor *> *)authors DEPRECATED_MSG_ATTRIBUTE("'initWithCollectionId:title:summary:articles:articleCount:sections:authors:' is deprecated and will be removed in a future release. Use 'initWithCollectionId:title:summary:articles:articleCount:collections:authors:' instead.");
+
+- (instancetype)initWithCollectionId:(NSString *)collectionId
+                               title:(NSString *)title
+                             summary:(nullable NSString *)summary
+                            articles:(NSArray<ICMHelpCenterArticle *> *)articles
+                   articleCount:(NSInteger)articleCount
+                         collections:(NSArray<ICMHelpCenterCollection *> *)collections
                              authors:(NSArray<ICMHelpCenterArticleAuthor *> *)authors;
 
 
