@@ -1,3 +1,14 @@
+## 14.1.0
+###### Release Date: 04-04-2023
+
+### 🐛 Bug Fixes
+* Fixed an issue which caused a crash when dismissing Surves on iPad.
+
+### 🚀 Enhancements
+* New Feature: Attach Files to Tickets - End users can now upload files when submitting Tickets in the Messenger.
+* New Feature: End users can now navigate through articles on your collections and sub collections (up to 3 levels deep).
+* The Messenger now opens to 100% height when the Home space is disabled in Messenger settings.
+
 ## 14.0.7
 ###### Release Date: 03-02-2023
 
