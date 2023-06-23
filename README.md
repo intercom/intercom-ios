@@ -85,7 +85,7 @@ For apps that support iOS 13, this is [required by Apple](https://developer.appl
 On iOS 14+, Intercom uses the new `PHPickerViewController` API which does not require requesting users for photo library permission. 
 
 ## Example app
-There are example apps provided [here](https://github.com/intercom/intercom-ios/tree/master/Examples) for Objective-C and Swift, as well as an example built with SwiftUI.
+There are example apps provided [here](https://github.com/intercom/intercom-ios/tree/master/Examples) for Objective-C and Swift, as well as an example built with SwiftUI. We also have some sample code for handling Intercom push notifications manually.
 
 ## Setup and Configuration
 
