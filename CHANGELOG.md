@@ -1,3 +1,17 @@
+## 15.0.1 
+###### Release Date: 23-06-2023
+
+### 🚀 Enhancements
+* Added a warning to inform developers that manually handling Intercom push notifications may not be working as expected. Please read our [developer docs](https://developers.intercom.com/installing-intercom/docs/ios-push-notifications#manually) and try our [demo app](https://github.com/intercom/intercom-ios/tree/master/Examples) for examples on how to correctly handle Intercom push notifications.
+* Intercom now supports Hindi and Swahili as languages in the Messenger. 
+
+### 🐛 Bug Fixes
+* Fixed an issue that was preventing push tokens from being sent to Intercom's servers under certain circumstances. This will resolve some issues where push notifications were failing to deliver to a device, eventhough push notifications were enabled for that user.
+* Fixed an issue that was causing a namespace collision for apps that use `Lottie` as a dependency.
+* Fixed an issue that was causing a `key value coding-compliant` crash when loading a XIB file. Reported on Intercom's Community hub   [here](https://community.intercom.com/mobile-sdks-24/sdk-ios-swift-crash-intercom-13-and-14-crashes-4009) and [here](https://community.intercom.com/mobile-sdks-24/the-ios-intercom-sdk-14-0-6-crashes-whenever-i-try-to-present-it-using-default-present-method-or-present-home-method-if-i-use-present-messages-it-works-fine-previous-versions-of-intercom-worked-fine-is-this-a-known-issue-2724).
+* Fixed an issue that was preventing push notification deep links from opening during the launch of a React Native app.
+
+
 ## 15.0.0 
 ###### Release Date: 09-05-2023
 
