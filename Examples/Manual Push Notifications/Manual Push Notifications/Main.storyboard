@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Sample_Swift_UISceneDelegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intercom-logo" translatesAutoresizingMaskIntoConstraints="NO" id="YRd-xJ-T0x">
+                                <rect key="frame" x="92" y="214" width="230" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="bK0-mB-RGS"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="clP-HP-Spv">
+                                <rect key="frame" x="73.5" y="347" width="267" height="452"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFh-f8-qS9">
+                                        <rect key="frame" x="108.5" y="0.0" width="50" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" systemColor="lightTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="F3T-lj-FCm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olB-3V-k0i">
+                                        <rect key="frame" x="56.5" y="52" width="154" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Open Messenger">
+                                            <color key="titleColor" red="0.0" green="0.63921568627450975" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" systemColor="lightTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openMessenger:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xjm-9e-eTP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTD-0x-lp3">
+                                        <rect key="frame" x="82" y="104" width="103" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Open Inbox">
+                                            <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" systemColor="lightTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openInbox:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GzB-RR-2ey"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogC-ME-cPV">
+                                        <rect key="frame" x="52.5" y="156" width="162" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Open Help Center">
+                                            <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" systemColor="lightTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openHelpCenter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="w9o-fa-l7w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpG-KO-a9b">
+                                        <rect key="frame" x="0.0" y="208" width="267" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Open Help Center Collections">
+                                            <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" systemColor="lightTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openHelpCenterCollections:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OKT-EW-rJU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lg-HO-wA7">
+                                        <rect key="frame" x="77" y="260" width="113" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Open Article">
+                                            <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" systemColor="lightTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openArticle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9hT-OP-VZO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYv-Im-Wsd">
+                                        <rect key="frame" x="66.5" y="312" width="134" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Open Carousel">
+                                            <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" systemColor="lightTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openCarousel:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mMN-Jq-NU2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3W-kC-0vR">
+                                        <rect key="frame" x="75.5" y="364" width="116" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Open Survey">
+                                            <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" systemColor="lightTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openSurvey:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1CQ-cA-8Kx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-JU-5LF">
+                                        <rect key="frame" x="99.5" y="416" width="68" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Log out">
+                                            <color key="titleColor" red="0.0" green="0.63921568630000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" systemColor="lightTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logoutPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gu4-hf-BA9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YRd-xJ-T0x" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="166" id="h4T-Jr-JEC"/>
+                            <constraint firstItem="clP-HP-Spv" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="qf4-aF-P3F"/>
+                            <constraint firstItem="YRd-xJ-T0x" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="rzg-eL-N58"/>
+                            <constraint firstItem="clP-HP-Spv" firstAttribute="top" secondItem="YRd-xJ-T0x" secondAttribute="bottom" constant="58" id="yBv-DX-b5F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DNj-Qc-SeE"/>
+                    <connections>
+                        <outlet property="loginUserButton" destination="NFh-f8-qS9" id="1In-S1-NXQ"/>
+                        <outlet property="logoutButton" destination="4JP-JU-5LF" id="ddQ-jd-01M"/>
+                        <outlet property="openArticleButton" destination="6lg-HO-wA7" id="4TV-Qh-Hoh"/>
+                        <outlet property="openCarouselButton" destination="UYv-Im-Wsd" id="qcq-Kt-gcA"/>
+                        <outlet property="openHelpCenterButton" destination="ogC-ME-cPV" id="lsV-cm-DnA"/>
+                        <outlet property="openInboxButton" destination="aTD-0x-lp3" id="RRt-QM-nY0"/>
+                        <outlet property="openMessengerButton" destination="olB-3V-k0i" id="b9f-Up-lzG"/>
+                        <outlet property="openSurveyButton" destination="A3W-kC-0vR" id="NNw-cQ-GQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188.40579710144928" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Intercom-logo" width="297" height="75"/>
+        <systemColor name="lightTextColor">
+            <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
