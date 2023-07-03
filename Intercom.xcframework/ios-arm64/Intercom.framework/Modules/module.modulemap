@@ -1,0 +1,13 @@
+// Module map for Intercom.framework. Module map documentation is here: https://clang.llvm.org/docs/Modules.html#module-map-language
+framework module Intercom {
+  // The umbrella header acts as the default header for the module. It should import all other required headers.
+  // This defines what is imported with `import Intercom`, `@import Intercom;` or `#import <Intercom/Intercom.h>`
+  umbrella header "Intercom.h"
+
+  // This exports all modules imported by the umbrella header
+  export *
+
+  // `module *` defines that all headers imported in the umbrella are themselves submodules
+  // `{ export * }` here exports any modules imported by these submodules
+  module * { export * }
+}
