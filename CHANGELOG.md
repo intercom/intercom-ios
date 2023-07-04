@@ -1,3 +1,14 @@
+## 15.0.2 
+###### Release Date: 3-07-2023
+
+### 🚀 Enhancements
+* Improved Intercom's networking code to ensure messaging is faster and more reliable.
+* Fixed threading issues that were being logged when Xcode's `Thread Performance Checker` was enabled. Thanks to [everyone](https://community.intercom.com/mobile-sdks-24/the-error-about-incorrect-threads-using-in-xcode-14-120) who reported this in our Intercom Community.
+* Made some small UI enhancements.  
+* Removed some errors about unarchiving that were showing up in the XCode console.
+* dSYM files are now embedded within `Intercom.xcframework`.
+
+
 ## 15.0.1 
 ###### Release Date: 23-06-2023
 
