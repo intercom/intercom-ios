@@ -1,3 +1,15 @@
+## 15.0.3 
+###### Release Date: 10-07-2023
+
+### 🐛 Bug Fixes
+* Fixed an issue that caused connectivity issues for The Messenger under certain circumstances.
+
+### NOTE: Swift Package Manager Changes
+* In order to improve support for Swift Package Manager, we have created [a new GitHub repository](https://github.com/intercom/intercom-ios-sp) for Intercom's Swift Package.
+* If you wish to integrate Intercom using SPM, please use https://github.com/intercom/intercom-ios-sp as the package URL.
+* Support for the old package URL will be discontinued in a number of weeks. Please migrate to using https://github.com/intercom/intercom-ios-sp
+
+
 ## 15.0.2 
 ###### Release Date: 3-07-2023
 
