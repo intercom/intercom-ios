@@ -1,3 +1,13 @@
+## 15.1.2  
+###### Release Date: 25-07-2023
+
+### 🚀 Enhancements
+* New API to present a conversation programmatically. 
+
+### 🐛 Bug Fixes
+* Fixed a memory retain cycle that was causing a crash under certain circumstances.
+* Fixed an issue that was preventing the user from entering data on a custom bot input field.
+
 ## 15.1.1  
 ###### Release Date: 20-07-2023
 

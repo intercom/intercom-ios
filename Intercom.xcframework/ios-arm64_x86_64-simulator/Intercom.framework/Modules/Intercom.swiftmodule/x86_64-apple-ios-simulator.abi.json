@@ -259,6 +259,63 @@
                 "usr": "s:So8IntercomCAAE7ContentO21helpCenterCollectionsyADSaySSG_tcADmF",
                 "mangledName": "$sSo8IntercomCAAE7ContentO21helpCenterCollectionsyADSaySSG_tcADmF",
                 "moduleName": "Intercom"
+              },
+              {
+                "kind": "Var",
+                "name": "conversation",
+                "printedName": "conversation",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Intercom.Intercom.Content.Type) -> (Swift.String) -> Intercom.Intercom.Content",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> Intercom.Intercom.Content",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(id: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Intercom.Intercom.Content.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Content",
+                            "printedName": "Intercom.Intercom.Content",
+                            "usr": "s:So8IntercomCAAE7ContentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:So8IntercomCAAE7ContentO12conversationyADSS_tcADmF",
+                "mangledName": "$sSo8IntercomCAAE7ContentO12conversationyADSS_tcADmF",
+                "moduleName": "Intercom"
               }
             ],
             "declKind": "Enum",

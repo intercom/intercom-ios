@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, ContentType) {
     survey,
     carousel,
     helpCenterCollections,
+    conversation,
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -36,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
     - Surveys
     - Carousels
     - Help Center Collections
+    - Conversations
  
  This object is passed into ``Intercom/presentContent:``.
  */
@@ -80,6 +82,17 @@ NS_ASSUME_NONNULL_BEGIN
  - Returns: An ``IntercomContent`` object used to present a list of Help Center Collections.
  */
 + (IntercomContent *)helpCenterCollectionsWithIds:(NSArray<NSString *> *)collectionIds;
+
+/**
+ Create a Conversation content object.
+ 
+- Parameters:
+- conversationId: The ID of the Conversation that is to be presented.
+
+- Returns: An ``IntercomContent`` object used to present a Conversation.
+*/
++ (IntercomContent *)conversationWithId:(NSString *)conversationId;
+
 
 @end
 

@@ -13,6 +13,7 @@ extension Intercom {
     case carousel(id: Swift.String)
     case survey(id: Swift.String)
     case helpCenterCollections(ids: [Swift.String])
+    case conversation(id: Swift.String)
   }
   public class func presentContent(_ content: Content)
   public class func loginUnidentifiedUser(completion: ((Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)? = nil)
