@@ -1,3 +1,14 @@
+## 15.1.5
+###### Release Date: 18-08-2023
+
+### 🐛 Bug Fixes
+* Fixed an issue where some web socket connections could crash under certain circumstances
+
+### NOTE: Swift Package Manager Changes
+* In order to improve support for Swift Package Manager, we have created [a new GitHub repository](https://github.com/intercom/intercom-ios-sp) for Intercom's Swift Package.
+* If you wish to integrate Intercom using SPM, please use https://github.com/intercom/intercom-ios-sp as the package URL.
+* Support for the old package URL will be discontinued in a number of weeks. Please migrate to using https://github.com/intercom/intercom-ios-sp
+
 ## 15.1.4
 ###### Release Date: 01-08-2023
 
