@@ -1,3 +1,16 @@
+## 15.2.0
+###### Release Date: 30-08-2023
+
+**📱 New feature: Tickets Space**
+👋 Introducing the new Tickets Space. Enabling the Ticket Space in your Messenger lets end users view and get updates on all their tickets in one location inside the Messenger.
+
+### 🐛 Bug Fixes
+* Fixed a memory leak issue with `NSURLSession`. 
+
+### NOTE: Swift Package Manager Changes
+* Intercom's `Package.swift` has now been removed from this repo.
+* If you wish to integrate Intercom using SPM, please use https://github.com/intercom/intercom-ios-sp as the package URL.
+
 ## 15.1.5
 ###### Release Date: 18-08-2023
 

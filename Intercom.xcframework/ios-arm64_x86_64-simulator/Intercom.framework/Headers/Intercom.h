@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, Space) {
     home,
     helpCenter,
     messages,
+    tickets
 };
 
 NS_ASSUME_NONNULL_BEGIN
