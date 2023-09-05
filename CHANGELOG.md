@@ -1,3 +1,9 @@
+## 15.2.1
+###### Release Date: 04-09-2023
+
+### 🐛 Bug Fixes
+* Fixed an issue where signing the SDK for Xcode 15 was failing
+
 ## 15.2.0
 ###### Release Date: 30-08-2023
 
