@@ -1,3 +1,12 @@
+## 15.2.2
+###### Release Date: 14-09-2023
+
+### 🐛 Bug Fixes
+* Fixed an issue where Tickets were not being marked as read.
+
+### 🚀 Enhancements
+* Added improved support for dymanic font sizes on the Tickets space.
+
 ## 15.2.1
 ###### Release Date: 04-09-2023
 
