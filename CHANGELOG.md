@@ -1,3 +1,9 @@
+## 15.2.3 
+###### Release Date: 20-09-2023
+
+### 🐛 Bug Fixes
+* Resolved an issue that was breaking debugging functionality on Xcode 14. 
+
 ## 15.2.2
 ###### Release Date: 14-09-2023
 
