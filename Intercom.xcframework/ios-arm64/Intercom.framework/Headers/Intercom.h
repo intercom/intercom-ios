@@ -334,6 +334,69 @@ UIKIT_EXTERN NSString *const IntercomWindowDidHideNotification;
  */
 UIKIT_EXTERN NSString *const IntercomDidStartNewConversationNotification;
 
+/**
+ @deprecated Please use ``IntercomWindowWillShowNotification``.
+ */
+UIKIT_EXTERN NSString *const IntercomHelpCenterWillShowNotification DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterWillShowNotification is deprecated and will be removed in a future release. Please use IntercomWindowWillShowNotification instead");
+/**
+ @deprecated Please use ``IntercomWindowDidShowNotification``.
+ */
+UIKIT_EXTERN NSString *const IntercomHelpCenterDidShowNotification DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterDidShowNotification is deprecated and will be removed in a future release. Please use IntercomWindowDidShowNotification instead");
+/**
+ @deprecated Please use ``IntercomWindowWillHideNotification``.
+ */
+UIKIT_EXTERN NSString *const IntercomHelpCenterWillHideNotification DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterWillHideNotification is deprecated and will be removed in a future release. Please use IntercomWindowWillHideNotification instead");
+/**
+ @deprecated Please use ``IntercomWindowDidHideNotification``.
+ */
+UIKIT_EXTERN NSString *const IntercomHelpCenterDidHideNotification DEPRECATED_MSG_ATTRIBUTE("IntercomHelpCenterDidHideNotification is deprecated and will be removed in a future release. Please use IntercomWindowDidHideNotification instead");
+
+#pragma mark - Deprecated Methods
+
+/**
+ @deprecated
+ @see presentIntercom
+ Present the Intercom Messenger
+ 
+ Opens the Intercom messenger.
+ */
++ (void)presentMessenger DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentMessenger]' is deprecated and will be removed in a future release. 'Use +[Intercom presentIntercom]' instead.");
+
+/**
+ @deprecated
+ @see presentIntercom:Home
+ Present the Help Center.
+ */
++ (void)presentHelpCenter DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentHelpCenter]' is deprecated and will be removed in a future release. 'Use +[Intercom presentIntercom:HelpCenter]' instead.");
+
+/*!
+ Present the Help Center with specific collections only.
+ - Note: If the requested collections cannot be found, the full Help Center will be shown instead.
+ @param collectionIds The ID of the collections to be presented.
+ */
++ (void)presentHelpCenterCollections:(nonnull NSArray<NSString *> *)collectionIds DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentHelpCenterCollections:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:helpCenterCollections contentId:]' instead.");
+
+/*!
+ @deprecated
+ Present an article.
+ @param articleId The ID of the article to be presented.
+ */
++ (void)presentArticle:(nonnull NSString *)articleId DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentArticle:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:article contentId:]' instead.");
+
+/*!
+ @deprecated
+ Present a Mobile Carousel.
+ @param carouselId The ID of the Mobile Carousel to be presented.
+ */
++ (void)presentCarousel:(nonnull NSString *)carouselId DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentCarousel:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:carousel contentId:]' instead.");
+
+/*!
+ @deprecated
+ Present a Survey.
+ @param surveyId The ID of the Survey to be presented.
+ */
++ (void)presentSurvey:(nonnull NSString *)surveyId DEPRECATED_MSG_ATTRIBUTE("'+[Intercom presentSurvey:]' is deprecated and will be removed in a future release. 'Use +[Intercom presentContent:survey contentId:]' instead.");
+
 @end
 
 
