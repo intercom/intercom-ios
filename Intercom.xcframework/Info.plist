@@ -5,6 +5,8 @@
 	<key>AvailableLibraries</key>
 	<array>
 		<dict>
+			<key>BinaryPath</key>
+			<string>Intercom.framework/Intercom</string>
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
@@ -19,6 +21,8 @@
 			<string>ios</string>
 		</dict>
 		<dict>
+			<key>BinaryPath</key>
+			<string>Intercom.framework/Intercom</string>
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>

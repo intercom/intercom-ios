@@ -1,3 +1,18 @@
+## 16.0.0
+###### Release Date: 22-09-2023
+
+### 🚀 Enhancements
+* Support for iOS 17 including:
+  * Privacy manifest added
+  * Digitally signed SDK
+* The functions that were deprecated in v14.0.0 have now been fully removed. You can see the list of functions and their replacements [here](https://developers.intercom.com/installing-intercom/ios/migration-guide-v14/)
+
+### 🐛 Bug Fixes
+* Resolved an issue that was causing a crash when long pressing messages on iOS 17
+
+### NOTE: Xcode 15 required for use
+* In order to work with this version of Intercom, you will need to be using Xcode 15.
+
 ## 15.2.3 
 ###### Release Date: 20-09-2023
 
