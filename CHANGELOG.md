@@ -1,3 +1,9 @@
+## 16.0.1 
+###### Release Date: 27-09-2023
+
+### 🐛 Bug Fixes
+* Fixed a memory retain cycle that was causing Intercom to crash under certain conditions.
+
 ## 16.0.0
 ###### Release Date: 22-09-2023
 
