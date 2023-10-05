@@ -1,3 +1,9 @@
+## 16.0.2 
+###### Release Date: 05-10-2023
+
+### 🐛 Bug Fixes
+* Patches a [security vulnerability](https://nvd.nist.gov/vuln/detail/CVE-2023-4863) with the lipwebp library.
+
 ## 16.0.1 
 ###### Release Date: 27-09-2023
 
