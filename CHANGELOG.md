@@ -1,3 +1,9 @@
+## 16.0.3 
+###### Release Date: 06-10-2023
+
+### 🐛 Bug Fixes
+* Fixed an issue that was causing a crash when loading a user's avatar.
+
 ## 16.0.2 
 ###### Release Date: 05-10-2023
 
