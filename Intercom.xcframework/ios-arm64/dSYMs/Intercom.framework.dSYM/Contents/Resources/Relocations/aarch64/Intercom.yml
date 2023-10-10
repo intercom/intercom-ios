@@ -114,7 +114,7 @@ relocations:
   - { offsetInCU: 0x24ED, offset: 0xA9A77, size: 0x8, addend: 0x0, symName: '+[Intercom setFlutterVersion:]', symObjAddr: 0x26BC, symBinAddr: 0xA994, symSize: 0x10 }
   - { offsetInCU: 0x252C, offset: 0xA9AB6, size: 0x8, addend: 0x0, symName: '+[Intercom addSDKApiMetricEventObject:]', symObjAddr: 0x26CC, symBinAddr: 0xA9A4, symSize: 0x8 }
   - { offsetInCU: 0x256D, offset: 0xA9AF7, size: 0x8, addend: 0x0, symName: '+[Intercom addSDKApiMetricEventObject:metaData:]', symObjAddr: 0x26D4, symBinAddr: 0xA9AC, symSize: 0x7C }
-  - { offsetInCU: 0x35, offset: 0xAA817, size: 0x8, addend: 0x0, symName: _ICMHelpCenterDataErrorDomain, symObjAddr: 0x40, symBinAddr: 0x4C1530, symSize: 0x0 }
+  - { offsetInCU: 0x35, offset: 0xAA817, size: 0x8, addend: 0x0, symName: _ICMHelpCenterDataErrorDomain, symObjAddr: 0x40, symBinAddr: 0x4C5548, symSize: 0x0 }
   - { offsetInCU: 0xC7, offset: 0xAA8F4, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE14presentContentyyAbAE0C0OFZ', symObjAddr: 0x0, symBinAddr: 0xAA28, symSize: 0x19C }
   - { offsetInCU: 0x247, offset: 0xAAA74, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE21loginUnidentifiedUser10completionyys6ResultOyyts5Error_pGcSg_tFZ', symObjAddr: 0x1B0, symBinAddr: 0xABD8, symSize: 0x180 }
   - { offsetInCU: 0x2A2, offset: 0xAAACF, size: 0x8, addend: 0x0, symName: '_$sIeg_IeyB_TR', symObjAddr: 0x330, symBinAddr: 0xAD58, symSize: 0x2C }

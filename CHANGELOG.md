@@ -1,3 +1,18 @@
+## 16.1.0 
+###### Release Date: 10-10-2023
+
+### 🚀 Enhancements
+
+
+**📱 New Feature: Set better expectations with your customers by customising the Start Conversation button in your Messenger**
+
+![mobile](https://private-user-images.githubusercontent.com/31664218/273871603-bad1cda3-3f33-412b-bf5f-7e1e05e2199b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE2OTY5MzUxNzYsIm5iZiI6MTY5NjkzNDg3NiwicGF0aCI6Ii8zMTY2NDIxOC8yNzM4NzE2MDMtYmFkMWNkYTMtM2YzMy00MTJiLWJmNWYtN2UxZTA1ZTIxOTliLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEwMTAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMDEwVDEwNDc1NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI3ZDJhZmFkZDlmZTExMWY0YmFjYzU2N2Y2MmMzYzU2N2YxM2Y4NWI4YmI0YWQxOTIwM2MxNGNhNTkzZWFhN2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.mU8C4qlrSY15b8KeFWsHxOlzpVk9PmeINk8T3KDYAkU)
+
+👋 With this release, you can select from a list of options to customize the Start Conversation button in the Messenger. This can be changed in Messenger settings under the "Conversations" section and will affect the Start Conversation button on Messenger Home and in spaces Iike Messages and Help.
+
+### 🐛 Bug Fixes
+* Fixed an issue where the navigation bar and message replies were dissapearing under certain circumstances.
+
 ## 16.0.3 
 ###### Release Date: 06-10-2023
 
