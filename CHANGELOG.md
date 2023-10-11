@@ -1,3 +1,9 @@
+## 16.1.1 
+###### Release Date: 11-10-2023
+
+### 🐛 Bug Fixes
+* Fixed an issue that prevented some users from selecting any images to upload in a conversation.
+
 ## 16.1.0 
 ###### Release Date: 10-10-2023
 
