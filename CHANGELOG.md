@@ -1,3 +1,10 @@
+## 16.1.2  
+###### Release Date: 18-10-2023
+
+### 🐛 Bug Fixes
+* Fixed an issue that was causing some messages not to deliver in realtime.
+
+
 ## 16.1.1 
 ###### Release Date: 11-10-2023
 
