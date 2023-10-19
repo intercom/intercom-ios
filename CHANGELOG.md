@@ -1,3 +1,9 @@
+## 16.2.0
+###### Release Date: 19-10-2023
+
+### 🚀 Enhancements
+**📱 New Feature: Fin is now streaming AI answers! This means customers don't have to wait for the whole AI answer to generate before getting the support they need. Instead, Fin starts displaying a response the moment the first word comes in.**
+
 ## 16.1.2  
 ###### Release Date: 18-10-2023
 
