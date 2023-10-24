@@ -1,3 +1,9 @@
+## 16.2.1 
+###### Release Date: 24-10-2023
+
+### 🚀 Enhancements
+* Articles now support anchor links. Tapping on a URL with an anchor link will bring users to a specific part of an Article.
+
 ## 16.2.0
 ###### Release Date: 19-10-2023
 
