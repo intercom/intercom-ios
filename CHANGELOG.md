@@ -1,3 +1,10 @@
+## 16.2.2  
+###### Release Date: 31-10-2023
+
+### 🐛 Bug Fixes
+* Fixes issue where `IntercomDidStartNewConversation` notification was not firing.
+* Fixes a homescreen issue where the company logo would no longer load after the host app had been backgrounded.
+
 ## 16.2.1 
 ###### Release Date: 24-10-2023
 
