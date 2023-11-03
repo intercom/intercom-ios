@@ -1,3 +1,15 @@
+## 16.2.3  
+###### Release Date: 03-11-2023
+
+### 🐛 Bug Fixes
+* Fixed an issue that was preventing Universal Links from opening correctly.
+* Fixed an issue that was cutting off messages on iPad.
+* Fixed an issue that was preventing the Status Page app from opening on the homescreen.
+* Added support for `WKAppBoundDomains`. Customers who use App Bound Domains simply need to add `intercom.help` to their list of `WKAppBoundDomains` in their `Info.plist`. This will ensure that Help Center articles load correctly.
+* Fixed an issue where it tapping on an image with a link was not working.
+* Tapping on an in-app now opens the correct conversation.
+
+
 ## 16.2.2  
 ###### Release Date: 31-10-2023
 
