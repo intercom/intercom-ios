@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name                = 'IntercomPM-MLN-341'
+  s.name                = 'ProductMadnessIntercomMLN-343'
   s.version             = '16.2.3'
   s.summary             = 'The Intercom iOS SDK PM fork, for integrating Intercom into your iOS application.'
   s.license             = { :type => "Apache 2.0", :file => "Intercom.xcframework/LICENSE" }

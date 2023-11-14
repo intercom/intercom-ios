@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "IntercomPM-MLN-341",
+    name: "ProductMadnessIntercomMLN-343",
     products: [
         .library(
             name: "Intercom",
