@@ -1,3 +1,12 @@
+## 16.3.0 
+###### Release Date: 14-11-2023
+
+### 🚀 Enhancements
+* Bot performance improvements.
+
+### 🐛 Bug Fixes
+* Fixes a translation issue.
+
 ## 16.2.3  
 ###### Release Date: 03-11-2023
 
