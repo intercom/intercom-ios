@@ -1,3 +1,11 @@
+## 16.3.1 
+###### Release Date: 17-11-2023
+
+### 🐛 Bug Fixes
+* Resolves crash on iOS 13.
+* Fixes a potential crash when a user rapidly sent messages at the start of a new conversation.
+* Fixes an issue where messages were hidden after a conversation was started with an existing ticket.
+
 ## 16.3.0 
 ###### Release Date: 14-11-2023
 
