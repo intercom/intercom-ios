@@ -1,3 +1,9 @@
+## 16.3.2 
+###### Release Date: 20-12-2023
+
+### 🐛 Bug Fixes
+* Fixes a [potential crash](https://community.intercom.com/mobile-sdks-24/ios-17-0-app-crashes-once-the-intercom-post-popup-shows-up-5140) happening when a user opened certain post messages on iOS 17.
+
 ## 16.3.1 
 ###### Release Date: 17-11-2023
 
