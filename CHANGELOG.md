@@ -1,3 +1,9 @@
+## 16.4.0  
+###### Release Date: 05-01-2024
+
+### 🚀 Enhancements
+* Camera Input - We've added the ability to use your device's camera to add photos and videos to a conversation.
+
 ## 16.3.2 
 ###### Release Date: 20-12-2023
 
