@@ -1,3 +1,9 @@
+## 16.5.0  
+###### Release Date: 11-01-2024
+
+### 🚀 Enhancements
+* You can now [choose how Fin shows up](https://www.intercom.com/help/en/articles/7837525-customizing-fin-in-the-messenger#h_2ebc0a7872) when a customer starts a conversation: decide whether to show bot expectations or match to teammates, when the conversation starts with Fin.
+
 ## 16.4.0  
 ###### Release Date: 05-01-2024
 
