@@ -1,3 +1,18 @@
+## 16.5.1  
+###### Release Date: 16-01-2024
+
+This release contains some important bug fixes. We recommend that all customers update to this version.
+
+### 🐛 Bug Fixes
+* Fixed a memory issue that was causing a crash. This crash was identified by the symbol `swift_unknownObjectUnownedTakeStrong`.
+* Fixed a couple of crashes that occurred when uploading image attachments to a conversation:
+    * `[NSURL URLByAppendingPathComponent:]`
+    * `ITBImageFIleLoader getRotationAngleFromExistingProperties`
+* Fixed an issue that was preventing Fin from working as expected in some scenarios.
+* Fixed an issue that was enabling users to start a conversation from the Messages space when they should not have been.
+* Fixed an issue that was causing visiblity problems with the `Powered by Intercom` badge.
+
+
 ## 16.5.0  
 ###### Release Date: 11-01-2024
 
