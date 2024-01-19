@@ -1,3 +1,14 @@
+## 16.5.2   
+###### Release Date: 19-01-2024
+
+### 🐛 Bug Fixes
+* Fixed a memory issue that was causing some crashes identified by the following symbols: 
+    * `IntercomNexusSocket listenForWebSocketMessages`
+    * `IntercomNexusSocket isConnected`
+* Fixed another memory issue `swift_unknownObjectUnownedLoadStrong` for the Messenger Homescreen.
+* Fixed a crash caused by: `Attempted to reload item identifier that does not exist in the snapshot`.
+* Fixed an issue with attribute collectors in a conversation that was leading to closed conversations being re-opened.    
+
 ## 16.5.1  
 ###### Release Date: 16-01-2024
 
