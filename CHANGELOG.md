@@ -1,3 +1,10 @@
+## 16.5.3   
+###### Release Date: 23-01-2024
+
+### 🐛 Bug Fixes
+* Fixed a crash caused by: `Deadlock detected: calling this method on the main queue with outstanding async updates is not permitted and will deadlock`.
+* Fixed a crash with boolean attribute collectors.   
+
 ## 16.5.2   
 ###### Release Date: 19-01-2024
 
