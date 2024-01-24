@@ -1,3 +1,10 @@
+## 16.5.4   
+###### Release Date: 24-01-2024
+
+### 🐛 Bug Fixes
+* Fixed an issue that was triggering high CPU usage in apps using Intercom. This also caused some apps to hang for a period of time.
+This happened when the user's network connection dropped. Reported as [an issue](https://community.intercom.com/mobile-sdks-24/intercom-sdk-attributed-to-high-battery-usage-in-xcode-6414) in our Intercom Community and also showed up on the `Energy` section of Xcode's Organizer.
+
 ## 16.5.3   
 ###### Release Date: 23-01-2024
 
