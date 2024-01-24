@@ -87,20 +87,22 @@ There are example apps provided [here](https://github.com/intercom/intercom-ios/
 
 ## Setup and Configuration
 
-* Our [installation guide](https://developers.intercom.com/docs/ios-installation) contains full setup and initialisation instructions.
-* Read ["Configuring Intercom for iOS"](https://developers.intercom.com/docs/ios-configuration).
-* Read our guide on [Push Notifications](https://developers.intercom.com/docs/ios-push-notifications).
+* Our [installation guide](https://developers.intercom.com/installing-intercom/ios/installation/) contains full setup and initialisation instructions.
+* Read ["Data Hosting Region Configuration for iOS"](https://developers.intercom.com/installing-intercom/ios/data-hosting-region-configuration/).
+* Read our guide on [Push Notifications](https://developers.intercom.com/installing-intercom/ios/push-notifications/).
 *  Please contact us on [Intercom](https://intercom.io) with any questions you may have, we're only a message away!
 
 ## Customer Support
 
-👋  Contact us with any issues at our [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation?utm_source=github&utm_campaign=ios-help). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
+👋  Contact us with any issues at our [Intercom Developer Hub available here](https://developers.intercom.com/installing-intercom/) by clicking on the Messenger in the bottom right. If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
+
+You can also check out the [Mobile SDKs section of the Intercom Community](https://community.intercom.com/mobile-sdks-24) to ask a question or find an answer.
 
 ## Cordova/Phonegap Support
 Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
 
 ## What about events, push notifications, company and user data?
 
-Intercom for iOS has support for all these things. For full details please read our [documentation](https://developers.intercom.com/docs/ios-configuration).
+Intercom for iOS has support for all these things. For full details please read our [documentation](https://developers.intercom.com/installing-intercom/ios/about-the-sdk/).
 
 
