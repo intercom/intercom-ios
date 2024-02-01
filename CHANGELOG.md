@@ -1,3 +1,17 @@
+## 16.5.5  
+###### Release Date: 01-02-2024
+
+### 🚀 Enhancements
+* It is now possible to configure whether users are able to start a new conversation when they tap the 😔 reaction on an Article.
+* The build number of your app is now submitted to Intercom along with the app version e.g. 2.1.0(30). This will allow customers to target specific builds of their app within Intercom, instead of just using the version number. 
+
+### 🐛 Bug Fixes
+* Fixed a issue where poor network conditions could cause an app to hang and sometimes crash. This is showing up as an error with `[IntercomSDK_IntercomNexusSocket sendWebSocketMessage:]` in crash logs.
+* The composer was spanning the full width of the screen on iPad. This is now fixed.
+* Fixed an issue where dismissing Intercom on an iPad was causing the app to freeze.
+* Fixes some `NSSecureCoding` warnings that were being displayed in Xcode's console.
+
+
 ## 16.5.4   
 ###### Release Date: 24-01-2024
 
