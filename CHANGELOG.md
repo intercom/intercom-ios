@@ -1,3 +1,9 @@
+## 16.5.6   
+###### Release Date: 15-02-2024
+
+### 🐛 Bug Fixes
+* Fixed an issue that was causing problems when launching Intercom on devices running iOS 13.
+
 ## 16.5.5  
 ###### Release Date: 01-02-2024
 
