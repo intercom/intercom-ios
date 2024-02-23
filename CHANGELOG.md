@@ -1,3 +1,9 @@
+## 16.5.7
+###### Release Date: 23-02-2024
+
+### 🚀 Enhancements
+* Added support for custom ticket states external labelling
+
 ## 16.5.6   
 ###### Release Date: 15-02-2024
 
