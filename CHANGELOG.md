@@ -1,3 +1,9 @@
+## 16.5.8 
+###### Release Date: 26-02-2024
+
+### 🐛 Bug Fixes
+* Fixed an issue that was causing compatibility issues with apps that were using Sentry's iOS SDK.
+
 ## 16.5.7
 ###### Release Date: 23-02-2024
 
