@@ -1,3 +1,9 @@
+## 16.5.9
+###### Release Date: 27-02-2024
+
+### 🐛 Bug Fixes
+* Bug fixes and performance improvements.
+
 ## 16.5.8 
 ###### Release Date: 26-02-2024
 
