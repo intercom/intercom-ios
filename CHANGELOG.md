@@ -1,3 +1,9 @@
+## 16.6.0
+###### Release Date: 08-03-2024
+
+### 🚀 Enhancements
+* Added a button to open previous messages in programmatically launched conversations
+
 ## 16.5.9
 ###### Release Date: 27-02-2024
 
