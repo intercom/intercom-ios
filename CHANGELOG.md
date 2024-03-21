@@ -1,3 +1,14 @@
+## 16.6.1
+###### Release Date: 21-04-2024
+
+### 🐛 Bug Fixes
+* Fixed an issue where microphone permission was required even if you were only taking photos with the SDK.
+* Fixed a bug that wouldn't allow users to input an email when creating a ticket.
+
+**Note**
+On April 3rd 2024, we will be **deprecating support for iOS 13 & 14**. Customers wishing to use the latest versions of Intercom's iOS SDK will **require iOS 15 as a minimum deployment version**.
+If you choose not to update, all previous versions of the iOS SDK will continue to function as normal.
+
 ## 16.6.0
 ###### Release Date: 08-03-2024
 
