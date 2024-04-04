@@ -1,5 +1,16 @@
+## 17.0.0 
+###### Release Date: 04-04-2024
+
+### 🚀 Enhancements
+* The minimum iOS deployment target is now 15. Customers wishing to use this and future versions of Intercom's iOS SDK will require iOS 15 as their minimum deployment target.
+For customers who are still targeting iOS 13 or 14 and choose not to update, all previous versions of the iOS SDK will continue to function as normal.
+
+### 🐛 Bug Fixes
+* Fixed an issue where messages in a conversation were not being displayed fully.
+* Updated the SDK's `PrivacyInfo.xcprivacy` to include new API declarations required by Apple.
+
 ## 16.6.1
-###### Release Date: 21-04-2024
+###### Release Date: 21-03-2024
 
 ### 🐛 Bug Fixes
 * Fixed an issue where microphone permission was required even if you were only taking photos with the SDK.
