@@ -42,11 +42,8 @@ We check for new messages when your app opens and whenever your customer or your
 
 ## Installation
 
-Intercom for iOS supports iOS 13+. 
+Intercom for iOS supports iOS 15+. 
 Xcode 15 is required to build Intercom iOS SDK.
-The binary size for Intercom is **2.3MB**.
-
-On **April 3rd 2024, we will be deprecating support for iOS 13 & 14**. Customers wishing to use the latest versions of Intercom's iOS SDK will require iOS 15 as a minimum deployment version.
 
 ### CocoaPods
 Cocoapods 1.11.0 is required to install Intercom.
@@ -74,16 +71,6 @@ Make sure "Copy items if needed" is selected and click Finish.
 
 <img width="613" alt="embed_sign" src="https://user-images.githubusercontent.com/3185423/102403646-7e594000-3fde-11eb-89e6-0dc280bf24b2.png">
 
-## Update Info.plist
-
-#### Photo Library usage:
-
-With the exception of apps that _only_ support iOS 14+, when installing Intercom, you'll need to make sure that you have a `NSPhotoLibraryUsageDescription` entry in your `Info.plist`.
-
-For apps that support iOS 13, this is [required by Apple](https://developer.apple.com/library/content/qa/qa1937/_index.html) to access the photo library. It is necessary when installing Intercom due to the image upload functionality. Users will be prompted for the photo library permission only when they tap the image upload button.
-
-On iOS 14+, Intercom uses the new `PHPickerViewController` API which does not require requesting users for photo library permission. 
-
 ## Example app
 There are example apps provided [here](https://github.com/intercom/intercom-ios/tree/master/Examples) for Objective-C and Swift, as well as an example built with SwiftUI. We also have some sample code for handling Intercom push notifications manually.
 
@@ -92,7 +79,7 @@ There are example apps provided [here](https://github.com/intercom/intercom-ios/
 * Our [installation guide](https://developers.intercom.com/installing-intercom/ios/installation/) contains full setup and initialisation instructions.
 * Read ["Data Hosting Region Configuration for iOS"](https://developers.intercom.com/installing-intercom/ios/data-hosting-region-configuration/).
 * Read our guide on [Push Notifications](https://developers.intercom.com/installing-intercom/ios/push-notifications/).
-*  Please contact us on [Intercom](https://intercom.io) with any questions you may have, we're only a message away!
+* Please contact us on [Intercom](https://intercom.com) with any questions you may have, we're only a message away!
 
 ## Customer Support
 
@@ -100,8 +87,8 @@ There are example apps provided [here](https://github.com/intercom/intercom-ios/
 
 You can also check out the [Mobile SDKs section of the Intercom Community](https://community.intercom.com/mobile-sdks-24) to ask a question or find an answer.
 
-## Cordova/Phonegap Support
-Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
+## React Native Support
+Looking for React Native support? We have a [React Native Plugin](https://github.com/intercom/intercom-react-native) for Intercom 🎉
 
 ## What about events, push notifications, company and user data?
 
