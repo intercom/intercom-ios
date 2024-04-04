@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,7 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		197ACDC026736AE10024C38C /* Intercom.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Intercom.xcframework; path = ../../Intercom.xcframework; sourceTree = "<group>"; };
+		197ACDC026736AE10024C38C /* Intercom.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:RL5BZVWAZT:Intercom, Incorporated"; lastKnownFileType = wrapper.xcframework; name = Intercom.xcframework; path = ../../Intercom.xcframework; sourceTree = "<group>"; };
 		1A0F1E081B034B7100DA78D2 /* Sample-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEBAA9F1D3F6D2A0016C6EC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Sample-ObjC/Info.plist"; sourceTree = SOURCE_ROOT; };
 		ADEBAAA01D3F6D2A0016C6EC /* ITCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITCAppDelegate.h; path = "Sample-ObjC/ITCAppDelegate.h"; sourceTree = SOURCE_ROOT; };
@@ -247,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -296,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -316,7 +316,7 @@
 					"$(PROJECT_DIR)/../../",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sample-ObjC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +342,7 @@
 					"$(PROJECT_DIR)/../../",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sample-ObjC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
