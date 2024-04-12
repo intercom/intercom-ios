@@ -1,3 +1,10 @@
+## 17.0.1  
+###### Release Date: 12-04-2024
+
+### 🐛 Bug Fixes
+* Fixes an issue that was causing a crash when opening a conversation from a post.
+* Improvements made to image caching.
+
 ## 17.0.0 
 ###### Release Date: 04-04-2024
 
