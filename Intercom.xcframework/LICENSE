@@ -20,6 +20,16 @@ This product includes 'PINRemoteImage' (https://github.com/pinterest/PINRemoteIm
 
 ----------------------------------------------------------------
 
+This product includes 'Shimmer' (https://github.com/facebookarchive/Shimmer), which is released under the following license(s):
+    BSD License
+
+----------------------------------------------------------------
+
+This product includes 'Sentry' (https://github.com/getsentry/sentry-cocoa), which is released under the following license(s):
+    MIT <http://opensource.org/licenses/mit-license.html>
+    
+----------------------------------------------------------------
+
 All other components of this product are provided under the following license:
 
                                  Apache License

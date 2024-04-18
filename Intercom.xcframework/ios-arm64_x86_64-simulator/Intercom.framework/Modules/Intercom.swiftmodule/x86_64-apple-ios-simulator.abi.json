@@ -370,12 +370,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Result<(), any Swift.Error>) -> ())?",
+                "printedName": "((Swift.Result<(), Swift.Error>) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                    "printedName": "(Swift.Result<(), Swift.Error>) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -385,7 +385,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Result",
-                        "printedName": "Swift.Result<(), any Swift.Error>",
+                        "printedName": "Swift.Result<(), Swift.Error>",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -395,7 +395,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "any Swift.Error",
+                            "printedName": "Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -439,12 +439,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Result<(), any Swift.Error>) -> ())?",
+                "printedName": "((Swift.Result<(), Swift.Error>) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                    "printedName": "(Swift.Result<(), Swift.Error>) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -454,7 +454,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Result",
-                        "printedName": "Swift.Result<(), any Swift.Error>",
+                        "printedName": "Swift.Result<(), Swift.Error>",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -464,7 +464,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "any Swift.Error",
+                            "printedName": "Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -508,12 +508,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Result<(), any Swift.Error>) -> ())?",
+                "printedName": "((Swift.Result<(), Swift.Error>) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                    "printedName": "(Swift.Result<(), Swift.Error>) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -523,7 +523,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Result",
-                        "printedName": "Swift.Result<(), any Swift.Error>",
+                        "printedName": "Swift.Result<(), Swift.Error>",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -533,7 +533,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "any Swift.Error",
+                            "printedName": "Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],

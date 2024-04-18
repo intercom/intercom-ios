@@ -1,3 +1,9 @@
+## 17.0.2
+###### Release Date: 18-04-2024
+
+### 🚀 Enhancements
+* Removed required reason API calls that are now disallowed by Apple.
+
 ## 17.0.1  
 ###### Release Date: 12-04-2024
 
@@ -15,16 +21,6 @@ For customers who are still targeting iOS 13 or 14 and choose not to update, all
 ### 🐛 Bug Fixes
 * Fixed an issue where messages in a conversation were not being displayed fully.
 * Updated the SDK's `PrivacyInfo.xcprivacy` to include new API declarations required by Apple.
-
-## 16.6.2
-###### Release Date: 18-04-2024
-
-### 🚀 Enhancements
-* Updated the SDK's PrivacyInfo.xcprivacy to include new API declarations required by Apple.
-* Removed required reason API calls that are now disallowed by Apple.
-
-**Note**
-This is a patch for the older `16.x.x` SDK. This will allow integrators targetting iOS 13 & 14 to continue to use the Intercom SDK. Integrators are encouraged to update to the latest version of the SDK if possible.
 
 ## 16.6.1
 ###### Release Date: 21-03-2024
