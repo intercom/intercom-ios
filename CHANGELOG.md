@@ -1,3 +1,10 @@
+## 17.0.3 
+###### Release Date: 29-04-2024
+
+### 🚀 Enhancements
+* Improved the reliability of sending a receiving messages.
+* Reduced the size of the Intercom binary by ~1MB.
+
 ## 17.0.2
 ###### Release Date: 18-04-2024
 
