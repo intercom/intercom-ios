@@ -1,3 +1,12 @@
+## 17.0.4  
+###### Release Date: 10-05-2024
+
+### 🐛 Bug Fixes
+* Fixed a crash that was affecting a small subset of users. (`[ICMDataManager resetPresenceTimer]`)
+* Fixed some memory issues.  
+* Fixed some minor UI glitches.
+* Fixed a crash that users were experiencing. (`[ICMUserIdentity isEqual:]`)
+
 ## 17.0.3 
 ###### Release Date: 29-04-2024
 
