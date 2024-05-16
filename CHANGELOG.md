@@ -1,3 +1,12 @@
+## 17.1.0
+###### Release Date: 16-05-2024
+
+🐛 Bug Fixes
+* Fixes a layout issue with the Powered by Intercom link.
+
+**Note**
+This release contains some beta features.
+
 ## 17.0.4  
 ###### Release Date: 10-05-2024
 

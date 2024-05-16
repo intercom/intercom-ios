@@ -302,6 +302,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 UIKIT_EXTERN NSString *const IntercomUnreadConversationCountDidChangeNotification;
 
+/**
+ This notification is fired when the number of unread tickets changes.
+ */
+UIKIT_EXTERN NSString *const IntercomUnreadTicketCountDidChangeNotification;
+
 
 #pragma mark - Logging
 
