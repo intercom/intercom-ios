@@ -30,6 +30,11 @@ This product includes 'Sentry' (https://github.com/getsentry/sentry-cocoa), whic
     
 ----------------------------------------------------------------
 
+This product includes 'TinyConstraints' (https://github.com/roberthein/TinyConstraints), which is released under the following license(s):
+    MIT <http://opensource.org/licenses/mit-license.html>
+
+----------------------------------------------------------------
+
 All other components of this product are provided under the following license:
 
                                  Apache License

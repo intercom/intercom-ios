@@ -1,7 +1,15 @@
+## 17.1.1 
+###### Release Date: 28-05-2024
+
+### 🐛 Bug Fixes
+* Fixed some memory issues that impacted a small number of users.
+* Fixed an issue that was preventing some modals from closing correctly.
+* Removed Xcode console warning.
+
 ## 17.1.0
 ###### Release Date: 16-05-2024
 
-🐛 Bug Fixes
+### 🐛 Bug Fixes
 * Fixes a layout issue with the Powered by Intercom link.
 
 **Note**
