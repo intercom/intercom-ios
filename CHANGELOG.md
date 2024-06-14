@@ -1,3 +1,15 @@
+## 17.1.2 
+###### Release Date: 14-06-2024
+
+### 🚀 Enhancements
+* It is now possible to send push notifications to the Simulator. 
+
+### 🐛 Bug Fixes
+* Fixed an issue where it was not possible to close modal view that was opened from a Messenger App.
+* The message composer is now always displayed on the conversation screen when appropriate.
+* When a conversation is closed, form entry is disabled on the conversation screen.
+* Made some minor UI bug fixes.
+
 ## 17.1.1 
 ###### Release Date: 28-05-2024
 
