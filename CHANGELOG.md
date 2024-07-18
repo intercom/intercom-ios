@@ -1,3 +1,17 @@
+## 17.2.0 
+###### Release Date: 18-07-2024
+
+### 🚀 Enhancements
+* A newly designed composer for the messenger. 
+
+### 🐛 Bug Fixes
+* Fixes an issue with text fields in surveys.
+* Fixed issue allowing customers to start a conversation after reacting to an article.
+* Fixes an issue to handle empty message parts for bot introductions.
+
+**Note**
+This release contains some beta features.
+
 ## 17.1.2 
 ###### Release Date: 14-06-2024
 
