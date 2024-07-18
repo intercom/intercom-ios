@@ -1,3 +1,12 @@
+## 17.2.1
+###### Release Date: 18-07-2024
+
+### 🐛 Bug Fixes
+* Fixed an issue where the `Powered By Intercom` link could appear even when disabled.
+
+**Note**
+This release contains some beta features.
+
 ## 17.2.0 
 ###### Release Date: 18-07-2024
 
