@@ -25,8 +25,6 @@ When you trigger the Intercom Messenger, your customer is presented with a home 
 
 From there, your customer can search for help articles or start a conversation. A conversation goes to your inbox inside Intercom, and replies in both directions happen in real time. You can also send push notifications to your customers to let them know they have a reply after they’ve left your app.
 
-![iOSREadme1](https://user-images.githubusercontent.com/3185423/84803321-c5e41c80-aff9-11ea-89b0-514332887066.jpg)
-
 ### [Outbound messaging features](https://www.intercom.com/mobile-carousels)
 You can send messages to your customers from Intercom, and the mobile SDK will present them in your app. Messages can be targeted at specific users or groups of users, and can be scheduled to be sent during specific time windows.
 
@@ -41,8 +39,6 @@ The mobile SDK supports many different message formats, all of which can be crea
 * **Large posts** - a full screen announcement.
 
 We check for new messages when your app opens and whenever your customer or your app interacts with Intercom.
-
-![iOS - Content types](https://user-images.githubusercontent.com/3185423/84890387-4191a800-b092-11ea-821e-e920ba7ef6a5.png)
 
 ## Installation
 
