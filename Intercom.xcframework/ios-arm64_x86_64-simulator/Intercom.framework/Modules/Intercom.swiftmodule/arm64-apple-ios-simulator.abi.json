@@ -79,7 +79,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:So8IntercomCAAE7ContentO7articleyADSS_tcADmF",
                 "mangledName": "$sSo8IntercomCAAE7ContentO7articleyADSS_tcADmF",
-                "moduleName": "Intercom"
+                "moduleName": "Intercom",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -136,7 +139,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:So8IntercomCAAE7ContentO8carouselyADSS_tcADmF",
                 "mangledName": "$sSo8IntercomCAAE7ContentO8carouselyADSS_tcADmF",
-                "moduleName": "Intercom"
+                "moduleName": "Intercom",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -193,7 +199,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:So8IntercomCAAE7ContentO6surveyyADSS_tcADmF",
                 "mangledName": "$sSo8IntercomCAAE7ContentO6surveyyADSS_tcADmF",
-                "moduleName": "Intercom"
+                "moduleName": "Intercom",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -258,7 +267,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:So8IntercomCAAE7ContentO21helpCenterCollectionsyADSaySSG_tcADmF",
                 "mangledName": "$sSo8IntercomCAAE7ContentO21helpCenterCollectionsyADSaySSG_tcADmF",
-                "moduleName": "Intercom"
+                "moduleName": "Intercom",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               },
               {
                 "kind": "Var",
@@ -315,7 +327,10 @@
                 "declKind": "EnumElement",
                 "usr": "s:So8IntercomCAAE7ContentO12conversationyADSS_tcADmF",
                 "mangledName": "$sSo8IntercomCAAE7ContentO12conversationyADSS_tcADmF",
-                "moduleName": "Intercom"
+                "moduleName": "Intercom",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
               }
             ],
             "declKind": "Enum",
@@ -323,7 +338,6 @@
             "mangledName": "$sSo8IntercomCAAE7ContentO",
             "moduleName": "Intercom",
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true
@@ -351,7 +365,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -414,7 +427,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -483,7 +495,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -552,7 +563,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -615,7 +625,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -676,7 +685,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -745,7 +753,6 @@
             "moduleName": "Intercom",
             "static": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,

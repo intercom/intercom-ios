@@ -1,3 +1,14 @@
+## 17.2.2
+###### Release Date: 08-08-2024
+
+### 🐛 Bug Fixes
+* Support added for multiline attribute collector.
+* Fixes an issue with canvas kit where some users were experiencing crashes.
+* Fixes some minor UI issues.
+
+**Note**
+This release contains some beta features.
+
 ## 17.2.1
 ###### Release Date: 18-07-2024
 
