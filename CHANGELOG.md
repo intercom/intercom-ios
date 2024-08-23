@@ -1,3 +1,21 @@
+## 17.3.0
+###### Release Date: 23-08-2024
+
+### 🚀 Enhancements
+* Added the ability to disable swizzling. This can be done by adding the following value to your `Info.plist`:
+```xml
+<key>IntercomDisableSwizzling</key>
+<true/>
+```
+
+### 🐛 Bug Fixes
+* Fixed various memory leaks.
+* Addressed some constraint-related issues in the SDK that were outputting warnings in the console..
+* Fixed a bug related to the Scroll to Bottom button in the conversation screen.
+
+**Note**
+This release contains some beta features.
+
 ## 17.2.2
 ###### Release Date: 08-08-2024
 
