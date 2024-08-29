@@ -1,3 +1,9 @@
+## 17.4.0
+###### Release Date: 29-08-2024
+
+### 🚀 Enhancements
+* Added support for merged conversations
+
 ## 17.3.0
 ###### Release Date: 23-08-2024
 
