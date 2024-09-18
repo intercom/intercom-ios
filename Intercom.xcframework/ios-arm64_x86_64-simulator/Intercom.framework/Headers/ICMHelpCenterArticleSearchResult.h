@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  ICMHelpCenterArticleSearchResult represents the result of a Help Center search.
 */
+NS_SWIFT_SENDABLE
 NS_SWIFT_NAME(HelpCenterArticleSearchResult)
 @interface ICMHelpCenterArticleSearchResult : NSObject
 

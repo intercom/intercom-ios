@@ -1,3 +1,10 @@
+## 18.0.0
+###### Release Date: 18-08-2024
+
+### 🚀 Enhancements
+* Updated to support iOS 18 and Swift 6 concurrency for all public interface types.
+* The `sections` model has been previously deprecated in the Help Center API. It has now been removed. Any uses of `sections` should now be replaced with `collections`.
+
 ## 17.4.0
 ###### Release Date: 29-08-2024
 

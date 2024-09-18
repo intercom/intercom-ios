@@ -14,7 +14,6 @@
 #import <Intercom/ICMHelpCenterCollection.h>
 #import <Intercom/ICMHelpCenterCollectionContent.h>
 #import <Intercom/ICMHelpCenterArticleSearchResult.h>
-#import <Intercom/ICMHelpCenterSection.h>
 #import <Intercom/ICMHelpCenterDataError.h>
 #import <Intercom/ICMHelpCenterArticle.h>
 #import <Intercom/ICMHelpCenterArticleAuthor.h>

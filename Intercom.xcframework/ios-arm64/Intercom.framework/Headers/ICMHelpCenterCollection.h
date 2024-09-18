@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  ICMHelpCenterCollection represents a Help Center collection.
 */
+NS_SWIFT_SENDABLE
 NS_SWIFT_NAME(HelpCenterCollection)
 @interface ICMHelpCenterCollection : NSObject
 

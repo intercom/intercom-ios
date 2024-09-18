@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_SENDABLE
 NS_SWIFT_NAME(HelpCenterArticle)
 @interface ICMHelpCenterArticle : NSObject
 
