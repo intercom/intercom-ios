@@ -1,3 +1,17 @@
+## 18.1.0
+###### Release Date: 01-10-2024
+
+### 🐛 Bug Fixes
+* Fixed a crash that could occur when calling setDeviceToken. This can now be worked around by disabling swizzling.
+* Resolved an issue where the conversation would jump after loading completed.
+* Corrected the accessibility of the “Powered by Intercom” link text.
+
+### 🚀 Enhancements
+* Improved memory management & performance in the Conversation screen.
+
+**Note**
+This release contains some beta features.
+
 ## 18.0.0
 ###### Release Date: 18-08-2024
 
