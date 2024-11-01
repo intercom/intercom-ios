@@ -107,6 +107,20 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)updateUser:(ICMUserAttributes *)userAttributes success:(void(^ __nullable)(void))success failure:(void(^ __nullable)(NSError *_Nonnull error))failure NS_REFINED_FOR_SWIFT;
 
+#pragma mark - User logged in status
+
+/**
+ Determines if there is currently a user logged in.
+ */
++ (BOOL)isUserLoggedIn;
+
+/**
+ Gets a logged in user's attributes
+ 
+ - Returns: `ICMUserAttributes` with `email` and/or `userId` populated.
+ - Note: If you logged in an unidentified user, this will return a valid `ICMUserAttributes` object, but `email` and `userID` will be `nil`.
+ */
++ (nullable ICMUserAttributes *)fetchLoggedInUserAttributes;
 
 #pragma mark - Log Event
 

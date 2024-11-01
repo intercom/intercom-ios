@@ -1,3 +1,19 @@
+## 18.2.0
+###### Release Date: 01-11-2024
+
+### 📱 New Feature
+* Added the ability to upload files to a conversation.
+
+### 🚀 Enhancements
+* Added new API `isUserLoggedIn`. This enables developers to determine if a user is currently logged in to Intercom.
+* Added new API `fetchLoggedInUserAttributes`. This enables developers to retrieve the attributes of the currently logged in user.
+
+### 🐛 Bug Fixes
+* Fixed some layout issues in the conversation view.
+* Improvements to the photo previewer.
+* Fixes some colour accessibility issues throughout the SDK.
+* Fixes issue where clicking on the CTA in a post would not dismiss it.
+
 ## 18.1.0
 ###### Release Date: 01-10-2024
 
