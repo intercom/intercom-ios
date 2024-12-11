@@ -1,3 +1,15 @@
+## 18.2.1
+###### Release Date: 11-12-2024
+
+### 🐛 Bug Fixes
+* Solves a crash in carousels.
+* Addressed issue where video input wasn’t available in a conversation.
+* Fixes issue where first part in a conversation would fail to show as failed in the scenario where it didn’t send.
+* Resolved some layout issues in the conversation screen for users with large font sizes enabled.
+
+**Note**
+This release contains some beta features.
+
 ## 18.2.0
 ###### Release Date: 01-11-2024
 
