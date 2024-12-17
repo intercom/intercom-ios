@@ -1,3 +1,12 @@
+## 18.2.2
+###### Release Date: 17-12-2024
+
+### 🐛 Bug Fixes
+* Resolves an issue with Fin streaming replies.
+
+**Note**
+This release contains some beta features.
+
 ## 18.2.1
 ###### Release Date: 11-12-2024
 
