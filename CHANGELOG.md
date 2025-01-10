@@ -1,3 +1,19 @@
+## 18.3.0
+###### Release Date: 09-01-2025
+
+### 🚀 Enhancements
+* Added privacy policy to conversation screen.
+* Updated icons in the more menu when you launch directly into a conversation.
+* Updates to the Powered By Intercom view in conversations.
+
+### 🐛 Bug Fixes
+* Fixes issue around tapping on a message in a conversation to display timestamps.
+* Fixes accessibility issue with icon colour in special notice view.
+* Fixes an issue that could cause the typing indicator to continue displaying after a message was received.
+
+**Note**
+This release contains some beta features.
+
 ## 18.2.2
 ###### Release Date: 17-12-2024
 
