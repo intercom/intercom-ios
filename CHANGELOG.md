@@ -1,3 +1,13 @@
+## 18.4.0
+###### Release Date: 15-01-2025
+
+### 🚀 Enhancements
+* Added support for [Fin for Platforms.](https://www.intercom.com/help/en/collections/10962896-fin-for-platforms)
+* Special notice view now supports links.
+
+**Note**
+This release contains some beta features.
+
 ## 18.3.0
 ###### Release Date: 09-01-2025
 

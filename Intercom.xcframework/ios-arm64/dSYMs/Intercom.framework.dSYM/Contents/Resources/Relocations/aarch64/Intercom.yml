@@ -119,7 +119,7 @@ relocations:
   - { offset: 0xB4EB9, size: 0x8, addend: 0x0, symName: '+[Intercom addSDKApiMetricEventObject:metaData:]', symObjAddr: 0x26F8, symBinAddr: 0x69D0, symSize: 0xF4 }
   - { offset: 0xB4F37, size: 0x8, addend: 0x0, symName: '___48+[Intercom addSDKApiMetricEventObject:metaData:]_block_invoke', symObjAddr: 0x27EC, symBinAddr: 0x6AC4, symSize: 0x7C }
   - { offset: 0xB4FA6, size: 0x8, addend: 0x0, symName: '___48+[Intercom addSDKApiMetricEventObject:metaData:]_block_invoke_2', symObjAddr: 0x2868, symBinAddr: 0x6B40, symSize: 0x7C }
-  - { offset: 0xB5E0A, size: 0x8, addend: 0x0, symName: _ICMHelpCenterDataErrorDomain, symObjAddr: 0x40, symBinAddr: 0x48EEE0, symSize: 0x0 }
+  - { offset: 0xB5E0A, size: 0x8, addend: 0x0, symName: _ICMHelpCenterDataErrorDomain, symObjAddr: 0x40, symBinAddr: 0x492EE8, symSize: 0x0 }
   - { offset: 0xB5E72, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE14presentContentyyAbAE0C0OFZ', symObjAddr: 0x0, symBinAddr: 0x6BBC, symSize: 0x5C }
   - { offset: 0xB5F63, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE21loginUnidentifiedUser10completionyys6ResultOyyts5Error_pGcSg_tFZ', symObjAddr: 0x5C, symBinAddr: 0x6C18, symSize: 0x180 }
   - { offset: 0xB5FD9, size: 0x8, addend: 0x0, symName: '_$sIeg_IeyB_TR', symObjAddr: 0x1DC, symBinAddr: 0x6D98, symSize: 0x2C }
