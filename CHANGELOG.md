@@ -1,3 +1,11 @@
+## 18.5.0
+###### Release Date: 27-01-2025
+
+### 🚀 Enhancements
+* Improved delineation between AI Agents and bots.
+* New handover experience from AI Agents to teammates.
+* Special notice now supports multiple languages.
+
 ## 18.4.0
 ###### Release Date: 15-01-2025
 
