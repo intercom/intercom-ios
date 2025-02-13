@@ -1,3 +1,10 @@
+## 18.6.0
+###### Release Date: 12-02-2025
+
+### 🚀 Enhancements
+* New feature - This release supports conditionally showing attributes while ticket forms are filled out.
+* Added dynamic Fin thinking states.
+
 ## 18.5.0
 ###### Release Date: 27-01-2025
 
