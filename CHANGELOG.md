@@ -1,3 +1,12 @@
+## 18.6.1
+###### Release Date: 20-02-2025
+
+### 🚀 Enhancements
+* The UI for lists in ticket forms have been improved.
+
+### 🐛 Bug Fixes
+* Resolved a bug that could cause tests to hang.
+
 ## 18.6.0
 ###### Release Date: 12-02-2025
 
