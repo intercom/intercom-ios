@@ -1,3 +1,9 @@
+## 18.6.2
+###### Release Date: 25-02-2025
+
+### 🐛 Bug Fixes
+* Fixed a bug where some users were unable to add a phone number in the attribute collector.
+
 ## 18.6.1
 ###### Release Date: 20-02-2025
 
