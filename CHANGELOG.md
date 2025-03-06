@@ -1,3 +1,9 @@
+## 18.6.3
+###### Release Date: 06-03-2025
+
+### 🐛 Bug Fixes
+* Fixed a bug that could cause a crash when trying to send an empty message.
+
 ## 18.6.2
 ###### Release Date: 25-02-2025
 
