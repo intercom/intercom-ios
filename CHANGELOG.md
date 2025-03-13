@@ -1,3 +1,9 @@
+## 18.6.4
+###### Release Date: 12-03-2025
+
+### 🐛 Bug Fixes
+* Fixes a bug where the composer occasionally doesn't reappear during a workflow.
+
 ## 18.6.3
 ###### Release Date: 06-03-2025
 
