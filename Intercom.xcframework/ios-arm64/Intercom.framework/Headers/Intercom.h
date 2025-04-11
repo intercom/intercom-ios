@@ -64,6 +64,33 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)setUserHash:(NSString *)userHash;
 
+/**
+ Sets a JWT token for the user, necessary for using the Messenger
+ when Messenger Security is enforced. This is an improvement to Identity Verification.
+
+ Secure your Messenger to make sure that bad actors can't impersonate your users,
+ see their conversation history or make unauthorised updates to data.
+
+ This should be called before any user login takes place. Learn more [here](https://developers.intercom.com/installing-intercom/ios/secure-your-messenger)
+ 
+ - Parameters:
+    - jwt: A JWT token signed with your app's secret key.
+ */
++ (void)setUserJwt:(NSString *)jwt;
+
+/**
+ Provide Intercom with your auth tokens which can be used for functionality
+ such as Fin Actions. You can provide multiple tokens at once. Please ensure you have created
+ the correct keys [here](https://www.intercom.com/a/apps/_/settings/app-settings/authentication)
+ 
+ - Note: You must call one of the user login methods in order to start communicating with Intercom.
+ 
+ - Parameters:
+    - authTokens: A Dictionary containing any auth token names and values
+    - success: A nullable success callback with no parameters.
+    - failure: A failure callback with an error parameter.
+ */
++ (void)setAuthTokens:(NSDictionary<NSString *, NSString *> *)authTokens success:(void(^ __nullable)(void))success failure:(void(^ __nullable)(NSError *_Nonnull error))failure NS_REFINED_FOR_SWIFT;
 
 #pragma mark - User Login
 

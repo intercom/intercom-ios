@@ -22,6 +22,7 @@ extension Intercom {
   public class func loginUnidentifiedUser(completion: ((Result<Void, Error>) -> Void)? = nil)
   public class func loginUser(with attributes: ICMUserAttributes, completion: ((Result<Void, Error>) -> Void)? = nil)
   public class func updateUser(with attributes: ICMUserAttributes, completion: ((Result<Void, Error>) -> Void)? = nil)
+  public class func setAuthTokens(_ authTokens: [String : String], completion: ((Result<Void, Error>) -> Void)? = nil)
   public class func fetchHelpCenterCollections(completion: @escaping (Result<[HelpCenterCollection], ICMHelpCenterDataError>) -> Void)
   public class func fetchHelpCenterCollection(_ collectionId: String, completion: @escaping (Result<HelpCenterCollectionContent, ICMHelpCenterDataError>) -> Void)
   public class func searchHelpCenter(_ searchTerm: String, completion: @escaping (Result<[HelpCenterArticleSearchResult], ICMHelpCenterDataError>) -> Void)

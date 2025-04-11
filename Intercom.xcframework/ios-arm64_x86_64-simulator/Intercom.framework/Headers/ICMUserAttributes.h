@@ -106,4 +106,6 @@
  */
 - (nonnull NSDictionary<NSNumber *, NSString *> *)registrationAttributes;
 
+- (BOOL)hasNonIdentifyingAttributes;
+
 @end
