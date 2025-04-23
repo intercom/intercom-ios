@@ -1,3 +1,9 @@
+## 18.7.1
+###### Release Date: 23-04-2025
+
+### 🚀 Enhancements
+* Some improvements to the rendering and height management of messenger apps.
+
 ## 18.7.0
 ###### Release Date: 11-04-2025
 
