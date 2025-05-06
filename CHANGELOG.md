@@ -1,3 +1,9 @@
+## 18.7.2
+###### Release Date: 06-05-2025
+
+### 🚀 Enhancements
+* Improved handling of conversations merged across channels and conversations merged between users.
+
 ## 18.7.1
 ###### Release Date: 23-04-2025
 
