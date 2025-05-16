@@ -1,3 +1,10 @@
+## 18.7.3
+###### Release Date: 16-05-2025
+
+### 🐛 Bug Fixes
+* Fixes a bug that could cause a crash when dismissing multiple in app notifications.
+* Fixes a bug that could cause a crash when trying to close a note using the x button.
+
 ## 18.7.2
 ###### Release Date: 06-05-2025
 
