@@ -1,3 +1,13 @@
+## 18.8.0
+###### Release Date: 03-06-2025
+
+### 📱 New Feature: Conversational Fin
+We’re making conversations more natural and reducing the need for escalations.
+
+- **More human, less rigid**: We’ve removed quick reply buttons so Fin can respond fluidly—no decision trees, just natural conversation.
+
+- **Sources, now inline**: Fin now includes source links directly in replies, so customers can verify info at a glance.
+
 ## 18.7.3
 ###### Release Date: 16-05-2025
 
