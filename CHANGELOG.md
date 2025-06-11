@@ -1,3 +1,9 @@
+## 18.8.1
+###### Release Date: 11-06-2025
+
+### 🐛 Bug Fixes
+* Fixes a bug where articles could render in the incorrect interface style.
+
 ## 18.8.0
 ###### Release Date: 03-06-2025
 
