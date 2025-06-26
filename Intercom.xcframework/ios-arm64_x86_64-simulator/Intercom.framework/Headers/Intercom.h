@@ -18,6 +18,14 @@
 #import <Intercom/ICMHelpCenterArticle.h>
 #import <Intercom/ICMHelpCenterArticleAuthor.h>
 #import <Intercom/IntercomContent.h>
+
+typedef NS_ENUM(NSInteger, ICMThemeOverride) {
+    ICMThemeOverrideNone,
+    ICMThemeOverrideLight,
+    ICMThemeOverrideDark,
+    ICMThemeOverrideSystem
+};
+
 /**
  A enum of Intercom Spaces.
  
@@ -362,6 +370,21 @@ UIKIT_EXTERN NSString *const IntercomUnreadTicketCountDidChangeNotification;
  Call this method so that Intercom's window can reflect your app's status bar accordingly.
  */
 + (void)setNeedsStatusBarAppearanceUpdate;
+
+
+#pragma mark - Theme Configuration
+
+/**
+ Sets the theme mode for the Intercom SDK.
+
+ This method allows you to override the server-provided theme setting for the current session only.
+ The theme mode controls whether the SDK displays in light mode, dark mode, or follows the system theme.
+ The theme selection will be reset when the app restarts.
+
+ - Parameters:
+ - themeOverride: The theme override to apply. Use ICMThemeOverrideNone to clear the override and use server configuration.
+ */
++ (void)setThemeOverride:(ICMThemeOverride)themeOverride;
 
 
 #pragma mark - Intercom Notifications
