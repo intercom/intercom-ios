@@ -1,3 +1,10 @@
+## 19.0.1
+###### Release Date: 03-07-2025
+
+### 🐛 Bug Fixes
+* Fixes a bug that could cause a crash when trying to resend a failed media message.
+* Fixes a bug that could cause a crash during complex gradient background processing.
+
 ## 19.0.0
 ###### Release Date: 26-06-2025
 
