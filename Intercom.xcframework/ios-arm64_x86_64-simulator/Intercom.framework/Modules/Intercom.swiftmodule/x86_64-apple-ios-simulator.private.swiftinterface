@@ -17,6 +17,7 @@ extension Intercom {
     case survey(id: String)
     case helpCenterCollections(ids: [String])
     case conversation(id: String)
+    case ticket(id: String)
   }
   public class func presentContent(_ content: Content)
   public class func loginUnidentifiedUser(completion: ((Result<Void, Error>) -> Void)? = nil)

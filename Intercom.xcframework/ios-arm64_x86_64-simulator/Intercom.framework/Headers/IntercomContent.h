@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, ContentType) {
     carousel,
     helpCenterCollections,
     conversation,
+    ticket,
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -38,6 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
     - Carousels
     - Help Center Collections
     - Conversations
+    - Tickets
  
  This object is passed into ``Intercom/presentContent:``.
  */
@@ -93,6 +95,15 @@ NS_ASSUME_NONNULL_BEGIN
 */
 + (IntercomContent *)conversationWithId:(NSString *)conversationId;
 
+/**
+ Create a Ticket content object.
+ 
+- Parameters:
+- ticketId: The ID of the Ticket that is to be presented.
+
+- Returns: An ``IntercomContent`` object used to present a Ticket.
+*/
++ (IntercomContent *)ticketWithId:(NSString *)ticketId;
 
 @end
 

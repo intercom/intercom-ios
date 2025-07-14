@@ -1,3 +1,10 @@
+## 19.1.0
+###### Release Date: 14-07-2025
+
+### 🚀 Enhancements
+* You can now present specific Tickets with the `presentContent` method.
+* Tweaked dark mode colors to be more harmonious.
+
 ## 19.0.1
 ###### Release Date: 03-07-2025
 
