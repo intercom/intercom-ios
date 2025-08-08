@@ -1,3 +1,9 @@
+## 19.1.1
+###### Release Date: 08-08-2025
+
+### 🚀 Enhancements
+* Typing indicators are now shown in the Messages screen.
+
 ## 19.1.0
 ###### Release Date: 14-07-2025
 
