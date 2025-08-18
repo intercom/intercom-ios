@@ -1,3 +1,9 @@
+## 19.1.2
+###### Release Date: 18-08-2025
+
+### 🚀 Enhancements
+* UI Improvements for events in conversations.
+
 ## 19.1.1
 ###### Release Date: 08-08-2025
 
