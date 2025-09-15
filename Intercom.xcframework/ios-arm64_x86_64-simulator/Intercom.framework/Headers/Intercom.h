@@ -258,10 +258,26 @@ NS_ASSUME_NONNULL_BEGIN
  Intercom is received, Intercom for iOS will automatically launch the message from the notification.
  
  - Parameters:
-    - deviceToken: The device token provided in the `didRegisterForRemoteNotificationsWithDeviceToken` method.
-    - failure: A failure callback with an error parameter.
+   - deviceToken: The device token provided in the `didRegisterForRemoteNotificationsWithDeviceToken` method.
+   - failure: A failure callback with an error parameter.
  */
-+ (void)setDeviceToken:(NSData *)deviceToken failure:(void(^ __nullable)(NSError * _Nullable error))failure;
++ (void)setDeviceToken:(NSData *)deviceToken failure:(void(^ __nullable)(NSError * _Nullable error))failure __attribute((deprecated("'+[Intercom setDeviceToken:failure:]' is deprecated. Use '+[Intercom setDeviceToken:success:failure:]' instead.")));
+
+/**
+ Set the device token for push notifications with success and failure callbacks.
+ 
+ When your app receives a push notification, Intercom for iOS will check if it is an Intercom push notification
+ and open the message if required. The success callback is called when the device token is successfully registered,
+ and the failure callback is called if an error occurs during registration.
+ 
+ - Parameters:
+   - deviceToken: The device token provided in the `didRegisterForRemoteNotificationsWithDeviceToken` method.
+   - success: A success callback called when the device token is successfully registered.
+   - failure: A failure callback with an error parameter.
+ */
++ (void)setDeviceToken:(NSData *)deviceToken 
+               success:(void(^ __nullable)(void))success
+               failure:(void(^ __nullable)(NSError * _Nonnull error))failure NS_REFINED_FOR_SWIFT;
 
 /**
  Use this method to check if a push notification payload was sent by Intercom. Typically you should call
@@ -364,6 +380,7 @@ UIKIT_EXTERN NSString *const IntercomUnreadTicketCountDidChangeNotification;
  - Note: it is recommended to use it only while debugging
  */
 + (void)enableLogging;
+
 
 /**
  Change the Status Bar's style or visibility while an Intercom notification is on screen.

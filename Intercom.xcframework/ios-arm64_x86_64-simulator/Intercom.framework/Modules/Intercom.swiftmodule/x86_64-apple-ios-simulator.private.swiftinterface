@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Intercom
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Intercom
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import DeveloperToolsSupport
 import Foundation
 @_exported import Intercom
@@ -20,11 +21,28 @@ extension Intercom {
     case ticket(id: String)
   }
   public class func presentContent(_ content: Content)
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func loginUnidentifiedUser(completion: ((Result<Void, Error>) -> Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func loginUser(with attributes: ICMUserAttributes, completion: ((Result<Void, Error>) -> Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func updateUser(with attributes: ICMUserAttributes, completion: ((Result<Void, Error>) -> Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func setAuthTokens(_ authTokens: [String : String], completion: ((Result<Void, Error>) -> Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public class func setDeviceToken(_ deviceToken: Data, completion: ((Result<Void, Error>) -> Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func fetchHelpCenterCollections(completion: @escaping (Result<[HelpCenterCollection], ICMHelpCenterDataError>) -> Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func fetchHelpCenterCollection(_ collectionId: String, completion: @escaping (Result<HelpCenterCollectionContent, ICMHelpCenterDataError>) -> Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func searchHelpCenter(_ searchTerm: String, completion: @escaping (Result<[HelpCenterArticleSearchResult], ICMHelpCenterDataError>) -> Void)
+  #endif
 }

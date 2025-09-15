@@ -1,3 +1,22 @@
+## 19.2.0
+###### Release Date: 15-09-2025
+
+### 🚀 Enhancements
+* Added support for iOS 26 and Liquid Glass.
+* Resolved a hang that could occur on startup related to crash report tooling.
+* Added a completion handler to the `setDeviceToken` API. The old API will be removed in a future major release.
+
+```swift
+Intercom.setDeviceToken("DEVICE_TOKEN") { result in
+  switch result {
+    case .success:
+    ...
+    case let .failure(error):
+    ...
+  }
+}
+```
+
 ## 19.1.2
 ###### Release Date: 18-08-2025
 

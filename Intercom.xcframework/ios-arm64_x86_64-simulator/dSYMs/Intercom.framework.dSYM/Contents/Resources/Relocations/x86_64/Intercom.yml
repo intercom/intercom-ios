@@ -2,204 +2,204 @@
 triple:          'x86_64-apple-darwin'
 binary-path:     '/Users/distiller/project/DerivedData/archive/Build/Intermediates.noindex/ArchiveIntermediates/IntercomSDK-Public/InstallationBuildProductsLocation/Library/Frameworks/Intercom.framework/Intercom'
 relocations:
-  - { offset: 0xB56EB, size: 0x8, addend: 0x0, symName: '-[Article type]', symObjAddr: 0x0, symBinAddr: 0x2910, symSize: 0x8 }
-  - { offset: 0xB5896, size: 0x8, addend: 0x0, symName: '-[Article type]', symObjAddr: 0x0, symBinAddr: 0x2910, symSize: 0x8 }
-  - { offset: 0xB58C9, size: 0x8, addend: 0x0, symName: '-[Article contentId]', symObjAddr: 0x8, symBinAddr: 0x2918, symSize: 0x12 }
-  - { offset: 0xB5913, size: 0x8, addend: 0x0, symName: '-[Article articleId]', symObjAddr: 0x1A, symBinAddr: 0x292A, symSize: 0x11 }
-  - { offset: 0xB5948, size: 0x8, addend: 0x0, symName: '-[Article setArticleId:]', symObjAddr: 0x2B, symBinAddr: 0x293B, symSize: 0x11 }
-  - { offset: 0xB5987, size: 0x8, addend: 0x0, symName: '-[Article .cxx_destruct]', symObjAddr: 0x3C, symBinAddr: 0x294C, symSize: 0x13 }
-  - { offset: 0xB59BA, size: 0x8, addend: 0x0, symName: '-[Carousel type]', symObjAddr: 0x4F, symBinAddr: 0x295F, symSize: 0xB }
-  - { offset: 0xB59ED, size: 0x8, addend: 0x0, symName: '-[Carousel contentId]', symObjAddr: 0x5A, symBinAddr: 0x296A, symSize: 0x12 }
-  - { offset: 0xB5A37, size: 0x8, addend: 0x0, symName: '-[Carousel carouselId]', symObjAddr: 0x6C, symBinAddr: 0x297C, symSize: 0x11 }
-  - { offset: 0xB5A6C, size: 0x8, addend: 0x0, symName: '-[Carousel setCarouselId:]', symObjAddr: 0x7D, symBinAddr: 0x298D, symSize: 0x11 }
-  - { offset: 0xB5AAB, size: 0x8, addend: 0x0, symName: '-[Carousel .cxx_destruct]', symObjAddr: 0x8E, symBinAddr: 0x299E, symSize: 0x13 }
-  - { offset: 0xB5ADE, size: 0x8, addend: 0x0, symName: '-[Survey type]', symObjAddr: 0xA1, symBinAddr: 0x29B1, symSize: 0xB }
-  - { offset: 0xB5B11, size: 0x8, addend: 0x0, symName: '-[Survey contentId]', symObjAddr: 0xAC, symBinAddr: 0x29BC, symSize: 0x12 }
-  - { offset: 0xB5B5B, size: 0x8, addend: 0x0, symName: '-[Survey surveyId]', symObjAddr: 0xBE, symBinAddr: 0x29CE, symSize: 0x11 }
-  - { offset: 0xB5B90, size: 0x8, addend: 0x0, symName: '-[Survey setSurveyId:]', symObjAddr: 0xCF, symBinAddr: 0x29DF, symSize: 0x11 }
-  - { offset: 0xB5BCF, size: 0x8, addend: 0x0, symName: '-[Survey .cxx_destruct]', symObjAddr: 0xE0, symBinAddr: 0x29F0, symSize: 0x13 }
-  - { offset: 0xB5C02, size: 0x8, addend: 0x0, symName: '-[HelpCenterCollections type]', symObjAddr: 0xF3, symBinAddr: 0x2A03, symSize: 0xB }
-  - { offset: 0xB5C35, size: 0x8, addend: 0x0, symName: '-[HelpCenterCollections contentId]', symObjAddr: 0xFE, symBinAddr: 0x2A0E, symSize: 0x12 }
-  - { offset: 0xB5C7F, size: 0x8, addend: 0x0, symName: '-[HelpCenterCollections collectionIds]', symObjAddr: 0x110, symBinAddr: 0x2A20, symSize: 0x11 }
-  - { offset: 0xB5CB4, size: 0x8, addend: 0x0, symName: '-[HelpCenterCollections setCollectionIds:]', symObjAddr: 0x121, symBinAddr: 0x2A31, symSize: 0x11 }
-  - { offset: 0xB5CF3, size: 0x8, addend: 0x0, symName: '-[HelpCenterCollections .cxx_destruct]', symObjAddr: 0x132, symBinAddr: 0x2A42, symSize: 0x13 }
-  - { offset: 0xB5D26, size: 0x8, addend: 0x0, symName: '-[Conversation type]', symObjAddr: 0x145, symBinAddr: 0x2A55, symSize: 0xB }
-  - { offset: 0xB5D59, size: 0x8, addend: 0x0, symName: '-[Conversation contentId]', symObjAddr: 0x150, symBinAddr: 0x2A60, symSize: 0x12 }
-  - { offset: 0xB5DA3, size: 0x8, addend: 0x0, symName: '-[Conversation conversationId]', symObjAddr: 0x162, symBinAddr: 0x2A72, symSize: 0x11 }
-  - { offset: 0xB5DD8, size: 0x8, addend: 0x0, symName: '-[Conversation setConversationId:]', symObjAddr: 0x173, symBinAddr: 0x2A83, symSize: 0x11 }
-  - { offset: 0xB5E17, size: 0x8, addend: 0x0, symName: '-[Conversation .cxx_destruct]', symObjAddr: 0x184, symBinAddr: 0x2A94, symSize: 0x13 }
-  - { offset: 0xB5E4A, size: 0x8, addend: 0x0, symName: '-[TicketContent type]', symObjAddr: 0x197, symBinAddr: 0x2AA7, symSize: 0xB }
-  - { offset: 0xB5E7D, size: 0x8, addend: 0x0, symName: '-[TicketContent contentId]', symObjAddr: 0x1A2, symBinAddr: 0x2AB2, symSize: 0x12 }
-  - { offset: 0xB5EC7, size: 0x8, addend: 0x0, symName: '-[TicketContent ticketId]', symObjAddr: 0x1B4, symBinAddr: 0x2AC4, symSize: 0x11 }
-  - { offset: 0xB5EFC, size: 0x8, addend: 0x0, symName: '-[TicketContent setTicketId:]', symObjAddr: 0x1C5, symBinAddr: 0x2AD5, symSize: 0x11 }
-  - { offset: 0xB5F3B, size: 0x8, addend: 0x0, symName: '-[TicketContent .cxx_destruct]', symObjAddr: 0x1D6, symBinAddr: 0x2AE6, symSize: 0x13 }
-  - { offset: 0xB5F6E, size: 0x8, addend: 0x0, symName: '+[IntercomContent articleWithId:]', symObjAddr: 0x1E9, symBinAddr: 0x2AF9, symSize: 0x4D }
-  - { offset: 0xB5FFE, size: 0x8, addend: 0x0, symName: '+[IntercomContent carouselWithId:]', symObjAddr: 0x236, symBinAddr: 0x2B46, symSize: 0x4D }
-  - { offset: 0xB608E, size: 0x8, addend: 0x0, symName: '+[IntercomContent surveyWithId:]', symObjAddr: 0x283, symBinAddr: 0x2B93, symSize: 0x4D }
-  - { offset: 0xB611E, size: 0x8, addend: 0x0, symName: '+[IntercomContent helpCenterCollectionsWithIds:]', symObjAddr: 0x2D0, symBinAddr: 0x2BE0, symSize: 0x4D }
-  - { offset: 0xB61AE, size: 0x8, addend: 0x0, symName: '+[IntercomContent conversationWithId:]', symObjAddr: 0x31D, symBinAddr: 0x2C2D, symSize: 0x4D }
-  - { offset: 0xB623E, size: 0x8, addend: 0x0, symName: '+[IntercomContent ticketWithId:]', symObjAddr: 0x36A, symBinAddr: 0x2C7A, symSize: 0x4D }
-  - { offset: 0xB62CE, size: 0x8, addend: 0x0, symName: '-[IntercomContent type]', symObjAddr: 0x3B7, symBinAddr: 0x2CC7, symSize: 0xA }
-  - { offset: 0xB6303, size: 0x8, addend: 0x0, symName: '-[IntercomContent setType:]', symObjAddr: 0x3C1, symBinAddr: 0x2CD1, symSize: 0xA }
-  - { offset: 0xB6340, size: 0x8, addend: 0x0, symName: '-[IntercomContent contentId]', symObjAddr: 0x3CB, symBinAddr: 0x2CDB, symSize: 0xA }
-  - { offset: 0xB6375, size: 0x8, addend: 0x0, symName: '-[IntercomContent setContentId:]', symObjAddr: 0x3D5, symBinAddr: 0x2CE5, symSize: 0x11 }
-  - { offset: 0xB63B6, size: 0x8, addend: 0x0, symName: '-[IntercomContent .cxx_destruct]', symObjAddr: 0x3E6, symBinAddr: 0x2CF6, symSize: 0x10 }
-  - { offset: 0xB647E, size: 0x8, addend: 0x0, symName: '+[Intercom setApiKey:forAppId:]', symObjAddr: 0x0, symBinAddr: 0x2D08, symSize: 0x151 }
-  - { offset: 0xB65C0, size: 0x8, addend: 0x0, symName: '+[Intercom setApiKey:forAppId:]', symObjAddr: 0x0, symBinAddr: 0x2D08, symSize: 0x151 }
-  - { offset: 0xB67C4, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s, symObjAddr: 0x176, symBinAddr: 0x2E5A, symSize: 0x25 }
-  - { offset: 0xB67FB, size: 0x8, addend: 0x0, symName: '___31+[Intercom setApiKey:forAppId:]_block_invoke.454', symObjAddr: 0x19B, symBinAddr: 0x2E7F, symSize: 0x24 }
-  - { offset: 0xB6852, size: 0x8, addend: 0x0, symName: '+[Intercom setUserHash:]', symObjAddr: 0x1BF, symBinAddr: 0x2EA3, symSize: 0x116 }
-  - { offset: 0xB694C, size: 0x8, addend: 0x0, symName: '___24+[Intercom setUserHash:]_block_invoke', symObjAddr: 0x2D5, symBinAddr: 0x2FB9, symSize: 0x9D }
-  - { offset: 0xB69BB, size: 0x8, addend: 0x0, symName: '___24+[Intercom setUserHash:]_block_invoke.466', symObjAddr: 0x390, symBinAddr: 0x3058, symSize: 0x9D }
-  - { offset: 0xB6A2A, size: 0x8, addend: 0x0, symName: '+[Intercom setUserJwt:]', symObjAddr: 0x42D, symBinAddr: 0x30F5, symSize: 0x116 }
-  - { offset: 0xB6B24, size: 0x8, addend: 0x0, symName: '___23+[Intercom setUserJwt:]_block_invoke', symObjAddr: 0x543, symBinAddr: 0x320B, symSize: 0x9D }
-  - { offset: 0xB6B93, size: 0x8, addend: 0x0, symName: '___23+[Intercom setUserJwt:]_block_invoke_2', symObjAddr: 0x5E0, symBinAddr: 0x32A8, symSize: 0x9D }
-  - { offset: 0xB6C02, size: 0x8, addend: 0x0, symName: '+[Intercom setAuthTokens:success:failure:]', symObjAddr: 0x67D, symBinAddr: 0x3345, symSize: 0x179 }
-  - { offset: 0xB6D8E, size: 0x8, addend: 0x0, symName: '___42+[Intercom setAuthTokens:success:failure:]_block_invoke', symObjAddr: 0x7F6, symBinAddr: 0x34BE, symSize: 0x4A }
-  - { offset: 0xB6DF5, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b, symObjAddr: 0x840, symBinAddr: 0x3508, symSize: 0x17 }
-  - { offset: 0xB6E1E, size: 0x8, addend: 0x0, symName: '___42+[Intercom setAuthTokens:success:failure:]_block_invoke.481', symObjAddr: 0x857, symBinAddr: 0x351F, symSize: 0x4A }
-  - { offset: 0xB6F12, size: 0x8, addend: 0x0, symName: '+[Intercom presentIntercom]', symObjAddr: 0x8A1, symBinAddr: 0x3569, symSize: 0x6B }
-  - { offset: 0xB6F88, size: 0x8, addend: 0x0, symName: '___27+[Intercom presentIntercom]_block_invoke_2', symObjAddr: 0x90C, symBinAddr: 0x35D4, symSize: 0x19 }
-  - { offset: 0xB6FBB, size: 0x8, addend: 0x0, symName: '+[Intercom presentIntercom:]', symObjAddr: 0x925, symBinAddr: 0x35ED, symSize: 0xA0 }
-  - { offset: 0xB7033, size: 0x8, addend: 0x0, symName: '___28+[Intercom presentIntercom:]_block_invoke', symObjAddr: 0x9C5, symBinAddr: 0x368D, symSize: 0xD9 }
-  - { offset: 0xB70CD, size: 0x8, addend: 0x0, symName: '___28+[Intercom presentIntercom:]_block_invoke_2', symObjAddr: 0xA9E, symBinAddr: 0x3766, symSize: 0xD9 }
-  - { offset: 0xB71DD, size: 0x8, addend: 0x0, symName: '+[Intercom presentMessageComposer:]', symObjAddr: 0xB77, symBinAddr: 0x383F, symSize: 0xC9 }
-  - { offset: 0xB72BC, size: 0x8, addend: 0x0, symName: '___35+[Intercom presentMessageComposer:]_block_invoke_2', symObjAddr: 0xC40, symBinAddr: 0x3908, symSize: 0x20 }
-  - { offset: 0xB7303, size: 0x8, addend: 0x0, symName: '+[Intercom presentContent:]', symObjAddr: 0xC60, symBinAddr: 0x3928, symSize: 0xE3 }
-  - { offset: 0xB73DF, size: 0x8, addend: 0x0, symName: '___27+[Intercom presentContent:]_block_invoke', symObjAddr: 0xD43, symBinAddr: 0x3A0B, symSize: 0x449 }
-  - { offset: 0xB7685, size: 0x8, addend: 0x0, symName: '___27+[Intercom presentContent:]_block_invoke_2', symObjAddr: 0x118C, symBinAddr: 0x3E54, symSize: 0x448 }
-  - { offset: 0xB7A17, size: 0x8, addend: 0x0, symName: '+[Intercom fetchHelpCenterCollectionsWithCompletion:]', symObjAddr: 0x15D4, symBinAddr: 0x429C, symSize: 0xC9 }
-  - { offset: 0xB7AF6, size: 0x8, addend: 0x0, symName: '___53+[Intercom fetchHelpCenterCollectionsWithCompletion:]_block_invoke_2', symObjAddr: 0x169D, symBinAddr: 0x4365, symSize: 0x20 }
-  - { offset: 0xB7C79, size: 0x8, addend: 0x0, symName: '+[Intercom fetchHelpCenterCollection:withCompletion:]', symObjAddr: 0x16BD, symBinAddr: 0x4385, symSize: 0x100 }
-  - { offset: 0xB7DB7, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b, symObjAddr: 0x17BD, symBinAddr: 0x4485, symSize: 0x30 }
-  - { offset: 0xB7DEC, size: 0x8, addend: 0x0, symName: '___53+[Intercom fetchHelpCenterCollection:withCompletion:]_block_invoke.530', symObjAddr: 0x17ED, symBinAddr: 0x44B5, symSize: 0x24 }
-  - { offset: 0xB7EC6, size: 0x8, addend: 0x0, symName: '+[Intercom searchHelpCenter:withCompletion:]', symObjAddr: 0x1811, symBinAddr: 0x44D9, symSize: 0x100 }
-  - { offset: 0xB8004, size: 0x8, addend: 0x0, symName: '___44+[Intercom searchHelpCenter:withCompletion:]_block_invoke_2', symObjAddr: 0x1911, symBinAddr: 0x45D9, symSize: 0x24 }
-  - { offset: 0xB80D8, size: 0x8, addend: 0x0, symName: '+[Intercom setInAppMessagesVisible:]', symObjAddr: 0x1935, symBinAddr: 0x45FD, symSize: 0xA5 }
-  - { offset: 0xB8166, size: 0x8, addend: 0x0, symName: '___36+[Intercom setInAppMessagesVisible:]_block_invoke_2', symObjAddr: 0x19DA, symBinAddr: 0x46A2, symSize: 0x20 }
-  - { offset: 0xB8223, size: 0x8, addend: 0x0, symName: '+[Intercom setLauncherVisible:]', symObjAddr: 0x19FA, symBinAddr: 0x46C2, symSize: 0xA5 }
-  - { offset: 0xB82B1, size: 0x8, addend: 0x0, symName: '___31+[Intercom setLauncherVisible:]_block_invoke_2', symObjAddr: 0x1A9F, symBinAddr: 0x4767, symSize: 0x20 }
-  - { offset: 0xB8361, size: 0x8, addend: 0x0, symName: '+[Intercom hideIntercom]', symObjAddr: 0x1ABF, symBinAddr: 0x4787, symSize: 0x6B }
-  - { offset: 0xB83D7, size: 0x8, addend: 0x0, symName: '___24+[Intercom hideIntercom]_block_invoke_2', symObjAddr: 0x1B2A, symBinAddr: 0x47F2, symSize: 0x19 }
-  - { offset: 0xB8487, size: 0x8, addend: 0x0, symName: '+[Intercom setBottomPadding:]', symObjAddr: 0x1B43, symBinAddr: 0x480B, symSize: 0xA9 }
-  - { offset: 0xB8515, size: 0x8, addend: 0x0, symName: '___29+[Intercom setBottomPadding:]_block_invoke_2', symObjAddr: 0x1BEC, symBinAddr: 0x48B4, symSize: 0x21 }
-  - { offset: 0xB855C, size: 0x8, addend: 0x0, symName: '+[Intercom unreadConversationCount]', symObjAddr: 0x1C0D, symBinAddr: 0x48D5, symSize: 0x3D }
-  - { offset: 0xB85A7, size: 0x8, addend: 0x0, symName: '+[Intercom unreadTicketCount]', symObjAddr: 0x1C4A, symBinAddr: 0x4912, symSize: 0x19 }
-  - { offset: 0xB86B0, size: 0x8, addend: 0x0, symName: '+[Intercom loginUnidentifiedUserWithSuccess:failure:]', symObjAddr: 0x1C63, symBinAddr: 0x492B, symSize: 0x100 }
-  - { offset: 0xB87EE, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b40b, symObjAddr: 0x1D63, symBinAddr: 0x4A2B, symSize: 0x38 }
-  - { offset: 0xB8817, size: 0x8, addend: 0x0, symName: '___53+[Intercom loginUnidentifiedUserWithSuccess:failure:]_block_invoke.550', symObjAddr: 0x1D9B, symBinAddr: 0x4A63, symSize: 0x24 }
-  - { offset: 0xB898D, size: 0x8, addend: 0x0, symName: '+[Intercom loginUserWithUserAttributes:success:failure:]', symObjAddr: 0x1DBF, symBinAddr: 0x4A87, symSize: 0x2E5 }
-  - { offset: 0xB8CB7, size: 0x8, addend: 0x0, symName: '___56+[Intercom loginUserWithUserAttributes:success:failure:]_block_invoke_2', symObjAddr: 0x213A, symBinAddr: 0x4DD6, symSize: 0x4A }
-  - { offset: 0xB8D1E, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b48b, symObjAddr: 0x20A4, symBinAddr: 0x4D6C, symSize: 0x42 }
-  - { offset: 0xB8D53, size: 0x8, addend: 0x0, symName: '___56+[Intercom loginUserWithUserAttributes:success:failure:]_block_invoke.561', symObjAddr: 0x2112, symBinAddr: 0x4DAE, symSize: 0x28 }
-  - { offset: 0xB8DBA, size: 0x8, addend: 0x0, symName: '___56+[Intercom loginUserWithUserAttributes:success:failure:]_block_invoke_3', symObjAddr: 0x2184, symBinAddr: 0x4E20, symSize: 0x4A }
-  - { offset: 0xB8E92, size: 0x8, addend: 0x0, symName: '+[Intercom logout]', symObjAddr: 0x21CE, symBinAddr: 0x4E6A, symSize: 0x6B }
-  - { offset: 0xB8F0A, size: 0x8, addend: 0x0, symName: '___18+[Intercom logout]_block_invoke_2', symObjAddr: 0x2239, symBinAddr: 0x4ED5, symSize: 0x19 }
-  - { offset: 0xB8F3F, size: 0x8, addend: 0x0, symName: '+[Intercom isUserLoggedIn]', symObjAddr: 0x2252, symBinAddr: 0x4EEE, symSize: 0x19 }
-  - { offset: 0xB8F7F, size: 0x8, addend: 0x0, symName: '+[Intercom fetchLoggedInUserAttributes]', symObjAddr: 0x226B, symBinAddr: 0x4F07, symSize: 0x19 }
-  - { offset: 0xB905A, size: 0x8, addend: 0x0, symName: '+[Intercom updateUser:success:failure:]', symObjAddr: 0x2284, symBinAddr: 0x4F20, symSize: 0x339 }
-  - { offset: 0xB9313, size: 0x8, addend: 0x0, symName: '___39+[Intercom updateUser:success:failure:]_block_invoke', symObjAddr: 0x25BD, symBinAddr: 0x5259, symSize: 0x4A }
-  - { offset: 0xB937D, size: 0x8, addend: 0x0, symName: '___39+[Intercom updateUser:success:failure:]_block_invoke_5', symObjAddr: 0x2679, symBinAddr: 0x5315, symSize: 0x4A }
-  - { offset: 0xB93E7, size: 0x8, addend: 0x0, symName: '___39+[Intercom updateUser:success:failure:]_block_invoke_2', symObjAddr: 0x2607, symBinAddr: 0x52A3, symSize: 0x4A }
-  - { offset: 0xB9451, size: 0x8, addend: 0x0, symName: '___39+[Intercom updateUser:success:failure:]_block_invoke_4', symObjAddr: 0x2651, symBinAddr: 0x52ED, symSize: 0x28 }
-  - { offset: 0xB94BD, size: 0x8, addend: 0x0, symName: '___39+[Intercom updateUser:success:failure:]_block_invoke_6', symObjAddr: 0x26C3, symBinAddr: 0x535F, symSize: 0x4A }
-  - { offset: 0xB95A6, size: 0x8, addend: 0x0, symName: '+[Intercom logEventWithName:]', symObjAddr: 0x270D, symBinAddr: 0x53A9, symSize: 0xF9 }
-  - { offset: 0xB96BB, size: 0x8, addend: 0x0, symName: '___29+[Intercom logEventWithName:]_block_invoke_2', symObjAddr: 0x2806, symBinAddr: 0x54A2, symSize: 0x22 }
-  - { offset: 0xB9818, size: 0x8, addend: 0x0, symName: '+[Intercom logEventWithName:metaData:]', symObjAddr: 0x2828, symBinAddr: 0x54C4, symSize: 0x1FD }
-  - { offset: 0xB9A15, size: 0x8, addend: 0x0, symName: '___38+[Intercom logEventWithName:metaData:]_block_invoke_2', symObjAddr: 0x2A25, symBinAddr: 0x56C1, symSize: 0x24 }
-  - { offset: 0xB9A70, size: 0x8, addend: 0x0, symName: '___38+[Intercom logEventWithName:metaData:]_block_invoke_4', symObjAddr: 0x2A49, symBinAddr: 0x56E5, symSize: 0x22 }
-  - { offset: 0xB9AC1, size: 0x8, addend: 0x0, symName: '+[Intercom setDeviceToken:failure:]', symObjAddr: 0x2A6B, symBinAddr: 0x5707, symSize: 0x89 }
-  - { offset: 0xB9B92, size: 0x8, addend: 0x0, symName: '+[Intercom isIntercomPushNotification:]', symObjAddr: 0x2AF4, symBinAddr: 0x5790, symSize: 0x66 }
-  - { offset: 0xB9CAE, size: 0x8, addend: 0x0, symName: '+[Intercom handleIntercomPushNotification:]', symObjAddr: 0x2B5A, symBinAddr: 0x57F6, symSize: 0xF4 }
-  - { offset: 0xB9DB2, size: 0x8, addend: 0x0, symName: '___43+[Intercom handleIntercomPushNotification:]_block_invoke_2', symObjAddr: 0x2C4E, symBinAddr: 0x58EA, symSize: 0x20 }
-  - { offset: 0xB9ED5, size: 0x8, addend: 0x0, symName: '+[Intercom handleIntercomRichPushNotificationContent:withContentHandler:]', symObjAddr: 0x2C6E, symBinAddr: 0x590A, symSize: 0x16B }
-  - { offset: 0xBA076, size: 0x8, addend: 0x0, symName: '___73+[Intercom handleIntercomRichPushNotificationContent:withContentHandler:]_block_invoke_2', symObjAddr: 0x2DD9, symBinAddr: 0x5A75, symSize: 0x24 }
-  - { offset: 0xBA0D1, size: 0x8, addend: 0x0, symName: '+[Intercom enableLogging]', symObjAddr: 0x2DFD, symBinAddr: 0x5A99, symSize: 0x3D }
-  - { offset: 0xBA18A, size: 0x8, addend: 0x0, symName: '+[Intercom setNeedsStatusBarAppearanceUpdate]', symObjAddr: 0x2E3A, symBinAddr: 0x5AD6, symSize: 0x6B }
-  - { offset: 0xBA202, size: 0x8, addend: 0x0, symName: '___45+[Intercom setNeedsStatusBarAppearanceUpdate]_block_invoke_2', symObjAddr: 0x2EA5, symBinAddr: 0x5B41, symSize: 0x19 }
-  - { offset: 0xBA2C1, size: 0x8, addend: 0x0, symName: '+[Intercom setThemeOverride:]', symObjAddr: 0x2EBE, symBinAddr: 0x5B5A, symSize: 0x85 }
-  - { offset: 0xBA346, size: 0x8, addend: 0x0, symName: '___29+[Intercom setThemeOverride:]_block_invoke_2', symObjAddr: 0x2F43, symBinAddr: 0x5BDF, symSize: 0x20 }
-  - { offset: 0xBA390, size: 0x8, addend: 0x0, symName: '+[Intercom validateAuthTokens:]', symObjAddr: 0x2F63, symBinAddr: 0x5BFF, symSize: 0x8E }
-  - { offset: 0xBA43F, size: 0x8, addend: 0x0, symName: '+[Intercom dictionaryByRemovingInvalidEntries:]', symObjAddr: 0x2FF1, symBinAddr: 0x5C8D, symSize: 0xD8 }
-  - { offset: 0xBA530, size: 0x8, addend: 0x0, symName: '___47+[Intercom dictionaryByRemovingInvalidEntries:]_block_invoke', symObjAddr: 0x30C9, symBinAddr: 0x5D65, symSize: 0x9D }
-  - { offset: 0xBA679, size: 0x8, addend: 0x0, symName: '+[Intercom validateParameterIsStringAndNotEmpty:]', symObjAddr: 0x3166, symBinAddr: 0x5E02, symSize: 0xBA }
-  - { offset: 0xBA733, size: 0x8, addend: 0x0, symName: '+[Intercom validateParameterIsDictionaryAndNotEmpty:]', symObjAddr: 0x3220, symBinAddr: 0x5EBC, symSize: 0x5B }
-  - { offset: 0xBA7B5, size: 0x8, addend: 0x0, symName: '+[Intercom validateApiKey:]', symObjAddr: 0x327B, symBinAddr: 0x5F17, symSize: 0x78 }
-  - { offset: 0xBA84B, size: 0x8, addend: 0x0, symName: '+[Intercom setCordovaVersion:]', symObjAddr: 0x32F3, symBinAddr: 0x5F8F, symSize: 0x1B }
-  - { offset: 0xBA8A5, size: 0x8, addend: 0x0, symName: '+[Intercom setReactNativeVersion:]', symObjAddr: 0x330E, symBinAddr: 0x5FAA, symSize: 0x1E }
-  - { offset: 0xBA8FF, size: 0x8, addend: 0x0, symName: '+[Intercom setFlutterVersion:]', symObjAddr: 0x332C, symBinAddr: 0x5FC8, symSize: 0x1E }
-  - { offset: 0xBA959, size: 0x8, addend: 0x0, symName: '+[Intercom addSDKApiMetricEventObject:]', symObjAddr: 0x334A, symBinAddr: 0x5FE6, symSize: 0x14 }
-  - { offset: 0xBA9BD, size: 0x8, addend: 0x0, symName: '+[Intercom addSDKApiMetricEventObject:metaData:]', symObjAddr: 0x335E, symBinAddr: 0x5FFA, symSize: 0x104 }
-  - { offset: 0xBAAD9, size: 0x8, addend: 0x0, symName: '___48+[Intercom addSDKApiMetricEventObject:metaData:]_block_invoke', symObjAddr: 0x3462, symBinAddr: 0x60FE, symSize: 0x9C }
-  - { offset: 0xBAB94, size: 0x8, addend: 0x0, symName: '___48+[Intercom addSDKApiMetricEventObject:metaData:]_block_invoke_2', symObjAddr: 0x34FE, symBinAddr: 0x619A, symSize: 0x9C }
-  - { offset: 0xBBCE7, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE14presentContentyyAbAE0C0OFZ', symObjAddr: 0x0, symBinAddr: 0x6240, symSize: 0x50 }
-  - { offset: 0xBBDF6, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE21loginUnidentifiedUser10completionyys6ResultOyyts5Error_pGcSg_tFZ', symObjAddr: 0x50, symBinAddr: 0x6290, symSize: 0x180 }
-  - { offset: 0xBBE6C, size: 0x8, addend: 0x0, symName: '_$sIeg_IeyB_TR', symObjAddr: 0x1D0, symBinAddr: 0x6410, symSize: 0x30 }
-  - { offset: 0xBBE84, size: 0x8, addend: 0x0, symName: '_$ss5Error_pIegg_So7NSErrorCIeyBy_TR', symObjAddr: 0x200, symBinAddr: 0x6440, symSize: 0x50 }
-  - { offset: 0xBBE9C, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE9loginUser4with10completionySo17ICMUserAttributesC_ys6ResultOyyts5Error_pGcSgtFZ', symObjAddr: 0x250, symBinAddr: 0x6490, symSize: 0x190 }
-  - { offset: 0xBBF22, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE10updateUser4with10completionySo17ICMUserAttributesC_ys6ResultOyyts5Error_pGcSgtFZ', symObjAddr: 0x3E0, symBinAddr: 0x6620, symSize: 0x190 }
-  - { offset: 0xBBFA8, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE13setAuthTokens_10completionySDyS2SG_ys6ResultOyyts5Error_pGcSgtFZ', symObjAddr: 0x570, symBinAddr: 0x67B0, symSize: 0x1A0 }
-  - { offset: 0xBC04C, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE26fetchHelpCenterCollections10completionyys6ResultOySaySo07ICMHelpD10CollectionCGSC0hD9DataErrorLeVGc_tFZ', symObjAddr: 0x710, symBinAddr: 0x6950, symSize: 0x120 }
-  - { offset: 0xBC0C5, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE25fetchHelpCenterCollection_10completionySS_ys6ResultOySo07ICMHelpdE7ContentCSC0hD9DataErrorLeVGctFZ', symObjAddr: 0x850, symBinAddr: 0x6A90, symSize: 0x140 }
-  - { offset: 0xBC130, size: 0x8, addend: 0x0, symName: '_$sSo30ICMHelpCenterCollectionContentCSgs5Error_pSgIeggg_ACSo7NSErrorCSgIeyByy_TR', symObjAddr: 0x990, symBinAddr: 0x6BD0, symSize: 0x80 }
-  - { offset: 0xBC166, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE16searchHelpCenter_10completionySS_ys6ResultOySaySo07ICMHelpd13ArticleSearchF0CGSC0gD9DataErrorLeVGctFZ', symObjAddr: 0xA10, symBinAddr: 0x6C50, symSize: 0x140 }
-  - { offset: 0xBC1DC, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE17getResultCallback33_A0CA738D2728B62EAC2FEB756751BB9CLL10completionyxSg_s5Error_pSgtcys0C0OyxSC017ICMHelpCenterDataM0LeVGc_tlFZyAF_AHtcfU_So0nO17CollectionContentC_Tg5', symObjAddr: 0xC00, symBinAddr: 0x6E40, symSize: 0x140 }
-  - { offset: 0xBC28A, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tgq5', symObjAddr: 0x11B0, symBinAddr: 0x73F0, symSize: 0x60 }
-  - { offset: 0xBC2AD, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSS_Tgq5', symObjAddr: 0x1210, symBinAddr: 0x7450, symSize: 0x140 }
-  - { offset: 0xBC341, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE03getA7Content33_A0CA738D2728B62EAC2FEB756751BB9CLL4fromSo0aC0CAbAE0C0O_tFZTf4nd_n', symObjAddr: 0x1350, symBinAddr: 0x7590, symSize: 0x160 }
-  - { offset: 0xBC422, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x14F0, symBinAddr: 0x7730, symSize: 0x20 }
-  - { offset: 0xBC436, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x1510, symBinAddr: 0x7750, symSize: 0x10 }
-  - { offset: 0xBC44A, size: 0x8, addend: 0x0, symName: '_$ss6ResultOyyts5Error_pGIegg_SgWOy', symObjAddr: 0x1520, symBinAddr: 0x7760, symSize: 0x20 }
-  - { offset: 0xBC469, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE17getResultCallback33_A0CA738D2728B62EAC2FEB756751BB9CLL10completionyxSg_s5Error_pSgtcys0C0OyxSC017ICMHelpCenterDataM0LeVGc_tlFZyAF_AHtcfU_SaySo0nO10CollectionCG_TG5TA', symObjAddr: 0x16C0, symBinAddr: 0x78A0, symSize: 0x20 }
-  - { offset: 0xBC49D, size: 0x8, addend: 0x0, symName: '_$sSaySo23ICMHelpCenterCollectionCGSgs5Error_pSgIegng_AdFIeggg_TRTA', symObjAddr: 0x16E0, symBinAddr: 0x78C0, symSize: 0x30 }
-  - { offset: 0xBC4D1, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE17getResultCallback33_A0CA738D2728B62EAC2FEB756751BB9CLL10completionyxSg_s5Error_pSgtcys0C0OyxSC017ICMHelpCenterDataM0LeVGc_tlFZyAF_AHtcfU_So0nO17CollectionContentC_TG5TA', symObjAddr: 0x1720, symBinAddr: 0x78F0, symSize: 0x20 }
-  - { offset: 0xBC505, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE17getResultCallback33_A0CA738D2728B62EAC2FEB756751BB9CLL10completionyxSg_s5Error_pSgtcys0C0OyxSC017ICMHelpCenterDataM0LeVGc_tlFZyAF_AHtcfU_SaySo0no13ArticleSearchC0CG_TG5TA', symObjAddr: 0x1780, symBinAddr: 0x7940, symSize: 0x20 }
-  - { offset: 0xBC52E, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOWOy', symObjAddr: 0x17B0, symBinAddr: 0x7970, symSize: 0x30 }
-  - { offset: 0xBC542, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwxx', symObjAddr: 0x17E0, symBinAddr: 0x79A0, symSize: 0x20 }
-  - { offset: 0xBC556, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOWOe', symObjAddr: 0x1800, symBinAddr: 0x79C0, symSize: 0x30 }
-  - { offset: 0xBC56A, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwca', symObjAddr: 0x1880, symBinAddr: 0x7A30, symSize: 0x50 }
-  - { offset: 0xBC57E, size: 0x8, addend: 0x0, symName: ___swift_memcpy17_8, symObjAddr: 0x18D0, symBinAddr: 0x7A80, symSize: 0x20 }
-  - { offset: 0xBC592, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwta', symObjAddr: 0x18F0, symBinAddr: 0x7AA0, symSize: 0x40 }
-  - { offset: 0xBC5A6, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwet', symObjAddr: 0x1930, symBinAddr: 0x7AE0, symSize: 0x50 }
-  - { offset: 0xBC5BA, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwst', symObjAddr: 0x1980, symBinAddr: 0x7B30, symSize: 0x50 }
-  - { offset: 0xBC5CE, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwug', symObjAddr: 0x19D0, symBinAddr: 0x7B80, symSize: 0x10 }
-  - { offset: 0xBC5E2, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwup', symObjAddr: 0x19E0, symBinAddr: 0x7B90, symSize: 0x10 }
-  - { offset: 0xBC5F6, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwui', symObjAddr: 0x19F0, symBinAddr: 0x7BA0, symSize: 0x10 }
-  - { offset: 0xBC60A, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOMa', symObjAddr: 0x1A00, symBinAddr: 0x7BB0, symSize: 0x10 }
-  - { offset: 0xBC61E, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVSHSCSQWb', symObjAddr: 0x1A30, symBinAddr: 0x7BE0, symSize: 0x20 }
-  - { offset: 0xBC632, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation021_ObjectiveCBridgeableD0SCs0D0PWb', symObjAddr: 0x1A50, symBinAddr: 0x7C00, symSize: 0x20 }
-  - { offset: 0xBC646, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSCAC06CustomH0PWb', symObjAddr: 0x1AC0, symBinAddr: 0x7C50, symSize: 0x20 }
-  - { offset: 0xBC65A, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSCAC021_ObjectiveCBridgeableD0PWb', symObjAddr: 0x1AE0, symBinAddr: 0x7C70, symSize: 0x20 }
-  - { offset: 0xBC66E, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSCSHWb', symObjAddr: 0x1B00, symBinAddr: 0x7C90, symSize: 0x20 }
-  - { offset: 0xBC682, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSC4CodeAcDP_AC01_dI8ProtocolPWT', symObjAddr: 0x1B20, symBinAddr: 0x7CB0, symSize: 0x20 }
-  - { offset: 0xBC696, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSC4CodeAcDP_SYWT', symObjAddr: 0x1B90, symBinAddr: 0x7D20, symSize: 0x20 }
-  - { offset: 0xBC6AA, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSC4CodeAcDP_8RawValueSYs17FixedWidthIntegerPWT', symObjAddr: 0x1BB0, symBinAddr: 0x7D40, symSize: 0x10 }
-  - { offset: 0xBC6BE, size: 0x8, addend: 0x0, symName: '_$sS2is17FixedWidthIntegersWl', symObjAddr: 0x1BC0, symBinAddr: 0x7D50, symSize: 0x30 }
-  - { offset: 0xBC6D2, size: 0x8, addend: 0x0, symName: '_$sSo22ICMHelpCenterDataErrorV10Foundation01_D12CodeProtocolSCSQWb', symObjAddr: 0x1BF0, symBinAddr: 0x7D80, symSize: 0x20 }
-  - { offset: 0xBC6E6, size: 0x8, addend: 0x0, symName: '_$sSo22ICMHelpCenterDataErrorV10Foundation01_D12CodeProtocolSC01_D4TypeAcDP_AC21_BridgedStoredNSErrorPWT', symObjAddr: 0x1C10, symBinAddr: 0x7DA0, symSize: 0x20 }
-  - { offset: 0xBC71B, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSS_ypTgmq5Tf4g_n', symObjAddr: 0x1C30, symBinAddr: 0x7DC0, symSize: 0xE0 }
-  - { offset: 0xBC799, size: 0x8, addend: 0x0, symName: '_$ss6ResultOySaySo026ICMHelpCenterArticleSearchA0CGSC0bC9DataErrorLeVGWOe', symObjAddr: 0x1D10, symBinAddr: 0x7EA0, symSize: 0x20 }
-  - { offset: 0xBC7AD, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x1D30, symBinAddr: 0x7EC0, symSize: 0x40 }
-  - { offset: 0xBC7C1, size: 0x8, addend: 0x0, symName: '_$sSS_yptWOc', symObjAddr: 0x1D70, symBinAddr: 0x7F00, symSize: 0x40 }
-  - { offset: 0xBC7D5, size: 0x8, addend: 0x0, symName: '_$sypWOb', symObjAddr: 0x1DB0, symBinAddr: 0x7F40, symSize: 0x20 }
-  - { offset: 0xBC938, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVs0D0SCsACP9_userInfoyXlSgvgTW', symObjAddr: 0xF20, symBinAddr: 0x7160, symSize: 0x10 }
-  - { offset: 0xBC97B, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVSHSCSH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x10E0, symBinAddr: 0x7320, symSize: 0x50 }
-  - { offset: 0xBC9C7, size: 0x8, addend: 0x0, symName: '_$sSo22ICMHelpCenterDataErrorVSQSCSQ2eeoiySbx_xtFZTW', symObjAddr: 0x11A0, symBinAddr: 0x73E0, symSize: 0x10 }
-  - { offset: 0xBCB3D, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVs0D0SCsACP7_domainSSvgTW', symObjAddr: 0xEA0, symBinAddr: 0x70E0, symSize: 0x40 }
-  - { offset: 0xBCB59, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVs0D0SCsACP5_codeSivgTW', symObjAddr: 0xEE0, symBinAddr: 0x7120, symSize: 0x40 }
-  - { offset: 0xBCB75, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVs0D0SCsACP19_getEmbeddedNSErroryXlSgyFTW', symObjAddr: 0xF30, symBinAddr: 0x7170, symSize: 0x40 }
-  - { offset: 0xBCB91, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation13CustomNSErrorSCAcDP9errorCodeSivgTW', symObjAddr: 0xF90, symBinAddr: 0x71D0, symSize: 0x40 }
-  - { offset: 0xBCBAD, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation13CustomNSErrorSCAcDP13errorUserInfoSDySSypGvgTW', symObjAddr: 0xFD0, symBinAddr: 0x7210, symSize: 0x40 }
-  - { offset: 0xBCBC9, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation021_ObjectiveCBridgeableD0SCAcDP15_bridgedNSErrorxSgSo0I0Ch_tcfCTW', symObjAddr: 0x1010, symBinAddr: 0x7250, symSize: 0x60 }
-  - { offset: 0xBCBF4, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVSHSCSH9hashValueSivgTW', symObjAddr: 0x1070, symBinAddr: 0x72B0, symSize: 0x30 }
-  - { offset: 0xBCC25, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVSHSCSH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x10A0, symBinAddr: 0x72E0, symSize: 0x40 }
-  - { offset: 0xBCC41, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVSQSCSQ2eeoiySbx_xtFZTW', symObjAddr: 0x1150, symBinAddr: 0x7390, symSize: 0x50 }
-  - { offset: 0xBCC83, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSCAcDP03_nsD0So0H0CvgTW', symObjAddr: 0xE80, symBinAddr: 0x70C0, symSize: 0x10 }
-  - { offset: 0xBCCB2, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSCAcDP03_nsD0xSo0H0C_tcfCTW', symObjAddr: 0xE90, symBinAddr: 0x70D0, symSize: 0x10 }
-  - { offset: 0xBCCD3, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation13CustomNSErrorSCAcDP11errorDomainSSvgZTW', symObjAddr: 0xF70, symBinAddr: 0x71B0, symSize: 0x20 }
-  - { offset: 0xBCD02, size: 0x8, addend: 0x0, symName: '_$sSo22ICMHelpCenterDataErrorVSYSCSY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x1130, symBinAddr: 0x7370, symSize: 0x10 }
-  - { offset: 0xBCD16, size: 0x8, addend: 0x0, symName: '_$sSo22ICMHelpCenterDataErrorVSYSCSY8rawValue03RawF0QzvgTW', symObjAddr: 0x1140, symBinAddr: 0x7380, symSize: 0x10 }
-  - { offset: 0xBCEA0, size: 0x8, addend: 0x0, symName: '_$s8Intercom19ResourceBundleClass33_6DD8664164A15D9553F36F93B771C435LLCfD', symObjAddr: 0x0, symBinAddr: 0x8180, symSize: 0x20 }
-  - { offset: 0xBCEE2, size: 0x8, addend: 0x0, symName: '_$s8Intercom19ResourceBundleClass33_6DD8664164A15D9553F36F93B771C435LLCMa', symObjAddr: 0x20, symBinAddr: 0x81A0, symSize: 0x14 }
-  - { offset: 0xBCEFD, size: 0x8, addend: 0x0, symName: '_$s8Intercom19ResourceBundleClass33_6DD8664164A15D9553F36F93B771C435LLCfD', symObjAddr: 0x0, symBinAddr: 0x8180, symSize: 0x20 }
+  - { offset: 0xF4955, size: 0x8, addend: 0x0, symName: '-[Article type]', symObjAddr: 0x0, symBinAddr: 0x2330, symSize: 0x8 }
+  - { offset: 0xF4B0D, size: 0x8, addend: 0x0, symName: '-[Article type]', symObjAddr: 0x0, symBinAddr: 0x2330, symSize: 0x8 }
+  - { offset: 0xF4B40, size: 0x8, addend: 0x0, symName: '-[Article contentId]', symObjAddr: 0x8, symBinAddr: 0x2338, symSize: 0x12 }
+  - { offset: 0xF4B8A, size: 0x8, addend: 0x0, symName: '-[Article articleId]', symObjAddr: 0x1A, symBinAddr: 0x234A, symSize: 0x11 }
+  - { offset: 0xF4BBF, size: 0x8, addend: 0x0, symName: '-[Article setArticleId:]', symObjAddr: 0x2B, symBinAddr: 0x235B, symSize: 0x11 }
+  - { offset: 0xF4BFE, size: 0x8, addend: 0x0, symName: '-[Article .cxx_destruct]', symObjAddr: 0x3C, symBinAddr: 0x236C, symSize: 0x13 }
+  - { offset: 0xF4C31, size: 0x8, addend: 0x0, symName: '-[Carousel type]', symObjAddr: 0x4F, symBinAddr: 0x237F, symSize: 0xB }
+  - { offset: 0xF4C64, size: 0x8, addend: 0x0, symName: '-[Carousel contentId]', symObjAddr: 0x5A, symBinAddr: 0x238A, symSize: 0x12 }
+  - { offset: 0xF4CAE, size: 0x8, addend: 0x0, symName: '-[Carousel carouselId]', symObjAddr: 0x6C, symBinAddr: 0x239C, symSize: 0x11 }
+  - { offset: 0xF4CE3, size: 0x8, addend: 0x0, symName: '-[Carousel setCarouselId:]', symObjAddr: 0x7D, symBinAddr: 0x23AD, symSize: 0x11 }
+  - { offset: 0xF4D22, size: 0x8, addend: 0x0, symName: '-[Carousel .cxx_destruct]', symObjAddr: 0x8E, symBinAddr: 0x23BE, symSize: 0x13 }
+  - { offset: 0xF4D55, size: 0x8, addend: 0x0, symName: '-[Survey type]', symObjAddr: 0xA1, symBinAddr: 0x23D1, symSize: 0xB }
+  - { offset: 0xF4D88, size: 0x8, addend: 0x0, symName: '-[Survey contentId]', symObjAddr: 0xAC, symBinAddr: 0x23DC, symSize: 0x12 }
+  - { offset: 0xF4DD2, size: 0x8, addend: 0x0, symName: '-[Survey surveyId]', symObjAddr: 0xBE, symBinAddr: 0x23EE, symSize: 0x11 }
+  - { offset: 0xF4E07, size: 0x8, addend: 0x0, symName: '-[Survey setSurveyId:]', symObjAddr: 0xCF, symBinAddr: 0x23FF, symSize: 0x11 }
+  - { offset: 0xF4E46, size: 0x8, addend: 0x0, symName: '-[Survey .cxx_destruct]', symObjAddr: 0xE0, symBinAddr: 0x2410, symSize: 0x13 }
+  - { offset: 0xF4E79, size: 0x8, addend: 0x0, symName: '-[HelpCenterCollections type]', symObjAddr: 0xF3, symBinAddr: 0x2423, symSize: 0xB }
+  - { offset: 0xF4EAC, size: 0x8, addend: 0x0, symName: '-[HelpCenterCollections contentId]', symObjAddr: 0xFE, symBinAddr: 0x242E, symSize: 0x12 }
+  - { offset: 0xF4EF6, size: 0x8, addend: 0x0, symName: '-[HelpCenterCollections collectionIds]', symObjAddr: 0x110, symBinAddr: 0x2440, symSize: 0x11 }
+  - { offset: 0xF4F2B, size: 0x8, addend: 0x0, symName: '-[HelpCenterCollections setCollectionIds:]', symObjAddr: 0x121, symBinAddr: 0x2451, symSize: 0x11 }
+  - { offset: 0xF4F6A, size: 0x8, addend: 0x0, symName: '-[HelpCenterCollections .cxx_destruct]', symObjAddr: 0x132, symBinAddr: 0x2462, symSize: 0x13 }
+  - { offset: 0xF4F9D, size: 0x8, addend: 0x0, symName: '-[Conversation type]', symObjAddr: 0x145, symBinAddr: 0x2475, symSize: 0xB }
+  - { offset: 0xF4FD0, size: 0x8, addend: 0x0, symName: '-[Conversation contentId]', symObjAddr: 0x150, symBinAddr: 0x2480, symSize: 0x12 }
+  - { offset: 0xF501A, size: 0x8, addend: 0x0, symName: '-[Conversation conversationId]', symObjAddr: 0x162, symBinAddr: 0x2492, symSize: 0x11 }
+  - { offset: 0xF504F, size: 0x8, addend: 0x0, symName: '-[Conversation setConversationId:]', symObjAddr: 0x173, symBinAddr: 0x24A3, symSize: 0x11 }
+  - { offset: 0xF508E, size: 0x8, addend: 0x0, symName: '-[Conversation .cxx_destruct]', symObjAddr: 0x184, symBinAddr: 0x24B4, symSize: 0x13 }
+  - { offset: 0xF50C1, size: 0x8, addend: 0x0, symName: '-[TicketContent type]', symObjAddr: 0x197, symBinAddr: 0x24C7, symSize: 0xB }
+  - { offset: 0xF50F4, size: 0x8, addend: 0x0, symName: '-[TicketContent contentId]', symObjAddr: 0x1A2, symBinAddr: 0x24D2, symSize: 0x12 }
+  - { offset: 0xF513E, size: 0x8, addend: 0x0, symName: '-[TicketContent ticketId]', symObjAddr: 0x1B4, symBinAddr: 0x24E4, symSize: 0x11 }
+  - { offset: 0xF5173, size: 0x8, addend: 0x0, symName: '-[TicketContent setTicketId:]', symObjAddr: 0x1C5, symBinAddr: 0x24F5, symSize: 0x11 }
+  - { offset: 0xF51B2, size: 0x8, addend: 0x0, symName: '-[TicketContent .cxx_destruct]', symObjAddr: 0x1D6, symBinAddr: 0x2506, symSize: 0x13 }
+  - { offset: 0xF51E5, size: 0x8, addend: 0x0, symName: '+[IntercomContent articleWithId:]', symObjAddr: 0x1E9, symBinAddr: 0x2519, symSize: 0x4D }
+  - { offset: 0xF5275, size: 0x8, addend: 0x0, symName: '+[IntercomContent carouselWithId:]', symObjAddr: 0x236, symBinAddr: 0x2566, symSize: 0x4D }
+  - { offset: 0xF5305, size: 0x8, addend: 0x0, symName: '+[IntercomContent surveyWithId:]', symObjAddr: 0x283, symBinAddr: 0x25B3, symSize: 0x4D }
+  - { offset: 0xF5395, size: 0x8, addend: 0x0, symName: '+[IntercomContent helpCenterCollectionsWithIds:]', symObjAddr: 0x2D0, symBinAddr: 0x2600, symSize: 0x4D }
+  - { offset: 0xF5425, size: 0x8, addend: 0x0, symName: '+[IntercomContent conversationWithId:]', symObjAddr: 0x31D, symBinAddr: 0x264D, symSize: 0x4D }
+  - { offset: 0xF54B5, size: 0x8, addend: 0x0, symName: '+[IntercomContent ticketWithId:]', symObjAddr: 0x36A, symBinAddr: 0x269A, symSize: 0x4D }
+  - { offset: 0xF5545, size: 0x8, addend: 0x0, symName: '-[IntercomContent type]', symObjAddr: 0x3B7, symBinAddr: 0x26E7, symSize: 0xA }
+  - { offset: 0xF557A, size: 0x8, addend: 0x0, symName: '-[IntercomContent setType:]', symObjAddr: 0x3C1, symBinAddr: 0x26F1, symSize: 0xA }
+  - { offset: 0xF55B7, size: 0x8, addend: 0x0, symName: '-[IntercomContent contentId]', symObjAddr: 0x3CB, symBinAddr: 0x26FB, symSize: 0xA }
+  - { offset: 0xF55EC, size: 0x8, addend: 0x0, symName: '-[IntercomContent setContentId:]', symObjAddr: 0x3D5, symBinAddr: 0x2705, symSize: 0x11 }
+  - { offset: 0xF562D, size: 0x8, addend: 0x0, symName: '-[IntercomContent .cxx_destruct]', symObjAddr: 0x3E6, symBinAddr: 0x2716, symSize: 0x10 }
+  - { offset: 0xF56F5, size: 0x8, addend: 0x0, symName: '+[Intercom setApiKey:forAppId:]', symObjAddr: 0x0, symBinAddr: 0x2728, symSize: 0x151 }
+  - { offset: 0xF5839, size: 0x8, addend: 0x0, symName: '+[Intercom setApiKey:forAppId:]', symObjAddr: 0x0, symBinAddr: 0x2728, symSize: 0x151 }
+  - { offset: 0xF5A3D, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s, symObjAddr: 0x176, symBinAddr: 0x287A, symSize: 0x25 }
+  - { offset: 0xF5A74, size: 0x8, addend: 0x0, symName: '___31+[Intercom setApiKey:forAppId:]_block_invoke.452', symObjAddr: 0x19B, symBinAddr: 0x289F, symSize: 0x24 }
+  - { offset: 0xF5ACB, size: 0x8, addend: 0x0, symName: '+[Intercom setUserHash:]', symObjAddr: 0x1BF, symBinAddr: 0x28C3, symSize: 0x116 }
+  - { offset: 0xF5BC5, size: 0x8, addend: 0x0, symName: '___24+[Intercom setUserHash:]_block_invoke', symObjAddr: 0x2D5, symBinAddr: 0x29D9, symSize: 0x9D }
+  - { offset: 0xF5C34, size: 0x8, addend: 0x0, symName: '___24+[Intercom setUserHash:]_block_invoke.464', symObjAddr: 0x390, symBinAddr: 0x2A78, symSize: 0x9D }
+  - { offset: 0xF5CA3, size: 0x8, addend: 0x0, symName: '+[Intercom setUserJwt:]', symObjAddr: 0x42D, symBinAddr: 0x2B15, symSize: 0x116 }
+  - { offset: 0xF5D9D, size: 0x8, addend: 0x0, symName: '___23+[Intercom setUserJwt:]_block_invoke', symObjAddr: 0x543, symBinAddr: 0x2C2B, symSize: 0x9D }
+  - { offset: 0xF5E0C, size: 0x8, addend: 0x0, symName: '___23+[Intercom setUserJwt:]_block_invoke_2', symObjAddr: 0x5E0, symBinAddr: 0x2CC8, symSize: 0x9D }
+  - { offset: 0xF5E7B, size: 0x8, addend: 0x0, symName: '+[Intercom setAuthTokens:success:failure:]', symObjAddr: 0x67D, symBinAddr: 0x2D65, symSize: 0x179 }
+  - { offset: 0xF6007, size: 0x8, addend: 0x0, symName: '___42+[Intercom setAuthTokens:success:failure:]_block_invoke', symObjAddr: 0x7F6, symBinAddr: 0x2EDE, symSize: 0x4A }
+  - { offset: 0xF606E, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b, symObjAddr: 0x840, symBinAddr: 0x2F28, symSize: 0x17 }
+  - { offset: 0xF6097, size: 0x8, addend: 0x0, symName: '___42+[Intercom setAuthTokens:success:failure:]_block_invoke.479', symObjAddr: 0x857, symBinAddr: 0x2F3F, symSize: 0x4A }
+  - { offset: 0xF618B, size: 0x8, addend: 0x0, symName: '+[Intercom presentIntercom]', symObjAddr: 0x8A1, symBinAddr: 0x2F89, symSize: 0x6B }
+  - { offset: 0xF6201, size: 0x8, addend: 0x0, symName: '___27+[Intercom presentIntercom]_block_invoke_2', symObjAddr: 0x90C, symBinAddr: 0x2FF4, symSize: 0x19 }
+  - { offset: 0xF6234, size: 0x8, addend: 0x0, symName: '+[Intercom presentIntercom:]', symObjAddr: 0x925, symBinAddr: 0x300D, symSize: 0xA0 }
+  - { offset: 0xF62AC, size: 0x8, addend: 0x0, symName: '___28+[Intercom presentIntercom:]_block_invoke', symObjAddr: 0x9C5, symBinAddr: 0x30AD, symSize: 0xD9 }
+  - { offset: 0xF6346, size: 0x8, addend: 0x0, symName: '___28+[Intercom presentIntercom:]_block_invoke_2', symObjAddr: 0xA9E, symBinAddr: 0x3186, symSize: 0xD9 }
+  - { offset: 0xF6456, size: 0x8, addend: 0x0, symName: '+[Intercom presentMessageComposer:]', symObjAddr: 0xB77, symBinAddr: 0x325F, symSize: 0xC9 }
+  - { offset: 0xF6535, size: 0x8, addend: 0x0, symName: '___35+[Intercom presentMessageComposer:]_block_invoke_2', symObjAddr: 0xC40, symBinAddr: 0x3328, symSize: 0x20 }
+  - { offset: 0xF657C, size: 0x8, addend: 0x0, symName: '+[Intercom presentContent:]', symObjAddr: 0xC60, symBinAddr: 0x3348, symSize: 0xE3 }
+  - { offset: 0xF6658, size: 0x8, addend: 0x0, symName: '___27+[Intercom presentContent:]_block_invoke', symObjAddr: 0xD43, symBinAddr: 0x342B, symSize: 0x3AD }
+  - { offset: 0xF685E, size: 0x8, addend: 0x0, symName: '___27+[Intercom presentContent:]_block_invoke_2', symObjAddr: 0x10F0, symBinAddr: 0x37D8, symSize: 0x3AC }
+  - { offset: 0xF6B50, size: 0x8, addend: 0x0, symName: '+[Intercom fetchHelpCenterCollectionsWithCompletion:]', symObjAddr: 0x149C, symBinAddr: 0x3B84, symSize: 0xC9 }
+  - { offset: 0xF6C2F, size: 0x8, addend: 0x0, symName: '___53+[Intercom fetchHelpCenterCollectionsWithCompletion:]_block_invoke_2', symObjAddr: 0x1565, symBinAddr: 0x3C4D, symSize: 0x20 }
+  - { offset: 0xF6DB5, size: 0x8, addend: 0x0, symName: '+[Intercom fetchHelpCenterCollection:withCompletion:]', symObjAddr: 0x1585, symBinAddr: 0x3C6D, symSize: 0x100 }
+  - { offset: 0xF6EF3, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b, symObjAddr: 0x1685, symBinAddr: 0x3D6D, symSize: 0x30 }
+  - { offset: 0xF6F28, size: 0x8, addend: 0x0, symName: '___53+[Intercom fetchHelpCenterCollection:withCompletion:]_block_invoke.528', symObjAddr: 0x16B5, symBinAddr: 0x3D9D, symSize: 0x24 }
+  - { offset: 0xF7002, size: 0x8, addend: 0x0, symName: '+[Intercom searchHelpCenter:withCompletion:]', symObjAddr: 0x16D9, symBinAddr: 0x3DC1, symSize: 0x100 }
+  - { offset: 0xF7140, size: 0x8, addend: 0x0, symName: '___44+[Intercom searchHelpCenter:withCompletion:]_block_invoke_2', symObjAddr: 0x17D9, symBinAddr: 0x3EC1, symSize: 0x24 }
+  - { offset: 0xF7215, size: 0x8, addend: 0x0, symName: '+[Intercom setInAppMessagesVisible:]', symObjAddr: 0x17FD, symBinAddr: 0x3EE5, symSize: 0xA5 }
+  - { offset: 0xF72A3, size: 0x8, addend: 0x0, symName: '___36+[Intercom setInAppMessagesVisible:]_block_invoke_2', symObjAddr: 0x18A2, symBinAddr: 0x3F8A, symSize: 0x20 }
+  - { offset: 0xF7361, size: 0x8, addend: 0x0, symName: '+[Intercom setLauncherVisible:]', symObjAddr: 0x18C2, symBinAddr: 0x3FAA, symSize: 0xA5 }
+  - { offset: 0xF73EF, size: 0x8, addend: 0x0, symName: '___31+[Intercom setLauncherVisible:]_block_invoke_2', symObjAddr: 0x1967, symBinAddr: 0x404F, symSize: 0x20 }
+  - { offset: 0xF749F, size: 0x8, addend: 0x0, symName: '+[Intercom hideIntercom]', symObjAddr: 0x1987, symBinAddr: 0x406F, symSize: 0x6B }
+  - { offset: 0xF7515, size: 0x8, addend: 0x0, symName: '___24+[Intercom hideIntercom]_block_invoke_2', symObjAddr: 0x19F2, symBinAddr: 0x40DA, symSize: 0x19 }
+  - { offset: 0xF75C6, size: 0x8, addend: 0x0, symName: '+[Intercom setBottomPadding:]', symObjAddr: 0x1A0B, symBinAddr: 0x40F3, symSize: 0xA9 }
+  - { offset: 0xF7654, size: 0x8, addend: 0x0, symName: '___29+[Intercom setBottomPadding:]_block_invoke_2', symObjAddr: 0x1AB4, symBinAddr: 0x419C, symSize: 0x21 }
+  - { offset: 0xF769B, size: 0x8, addend: 0x0, symName: '+[Intercom unreadConversationCount]', symObjAddr: 0x1AD5, symBinAddr: 0x41BD, symSize: 0x3D }
+  - { offset: 0xF76E6, size: 0x8, addend: 0x0, symName: '+[Intercom unreadTicketCount]', symObjAddr: 0x1B12, symBinAddr: 0x41FA, symSize: 0x19 }
+  - { offset: 0xF77EF, size: 0x8, addend: 0x0, symName: '+[Intercom loginUnidentifiedUserWithSuccess:failure:]', symObjAddr: 0x1B2B, symBinAddr: 0x4213, symSize: 0x100 }
+  - { offset: 0xF792D, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b40b, symObjAddr: 0x1C2B, symBinAddr: 0x4313, symSize: 0x38 }
+  - { offset: 0xF7956, size: 0x8, addend: 0x0, symName: '___53+[Intercom loginUnidentifiedUserWithSuccess:failure:]_block_invoke.548', symObjAddr: 0x1C63, symBinAddr: 0x434B, symSize: 0x24 }
+  - { offset: 0xF7ACC, size: 0x8, addend: 0x0, symName: '+[Intercom loginUserWithUserAttributes:success:failure:]', symObjAddr: 0x1C87, symBinAddr: 0x436F, symSize: 0x2E5 }
+  - { offset: 0xF7DF6, size: 0x8, addend: 0x0, symName: '___56+[Intercom loginUserWithUserAttributes:success:failure:]_block_invoke_2', symObjAddr: 0x2002, symBinAddr: 0x46EA, symSize: 0x4A }
+  - { offset: 0xF7E5D, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b48b, symObjAddr: 0x1F6C, symBinAddr: 0x4654, symSize: 0x42 }
+  - { offset: 0xF7E92, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s, symObjAddr: 0x1FAE, symBinAddr: 0x4696, symSize: 0x2C }
+  - { offset: 0xF7ED5, size: 0x8, addend: 0x0, symName: '___56+[Intercom loginUserWithUserAttributes:success:failure:]_block_invoke.559', symObjAddr: 0x1FDA, symBinAddr: 0x46C2, symSize: 0x28 }
+  - { offset: 0xF7F3C, size: 0x8, addend: 0x0, symName: '___56+[Intercom loginUserWithUserAttributes:success:failure:]_block_invoke_3', symObjAddr: 0x204C, symBinAddr: 0x4734, symSize: 0x4A }
+  - { offset: 0xF8019, size: 0x8, addend: 0x0, symName: '+[Intercom logout]', symObjAddr: 0x2096, symBinAddr: 0x477E, symSize: 0x6B }
+  - { offset: 0xF8091, size: 0x8, addend: 0x0, symName: '___18+[Intercom logout]_block_invoke_2', symObjAddr: 0x2101, symBinAddr: 0x47E9, symSize: 0x19 }
+  - { offset: 0xF80C6, size: 0x8, addend: 0x0, symName: '+[Intercom isUserLoggedIn]', symObjAddr: 0x211A, symBinAddr: 0x4802, symSize: 0x19 }
+  - { offset: 0xF8106, size: 0x8, addend: 0x0, symName: '+[Intercom fetchLoggedInUserAttributes]', symObjAddr: 0x2133, symBinAddr: 0x481B, symSize: 0x19 }
+  - { offset: 0xF81E9, size: 0x8, addend: 0x0, symName: '+[Intercom updateUser:success:failure:]', symObjAddr: 0x214C, symBinAddr: 0x4834, symSize: 0x327 }
+  - { offset: 0xF8496, size: 0x8, addend: 0x0, symName: '___39+[Intercom updateUser:success:failure:]_block_invoke', symObjAddr: 0x2473, symBinAddr: 0x4B5B, symSize: 0x4A }
+  - { offset: 0xF8500, size: 0x8, addend: 0x0, symName: '___39+[Intercom updateUser:success:failure:]_block_invoke_5', symObjAddr: 0x252F, symBinAddr: 0x4C17, symSize: 0x4A }
+  - { offset: 0xF856A, size: 0x8, addend: 0x0, symName: '___39+[Intercom updateUser:success:failure:]_block_invoke_2', symObjAddr: 0x24BD, symBinAddr: 0x4BA5, symSize: 0x4A }
+  - { offset: 0xF85D4, size: 0x8, addend: 0x0, symName: '___39+[Intercom updateUser:success:failure:]_block_invoke_4', symObjAddr: 0x2507, symBinAddr: 0x4BEF, symSize: 0x28 }
+  - { offset: 0xF8640, size: 0x8, addend: 0x0, symName: '___39+[Intercom updateUser:success:failure:]_block_invoke_6', symObjAddr: 0x2579, symBinAddr: 0x4C61, symSize: 0x4A }
+  - { offset: 0xF872F, size: 0x8, addend: 0x0, symName: '+[Intercom logEventWithName:]', symObjAddr: 0x25C3, symBinAddr: 0x4CAB, symSize: 0xF9 }
+  - { offset: 0xF8844, size: 0x8, addend: 0x0, symName: '___29+[Intercom logEventWithName:]_block_invoke_2', symObjAddr: 0x26BC, symBinAddr: 0x4DA4, symSize: 0x22 }
+  - { offset: 0xF89AE, size: 0x8, addend: 0x0, symName: '+[Intercom logEventWithName:metaData:]', symObjAddr: 0x26DE, symBinAddr: 0x4DC6, symSize: 0x1FD }
+  - { offset: 0xF8BAB, size: 0x8, addend: 0x0, symName: '___38+[Intercom logEventWithName:metaData:]_block_invoke_2', symObjAddr: 0x28DB, symBinAddr: 0x4FC3, symSize: 0x24 }
+  - { offset: 0xF8C06, size: 0x8, addend: 0x0, symName: '___38+[Intercom logEventWithName:metaData:]_block_invoke_4', symObjAddr: 0x28FF, symBinAddr: 0x4FE7, symSize: 0x22 }
+  - { offset: 0xF8C57, size: 0x8, addend: 0x0, symName: '+[Intercom setDeviceToken:failure:]', symObjAddr: 0x2921, symBinAddr: 0x5009, symSize: 0x89 }
+  - { offset: 0xF8D28, size: 0x8, addend: 0x0, symName: '+[Intercom setDeviceToken:success:failure:]', symObjAddr: 0x29AA, symBinAddr: 0x5092, symSize: 0x9B }
+  - { offset: 0xF8E32, size: 0x8, addend: 0x0, symName: '+[Intercom isIntercomPushNotification:]', symObjAddr: 0x2A45, symBinAddr: 0x512D, symSize: 0x66 }
+  - { offset: 0xF8F54, size: 0x8, addend: 0x0, symName: '+[Intercom handleIntercomPushNotification:]', symObjAddr: 0x2AAB, symBinAddr: 0x5193, symSize: 0xF4 }
+  - { offset: 0xF9058, size: 0x8, addend: 0x0, symName: '___43+[Intercom handleIntercomPushNotification:]_block_invoke_2', symObjAddr: 0x2B9F, symBinAddr: 0x5287, symSize: 0x20 }
+  - { offset: 0xF9182, size: 0x8, addend: 0x0, symName: '+[Intercom handleIntercomRichPushNotificationContent:withContentHandler:]', symObjAddr: 0x2BBF, symBinAddr: 0x52A7, symSize: 0x16B }
+  - { offset: 0xF9323, size: 0x8, addend: 0x0, symName: '___73+[Intercom handleIntercomRichPushNotificationContent:withContentHandler:]_block_invoke_2', symObjAddr: 0x2D2A, symBinAddr: 0x5412, symSize: 0x24 }
+  - { offset: 0xF937E, size: 0x8, addend: 0x0, symName: '+[Intercom enableLogging]', symObjAddr: 0x2D4E, symBinAddr: 0x5436, symSize: 0x3D }
+  - { offset: 0xF943C, size: 0x8, addend: 0x0, symName: '+[Intercom setNeedsStatusBarAppearanceUpdate]', symObjAddr: 0x2D8B, symBinAddr: 0x5473, symSize: 0x6B }
+  - { offset: 0xF94B4, size: 0x8, addend: 0x0, symName: '___45+[Intercom setNeedsStatusBarAppearanceUpdate]_block_invoke_2', symObjAddr: 0x2DF6, symBinAddr: 0x54DE, symSize: 0x19 }
+  - { offset: 0xF9579, size: 0x8, addend: 0x0, symName: '+[Intercom setThemeOverride:]', symObjAddr: 0x2E0F, symBinAddr: 0x54F7, symSize: 0x85 }
+  - { offset: 0xF95FE, size: 0x8, addend: 0x0, symName: '___29+[Intercom setThemeOverride:]_block_invoke_2', symObjAddr: 0x2E94, symBinAddr: 0x557C, symSize: 0x20 }
+  - { offset: 0xF9648, size: 0x8, addend: 0x0, symName: '+[Intercom validateAuthTokens:]', symObjAddr: 0x2EB4, symBinAddr: 0x559C, symSize: 0x8E }
+  - { offset: 0xF96F7, size: 0x8, addend: 0x0, symName: '+[Intercom dictionaryByRemovingInvalidEntries:]', symObjAddr: 0x2F42, symBinAddr: 0x562A, symSize: 0xD8 }
+  - { offset: 0xF97E8, size: 0x8, addend: 0x0, symName: '___47+[Intercom dictionaryByRemovingInvalidEntries:]_block_invoke', symObjAddr: 0x301A, symBinAddr: 0x5702, symSize: 0x9D }
+  - { offset: 0xF9931, size: 0x8, addend: 0x0, symName: '+[Intercom validateParameterIsStringAndNotEmpty:]', symObjAddr: 0x30B7, symBinAddr: 0x579F, symSize: 0xBA }
+  - { offset: 0xF99EB, size: 0x8, addend: 0x0, symName: '+[Intercom validateParameterIsDictionaryAndNotEmpty:]', symObjAddr: 0x3171, symBinAddr: 0x5859, symSize: 0x5B }
+  - { offset: 0xF9A6D, size: 0x8, addend: 0x0, symName: '+[Intercom validateApiKey:]', symObjAddr: 0x31CC, symBinAddr: 0x58B4, symSize: 0x78 }
+  - { offset: 0xF9B03, size: 0x8, addend: 0x0, symName: '+[Intercom setCordovaVersion:]', symObjAddr: 0x3244, symBinAddr: 0x592C, symSize: 0x1B }
+  - { offset: 0xF9B5D, size: 0x8, addend: 0x0, symName: '+[Intercom setReactNativeVersion:]', symObjAddr: 0x325F, symBinAddr: 0x5947, symSize: 0x1E }
+  - { offset: 0xF9BB7, size: 0x8, addend: 0x0, symName: '+[Intercom setFlutterVersion:]', symObjAddr: 0x327D, symBinAddr: 0x5965, symSize: 0x1E }
+  - { offset: 0xF9C11, size: 0x8, addend: 0x0, symName: '+[Intercom addSDKApiMetricEventObject:]', symObjAddr: 0x329B, symBinAddr: 0x5983, symSize: 0x14 }
+  - { offset: 0xF9C75, size: 0x8, addend: 0x0, symName: '+[Intercom addSDKApiMetricEventObject:metaData:]', symObjAddr: 0x32AF, symBinAddr: 0x5997, symSize: 0x104 }
+  - { offset: 0xF9D91, size: 0x8, addend: 0x0, symName: '___48+[Intercom addSDKApiMetricEventObject:metaData:]_block_invoke', symObjAddr: 0x33B3, symBinAddr: 0x5A9B, symSize: 0x9C }
+  - { offset: 0xF9E4C, size: 0x8, addend: 0x0, symName: '___48+[Intercom addSDKApiMetricEventObject:metaData:]_block_invoke_2', symObjAddr: 0x344F, symBinAddr: 0x5B37, symSize: 0x9C }
+  - { offset: 0xFB007, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE14presentContentyyAbAE0C0OFZ', symObjAddr: 0x0, symBinAddr: 0x5BE0, symSize: 0x50 }
+  - { offset: 0xFB134, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE21loginUnidentifiedUser10completionyys6ResultOyyts5Error_pGcSg_tFZ', symObjAddr: 0x50, symBinAddr: 0x5C30, symSize: 0x180 }
+  - { offset: 0xFB1AA, size: 0x8, addend: 0x0, symName: '_$sIeg_IeyB_TR', symObjAddr: 0x1D0, symBinAddr: 0x5DB0, symSize: 0x30 }
+  - { offset: 0xFB1C2, size: 0x8, addend: 0x0, symName: '_$ss5Error_pIegg_So7NSErrorCIeyBy_TR', symObjAddr: 0x200, symBinAddr: 0x5DE0, symSize: 0x50 }
+  - { offset: 0xFB1DA, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE9loginUser4with10completionySo17ICMUserAttributesC_ys6ResultOyyts5Error_pGcSgtFZ', symObjAddr: 0x250, symBinAddr: 0x5E30, symSize: 0x190 }
+  - { offset: 0xFB260, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE10updateUser4with10completionySo17ICMUserAttributesC_ys6ResultOyyts5Error_pGcSgtFZ', symObjAddr: 0x3E0, symBinAddr: 0x5FC0, symSize: 0x190 }
+  - { offset: 0xFB2E6, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE13setAuthTokens_10completionySDyS2SG_ys6ResultOyyts5Error_pGcSgtFZ', symObjAddr: 0x570, symBinAddr: 0x6150, symSize: 0x1A0 }
+  - { offset: 0xFB36C, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE14setDeviceToken_10completiony10Foundation4DataV_ys6ResultOyyts5Error_pGcSgtFZ', symObjAddr: 0x710, symBinAddr: 0x62F0, symSize: 0x1A0 }
+  - { offset: 0xFB410, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE26fetchHelpCenterCollections10completionyys6ResultOySaySo07ICMHelpD10CollectionCGSC0hD9DataErrorLeVGc_tFZ', symObjAddr: 0x8B0, symBinAddr: 0x6490, symSize: 0x120 }
+  - { offset: 0xFB489, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE25fetchHelpCenterCollection_10completionySS_ys6ResultOySo07ICMHelpdE7ContentCSC0hD9DataErrorLeVGctFZ', symObjAddr: 0x9F0, symBinAddr: 0x65D0, symSize: 0x140 }
+  - { offset: 0xFB4F4, size: 0x8, addend: 0x0, symName: '_$sSo30ICMHelpCenterCollectionContentCSgs5Error_pSgIeghgg_ACSo7NSErrorCSgIeyBhyy_TR', symObjAddr: 0xB30, symBinAddr: 0x6710, symSize: 0x80 }
+  - { offset: 0xFB52A, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE16searchHelpCenter_10completionySS_ys6ResultOySaySo07ICMHelpd13ArticleSearchF0CGSC0gD9DataErrorLeVGctFZ', symObjAddr: 0xBB0, symBinAddr: 0x6790, symSize: 0x140 }
+  - { offset: 0xFB5A0, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE17getResultCallback33_A0CA738D2728B62EAC2FEB756751BB9CLL10completionyxSg_s5Error_pSgtcys0C0OyxSC017ICMHelpCenterDataM0LeVGc_tlFZyAF_AHtcfU_So0nO17CollectionContentC_Tg5', symObjAddr: 0xDA0, symBinAddr: 0x6980, symSize: 0x140 }
+  - { offset: 0xFB64E, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tgq5', symObjAddr: 0x1340, symBinAddr: 0x6F20, symSize: 0x60 }
+  - { offset: 0xFB671, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSS_Tgq5', symObjAddr: 0x13A0, symBinAddr: 0x6F80, symSize: 0xC0 }
+  - { offset: 0xFB6B3, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE03getA7Content33_A0CA738D2728B62EAC2FEB756751BB9CLL4fromSo0aC0CAbAE0C0O_tFZTf4nd_n', symObjAddr: 0x1460, symBinAddr: 0x7040, symSize: 0x110 }
+  - { offset: 0xFB792, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x15A0, symBinAddr: 0x7180, symSize: 0x20 }
+  - { offset: 0xFB7A6, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x15C0, symBinAddr: 0x71A0, symSize: 0x10 }
+  - { offset: 0xFB7BA, size: 0x8, addend: 0x0, symName: '_$ss6ResultOyyts5Error_pGIegg_SgWOy', symObjAddr: 0x15D0, symBinAddr: 0x71B0, symSize: 0x20 }
+  - { offset: 0xFB7D9, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE17getResultCallback33_A0CA738D2728B62EAC2FEB756751BB9CLL10completionyxSg_s5Error_pSgtcys0C0OyxSC017ICMHelpCenterDataM0LeVGc_tlFZyAF_AHtcfU_SaySo0nO10CollectionCG_TG5TA', symObjAddr: 0x16A0, symBinAddr: 0x7280, symSize: 0x20 }
+  - { offset: 0xFB80D, size: 0x8, addend: 0x0, symName: '_$sSaySo23ICMHelpCenterCollectionCGSgs5Error_pSgIegng_AdFIeggg_TRTA', symObjAddr: 0x16C0, symBinAddr: 0x72A0, symSize: 0x30 }
+  - { offset: 0xFB841, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE17getResultCallback33_A0CA738D2728B62EAC2FEB756751BB9CLL10completionyxSg_s5Error_pSgtcys0C0OyxSC017ICMHelpCenterDataM0LeVGc_tlFZyAF_AHtcfU_So0nO17CollectionContentC_TG5TA', symObjAddr: 0x16F0, symBinAddr: 0x72D0, symSize: 0x20 }
+  - { offset: 0xFB86A, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOWOy', symObjAddr: 0x1780, symBinAddr: 0x7340, symSize: 0x30 }
+  - { offset: 0xFB87E, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwxx', symObjAddr: 0x17B0, symBinAddr: 0x7370, symSize: 0x20 }
+  - { offset: 0xFB892, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOWOe', symObjAddr: 0x17D0, symBinAddr: 0x7390, symSize: 0x30 }
+  - { offset: 0xFB8A6, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwca', symObjAddr: 0x1840, symBinAddr: 0x7400, symSize: 0x50 }
+  - { offset: 0xFB8BA, size: 0x8, addend: 0x0, symName: ___swift_memcpy17_8, symObjAddr: 0x1890, symBinAddr: 0x7450, symSize: 0x20 }
+  - { offset: 0xFB8CE, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwta', symObjAddr: 0x18B0, symBinAddr: 0x7470, symSize: 0x40 }
+  - { offset: 0xFB8E2, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwet', symObjAddr: 0x18F0, symBinAddr: 0x74B0, symSize: 0x50 }
+  - { offset: 0xFB8F6, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwst', symObjAddr: 0x1940, symBinAddr: 0x7500, symSize: 0x50 }
+  - { offset: 0xFB90A, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwug', symObjAddr: 0x1990, symBinAddr: 0x7550, symSize: 0x10 }
+  - { offset: 0xFB91E, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwup', symObjAddr: 0x19A0, symBinAddr: 0x7560, symSize: 0x10 }
+  - { offset: 0xFB932, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOwui', symObjAddr: 0x19B0, symBinAddr: 0x7570, symSize: 0x10 }
+  - { offset: 0xFB946, size: 0x8, addend: 0x0, symName: '_$sSo8IntercomCAAE7ContentOMa', symObjAddr: 0x19C0, symBinAddr: 0x7580, symSize: 0x10 }
+  - { offset: 0xFB95A, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVSHSCSQWb', symObjAddr: 0x19F0, symBinAddr: 0x75B0, symSize: 0x20 }
+  - { offset: 0xFB96E, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSCAC06CustomH0PWb', symObjAddr: 0x1A60, symBinAddr: 0x7620, symSize: 0x20 }
+  - { offset: 0xFB982, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSCAC021_ObjectiveCBridgeableD0PWb', symObjAddr: 0x1A80, symBinAddr: 0x7640, symSize: 0x20 }
+  - { offset: 0xFB996, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSCSHWb', symObjAddr: 0x1AA0, symBinAddr: 0x7660, symSize: 0x20 }
+  - { offset: 0xFB9AA, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSC4CodeAcDP_AC01_dI8ProtocolPWT', symObjAddr: 0x1AC0, symBinAddr: 0x7680, symSize: 0x20 }
+  - { offset: 0xFB9BE, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSC4CodeAcDP_SYWT', symObjAddr: 0x1B30, symBinAddr: 0x76F0, symSize: 0x20 }
+  - { offset: 0xFB9D2, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSC4CodeAcDP_8RawValueSYs17FixedWidthIntegerPWT', symObjAddr: 0x1B50, symBinAddr: 0x7710, symSize: 0x10 }
+  - { offset: 0xFB9E6, size: 0x8, addend: 0x0, symName: '_$sS2is17FixedWidthIntegersWl', symObjAddr: 0x1B60, symBinAddr: 0x7720, symSize: 0x30 }
+  - { offset: 0xFB9FA, size: 0x8, addend: 0x0, symName: '_$sSo22ICMHelpCenterDataErrorV10Foundation01_D12CodeProtocolSCSQWb', symObjAddr: 0x1B90, symBinAddr: 0x7750, symSize: 0x20 }
+  - { offset: 0xFBA0E, size: 0x8, addend: 0x0, symName: '_$sSo22ICMHelpCenterDataErrorV10Foundation01_D12CodeProtocolSC01_D4TypeAcDP_AC21_BridgedStoredNSErrorPWT', symObjAddr: 0x1BB0, symBinAddr: 0x7770, symSize: 0x20 }
+  - { offset: 0xFBA43, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSS_ypTt0gq5Tf4g_n', symObjAddr: 0x1BD0, symBinAddr: 0x7790, symSize: 0xF0 }
+  - { offset: 0xFBAB9, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x1CE0, symBinAddr: 0x78A0, symSize: 0x40 }
+  - { offset: 0xFBACD, size: 0x8, addend: 0x0, symName: '_$sSS_yptWOc', symObjAddr: 0x1D20, symBinAddr: 0x78E0, symSize: 0x40 }
+  - { offset: 0xFBAE1, size: 0x8, addend: 0x0, symName: '_$sypWOb', symObjAddr: 0x1D60, symBinAddr: 0x7920, symSize: 0x20 }
+  - { offset: 0xFBC40, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVs0D0SCsACP9_userInfoyXlSgvgTW', symObjAddr: 0x10C0, symBinAddr: 0x6CA0, symSize: 0x10 }
+  - { offset: 0xFBC83, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVSHSCSH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x1270, symBinAddr: 0x6E50, symSize: 0x50 }
+  - { offset: 0xFBCCF, size: 0x8, addend: 0x0, symName: '_$sSo22ICMHelpCenterDataErrorVSQSCSQ2eeoiySbx_xtFZTW', symObjAddr: 0x1330, symBinAddr: 0x6F10, symSize: 0x10 }
+  - { offset: 0xFBE45, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVs0D0SCsACP7_domainSSvgTW', symObjAddr: 0x1040, symBinAddr: 0x6C20, symSize: 0x40 }
+  - { offset: 0xFBE61, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVs0D0SCsACP5_codeSivgTW', symObjAddr: 0x1080, symBinAddr: 0x6C60, symSize: 0x40 }
+  - { offset: 0xFBE7D, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVs0D0SCsACP19_getEmbeddedNSErroryXlSgyFTW', symObjAddr: 0x10D0, symBinAddr: 0x6CB0, symSize: 0x40 }
+  - { offset: 0xFBE99, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation13CustomNSErrorSCAcDP9errorCodeSivgTW', symObjAddr: 0x1130, symBinAddr: 0x6D10, symSize: 0x40 }
+  - { offset: 0xFBEB5, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation13CustomNSErrorSCAcDP13errorUserInfoSDySSypGvgTW', symObjAddr: 0x1170, symBinAddr: 0x6D50, symSize: 0x40 }
+  - { offset: 0xFBED1, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation021_ObjectiveCBridgeableD0SCAcDP15_bridgedNSErrorxSgSo0I0Ch_tcfCTW', symObjAddr: 0x11B0, symBinAddr: 0x6D90, symSize: 0x60 }
+  - { offset: 0xFBEFC, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVSHSCSH9hashValueSivgTW', symObjAddr: 0x1210, symBinAddr: 0x6DF0, symSize: 0x20 }
+  - { offset: 0xFBF2D, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVSHSCSH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x1230, symBinAddr: 0x6E10, symSize: 0x40 }
+  - { offset: 0xFBF49, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeVSQSCSQ2eeoiySbx_xtFZTW', symObjAddr: 0x12E0, symBinAddr: 0x6EC0, symSize: 0x50 }
+  - { offset: 0xFBF93, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSCAcDP03_nsD0So0H0CvgTW', symObjAddr: 0x1020, symBinAddr: 0x6C00, symSize: 0x10 }
+  - { offset: 0xFBFC3, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation21_BridgedStoredNSErrorSCAcDP03_nsD0xSo0H0C_tcfCTW', symObjAddr: 0x1030, symBinAddr: 0x6C10, symSize: 0x10 }
+  - { offset: 0xFBFE4, size: 0x8, addend: 0x0, symName: '_$sSC22ICMHelpCenterDataErrorLeV10Foundation13CustomNSErrorSCAcDP11errorDomainSSvgZTW', symObjAddr: 0x1110, symBinAddr: 0x6CF0, symSize: 0x20 }
+  - { offset: 0xFC013, size: 0x8, addend: 0x0, symName: '_$sSo22ICMHelpCenterDataErrorVSYSCSY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x12C0, symBinAddr: 0x6EA0, symSize: 0x10 }
+  - { offset: 0xFC027, size: 0x8, addend: 0x0, symName: '_$sSo22ICMHelpCenterDataErrorVSYSCSY8rawValue03RawF0QzvgTW', symObjAddr: 0x12D0, symBinAddr: 0x6EB0, symSize: 0x10 }
+  - { offset: 0xFC1AA, size: 0x8, addend: 0x0, symName: '_$s8Intercom19ResourceBundleClass33_6DD8664164A15D9553F36F93B771C435LLCfD', symObjAddr: 0x0, symBinAddr: 0x7C80, symSize: 0x20 }
+  - { offset: 0xFC1EC, size: 0x8, addend: 0x0, symName: '_$s8Intercom19ResourceBundleClass33_6DD8664164A15D9553F36F93B771C435LLCMa', symObjAddr: 0x20, symBinAddr: 0x7CA0, symSize: 0x14 }
+  - { offset: 0xFC207, size: 0x8, addend: 0x0, symName: '_$s8Intercom19ResourceBundleClass33_6DD8664164A15D9553F36F93B771C435LLCfD', symObjAddr: 0x0, symBinAddr: 0x7C80, symSize: 0x20 }
 ...
