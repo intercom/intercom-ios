@@ -1,3 +1,9 @@
+## 19.2.1
+###### Release Date: 24-09-2025
+
+### 🐛 Bug Fixes
+* Fixed device token registration for JWT-based identity verification. Previously, when identity verification was enabled with JWT tokens, device token registration would fail with error 4003. The SDK now properly supports both HMAC and JWT tokens for device token registration.
+
 ## 19.2.0
 ###### Release Date: 15-09-2025
 
