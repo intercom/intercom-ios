@@ -9,8 +9,8 @@
 import UIKit
 import Intercom
 
-let INTERCOM_APP_ID = "odymwnr8"
-let INTERCOM_API_KEY = "ios_sdk-adc9042202780151dc7f61147911b49999539bed"
+let INTERCOM_APP_ID = "<#YOUR APP ID#>"
+let INTERCOM_API_KEY = "<#YOUR API KEY#>"
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
