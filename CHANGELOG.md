@@ -1,3 +1,18 @@
+## 19.3.0
+###### Release Date: 24-10-2025
+
+### 🚀 Enhancements
+* Added support for transcribing messages using your voice. To enable this feature, add the following to your `Info.plist`:
+
+```xml
+<key>NSMicrophoneUsageDescription</key>
+<string>YOUR DESCRIPTION HERE</string>
+```
+
+### 🐛 Bug Fixes
+* Fixed an issue where composer buttons and help center articles could render incorrectly on Liquid Glass.
+* Adjusted how translations are bundled resolving an edge case where they could fail to load correctly.
+
 ## 19.2.1
 ###### Release Date: 24-09-2025
 
