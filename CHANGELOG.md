@@ -1,7 +1,13 @@
+## 19.3.1
+###### Release Date: 28-10-2025
+
+### 🐛 Bug Fixes
+* Fixed a crash that could happen when opening articles from a conversation.
+
 ## 19.3.0
 ###### Release Date: 24-10-2025
 
-### 🚀 Enhancements
+###  Enhancements
 * Added support for transcribing messages using your voice. To enable this feature, add the following to your `Info.plist`:
 
 ```xml
