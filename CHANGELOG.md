@@ -1,3 +1,12 @@
+## 19.3.2
+###### Release Date: 04-11-2025
+
+### 🐛 Bug Fixes
+* Fixed an issue where tapping the close button on an article in a conversation would not dismiss the article.
+* Fixed an issue where tapping on a link in an article would not open the link.
+* Fixed an issue where carousels were not dismissing correctly.
+* Fixed an issue where reactions to articles were not being handled correctly.
+
 ## 19.3.1
 ###### Release Date: 28-10-2025
 
