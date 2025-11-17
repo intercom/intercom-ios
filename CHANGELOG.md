@@ -1,3 +1,9 @@
+## 19.3.3
+###### Release Date: 17-11-2025
+
+### 🐛 Bug Fixes
+* Fixed a crash related to `ICMPersistenceProxy` where reading objects from cache was not correctly handling errors.
+
 ## 19.3.2
 ###### Release Date: 04-11-2025
 
