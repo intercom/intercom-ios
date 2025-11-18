@@ -1,3 +1,9 @@
+## 19.3.4
+###### Release Date: 18-11-2025
+
+### 🐛 Bug Fixes
+* Fixed a crash related to `ICMMetric` that happened to due a race condition.
+
 ## 19.3.3
 ###### Release Date: 17-11-2025
 
