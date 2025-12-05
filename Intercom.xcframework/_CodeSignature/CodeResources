@@ -10,7 +10,7 @@
 		</data>
 		<key>VERSION</key>
 		<data>
-		siWDxAGSsDgC8Gauhh3/+GCa3Ws=
+		GKKGEMpRv8doHXYwkVkEK+ungtc=
 		</data>
 		<key>ios-arm64/Intercom.framework/Assets.car</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64/Intercom.framework/Info.plist</key>
 		<data>
-		905eihDnieemugTO8L9SWlOQnDg=
+		VpReQmKIV4rSaO1ZHjMnqZUiNv8=
 		</data>
 		<key>ios-arm64/Intercom.framework/InterBlocksAssets.bundle/Assets.car</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>ios-arm64/Intercom.framework/Intercom</key>
 		<data>
-		7V+gg+ksMCqUtdYACW7qbv95hSI=
+		GTCVyJYCbKbDWi0knFO6NatPCj8=
 		</data>
 		<key>ios-arm64/Intercom.framework/Intercom.bundle/data/intercom_area_codes.json</key>
 		<data>
@@ -91,10 +91,6 @@
 		<key>ios-arm64/Intercom.framework/Intercom.bundle/sound/message_sending.caf</key>
 		<data>
 		4ex9cI824foKdX7c25IY893/pio=
-		</data>
-		<key>ios-arm64/Intercom.framework/IntercomTranslations.xcstrings</key>
-		<data>
-		V42A+7I2sPmAB6Nis3NWvHIulg4=
 		</data>
 		<key>ios-arm64/Intercom.framework/Modules/Intercom.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -146,11 +142,11 @@
 		</data>
 		<key>ios-arm64/dSYMs/Intercom.framework.dSYM/Contents/Info.plist</key>
 		<data>
-		PBPtMEi4HKkHhyqUztac6NPqAOE=
+		v0JCeyQPZ0NaSj23nt8+cAm2fI8=
 		</data>
 		<key>ios-arm64/dSYMs/Intercom.framework.dSYM/Contents/Resources/DWARF/Intercom</key>
 		<data>
-		CZUtmf6E8TLoRiDYDO4dcGrkED0=
+		RnAiHhj9BixgPDsXgLGX6xMNCb4=
 		</data>
 		<key>ios-arm64/dSYMs/Intercom.framework.dSYM/Contents/Resources/Relocations/aarch64/Intercom.yml</key>
 		<data>
@@ -202,7 +198,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Intercom.framework/Info.plist</key>
 		<data>
-		Eov/+GL/3hqxscMnRZsFRqDvOAQ=
+		gef2Qk7an+EClIsrPwzSMltk1Ks=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Intercom.framework/InterBlocksAssets.bundle/Assets.car</key>
 		<data>
@@ -214,7 +210,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Intercom.framework/Intercom</key>
 		<data>
-		6Y3K7ZYXZT2Hgx2nlnC2YKJ/BJw=
+		OxdoFr5P1CZ9CPTZAziMvtODYkY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Intercom.framework/Intercom.bundle/data/intercom_area_codes.json</key>
 		<data>
@@ -235,10 +231,6 @@
 		<key>ios-arm64_x86_64-simulator/Intercom.framework/Intercom.bundle/sound/message_sending.caf</key>
 		<data>
 		4ex9cI824foKdX7c25IY893/pio=
-		</data>
-		<key>ios-arm64_x86_64-simulator/Intercom.framework/IntercomTranslations.xcstrings</key>
-		<data>
-		V42A+7I2sPmAB6Nis3NWvHIulg4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Intercom.framework/Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -306,11 +298,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/Intercom.framework.dSYM/Contents/Info.plist</key>
 		<data>
-		PBPtMEi4HKkHhyqUztac6NPqAOE=
+		v0JCeyQPZ0NaSj23nt8+cAm2fI8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/Intercom.framework.dSYM/Contents/Resources/DWARF/Intercom</key>
 		<data>
-		htrTEneexc3F2lPUVMhfOD/47xU=
+		A++Mg0WHUSJMguJAEL65SYJppAQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/Intercom.framework.dSYM/Contents/Resources/Relocations/aarch64/Intercom.yml</key>
 		<data>
@@ -338,11 +330,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			siWDxAGSsDgC8Gauhh3/+GCa3Ws=
+			GKKGEMpRv8doHXYwkVkEK+ungtc=
 			</data>
 			<key>hash2</key>
 			<data>
-			YUM2m77sZ2wkAujriaHig+Mr2T6seUoGx5K8hI0L0a0=
+			+JtL96008z6A/PK9wcZ2MLhYwAEAnGrqmIL9QktAYYk=
 			</data>
 		</dict>
 		<key>ios-arm64/Intercom.framework/Assets.car</key>
@@ -470,11 +462,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			905eihDnieemugTO8L9SWlOQnDg=
+			VpReQmKIV4rSaO1ZHjMnqZUiNv8=
 			</data>
 			<key>hash2</key>
 			<data>
-			YWtv6GXQEFiV5x4iaJK3EghBppAjvbW6Ol5OjWmjeoM=
+			s/mpZXYvqTUi9c6CpE//LkkacwkzW0Zm4oFMlihAoNk=
 			</data>
 		</dict>
 		<key>ios-arm64/Intercom.framework/InterBlocksAssets.bundle/Assets.car</key>
@@ -503,11 +495,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7V+gg+ksMCqUtdYACW7qbv95hSI=
+			GTCVyJYCbKbDWi0knFO6NatPCj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			zfrSQ8yEAIkAF22fPxbFKsyx2dd7Gatsj2nB/S2y6jI=
+			C9zJe3If/1NqSoLWi4+5iW/Te6dkE5sz1MwwCv4D4L4=
 			</data>
 		</dict>
 		<key>ios-arm64/Intercom.framework/Intercom.bundle/data/intercom_area_codes.json</key>
@@ -563,17 +555,6 @@
 			<key>hash2</key>
 			<data>
 			Y+4lRhNwia55OZLajS6XLXN6CBlCN2nnCqSE+ODizzY=
-			</data>
-		</dict>
-		<key>ios-arm64/Intercom.framework/IntercomTranslations.xcstrings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			V42A+7I2sPmAB6Nis3NWvHIulg4=
-			</data>
-			<key>hash2</key>
-			<data>
-			lTdx9iAbHaOcympJy4/Vl6kaLN/VvLTCfFJioRtZJDM=
 			</data>
 		</dict>
 		<key>ios-arm64/Intercom.framework/Modules/Intercom.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -712,22 +693,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PBPtMEi4HKkHhyqUztac6NPqAOE=
+			v0JCeyQPZ0NaSj23nt8+cAm2fI8=
 			</data>
 			<key>hash2</key>
 			<data>
-			sJ0Ac9x0pDsDAas0Xs9XSgPrgl9RuAAiS9Nhjbtw1MI=
+			BMQDQtnPl9cUVw649pDZ3nqKaP1vpL88aoYBHsH7P0A=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/Intercom.framework.dSYM/Contents/Resources/DWARF/Intercom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CZUtmf6E8TLoRiDYDO4dcGrkED0=
+			RnAiHhj9BixgPDsXgLGX6xMNCb4=
 			</data>
 			<key>hash2</key>
 			<data>
-			XfNqJX37PFvlYHZWd0WYL6qZkltrJ037UcI5v7aE2qE=
+			HeHv1Uztip+wxf1zf+4oAegNtUOYcGtL+wYYoxvIM5w=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/Intercom.framework.dSYM/Contents/Resources/Relocations/aarch64/Intercom.yml</key>
@@ -866,11 +847,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Eov/+GL/3hqxscMnRZsFRqDvOAQ=
+			gef2Qk7an+EClIsrPwzSMltk1Ks=
 			</data>
 			<key>hash2</key>
 			<data>
-			2PVfgB9mC1/0qR1OhVgt3ucuN2pjCaZnyC2AFayiCZI=
+			gqz1sLqSft3wcmNKCaIGF1dhpHqpy/KF7iULbMQAajM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Intercom.framework/InterBlocksAssets.bundle/Assets.car</key>
@@ -899,11 +880,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6Y3K7ZYXZT2Hgx2nlnC2YKJ/BJw=
+			OxdoFr5P1CZ9CPTZAziMvtODYkY=
 			</data>
 			<key>hash2</key>
 			<data>
-			qbES9iSMOeSSmBgRJjfP0BUbez2OGJv9cEXKTqh1X4U=
+			4XYPIKGT2M/yvRxhaJEoKKrKZX2LptAdLuX5gTTm+hQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Intercom.framework/Intercom.bundle/data/intercom_area_codes.json</key>
@@ -959,17 +940,6 @@
 			<key>hash2</key>
 			<data>
 			Y+4lRhNwia55OZLajS6XLXN6CBlCN2nnCqSE+ODizzY=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/Intercom.framework/IntercomTranslations.xcstrings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			V42A+7I2sPmAB6Nis3NWvHIulg4=
-			</data>
-			<key>hash2</key>
-			<data>
-			lTdx9iAbHaOcympJy4/Vl6kaLN/VvLTCfFJioRtZJDM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Intercom.framework/Modules/Intercom.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -1152,22 +1122,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PBPtMEi4HKkHhyqUztac6NPqAOE=
+			v0JCeyQPZ0NaSj23nt8+cAm2fI8=
 			</data>
 			<key>hash2</key>
 			<data>
-			sJ0Ac9x0pDsDAas0Xs9XSgPrgl9RuAAiS9Nhjbtw1MI=
+			BMQDQtnPl9cUVw649pDZ3nqKaP1vpL88aoYBHsH7P0A=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/Intercom.framework.dSYM/Contents/Resources/DWARF/Intercom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			htrTEneexc3F2lPUVMhfOD/47xU=
+			A++Mg0WHUSJMguJAEL65SYJppAQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			MvP340TvNz991cFHHzoscKutKD+H1u22wmqMxWgyuG4=
+			qZiDW1Edt6zhnVcvm4X/h8bd2jsodf3yYHSkWHCxJlY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/Intercom.framework.dSYM/Contents/Resources/Relocations/aarch64/Intercom.yml</key>

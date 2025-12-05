@@ -1,3 +1,12 @@
+## 19.4.0
+###### Release Date: 04-12-2025
+
+### 🚀 Enhancements
+* Added titles to the Messages screen to help users differentiate between their conversations.
+
+### 🐛 Bug Fixes
+* Fixed an issue where image height within carousels was incorrectly capped.
+
 ## 19.3.4
 ###### Release Date: 18-11-2025
 
