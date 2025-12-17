@@ -1,3 +1,10 @@
+## 19.4.1
+###### Release Date: 16-12-2025
+
+### 🐛 Bug Fixes
+* Fixed an issue where localizations could fail to load.
+* Fixed an issue the composer text occasionally wasn't cleared after sending a message.
+
 ## 19.4.0
 ###### Release Date: 04-12-2025
 
