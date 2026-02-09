@@ -1,3 +1,41 @@
+## 19.5.0
+###### Release Date: 09-02-2026
+
+### 🚀 Enhancements
+* Removed Sentry crash reporting from the SDK.
+
+### 🐛 Bug Fixes
+* Fixed an issue where the close button on survey modals may not dismiss the survey.
+* Fixed an issue where images in outbound content with transparency could render with a gray background.
+* Fixed an issue where list blocks could lose their text content.
+* Fixed an issue that could cause incorrect tap behavior on images within carousels.
+* Fixed an issue where images in carousels and posts may display with incorrect styling.
+* Fixed an issue that could cause overlapping content in carousels containing image and text blocks.
+* Fixed an issue where the article reactions UI could obscure article content.
+* Fixed an issue where deleted or unavailable articles may not display the appropriate error message.
+* Fixed an issue where the "Start a conversation" button in the sad reaction prompt may not respect Messenger configuration settings.
+* Fixed an issue that could prevent article reactions from submitting correctly.
+* Fixed an issue where anchor links within articles may not scroll to the referenced section.
+* Fixed an issue where article content may not respect device safe areas.
+* Fixed an issue where articles linked from messenger apps in conversations may not open correctly in the article viewer.
+* Fixed an issue where tapping the "disappointed" reaction may not start a new conversation.
+* Fixed an issue that could prevent interactions with buttons and links in posts from working correctly.
+* Fixed an issue where YouTube videos in posts may not play.
+* Fixed an issue where tapping images in posts may not display the image preview.
+* Fixed an issue where posts may not dismiss after tapping deep links.
+* Fixed an issue where post content could get cut off when reactions are displayed.
+* Fixed an issue where large posts could allow content to scroll behind the reactions area.
+* Fixed a crash that could occur when dismissing a survey with a confirmation dialog on iPad.
+* Fixed a crash that could occur when tapping "Try Again" on a failed attachment upload in ticket forms on iPad.
+* Fixed a crash that could occur when deleting an attachment from the ticket form preview on iPad.
+* Fixed an issue where the Messenger UI could become misaligned when rotating the device while the Messenger is open on iPad.
+* Fixed an issue where retrying a failed attachment upload could create a duplicate attachment instead of retrying the original.
+* Fixed an issue where conversation content could be visible through the composer background on iOS versions below 26.
+* Fixed an issue where the "Start a conversation" button may appear without its background on iOS versions below 26.
+* Fixed an issue where YouTube videos embedded in content may not play correctly.
+* Fixed an issue where CSAT "tell us more" feedback could appear to fail, requiring multiple retries.
+* Fixed an issue where the GIF search bar and close button may not work correctly on iOS versions below 26.
+
 ## 19.4.1
 ###### Release Date: 16-12-2025
 
