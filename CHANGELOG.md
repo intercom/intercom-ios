@@ -1,3 +1,15 @@
+## 19.5.1
+###### Release Date: 11-02-2026
+
+### 🐛 Bug Fixes
+* Fixes a crash that could occur when retrying failed messages in a conversation.
+* Fixes a crash that could occur when new messages appear in the messages screen.
+* Fixed a crash that could occur when displaying push notifications.
+* Fixed an issue where sending images and videos was broken on iOS 15.
+* Fixed an issue with citation sheet layout and close button styling.
+* Fixed an issue where the GIF picker appeared too small on iPad.
+* Fixes a rendering issue with the transcription component on devices running versions earlier than iOS 26.
+
 ## 19.5.0
 ###### Release Date: 09-02-2026
 
