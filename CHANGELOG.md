@@ -1,3 +1,17 @@
+## 19.5.2
+###### Release Date: 19-02-2026
+
+### 🐛 Bug Fixes
+* Fixed an incorrect CSAT translation key for the OK button.
+* Fixed an issue where the unread dot was not vertically centered in inbox cells.
+* Fixed an issue with audio transcription where transcriptions could fail frequently.
+* Fixed an issue where the send button VoiceOver announced "Arrow Up Circle Button" instead of an appropriate label.
+* Fixed an issue where unordered lists could overlap other content.
+* Fixed an issue where tickets could disappear from the Recent Tickets card.
+* Fixed a crash that could occur with stacked notifications.
+* Fixed an issue where the navigation bar did not match the background color in carousels and surveys on iOS versions below 26.
+* Fixed an issue where retrying a failed multi-part conversation could result in an upload mismatch.
+
 ## 19.5.1
 ###### Release Date: 11-02-2026
 
