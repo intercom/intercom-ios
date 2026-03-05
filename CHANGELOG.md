@@ -1,3 +1,12 @@
+## 19.5.3
+###### Release Date: 05-03-2026
+
+### 🐛 Bug Fixes
+* Fixed an issue where CSAT workflow reply buttons could fail to render on closed conversations.
+* Fixed an issue where calling logout() while viewing a modally presented screen could leave the Messenger home screen visible behind it.
+* Fixed an issue where push notifications could be processed after the user had logged out.
+* Fixed an issue where in-app notifications may not display the branded AI agent identity.
+
 ## 19.5.2
 ###### Release Date: 19-02-2026
 
