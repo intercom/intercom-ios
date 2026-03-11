@@ -1,3 +1,18 @@
+## 19.5.4
+###### Release Date: 11-03-2026
+
+### 🐛 Bug Fixes
+* Fixed a crash that could occur when dismissing the privacy policy screen.
+* Fixed a crash that could occur when the app launched via CarPlay.
+* Fixed a crash that could occur during app launch due to synchronous disk I/O on the main thread.
+* Fixed a crash that could occur due to push notification authorization checks blocking the main thread.
+* Fixed a crash that could occur when receiving push notifications while the app was in the foreground.
+* Fixed a crash that could occur due to concurrent identity updates.
+* Fixed a crash that could occur when starting voice recording during audio route changes.
+* Fixed an issue where denying microphone permission could result in an endless loading spinner.
+* Fixed an issue where conversation message blocks could appear without spacing between them.
+* Fixed an unnecessary divider appearing in Post and Note in-app messages.
+
 ## 19.5.3
 ###### Release Date: 05-03-2026
 
