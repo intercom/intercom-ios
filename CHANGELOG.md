@@ -1,3 +1,13 @@
+## 19.5.5
+###### Release Date: 23-03-2026
+
+### 🐛 Bug Fixes
+* Fixed an issue where the composer attachment menu could render as plain text instead of a proper menu.
+* Fixed an issue where the typing indicator may not appear when admin details are unavailable.
+* Fixed an issue where the help center search bar placeholder could appear in English regardless of the workspace locale.
+* Fixed an issue where device tokens could be mistakenly deleted impacting push notification delivery.
+* Fixed an issue where workflows would sometimes not match for a user.
+
 ## 19.5.4
 ###### Release Date: 11-03-2026
 
