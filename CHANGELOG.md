@@ -1,3 +1,12 @@
+## 19.5.6
+###### Release Date: 01-04-2026
+
+### 🐛 Bug Fixes
+* Fixed an issue where some conversation parts may not appear when launching directly to a conversation.
+* Fixed an issue where duplicate conversation screens could appear when launching directly to a conversation.
+* Fixed an issue where text colors could appear incorrect in Note and small Post messages.
+* Fixed an issue where YouTube video thumbnails could fail to fill the full container width.
+
 ## 19.5.5
 ###### Release Date: 23-03-2026
 
