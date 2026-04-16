@@ -1,3 +1,13 @@
+## 19.5.7
+###### Release Date: 16-04-2026
+
+### 🐛 Bug Fixes
+* Fixed a crash that could occur when the app transitioned to the background while a conversation was open.
+* Fixed an issue where CSAT rating selections could reset to the unsubmitted state after submission.
+* Fixed an issue where the "Tell us more" CSAT remark could fail to submit for some users.
+* Fixed an incorrect Greek translation for the OK button in CSAT dialogs.
+* Fixed an issue where navigation bar buttons could appear invisible in attachment preview screens when the host app sets a light tint color.
+
 ## 19.5.6
 ###### Release Date: 01-04-2026
 
