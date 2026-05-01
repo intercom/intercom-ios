@@ -7,6 +7,12 @@
 
 <img src="https://user-images.githubusercontent.com/6392766/92717163-af7b0200-f357-11ea-9dc3-6f86d0c21d96.png" width="297" height="76"/>
 
+
+## ⚠️ May 1st Codesigning issue ⚠️ 
+If you are running iOS SDK [v19.5.6](https://github.com/intercom/intercom-ios/releases/tag/19.5.6) or [v19.5.7](https://github.com/intercom/intercom-ios/releases/tag/19.5.7) and are experiecing a codesigning issue, [please follow these steps](https://github.com/intercom/intercom-ios/wiki/Codesigning-Issue) to resolve it.
+
+
+
 ## Onboard, retain and support mobile users at scale
 Engage customers with email, push, and in‑app messages and support them with an integrated knowledge base and help desk.
 
