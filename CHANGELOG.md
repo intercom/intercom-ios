@@ -1,3 +1,17 @@
+## 19.6.0
+###### Release Date: 14-05-2026
+
+### 🚀 Enhancements
+* Users can now send multiple images and files in a single message, with a preview of selected media in the composer.
+
+### 🐛 Bug Fixes
+* Fixed an issue where login-triggered notes may not appear when logging in mid-session.
+* Fixed an issue where the Fin typing avatar could display the brand color as its background in the inbox.
+* Fixed an issue where images in multi-block message bubbles could display with incorrect corner radii.
+* Fixed an issue where `isUserLoggedIn` could return `false` despite a successful login.
+* Fixed an issue where GIF timestamps and attributions may not align with the image width.
+* Fixed an issue where short article URLs could open the Help Center home screen instead of the article.
+
 ## 19.5.7
 ###### Release Date: 16-04-2026
 
