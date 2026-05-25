@@ -1,3 +1,9 @@
+## 19.6.1
+###### Release Date: 25-05-2026
+
+### 🐛 Bug Fixes
+* Fixed an issue where the status bar could display the incorrect text colour.
+
 ## 19.6.0
 ###### Release Date: 14-05-2026
 
