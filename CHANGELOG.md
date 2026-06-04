@@ -1,3 +1,12 @@
+## 19.6.2
+###### Release Date: 04-06-2026
+
+### 🚀 Enhancements
+* Added security enhancements.
+
+### 🐛 Bug Fixes
+* Fixed a crash that could occur during app launch.
+
 ## 19.6.1
 ###### Release Date: 25-05-2026
 
