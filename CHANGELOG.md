@@ -1,3 +1,9 @@
+## 19.6.4
+###### Release Date: 01-07-2026
+
+### 🐛 Bug Fixes
+* Fixed a crash that could occur at launch on some iOS Simulator runtimes.
+
 ## 19.6.3
 ###### Release Date: 09-06-2026
 
