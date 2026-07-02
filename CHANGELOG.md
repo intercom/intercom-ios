@@ -1,3 +1,9 @@
+## 19.6.5
+###### Release Date: 02-07-2026
+
+### 🐛 Bug Fixes
+* Fixed an issue where the composer could retain text after sending a message dictated with the iOS keyboard.
+
 ## 19.6.4
 ###### Release Date: 01-07-2026
 
