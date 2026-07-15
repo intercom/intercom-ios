@@ -476,6 +476,42 @@
           },
           {
             "kind": "Function",
+            "name": "suppressProactiveContent",
+            "printedName": "suppressProactiveContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Intercom.IntercomProactiveContentType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IntercomProactiveContentType",
+                    "printedName": "Intercom.IntercomProactiveContentType",
+                    "usr": "c:@E@IntercomProactiveContentType"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So8IntercomCAAE24suppressProactiveContentyySaySo0acD4TypeVGFZ",
+            "mangledName": "$sSo8IntercomCAAE24suppressProactiveContentyySaySo0acD4TypeVGFZ",
+            "moduleName": "Intercom",
+            "static": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "loginUnidentifiedUser",
             "printedName": "loginUnidentifiedUser(completion:)",
             "children": [

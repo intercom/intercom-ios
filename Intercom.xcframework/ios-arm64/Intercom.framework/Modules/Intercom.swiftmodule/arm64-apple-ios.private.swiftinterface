@@ -21,6 +21,7 @@ extension Intercom {
     case ticket(id: String)
   }
   public class func presentContent(_ content: Content)
+  public class func suppressProactiveContent(_ types: [IntercomProactiveContentType])
   #if compiler(>=5.3) && $NonescapableTypes
   public class func loginUnidentifiedUser(completion: ((Result<Void, Error>) -> Void)? = nil)
   #endif

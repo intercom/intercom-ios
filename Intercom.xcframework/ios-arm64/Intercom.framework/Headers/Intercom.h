@@ -38,6 +38,12 @@ typedef NS_ENUM(NSInteger, Space) {
     tickets
 };
 
+/** Proactive content types whose visibility can be controlled via ``Intercom/suppressProactiveContent(_:)``. */
+typedef NS_ENUM(NSInteger, IntercomProactiveContentType) {
+    IntercomProactiveContentTypeCarousel,
+    IntercomProactiveContentTypeSurvey
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Intercom : NSObject
@@ -333,6 +339,9 @@ NS_ASSUME_NONNULL_BEGIN
     - visible: A boolean indicating if the InApps should be visible.
  */
 + (void)setInAppMessagesVisible:(BOOL)visible;
+
+/** Suppress the given proactive content types. All are visible by default; pass an empty array to unsuppress all. */
++ (void)suppressProactiveContent:(NSArray<NSNumber *> *)types NS_REFINED_FOR_SWIFT;
 
 /**
  Show or hide the Intercom Launcher in your app.

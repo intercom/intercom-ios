@@ -1,3 +1,14 @@
+## 19.7.0
+###### Release Date: 15-07-2026
+
+### 🚀 Enhancements
+* Added a new `suppressProactiveContent(_:)` API to control which proactive content types (carousels, surveys) can be displayed during pre-authentication launch flows.
+* Added Unity wrapper identification so conversations opened from Unity apps are attributed to the Unity SDK.
+
+### 🐛 Bug Fixes
+* Fixed an issue where the Messenger could freeze when using the edge-swipe back gesture.
+* Fixed an issue where a multiline ticket field could be hidden behind the keyboard when focused.
+
 ## 19.6.5
 ###### Release Date: 02-07-2026
 
