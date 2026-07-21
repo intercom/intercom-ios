@@ -1,3 +1,14 @@
+## 19.7.1
+###### Release Date: 21-07-2026
+
+### 🚀 Enhancements
+* Added pinch-to-zoom and double-tap-to-zoom to the image previewer for received images.
+
+### 🐛 Bug Fixes
+* Fixed an issue where the composer could remain interactive when it should have been visible but disabled.
+* Fixed a crash that could occur at launch on iOS 15 and 16 devices.
+* Fixed an issue where bullet list items could render with excessive spacing between them.
+
 ## 19.7.0
 ###### Release Date: 15-07-2026
 
