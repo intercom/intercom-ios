@@ -1,3 +1,11 @@
+## 19.7.2
+###### Release Date: 06-08-2026
+
+### 🐛 Bug Fixes
+* Fixed an issue where sheets presented from the conversation header could appear full screen and undismissable on iPhone in landscape.
+* Fixed an issue where universal links tapped in the Messenger could open in Safari instead of the host app on apps using the scene lifecycle.
+* Fixed an issue where files added to a ticket form with multiple file-upload fields could appear under the wrong field.
+
 ## 19.7.1
 ###### Release Date: 21-07-2026
 
