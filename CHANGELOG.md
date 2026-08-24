@@ -1,3 +1,23 @@
+## 19.8.0
+###### Release Date: 24-08-2026
+
+### 📱 New Feature: Code Blocks
+* Code blocks in conversations now render on their own card with syntax highlighting, line numbers and a copy action.
+* Long or tall snippets now scroll within the card, or can be opened full screen.
+* Inline code now renders as a rounded chip in the platform monospace font.
+
+### 🚀 Enhancements
+* Added Georgian and Armenian to the languages the Messenger supports.
+
+### 🐛 Bug Fixes
+* Fixed a crash that could occur when a typing indicator and a thinking indicator arrived together in a conversation.
+* Fixed a crash that could occur when the host app ships a layout file with the same name as the Messenger's error screen.
+* Fixed an issue where the Messenger could render inside the Picture in Picture window instead of the host app.
+* Fixed an issue where dismissing the keyboard after sending could restore the sent text into the composer.
+* Fixed an issue where the composer could accept a free-text reply when a workflow's reply buttons should have been the only option.
+* Fixed an issue where ordered list items could be omitted from VoiceOver and from copied text.
+* Fixed an issue where the collapsed Home header could appear as a light bar in dark mode.
+
 ## 19.7.2
 ###### Release Date: 06-08-2026
 
