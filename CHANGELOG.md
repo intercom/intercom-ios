@@ -1,3 +1,14 @@
+## 19.8.1
+###### Release Date: 04-09-2026
+
+### 🐛 Bug Fixes
+* Fixed issues that could cause layouts to render incorrectly for right-to-left languages.
+* Fixed an issue where code blocks in streamed Fin answers could stop updating until the answer completed.
+* Fixed an issue where code blocks in posts could render without card styling or with unreadable text.
+* Fixed an issue where device token registration with an expired identity verification token could make an unnecessary request and report an incorrect error message.
+* Fixed a crash that could occur when dismissing a survey shown at app launch on iOS 26.
+* Fixed an issue where tapping an Intercom push notification could fail to open the conversation after a cold app launch.
+
 ## 19.8.0
 ###### Release Date: 24-08-2026
 
