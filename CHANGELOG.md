@@ -1,3 +1,14 @@
+## 19.8.2
+###### Release Date: 14-09-2026
+
+### 🚀 Enhancements
+* Added support for configuring the Messenger environment from the host app’s Info.plist.
+* Improved Messenger layouts to adapt when the app window is resized.
+
+### 🐛 Bug Fixes
+* Fixed an issue where failed conversation rating submissions could appear successful.
+* Fixed an issue where the Inbox empty state could become misaligned after resizing the app window.
+
 ## 19.8.1
 ###### Release Date: 04-09-2026
 
