@@ -1,3 +1,18 @@
+## 19.8.3
+###### Release Date: 25-09-2026
+
+### 🚀 Enhancements
+* Added support for iOS 27.
+* Updated the conversation header with a larger avatar and refined title and subtitle sizes.
+
+### 🐛 Bug Fixes
+* Fixed a crash that could occur at app launch on older iOS versions when push notifications are integrated automatically.
+* Fixed an issue where the Messenger could fail to load after a cold launch until the app was backgrounded and reopened.
+* Fixed an issue where embedded videos could stop and reload during playback while a conversation was updating.
+* Fixed an issue where bullet list text in Large Posts opened from a conversation could appear in a hard-to-read color.
+* Fixed an issue where the icon and title of the create ticket button could be invisible in dark mode.
+* Fixed an issue where VoiceOver could start reading partway down a Help Center article instead of at its title.
+
 ## 19.8.2
 ###### Release Date: 14-09-2026
 
