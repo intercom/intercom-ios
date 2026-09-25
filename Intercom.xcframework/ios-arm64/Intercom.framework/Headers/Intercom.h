@@ -75,6 +75,8 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Parameters:
     - userHash: A HMAC digest of the user ID or email.
+ - Note: If the digest stops being accepted, after a secret rotation say, call this again with a fresh
+ digest; no new login is needed.
  */
 + (void)setUserHash:(NSString *)userHash;
 
@@ -89,6 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Parameters:
     - jwt: A JWT token signed with your app's secret key.
+ - Note: If the token expires, call this again with a fresh token; no new login is needed.
  */
 + (void)setUserJwt:(NSString *)jwt;
 
