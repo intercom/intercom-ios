@@ -1,3 +1,12 @@
+## 19.8.4
+###### Release Date: 02-10-2026
+
+### 🚀 Enhancements
+* Moved the sender's name and the message time below admin, bot and Fin message bubbles instead of showing an avatar and name above them, to match the web and Android Messengers.
+
+### 🐛 Bug Fixes
+* Fixed an issue where reaction emojis on in-app posts may not appear until the post footer was tapped.
+
 ## 19.8.3
 ###### Release Date: 25-09-2026
 
