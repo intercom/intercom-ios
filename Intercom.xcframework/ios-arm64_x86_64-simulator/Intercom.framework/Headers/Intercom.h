@@ -96,6 +96,28 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setUserJwt:(NSString *)jwt;
 
 /**
+ Registers a provider that Intercom asks for a fresh user JWT when the current one is about to expire,
+ or when Intercom rejects a request because it has expired. Requests that hit an expired JWT are sent
+ again, once, with the new token instead of failing.
+
+ The provider is called on the main thread, only while the app is in the foreground, and never more than
+ once at a time. Call `completion` exactly once, from any thread, with the new JWT, or with `nil` if you
+ can't supply one. If you answer `nil`, or no answer arrives within 10 seconds, requests Intercom rejected
+ for an expired JWT fail, while requests whose JWT was only about to expire are sent with it. A later
+ answer is still stored. Calling ``setUserJwt:`` while the provider is pending also completes it.
+
+ - Parameters:
+    - provider: The provider to ask for fresh JWTs. It replaces any provider registered before.
+ */
++ (void)setUserJwtProvider:(nonnull void (^)(void (^completion)(NSString *_Nullable jwt)))provider NS_REFINED_FOR_SWIFT;
+
+/**
+ Removes the provider registered with ``setUserJwtProvider:``. Intercom stops asking for fresh user JWTs,
+ and requests rejected for an expired JWT fail until you call ``setUserJwt:`` with a new one.
+ */
++ (void)removeUserJwtProvider;
+
+/**
  Provide Intercom with your auth tokens which can be used for functionality
  such as Fin Actions. You can provide multiple tokens at once. Please ensure you have created
  the correct keys [here](https://www.intercom.com/a/apps/_/settings/app-settings/authentication)

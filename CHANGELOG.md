@@ -1,3 +1,21 @@
+## 19.9.0
+###### Release Date: 09-10-2026
+
+### 🚀 Enhancements
+* Added `setUserJwtProvider` so Intercom can ask your app for a fresh user JWT when the current one is about to expire or has expired, and retry affected requests with the new token.
+* Messenger screens now recover after an expired user JWT is replaced, without needing to reopen the Messenger.
+* VoiceOver now moves focus to the Home greeting when the Messenger opens.
+
+### 🐛 Bug Fixes
+* Fixed an issue where the "Fin is thinking" indicator may not appear while Fin was working through a Procedure.
+* Fixed a crash that could occur when opening a Help Center article in apps that add methods to every object.
+* Fixed an issue where Home cards and the conversation screen could be cut off on folded iPhones.
+* Fixed an issue where a new conversation refused by the workspace could show a "Try Again" option that could never succeed.
+* Fixed an issue where the survey background fade could show a light band in dark mode.
+* Fixed an issue where reactions may not appear on full-screen posts and notes when their images weren't preloaded.
+* Fixed a crash that could occur on long conversation threads.
+* Fixed an issue where part of the host app could appear black behind the Messenger after resizing the app window.
+
 ## 19.8.4
 ###### Release Date: 02-10-2026
 

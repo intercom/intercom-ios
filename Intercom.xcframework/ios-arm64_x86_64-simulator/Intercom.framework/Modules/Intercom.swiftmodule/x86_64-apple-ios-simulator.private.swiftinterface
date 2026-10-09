@@ -25,6 +25,8 @@ extension Intercom {
   public class func loginUnidentifiedUser(completion: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
   public class func loginUser(with attributes: ICMUserAttributes, completion: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
   public class func updateUser(with attributes: ICMUserAttributes, completion: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
+  public class func setUserJwtProvider(_ provider: @escaping (_ completion: @escaping (Swift.String?) -> Swift.Void) -> Swift.Void)
+  public class func setUserJwtProvider(_ provider: @escaping @_Concurrency.MainActor () async -> Swift.String?)
   public class func setAuthTokens(_ authTokens: [Swift.String : Swift.String], completion: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
   public class func setDeviceToken(_ deviceToken: Foundation.Data, completion: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
   public class func fetchHelpCenterCollections(completion: @escaping (Swift.Result<[HelpCenterCollection], ICMHelpCenterDataError>) -> Swift.Void)
