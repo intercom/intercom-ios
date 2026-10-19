@@ -1,3 +1,20 @@
+## 19.9.1
+###### Release Date: 19-10-2026
+
+### 🚀 Enhancements
+* Help Center articles now appear as soon as they're drawn, without waiting for every image to finish loading.
+
+### 🐛 Bug Fixes
+* Fixed a crash that could occur on early iOS 26.0 betas when opening a conversation.
+* Fixed an issue where a device token could be rejected if it was registered right after the user granted notification permission.
+* Fixed an issue where the sender, timestamp and "via Klipy" credit on GIF messages could stretch across the full message width, or the credit could be missing.
+
+### NOTE: CocoaPods is being deprecated
+* CocoaPods is winding down its central package trunk, which becomes read-only on 2 December 2026.
+* In line with this, we are deprecating CocoaPods as an installation method for Intercom's iOS SDK. We will stop publishing new versions of the `Intercom` pod in our final release before that date.
+* If you currently install Intercom with CocoaPods, please migrate to Swift Package Manager: add `https://github.com/intercom/intercom-ios-sp` as a Swift Package in Xcode. You can also add `Intercom.xcframework` manually (see the README).
+* Versions already published to CocoaPods will continue to install as normal, so your existing builds will keep working. They will not receive new updates.
+
 ## 19.9.0
 ###### Release Date: 09-10-2026
 
