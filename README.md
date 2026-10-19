@@ -48,6 +48,10 @@ Intercom for iOS supports iOS 15+.
 Xcode 15 is required to build Intercom iOS SDK.
 
 ### CocoaPods
+
+> [!WARNING]
+> CocoaPods support is deprecated. New versions will stop being published to the CocoaPods trunk before CocoaPods' central trunk becomes read-only on 2 December 2026. We recommend migrating to [Swift Package Manager](#swift-package-manager), or installing `Intercom.xcframework` [manually](#manual-installation). Versions already published to CocoaPods will continue to install as normal.
+
 Cocoapods 1.11.0 is required to install Intercom.
 Add the Intercom pod into your Podfile and run `pod install`.
 ```ruby
