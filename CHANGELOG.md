@@ -1,3 +1,25 @@
+## 19.9.2
+###### Release Date: 28-10-2026
+
+### 🚀 Enhancements
+* Help Center article reactions now appear without waiting for every image in the article to finish loading.
+* Messenger Sheets now only accept submissions from the sheet's own page.
+* Intercom now logs why a push notification passed to it by your app was not handled.
+
+### 🐛 Bug Fixes
+* Fixed a crash that could occur on the conversation screen when the same message appeared twice.
+* Fixed a crash that could occur when opening a conversation that has no messages.
+* Fixed a crash that could occur in the conversation list when a conversation was marked as read.
+* Fixed an issue where the app could freeze on iOS 16 when leaving a conversation while the keyboard was open.
+* Fixed an issue where submitting a Messenger Sheet could send empty values, which could cause apps like Calendly to show "Couldn't complete this action".
+* Fixed an issue where the Ticket Details screen could say you would be notified by email even when ticket status emails are turned off.
+
+### NOTE: CocoaPods is being deprecated
+* CocoaPods is winding down its central package trunk, which becomes read-only on 2 December 2026.
+* In line with this, we are deprecating CocoaPods as an installation method for Intercom's iOS SDK. We will stop publishing new versions of the `Intercom` pod in our final release before that date.
+* If you currently install Intercom with CocoaPods, please migrate to Swift Package Manager: add `https://github.com/intercom/intercom-ios-sp` as a Swift Package in Xcode. You can also add `Intercom.xcframework` manually (see the README).
+* Versions already published to CocoaPods will continue to install as normal, so your existing builds will keep working. They will not receive new updates.
+
 ## 19.9.1
 ###### Release Date: 19-10-2026
 
