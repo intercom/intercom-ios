@@ -48,12 +48,12 @@ relocations:
   - { offset: 0xB90E4, size: 0x8, addend: 0x0, symName: '+[Intercom setApiKey:forAppId:]', symObjAddr: 0x0, symBinAddr: 0x2820, symSize: 0x120 }
   - { offset: 0xB91EE, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s, symObjAddr: 0x120, symBinAddr: 0x2940, symSize: 0x28 }
   - { offset: 0xB9217, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s, symObjAddr: 0x148, symBinAddr: 0x2968, symSize: 0x28 }
-  - { offset: 0xB9236, size: 0x8, addend: 0x0, symName: '___31+[Intercom setApiKey:forAppId:]_block_invoke.335', symObjAddr: 0x170, symBinAddr: 0x2990, symSize: 0x14 }
+  - { offset: 0xB9236, size: 0x8, addend: 0x0, symName: '___31+[Intercom setApiKey:forAppId:]_block_invoke.347', symObjAddr: 0x170, symBinAddr: 0x2990, symSize: 0x14 }
   - { offset: 0xB9281, size: 0x8, addend: 0x0, symName: '+[Intercom setUserHash:]', symObjAddr: 0x184, symBinAddr: 0x29A4, symSize: 0xEC }
   - { offset: 0xB92FE, size: 0x8, addend: 0x0, symName: '___24+[Intercom setUserHash:]_block_invoke', symObjAddr: 0x270, symBinAddr: 0x2A90, symSize: 0x9C }
   - { offset: 0xB9339, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s, symObjAddr: 0x30C, symBinAddr: 0x2B2C, symSize: 0x8 }
   - { offset: 0xB9360, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s, symObjAddr: 0x314, symBinAddr: 0x2B34, symSize: 0x8 }
-  - { offset: 0xB937F, size: 0x8, addend: 0x0, symName: '___24+[Intercom setUserHash:]_block_invoke.343', symObjAddr: 0x31C, symBinAddr: 0x2B3C, symSize: 0x9C }
+  - { offset: 0xB937F, size: 0x8, addend: 0x0, symName: '___24+[Intercom setUserHash:]_block_invoke.355', symObjAddr: 0x31C, symBinAddr: 0x2B3C, symSize: 0x9C }
   - { offset: 0xB93BA, size: 0x8, addend: 0x0, symName: '+[Intercom setUserJwt:]', symObjAddr: 0x3B8, symBinAddr: 0x2BD8, symSize: 0xEC }
   - { offset: 0xB9437, size: 0x8, addend: 0x0, symName: '___23+[Intercom setUserJwt:]_block_invoke', symObjAddr: 0x4A4, symBinAddr: 0x2CC4, symSize: 0x9C }
   - { offset: 0xB9472, size: 0x8, addend: 0x0, symName: '___23+[Intercom setUserJwt:]_block_invoke_2', symObjAddr: 0x540, symBinAddr: 0x2D60, symSize: 0x9C }
@@ -62,7 +62,7 @@ relocations:
   - { offset: 0xB9529, size: 0x8, addend: 0x0, symName: '+[Intercom setAuthTokens:success:failure:]', symObjAddr: 0x614, symBinAddr: 0x2E34, symSize: 0x140 }
   - { offset: 0xB95C6, size: 0x8, addend: 0x0, symName: '___42+[Intercom setAuthTokens:success:failure:]_block_invoke', symObjAddr: 0x754, symBinAddr: 0x2F74, symSize: 0x58 }
   - { offset: 0xB961C, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b, symObjAddr: 0x7AC, symBinAddr: 0x2FCC, symSize: 0x10 }
-  - { offset: 0xB9645, size: 0x8, addend: 0x0, symName: '___42+[Intercom setAuthTokens:success:failure:]_block_invoke.354', symObjAddr: 0x7BC, symBinAddr: 0x2FDC, symSize: 0x58 }
+  - { offset: 0xB9645, size: 0x8, addend: 0x0, symName: '___42+[Intercom setAuthTokens:success:failure:]_block_invoke.366', symObjAddr: 0x7BC, symBinAddr: 0x2FDC, symSize: 0x58 }
   - { offset: 0xB9728, size: 0x8, addend: 0x0, symName: '+[Intercom presentIntercom]', symObjAddr: 0x814, symBinAddr: 0x3034, symSize: 0x40 }
   - { offset: 0xB977A, size: 0x8, addend: 0x0, symName: '___27+[Intercom presentIntercom]_block_invoke_2', symObjAddr: 0x854, symBinAddr: 0x3074, symSize: 0xC }
   - { offset: 0xB97A1, size: 0x8, addend: 0x0, symName: '+[Intercom presentIntercom:]', symObjAddr: 0x860, symBinAddr: 0x3080, symSize: 0xA8 }
@@ -77,7 +77,7 @@ relocations:
   - { offset: 0xB9BD4, size: 0x8, addend: 0x0, symName: '___53+[Intercom fetchHelpCenterCollectionsWithCompletion:]_block_invoke_2', symObjAddr: 0x11DC, symBinAddr: 0x39FC, symSize: 0x14 }
   - { offset: 0xB9D4E, size: 0x8, addend: 0x0, symName: '+[Intercom fetchHelpCenterCollection:withCompletion:]', symObjAddr: 0x11F0, symBinAddr: 0x3A10, symSize: 0xD8 }
   - { offset: 0xB9DC8, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b, symObjAddr: 0x12C8, symBinAddr: 0x3AE8, symSize: 0x34 }
-  - { offset: 0xB9DF1, size: 0x8, addend: 0x0, symName: '___53+[Intercom fetchHelpCenterCollection:withCompletion:]_block_invoke.359', symObjAddr: 0x12FC, symBinAddr: 0x3B1C, symSize: 0x14 }
+  - { offset: 0xB9DF1, size: 0x8, addend: 0x0, symName: '___53+[Intercom fetchHelpCenterCollection:withCompletion:]_block_invoke.371', symObjAddr: 0x12FC, symBinAddr: 0x3B1C, symSize: 0x14 }
   - { offset: 0xB9EBF, size: 0x8, addend: 0x0, symName: '+[Intercom searchHelpCenter:withCompletion:]', symObjAddr: 0x1310, symBinAddr: 0x3B30, symSize: 0xD8 }
   - { offset: 0xB9F39, size: 0x8, addend: 0x0, symName: '___44+[Intercom searchHelpCenter:withCompletion:]_block_invoke_2', symObjAddr: 0x13E8, symBinAddr: 0x3C08, symSize: 0x14 }
   - { offset: 0xBA002, size: 0x8, addend: 0x0, symName: '+[Intercom setInAppMessagesVisible:]', symObjAddr: 0x13FC, symBinAddr: 0x3C1C, symSize: 0x90 }
@@ -95,12 +95,12 @@ relocations:
   - { offset: 0xBA568, size: 0x8, addend: 0x0, symName: '+[Intercom unreadTicketCount]', symObjAddr: 0x1980, symBinAddr: 0x41A0, symSize: 0xC }
   - { offset: 0xBA665, size: 0x8, addend: 0x0, symName: '+[Intercom loginUnidentifiedUserWithSuccess:failure:]', symObjAddr: 0x198C, symBinAddr: 0x41AC, symSize: 0xD8 }
   - { offset: 0xBA6DF, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b40b, symObjAddr: 0x1A64, symBinAddr: 0x4284, symSize: 0x3C }
-  - { offset: 0xBA708, size: 0x8, addend: 0x0, symName: '___53+[Intercom loginUnidentifiedUserWithSuccess:failure:]_block_invoke.363', symObjAddr: 0x1AA0, symBinAddr: 0x42C0, symSize: 0x14 }
+  - { offset: 0xBA708, size: 0x8, addend: 0x0, symName: '___53+[Intercom loginUnidentifiedUserWithSuccess:failure:]_block_invoke.375', symObjAddr: 0x1AA0, symBinAddr: 0x42C0, symSize: 0x14 }
   - { offset: 0xBA872, size: 0x8, addend: 0x0, symName: '+[Intercom loginUserWithUserAttributes:success:failure:]', symObjAddr: 0x1AB4, symBinAddr: 0x42D4, symSize: 0x27C }
   - { offset: 0xBA94B, size: 0x8, addend: 0x0, symName: '___56+[Intercom loginUserWithUserAttributes:success:failure:]_block_invoke_2', symObjAddr: 0x1DBC, symBinAddr: 0x45DC, symSize: 0x58 }
   - { offset: 0xBA9A1, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b48b, symObjAddr: 0x1D30, symBinAddr: 0x4550, symSize: 0x44 }
   - { offset: 0xBA9CA, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s, symObjAddr: 0x1D74, symBinAddr: 0x4594, symSize: 0x30 }
-  - { offset: 0xBA9E9, size: 0x8, addend: 0x0, symName: '___56+[Intercom loginUserWithUserAttributes:success:failure:]_block_invoke.364', symObjAddr: 0x1DA4, symBinAddr: 0x45C4, symSize: 0x18 }
+  - { offset: 0xBA9E9, size: 0x8, addend: 0x0, symName: '___56+[Intercom loginUserWithUserAttributes:success:failure:]_block_invoke.376', symObjAddr: 0x1DA4, symBinAddr: 0x45C4, symSize: 0x18 }
   - { offset: 0xBAA44, size: 0x8, addend: 0x0, symName: '___56+[Intercom loginUserWithUserAttributes:success:failure:]_block_invoke_3', symObjAddr: 0x1E14, symBinAddr: 0x4634, symSize: 0x58 }
   - { offset: 0xBAB03, size: 0x8, addend: 0x0, symName: '+[Intercom logout]', symObjAddr: 0x1E6C, symBinAddr: 0x468C, symSize: 0x40 }
   - { offset: 0xBAB55, size: 0x8, addend: 0x0, symName: '___18+[Intercom logout]_block_invoke_2', symObjAddr: 0x1EAC, symBinAddr: 0x46CC, symSize: 0xC }
