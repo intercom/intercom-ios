@@ -1,3 +1,26 @@
+## 19.10.0
+###### Release Date: 03-11-2026
+
+### ✨ New Features
+* See every attachment in one place with the new attachments gallery, opened from the conversation header.
+
+### 🚀 Enhancements
+* File attachments have a refreshed, colourful look.
+
+### 🐛 Bug Fixes
+* Fixed an issue where earlier messages could disappear from an open conversation, leaving only the latest teammate message.
+* Fixed an issue where lists in right-to-left languages such as Arabic could appear left-to-right in conversations.
+* Fixed an issue where the composer could reappear in a closed conversation that doesn't allow replies, causing replies to fail.
+
+### NOTE: CocoaPods is being deprecated
+* CocoaPods is winding down its central package trunk, which becomes read-only on 2 December 2026.
+* In line with this, we are deprecating CocoaPods as an installation method for Intercom's iOS SDK. We will stop publishing new versions of the `Intercom` pod in our final release before that date.
+* If you currently install Intercom with CocoaPods, please migrate to Swift Package Manager: add `https://github.com/intercom/intercom-ios-sp` as a Swift Package in Xcode. You can also add `Intercom.xcframework` manually (see the README).
+* Versions already published to CocoaPods will continue to install as normal, so your existing builds will keep working. They will not receive new updates.
+
+### NOTE: This version is not available on CocoaPods
+* As a dry run for the deprecation above, this version is not published to CocoaPods. We'll resume publishing to CocoaPods from the next version.
+
 ## 19.9.2
 ###### Release Date: 28-10-2026
 

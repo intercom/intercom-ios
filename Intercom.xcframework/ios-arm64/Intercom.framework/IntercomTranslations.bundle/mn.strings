@@ -356,7 +356,7 @@
 "tickets_cta_text" = "Энэ тасалбарын талаар асуух зүйл байна уу?";
 "tickets_email_copy" = "Хариулт болон тасалбарын мэдээг энэ имэйл рүү илгээх болно";
 "tickets_email_subject" = "Таны {ticket_type_name} тасалбар";
-"tickets_email_subject_with_ticket_id" = "Your {ticket_type_name} ticket #{ticket_id}";
+"tickets_email_subject_with_ticket_id" = "Таны {ticket_type_name} тасалбар #{ticket_id}";
 "tickets_empty_state_text" = "Таны тасалбар энд харагдах болно";
 "tickets_empty_state_title" = "Тасалбар байхгүй";
 "tickets_estimated_resolution" = "Шийдвэрлэх хугацаа: {duration}";
