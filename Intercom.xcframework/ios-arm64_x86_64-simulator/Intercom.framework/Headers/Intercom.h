@@ -18,6 +18,7 @@
 #import <Intercom/ICMHelpCenterArticle.h>
 #import <Intercom/ICMHelpCenterArticleAuthor.h>
 #import <Intercom/IntercomContent.h>
+#import <Intercom/ICMLocationPermissionProvider.h>
 
 typedef NS_ENUM(NSInteger, ICMThemeOverride) {
     ICMThemeOverrideNone,
@@ -436,6 +437,21 @@ UIKIT_EXTERN NSString *const IntercomUnreadTicketCountDidChangeNotification;
  - themeOverride: The theme override to apply. Use ICMThemeOverrideNone to clear the override and use server configuration.
  */
 + (void)setThemeOverride:(ICMThemeOverride)themeOverride;
+
+
+#pragma mark - Location Permission
+
+/**
+ Sets the provider Intercom uses to ask for location permission from Mobile Carousel screens.
+
+ Intercom does not use CoreLocation itself, so your app does not need a location purpose string
+ unless it asks for location. Carousel screens that ask for location permission are only shown
+ once a provider is set. See ``ICMLocationPermissionProvider`` for an example implementation.
+
+ - Parameters:
+    - provider: The provider to ask for location permission, or `nil` to remove it. Intercom keeps a strong reference to it.
+ */
++ (void)setLocationPermissionProvider:(nullable id<ICMLocationPermissionProvider>)provider;
 
 
 #pragma mark - Intercom Notifications
