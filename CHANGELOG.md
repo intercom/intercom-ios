@@ -1,3 +1,22 @@
+## 19.11.0
+###### Release Date: 12-11-2026
+
+### 🚀 Enhancements
+* Intercom no longer links CoreLocation, so your app no longer needs a location purpose string just because it includes Intercom. Apps that show location permission screens in Mobile Carousels can now provide location permission through `Intercom.setLocationPermissionProvider(_:)`.
+* Intercom no longer starts a session with an expired user JWT on launch. It now waits for your app to set a fresh JWT or register a token provider.
+
+### 🐛 Bug Fixes
+* Fixed an issue where tapping a link to another Help Center article could open the article in the device's language instead of the language in the link.
+
+### NOTE: Location permission screens in Mobile Carousels now need a provider
+* Mobile Carousel screens that ask for location permission are now only shown once your app sets a provider with `Intercom.setLocationPermissionProvider(_:)`. See `ICMLocationPermissionProvider` for an example implementation.
+
+### NOTE: CocoaPods is being deprecated
+* CocoaPods is winding down its central package trunk, which becomes read-only on 2 December 2026.
+* In line with this, we are deprecating CocoaPods as an installation method for Intercom's iOS SDK. We will stop publishing new versions of the `Intercom` pod in our final release before that date.
+* If you currently install Intercom with CocoaPods, please migrate to Swift Package Manager: add `https://github.com/intercom/intercom-ios-sp` as a Swift Package in Xcode. You can also add `Intercom.xcframework` manually (see the README).
+* Versions already published to CocoaPods will continue to install as normal, so your existing builds will keep working. They will not receive new updates.
+
 ## 19.10.0
 ###### Release Date: 03-11-2026
 
