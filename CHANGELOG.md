@@ -1,3 +1,20 @@
+## 19.12.0
+###### Release Date: 20-11-2026
+
+### 🚀 Enhancements
+* An open Messenger now switches to the new language when a workflow changes the user's language, including the Messages screen, Tickets list and Help Center.
+
+### 🐛 Bug Fixes
+* Fixed a crash that could occur when tapping Camera in the composer on devices without a camera. The Camera option is now hidden on those devices.
+* Fixed an issue that could cause the app to freeze when setting a user JWT, logging out, or after some Intercom network responses.
+* Fixed an issue where the Messenger could open in dark mode on a light workspace, or the other way round, if the app changed its windows' appearance while the Messenger was hidden.
+
+### NOTE: CocoaPods is being deprecated
+* CocoaPods is winding down its central package trunk, which becomes read-only on 2 December 2026.
+* In line with this, we are deprecating CocoaPods as an installation method for Intercom's iOS SDK. We will stop publishing new versions of the `Intercom` pod in our final release before that date.
+* If you currently install Intercom with CocoaPods, please migrate to Swift Package Manager: add `https://github.com/intercom/intercom-ios-sp` as a Swift Package in Xcode. You can also add `Intercom.xcframework` manually (see the README).
+* Versions already published to CocoaPods will continue to install as normal, so your existing builds will keep working. They will not receive new updates.
+
 ## 19.11.0
 ###### Release Date: 12-11-2026
 
