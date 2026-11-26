@@ -27,6 +27,18 @@
         <array>
             <dict>
                 <key>NSPrivacyCollectedDataType</key>
+                <string>NSPrivacyCollectedDataTypeDeviceID</string>
+                <key>NSPrivacyCollectedDataTypeLinked</key>
+                <true />
+                <key>NSPrivacyCollectedDataTypeTracking</key>
+                <false />
+                <key>NSPrivacyCollectedDataTypePurposes</key>
+                <array>
+                    <string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+                </array>
+            </dict>
+            <dict>
+                <key>NSPrivacyCollectedDataType</key>
                 <string>NSPrivacyCollectedDataTypeUserID</string>
                 <key>NSPrivacyCollectedDataTypeLinked</key>
                 <true />
@@ -77,7 +89,7 @@
                 <key>NSPrivacyCollectedDataType</key>
                 <string>NSPrivacyCollectedDataTypeOtherDiagnosticData</string>
                 <key>NSPrivacyCollectedDataTypeLinked</key>
-                <false />
+                <true />
                 <key>NSPrivacyCollectedDataTypeTracking</key>
                 <false />
                 <key>NSPrivacyCollectedDataTypePurposes</key>

@@ -187,6 +187,7 @@
 "messages_space_title" = "הודעות";
 "messenger_bot_reply_time" = "הבוט שלנו יענה באופן מיידי";
 "microphone_access_denied" = " לאפליקציה {app_name} אין גישה למיקרופון שלך";
+"more_actions" = "פעולות נוספות";
 "multiple_articles" = "{total_articles} מאמרים";
 "multiple_collections" = "{total_collection} collections";
 "name_and_1_other" = "ואחד נוסף {name}";

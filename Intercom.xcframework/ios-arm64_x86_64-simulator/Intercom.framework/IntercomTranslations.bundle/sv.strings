@@ -187,6 +187,7 @@
 "messages_space_title" = "Meddelanden";
 "messenger_bot_reply_time" = "Vår bot svarar omedelbart";
 "microphone_access_denied" = " {app_name} har inte åtkomst till mikrofonen";
+"more_actions" = "Fler åtgärder";
 "multiple_articles" = "{total_articles} artiklar";
 "multiple_collections" = "{total_collection} samlingar";
 "name_and_1_other" = "{name} och 1 till";

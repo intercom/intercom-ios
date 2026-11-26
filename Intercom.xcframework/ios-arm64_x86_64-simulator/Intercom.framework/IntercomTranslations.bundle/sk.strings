@@ -187,6 +187,7 @@
 "messages_space_title" = "Správy";
 "messenger_bot_reply_time" = "Náš bot odpovie okamžite";
 "microphone_access_denied" = " {app_name} nemá prístup k vášmu mikrofónu";
+"more_actions" = "Ďalšie akcie";
 "multiple_articles" = "Články: {total_articles}";
 "multiple_collections" = "Počet zbierok: {total_collection}";
 "name_and_1_other" = "{name} a 1 ďalší";

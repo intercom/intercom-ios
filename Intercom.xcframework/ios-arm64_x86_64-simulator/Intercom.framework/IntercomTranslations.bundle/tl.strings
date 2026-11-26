@@ -187,6 +187,7 @@
 "messages_space_title" = "Mga Mensahe";
 "messenger_bot_reply_time" = "Agad na sasagot ang aming bot";
 "microphone_access_denied" = " Walang access ang {app_name} sa iyong microphone";
+"more_actions" = "Higit pang aksyon";
 "multiple_articles" = "{total_articles} (na) artikulo";
 "multiple_collections" = "{total_collection} (na) koleksyon";
 "name_and_1_other" = "{name} at 1 pa";

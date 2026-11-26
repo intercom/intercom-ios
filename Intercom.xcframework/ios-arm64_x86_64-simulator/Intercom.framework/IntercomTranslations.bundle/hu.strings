@@ -187,6 +187,7 @@
 "messages_space_title" = "Üzenetek";
 "messenger_bot_reply_time" = "Robotunk azonnal válaszol";
 "microphone_access_denied" = " A(z) {app_name} nem fér hozzá a mikrofonjához";
+"more_actions" = "További műveletek";
 "multiple_articles" = "{total_articles} cikk";
 "multiple_collections" = "{total_collection} gyűjtemény";
 "name_and_1_other" = "{name} és további 1 felhasználó";

@@ -187,6 +187,7 @@
 "messages_space_title" = "म्यासेजहरू";
 "messenger_bot_reply_time" = "हाम्रो बटले तुरुन्तै जवाफ दिनेछ";
 "microphone_access_denied" = " {app_name} लाई तपाईंको माइक्रोफोनको एक्सेस छैन";
+"more_actions" = "थप कार्यहरू";
 "multiple_articles" = "{total_articles} लेखहरू";
 "multiple_collections" = "{total_collection} सङ्ग्रहहरू";
 "name_and_1_other" = "{name} र अन्य १ जना";

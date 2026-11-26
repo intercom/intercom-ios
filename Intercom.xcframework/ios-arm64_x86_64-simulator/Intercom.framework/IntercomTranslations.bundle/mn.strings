@@ -187,6 +187,7 @@
 "messages_space_title" = "Мессежүүд";
 "messenger_bot_reply_time" = "Манай робот шууд хариулах болно";
 "microphone_access_denied" = " {app_name} таны микрофонд нэвтрэх эрхгүй байна";
+"more_actions" = "Бусад үйлдэл";
 "multiple_articles" = "{total_articles} Нийтлэл";
 "multiple_collections" = "{total_collection} collections";
 "name_and_1_other" = "{name} болон бусад 1";
@@ -202,6 +203,7 @@
 "news_latest_title" = "Хамгийн сүүлийн үеийн";
 "news_older_title" = "Хуучин";
 "news_space_title" = "Мэдээ";
+"next_match" = "Дараагийн тохирол";
 "no_articles_to_display" = "Одоогоор нийтлэл алга";
 "no_conversations" = "Харилцан яриа алга";
 "no_gifs_found" = "GIF олдсонгүй";
@@ -231,8 +233,10 @@
 "plus_x_more" = "бусад + {n}";
 "powered_by_fin_ai_agent" = "Fin системээр дэмжигдсэн";
 "powered_by_intercom" = "Intercom-н ажиллуулдаг";
+"previous_match" = "Өмнөх тохирол";
 "profile_location" = "{time}-д {location}-д";
 "rate_your_conversation" = "Харилцан яриагаа үнэлэх";
+"rating_window_closed" = "Энэ харилцан яриаг цаашид үнэлэх боломжгүй";
 "recent_ticket" = "Саяхны тасалбар";
 "recent_tickets" = "Саяхны тасалбарууд";
 "record_a_video" = "Видео бичлэг хийх";
@@ -243,6 +247,7 @@
 "retry" = "Дахин оролдох";
 "search" = "Хайх";
 "search_browse_empty_state_text" = "Уучлаарай, бид үүнд ямар нэгэн үр дүн олсонгүй. Хайх үгээ өөрчлөөд оролдоно уу.";
+"search_conversation" = "Харилцан яриа хайх";
 "search_for_help" = "Тусламж хайх";
 "search_gif" = "GIF хайх...";
 "search_help_articles" = "Хайлтын тусламжийн нийтлэлүүд";
@@ -356,7 +361,7 @@
 "tickets_cta_text" = "Энэ тасалбарын талаар асуух зүйл байна уу?";
 "tickets_email_copy" = "Хариулт болон тасалбарын мэдээг энэ имэйл рүү илгээх болно";
 "tickets_email_subject" = "Таны {ticket_type_name} тасалбар";
-"tickets_email_subject_with_ticket_id" = "Таны {ticket_type_name} тасалбар #{ticket_id}";
+"tickets_email_subject_with_ticket_id" = "Your {ticket_type_name} ticket #{ticket_id}";
 "tickets_empty_state_text" = "Таны тасалбар энд харагдах болно";
 "tickets_empty_state_title" = "Тасалбар байхгүй";
 "tickets_estimated_resolution" = "Шийдвэрлэх хугацаа: {duration}";

@@ -187,6 +187,7 @@
 "messages_space_title" = "ข้อความ";
 "messenger_bot_reply_time" = "บ็อตของเราจะตอบกลับทันที";
 "microphone_access_denied" = " {app_name} ไม่สามารถเข้าถึงไมโครโฟนของคุณ";
+"more_actions" = "การดําเนินการเพิ่มเติม";
 "multiple_articles" = "{total_articles} บทความ";
 "multiple_collections" = "{total_collection} คอลเลกชัน";
 "name_and_1_other" = "{name} และอีก 1 คน";

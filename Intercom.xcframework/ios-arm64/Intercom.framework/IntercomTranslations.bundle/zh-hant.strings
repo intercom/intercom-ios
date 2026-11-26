@@ -187,6 +187,7 @@
 "messages_space_title" = "訊息";
 "messenger_bot_reply_time" = "我們的機器人會立即回覆";
 "microphone_access_denied" = " {app_name} 無法存取您的麥克風";
+"more_actions" = "更多動作";
 "multiple_articles" = "{total_articles} 篇文章";
 "multiple_collections" = "{total_collection} 個系列";
 "name_and_1_other" = "{name} 和另外 1 人";

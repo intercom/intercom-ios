@@ -187,6 +187,7 @@
 "messages_space_title" = "Съобщения";
 "messenger_bot_reply_time" = "Нашият бот ще отговори незабавно";
 "microphone_access_denied" = " {app_name} няма достъп до вашия микрофон";
+"more_actions" = "Още действия";
 "multiple_articles" = "{total_articles} статии";
 "multiple_collections" = "{total_collection} колекции";
 "name_and_1_other" = "{name} и още 1";

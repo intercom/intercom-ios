@@ -187,6 +187,7 @@
 "messages_space_title" = "செய்திகள்";
 "messenger_bot_reply_time" = "எங்கள் போட் உடனடியாகப் பதிலளிக்கும்";
 "microphone_access_denied" = " {app_name} உங்கள் மைக்ரோஃபோனை அணுக முடியாது";
+"more_actions" = "மேலும் செயல்கள்";
 "multiple_articles" = "{total_articles} கட்டுரைகள்";
 "multiple_collections" = "{total_collection} தொகுப்புகள்";
 "name_and_1_other" = "{name} மற்றும் வேறு 1 நபர்";

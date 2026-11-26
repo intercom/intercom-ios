@@ -187,6 +187,7 @@
 "messages_space_title" = "Mesajlar";
 "messenger_bot_reply_time" = "Botumuz dərhal cavab verəcək";
 "microphone_access_denied" = " {app_name} mikrofonunuza girişə malik deyil";
+"more_actions" = "Digər fəaliyyətlər";
 "multiple_articles" = "{total_articles} məqalə";
 "multiple_collections" = "{total_collection} kolleksiya";
 "name_and_1_other" = "{name} və başqa 1";

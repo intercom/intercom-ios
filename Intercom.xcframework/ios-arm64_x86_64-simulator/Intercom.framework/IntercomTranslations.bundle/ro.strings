@@ -187,6 +187,7 @@
 "messages_space_title" = "Mesaje";
 "messenger_bot_reply_time" = "Botul nostru va răspunde instantaneu";
 "microphone_access_denied" = " {app_name} nu are acces la microfonul dvs.";
+"more_actions" = "Mai multe acțiuni";
 "multiple_articles" = "{total_articles} articole";
 "multiple_collections" = "{total_collection} colecții";
 "name_and_1_other" = "{name} și 1 altul";

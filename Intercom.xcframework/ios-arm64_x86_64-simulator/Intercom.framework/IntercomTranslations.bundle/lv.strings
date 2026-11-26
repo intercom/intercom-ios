@@ -187,6 +187,7 @@
 "messages_space_title" = "Ziņojumi";
 "messenger_bot_reply_time" = "Mūsu robots atbildēs nekavējoties";
 "microphone_access_denied" = " {app_name} nav piekļuves jūsu mikrofonam";
+"more_actions" = "Vairāk darbību";
 "multiple_articles" = "{total_articles} raksti";
 "multiple_collections" = "{total_collection} kolekcijas";
 "name_and_1_other" = "{name} un 1 cits";

@@ -187,6 +187,7 @@
 "messages_space_title" = "الرسائل";
 "messenger_bot_reply_time" = "وسيرد برنامج الروبوت عليها على الفور";
 "microphone_access_denied" = " تطبيق {app_name} ليس لديه إذن بالوصول إلى الميكروفون";
+"more_actions" = "المزيد من الإجراءات";
 "multiple_articles" = "{total_articles} مقالات";
 "multiple_collections" = "{total_collection} مجموعات";
 "name_and_1_other" = "{name} وشخص آخر";

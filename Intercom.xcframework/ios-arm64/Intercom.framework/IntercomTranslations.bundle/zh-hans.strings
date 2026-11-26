@@ -187,6 +187,7 @@
 "messages_space_title" = "消息";
 "messenger_bot_reply_time" = "我们的机器人会立即回复";
 "microphone_access_denied" = " {app_name} 无权使用您的麦克风";
+"more_actions" = "更多操作";
 "multiple_articles" = "{total_articles} 篇文章";
 "multiple_collections" = "{total_collection} 个收藏";
 "name_and_1_other" = "{name} 和另外 1 人";

@@ -187,6 +187,7 @@
 "messages_space_title" = "پیام‌ها";
 "messenger_bot_reply_time" = "ربات ما فوراً پاسخ خواهد داد";
 "microphone_access_denied" = " {app_name}به میکروفون شما دسترسی ندارد";
+"more_actions" = "اقدامات بیشتر";
 "multiple_articles" = "{total_articles} مقاله";
 "multiple_collections" = "{total_collection} مجموعه";
 "name_and_1_other" = "{name} و 1 دیگر";
