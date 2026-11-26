@@ -187,6 +187,7 @@
 "messages_space_title" = "Missatges";
 "messenger_bot_reply_time" = "El nostre robot respondrà a l'instant";
 "microphone_access_denied" = " {app_name} no té accés al micròfon";
+"more_actions" = "Més accions";
 "multiple_articles" = "{total_articles} Articles";
 "multiple_collections" = "{total_collection} colleccions";
 "name_and_1_other" = "{name} i 1 més";

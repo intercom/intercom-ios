@@ -187,6 +187,7 @@
 "messages_space_title" = "Viestit";
 "messenger_bot_reply_time" = "Bottimme vastaa välittömästi";
 "microphone_access_denied" = " Sovelluksella {app_name} ei ole mikrofonin käyttölupaa";
+"more_actions" = "Lisää toimintoja";
 "multiple_articles" = "{total_articles} artikkelia";
 "multiple_collections" = "{total_collection} kokoelmaa";
 "name_and_1_other" = "{name} ja 1 muu";

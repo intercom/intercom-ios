@@ -187,6 +187,7 @@
 "messages_space_title" = "შეტყობინებები";
 "messenger_bot_reply_time" = "ჩვენი ბოტი მყისიერად გიპასუხებთ";
 "microphone_access_denied" = " {app_name}-ს არ აქვს წვდომა თქვენს მიკროფონზე";
+"more_actions" = "მეტი მოქმედება";
 "multiple_articles" = "{total_articles} სტატია";
 "multiple_collections" = "{total_collection} კოლექცია";
 "name_and_1_other" = "{name} და კიდევ 1 სხვა";

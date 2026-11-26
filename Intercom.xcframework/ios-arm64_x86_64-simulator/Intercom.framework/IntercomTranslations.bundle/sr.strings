@@ -187,6 +187,7 @@
 "messages_space_title" = "Poruke";
 "messenger_bot_reply_time" = "Naš bot će odmah odgovoriti";
 "microphone_access_denied" = " {app_name} nema pristup vašem mikrofonu";
+"more_actions" = "Još radnji";
 "multiple_articles" = "{total_articles} članaka";
 "multiple_collections" = "{total_collection} kolekcija";
 "name_and_1_other" = "{name} i još 1 osoba";

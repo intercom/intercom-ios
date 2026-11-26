@@ -187,6 +187,7 @@
 "messages_space_title" = "Հաղորդագրություններ";
 "messenger_bot_reply_time" = "Մեր բոտը կպատասխանի ակնթարթորեն";
 "microphone_access_denied" = " {app_name} Ձեր միկրոֆոնին մուտք չունի";
+"more_actions" = "Լրացուցիչ գործողություններ";
 "multiple_articles" = "{total_articles} հոդված";
 "multiple_collections" = "{total_collection} հավաքածու";
 "name_and_1_other" = "{name} և ևս 1 հոգի";

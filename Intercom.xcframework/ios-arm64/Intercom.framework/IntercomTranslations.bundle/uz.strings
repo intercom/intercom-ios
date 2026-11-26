@@ -188,6 +188,7 @@ bilan suhbatlar";
 "messages_space_title" = "Xabarlar";
 "messenger_bot_reply_time" = "Botimiz darhol javob beradi";
 "microphone_access_denied" = " {app_name}ning mikrofoningizga kirish ruxsati yoʻq";
+"more_actions" = "Qoʻshimcha funksiyalar";
 "multiple_articles" = "{total_articles} ta maqola";
 "multiple_collections" = "{total_collection} ta toʻplam";
 "name_and_1_other" = "{name} va boshqa 1 kishi";

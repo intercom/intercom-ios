@@ -187,6 +187,7 @@
 "messages_space_title" = "Μηνύματα";
 "messenger_bot_reply_time" = "Το bot μας θα απαντήσει αμέσως";
 "microphone_access_denied" = " Η εφαρμογή {app_name} δεν έχει πρόσβαση στο μικρόφωνό σας";
+"more_actions" = "Περισσότερες ενέργειες";
 "multiple_articles" = "{total_articles} άρθρα";
 "multiple_collections" = "{total_collection} συλλογές";
 "name_and_1_other" = "Ο χρήστης {name} και 1 ακόμα χρήστης";

@@ -187,6 +187,7 @@
 "messages_space_title" = "Sporočila";
 "messenger_bot_reply_time" = "Naš bot vam bo takoj odgovoril.";
 "microphone_access_denied" = " Aplikacija {app_name} nima dostopa do vašega mikrofona";
+"more_actions" = "Več dejanj";
 "multiple_articles" = "{total_articles} člankov";
 "multiple_collections" = "{total_collection} zbirke";
 "name_and_1_other" = "{name} in še 1";

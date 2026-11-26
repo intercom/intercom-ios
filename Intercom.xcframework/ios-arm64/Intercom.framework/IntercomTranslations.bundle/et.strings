@@ -187,6 +187,7 @@
 "messages_space_title" = "Sõnumid";
 "messenger_bot_reply_time" = "Meie bott vastab kohe";
 "microphone_access_denied" = " Rakendusel {app_name} pole juurdepääsu teie mikrofonile";
+"more_actions" = "Rohkem tegevusi";
 "multiple_articles" = "{total_articles} artiklit";
 "multiple_collections" = "{total_collection} kollektsiooni";
 "name_and_1_other" = "{name} ja veel 1";

@@ -187,6 +187,7 @@
 "messages_space_title" = "Pranešimai";
 "messenger_bot_reply_time" = "Mūsų robotas atsakys akimirksniu";
 "microphone_access_denied" = " {app_name} neturi prieigos prie jūsų mikrofono";
+"more_actions" = "Daugiau veiksmų";
 "multiple_articles" = "{total_articles} straipsnių";
 "multiple_collections" = "{total_collection} kolekcijos";
 "name_and_1_other" = "{name} ir dar 1";

@@ -187,6 +187,7 @@
 "messages_space_title" = "පණිවිඩ";
 "messenger_bot_reply_time" = "අපගේ බොට් ක්ෂණිකව පිළිතුරු දෙනු ඇත";
 "microphone_access_denied" = " {app_name} වෙත ඔබගේ මයික්‍රෆෝනයට ප්‍රවේශය නොමැත";
+"more_actions" = "තවත් ක්‍රියාකාරකම්";
 "multiple_articles" = "{total_articles} ලිපි";
 "multiple_collections" = "{total_collection} එකතු";
 "name_and_1_other" = "{name} සහ තවත් 1ක්";

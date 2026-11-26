@@ -187,6 +187,7 @@
 "messages_space_title" = "پیغامات";
 "messenger_bot_reply_time" = "ہمارا بوٹ فوراً جواب دے گا";
 "microphone_access_denied" = " {app_name} کو آپ کے مائیکروفون تک رسائی حاصل نہیں ہے";
+"more_actions" = "مزید کارروائیاں";
 "multiple_articles" = "{total_articles} مضامین";
 "multiple_collections" = "{total_collection} مجموعے";
 "name_and_1_other" = "{name} اور 1 دیگر";

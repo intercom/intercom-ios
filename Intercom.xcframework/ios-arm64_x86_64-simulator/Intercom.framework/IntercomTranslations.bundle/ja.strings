@@ -187,6 +187,7 @@
 "messages_space_title" = "メッセージ";
 "messenger_bot_reply_time" = "ボットが即座に返信します";
 "microphone_access_denied" = " {app_name}はマイクにアクセスできません";
+"more_actions" = "その他のアクション";
 "multiple_articles" = "{total_articles}件の記事";
 "multiple_collections" = "{total_collection} collections";
 "name_and_1_other" = "{name}と他1名";

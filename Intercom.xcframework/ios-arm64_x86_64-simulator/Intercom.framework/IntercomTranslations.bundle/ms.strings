@@ -187,6 +187,7 @@
 "messages_space_title" = "Mesej";
 "messenger_bot_reply_time" = "Bot kami akan membalas dengan serta-merta";
 "microphone_access_denied" = " {app_name} tidak mempunyai akses kepada mikrofon anda";
+"more_actions" = "Lebih banyak tindakan";
 "multiple_articles" = "{total_articles} Artikel";
 "multiple_collections" = "Koleksi {total_collection}";
 "name_and_1_other" = "{name} dan 1 yang lain";

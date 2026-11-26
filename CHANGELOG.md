@@ -1,3 +1,27 @@
+## 19.13.0
+###### Release Date: 26-11-2026
+
+### 📱 New Feature: Messenger Styles
+* Added `Intercom.setMessengerStyleId(_:)` to choose which Messenger style to show. By default, the Messenger shows the style whose App ID matches your app's bundle ID. You can use this method to choose a different style, for example when one app serves several brands.
+
+### 🚀 Enhancements
+* Added a menu to the conversation screen with an option to search the conversation.
+
+### 🐛 Bug Fixes
+* Fixed an issue where an app's global navigation bar styling could show through in the Messenger on iOS 26 and later, making the title hard to read.
+* Fixed an issue where links in Posts could be hard to read on the Post's dark background.
+* Fixed an issue where rows in Home cards could lose their side margins on iOS 27.1 and later.
+* Fixed a hang that could occur in the composer on iOS 16.
+* Fixed an issue where multi-word AI agent names could be shortened to their first word.
+* Fixed an issue where the Messenger could stay in the wrong light or dark theme if the app changed it while the Messenger was open.
+* Fixed an issue where a non-dismissible carousel could still show a close button and be dismissed.
+
+### NOTE: This is the last version published to CocoaPods
+* CocoaPods is winding down its central package trunk, which becomes read-only on 2 December 2026.
+* In line with this, we have deprecated CocoaPods as an installation method for Intercom's iOS SDK, and this is the final version of the `Intercom` pod we will publish. Future versions will only be available through Swift Package Manager and as an `Intercom.xcframework`.
+* If you currently install Intercom with CocoaPods, please migrate to Swift Package Manager: add `https://github.com/intercom/intercom-ios-sp` as a Swift Package in Xcode. You can also add `Intercom.xcframework` manually (see the README).
+* Versions already published to CocoaPods will continue to install as normal, so your existing builds will keep working. They will not receive new updates.
+
 ## 19.12.0
 ###### Release Date: 20-11-2026
 

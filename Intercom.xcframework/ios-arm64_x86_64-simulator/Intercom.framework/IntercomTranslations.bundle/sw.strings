@@ -187,6 +187,7 @@
 "messages_space_title" = "Ujumbe";
 "messenger_bot_reply_time" = "Kijibu chetu kitajibu papo hapo";
 "microphone_access_denied" = " {app_name} haina ruhusa ya kutumia maikrofoni yako";
+"more_actions" = "Hatua zaidi";
 "multiple_articles" = "makala {total_articles}";
 "multiple_collections" = "makusanyiko {total_collection}";
 "name_and_1_other" = "{name} na mwingine 1";

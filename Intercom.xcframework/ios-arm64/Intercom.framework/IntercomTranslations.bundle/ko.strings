@@ -187,6 +187,7 @@
 "messages_space_title" = "메시지";
 "messenger_bot_reply_time" = "봇이 즉시 응답해 드릴 것입니다";
 "microphone_access_denied" = " {app_name}이(가) 마이크에 액세스할 수 없습니다";
+"more_actions" = "추가 작업";
 "multiple_articles" = "{total_articles}개 자료";
 "multiple_collections" = "{total_collection} collections";
 "name_and_1_other" = "{name}님 외 1명";

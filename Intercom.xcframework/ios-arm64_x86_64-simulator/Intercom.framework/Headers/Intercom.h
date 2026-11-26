@@ -119,6 +119,22 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)removeUserJwtProvider;
 
 /**
+ Sets which Messenger style your app shows.
+ - Note: Call this when your app launches.
+
+ By default, the Messenger shows the style whose App ID matches your app's bundle ID, or your default style if
+ none matches. Use this to choose a different style, for example when one app serves several brands. A style ID
+ that doesn't match one of your mobile Messenger styles is ignored.
+
+ The style ID is kept across app launches and when the user logs out. If you change it while a user is logged in,
+ the new style is shown the next time the Messenger opens.
+
+ - Parameters:
+    - messengerStyleId: The ID of the Messenger style to show. Pass `nil` or an empty string to clear it.
+ */
++ (void)setMessengerStyleId:(nullable NSString *)messengerStyleId;
+
+/**
  Provide Intercom with your auth tokens which can be used for functionality
  such as Fin Actions. You can provide multiple tokens at once. Please ensure you have created
  the correct keys [here](https://www.intercom.com/a/apps/_/settings/app-settings/authentication)

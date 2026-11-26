@@ -187,6 +187,7 @@
 "messages_space_title" = "Mensagens";
 "messenger_bot_reply_time" = "O nosso bot responderá instantaneamente";
 "microphone_access_denied" = " {app_name} não tem acesso ao seu microfone";
+"more_actions" = "Mais ações";
 "multiple_articles" = "{total_articles} artigos";
 "multiple_collections" = "{total_collection} coleções";
 "name_and_1_other" = "{name} e 1 outro";

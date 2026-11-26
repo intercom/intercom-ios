@@ -187,6 +187,7 @@
 "messages_space_title" = "Tin nhắn";
 "messenger_bot_reply_time" = "Bot của chúng tôi sẽ trả lời ngay lập tức";
 "microphone_access_denied" = " {app_name} không có quyền truy cập vào micrô của bạn";
+"more_actions" = "Xem thêm thao tác";
 "multiple_articles" = "{total_articles} Bài viết";
 "multiple_collections" = "{total_collection} bộ sưu tập";
 "name_and_1_other" = "{name} và 1 người khác";

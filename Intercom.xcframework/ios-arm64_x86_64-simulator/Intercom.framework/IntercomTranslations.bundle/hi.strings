@@ -187,6 +187,7 @@
 "messages_space_title" = "मेसेज";
 "messenger_bot_reply_time" = "हमारा बॉट तुरंत जवाब देगा";
 "microphone_access_denied" = " {app_name} के पास आपके माइक्रोफ़ोन का ऐक्सेस नहीं है";
+"more_actions" = "अतिरिक्त कार्रवाइयां";
 "multiple_articles" = "{total_articles} आर्टिकल्स";
 "multiple_collections" = "{total_collection} कलेक्शन";
 "name_and_1_other" = "{name} और 1 अन्य";

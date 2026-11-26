@@ -187,6 +187,7 @@
 "messages_space_title" = "Чат";
 "messenger_bot_reply_time" = "Наш бот ответит мгновенно";
 "microphone_access_denied" = " У {app_name} нет доступа к микрофону";
+"more_actions" = "Другие действия";
 "multiple_articles" = "{total_articles} статьи";
 "multiple_collections" = "{total_collection} коллекц.";
 "name_and_1_other" = "{name} и ещё 1";
